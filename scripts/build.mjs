@@ -69,20 +69,51 @@ const projectRows = items => items.map(r => `| **${r.name}** | ${md(r.environmen
 const tick = String.fromCharCode(96);
 let readme = `# Awesome Game & Embodied Agents
 
-A curated collection of research on agents that perceive, plan, and act in games and the physical world.
+**A living, open research collection for agents that perceive, reason, learn, and act—from virtual worlds to the physical world.**
 
-[**Explore the website ↗**](${data.meta.siteUrl}) · [What’s new](${data.meta.siteUrl}#updates) · [Articles](#articles) · [Papers](#papers) · [Projects](#projects) · [Datasets](#datasets) · [Benchmarks](#benchmarks) · [Video demos](#video-demos) · [Contributing](CONTRIBUTING.md)
+[**Explore the website ↗**](${data.meta.siteUrl}) · [What’s new](${data.meta.siteUrl}#updates) · [Browse papers](#papers) · [Watch demos](#video-demos) · [Contribute](CONTRIBUTING.md)
 
-**${count('articles')} articles · ${count('papers')} papers · ${count('projects')} projects · ${count('datasets')} datasets · ${count('benchmarks')} benchmarks · ${count('demos')} video demos**
+**${count('papers')} papers · ${count('articles')} articles · ${count('projects')} projects · ${count('datasets')} datasets · ${count('benchmarks')} benchmarks · ${count('demos')} video demos**
 
-${candidates.length} candidate papers remain separate from the curated collection.
+## Welcome
 
-Snapshot: **${data.meta.snapshotDate}**. There are **${selected.length} unique curated resources**. Dataset and benchmark papers appear in multiple views, so category counts overlap.
+Welcome, and thank you for stopping by. This repository is for researchers, engineers, students, and curious builders who want to understand how ideas move between game intelligence and embodied intelligence.
 
-Game agents operate in virtual environments through observations, game APIs, or keyboard and mouse actions. Embodied agents connect perception and planning to simulated or physical robot actions. This collection brings their methods together while documenting the interfaces and evaluation conditions that make comparisons meaningful.
+We hope it helps you find a paper worth reading, a codebase worth trying, a benchmark that fits your question, or a new connection between virtual and physical agents. The collection is maintained in the open, and thoughtful contributions of every size are welcome.
+
+If this project saves you time or sparks an idea, please consider giving it a **star**. Stars help more people discover the collection. You can also help by:
+
+- suggesting an important paper, project, dataset, benchmark, or official demo;
+- reporting a broken link or correcting a source;
+- improving a summary, comparison note, or research category;
+- sharing the collection with a lab, reading group, class, or collaborator.
+
+[**Star the repository ↗**](${data.meta.repositoryUrl}) · [**Read the contribution guide ↗**](CONTRIBUTING.md) · [**Open a contribution ↗**](${data.meta.repositoryUrl}/issues)
+
+## Our vision
+
+We want this project to grow from a useful list into a shared research map: one that makes it easier to trace ideas, compare evidence, reproduce systems, and see where game agents and embodied agents can learn from one another.
+
+![Future vision: virtual game worlds and physical robots connected through shared world models, memory, language, planning, data, and continual learning](docs/assets/future-vision.png)
+
+*A continuous research loop: virtual experience informs shared models and methods; physical interaction returns new evidence, constraints, and learning signals.*
+
+Our long-term direction is to:
+
+- **connect research communities** through shared themes such as world models, memory, planning, multimodal learning, and action interfaces;
+- **keep evidence traceable** with official paper, code, data, model, project, citation, and demo sources;
+- **make comparison more useful** by preserving task definitions, observation access, action spaces, and evaluation boundaries;
+- **lower the entry barrier** with readable summaries, curated learning paths, and working examples;
+- **stay current together** through reviewed additions, transparent update logs, and regular source checks.
+
+Game agents operate in virtual environments through pixels, language, game APIs, or keyboard and mouse actions. Embodied agents connect perception and planning to simulated or physical robot actions. Similar methods can inspire each other, while every comparison must still respect the environment, interface, and evidence behind the result.
+
+Snapshot: **${data.meta.snapshotDate}**. The collection contains **${selected.length} unique curated resources**. Dataset and benchmark papers appear in multiple views, so category counts overlap. ${candidates.length} candidate papers remain separate until their evidence is reviewed.
 
 ## Contents
 
+- [Welcome](#welcome)
+- [Our vision](#our-vision)
 - [Getting started](#getting-started)
 - [Selection criteria](#selection-criteria)
 - [Articles](#articles)
@@ -101,10 +132,12 @@ Game agents operate in virtual environments through observations, game APIs, or 
 
 ## Getting started
 
-- **Read:** Explore [game-agent papers](#game-agents) on world models, exploration, memory, and control, or [embodied-agent papers](#embodied-agents) on robot policies and planning.
-- **Build:** Find [open-source projects](#projects) for data collection, policy training, and environment interfaces.
-- **Evaluate:** Choose [benchmarks and environments](#benchmarks), then align observation access, action spaces, training budgets, and evaluation protocols.
-- **Contribute:** Follow the [contribution guide](CONTRIBUTING.md) to propose a resource with official sources and a clear inclusion rationale.
+- **Explore the live collection:** Search and filter the [interactive website](${data.meta.siteUrl}) by domain, topic, year, contribution type, and code availability.
+- **Follow a research thread:** Start with [game-agent papers](#game-agents) on world models, exploration, memory, and control, or [embodied-agent papers](#embodied-agents) on robot policies and planning.
+- **Build and reproduce:** Find [open-source projects](#projects), [datasets](#datasets), and source-linked implementations for data collection, policy training, and environment interfaces.
+- **Evaluate carefully:** Browse [benchmarks and environments](#benchmarks), then align observation access, action spaces, training budgets, hardware, and evaluation protocols.
+- **See agents in action:** Watch [official-source video demonstrations](#video-demos) from gameplay, generated worlds, simulation, and real robots.
+- **Join the community:** Follow the friendly [contribution guide](CONTRIBUTING.md) to recommend a resource, improve a record, or report a problem.
 
 ## Selection criteria
 
@@ -256,6 +289,8 @@ const changelog = `# Collection updates\n\nCollection-history baseline: **${hist
 await fs.writeFile('CHANGELOG.md', changelog);
 await fs.mkdir('dist/docs', { recursive: true });
 for (const f of ['README.md', 'CONTRIBUTING.md', 'LICENSE', 'CITATION.cff', 'CHANGELOG.md']) await fs.copyFile(f, 'dist/' + f);
+await fs.mkdir('dist/docs/assets', { recursive: true });
+await fs.copyFile('docs/assets/future-vision.png', 'dist/docs/assets/future-vision.png');
 await fs.copyFile('data/updates.json', 'dist/updates.json');
 await fs.writeFile('dist/maintenance.json', JSON.stringify(maintenance, null, 2) + '\n');
 await fs.copyFile('docs/collection-policy.md', 'dist/docs/collection-policy.md');

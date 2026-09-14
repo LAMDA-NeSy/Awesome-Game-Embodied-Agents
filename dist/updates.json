@@ -2,6 +2,13 @@
   "baselineDate": "2026-09-14",
   "entries": [
     {
+      "id": "2026-09-14-community-readme-vision",
+      "date": "2026-09-14",
+      "title": "A warmer welcome and a shared future vision",
+      "summary": "Expanded the repository welcome, community contribution paths, and long-term vision, with a new illustration connecting virtual experience, shared agent methods, and physical-world learning.",
+      "type": "Community update"
+    },
+    {
       "id": "2026-09-14-catalogue-refresh",
       "date": "2026-09-14",
       "title": "Clearer records, a lighter reading experience",

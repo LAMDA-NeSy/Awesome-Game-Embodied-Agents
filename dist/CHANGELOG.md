@@ -2,6 +2,10 @@
 
 Collection-history baseline: **2026-09-14**. Added and revised dates describe this index, independently of publication dates and metric retrieval dates.
 
+## 2026-09-14 · A warmer welcome and a shared future vision
+
+Community update. Expanded the repository welcome, community contribution paths, and long-term vision, with a new illustration connecting virtual experience, shared agent methods, and physical-world learning.
+
 ## 2026-09-14 · Clearer records, a lighter reading experience
 
 Website update. Labeled source dates, consistent category counts, separate date and venue-year sorting, and collection history. Weekly source-link checks and citation/star refreshes keep existing records current.
