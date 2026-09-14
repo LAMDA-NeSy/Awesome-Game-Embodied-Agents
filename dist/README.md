@@ -126,9 +126,9 @@
 
 ## Website
 
-[展示网站](https://awesome-game-embodied-agents.chengrenmin76.chatgpt.site) · [GitHub 项目](https://github.com/labixiaoQ/Awesome-Game-Embodied-Agents)
+[展示网站](https://labixiaoq.github.io/Awesome-Game-Embodied-Agents/) · [GitHub 项目](https://github.com/labixiaoQ/Awesome-Game-Embodied-Agents)
 
-初始展示网站和仓库均为私有，按账号权限访问。
+展示网站由 GitHub Pages 托管，网页公开访问。
 
 无需第三方前端依赖。Node.js 20+：
 
@@ -143,8 +143,9 @@ npm run dev
 - 内容入口：`data/resources.json`。
 - 网站输出：`dist/`，可部署到任意静态托管。
 - 生成步骤会同步 README、静态页面和网站数据；不要直接修改生成的列表。
-- `.openai/hosting.json` 记录当前 Sites 托管绑定。复制项目另建 Sites 时应移除旧绑定。
-- 本仓库附带手动触发的 GitHub Pages 工作流；启用 Pages 并选择 GitHub Actions 后可使用。当前默认交付不依赖 Pages。
+- 网站通过 GitHub Pages 发布。仓库 Settings → Pages 中的发布来源选择 GitHub Actions。
+- 更新并推送到 `main` 后自动检查、构建和发布；也可在 Actions → Publish GitHub Pages 中手动运行。
+- 新部署状态可在仓库 Actions 查看；复制仓库时请同步修改 `data/resources.json` 中的网站和仓库地址。
 
 ## License & attribution
 
