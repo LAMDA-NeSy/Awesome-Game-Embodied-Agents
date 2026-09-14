@@ -1,19 +1,19 @@
 {
   "metricsRefresh": {
-    "checkedAt": "2026-09-14T14:40:29.628Z",
+    "checkedAt": "2026-09-14T15:05:04.252Z",
     "total": 89,
     "refreshed": 89,
     "preserved": 0,
     "failures": []
   },
   "linkCheck": {
-    "checkedAt": "2026-09-14T14:48:40.927Z",
+    "checkedAt": "2026-09-14T15:05:56.260Z",
     "total": 194,
     "summary": {
-      "ok": 176,
+      "ok": 184,
       "broken": 0,
-      "restricted": 6,
-      "unreachable": 12
+      "restricted": 10,
+      "unreachable": 0
     },
     "results": [
       {
@@ -336,16 +336,16 @@
         "resourceIds": [
           "survey-foundation-robotics"
         ],
-        "status": "ok",
-        "httpStatus": 200
+        "status": "restricted",
+        "httpStatus": 403
       },
       {
         "url": "https://doi.org/10.1177/02783649251390579",
         "resourceIds": [
           "survey-foundation-manipulation"
         ],
-        "status": "ok",
-        "httpStatus": 200
+        "status": "restricted",
+        "httpStatus": 403
       },
       {
         "url": "https://droid-dataset.github.io/",
@@ -522,8 +522,8 @@
         "resourceIds": [
           "kb-w03"
         ],
-        "status": "unreachable",
-        "httpStatus": 504
+        "status": "ok",
+        "httpStatus": 200
       },
       {
         "url": "https://github.com/IranQin/MP5",
@@ -679,40 +679,40 @@
         "resourceIds": [
           "kb-b01"
         ],
-        "status": "unreachable",
-        "httpStatus": 504
+        "status": "ok",
+        "httpStatus": 200
       },
       {
         "url": "https://huggingface.co/blog/lerobot-release-v060",
         "resourceIds": [
           "article-lerobot"
         ],
-        "status": "unreachable",
-        "reason": "connection failed"
+        "status": "ok",
+        "httpStatus": 200
       },
       {
         "url": "https://huggingface.co/EmbodiedBench",
         "resourceIds": [
           "embodiedbench"
         ],
-        "status": "unreachable",
-        "reason": "connection failed"
+        "status": "ok",
+        "httpStatus": 200
       },
       {
         "url": "https://huggingface.co/openvla",
         "resourceIds": [
           "openvla"
         ],
-        "status": "unreachable",
-        "reason": "connection failed"
+        "status": "ok",
+        "httpStatus": 200
       },
       {
         "url": "https://huggingface.co/rail-berkeley",
         "resourceIds": [
           "octo"
         ],
-        "status": "unreachable",
-        "reason": "connection failed"
+        "status": "ok",
+        "httpStatus": 200
       },
       {
         "url": "https://iclr.cc/virtual/2026/poster/10007816",
@@ -743,24 +743,24 @@
         "resourceIds": [
           "survey-foundation-robotics"
         ],
-        "status": "unreachable",
-        "reason": "connection failed"
+        "status": "restricted",
+        "httpStatus": 403
       },
       {
         "url": "https://journals.sagepub.com/doi/10.1177/02783649251390579",
         "resourceIds": [
           "survey-foundation-manipulation"
         ],
-        "status": "unreachable",
-        "reason": "connection failed"
+        "status": "restricted",
+        "httpStatus": 403
       },
       {
         "url": "https://journals.sagepub.com/history/e3eb5469-f176-4c99-8231-efe683fe6399/02783649241281508.17904978.pdf",
         "resourceIds": [
           "survey-foundation-robotics"
         ],
-        "status": "unreachable",
-        "reason": "connection failed"
+        "status": "restricted",
+        "httpStatus": 403
       },
       {
         "url": "https://minedojo.org/",
@@ -888,8 +888,8 @@
         "resourceIds": [
           "demo-openvla"
         ],
-        "status": "unreachable",
-        "reason": "timeout"
+        "status": "ok",
+        "httpStatus": 200
       },
       {
         "url": "https://proceedings.iclr.cc/paper_files/paper/2024/file/cfea00ddf5a5f514bd3368d639d1933d-Paper-Conference.pdf",
@@ -1408,16 +1408,16 @@
         "resourceIds": [
           "kb-b02"
         ],
-        "status": "unreachable",
-        "reason": "connection failed"
+        "status": "ok",
+        "httpStatus": 200
       },
       {
         "url": "https://sites.google.com/view/rate-model/",
         "resourceIds": [
           "kb-t02"
         ],
-        "status": "unreachable",
-        "reason": "connection failed"
+        "status": "ok",
+        "httpStatus": 200
       },
       {
         "url": "https://tonyzhaozh.github.io/aloha/",
@@ -1475,8 +1475,8 @@
         "resourceIds": [
           "article-robot-use"
         ],
-        "status": "restricted",
-        "httpStatus": 403
+        "status": "ok",
+        "httpStatus": 200
       },
       {
         "url": "https://www.ijcai.org/proceedings/2025/0074.pdf",
