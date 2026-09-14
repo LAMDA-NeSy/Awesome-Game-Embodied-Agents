@@ -1,4 +1,4 @@
-import { renderCatalogue, filterResources, escapeHtml } from './catalog.mjs?v=94a5b3470e1c';
+import { renderCatalogue, filterResources, escapeHtml } from './catalog.mjs?v=baed06279e0f';
 const $ = s => document.querySelector(s);
 const labels = {all:'All resources',articles:'Research articles',papers:'Papers',projects:'Open-source projects',datasets:'Datasets',benchmarks:'Benchmarks & environments',demos:'Video demos',about:'Collection policy',updates:'What’s new'};
 const defaults = {view:'all',domain:'all',topic:'all',year:'all',sort:'featured',query:'',candidates:false,code:false,paperType:'all',demoType:'all'};
