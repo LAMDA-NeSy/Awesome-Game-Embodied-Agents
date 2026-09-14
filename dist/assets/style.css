@@ -84,4 +84,4 @@ a:hover{color:#284b3b}a:focus-visible,button:focus-visible,input:focus-visible,s
 
 @media(max-width:760px){.header-links a[href="#updates"],.header-links a[href="#about"]{display:inline-flex}.brand>span:last-child{max-width:none;white-space:nowrap}.filter-toggle{padding:7px 10px;gap:5px}.domain-tabs button{padding:7px 9px}}
 @media(max-width:380px){.brand>span:last-child{display:none}}
-@media(min-width:761px){.paper-sidebar{display:flex;flex-direction:column}.paper-stats{flex:1;align-content:space-between;row-gap:14px;max-height:340px}.metrics-updated{margin-top:14px}}
+@media(min-width:761px){.paper-sidebar{display:flex;flex-direction:column;justify-content:center}.paper-stats{flex:0 0 auto;align-content:start;row-gap:8px}.metrics-updated{margin-top:8px}}
