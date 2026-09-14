@@ -60,7 +60,15 @@ for(const r of data.resources){
   if(kind==='citations')assert(m.recordTitle,`Missing indexed title: ${r.id}`);
   if(kind==='github')assert(m.repository,`Missing repository identity: ${r.id}`);
  }
+ for(const institution of r.institutions||[]){
+  assert(institution.name&&safeUrl(institution.url)&&institution.mark,`Invalid institution metadata: ${r.id}`);
+  if(institution.logo){
+   assert(/^assets\/institutions\/[a-z0-9-]+\.(png|svg)$/.test(institution.logo),`Invalid institution logo path: ${r.id}`);
+   await fs.access('dist/'+institution.logo);
+  }
+ }
 }
+assert(selected.filter(r=>r.kinds.includes('papers')&&r.institutions?.length).length>=15,'Too few verified paper affiliations');
 // Missing and measured-zero counts must remain distinct in the user-facing rows.
 const specimen=structuredClone(selected.find(r=>r.kinds.includes('papers')));
 specimen.metrics={citations:{value:null},github:{value:null}};
@@ -79,6 +87,8 @@ const selectedPreprint=selected.find(r=>r.kinds.includes('papers')&&r.selectionT
 assert(selectedPreprint&&renderCard(selectedPreprint).includes('Selected preprint'),'Selected preprints must keep their review-status label');
 const candidatePaper=data.resources.find(r=>r.status==='candidate'&&r.kinds.includes('papers'));
 assert(candidatePaper&&renderCard(candidatePaper).includes('Candidate · pending review'),'Candidate papers must keep their pending-review label');
+const affiliatedPaper=selected.find(r=>r.kinds.includes('papers')&&r.institutions?.some(item=>item.logo));
+assert(affiliatedPaper&&renderCard(affiliatedPaper).includes('class="paper-institutions"'),'Verified paper affiliations must render after source links');
 assert(filterResources(data.resources,{query:'Hafner',candidates:false,view:'papers',domain:'all',topic:'all',year:'all',sort:'featured'}).some(r=>r.id==='kb-g05'),'Author search failed');
 // Venue year, source date, and collection history describe different timelines.
 const dates=[

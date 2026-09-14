@@ -107,6 +107,16 @@ function renderStarBadge(r) {
   const metric=r.metrics?.github;
   return hasCount(metric?.value) && safeUrl(metric.sourceUrl) ? `<a class="github-star-badge" href="${escapeHtml(metric.sourceUrl)}" target="_blank" rel="noopener noreferrer" title="GitHub stars · checked ${escapeHtml(metric.updatedAt)}">${icon('stars')} ${formatCount(metric.value)} stars</a>` : '';
 }
+function renderInstitutions(r) {
+  const institutions=(r.institutions||[]).filter(item=>item?.name&&safeUrl(item.url));
+  if(!institutions.length)return '';
+  const names=institutions.map(item=>item.name).join(', ');
+  const marks=institutions.map(item=>{
+    const logo=/^assets\/institutions\/[a-z0-9-]+\.(?:png|svg)$/.test(item.logo||'')?`<img src="${escapeHtml(item.logo)}" alt="" width="24" height="24" loading="lazy" decoding="async">`:`<span class="institution-mark" aria-hidden="true">${escapeHtml(item.mark||item.name.slice(0,3))}</span>`;
+    return `<a class="institution-link" href="${escapeHtml(safeUrl(item.url))}" target="_blank" rel="noopener noreferrer" aria-label="${escapeHtml(item.name)}" title="${escapeHtml(item.name)}">${logo}</a>`;
+  }).join('');
+  return `<span class="paper-institutions" role="group" aria-label="Affiliations: ${escapeHtml(names)}"><span class="institution-label">Affiliations</span>${marks}</span>`;
+}
 function metricLink(url,label,type,metric) {
   const isMetric=type==='citations'||type==='stars';
   if(!safeUrl(url)||(isMetric&&!hasCount(metric?.value))){
@@ -139,7 +149,7 @@ function renderPaper(r,lookup) {
     <div class="resource-body paper-body"><h3><a href="${escapeHtml(safeUrl(r.links.paper))}" target="_blank" rel="noopener noreferrer">${escapeHtml(r.title+shortName)}</a></h3>
     <p class="paper-byline">${date.value?`<span class="paper-date" title="${escapeHtml(date.meaning)}"><span class="date-label">${escapeHtml(date.label)}</span> <time datetime="${escapeHtml(date.value)}">${escapeHtml(date.value)}</time></span>`:''}${shownAuthors?`<span class="paper-authors" title="${escapeHtml(authors.join(', '))}">${escapeHtml(shownAuthors)}</span>`:''}</p>
     <p class="summary">${escapeHtml(r.summary)}</p>
-    <nav class="paper-actions" aria-label="Read ${escapeHtml(r.name)}">${externalLink(r.links.paper,'Paper')}${externalLink(r.links.pdf,'PDF')}${externalLink(r.links.project,'Project')}${externalLink(r.links.video,'Video')}${(lookup.size && [...lookup.values()].some(item=>item.kinds.includes('demos') && item.relatedIds?.includes(r.id)))?`<a href="#demos?q=${encodeURIComponent(r.name.split(' / ')[0])}">Watch demos ▷</a>`:''}</nav>
+    <nav class="paper-actions" aria-label="Read ${escapeHtml(r.name)}">${externalLink(r.links.paper,'Paper')}${externalLink(r.links.pdf,'PDF')}${externalLink(r.links.project,'Project')}${externalLink(r.links.video,'Video')}${(lookup.size && [...lookup.values()].some(item=>item.kinds.includes('demos') && item.relatedIds?.includes(r.id)))?`<a href="#demos?q=${encodeURIComponent(r.name.split(' / ')[0])}">Watch demos ▷</a>`:''}${renderInstitutions(r)}</nav>
     <div class="tags">${r.tags.map(t=>`<span>${escapeHtml(t)}</span>`).join('')}</div>
     <details><summary>Details &amp; sources</summary>${field('Authors',authors.join(', '))}${field('Project name',r.name)}${field('PDF preview version',b.previewVersion)}${b.sourceUrl?`<p><b>Bibliographic source:</b> ${externalLink(b.sourceUrl,b.source || 'Official publication record')}</p>`:''}${field(b.dateLabel||'Publication date',b.date)}${field('Credit',r.credit)}${field('Original knowledge-base review label',r.sourceEvidence)}${field('Publication note',r.publicationNote)}${r.influenceSources?.length?`<p>Evidence for editorial selection: ${r.influenceSources.map(s=>externalLink(s,'Official research report')).join(' · ')}</p>`:''}${b.bibtex?`<details class="citation-details"><summary>BibTeX citation</summary><pre class="bibtex"><code>${escapeHtml(b.bibtex)}</code></pre><button class="copy-citation" type="button" hidden>Copy BibTeX</button><span class="copy-status" role="status"></span></details>`:''}<p class="checked-date">Sources checked ${escapeHtml(r.checkedAt)}${r.sourceId?` · Knowledge-base ID ${escapeHtml(r.sourceId)}`:''}</p>${collectionDates(r)}${relatedLinks(r,lookup)}</details></div>
 ${stats?`<aside class="paper-sidebar" aria-label="Resources and statistics for ${escapeHtml(r.name)}"><nav class="paper-stats">${stats}</nav>${sourceNote}</aside>`:''}

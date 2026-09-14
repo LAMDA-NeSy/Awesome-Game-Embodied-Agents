@@ -33,6 +33,14 @@
   "resources": [
     {
       "id": "kb-g05",
+      "institutions": [
+        {
+          "name": "Google DeepMind",
+          "url": "https://deepmind.google/",
+          "logo": "assets/institutions/google-deepmind.png",
+          "mark": "DM"
+        }
+      ],
       "name": "DreamerV3",
       "title": "Mastering diverse control tasks through world models",
       "domains": [
@@ -618,6 +626,14 @@
     },
     {
       "id": "kb-w01",
+      "institutions": [
+        {
+          "name": "Google Research",
+          "url": "https://research.google/",
+          "logo": "assets/institutions/google-research.svg",
+          "mark": "G"
+        }
+      ],
       "name": "GameNGen",
       "title": "Diffusion Models Are Real-Time Game Engines",
       "domains": [
@@ -1805,6 +1821,14 @@
     },
     {
       "id": "vpt",
+      "institutions": [
+        {
+          "name": "OpenAI",
+          "url": "https://openai.com/",
+          "logo": "assets/institutions/openai.png",
+          "mark": "OAI"
+        }
+      ],
       "name": "Video PreTraining",
       "title": "Video PreTraining (VPT): Learning to Act by Watching Unlabeled Online Videos",
       "domains": [
@@ -1933,6 +1957,25 @@
     },
     {
       "id": "openvla",
+      "institutions": [
+        {
+          "name": "Stanford University",
+          "url": "https://www.stanford.edu/",
+          "logo": "assets/institutions/stanford.png",
+          "mark": "SU"
+        },
+        {
+          "name": "University of California, Berkeley",
+          "url": "https://www.berkeley.edu/",
+          "mark": "UCB"
+        },
+        {
+          "name": "Toyota Research Institute",
+          "url": "https://www.tri.global/",
+          "logo": "assets/institutions/toyota-research-institute.svg",
+          "mark": "TRI"
+        }
+      ],
       "name": "OpenVLA",
       "title": "OpenVLA: An Open-Source Vision-Language-Action Model",
       "domains": [
@@ -2017,6 +2060,13 @@
     },
     {
       "id": "diffusion-policy",
+      "institutions": [
+        {
+          "name": "Columbia University",
+          "url": "https://www.columbia.edu/",
+          "mark": "CU"
+        }
+      ],
       "name": "Diffusion Policy",
       "title": "Diffusion Policy: Visuomotor Policy Learning via Action Diffusion",
       "domains": [
@@ -2090,6 +2140,14 @@
     },
     {
       "id": "act",
+      "institutions": [
+        {
+          "name": "Stanford University",
+          "url": "https://www.stanford.edu/",
+          "logo": "assets/institutions/stanford.png",
+          "mark": "SU"
+        }
+      ],
       "name": "ACT / ALOHA",
       "title": "Learning Fine-Grained Bimanual Manipulation with Low-Cost Hardware",
       "domains": [
@@ -2159,6 +2217,13 @@
     },
     {
       "id": "octo",
+      "institutions": [
+        {
+          "name": "University of California, Berkeley",
+          "url": "https://www.berkeley.edu/",
+          "mark": "UCB"
+        }
+      ],
       "name": "Octo",
       "title": "Octo: An Open-Source Generalist Robot Policy",
       "domains": [
@@ -2243,6 +2308,14 @@
     },
     {
       "id": "rt2",
+      "institutions": [
+        {
+          "name": "Google DeepMind",
+          "url": "https://deepmind.google/",
+          "logo": "assets/institutions/google-deepmind.png",
+          "mark": "DM"
+        }
+      ],
       "name": "RT-2",
       "title": "RT-2: Vision-Language-Action Models Transfer Web Knowledge to Robotic Control",
       "domains": [
@@ -2353,6 +2426,14 @@
     },
     {
       "id": "voxposer",
+      "institutions": [
+        {
+          "name": "Stanford University",
+          "url": "https://www.stanford.edu/",
+          "logo": "assets/institutions/stanford.png",
+          "mark": "SU"
+        }
+      ],
       "name": "VoxPoser",
       "title": "VoxPoser: Composable 3D Value Maps for Robotic Manipulation with Language Models",
       "domains": [
@@ -2424,6 +2505,14 @@
     },
     {
       "id": "rekep",
+      "institutions": [
+        {
+          "name": "Stanford University",
+          "url": "https://www.stanford.edu/",
+          "logo": "assets/institutions/stanford.png",
+          "mark": "SU"
+        }
+      ],
       "name": "ReKep",
       "title": "ReKep: Spatio-Temporal Reasoning of Relational Keypoint Constraints for Robotic Manipulation",
       "domains": [
@@ -2495,6 +2584,14 @@
     },
     {
       "id": "hirobot",
+      "institutions": [
+        {
+          "name": "Google DeepMind",
+          "url": "https://deepmind.google/",
+          "logo": "assets/institutions/google-deepmind.png",
+          "mark": "DM"
+        }
+      ],
       "name": "Hi Robot",
       "title": "Hi Robot: Open-Ended Instruction Following with Hierarchical Vision-Language-Action Models",
       "domains": [
@@ -2958,6 +3055,14 @@
     },
     {
       "id": "sima2",
+      "institutions": [
+        {
+          "name": "Google DeepMind",
+          "url": "https://deepmind.google/",
+          "logo": "assets/institutions/google-deepmind.png",
+          "mark": "DM"
+        }
+      ],
       "name": "SIMA 2",
       "title": "SIMA 2: A Generalist Embodied Agent for Virtual Worlds",
       "domains": [
@@ -3086,6 +3191,14 @@
     },
     {
       "id": "pi-star06",
+      "institutions": [
+        {
+          "name": "Physical Intelligence",
+          "url": "https://www.physicalintelligence.company/",
+          "logo": "assets/institutions/physical-intelligence.svg",
+          "mark": "PI"
+        }
+      ],
       "name": "π*0.6 / RECAP",
       "title": "π*0.6: a VLA That Learns From Experience",
       "domains": [
@@ -4168,6 +4281,36 @@
     },
     {
       "id": "survey-foundation-manipulation",
+      "institutions": [
+        {
+          "name": "Samsung R&D Institute China-Beijing",
+          "url": "https://research.samsung.com/srcc",
+          "logo": "assets/institutions/samsung.svg",
+          "mark": "SR"
+        },
+        {
+          "name": "Beijing University of Posts and Telecommunications",
+          "url": "https://www.bupt.edu.cn/",
+          "mark": "BUPT"
+        },
+        {
+          "name": "Tsinghua University",
+          "url": "https://www.tsinghua.edu.cn/",
+          "logo": "assets/institutions/tsinghua.png",
+          "mark": "THU"
+        },
+        {
+          "name": "Southeast University",
+          "url": "https://www.seu.edu.cn/",
+          "mark": "SEU"
+        },
+        {
+          "name": "Universität Hamburg",
+          "url": "https://www.uni-hamburg.de/",
+          "logo": "assets/institutions/hamburg.png",
+          "mark": "UHH"
+        }
+      ],
       "name": "Foundation models for manipulation",
       "title": "What foundation models can bring for robot learning in manipulation: A survey",
       "domains": [
@@ -4242,6 +4385,14 @@
     },
     {
       "id": "minedojo",
+      "institutions": [
+        {
+          "name": "NVIDIA",
+          "url": "https://www.nvidia.com/",
+          "logo": "assets/institutions/nvidia.png",
+          "mark": "NV"
+        }
+      ],
       "name": "MineDojo",
       "title": "MineDojo: Building Open-Ended Embodied Agents with Internet-Scale Knowledge",
       "domains": [
@@ -4320,6 +4471,14 @@
     },
     {
       "id": "open-x-embodiment",
+      "institutions": [
+        {
+          "name": "Google DeepMind",
+          "url": "https://deepmind.google/",
+          "logo": "assets/institutions/google-deepmind.png",
+          "mark": "DM"
+        }
+      ],
       "name": "Open X-Embodiment",
       "title": "Open X-Embodiment: Robotic Learning Datasets and RT-X Models",
       "domains": [
@@ -4683,6 +4842,19 @@
     },
     {
       "id": "bridgedata-v2",
+      "institutions": [
+        {
+          "name": "University of California, Berkeley",
+          "url": "https://www.berkeley.edu/",
+          "mark": "UCB"
+        },
+        {
+          "name": "Stanford University",
+          "url": "https://www.stanford.edu/",
+          "logo": "assets/institutions/stanford.png",
+          "mark": "SU"
+        }
+      ],
       "name": "BridgeData V2",
       "title": "BridgeData V2: A Dataset for Robot Learning at Scale",
       "domains": [
@@ -4765,6 +4937,14 @@
     },
     {
       "id": "droid",
+      "institutions": [
+        {
+          "name": "Stanford University",
+          "url": "https://www.stanford.edu/",
+          "logo": "assets/institutions/stanford.png",
+          "mark": "SU"
+        }
+      ],
       "name": "DROID",
       "title": "DROID: A Large-Scale In-The-Wild Robot Manipulation Dataset",
       "domains": [
