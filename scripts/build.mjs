@@ -285,12 +285,108 @@ ${selected.filter(r => r.kinds.includes('demos')).map(r => `| **${md(r.name)}** 
 readme = readme.replace('## Papers\n', articleSection + '## Papers\n').replace('## Benchmarks\n', datasetSection + '## Benchmarks\n').replace('## Candidates\n', demoSection + '## Candidates\n');
 readme = readme.replace('## License\n', '## Citation\n\nIf this collection helps your work, cite the repository and the individual resources you use. A machine-readable [citation file](CITATION.cff) is included.\n\n## License\n');
 await fs.writeFile('README.md', readme);
+const conciseReadme = `<div align="center">
+
+<img src="docs/assets/readme-emblem.png" alt="Awesome Game & Embodied Agents emblem: a virtual game world connected to a robotic hand through a shared portal" width="180" />
+
+# Awesome Game & Embodied Agents
+
+[![Awesome](https://img.shields.io/badge/Awesome-List-173c31.svg?style=for-the-badge&labelColor=102c25&logo=awesomelists&logoColor=white)](https://awesome.re) [![Website](https://img.shields.io/badge/Website-Explore-173c31.svg?style=for-the-badge&labelColor=102c25&logo=githubpages&logoColor=white)](${data.meta.siteUrl}) [![Resources](https://img.shields.io/badge/Resources-${selected.length}-173c31.svg?style=for-the-badge&labelColor=102c25&logo=readthedocs&logoColor=white)](${data.meta.siteUrl}#all) [![Papers](https://img.shields.io/badge/Papers-${count('papers')}-173c31.svg?style=for-the-badge&labelColor=102c25&logo=arxiv&logoColor=white)](${data.meta.siteUrl}#papers) [![Demos](https://img.shields.io/badge/Demos-${count('demos')}-173c31.svg?style=for-the-badge&labelColor=102c25&logo=youtube&logoColor=white)](${data.meta.siteUrl}#demos)
+<br>
+[![PRs welcome](https://img.shields.io/badge/PRs-Welcome-c8a85b.svg?style=for-the-badge&labelColor=8b6c2e&logo=git&logoColor=white)](CONTRIBUTING.md) [![License: MIT](https://img.shields.io/badge/License-MIT-c8a85b.svg?style=for-the-badge&labelColor=8b6c2e)](LICENSE) [![GitHub Stars](https://img.shields.io/github/stars/labixiaoQ/Awesome-Game-Embodied-Agents?style=for-the-badge&label=Stars&labelColor=8b6c2e&color=c8a85b&logo=github&logoColor=white)](${data.meta.repositoryUrl})
+
+[Game research](${data.meta.siteUrl}#papers?domain=game) · [Embodied research](${data.meta.siteUrl}#papers?domain=embodied) · [Projects](${data.meta.siteUrl}#projects) · [Datasets](${data.meta.siteUrl}#datasets) · [Benchmarks](${data.meta.siteUrl}#benchmarks) · [Video demos](${data.meta.siteUrl}#demos)
+
+</div>
+
+> A curated research map for agents that **perceive, reason, learn, and act**—from virtual game worlds to simulated and physical robots.
+
+This repository connects game intelligence and embodied intelligence through papers, projects, datasets, benchmarks, and official demos. The full collection is designed for exploration on the [interactive website](${data.meta.siteUrl}); this README is the short guide.
+
+## Welcome
+
+Researchers, engineers, students, and curious builders are all welcome. If the collection saves you time, please consider giving it a ⭐ and sharing it with your lab, reading group, class, or collaborators.
+
+[![Open the website](https://img.shields.io/badge/Open_the_website-Explore-3975aa?style=flat-square&logo=githubpages&logoColor=white)](${data.meta.siteUrl}) [![Browse game papers](https://img.shields.io/badge/Game-Papers-4f7289?style=flat-square&logo=steam&logoColor=white)](${data.meta.siteUrl}#papers?domain=game) [![Browse embodied papers](https://img.shields.io/badge/Embodied-Papers-577148?style=flat-square&logo=ros&logoColor=white)](${data.meta.siteUrl}#papers?domain=embodied) [![Watch demos](https://img.shields.io/badge/Watch-Demos-b64b45?style=flat-square&logo=youtube&logoColor=white)](${data.meta.siteUrl}#demos)
+
+## Getting started
+
+- **Understand:** begin with [surveys](${data.meta.siteUrl}#papers?paperType=survey) and the collection’s topic filters.
+- **Explore:** compare game control, world models, language–action systems, VLA policies, planning, and robot learning.
+- **Build:** follow the linked [projects](${data.meta.siteUrl}#projects), code, models, and datasets to the original sources.
+- **Evaluate:** use [benchmarks](${data.meta.siteUrl}#benchmarks) while keeping observation access, action spaces, and task definitions aligned.
+- **Watch:** open the [video gallery](${data.meta.siteUrl}#demos) for official gameplay, generated-world, simulation, and real-robot demos.
+
+## Collection at a glance
+
+| Research path | Curated resources |
+| --- | ---: |
+| Papers | **${count('papers')}** |
+| Research articles | **${count('articles')}** |
+| Open-source projects | **${count('projects')}** |
+| Datasets | **${count('datasets')}** |
+| Benchmarks & environments | **${count('benchmarks')}** |
+| Video demos | **${count('demos')}** |
+
+The snapshot contains **${selected.length} unique curated resources** and **${candidates.length} candidates** awaiting review. Category counts overlap when one resource is both a paper and a dataset or benchmark.
+
+## Our vision
+
+<p align="center">
+  <a href="docs/assets/future-vision.png"><img src="docs/assets/future-vision.png" width="860" alt="Future vision: virtual game worlds and physical robots connected through shared world models, memory, language, planning, data, and continual learning" /></a>
+</p>
+
+We want this collection to become a shared research map: traceable enough for careful comparison, approachable enough for newcomers, and open enough for the community to improve together.
+
+## Selection criteria
+
+| Track | Window | Standard |
+| --- | --- | --- |
+| Leading conferences & journals | ${data.meta.paperWindow.from} – ${data.meta.paperWindow.to} | Relevant publication with an official record |
+| Important recent arXiv research | ${data.meta.arxivWindow.from} – ${data.meta.arxivWindow.to} | Clear influence or significance with supporting evidence |
+| Tools & environments | Current research use | Official purpose, interfaces, and setup information |
+
+Priority venues include NeurIPS, ICLR, ICML, CVPR, ICCV, ECCV, AAAI, IJCAI, CoRL, RSS, ICRA, IROS, Nature, Science, T-RO, IJRR, TPAMI, JMLR, and TMLR. Read the [full collection policy](docs/collection-policy.md) and [metadata notes](docs/metadata.md).
+
+## 🤝 Contributing
+
+Suggestions, corrections, new papers, working demos, and better summaries are welcome. Please read [CONTRIBUTING.md](CONTRIBUTING.md) or [open an issue](${data.meta.repositoryUrl}/issues).
+
+[![Suggest a resource](https://img.shields.io/badge/Suggest-a_resource-268675?style=flat-square&logo=github)](${data.meta.repositoryUrl}/issues) [![Improve the collection](https://img.shields.io/badge/Improve-the_collection-956b27?style=flat-square&logo=git)](CONTRIBUTING.md) [![What’s new](https://img.shields.io/badge/What's_new-Updates-666666?style=flat-square&logo=rss)](${data.meta.siteUrl}#updates)
+
+## 📖 Citation
+
+If this collection helps your work, cite the repository and the individual resources you use. A machine-readable [CITATION.cff](CITATION.cff) is included.
+
+${'```'}bibtex
+@misc{awesome-game-embodied-agents,
+  title  = {Awesome Game & Embodied Agents},
+  author = {labixiaoQ and contributors},
+  year   = {2026},
+  url    = {${data.meta.repositoryUrl}}
+}
+${'```'}
+
+## 🙏 Acknowledgements
+
+The game research starts from the supplied [Game Agent knowledge base](${data.meta.knowledgeUrl}). Additional game and embodied resources come from official papers, project sites, and repositories. The organization and presentation are inspired by [Awesome Robot Use Agent](${data.meta.referenceUrl}) by [Kairun Wen](https://github.com/kairunwen).
+
+Original project code is released under the [MIT License](LICENSE). Papers, code, models, datasets, logos, and demos retain their respective rights.
+
+<div align="center">
+
+**If this research map is useful, a ⭐ helps more people find it.**
+
+</div>
+`;
+await fs.writeFile('README.md', conciseReadme);
 const changelog = `# Collection updates\n\nCollection-history baseline: **${history.baselineDate}**. Added and revised dates describe this index, independently of publication dates and metric retrieval dates.\n\n` + history.entries.map(entry => `## ${entry.date} · ${entry.title}\n\n${entry.type}. ${entry.summary}\n`).join('\n');
 await fs.writeFile('CHANGELOG.md', changelog);
 await fs.mkdir('dist/docs', { recursive: true });
 for (const f of ['README.md', 'CONTRIBUTING.md', 'LICENSE', 'CITATION.cff', 'CHANGELOG.md']) await fs.copyFile(f, 'dist/' + f);
 await fs.mkdir('dist/docs/assets', { recursive: true });
 await fs.copyFile('docs/assets/future-vision.png', 'dist/docs/assets/future-vision.png');
+await fs.copyFile('docs/assets/readme-emblem.png', 'dist/docs/assets/readme-emblem.png');
 await fs.copyFile('data/updates.json', 'dist/updates.json');
 await fs.writeFile('dist/maintenance.json', JSON.stringify(maintenance, null, 2) + '\n');
 await fs.copyFile('docs/collection-policy.md', 'dist/docs/collection-policy.md');
