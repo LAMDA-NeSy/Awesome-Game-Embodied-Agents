@@ -4,7 +4,7 @@
 
 # Awesome Game & Embodied Agents
 
-[![Awesome](https://img.shields.io/badge/Awesome-List-173c31.svg?style=for-the-badge&labelColor=102c25&logo=awesomelists&logoColor=white)](https://awesome.re) [![Website](https://img.shields.io/badge/Website-Explore-173c31.svg?style=for-the-badge&labelColor=102c25&logo=githubpages&logoColor=white)](https://labixiaoq.github.io/Awesome-Game-Embodied-Agents/) [![Resources](https://img.shields.io/badge/Resources-72-173c31.svg?style=for-the-badge&labelColor=102c25&logo=readthedocs&logoColor=white)](https://labixiaoq.github.io/Awesome-Game-Embodied-Agents/#all) [![Papers](https://img.shields.io/badge/Papers-49-173c31.svg?style=for-the-badge&labelColor=102c25&logo=arxiv&logoColor=white)](https://labixiaoq.github.io/Awesome-Game-Embodied-Agents/#papers) [![Demos](https://img.shields.io/badge/Demos-8-173c31.svg?style=for-the-badge&labelColor=102c25&logo=youtube&logoColor=white)](https://labixiaoq.github.io/Awesome-Game-Embodied-Agents/#demos)
+[![Awesome](https://img.shields.io/badge/Awesome-List-173c31.svg?style=for-the-badge&labelColor=102c25&logo=awesomelists&logoColor=white)](https://awesome.re) [![Website](https://img.shields.io/badge/Website-Explore-173c31.svg?style=for-the-badge&labelColor=102c25&logo=githubpages&logoColor=white)](https://labixiaoq.github.io/Awesome-Game-Embodied-Agents/) [![Resources](https://img.shields.io/badge/Resources-109-173c31.svg?style=for-the-badge&labelColor=102c25&logo=readthedocs&logoColor=white)](https://labixiaoq.github.io/Awesome-Game-Embodied-Agents/#all) [![Papers](https://img.shields.io/badge/Papers-77-173c31.svg?style=for-the-badge&labelColor=102c25&logo=arxiv&logoColor=white)](https://labixiaoq.github.io/Awesome-Game-Embodied-Agents/#papers) [![Demos](https://img.shields.io/badge/Demos-17-173c31.svg?style=for-the-badge&labelColor=102c25&logo=youtube&logoColor=white)](https://labixiaoq.github.io/Awesome-Game-Embodied-Agents/#demos)
 <br>
 [![PRs welcome](https://img.shields.io/badge/PRs-Welcome-c8a85b.svg?style=for-the-badge&labelColor=8b6c2e&logo=git&logoColor=white)](CONTRIBUTING.md) [![License: MIT](https://img.shields.io/badge/License-MIT-c8a85b.svg?style=for-the-badge&labelColor=8b6c2e)](LICENSE) [![GitHub Stars](https://img.shields.io/github/stars/labixiaoQ/Awesome-Game-Embodied-Agents?style=for-the-badge&label=Stars&labelColor=8b6c2e&color=c8a85b&logo=github&logoColor=white)](https://github.com/labixiaoQ/Awesome-Game-Embodied-Agents)
 
@@ -34,14 +34,14 @@ Researchers, engineers, students, and curious builders are all welcome. If the c
 
 | Research path | Curated resources |
 | --- | ---: |
-| Papers | **49** |
+| Papers | **77** |
 | Research articles | **6** |
 | Open-source projects | **5** |
 | Datasets | **4** |
 | Benchmarks & environments | **8** |
-| Video demos | **8** |
+| Video demos | **17** |
 
-The snapshot contains **72 unique curated resources** and **8 candidates** awaiting review. Category counts overlap when one resource is both a paper and a dataset or benchmark.
+The snapshot contains **109 unique curated resources** and **8 candidates** awaiting review. Category counts overlap when one resource is both a paper and a dataset or benchmark.
 
 ## Our vision
 

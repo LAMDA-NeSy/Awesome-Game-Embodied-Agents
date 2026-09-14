@@ -20,11 +20,11 @@
     "referenceUrl": "https://github.com/kairunwen/Awesome-Robot-Use-Agent#projects",
     "counts": {
       "articles": 6,
-      "papers": 49,
+      "papers": 77,
       "projects": 5,
       "datasets": 4,
       "benchmarks": 8,
-      "demos": 8
+      "demos": 17
     },
     "repositoryUrl": "https://github.com/labixiaoQ/Awesome-Game-Embodied-Agents",
     "siteUrl": "https://labixiaoq.github.io/Awesome-Game-Embodied-Agents/",
@@ -2049,7 +2049,7 @@
           "recordTitle": "OpenVLA: An Open-Source Vision-Language-Action Model"
         },
         "github": {
-          "value": 7008,
+          "value": 7009,
           "source": "GitHub",
           "sourceUrl": "https://github.com/openvla/openvla/stargazers",
           "repository": "openvla/openvla",
@@ -2129,7 +2129,7 @@
           "recordTitle": "Diffusion Policy: Visuomotor Policy Learning via Action Diffusion"
         },
         "github": {
-          "value": 4541,
+          "value": 4543,
           "source": "GitHub",
           "sourceUrl": "https://github.com/real-stanford/diffusion_policy/stargazers",
           "repository": "real-stanford/diffusion_policy",
@@ -2297,7 +2297,7 @@
           "recordTitle": "Octo: An Open-Source Generalist Robot Policy"
         },
         "github": {
-          "value": 1772,
+          "value": 1773,
           "source": "GitHub",
           "sourceUrl": "https://github.com/octo-models/octo/stargazers",
           "repository": "octo-models/octo",
@@ -3348,7 +3348,7 @@
       "selectionReason": "Standalone open-source tool or environment supporting research and reproduction; excluded from paper-window statistics.",
       "metrics": {
         "github": {
-          "value": 27477,
+          "value": 27476,
           "source": "GitHub",
           "sourceUrl": "https://github.com/huggingface/lerobot/stargazers",
           "repository": "huggingface/lerobot",
@@ -3390,7 +3390,7 @@
       "selectionReason": "Standalone open-source tool or environment supporting research and reproduction; excluded from paper-window statistics.",
       "metrics": {
         "github": {
-          "value": 13795,
+          "value": 13796,
           "source": "GitHub",
           "sourceUrl": "https://github.com/Physical-Intelligence/openpi/stargazers",
           "repository": "Physical-Intelligence/openpi",
@@ -3517,7 +3517,7 @@
       "selectionReason": "Standalone open-source tool or environment supporting research and reproduction; excluded from paper-window statistics.",
       "metrics": {
         "github": {
-          "value": 29946,
+          "value": 29948,
           "source": "GitHub",
           "sourceUrl": "https://github.com/Genesis-Embodied-AI/genesis-world/stargazers",
           "repository": "Genesis-Embodied-AI/genesis-world",
@@ -4460,7 +4460,7 @@
           "recordTitle": "MineDojo: Building Open-Ended Embodied Agents with Internet-Scale Knowledge"
         },
         "github": {
-          "value": 2257,
+          "value": 2256,
           "source": "GitHub",
           "sourceUrl": "https://github.com/MineDojo/MineDojo/stargazers",
           "repository": "MineDojo/MineDojo",
@@ -5100,7 +5100,7 @@
           "recordTitle": "DROID: A Large-Scale In-The-Wild Robot Manipulation Dataset"
         },
         "github": {
-          "value": 440,
+          "value": 441,
           "source": "GitHub",
           "sourceUrl": "https://github.com/droid-dataset/droid/stargazers",
           "repository": "droid-dataset/droid",
@@ -5574,7 +5574,7 @@
       ],
       "metrics": {
         "github": {
-          "value": 7008,
+          "value": 7009,
           "source": "GitHub",
           "sourceUrl": "https://github.com/openvla/openvla/stargazers",
           "repository": "openvla/openvla",
@@ -5668,7 +5668,7 @@
       ],
       "metrics": {
         "github": {
-          "value": 4541,
+          "value": 4543,
           "source": "GitHub",
           "sourceUrl": "https://github.com/real-stanford/diffusion_policy/stargazers",
           "repository": "real-stanford/diffusion_policy",
@@ -5720,13 +5720,2884 @@
       ],
       "metrics": {
         "github": {
-          "value": 4541,
+          "value": 4543,
           "source": "GitHub",
           "sourceUrl": "https://github.com/real-stanford/diffusion_policy/stargazers",
           "repository": "real-stanford/diffusion_policy",
           "updatedAt": "2026-09-14"
         }
       },
+      "addedAt": "2026-09-14",
+      "updatedAt": "2026-09-14"
+    },
+    {
+      "id": "efficientzero",
+      "institutions": [
+        {
+          "name": "Tsinghua University",
+          "url": "https://www.tsinghua.edu.cn/en/",
+          "logo": "assets/institutions/tsinghua.png",
+          "mark": "THU"
+        },
+        {
+          "name": "University of California, Berkeley",
+          "url": "https://www.berkeley.edu/",
+          "mark": "UCB"
+        }
+      ],
+      "name": "EfficientZero",
+      "title": "Mastering Atari Games with Limited Data",
+      "domains": [
+        "game"
+      ],
+      "kinds": [
+        "papers"
+      ],
+      "year": 2021,
+      "venue": "NeurIPS 2021",
+      "summary": "Adds value-prefix prediction and consistency learning to MuZero, reaching strong Atari 100k performance from roughly two hours of experience.",
+      "tags": [
+        "Atari",
+        "Model-based RL"
+      ],
+      "environment": "Atari 100k and DeepMind Control Suite.",
+      "interface": "Pixels and rewards feed a learned dynamics model; Monte Carlo tree search selects discrete actions.",
+      "limits": "Atari 100k is a fixed low-data protocol. Reported normalized scores do not imply transfer to unseen games or robust real-time play.",
+      "status": "selected",
+      "evidence": "Official bibliographic metadata checked; experiments not independently reproduced.",
+      "sourceType": "supplement",
+      "checkedAt": "2026-09-14",
+      "links": {
+        "paper": "https://proceedings.neurips.cc/paper/2021/hash/d5eca8dc3820cad9fe56a3bafda65ca1-Abstract.html",
+        "code": "https://github.com/YeWR/EfficientZero",
+        "pdf": "https://proceedings.neurips.cc/paper_files/paper/2021/file/d5eca8dc3820cad9fe56a3bafda65ca1-Paper.pdf"
+      },
+      "rank": 31,
+      "selectionTrack": "peer-reviewed",
+      "selectionReason": "Representative conference or journal paper within the five-year window; official publication record verified.",
+      "paperType": "method",
+      "bibliography": {
+        "source": "Publisher",
+        "sourceUrl": "https://proceedings.neurips.cc/paper/2021/hash/d5eca8dc3820cad9fe56a3bafda65ca1-Abstract.html",
+        "checkedAt": "2026-09-14",
+        "authors": [
+          "Weirui Ye",
+          "Shaohuai Liu",
+          "Thanard Kurutach",
+          "Pieter Abbeel",
+          "Yang Gao"
+        ],
+        "date": "2021-12-06",
+        "dateLabel": "Publisher record date",
+        "bibtex": "@inproceedings{efficientzero,\n  title = {Mastering Atari Games with Limited Data},\n  author = {Weirui Ye and Shaohuai Liu and Thanard Kurutach and Pieter Abbeel and Yang Gao},\n  booktitle = {NeurIPS 2021},\n  year = {2021},\n  url = {https://proceedings.neurips.cc/paper/2021/hash/d5eca8dc3820cad9fe56a3bafda65ca1-Abstract.html}\n}",
+        "preview": "assets/papers/efficientzero.png",
+        "previewSourceUrl": "https://proceedings.neurips.cc/paper_files/paper/2021/file/d5eca8dc3820cad9fe56a3bafda65ca1-Paper.pdf"
+      },
+      "metrics": {
+        "citations": {
+          "value": 40,
+          "source": "OpenAlex",
+          "sourceUrl": "https://openalex.org/W3208460365",
+          "updatedAt": "2026-09-14",
+          "recordTitle": "Mastering Atari Games with Limited Data"
+        },
+        "github": {
+          "value": 945,
+          "source": "GitHub",
+          "sourceUrl": "https://github.com/YeWR/EfficientZero/stargazers",
+          "repository": "YeWR/EfficientZero",
+          "updatedAt": "2026-09-14"
+        }
+      },
+      "addedAt": "2026-09-14",
+      "updatedAt": "2026-09-14",
+      "publicationDate": "2021-12-06"
+    },
+    {
+      "id": "gato",
+      "institutions": [
+        {
+          "name": "Google DeepMind",
+          "url": "https://deepmind.google/",
+          "logo": "assets/institutions/google-deepmind.png",
+          "mark": "DM"
+        }
+      ],
+      "name": "Gato",
+      "title": "A Generalist Agent",
+      "domains": [
+        "game"
+      ],
+      "kinds": [
+        "papers"
+      ],
+      "year": 2022,
+      "venue": "TMLR 2022",
+      "summary": "Tokenizes observations and actions from hundreds of tasks so one Transformer can play games, caption images, converse, and control a robot arm.",
+      "tags": [
+        "Generalist agents",
+        "Multi-game"
+      ],
+      "environment": "Atari, simulated control, vision-language tasks, dialogue, and real robot block stacking.",
+      "interface": "A shared token sequence represents observations, text, actions, and task context.",
+      "limits": "Breadth spans many task formats, but performance varies widely and the real-robot evaluation is narrow.",
+      "status": "selected",
+      "evidence": "Official bibliographic metadata checked; experiments not independently reproduced.",
+      "sourceType": "supplement",
+      "checkedAt": "2026-09-14",
+      "links": {
+        "paper": "https://openreview.net/forum?id=1ikK0kHjvj",
+        "project": "https://deepmind.google/discover/blog/a-generalist-agent/",
+        "pdf": "https://export.arxiv.org/pdf/2205.06175"
+      },
+      "rank": 32,
+      "selectionTrack": "peer-reviewed",
+      "selectionReason": "Representative conference or journal paper within the five-year window; official publication record verified.",
+      "paperType": "method",
+      "bibliography": {
+        "source": "Publisher",
+        "sourceUrl": "https://openreview.net/forum?id=1ikK0kHjvj",
+        "checkedAt": "2026-09-14",
+        "authors": [
+          "Scott Reed",
+          "Konrad Żołna",
+          "Emilio Parisotto",
+          "Sergio Gómez Colmenarejo",
+          "Alexander Novikov",
+          "Gabriel Barth-Maron",
+          "Mai Giménez",
+          "Yury Sulsky",
+          "Jackie Kay",
+          "Jost Tobias Springenberg",
+          "Tom Eccles",
+          "Jake Bruce",
+          "Ali Razavi",
+          "Ashley Edwards",
+          "Nicolas Heess",
+          "Yutian Chen",
+          "Raia Hadsell",
+          "Oriol Vinyals",
+          "Mahyar Bordbar",
+          "Nando de Freitas"
+        ],
+        "date": "2022-11-10",
+        "dateLabel": "Publisher record date",
+        "bibtex": "@inproceedings{gato,\n  title = {A Generalist Agent},\n  author = {Scott Reed and Konrad Żołna and Emilio Parisotto and Sergio Gómez Colmenarejo and Alexander Novikov and Gabriel Barth-Maron and Mai Giménez and Yury Sulsky and Jackie Kay and Jost Tobias Springenberg and Tom Eccles and Jake Bruce and Ali Razavi and Ashley Edwards and Nicolas Heess and Yutian Chen and Raia Hadsell and Oriol Vinyals and Mahyar Bordbar and Nando de Freitas},\n  booktitle = {TMLR 2022},\n  year = {2022},\n  url = {https://openreview.net/forum?id=1ikK0kHjvj}\n}",
+        "preview": "assets/papers/gato.png",
+        "previewSourceUrl": "https://export.arxiv.org/pdf/2205.06175"
+      },
+      "metrics": {
+        "citations": {
+          "value": 66,
+          "source": "OpenAlex",
+          "sourceUrl": "https://openalex.org/W4307868887",
+          "updatedAt": "2026-09-14",
+          "recordTitle": "A Generalist Agent"
+        }
+      },
+      "addedAt": "2026-09-14",
+      "updatedAt": "2026-09-14"
+    },
+    {
+      "id": "cicero",
+      "institutions": [
+        {
+          "name": "Meta AI",
+          "url": "https://ai.meta.com/",
+          "mark": "META"
+        }
+      ],
+      "name": "CICERO",
+      "title": "Human-level play in the game of Diplomacy by combining language models with strategic reasoning",
+      "domains": [
+        "game"
+      ],
+      "kinds": [
+        "papers"
+      ],
+      "year": 2022,
+      "venue": "Science 2022",
+      "summary": "Combines strategic planning with controllable dialogue to negotiate, coordinate, and compete with people in full-press Diplomacy.",
+      "tags": [
+        "Strategy games",
+        "Language agents"
+      ],
+      "environment": "Seven-player online Diplomacy with natural-language negotiation.",
+      "interface": "Game state, dialogue history, strategic intents, and legal orders are coupled through planning and language modules.",
+      "limits": "Human-level results come from a defined online league and speed-game format; honesty controls reduce but do not eliminate all undesirable dialogue.",
+      "status": "selected",
+      "evidence": "Official bibliographic metadata checked; experiments not independently reproduced.",
+      "sourceType": "supplement",
+      "checkedAt": "2026-09-14",
+      "links": {
+        "paper": "https://doi.org/10.1126/science.ade9097",
+        "project": "https://ai.meta.com/research/cicero/",
+        "code": "https://github.com/facebookresearch/diplomacy_cicero",
+        "pdf": "https://arxiv.org/pdf/2211.08966"
+      },
+      "rank": 33,
+      "selectionTrack": "peer-reviewed",
+      "selectionReason": "Representative conference or journal paper within the five-year window; official publication record verified.",
+      "paperType": "method",
+      "bibliography": {
+        "source": "Publisher",
+        "sourceUrl": "https://doi.org/10.1126/science.ade9097",
+        "checkedAt": "2026-09-14",
+        "authors": [
+          "Anton Bakhtin",
+          "Noam Brown",
+          "Emily Dinan",
+          "Gabriele Farina",
+          "Colin Flaherty",
+          "Daniel Fried",
+          "Andrew Goff",
+          "Jonathan Gray",
+          "Hengyuan Hu",
+          "Athul Paul Jacob",
+          "Mojtaba Komeili",
+          "Karthik Konath",
+          "Minae Kwon",
+          "Adam Lerer",
+          "Mike Lewis",
+          "Alexander Miller",
+          "Sasha Mitts",
+          "Adithya Renduchintala",
+          "Stephen Roller",
+          "Dirk Rowe",
+          "Weiyan Shi",
+          "Joe Spisak",
+          "Alexander Wei",
+          "David Wu",
+          "Hugh Zhang",
+          "Markus Zijlstra"
+        ],
+        "date": "2022-11-22",
+        "dateLabel": "Publisher record date",
+        "bibtex": "@inproceedings{cicero,\n  title = {Human-level play in the game of Diplomacy by combining language models with strategic reasoning},\n  author = {Anton Bakhtin and Noam Brown and Emily Dinan and Gabriele Farina and Colin Flaherty and Daniel Fried and Andrew Goff and Jonathan Gray and Hengyuan Hu and Athul Paul Jacob and Mojtaba Komeili and Karthik Konath and Minae Kwon and Adam Lerer and Mike Lewis and Alexander Miller and Sasha Mitts and Adithya Renduchintala and Stephen Roller and Dirk Rowe and Weiyan Shi and Joe Spisak and Alexander Wei and David Wu and Hugh Zhang and Markus Zijlstra},\n  booktitle = {Science 2022},\n  year = {2022},\n  url = {https://doi.org/10.1126/science.ade9097}\n}",
+        "preview": "assets/papers/cicero.png",
+        "previewSourceUrl": "https://arxiv.org/pdf/2211.08966"
+      },
+      "metrics": {
+        "citations": {
+          "value": 223,
+          "source": "OpenAlex",
+          "sourceUrl": "https://openalex.org/W4309663019",
+          "updatedAt": "2026-09-14",
+          "recordTitle": "Human-level play in the game of Diplomacy by combining language models with strategic reasoning"
+        },
+        "github": {
+          "value": 1429,
+          "source": "GitHub",
+          "sourceUrl": "https://github.com/facebookresearch/diplomacy_cicero/stargazers",
+          "repository": "facebookresearch/diplomacy_cicero",
+          "updatedAt": "2026-09-14"
+        }
+      },
+      "addedAt": "2026-09-14",
+      "updatedAt": "2026-09-14"
+    },
+    {
+      "id": "deepnash",
+      "institutions": [
+        {
+          "name": "Google DeepMind",
+          "url": "https://deepmind.google/",
+          "logo": "assets/institutions/google-deepmind.png",
+          "mark": "DM"
+        }
+      ],
+      "name": "DeepNash",
+      "title": "Mastering the game of Stratego with model-free multiagent reinforcement learning",
+      "domains": [
+        "game"
+      ],
+      "kinds": [
+        "papers"
+      ],
+      "year": 2022,
+      "venue": "Science 2022",
+      "summary": "Uses regularized Nash dynamics and model-free self-play to reach expert-level Stratego without search during play.",
+      "tags": [
+        "Strategy games",
+        "Multi-agent RL"
+      ],
+      "environment": "Stratego, a long-horizon two-player game with hidden information.",
+      "interface": "Board observations and legal moves drive a model-free policy trained entirely through self-play.",
+      "limits": "The result is specialized to one ruleset and platform; expert ranking does not establish competence in unrelated strategic settings.",
+      "status": "selected",
+      "evidence": "Official bibliographic metadata checked; experiments not independently reproduced.",
+      "sourceType": "supplement",
+      "checkedAt": "2026-09-14",
+      "links": {
+        "paper": "https://doi.org/10.1126/science.add4679",
+        "project": "https://deepmind.google/discover/blog/mastering-stratego-the-classic-game-of-imperfect-information/",
+        "pdf": "https://arxiv.org/pdf/2206.15378"
+      },
+      "rank": 34,
+      "selectionTrack": "peer-reviewed",
+      "selectionReason": "Representative conference or journal paper within the five-year window; official publication record verified.",
+      "paperType": "method",
+      "bibliography": {
+        "source": "Publisher",
+        "sourceUrl": "https://doi.org/10.1126/science.add4679",
+        "checkedAt": "2026-09-14",
+        "authors": [
+          "Julien Pérolat",
+          "Bart De Vylder",
+          "Daniel Hennes",
+          "Eugene Tarassov",
+          "Florian Strub",
+          "Vincent C. J. de Boer",
+          "Paul Müller",
+          "Jerome T. Connor",
+          "Neil Burch",
+          "Thomas Anthony",
+          "Stephen McAleer",
+          "Romuald Élie",
+          "Sarah H. Cen",
+          "Zhe Wang",
+          "Audrūnas Gruslys",
+          "Aleksandra Malysheva",
+          "Mina Khan",
+          "Sherjil Ozair",
+          "Finbarr Timbers",
+          "Toby Pohlen",
+          "Tom Eccles",
+          "Mark Rowland",
+          "Marc Lanctot",
+          "Jean-Baptiste Lespiau",
+          "Bilal Piot",
+          "Shayegan Omidshafiei",
+          "Edward Lockhart",
+          "Laurent Sifre",
+          "Nathalie Beauguerlange",
+          "Rémi Munos",
+          "David Silver",
+          "Satinder Singh",
+          "Demis Hassabis",
+          "Karl Tuyls"
+        ],
+        "date": "2022-12-01",
+        "dateLabel": "Publisher record date",
+        "bibtex": "@inproceedings{deepnash,\n  title = {Mastering the game of Stratego with model-free multiagent reinforcement learning},\n  author = {Julien Pérolat and Bart De Vylder and Daniel Hennes and Eugene Tarassov and Florian Strub and Vincent C. J. de Boer and Paul Müller and Jerome T. Connor and Neil Burch and Thomas Anthony and Stephen McAleer and Romuald Élie and Sarah H. Cen and Zhe Wang and Audrūnas Gruslys and Aleksandra Malysheva and Mina Khan and Sherjil Ozair and Finbarr Timbers and Toby Pohlen and Tom Eccles and Mark Rowland and Marc Lanctot and Jean-Baptiste Lespiau and Bilal Piot and Shayegan Omidshafiei and Edward Lockhart and Laurent Sifre and Nathalie Beauguerlange and Rémi Munos and David Silver and Satinder Singh and Demis Hassabis and Karl Tuyls},\n  booktitle = {Science 2022},\n  year = {2022},\n  url = {https://doi.org/10.1126/science.add4679}\n}",
+        "preview": "assets/papers/deepnash.png",
+        "previewSourceUrl": "https://arxiv.org/pdf/2206.15378"
+      },
+      "metrics": {
+        "citations": {
+          "value": 152,
+          "source": "OpenAlex",
+          "sourceUrl": "https://openalex.org/W4310705874",
+          "updatedAt": "2026-09-14",
+          "recordTitle": "Mastering the game of Stratego with model-free multiagent reinforcement learning"
+        }
+      },
+      "addedAt": "2026-09-14",
+      "updatedAt": "2026-09-14"
+    },
+    {
+      "id": "iris",
+      "institutions": [
+        {
+          "name": "University of Geneva",
+          "url": "https://www.unige.ch/en/",
+          "mark": "UNIGE"
+        }
+      ],
+      "name": "IRIS",
+      "title": "Transformers are Sample-Efficient World Models",
+      "domains": [
+        "game"
+      ],
+      "kinds": [
+        "papers"
+      ],
+      "year": 2023,
+      "venue": "ICLR 2023",
+      "summary": "Learns a discrete visual tokenizer and autoregressive Transformer world model, then trains an agent through imagined Atari rollouts.",
+      "tags": [
+        "World models",
+        "Atari"
+      ],
+      "environment": "Atari 100k across 26 games.",
+      "interface": "Image tokens, actions, and rewards form autoregressive sequences for imagined policy learning.",
+      "limits": "Long-rollout fidelity and game coverage remain bounded by the training distribution; Atari scores are protocol-specific.",
+      "status": "selected",
+      "evidence": "Official bibliographic metadata checked; experiments not independently reproduced.",
+      "sourceType": "supplement",
+      "checkedAt": "2026-09-14",
+      "links": {
+        "paper": "https://openreview.net/forum?id=vhFu1Acb0xb",
+        "code": "https://github.com/eloialonso/iris",
+        "pdf": "https://export.arxiv.org/pdf/2209.00588"
+      },
+      "rank": 35,
+      "selectionTrack": "peer-reviewed",
+      "selectionReason": "Representative conference or journal paper within the five-year window; official publication record verified.",
+      "paperType": "method",
+      "bibliography": {
+        "source": "Publisher",
+        "sourceUrl": "https://openreview.net/forum?id=vhFu1Acb0xb",
+        "checkedAt": "2026-09-14",
+        "authors": [
+          "Vincent Micheli",
+          "Eloi Alonso",
+          "François Fleuret"
+        ],
+        "date": "2023-05-01",
+        "dateLabel": "Publisher record date",
+        "bibtex": "@inproceedings{iris,\n  title = {Transformers are Sample-Efficient World Models},\n  author = {Vincent Micheli and Eloi Alonso and François Fleuret},\n  booktitle = {ICLR 2023},\n  year = {2023},\n  url = {https://openreview.net/forum?id=vhFu1Acb0xb}\n}",
+        "preview": "assets/papers/iris.png",
+        "previewSourceUrl": "https://export.arxiv.org/pdf/2209.00588"
+      },
+      "metrics": {
+        "citations": {
+          "value": 11,
+          "source": "OpenAlex",
+          "sourceUrl": "https://openalex.org/W4294435908",
+          "updatedAt": "2026-09-14",
+          "recordTitle": "Transformers are Sample-Efficient World Models"
+        },
+        "github": {
+          "value": 900,
+          "source": "GitHub",
+          "sourceUrl": "https://github.com/eloialonso/iris/stargazers",
+          "repository": "eloialonso/iris",
+          "updatedAt": "2026-09-14"
+        }
+      },
+      "addedAt": "2026-09-14",
+      "updatedAt": "2026-09-14"
+    },
+    {
+      "id": "genie",
+      "institutions": [
+        {
+          "name": "Google DeepMind",
+          "url": "https://deepmind.google/",
+          "logo": "assets/institutions/google-deepmind.png",
+          "mark": "DM"
+        }
+      ],
+      "name": "Genie",
+      "title": "Genie: Generative Interactive Environments",
+      "domains": [
+        "game"
+      ],
+      "kinds": [
+        "papers"
+      ],
+      "year": 2024,
+      "venue": "ICML 2024",
+      "summary": "Learns latent actions and video dynamics from unlabeled gameplay, turning a single image or prompt into an interactable generated environment.",
+      "tags": [
+        "Generative environments",
+        "World models"
+      ],
+      "environment": "Platformer videos and generated 2D interactive scenes.",
+      "interface": "An initial frame and inferred latent action sequence condition an autoregressive video model.",
+      "limits": "Short-horizon generated interaction can drift and does not reproduce a full game engine, ruleset, or persistent world state.",
+      "status": "selected",
+      "evidence": "Official bibliographic metadata checked; experiments not independently reproduced.",
+      "sourceType": "supplement",
+      "checkedAt": "2026-09-14",
+      "links": {
+        "paper": "https://proceedings.mlr.press/v235/bruce24a.html",
+        "project": "https://sites.google.com/view/genie-2024/",
+        "pdf": "https://export.arxiv.org/pdf/2402.15391"
+      },
+      "rank": 36,
+      "selectionTrack": "peer-reviewed",
+      "selectionReason": "Representative conference or journal paper within the five-year window; official publication record verified.",
+      "paperType": "method",
+      "bibliography": {
+        "source": "Publisher",
+        "sourceUrl": "https://proceedings.mlr.press/v235/bruce24a.html",
+        "checkedAt": "2026-09-14",
+        "authors": [
+          "Jake Bruce",
+          "Michael Dennis",
+          "Ashley Edwards",
+          "Jack Parker-Holder",
+          "Yuge Shi",
+          "Edward Hughes",
+          "Matthew Lai",
+          "Aditi Mavalankar",
+          "Richie Steigerwald",
+          "Chris Apps",
+          "Yusuf Aytar",
+          "Sarah Bechtle",
+          "Feryal Behbahani",
+          "Stephanie Chan",
+          "Nicolas Heess",
+          "Lucy González",
+          "Simon Osindero",
+          "Sherjil Ozair",
+          "Scott Reed",
+          "Jingwei Zhang",
+          "Konrad Żołna",
+          "Jeff Clune",
+          "Nando de Freitas",
+          "Satinder Singh",
+          "Tim Rocktäschel"
+        ],
+        "date": "2024-05-02",
+        "dateLabel": "Publisher record date",
+        "bibtex": "@inproceedings{genie,\n  title = {Genie: Generative Interactive Environments},\n  author = {Jake Bruce and Michael Dennis and Ashley Edwards and Jack Parker-Holder and Yuge Shi and Edward Hughes and Matthew Lai and Aditi Mavalankar and Richie Steigerwald and Chris Apps and Yusuf Aytar and Sarah Bechtle and Feryal Behbahani and Stephanie Chan and Nicolas Heess and Lucy González and Simon Osindero and Sherjil Ozair and Scott Reed and Jingwei Zhang and Konrad Żołna and Jeff Clune and Nando de Freitas and Satinder Singh and Tim Rocktäschel},\n  booktitle = {ICML 2024},\n  year = {2024},\n  url = {https://proceedings.mlr.press/v235/bruce24a.html}\n}",
+        "preview": "assets/papers/genie.png",
+        "previewSourceUrl": "https://export.arxiv.org/pdf/2402.15391"
+      },
+      "metrics": {
+        "citations": {
+          "value": 12,
+          "source": "OpenAlex",
+          "sourceUrl": "https://openalex.org/W4392182423",
+          "updatedAt": "2026-09-14",
+          "recordTitle": "Genie: Generative Interactive Environments"
+        }
+      },
+      "addedAt": "2026-09-14",
+      "updatedAt": "2026-09-14"
+    },
+    {
+      "id": "bedd",
+      "institutions": [
+        {
+          "name": "Carnegie Mellon University",
+          "url": "https://www.cmu.edu/",
+          "mark": "CMU"
+        }
+      ],
+      "name": "BEDD",
+      "title": "BEDD: The MineRL BASALT Evaluation and Demonstrations Dataset for Training and Benchmarking Agents that Solve Fuzzy Tasks",
+      "domains": [
+        "game"
+      ],
+      "kinds": [
+        "papers"
+      ],
+      "year": 2023,
+      "venue": "NeurIPS 2023",
+      "summary": "Formalizes four fuzzy Minecraft tasks with demonstrations and dense human preferences for training and evaluating agents from human feedback.",
+      "tags": [
+        "Minecraft",
+        "Human feedback"
+      ],
+      "environment": "MineRL BASALT tasks such as building a village house or creating a waterfall.",
+      "interface": "Gameplay videos, image-action pairs, pairwise human judgments, and natural-language rationales.",
+      "limits": "The benchmark captures four subjective tasks and fixed comparison data; leaderboard results depend on the human-evaluation protocol.",
+      "status": "selected",
+      "evidence": "Official bibliographic metadata checked; experiments not independently reproduced.",
+      "sourceType": "supplement",
+      "checkedAt": "2026-09-14",
+      "links": {
+        "paper": "https://proceedings.neurips.cc/paper_files/paper/2023/hash/67a6726dcd555b982cabb3446ffac01d-Abstract.html",
+        "code": "https://github.com/minerllabs/basalt-benchmark",
+        "pdf": "https://proceedings.neurips.cc/paper_files/paper/2023/file/67a6726dcd555b982cabb3446ffac01d-Paper-Datasets_and_Benchmarks.pdf"
+      },
+      "rank": 37,
+      "selectionTrack": "peer-reviewed",
+      "selectionReason": "Representative conference or journal paper within the five-year window; official publication record verified.",
+      "paperType": "benchmark",
+      "bibliography": {
+        "source": "Publisher",
+        "sourceUrl": "https://proceedings.neurips.cc/paper_files/paper/2023/hash/67a6726dcd555b982cabb3446ffac01d-Abstract.html",
+        "checkedAt": "2026-09-14",
+        "authors": [
+          "Stephanie Milani",
+          "Anssi Kanervisto",
+          "Karolis Ramanauskas",
+          "Sander Schulhoff",
+          "Brandon Houghton",
+          "Rohin Shah"
+        ],
+        "date": "2023-12-05",
+        "dateLabel": "Publisher record date",
+        "bibtex": "@inproceedings{bedd,\n  title = {BEDD: The MineRL BASALT Evaluation and Demonstrations Dataset for Training and Benchmarking Agents that Solve Fuzzy Tasks},\n  author = {Stephanie Milani and Anssi Kanervisto and Karolis Ramanauskas and Sander Schulhoff and Brandon Houghton and Rohin Shah},\n  booktitle = {NeurIPS 2023},\n  year = {2023},\n  url = {https://proceedings.neurips.cc/paper_files/paper/2023/hash/67a6726dcd555b982cabb3446ffac01d-Abstract.html}\n}",
+        "preview": "assets/papers/bedd.png",
+        "previewSourceUrl": "https://proceedings.neurips.cc/paper_files/paper/2023/file/67a6726dcd555b982cabb3446ffac01d-Paper-Datasets_and_Benchmarks.pdf"
+      },
+      "metrics": {
+        "citations": {
+          "value": 1,
+          "source": "OpenAlex",
+          "sourceUrl": "https://openalex.org/W4389469779",
+          "updatedAt": "2026-09-14",
+          "recordTitle": "BEDD: The MineRL BASALT Evaluation and Demonstrations Dataset for Training and Benchmarking Agents that Solve Fuzzy Tasks"
+        },
+        "github": {
+          "value": 22,
+          "source": "GitHub",
+          "sourceUrl": "https://github.com/minerllabs/basalt-benchmark/stargazers",
+          "repository": "minerllabs/basalt-benchmark",
+          "updatedAt": "2026-09-14"
+        }
+      },
+      "addedAt": "2026-09-14",
+      "updatedAt": "2026-09-14"
+    },
+    {
+      "id": "crafter",
+      "institutions": [
+        {
+          "name": "Google Research",
+          "url": "https://research.google/",
+          "logo": "assets/institutions/google-research.svg",
+          "mark": "G"
+        }
+      ],
+      "name": "Crafter",
+      "title": "Benchmarking the Spectrum of Agent Capabilities",
+      "domains": [
+        "game"
+      ],
+      "kinds": [
+        "papers"
+      ],
+      "year": 2022,
+      "venue": "ICLR 2022",
+      "summary": "Introduces a fast open-world survival game whose achievement spectrum measures exploration, generalization, memory, and long-horizon control.",
+      "tags": [
+        "Open-world",
+        "Benchmarks"
+      ],
+      "environment": "Procedurally generated 2D survival worlds with resources, crafting, hazards, and achievements.",
+      "interface": "Pixels, discrete actions, rewards, and semantically named achievements.",
+      "limits": "Crafter is deliberately compact and stylized; broad achievement coverage is not equivalent to transfer across commercial games.",
+      "status": "selected",
+      "evidence": "Official bibliographic metadata checked; experiments not independently reproduced.",
+      "sourceType": "supplement",
+      "checkedAt": "2026-09-14",
+      "links": {
+        "paper": "https://openreview.net/forum?id=1W0z96MFEoH",
+        "project": "https://danijar.com/project/crafter/",
+        "code": "https://github.com/danijar/crafter",
+        "pdf": "https://export.arxiv.org/pdf/2109.06780"
+      },
+      "rank": 38,
+      "selectionTrack": "peer-reviewed",
+      "selectionReason": "Representative conference or journal paper within the five-year window; official publication record verified.",
+      "paperType": "benchmark",
+      "publicationDate": "2022-04-25",
+      "bibliography": {
+        "source": "Publisher",
+        "sourceUrl": "https://openreview.net/forum?id=1W0z96MFEoH",
+        "checkedAt": "2026-09-14",
+        "authors": [
+          "Danijar Hafner"
+        ],
+        "date": "2022-04-25",
+        "dateLabel": "Publisher record date",
+        "bibtex": "@inproceedings{crafter,\n  title = {Benchmarking the Spectrum of Agent Capabilities},\n  author = {Danijar Hafner},\n  booktitle = {ICLR 2022},\n  year = {2022},\n  url = {https://openreview.net/forum?id=1W0z96MFEoH}\n}",
+        "preview": "assets/papers/crafter.png",
+        "previewSourceUrl": "https://export.arxiv.org/pdf/2109.06780"
+      },
+      "metrics": {
+        "citations": {
+          "value": 1,
+          "source": "OpenAlex",
+          "sourceUrl": "https://openalex.org/W3201036908",
+          "updatedAt": "2026-09-14",
+          "recordTitle": "Benchmarking the Spectrum of Agent Capabilities"
+        },
+        "github": {
+          "value": 590,
+          "source": "GitHub",
+          "sourceUrl": "https://github.com/danijar/crafter/stargazers",
+          "repository": "danijar/crafter",
+          "updatedAt": "2026-09-14"
+        }
+      },
+      "addedAt": "2026-09-14",
+      "updatedAt": "2026-09-14"
+    },
+    {
+      "id": "multi-game-dt",
+      "institutions": [
+        {
+          "name": "Google Research",
+          "url": "https://research.google/",
+          "logo": "assets/institutions/google-research.svg",
+          "mark": "G"
+        }
+      ],
+      "name": "Multi-Game Decision Transformer",
+      "title": "Multi-Game Decision Transformers",
+      "domains": [
+        "game"
+      ],
+      "kinds": [
+        "papers"
+      ],
+      "year": 2022,
+      "venue": "NeurIPS 2022",
+      "summary": "Scales return-conditioned sequence modeling to one offline Transformer that plays up to 46 Atari games and adapts through fine-tuning.",
+      "tags": [
+        "Offline RL",
+        "Multi-game"
+      ],
+      "environment": "Forty-six Atari games from fixed offline replay datasets.",
+      "interface": "Returns, observations, actions, rewards, and game identity are modeled as token sequences.",
+      "limits": "Training is offline and Atari-specific; close-to-human aggregate performance hides substantial variation by game.",
+      "status": "selected",
+      "evidence": "Official bibliographic metadata checked; experiments not independently reproduced.",
+      "sourceType": "supplement",
+      "checkedAt": "2026-09-14",
+      "links": {
+        "paper": "https://proceedings.neurips.cc/paper_files/paper/2022/hash/b2cac94f82928a85055987d9fd44753f-Abstract-Conference.html",
+        "project": "https://sites.google.com/view/multi-game-transformers",
+        "pdf": "https://proceedings.neurips.cc/paper_files/paper/2022/file/b2cac94f82928a85055987d9fd44753f-Paper-Conference.pdf"
+      },
+      "rank": 39,
+      "selectionTrack": "peer-reviewed",
+      "selectionReason": "Representative conference or journal paper within the five-year window; official publication record verified.",
+      "paperType": "method",
+      "bibliography": {
+        "source": "Publisher",
+        "sourceUrl": "https://proceedings.neurips.cc/paper_files/paper/2022/hash/b2cac94f82928a85055987d9fd44753f-Abstract-Conference.html",
+        "checkedAt": "2026-09-14",
+        "authors": [
+          "Kuang-Huei Lee",
+          "Ofir Nachum",
+          "Mengjiao Yang",
+          "Lisa Lee",
+          "Daniel Freeman",
+          "Winnie Xu",
+          "Sergio Guadarrama",
+          "Ian Fischer",
+          "Eric Jang",
+          "Henryk Michalewski",
+          "Igor Mordatch"
+        ],
+        "date": "2022-12-06",
+        "dateLabel": "Publisher record date",
+        "bibtex": "@inproceedings{multi_game_dt,\n  title = {Multi-Game Decision Transformers},\n  author = {Kuang-Huei Lee and Ofir Nachum and Mengjiao Yang and Lisa Lee and Daniel Freeman and Winnie Xu and Sergio Guadarrama and Ian Fischer and Eric Jang and Henryk Michalewski and Igor Mordatch},\n  booktitle = {NeurIPS 2022},\n  year = {2022},\n  url = {https://proceedings.neurips.cc/paper_files/paper/2022/hash/b2cac94f82928a85055987d9fd44753f-Abstract-Conference.html}\n}",
+        "preview": "assets/papers/multi-game-dt.png",
+        "previewSourceUrl": "https://proceedings.neurips.cc/paper_files/paper/2022/file/b2cac94f82928a85055987d9fd44753f-Paper-Conference.pdf"
+      },
+      "metrics": {
+        "citations": {
+          "value": 27,
+          "source": "OpenAlex",
+          "sourceUrl": "https://openalex.org/W4281663178",
+          "updatedAt": "2026-09-14",
+          "recordTitle": "Multi-Game Decision Transformers"
+        }
+      },
+      "addedAt": "2026-09-14",
+      "updatedAt": "2026-09-14"
+    },
+    {
+      "id": "diplodocus",
+      "institutions": [
+        {
+          "name": "Meta AI",
+          "url": "https://ai.meta.com/",
+          "mark": "META"
+        }
+      ],
+      "name": "Diplodocus",
+      "title": "Mastering the Game of No-Press Diplomacy via Human-Regularized Reinforcement Learning and Planning",
+      "domains": [
+        "game"
+      ],
+      "kinds": [
+        "papers"
+      ],
+      "year": 2023,
+      "venue": "ICLR 2023",
+      "summary": "Regularizes self-play toward human conventions so planning agents can cooperate and compete effectively with people in no-press Diplomacy.",
+      "tags": [
+        "Strategy games",
+        "Human coordination"
+      ],
+      "environment": "Seven-player no-press Diplomacy tournaments with human participants.",
+      "interface": "Game states and legal orders feed a human-regularized planning and reinforcement-learning system.",
+      "limits": "The no-press variant removes natural-language negotiation; tournament results depend on the participant pool and evaluation format.",
+      "status": "selected",
+      "evidence": "Official bibliographic metadata checked; experiments not independently reproduced.",
+      "sourceType": "supplement",
+      "checkedAt": "2026-09-14",
+      "links": {
+        "paper": "https://openreview.net/forum?id=F61FwJTZhb",
+        "project": "https://web.mit.edu/~gfarina/www/2023/no_press_diplomacy_iclr23/",
+        "code": "https://github.com/facebookresearch/diplomacy_cicero",
+        "pdf": "https://export.arxiv.org/pdf/2210.05492"
+      },
+      "rank": 40,
+      "selectionTrack": "peer-reviewed",
+      "selectionReason": "Representative conference or journal paper within the five-year window; official publication record verified.",
+      "paperType": "method",
+      "bibliography": {
+        "source": "Publisher",
+        "sourceUrl": "https://openreview.net/forum?id=F61FwJTZhb",
+        "checkedAt": "2026-09-14",
+        "authors": [
+          "Anton Bakhtin",
+          "David J. Wu",
+          "Adam Lerer",
+          "Jonathan Gray",
+          "Athul Paul Jacob",
+          "Gabriele Farina",
+          "Alexander H. Miller",
+          "Noam Brown"
+        ],
+        "date": "2023-05-01",
+        "dateLabel": "Publisher record date",
+        "bibtex": "@inproceedings{diplodocus,\n  title = {Mastering the Game of No-Press Diplomacy via Human-Regularized Reinforcement Learning and Planning},\n  author = {Anton Bakhtin and David J. Wu and Adam Lerer and Jonathan Gray and Athul Paul Jacob and Gabriele Farina and Alexander H. Miller and Noam Brown},\n  booktitle = {ICLR 2023},\n  year = {2023},\n  url = {https://openreview.net/forum?id=F61FwJTZhb}\n}",
+        "preview": "assets/papers/diplodocus.png",
+        "previewSourceUrl": "https://export.arxiv.org/pdf/2210.05492"
+      },
+      "metrics": {
+        "citations": {
+          "value": 11,
+          "source": "OpenAlex",
+          "sourceUrl": "https://openalex.org/W4305033123",
+          "updatedAt": "2026-09-14",
+          "recordTitle": "Mastering the Game of No-Press Diplomacy via Human-Regularized Reinforcement Learning and Planning"
+        },
+        "github": {
+          "value": 1429,
+          "source": "GitHub",
+          "sourceUrl": "https://github.com/facebookresearch/diplomacy_cicero/stargazers",
+          "repository": "facebookresearch/diplomacy_cicero",
+          "updatedAt": "2026-09-14"
+        }
+      },
+      "addedAt": "2026-09-14",
+      "updatedAt": "2026-09-14"
+    },
+    {
+      "id": "decision-transformer",
+      "institutions": [
+        {
+          "name": "University of California, Berkeley",
+          "url": "https://www.berkeley.edu/",
+          "mark": "UCB"
+        },
+        {
+          "name": "Meta AI",
+          "url": "https://ai.meta.com/",
+          "mark": "META"
+        }
+      ],
+      "name": "Decision Transformer",
+      "title": "Decision Transformer: Reinforcement Learning via Sequence Modeling",
+      "domains": [
+        "game"
+      ],
+      "kinds": [
+        "papers"
+      ],
+      "year": 2021,
+      "venue": "NeurIPS 2021",
+      "summary": "Recasts offline reinforcement learning as autoregressive sequence modeling conditioned on desired return, including Atari control.",
+      "tags": [
+        "Offline RL",
+        "Sequence modeling"
+      ],
+      "environment": "Atari, D4RL locomotion, and Key-to-Door tasks.",
+      "interface": "Desired returns, states, and previous actions are interleaved as Transformer tokens.",
+      "limits": "Performance depends on dataset coverage and chosen return targets; the model does not explore or improve from new online experience by itself.",
+      "status": "selected",
+      "evidence": "Official bibliographic metadata checked; experiments not independently reproduced.",
+      "sourceType": "supplement",
+      "checkedAt": "2026-09-14",
+      "links": {
+        "paper": "https://proceedings.neurips.cc/paper_files/paper/2021/hash/7f489f642a0ddb10272b5c31057f0663-Abstract.html",
+        "project": "https://sites.google.com/berkeley.edu/decision-transformer",
+        "code": "https://github.com/kzl/decision-transformer",
+        "pdf": "https://proceedings.neurips.cc/paper/2021/file/7f489f642a0ddb10272b5c31057f0663-Paper.pdf"
+      },
+      "rank": 41,
+      "selectionTrack": "peer-reviewed",
+      "selectionReason": "Representative conference or journal paper within the five-year window; official publication record verified.",
+      "paperType": "method",
+      "publicationDate": "2021-12-06",
+      "bibliography": {
+        "source": "Publisher",
+        "sourceUrl": "https://proceedings.neurips.cc/paper_files/paper/2021/hash/7f489f642a0ddb10272b5c31057f0663-Abstract.html",
+        "checkedAt": "2026-09-14",
+        "authors": [
+          "Lili Chen",
+          "Kevin Lu",
+          "Aravind Rajeswaran",
+          "Kimin Lee",
+          "Aditya Grover",
+          "Misha Laskin",
+          "Pieter Abbeel",
+          "Aravind Srinivas",
+          "Igor Mordatch"
+        ],
+        "date": "2021-12-06",
+        "dateLabel": "Publisher record date",
+        "bibtex": "@inproceedings{decision_transformer,\n  title = {Decision Transformer: Reinforcement Learning via Sequence Modeling},\n  author = {Lili Chen and Kevin Lu and Aravind Rajeswaran and Kimin Lee and Aditya Grover and Misha Laskin and Pieter Abbeel and Aravind Srinivas and Igor Mordatch},\n  booktitle = {NeurIPS 2021},\n  year = {2021},\n  url = {https://proceedings.neurips.cc/paper_files/paper/2021/hash/7f489f642a0ddb10272b5c31057f0663-Abstract.html}\n}",
+        "preview": "assets/papers/decision-transformer.png",
+        "previewSourceUrl": "https://proceedings.neurips.cc/paper/2021/file/7f489f642a0ddb10272b5c31057f0663-Paper.pdf"
+      },
+      "metrics": {
+        "citations": {
+          "value": 465,
+          "source": "OpenAlex",
+          "sourceUrl": "https://openalex.org/W3169291081",
+          "updatedAt": "2026-09-14",
+          "recordTitle": "Decision Transformer: Reinforcement Learning via Sequence Modeling"
+        },
+        "github": {
+          "value": 2831,
+          "source": "GitHub",
+          "sourceUrl": "https://github.com/kzl/decision-transformer/stargazers",
+          "repository": "kzl/decision-transformer",
+          "updatedAt": "2026-09-14"
+        }
+      },
+      "addedAt": "2026-09-14",
+      "updatedAt": "2026-09-14"
+    },
+    {
+      "id": "lightzero",
+      "institutions": [
+        {
+          "name": "Shanghai AI Laboratory",
+          "url": "https://www.shlab.org.cn/",
+          "mark": "SHLAB"
+        }
+      ],
+      "name": "LightZero",
+      "title": "LightZero: A Unified Benchmark for Monte Carlo Tree Search in General Sequential Decision Scenarios",
+      "domains": [
+        "game"
+      ],
+      "kinds": [
+        "papers"
+      ],
+      "year": 2023,
+      "venue": "NeurIPS 2023",
+      "summary": "Unifies MuZero-style tree-search systems and evaluates them across board games, Atari, continuous control, MiniGrid, and GoBigger.",
+      "tags": [
+        "Tree search",
+        "Benchmarks"
+      ],
+      "environment": "Atari, board games, MuJoCo, MiniGrid, and GoBigger.",
+      "interface": "Modular learned models, policies, value estimates, and Monte Carlo tree search.",
+      "limits": "A common software framework does not make scores across heterogeneous tasks directly comparable; many settings still require task-specific tuning.",
+      "status": "selected",
+      "evidence": "Official bibliographic metadata checked; experiments not independently reproduced.",
+      "sourceType": "supplement",
+      "checkedAt": "2026-09-14",
+      "links": {
+        "paper": "https://proceedings.neurips.cc/paper_files/paper/2023/hash/765043fe026f7d704c96cec027f13843-Abstract-Datasets_and_Benchmarks.html",
+        "code": "https://github.com/opendilab/LightZero",
+        "pdf": "https://proceedings.neurips.cc/paper_files/paper/2023/file/765043fe026f7d704c96cec027f13843-Paper-Datasets_and_Benchmarks.pdf"
+      },
+      "rank": 42,
+      "selectionTrack": "peer-reviewed",
+      "selectionReason": "Representative conference or journal paper within the five-year window; official publication record verified.",
+      "paperType": "benchmark",
+      "bibliography": {
+        "source": "Publisher",
+        "sourceUrl": "https://proceedings.neurips.cc/paper_files/paper/2023/hash/765043fe026f7d704c96cec027f13843-Abstract-Datasets_and_Benchmarks.html",
+        "checkedAt": "2026-09-14",
+        "authors": [
+          "Yazhe Niu",
+          "Yuan Pu",
+          "Zhenjie Yang",
+          "Xueyan Li",
+          "Tong Zhou",
+          "Jiyuan Ren",
+          "Shuai Hu",
+          "Hongsheng Li",
+          "Yu Liu"
+        ],
+        "date": "2023-12-10",
+        "dateLabel": "Publisher record date",
+        "bibtex": "@inproceedings{lightzero,\n  title = {LightZero: A Unified Benchmark for Monte Carlo Tree Search in General Sequential Decision Scenarios},\n  author = {Yazhe Niu and Yuan Pu and Zhenjie Yang and Xueyan Li and Tong Zhou and Jiyuan Ren and Shuai Hu and Hongsheng Li and Yu Liu},\n  booktitle = {NeurIPS 2023},\n  year = {2023},\n  url = {https://proceedings.neurips.cc/paper_files/paper/2023/hash/765043fe026f7d704c96cec027f13843-Abstract-Datasets_and_Benchmarks.html}\n}",
+        "preview": "assets/papers/lightzero.png",
+        "previewSourceUrl": "https://proceedings.neurips.cc/paper_files/paper/2023/file/765043fe026f7d704c96cec027f13843-Paper-Datasets_and_Benchmarks.pdf"
+      },
+      "metrics": {
+        "citations": {
+          "value": 2,
+          "source": "OpenAlex",
+          "sourceUrl": "https://openalex.org/W4387635629",
+          "updatedAt": "2026-09-14",
+          "recordTitle": "LightZero: A Unified Benchmark for Monte Carlo Tree Search in General Sequential Decision Scenarios"
+        },
+        "github": {
+          "value": 1647,
+          "source": "GitHub",
+          "sourceUrl": "https://github.com/opendilab/LightZero/stargazers",
+          "repository": "opendilab/LightZero",
+          "updatedAt": "2026-09-14"
+        }
+      },
+      "addedAt": "2026-09-14",
+      "updatedAt": "2026-09-14"
+    },
+    {
+      "id": "saycan",
+      "institutions": [
+        {
+          "name": "Google Research",
+          "url": "https://research.google/",
+          "logo": "assets/institutions/google-research.svg",
+          "mark": "G"
+        }
+      ],
+      "name": "SayCan",
+      "title": "Do As I Can, Not As I Say: Grounding Language in Robotic Affordances",
+      "domains": [
+        "embodied"
+      ],
+      "kinds": [
+        "papers"
+      ],
+      "year": 2022,
+      "venue": "CoRL 2022",
+      "summary": "Scores language-model plans by the robot skills that are actually feasible, grounding long-horizon instructions in learned affordances.",
+      "tags": [
+        "Language planning",
+        "Affordances"
+      ],
+      "environment": "Real mobile manipulation in office and kitchen-like spaces.",
+      "interface": "Natural-language instructions are decomposed into skills and reweighted by learned value functions.",
+      "limits": "The planner is bounded by a fixed skill library and affordance models; semantic plausibility does not guarantee safe execution.",
+      "status": "selected",
+      "evidence": "Official bibliographic metadata checked; experiments not independently reproduced.",
+      "sourceType": "supplement",
+      "checkedAt": "2026-09-14",
+      "links": {
+        "paper": "https://proceedings.mlr.press/v205/ichter23a.html",
+        "project": "https://say-can.github.io/",
+        "pdf": "https://proceedings.mlr.press/v205/ichter23a/ichter23a.pdf"
+      },
+      "rank": 43,
+      "selectionTrack": "peer-reviewed",
+      "selectionReason": "Representative conference or journal paper within the five-year window; official publication record verified.",
+      "paperType": "method",
+      "bibliography": {
+        "source": "Publisher",
+        "sourceUrl": "https://proceedings.mlr.press/v205/ichter23a.html",
+        "checkedAt": "2026-09-14",
+        "authors": [
+          "Michael Ahn",
+          "Anthony Brohan",
+          "Noah Brown",
+          "Yevgen Chebotar",
+          "Omar Cortes",
+          "Byron David",
+          "Chelsea Finn",
+          "Chuyuan Fu",
+          "Keerthana Gopalakrishnan",
+          "Karol Hausman",
+          "Alex Herzog",
+          "Daniel Ho",
+          "Jasmine Hsu",
+          "Julian Ibarz",
+          "Brian Ichter",
+          "Alex Irpan",
+          "Eric Jang",
+          "Rosario Jauregui Ruano",
+          "Kyle Jeffrey",
+          "Sally Jesmonth",
+          "Nikhil Joshi",
+          "Ryan Julian",
+          "Dmitry Kalashnikov",
+          "Yuheng Kuang",
+          "Kuang-Huei Lee",
+          "Sergey Levine",
+          "Yao Lu",
+          "Linda Luu",
+          "Carolina Parada",
+          "Peter Pastor",
+          "Jornell Quiambao",
+          "Kanishka Rao",
+          "Jarek Rettinghouse",
+          "Diego Reyes",
+          "Pierre Sermanet",
+          "Nicolas Sievers",
+          "Clayton Tan",
+          "Alexander Toshev",
+          "Vincent Vanhoucke",
+          "Fei Xia",
+          "Ted Xiao",
+          "Peng Xu",
+          "Sichun Xu",
+          "Mengyuan Yan",
+          "Andy Zeng"
+        ],
+        "date": "2023-03-06",
+        "dateLabel": "Publisher record date",
+        "bibtex": "@inproceedings{saycan,\n  title = {Do As I Can, Not As I Say: Grounding Language in Robotic Affordances},\n  author = {Michael Ahn and Anthony Brohan and Noah Brown and Yevgen Chebotar and Omar Cortes and Byron David and Chelsea Finn and Chuyuan Fu and Keerthana Gopalakrishnan and Karol Hausman and Alex Herzog and Daniel Ho and Jasmine Hsu and Julian Ibarz and Brian Ichter and Alex Irpan and Eric Jang and Rosario Jauregui Ruano and Kyle Jeffrey and Sally Jesmonth and Nikhil Joshi and Ryan Julian and Dmitry Kalashnikov and Yuheng Kuang and Kuang-Huei Lee and Sergey Levine and Yao Lu and Linda Luu and Carolina Parada and Peter Pastor and Jornell Quiambao and Kanishka Rao and Jarek Rettinghouse and Diego Reyes and Pierre Sermanet and Nicolas Sievers and Clayton Tan and Alexander Toshev and Vincent Vanhoucke and Fei Xia and Ted Xiao and Peng Xu and Sichun Xu and Mengyuan Yan and Andy Zeng},\n  booktitle = {CoRL 2022},\n  year = {2022},\n  url = {https://proceedings.mlr.press/v205/ichter23a.html}\n}",
+        "preview": "assets/papers/saycan.png",
+        "previewSourceUrl": "https://proceedings.mlr.press/v205/ichter23a/ichter23a.pdf"
+      },
+      "metrics": {
+        "citations": {
+          "value": 523,
+          "source": "OpenAlex",
+          "sourceUrl": "https://openalex.org/W4224912544",
+          "updatedAt": "2026-09-14",
+          "recordTitle": "Do As I Can, Not As I Say: Grounding Language in Robotic Affordances"
+        }
+      },
+      "addedAt": "2026-09-14",
+      "updatedAt": "2026-09-14"
+    },
+    {
+      "id": "palm-e",
+      "institutions": [
+        {
+          "name": "Google Research",
+          "url": "https://research.google/",
+          "logo": "assets/institutions/google-research.svg",
+          "mark": "G"
+        }
+      ],
+      "name": "PaLM-E",
+      "title": "PaLM-E: An Embodied Multimodal Language Model",
+      "domains": [
+        "embodied"
+      ],
+      "kinds": [
+        "papers"
+      ],
+      "year": 2023,
+      "venue": "ICML 2023",
+      "summary": "Injects visual and continuous sensor embeddings into a large language model for robot planning, visual reasoning, and transfer across embodiments.",
+      "tags": [
+        "Embodied language models",
+        "Multimodal reasoning"
+      ],
+      "environment": "Mobile manipulation, tabletop control, visual question answering, and task-and-motion planning.",
+      "interface": "Text, images, robot state, and neural scene representations are interleaved in one language-model context.",
+      "limits": "PaLM-E primarily produces plans and representations; low-level execution relies on separate controllers and task-specific systems.",
+      "status": "selected",
+      "evidence": "Official bibliographic metadata checked; experiments not independently reproduced.",
+      "sourceType": "supplement",
+      "checkedAt": "2026-09-14",
+      "links": {
+        "paper": "https://proceedings.mlr.press/v202/driess23a.html",
+        "project": "https://palm-e.github.io/",
+        "pdf": "https://proceedings.mlr.press/v202/driess23a/driess23a.pdf"
+      },
+      "rank": 44,
+      "selectionTrack": "peer-reviewed",
+      "selectionReason": "Representative conference or journal paper within the five-year window; official publication record verified.",
+      "paperType": "method",
+      "bibliography": {
+        "source": "Publisher",
+        "sourceUrl": "https://proceedings.mlr.press/v202/driess23a.html",
+        "checkedAt": "2026-09-14",
+        "authors": [
+          "Danny Driess",
+          "Fei Xia",
+          "Mehdi S. M. Sajjadi",
+          "Corey Lynch",
+          "Aakanksha Chowdhery",
+          "Brian Ichter",
+          "Ayzaan Wahid",
+          "Jonathan Tompson",
+          "Quan Vuong",
+          "Tianhe Yu",
+          "Wenlong Huang",
+          "Yevgen Chebotar",
+          "Pierre Sermanet",
+          "Daniel Duckworth",
+          "Sergey Levine",
+          "Vincent Vanhoucke",
+          "Karol Hausman",
+          "Marc Toussaint",
+          "Klaus Greff",
+          "Andy Zeng",
+          "Igor Mordatch",
+          "Pete Florence"
+        ],
+        "date": "2023-07-03",
+        "dateLabel": "Publisher record date",
+        "bibtex": "@inproceedings{palm_e,\n  title = {PaLM-E: An Embodied Multimodal Language Model},\n  author = {Danny Driess and Fei Xia and Mehdi S. M. Sajjadi and Corey Lynch and Aakanksha Chowdhery and Brian Ichter and Ayzaan Wahid and Jonathan Tompson and Quan Vuong and Tianhe Yu and Wenlong Huang and Yevgen Chebotar and Pierre Sermanet and Daniel Duckworth and Sergey Levine and Vincent Vanhoucke and Karol Hausman and Marc Toussaint and Klaus Greff and Andy Zeng and Igor Mordatch and Pete Florence},\n  booktitle = {ICML 2023},\n  year = {2023},\n  url = {https://proceedings.mlr.press/v202/driess23a.html}\n}",
+        "preview": "assets/papers/palm-e.png",
+        "previewSourceUrl": "https://proceedings.mlr.press/v202/driess23a/driess23a.pdf"
+      },
+      "metrics": {
+        "citations": {
+          "value": 357,
+          "source": "OpenAlex",
+          "sourceUrl": "https://openalex.org/W4323572061",
+          "updatedAt": "2026-09-14",
+          "recordTitle": "PaLM-E: An Embodied Multimodal Language Model"
+        }
+      },
+      "addedAt": "2026-09-14",
+      "updatedAt": "2026-09-14"
+    },
+    {
+      "id": "rt1",
+      "institutions": [
+        {
+          "name": "Google Research",
+          "url": "https://research.google/",
+          "logo": "assets/institutions/google-research.svg",
+          "mark": "G"
+        },
+        {
+          "name": "Stanford University",
+          "url": "https://www.stanford.edu/",
+          "logo": "assets/institutions/stanford.png",
+          "mark": "SU"
+        }
+      ],
+      "name": "RT-1",
+      "title": "RT-1: Robotics Transformer for Real-World Control at Scale",
+      "domains": [
+        "embodied"
+      ],
+      "kinds": [
+        "papers"
+      ],
+      "year": 2023,
+      "venue": "RSS 2023",
+      "summary": "Trains an efficient Transformer policy on 130,000 real-robot episodes and more than 700 language-conditioned tasks.",
+      "tags": [
+        "Robot transformers",
+        "Multi-task learning"
+      ],
+      "environment": "A fleet of Everyday Robots performing mobile-manipulation tasks in real office kitchens.",
+      "interface": "Camera images and language instructions map directly to discretized arm, gripper, and base actions.",
+      "limits": "The dataset uses a related robot fleet and controlled workspaces; deployment to new hardware or safety-critical settings requires adaptation.",
+      "status": "selected",
+      "evidence": "Official bibliographic metadata checked; experiments not independently reproduced.",
+      "sourceType": "supplement",
+      "checkedAt": "2026-09-14",
+      "links": {
+        "paper": "https://roboticsproceedings.org/rss19/p025.html",
+        "project": "https://robotics-transformer.github.io/",
+        "code": "https://github.com/google-research/robotics_transformer",
+        "pdf": "https://www.roboticsproceedings.org/rss19/p025.pdf"
+      },
+      "rank": 45,
+      "selectionTrack": "peer-reviewed",
+      "selectionReason": "Representative conference or journal paper within the five-year window; official publication record verified.",
+      "paperType": "method",
+      "bibliography": {
+        "source": "Publisher",
+        "sourceUrl": "https://roboticsproceedings.org/rss19/p025.html",
+        "checkedAt": "2026-09-14",
+        "authors": [
+          "Anthony Brohan",
+          "Noah Brown",
+          "Justice Carbajal",
+          "Yevgen Chebotar",
+          "Joseph Dabis",
+          "Chelsea Finn",
+          "Keerthana Gopalakrishnan",
+          "Karol Hausman",
+          "Alexander Herzog",
+          "Jasmine Hsu",
+          "Julian Ibarz",
+          "Brian Ichter",
+          "Alex Irpan",
+          "Tomas Jackson",
+          "Sally Jesmonth",
+          "Nikhil Joshi",
+          "Ryan Julian",
+          "Dmitry Kalashnikov",
+          "Yuheng Kuang",
+          "Isabel Leal",
+          "Kuang-Huei Lee",
+          "Sergey Levine",
+          "Yao Lu",
+          "Utsav Malla",
+          "Deeksha Manjunath",
+          "Igor Mordatch",
+          "Ofir Nachum",
+          "Carolina Parada",
+          "Jodilyn Peralta",
+          "Emily Perez",
+          "Karl Pertsch",
+          "Jornell Quiambao",
+          "Kanishka Rao",
+          "Michael Ryoo",
+          "Grecia Salazar",
+          "Pannag Sanketi",
+          "Kevin Sayed",
+          "Jaspiar Singh",
+          "Sumedh Sontakke",
+          "Austin Stone",
+          "Clayton Tan",
+          "Huong Tran",
+          "Vincent Vanhoucke",
+          "Steve Vega",
+          "Quan Vuong",
+          "Fei Xia",
+          "Ted Xiao",
+          "Peng Xu",
+          "Sichun Xu",
+          "Tianhe Yu",
+          "Brianna Zitkovich"
+        ],
+        "date": "2023-07-10",
+        "dateLabel": "Publisher record date",
+        "bibtex": "@inproceedings{rt1,\n  title = {RT-1: Robotics Transformer for Real-World Control at Scale},\n  author = {Anthony Brohan and Noah Brown and Justice Carbajal and Yevgen Chebotar and Joseph Dabis and Chelsea Finn and Keerthana Gopalakrishnan and Karol Hausman and Alexander Herzog and Jasmine Hsu and Julian Ibarz and Brian Ichter and Alex Irpan and Tomas Jackson and Sally Jesmonth and Nikhil Joshi and Ryan Julian and Dmitry Kalashnikov and Yuheng Kuang and Isabel Leal and Kuang-Huei Lee and Sergey Levine and Yao Lu and Utsav Malla and Deeksha Manjunath and Igor Mordatch and Ofir Nachum and Carolina Parada and Jodilyn Peralta and Emily Perez and Karl Pertsch and Jornell Quiambao and Kanishka Rao and Michael Ryoo and Grecia Salazar and Pannag Sanketi and Kevin Sayed and Jaspiar Singh and Sumedh Sontakke and Austin Stone and Clayton Tan and Huong Tran and Vincent Vanhoucke and Steve Vega and Quan Vuong and Fei Xia and Ted Xiao and Peng Xu and Sichun Xu and Tianhe Yu and Brianna Zitkovich},\n  booktitle = {RSS 2023},\n  year = {2023},\n  url = {https://roboticsproceedings.org/rss19/p025.html}\n}",
+        "preview": "assets/papers/rt1.png",
+        "previewSourceUrl": "https://www.roboticsproceedings.org/rss19/p025.pdf"
+      },
+      "metrics": {
+        "citations": {
+          "value": 612,
+          "source": "OpenAlex",
+          "sourceUrl": "https://openalex.org/W4385430679",
+          "updatedAt": "2026-09-14",
+          "recordTitle": "RT-1: Robotics Transformer for Real-World Control at Scale"
+        },
+        "github": {
+          "value": 1744,
+          "source": "GitHub",
+          "sourceUrl": "https://github.com/google-research/robotics_transformer/stargazers",
+          "repository": "google-research/robotics_transformer",
+          "updatedAt": "2026-09-14"
+        }
+      },
+      "addedAt": "2026-09-14",
+      "updatedAt": "2026-09-14"
+    },
+    {
+      "id": "vima",
+      "institutions": [
+        {
+          "name": "Stanford University",
+          "url": "https://www.stanford.edu/",
+          "logo": "assets/institutions/stanford.png",
+          "mark": "SU"
+        },
+        {
+          "name": "NVIDIA",
+          "url": "https://www.nvidia.com/",
+          "logo": "assets/institutions/nvidia.png",
+          "mark": "NV"
+        },
+        {
+          "name": "Tsinghua University",
+          "url": "https://www.tsinghua.edu.cn/en/",
+          "logo": "assets/institutions/tsinghua.png",
+          "mark": "THU"
+        }
+      ],
+      "name": "VIMA",
+      "title": "VIMA: General Robot Manipulation with Multimodal Prompts",
+      "domains": [
+        "embodied"
+      ],
+      "kinds": [
+        "papers"
+      ],
+      "year": 2023,
+      "venue": "ICML 2023",
+      "summary": "Expresses many simulated manipulation tasks as prompts that interleave language, images, and demonstrations, then predicts robot actions autoregressively.",
+      "tags": [
+        "Multimodal prompting",
+        "Manipulation"
+      ],
+      "environment": "VIMA-Bench with procedurally generated tabletop manipulation tasks.",
+      "interface": "Text and visual prompt tokens condition a Transformer that emits object-centric motor actions.",
+      "limits": "Results are primarily in simulation with privileged object representations; real-world perception and control introduce additional error sources.",
+      "status": "selected",
+      "evidence": "Official bibliographic metadata checked; experiments not independently reproduced.",
+      "sourceType": "supplement",
+      "checkedAt": "2026-09-14",
+      "links": {
+        "paper": "https://proceedings.mlr.press/v202/jiang23b.html",
+        "project": "https://vimalabs.github.io/",
+        "code": "https://github.com/vimalabs/VIMA",
+        "pdf": "https://proceedings.mlr.press/v202/jiang23b/jiang23b.pdf"
+      },
+      "rank": 46,
+      "selectionTrack": "peer-reviewed",
+      "selectionReason": "Representative conference or journal paper within the five-year window; official publication record verified.",
+      "paperType": "method",
+      "bibliography": {
+        "source": "Publisher",
+        "sourceUrl": "https://proceedings.mlr.press/v202/jiang23b.html",
+        "checkedAt": "2026-09-14",
+        "authors": [
+          "Yunfan Jiang",
+          "Agrim Gupta",
+          "Zichen Zhang",
+          "Guanzhi Wang",
+          "Yongqiang Dou",
+          "Yanjun Chen",
+          "Li Fei-Fei",
+          "Anima Anandkumar",
+          "Yuke Zhu",
+          "Linxi Fan"
+        ],
+        "date": "2023-07-23",
+        "dateLabel": "Publisher record date",
+        "bibtex": "@inproceedings{vima,\n  title = {VIMA: General Robot Manipulation with Multimodal Prompts},\n  author = {Yunfan Jiang and Agrim Gupta and Zichen Zhang and Guanzhi Wang and Yongqiang Dou and Yanjun Chen and Li Fei-Fei and Anima Anandkumar and Yuke Zhu and Linxi Fan},\n  booktitle = {ICML 2023},\n  year = {2023},\n  url = {https://proceedings.mlr.press/v202/jiang23b.html}\n}",
+        "preview": "assets/papers/vima.png",
+        "previewSourceUrl": "https://proceedings.mlr.press/v202/jiang23b/jiang23b.pdf"
+      },
+      "metrics": {
+        "citations": {
+          "value": 65,
+          "source": "OpenAlex",
+          "sourceUrl": "https://openalex.org/W4303648971",
+          "updatedAt": "2026-09-14",
+          "recordTitle": "VIMA: General Robot Manipulation with Multimodal Prompts"
+        },
+        "github": {
+          "value": 858,
+          "source": "GitHub",
+          "sourceUrl": "https://github.com/vimalabs/VIMA/stargazers",
+          "repository": "vimalabs/VIMA",
+          "updatedAt": "2026-09-14"
+        }
+      },
+      "addedAt": "2026-09-14",
+      "updatedAt": "2026-09-14"
+    },
+    {
+      "id": "peract",
+      "institutions": [
+        {
+          "name": "University of Washington",
+          "url": "https://www.washington.edu/",
+          "mark": "UW"
+        },
+        {
+          "name": "NVIDIA",
+          "url": "https://www.nvidia.com/",
+          "logo": "assets/institutions/nvidia.png",
+          "mark": "NV"
+        }
+      ],
+      "name": "PerAct",
+      "title": "Perceiver-Actor: A Multi-Task Transformer for Robotic Manipulation",
+      "domains": [
+        "embodied"
+      ],
+      "kinds": [
+        "papers"
+      ],
+      "year": 2022,
+      "venue": "CoRL 2022",
+      "summary": "Uses a Perceiver over voxelized RGB-D observations to detect language-conditioned 6-DoF actions for many tasks with one policy.",
+      "tags": [
+        "3D policies",
+        "Language conditioning"
+      ],
+      "environment": "RLBench simulation and seven real-world tabletop tasks.",
+      "interface": "Language and RGB-D voxel grids map to discretized translation, rotation, gripper, and collision actions.",
+      "limits": "Voxelization is memory-intensive and relies on calibrated depth; performance depends on keyframe extraction and task demonstrations.",
+      "status": "selected",
+      "evidence": "Official bibliographic metadata checked; experiments not independently reproduced.",
+      "sourceType": "supplement",
+      "checkedAt": "2026-09-14",
+      "links": {
+        "paper": "https://proceedings.mlr.press/v205/shridhar23a.html",
+        "project": "https://peract.github.io/",
+        "code": "https://github.com/peract/peract",
+        "pdf": "https://proceedings.mlr.press/v205/shridhar23a/shridhar23a.pdf"
+      },
+      "rank": 47,
+      "selectionTrack": "peer-reviewed",
+      "selectionReason": "Representative conference or journal paper within the five-year window; official publication record verified.",
+      "paperType": "method",
+      "bibliography": {
+        "source": "Publisher",
+        "sourceUrl": "https://proceedings.mlr.press/v205/shridhar23a.html",
+        "checkedAt": "2026-09-14",
+        "authors": [
+          "Mohit Shridhar",
+          "Lucas Manuelli",
+          "Dieter Fox"
+        ],
+        "date": "2023-03-06",
+        "dateLabel": "Publisher record date",
+        "bibtex": "@inproceedings{peract,\n  title = {Perceiver-Actor: A Multi-Task Transformer for Robotic Manipulation},\n  author = {Mohit Shridhar and Lucas Manuelli and Dieter Fox},\n  booktitle = {CoRL 2022},\n  year = {2022},\n  url = {https://proceedings.mlr.press/v205/shridhar23a.html}\n}",
+        "preview": "assets/papers/peract.png",
+        "previewSourceUrl": "https://proceedings.mlr.press/v205/shridhar23a/shridhar23a.pdf"
+      },
+      "metrics": {
+        "citations": {
+          "value": 49,
+          "source": "OpenAlex",
+          "sourceUrl": "https://openalex.org/W4297812239",
+          "updatedAt": "2026-09-14",
+          "recordTitle": "Perceiver-Actor: A Multi-Task Transformer for Robotic Manipulation"
+        },
+        "github": {
+          "value": 498,
+          "source": "GitHub",
+          "sourceUrl": "https://github.com/peract/peract/stargazers",
+          "repository": "peract/peract",
+          "updatedAt": "2026-09-14"
+        }
+      },
+      "addedAt": "2026-09-14",
+      "updatedAt": "2026-09-14"
+    },
+    {
+      "id": "r3m",
+      "institutions": [
+        {
+          "name": "Stanford University",
+          "url": "https://www.stanford.edu/",
+          "logo": "assets/institutions/stanford.png",
+          "mark": "SU"
+        },
+        {
+          "name": "Meta AI",
+          "url": "https://ai.meta.com/",
+          "mark": "META"
+        }
+      ],
+      "name": "R3M",
+      "title": "R3M: A Universal Visual Representation for Robot Manipulation",
+      "domains": [
+        "embodied"
+      ],
+      "kinds": [
+        "papers"
+      ],
+      "year": 2022,
+      "venue": "CoRL 2022",
+      "summary": "Pretrains a reusable robot visual encoder on Ego4D human video through temporal, language, and sparsity objectives.",
+      "tags": [
+        "Visual pretraining",
+        "Robot learning"
+      ],
+      "environment": "Twelve simulated tasks and real Franka manipulation in a cluttered apartment.",
+      "interface": "A frozen video-pretrained encoder supplies compact visual features to downstream imitation or reinforcement-learning policies.",
+      "limits": "A strong average representation is not universally best; adaptation and downstream policy design still determine task success.",
+      "status": "selected",
+      "evidence": "Official bibliographic metadata checked; experiments not independently reproduced.",
+      "sourceType": "supplement",
+      "checkedAt": "2026-09-14",
+      "links": {
+        "paper": "https://proceedings.mlr.press/v205/nair23a.html",
+        "project": "https://sites.google.com/view/robot-r3m/",
+        "code": "https://github.com/facebookresearch/r3m",
+        "pdf": "https://proceedings.mlr.press/v205/nair23a/nair23a.pdf"
+      },
+      "rank": 48,
+      "selectionTrack": "peer-reviewed",
+      "selectionReason": "Representative conference or journal paper within the five-year window; official publication record verified.",
+      "paperType": "method",
+      "bibliography": {
+        "source": "Publisher",
+        "sourceUrl": "https://proceedings.mlr.press/v205/nair23a.html",
+        "checkedAt": "2026-09-14",
+        "authors": [
+          "Suraj Nair",
+          "Aravind Rajeswaran",
+          "Vikash Kumar",
+          "Chelsea Finn",
+          "Abhinav Gupta"
+        ],
+        "date": "2023-03-06",
+        "dateLabel": "Publisher record date",
+        "bibtex": "@inproceedings{r3m,\n  title = {R3M: A Universal Visual Representation for Robot Manipulation},\n  author = {Suraj Nair and Aravind Rajeswaran and Vikash Kumar and Chelsea Finn and Abhinav Gupta},\n  booktitle = {CoRL 2022},\n  year = {2022},\n  url = {https://proceedings.mlr.press/v205/nair23a.html}\n}",
+        "preview": "assets/papers/r3m.png",
+        "previewSourceUrl": "https://proceedings.mlr.press/v205/nair23a/nair23a.pdf"
+      },
+      "metrics": {
+        "citations": {
+          "value": 82,
+          "source": "OpenAlex",
+          "sourceUrl": "https://openalex.org/W4221159977",
+          "updatedAt": "2026-09-14",
+          "recordTitle": "R3M: A Universal Visual Representation for Robot Manipulation"
+        },
+        "github": {
+          "value": 377,
+          "source": "GitHub",
+          "sourceUrl": "https://github.com/facebookresearch/r3m/stargazers",
+          "repository": "facebookresearch/r3m",
+          "updatedAt": "2026-09-14"
+        }
+      },
+      "addedAt": "2026-09-14",
+      "updatedAt": "2026-09-14"
+    },
+    {
+      "id": "vc1",
+      "institutions": [
+        {
+          "name": "Meta AI",
+          "url": "https://ai.meta.com/",
+          "mark": "META"
+        },
+        {
+          "name": "University of California, Berkeley",
+          "url": "https://www.berkeley.edu/",
+          "mark": "UCB"
+        },
+        {
+          "name": "Stanford University",
+          "url": "https://www.stanford.edu/",
+          "logo": "assets/institutions/stanford.png",
+          "mark": "SU"
+        }
+      ],
+      "name": "VC-1",
+      "title": "Where are we in the search for an Artificial Visual Cortex for Embodied Intelligence?",
+      "domains": [
+        "embodied"
+      ],
+      "kinds": [
+        "papers"
+      ],
+      "year": 2023,
+      "venue": "NeurIPS 2023",
+      "summary": "Builds CortexBench and VC-1 to compare large pretrained visual representations across navigation, locomotion, and manipulation.",
+      "tags": [
+        "Embodied vision",
+        "Benchmarks"
+      ],
+      "environment": "Seventeen simulated and real embodied tasks spanning navigation, locomotion, dexterity, and mobile manipulation.",
+      "interface": "Frozen or adapted visual encoders feed task-specific policies across heterogeneous embodiments.",
+      "limits": "No representation wins every task; averages across CortexBench should not be treated as a universal policy score.",
+      "status": "selected",
+      "evidence": "Official bibliographic metadata checked; experiments not independently reproduced.",
+      "sourceType": "supplement",
+      "checkedAt": "2026-09-14",
+      "links": {
+        "paper": "https://proceedings.neurips.cc/paper_files/paper/2023/hash/022ca1bed6b574b962c48a2856eb207b-Abstract-Conference.html",
+        "project": "https://eai-vc.github.io/",
+        "code": "https://github.com/facebookresearch/eai-vc",
+        "pdf": "https://proceedings.neurips.cc/paper_files/paper/2023/file/022ca1bed6b574b962c48a2856eb207b-Paper-Conference.pdf"
+      },
+      "rank": 49,
+      "selectionTrack": "peer-reviewed",
+      "selectionReason": "Representative conference or journal paper within the five-year window; official publication record verified.",
+      "paperType": "benchmark",
+      "bibliography": {
+        "source": "Publisher",
+        "sourceUrl": "https://proceedings.neurips.cc/paper_files/paper/2023/hash/022ca1bed6b574b962c48a2856eb207b-Abstract-Conference.html",
+        "checkedAt": "2026-09-14",
+        "authors": [
+          "Arjun Majumdar",
+          "Karmesh Yadav",
+          "Sergio Arnaud",
+          "Jason Ma",
+          "Claire Chen",
+          "Sneha Silwal",
+          "Aryan Jain",
+          "Vincent-Pierre Berges",
+          "Tingfan Wu",
+          "Jay Vakil",
+          "Pieter Abbeel",
+          "Jitendra Malik",
+          "Dhruv Batra",
+          "Yixin Lin",
+          "Oleksandr Maksymets",
+          "Aravind Rajeswaran",
+          "Franziska Meier"
+        ],
+        "date": "2023-12-10",
+        "dateLabel": "Publisher record date",
+        "bibtex": "@inproceedings{vc1,\n  title = {Where are we in the search for an Artificial Visual Cortex for Embodied Intelligence?},\n  author = {Arjun Majumdar and Karmesh Yadav and Sergio Arnaud and Jason Ma and Claire Chen and Sneha Silwal and Aryan Jain and Vincent-Pierre Berges and Tingfan Wu and Jay Vakil and Pieter Abbeel and Jitendra Malik and Dhruv Batra and Yixin Lin and Oleksandr Maksymets and Aravind Rajeswaran and Franziska Meier},\n  booktitle = {NeurIPS 2023},\n  year = {2023},\n  url = {https://proceedings.neurips.cc/paper_files/paper/2023/hash/022ca1bed6b574b962c48a2856eb207b-Abstract-Conference.html}\n}",
+        "preview": "assets/papers/vc1.png",
+        "previewSourceUrl": "https://proceedings.neurips.cc/paper_files/paper/2023/file/022ca1bed6b574b962c48a2856eb207b-Paper-Conference.pdf"
+      },
+      "metrics": {
+        "citations": {
+          "value": 21,
+          "source": "OpenAlex",
+          "sourceUrl": "https://openalex.org/W4362514550",
+          "updatedAt": "2026-09-14",
+          "recordTitle": "Where are we in the search for an Artificial Visual Cortex for Embodied Intelligence?"
+        },
+        "github": {
+          "value": 509,
+          "source": "GitHub",
+          "sourceUrl": "https://github.com/facebookresearch/eai-vc/stargazers",
+          "repository": "facebookresearch/eai-vc",
+          "updatedAt": "2026-09-14"
+        }
+      },
+      "addedAt": "2026-09-14",
+      "updatedAt": "2026-09-14"
+    },
+    {
+      "id": "robocat",
+      "institutions": [
+        {
+          "name": "Google DeepMind",
+          "url": "https://deepmind.google/",
+          "logo": "assets/institutions/google-deepmind.png",
+          "mark": "DM"
+        }
+      ],
+      "name": "RoboCat",
+      "title": "RoboCat: A Self-Improving Generalist Agent for Robotic Manipulation",
+      "domains": [
+        "embodied"
+      ],
+      "kinds": [
+        "papers"
+      ],
+      "year": 2024,
+      "venue": "TMLR 2024",
+      "summary": "Trains one goal-conditioned Transformer across robot arms, then uses its own successful rollouts to expand data for new tasks and embodiments.",
+      "tags": [
+        "Generalist policies",
+        "Self-improvement"
+      ],
+      "environment": "Multiple simulated and real robot arms with heterogeneous observation and action spaces.",
+      "interface": "Visual goals, observations, and embodiment-specific action tokens are modeled as one sequence.",
+      "limits": "Self-generated data is filtered and task-scoped; adaptation still needs hundreds of target examples and controlled evaluation.",
+      "status": "selected",
+      "evidence": "Official bibliographic metadata checked; experiments not independently reproduced.",
+      "sourceType": "supplement",
+      "checkedAt": "2026-09-14",
+      "links": {
+        "paper": "https://openreview.net/forum?id=vsCpLiIWHu",
+        "project": "https://deepmind.google/discover/blog/robocat-a-self-improving-robotic-agent/",
+        "pdf": "https://export.arxiv.org/pdf/2306.11706"
+      },
+      "rank": 50,
+      "selectionTrack": "peer-reviewed",
+      "selectionReason": "Representative conference or journal paper within the five-year window; official publication record verified.",
+      "paperType": "method",
+      "bibliography": {
+        "source": "Publisher",
+        "sourceUrl": "https://openreview.net/forum?id=vsCpLiIWHu",
+        "checkedAt": "2026-09-14",
+        "authors": [
+          "Konstantinos Bousmalis",
+          "Giulia Vezzani",
+          "Dushyant Rao",
+          "Coline Devin",
+          "Alex Lee",
+          "Maria Bauzá",
+          "Todor Davchev",
+          "Yuxiang Zhou",
+          "Agrim Gupta",
+          "Akhil Raju",
+          "Antoine Laurens",
+          "Claudio Fantacci",
+          "Valentin Dalibard",
+          "Martina Zambelli",
+          "Murilo Martins",
+          "Rugile Pevceviciute",
+          "Michiel Blokzijl",
+          "Misha Denil",
+          "Nathan Batchelor",
+          "Thomas Lampe",
+          "Emilio Parisotto",
+          "Konrad Żołna",
+          "Scott Reed",
+          "Sergio Gómez Colmenarejo",
+          "Jon Scholz",
+          "Abbas Abdolmaleki",
+          "Oliver Groth",
+          "Jean-Baptiste Regli",
+          "Oleg Sushkov",
+          "Tom Rothörl",
+          "José Enrique Chen",
+          "Yusuf Aytar",
+          "Dave Barker",
+          "Joy Ortiz",
+          "Martin Riedmiller",
+          "Jost Tobias Springenberg",
+          "Raia Hadsell",
+          "Francesco Nori",
+          "Nicolas Heess"
+        ],
+        "date": "2024-02-07",
+        "dateLabel": "Publisher record date",
+        "bibtex": "@inproceedings{robocat,\n  title = {RoboCat: A Self-Improving Generalist Agent for Robotic Manipulation},\n  author = {Konstantinos Bousmalis and Giulia Vezzani and Dushyant Rao and Coline Devin and Alex Lee and Maria Bauzá and Todor Davchev and Yuxiang Zhou and Agrim Gupta and Akhil Raju and Antoine Laurens and Claudio Fantacci and Valentin Dalibard and Martina Zambelli and Murilo Martins and Rugile Pevceviciute and Michiel Blokzijl and Misha Denil and Nathan Batchelor and Thomas Lampe and Emilio Parisotto and Konrad Żołna and Scott Reed and Sergio Gómez Colmenarejo and Jon Scholz and Abbas Abdolmaleki and Oliver Groth and Jean-Baptiste Regli and Oleg Sushkov and Tom Rothörl and José Enrique Chen and Yusuf Aytar and Dave Barker and Joy Ortiz and Martin Riedmiller and Jost Tobias Springenberg and Raia Hadsell and Francesco Nori and Nicolas Heess},\n  booktitle = {TMLR 2024},\n  year = {2024},\n  url = {https://openreview.net/forum?id=vsCpLiIWHu}\n}",
+        "preview": "assets/papers/robocat.png",
+        "previewSourceUrl": "https://export.arxiv.org/pdf/2306.11706"
+      },
+      "metrics": {
+        "citations": {
+          "value": 9,
+          "source": "OpenAlex",
+          "sourceUrl": "https://openalex.org/W4381586832",
+          "updatedAt": "2026-09-14",
+          "recordTitle": "RoboCat: A Self-Improving Generalist Agent for Robotic Manipulation"
+        }
+      },
+      "addedAt": "2026-09-14",
+      "updatedAt": "2026-09-14"
+    },
+    {
+      "id": "mobile-aloha",
+      "institutions": [
+        {
+          "name": "Stanford University",
+          "url": "https://www.stanford.edu/",
+          "logo": "assets/institutions/stanford.png",
+          "mark": "SU"
+        }
+      ],
+      "name": "Mobile ALOHA",
+      "title": "Mobile ALOHA: Learning Bimanual Mobile Manipulation using Low-Cost Whole-Body Teleoperation",
+      "domains": [
+        "embodied"
+      ],
+      "kinds": [
+        "papers"
+      ],
+      "year": 2024,
+      "venue": "CoRL 2024",
+      "summary": "Extends ALOHA with a mobile base and whole-body teleoperation, enabling imitation of long-horizon bimanual household tasks.",
+      "tags": [
+        "Mobile manipulation",
+        "Bimanual control"
+      ],
+      "environment": "Real kitchens, elevators, and household spaces with a mobile dual-arm robot.",
+      "interface": "Whole-body teleoperation records synchronized base, arm, gripper, and camera trajectories for behavior cloning.",
+      "limits": "Tasks use curated demonstrations and a specific low-cost platform; success rates are sensitive to scene setup and co-training data.",
+      "status": "selected",
+      "evidence": "Official bibliographic metadata checked; experiments not independently reproduced.",
+      "sourceType": "supplement",
+      "checkedAt": "2026-09-14",
+      "links": {
+        "paper": "https://proceedings.mlr.press/v270/fu25b.html",
+        "project": "https://mobile-aloha.github.io/",
+        "code": "https://github.com/MarkFzp/mobile-aloha",
+        "pdf": "https://export.arxiv.org/pdf/2401.02117"
+      },
+      "rank": 51,
+      "selectionTrack": "peer-reviewed",
+      "selectionReason": "Representative conference or journal paper within the five-year window; official publication record verified.",
+      "paperType": "method",
+      "bibliography": {
+        "source": "Publisher",
+        "sourceUrl": "https://proceedings.mlr.press/v270/fu25b.html",
+        "checkedAt": "2026-09-14",
+        "authors": [
+          "Zipeng Fu",
+          "Tony Z. Zhao",
+          "Chelsea Finn"
+        ],
+        "date": "2025-01-12",
+        "dateLabel": "Publisher record date",
+        "bibtex": "@inproceedings{mobile_aloha,\n  title = {Mobile ALOHA: Learning Bimanual Mobile Manipulation using Low-Cost Whole-Body Teleoperation},\n  author = {Zipeng Fu and Tony Z. Zhao and Chelsea Finn},\n  booktitle = {CoRL 2024},\n  year = {2024},\n  url = {https://proceedings.mlr.press/v270/fu25b.html}\n}",
+        "preview": "assets/papers/mobile-aloha.png",
+        "previewSourceUrl": "https://export.arxiv.org/pdf/2401.02117"
+      },
+      "metrics": {
+        "citations": {
+          "value": 31,
+          "source": "OpenAlex",
+          "sourceUrl": "https://openalex.org/W4390635563",
+          "updatedAt": "2026-09-14",
+          "recordTitle": "Mobile ALOHA: Learning Bimanual Mobile Manipulation using Low-Cost Whole-Body Teleoperation"
+        },
+        "github": {
+          "value": 4469,
+          "source": "GitHub",
+          "sourceUrl": "https://github.com/MarkFzp/mobile-aloha/stargazers",
+          "repository": "MarkFzp/mobile-aloha",
+          "updatedAt": "2026-09-14"
+        }
+      },
+      "addedAt": "2026-09-14",
+      "updatedAt": "2026-09-14"
+    },
+    {
+      "id": "gr1",
+      "institutions": [
+        {
+          "name": "ByteDance Research",
+          "url": "https://www.bytedance.com/en/",
+          "mark": "BD"
+        }
+      ],
+      "name": "GR-1",
+      "title": "Unleashing Large-Scale Video Generative Pre-training for Visual Robot Manipulation",
+      "domains": [
+        "embodied"
+      ],
+      "kinds": [
+        "papers"
+      ],
+      "year": 2024,
+      "venue": "ICLR 2024",
+      "summary": "Pretrains one GPT-style model to predict video, then fine-tunes it to emit actions and future images for multi-task robot manipulation.",
+      "tags": [
+        "Video pretraining",
+        "Generative policies"
+      ],
+      "environment": "CALVIN simulation and real tabletop manipulation.",
+      "interface": "Language, image history, and robot state tokens condition future-image and action prediction.",
+      "limits": "Reported generalization covers defined scenes and objects; deployment remains tied to the fine-tuned embodiment and observation setup.",
+      "status": "selected",
+      "evidence": "Official bibliographic metadata checked; experiments not independently reproduced.",
+      "sourceType": "supplement",
+      "checkedAt": "2026-09-14",
+      "links": {
+        "paper": "https://proceedings.iclr.cc/paper_files/paper/2024/hash/2c37c5bcef24b9541550261dcd63261b-Abstract-Conference.html",
+        "project": "https://gr1-manipulation.github.io/",
+        "code": "https://github.com/bytedance/GR-1",
+        "pdf": "https://proceedings.iclr.cc/paper_files/paper/2024/file/2c37c5bcef24b9541550261dcd63261b-Paper-Conference.pdf"
+      },
+      "rank": 52,
+      "selectionTrack": "peer-reviewed",
+      "selectionReason": "Representative conference or journal paper within the five-year window; official publication record verified.",
+      "paperType": "method",
+      "bibliography": {
+        "source": "Publisher",
+        "sourceUrl": "https://proceedings.iclr.cc/paper_files/paper/2024/hash/2c37c5bcef24b9541550261dcd63261b-Abstract-Conference.html",
+        "checkedAt": "2026-09-14",
+        "authors": [
+          "Hongtao Wu",
+          "Ya Jing",
+          "Chilam Cheang",
+          "Guangzeng Chen",
+          "Jiafeng Xu",
+          "Xinghang Li",
+          "Minghuan Liu",
+          "Hang Li",
+          "Tao Kong"
+        ],
+        "date": "2024-05-07",
+        "dateLabel": "Publisher record date",
+        "bibtex": "@inproceedings{gr1,\n  title = {Unleashing Large-Scale Video Generative Pre-training for Visual Robot Manipulation},\n  author = {Hongtao Wu and Ya Jing and Chilam Cheang and Guangzeng Chen and Jiafeng Xu and Xinghang Li and Minghuan Liu and Hang Li and Tao Kong},\n  booktitle = {ICLR 2024},\n  year = {2024},\n  url = {https://proceedings.iclr.cc/paper_files/paper/2024/hash/2c37c5bcef24b9541550261dcd63261b-Abstract-Conference.html}\n}",
+        "preview": "assets/papers/gr1.png",
+        "previewSourceUrl": "https://proceedings.iclr.cc/paper_files/paper/2024/file/2c37c5bcef24b9541550261dcd63261b-Paper-Conference.pdf"
+      },
+      "metrics": {
+        "citations": {
+          "value": 4,
+          "source": "OpenAlex",
+          "sourceUrl": "https://openalex.org/W4390136276",
+          "updatedAt": "2026-09-14",
+          "recordTitle": "Unleashing Large-Scale Video Generative Pre-training for Visual Robot Manipulation"
+        },
+        "github": {
+          "value": 309,
+          "source": "GitHub",
+          "sourceUrl": "https://github.com/bytedance/GR-1/stargazers",
+          "repository": "bytedance/GR-1",
+          "updatedAt": "2026-09-14"
+        }
+      },
+      "addedAt": "2026-09-14",
+      "updatedAt": "2026-09-14"
+    },
+    {
+      "id": "3d-diffuser-actor",
+      "institutions": [
+        {
+          "name": "Carnegie Mellon University",
+          "url": "https://www.cmu.edu/",
+          "mark": "CMU"
+        }
+      ],
+      "name": "3D Diffuser Actor",
+      "title": "3D Diffuser Actor: Policy Diffusion with 3D Scene Representations",
+      "domains": [
+        "embodied"
+      ],
+      "kinds": [
+        "papers"
+      ],
+      "year": 2024,
+      "venue": "CoRL 2024",
+      "summary": "Denoises 3D end-effector trajectories while attending to scene geometry, language, and proprioception for multi-task manipulation.",
+      "tags": [
+        "3D policies",
+        "Diffusion models"
+      ],
+      "environment": "RLBench, CALVIN, and a small set of real-robot manipulation tasks.",
+      "interface": "Multi-view RGB-D features, language, and proprioception condition a 3D trajectory diffusion Transformer.",
+      "limits": "Performance assumes depth and camera calibration; real-world evidence uses a limited number of demonstrations and tasks.",
+      "status": "selected",
+      "evidence": "Official bibliographic metadata checked; experiments not independently reproduced.",
+      "sourceType": "supplement",
+      "checkedAt": "2026-09-14",
+      "links": {
+        "paper": "https://proceedings.mlr.press/v270/ke25a.html",
+        "project": "https://3d-diffuser-actor.github.io/",
+        "pdf": "https://export.arxiv.org/pdf/2402.10885"
+      },
+      "rank": 53,
+      "selectionTrack": "peer-reviewed",
+      "selectionReason": "Representative conference or journal paper within the five-year window; official publication record verified.",
+      "paperType": "method",
+      "bibliography": {
+        "source": "Publisher",
+        "sourceUrl": "https://proceedings.mlr.press/v270/ke25a.html",
+        "checkedAt": "2026-09-14",
+        "authors": [
+          "Tsung-Wei Ke",
+          "Nikolaos Gkanatsios",
+          "Katerina Fragkiadaki"
+        ],
+        "date": "2025-01-12",
+        "dateLabel": "Publisher record date",
+        "bibtex": "@inproceedings{3d_diffuser_actor,\n  title = {3D Diffuser Actor: Policy Diffusion with 3D Scene Representations},\n  author = {Tsung-Wei Ke and Nikolaos Gkanatsios and Katerina Fragkiadaki},\n  booktitle = {CoRL 2024},\n  year = {2024},\n  url = {https://proceedings.mlr.press/v270/ke25a.html}\n}",
+        "preview": "assets/papers/3d-diffuser-actor.png",
+        "previewSourceUrl": "https://export.arxiv.org/pdf/2402.10885"
+      },
+      "metrics": {
+        "citations": {
+          "value": 4,
+          "source": "OpenAlex",
+          "sourceUrl": "https://openalex.org/W4391949089",
+          "updatedAt": "2026-09-14",
+          "recordTitle": "3D Diffuser Actor: Policy Diffusion with 3D Scene Representations"
+        }
+      },
+      "addedAt": "2026-09-14",
+      "updatedAt": "2026-09-14"
+    },
+    {
+      "id": "dp3",
+      "institutions": [
+        {
+          "name": "Tsinghua University",
+          "url": "https://www.tsinghua.edu.cn/en/",
+          "logo": "assets/institutions/tsinghua.png",
+          "mark": "THU"
+        },
+        {
+          "name": "Shanghai AI Laboratory",
+          "url": "https://www.shlab.org.cn/",
+          "mark": "SHLAB"
+        }
+      ],
+      "name": "DP3",
+      "title": "3D Diffusion Policy: Generalizable Visuomotor Policy Learning via Simple 3D Representations",
+      "domains": [
+        "embodied"
+      ],
+      "kinds": [
+        "papers"
+      ],
+      "year": 2024,
+      "venue": "RSS 2024",
+      "summary": "Pairs compact point-cloud encodings with diffusion policies to improve low-demo learning and spatial generalization across dexterous tasks.",
+      "tags": [
+        "3D policies",
+        "Imitation learning"
+      ],
+      "environment": "Seventy-two simulated tasks and four real-robot manipulation tasks.",
+      "interface": "Sparse point clouds and proprioception condition a diffusion model over action sequences.",
+      "limits": "Depth sensing and point-cloud preprocessing are required; broad simulation counts include heterogeneous tasks with different difficulty.",
+      "status": "selected",
+      "evidence": "Official bibliographic metadata checked; experiments not independently reproduced.",
+      "sourceType": "supplement",
+      "checkedAt": "2026-09-14",
+      "links": {
+        "paper": "https://www.roboticsproceedings.org/rss20/p067.html",
+        "project": "https://3d-diffusion-policy.github.io/",
+        "code": "https://github.com/YanjieZe/3D-Diffusion-Policy",
+        "pdf": "https://www.roboticsproceedings.org/rss20/p067.pdf"
+      },
+      "rank": 54,
+      "selectionTrack": "peer-reviewed",
+      "selectionReason": "Representative conference or journal paper within the five-year window; official publication record verified.",
+      "paperType": "method",
+      "bibliography": {
+        "source": "Publisher",
+        "sourceUrl": "https://www.roboticsproceedings.org/rss20/p067.html",
+        "checkedAt": "2026-09-14",
+        "authors": [
+          "Yanjie Ze",
+          "Gu Zhang",
+          "Kangning Zhang",
+          "Chenyuan Hu",
+          "Muhan Wang",
+          "Huazhe Xu"
+        ],
+        "date": "2024-07-15",
+        "dateLabel": "Publisher record date",
+        "bibtex": "@inproceedings{dp3,\n  title = {3D Diffusion Policy: Generalizable Visuomotor Policy Learning via Simple 3D Representations},\n  author = {Yanjie Ze and Gu Zhang and Kangning Zhang and Chenyuan Hu and Muhan Wang and Huazhe Xu},\n  booktitle = {RSS 2024},\n  year = {2024},\n  url = {https://www.roboticsproceedings.org/rss20/p067.html}\n}",
+        "preview": "assets/papers/dp3.png",
+        "previewSourceUrl": "https://www.roboticsproceedings.org/rss20/p067.pdf"
+      },
+      "metrics": {
+        "citations": {
+          "value": 181,
+          "source": "OpenAlex",
+          "sourceUrl": "https://openalex.org/W4402354045",
+          "updatedAt": "2026-09-14",
+          "recordTitle": "3D Diffusion Policy: Generalizable Visuomotor Policy Learning via Simple 3D Representations"
+        },
+        "github": {
+          "value": 1440,
+          "source": "GitHub",
+          "sourceUrl": "https://github.com/YanjieZe/3D-Diffusion-Policy/stargazers",
+          "repository": "YanjieZe/3D-Diffusion-Policy",
+          "updatedAt": "2026-09-14"
+        }
+      },
+      "addedAt": "2026-09-14",
+      "updatedAt": "2026-09-14"
+    },
+    {
+      "id": "cliport",
+      "institutions": [
+        {
+          "name": "University of Washington",
+          "url": "https://www.washington.edu/",
+          "mark": "UW"
+        },
+        {
+          "name": "NVIDIA",
+          "url": "https://www.nvidia.com/",
+          "logo": "assets/institutions/nvidia.png",
+          "mark": "NV"
+        }
+      ],
+      "name": "CLIPort",
+      "title": "CLIPort: What and Where Pathways for Robotic Manipulation",
+      "domains": [
+        "embodied"
+      ],
+      "kinds": [
+        "papers"
+      ],
+      "year": 2021,
+      "venue": "CoRL 2021",
+      "summary": "Combines CLIP semantics with Transporter-style spatial precision for language-conditioned tabletop manipulation.",
+      "tags": [
+        "Vision-language",
+        "Manipulation"
+      ],
+      "environment": "Ten simulated and nine real tabletop tasks including packing, sorting, and cloth folding.",
+      "interface": "RGB observations and language instructions feed separate semantic and spatial streams that predict pick-and-place actions.",
+      "limits": "The action abstraction is specialized to tabletop manipulation and does not cover arbitrary trajectories or force-sensitive skills.",
+      "status": "selected",
+      "evidence": "Official bibliographic metadata checked; experiments not independently reproduced.",
+      "sourceType": "supplement",
+      "checkedAt": "2026-09-14",
+      "links": {
+        "paper": "https://proceedings.mlr.press/v164/shridhar22a.html",
+        "project": "https://cliport.github.io/",
+        "code": "https://github.com/cliport/cliport",
+        "pdf": "https://proceedings.mlr.press/v164/shridhar22a/shridhar22a.pdf"
+      },
+      "rank": 55,
+      "selectionTrack": "peer-reviewed",
+      "selectionReason": "Representative conference or journal paper within the five-year window; official publication record verified.",
+      "paperType": "method",
+      "publicationDate": "2021-11-08",
+      "bibliography": {
+        "source": "Publisher",
+        "sourceUrl": "https://proceedings.mlr.press/v164/shridhar22a.html",
+        "checkedAt": "2026-09-14",
+        "authors": [
+          "Mohit Shridhar",
+          "Lucas Manuelli",
+          "Dieter Fox"
+        ],
+        "date": "2022-01-11",
+        "dateLabel": "Publisher record date",
+        "bibtex": "@inproceedings{cliport,\n  title = {CLIPort: What and Where Pathways for Robotic Manipulation},\n  author = {Mohit Shridhar and Lucas Manuelli and Dieter Fox},\n  booktitle = {CoRL 2021},\n  year = {2021},\n  url = {https://proceedings.mlr.press/v164/shridhar22a.html}\n}",
+        "preview": "assets/papers/cliport.png",
+        "previewSourceUrl": "https://proceedings.mlr.press/v164/shridhar22a/shridhar22a.pdf"
+      },
+      "metrics": {
+        "citations": {
+          "value": 100,
+          "source": "OpenAlex",
+          "sourceUrl": "https://openalex.org/W3203511201",
+          "updatedAt": "2026-09-14",
+          "recordTitle": "CLIPort: What and Where Pathways for Robotic Manipulation"
+        },
+        "github": {
+          "value": 549,
+          "source": "GitHub",
+          "sourceUrl": "https://github.com/cliport/cliport/stargazers",
+          "repository": "cliport/cliport",
+          "updatedAt": "2026-09-14"
+        }
+      },
+      "addedAt": "2026-09-14",
+      "updatedAt": "2026-09-14"
+    },
+    {
+      "id": "inner-monologue",
+      "institutions": [
+        {
+          "name": "Google Research",
+          "url": "https://research.google/",
+          "logo": "assets/institutions/google-research.svg",
+          "mark": "G"
+        }
+      ],
+      "name": "Inner Monologue",
+      "title": "Inner Monologue: Embodied Reasoning through Planning with Language Models",
+      "domains": [
+        "embodied"
+      ],
+      "kinds": [
+        "papers"
+      ],
+      "year": 2022,
+      "venue": "CoRL 2022",
+      "summary": "Feeds success detectors, scene descriptions, and human feedback back into an LLM planner so robot plans can react to execution outcomes.",
+      "tags": [
+        "Language planning",
+        "Closed-loop reasoning"
+      ],
+      "environment": "Simulated and real tabletop rearrangement plus long-horizon mobile manipulation.",
+      "interface": "Natural-language instructions and textual environment feedback update high-level plans over a skill library.",
+      "limits": "Feedback quality and the available skills bound recovery; language-level replanning does not solve low-level control failures.",
+      "status": "selected",
+      "evidence": "Official bibliographic metadata checked; experiments not independently reproduced.",
+      "sourceType": "supplement",
+      "checkedAt": "2026-09-14",
+      "links": {
+        "paper": "https://proceedings.mlr.press/v205/huang23c.html",
+        "project": "https://innermonologue.github.io/",
+        "pdf": "https://proceedings.mlr.press/v205/huang23c/huang23c.pdf"
+      },
+      "rank": 56,
+      "selectionTrack": "peer-reviewed",
+      "selectionReason": "Representative conference or journal paper within the five-year window; official publication record verified.",
+      "paperType": "method",
+      "bibliography": {
+        "source": "Publisher",
+        "sourceUrl": "https://proceedings.mlr.press/v205/huang23c.html",
+        "checkedAt": "2026-09-14",
+        "authors": [
+          "Wenlong Huang",
+          "Fei Xia",
+          "Ted Xiao",
+          "Harris Chan",
+          "Jacky Liang",
+          "Pete Florence",
+          "Andy Zeng",
+          "Jonathan Tompson",
+          "Igor Mordatch",
+          "Yevgen Chebotar",
+          "Pierre Sermanet",
+          "Noah Brown",
+          "Tomas Jackson",
+          "Linda Luu",
+          "Sergey Levine",
+          "Karol Hausman",
+          "Brian Ichter"
+        ],
+        "date": "2023-03-06",
+        "dateLabel": "Publisher record date",
+        "bibtex": "@inproceedings{inner_monologue,\n  title = {Inner Monologue: Embodied Reasoning through Planning with Language Models},\n  author = {Wenlong Huang and Fei Xia and Ted Xiao and Harris Chan and Jacky Liang and Pete Florence and Andy Zeng and Jonathan Tompson and Igor Mordatch and Yevgen Chebotar and Pierre Sermanet and Noah Brown and Tomas Jackson and Linda Luu and Sergey Levine and Karol Hausman and Brian Ichter},\n  booktitle = {CoRL 2022},\n  year = {2022},\n  url = {https://proceedings.mlr.press/v205/huang23c.html}\n}",
+        "preview": "assets/papers/inner-monologue.png",
+        "previewSourceUrl": "https://proceedings.mlr.press/v205/huang23c/huang23c.pdf"
+      },
+      "metrics": {
+        "citations": {
+          "value": 208,
+          "source": "OpenAlex",
+          "sourceUrl": "https://openalex.org/W4285428875",
+          "updatedAt": "2026-09-14",
+          "recordTitle": "Inner Monologue: Embodied Reasoning through Planning with Language Models"
+        }
+      },
+      "addedAt": "2026-09-14",
+      "updatedAt": "2026-09-14"
+    },
+    {
+      "id": "rt-trajectory",
+      "institutions": [
+        {
+          "name": "Google Research",
+          "url": "https://research.google/",
+          "logo": "assets/institutions/google-research.svg",
+          "mark": "G"
+        },
+        {
+          "name": "Stanford University",
+          "url": "https://www.stanford.edu/",
+          "logo": "assets/institutions/stanford.png",
+          "mark": "SU"
+        }
+      ],
+      "name": "RT-Trajectory",
+      "title": "RT-Trajectory: Robotic Task Generalization via Hindsight Trajectory Sketches",
+      "domains": [
+        "embodied"
+      ],
+      "kinds": [
+        "papers"
+      ],
+      "year": 2024,
+      "venue": "ICLR 2024",
+      "summary": "Conditions robot policies on rough trajectory sketches that can come from drawings, videos, or generators, enabling new motion-centric tasks.",
+      "tags": [
+        "Task conditioning",
+        "Generalization"
+      ],
+      "environment": "Large-scale real-robot manipulation with novel task and object combinations.",
+      "interface": "Camera observations and coarse 2D trajectory sketches condition low-level robot actions.",
+      "limits": "Sketches provide motion guidance but still require compatible training data and perception; arbitrary new skills are not guaranteed.",
+      "status": "selected",
+      "evidence": "Official bibliographic metadata checked; experiments not independently reproduced.",
+      "sourceType": "supplement",
+      "checkedAt": "2026-09-14",
+      "links": {
+        "paper": "https://proceedings.iclr.cc/paper_files/paper/2024/hash/c383e44d9a878d1982d9abb838bd5d8a-Abstract-Conference.html",
+        "project": "https://rt-trajectory.github.io/",
+        "pdf": "https://proceedings.iclr.cc/paper_files/paper/2024/file/c383e44d9a878d1982d9abb838bd5d8a-Paper-Conference.pdf"
+      },
+      "rank": 57,
+      "selectionTrack": "peer-reviewed",
+      "selectionReason": "Representative conference or journal paper within the five-year window; official publication record verified.",
+      "paperType": "method",
+      "bibliography": {
+        "source": "Publisher",
+        "sourceUrl": "https://proceedings.iclr.cc/paper_files/paper/2024/hash/c383e44d9a878d1982d9abb838bd5d8a-Abstract-Conference.html",
+        "checkedAt": "2026-09-14",
+        "authors": [
+          "Jiayuan Gu",
+          "Sean Kirmani",
+          "Paul Wohlhart",
+          "Yao Lu",
+          "Montserrat Gonzalez Arenas",
+          "Kanishka Rao",
+          "Wenhao Yu",
+          "Chuyuan Fu",
+          "Keerthana Gopalakrishnan",
+          "Zhuo Xu",
+          "Priya Sundaresan",
+          "Peng Xu",
+          "Hao Su",
+          "Karol Hausman",
+          "Chelsea Finn",
+          "Quan Vuong",
+          "Ted Xiao"
+        ],
+        "date": "2024-05-07",
+        "dateLabel": "Publisher record date",
+        "bibtex": "@inproceedings{rt_trajectory,\n  title = {RT-Trajectory: Robotic Task Generalization via Hindsight Trajectory Sketches},\n  author = {Jiayuan Gu and Sean Kirmani and Paul Wohlhart and Yao Lu and Montserrat Gonzalez Arenas and Kanishka Rao and Wenhao Yu and Chuyuan Fu and Keerthana Gopalakrishnan and Zhuo Xu and Priya Sundaresan and Peng Xu and Hao Su and Karol Hausman and Chelsea Finn and Quan Vuong and Ted Xiao},\n  booktitle = {ICLR 2024},\n  year = {2024},\n  url = {https://proceedings.iclr.cc/paper_files/paper/2024/hash/c383e44d9a878d1982d9abb838bd5d8a-Abstract-Conference.html}\n}",
+        "preview": "assets/papers/rt-trajectory.png",
+        "previewSourceUrl": "https://proceedings.iclr.cc/paper_files/paper/2024/file/c383e44d9a878d1982d9abb838bd5d8a-Paper-Conference.pdf"
+      },
+      "metrics": {
+        "citations": {
+          "value": 5,
+          "source": "OpenAlex",
+          "sourceUrl": "https://openalex.org/W4388512477",
+          "updatedAt": "2026-09-14",
+          "recordTitle": "RT-Trajectory: Robotic Task Generalization via Hindsight Trajectory Sketches"
+        }
+      },
+      "addedAt": "2026-09-14",
+      "updatedAt": "2026-09-14"
+    },
+    {
+      "id": "code-as-policies",
+      "institutions": [
+        {
+          "name": "Google Research",
+          "url": "https://research.google/",
+          "logo": "assets/institutions/google-research.svg",
+          "mark": "G"
+        }
+      ],
+      "name": "Code as Policies",
+      "title": "Code as Policies: Language Model Programs for Embodied Control",
+      "domains": [
+        "embodied"
+      ],
+      "kinds": [
+        "papers"
+      ],
+      "year": 2023,
+      "venue": "ICRA 2023",
+      "summary": "Prompts language models to write executable policy code that composes perception and control APIs for spatial and long-horizon robot tasks.",
+      "tags": [
+        "Program synthesis",
+        "Language planning"
+      ],
+      "environment": "Tabletop manipulation, mobile manipulation, and simulated control tasks.",
+      "interface": "Natural-language instructions and API descriptions are translated into executable Python policies.",
+      "limits": "Generated code inherits model errors and API assumptions; execution requires sandboxing, validation, and task-specific perception functions.",
+      "status": "selected",
+      "evidence": "Official bibliographic metadata checked; experiments not independently reproduced.",
+      "sourceType": "supplement",
+      "checkedAt": "2026-09-14",
+      "links": {
+        "paper": "https://doi.org/10.1109/ICRA48891.2023.10160591",
+        "project": "https://code-as-policies.github.io/",
+        "pdf": "https://arxiv.org/pdf/2209.07753"
+      },
+      "rank": 58,
+      "selectionTrack": "peer-reviewed",
+      "selectionReason": "Representative conference or journal paper within the five-year window; official publication record verified.",
+      "paperType": "method",
+      "bibliography": {
+        "source": "Publisher",
+        "sourceUrl": "https://doi.org/10.1109/ICRA48891.2023.10160591",
+        "checkedAt": "2026-09-14",
+        "authors": [
+          "Jacky Liang",
+          "Wenlong Huang",
+          "Fei Xia",
+          "Peng Xu",
+          "Karol Hausman",
+          "Brian Ichter",
+          "Pete Florence",
+          "Andy Zeng"
+        ],
+        "date": "2023-05-29",
+        "dateLabel": "Publisher record date",
+        "bibtex": "@inproceedings{code_as_policies,\n  title = {Code as Policies: Language Model Programs for Embodied Control},\n  author = {Jacky Liang and Wenlong Huang and Fei Xia and Peng Xu and Karol Hausman and Brian Ichter and Pete Florence and Andy Zeng},\n  booktitle = {ICRA 2023},\n  year = {2023},\n  url = {https://doi.org/10.1109/ICRA48891.2023.10160591}\n}",
+        "preview": "assets/papers/code-as-policies.png",
+        "previewSourceUrl": "https://arxiv.org/pdf/2209.07753"
+      },
+      "metrics": {
+        "citations": {
+          "value": 669,
+          "source": "OpenAlex",
+          "sourceUrl": "https://openalex.org/W4383097638",
+          "updatedAt": "2026-09-14",
+          "recordTitle": "Code as Policies: Language Model Programs for Embodied Control"
+        }
+      },
+      "addedAt": "2026-09-14",
+      "updatedAt": "2026-09-14"
+    },
+    {
+      "id": "demo-crafter-human",
+      "name": "Crafter · open-world survival",
+      "title": "Crafter · open-world survival",
+      "domains": [
+        "game"
+      ],
+      "kinds": [
+        "demos"
+      ],
+      "year": 2022,
+      "venue": "Official demonstration",
+      "summary": "An official Crafter sequence showing resource gathering, survival, and crafting in the compact open-world benchmark.",
+      "tags": [
+        "Open-world",
+        "Game control"
+      ],
+      "environment": "Crafter procedural survival world.",
+      "interface": "Pixels and discrete movement, interaction, sleep, and crafting actions.",
+      "limits": "The clip illustrates a trajectory in a compact 2D benchmark; it is not a measure of average agent performance.",
+      "status": "selected",
+      "evidence": "Original project video and source page checked. Qualitative, author-reported evidence; not independently reproduced.",
+      "sourceType": "supplement",
+      "checkedAt": "2026-09-14",
+      "links": {
+        "project": "https://danijar.com/project/crafter/",
+        "video": "https://danijar.com/asset/crafter/video.mp4"
+      },
+      "rank": 181,
+      "selectionTrack": "demonstration",
+      "selectionReason": "Publicly accessible original research demonstration with an explicit setting and related peer-reviewed paper.",
+      "video": {
+        "src": "https://danijar.com/asset/crafter/video.mp4",
+        "type": "video/mp4"
+      },
+      "demoType": "game-control",
+      "credit": "Crafter research team",
+      "relatedIds": [
+        "crafter"
+      ],
+      "metrics": {
+        "github": {
+          "value": 590,
+          "source": "GitHub",
+          "sourceUrl": "https://github.com/danijar/crafter/stargazers",
+          "repository": "danijar/crafter",
+          "updatedAt": "2026-09-14"
+        }
+      },
+      "addedAt": "2026-09-14",
+      "updatedAt": "2026-09-14"
+    },
+    {
+      "id": "demo-vima-imitation",
+      "name": "VIMA · one-shot video imitation",
+      "title": "VIMA · one-shot video imitation",
+      "domains": [
+        "embodied"
+      ],
+      "kinds": [
+        "demos"
+      ],
+      "year": 2023,
+      "venue": "Official demonstration",
+      "summary": "An official VIMA-Bench example in which a multimodal prompt demonstrates the motion the simulated robot should reproduce.",
+      "tags": [
+        "Simulation",
+        "Multimodal prompting"
+      ],
+      "environment": "VIMA-Bench tabletop simulation.",
+      "interface": "A one-shot video prompt and scene observations condition object-centric robot actions.",
+      "limits": "The clip uses a simulator and benchmark object representation; it does not demonstrate direct transfer to a physical robot.",
+      "status": "selected",
+      "evidence": "Original project video and source page checked. Qualitative, author-reported evidence; not independently reproduced.",
+      "sourceType": "supplement",
+      "checkedAt": "2026-09-14",
+      "links": {
+        "project": "https://vimalabs.github.io/",
+        "video": "https://vimalabs.github.io/assets/videos/demos/one_shot_video_imitation/follow_motion/1.mp4"
+      },
+      "rank": 182,
+      "selectionTrack": "demonstration",
+      "selectionReason": "Publicly accessible original research demonstration with an explicit setting and related peer-reviewed paper.",
+      "video": {
+        "src": "https://vimalabs.github.io/assets/videos/demos/one_shot_video_imitation/follow_motion/1.mp4",
+        "type": "video/mp4"
+      },
+      "demoType": "simulation",
+      "credit": "VIMA research team",
+      "relatedIds": [
+        "vima"
+      ],
+      "metrics": {
+        "github": {
+          "value": 858,
+          "source": "GitHub",
+          "sourceUrl": "https://github.com/vimalabs/VIMA/stargazers",
+          "repository": "vimalabs/VIMA",
+          "updatedAt": "2026-09-14"
+        }
+      },
+      "addedAt": "2026-09-14",
+      "updatedAt": "2026-09-14"
+    },
+    {
+      "id": "demo-mobile-aloha-shrimp",
+      "name": "Mobile ALOHA · cooking shrimp",
+      "title": "Mobile ALOHA · cooking shrimp",
+      "domains": [
+        "embodied"
+      ],
+      "kinds": [
+        "demos"
+      ],
+      "year": 2024,
+      "venue": "Official demonstration",
+      "summary": "The official Mobile ALOHA gallery shows autonomous whole-body bimanual cooking and serving of shrimp.",
+      "tags": [
+        "Mobile manipulation",
+        "Bimanual control"
+      ],
+      "environment": "A real kitchen with a mobile dual-arm ALOHA platform.",
+      "interface": "Camera observations drive learned base, arm, and gripper actions cloned from whole-body demonstrations.",
+      "limits": "A selected successful rollout does not report the task success distribution or cover changes outside the evaluated kitchen setup.",
+      "status": "selected",
+      "evidence": "Original project video and source page checked. Qualitative, author-reported evidence; not independently reproduced.",
+      "sourceType": "supplement",
+      "checkedAt": "2026-09-14",
+      "links": {
+        "project": "https://mobile-aloha.github.io/",
+        "video": "https://mobile-aloha.github.io/resources/skills/cook_shrimp.mp4"
+      },
+      "rank": 183,
+      "selectionTrack": "demonstration",
+      "selectionReason": "Publicly accessible original research demonstration with an explicit setting and related peer-reviewed paper.",
+      "video": {
+        "src": "https://mobile-aloha.github.io/resources/skills/cook_shrimp.mp4",
+        "type": "video/mp4"
+      },
+      "demoType": "real-robot",
+      "credit": "Mobile ALOHA research team",
+      "relatedIds": [
+        "mobile-aloha"
+      ],
+      "metrics": {
+        "github": {
+          "value": 4469,
+          "source": "GitHub",
+          "sourceUrl": "https://github.com/MarkFzp/mobile-aloha/stargazers",
+          "repository": "MarkFzp/mobile-aloha",
+          "updatedAt": "2026-09-14"
+        }
+      },
+      "addedAt": "2026-09-14",
+      "updatedAt": "2026-09-14"
+    },
+    {
+      "id": "demo-dp3-pour",
+      "name": "DP3 · spatially robust pouring",
+      "title": "DP3 · spatially robust pouring",
+      "domains": [
+        "embodied"
+      ],
+      "kinds": [
+        "demos"
+      ],
+      "year": 2024,
+      "venue": "Official demonstration",
+      "summary": "An official real-robot DP3 sequence demonstrates point-cloud-conditioned pouring under spatial variation.",
+      "tags": [
+        "3D policy",
+        "Real robot"
+      ],
+      "environment": "Real tabletop pouring with sparse point-cloud observations.",
+      "interface": "Depth-derived point clouds and proprioception condition a diffusion policy over action chunks.",
+      "limits": "The gallery clip is qualitative evidence from the authors and does not expose the full evaluation distribution.",
+      "status": "selected",
+      "evidence": "Original project video and source page checked. Qualitative, author-reported evidence; not independently reproduced.",
+      "sourceType": "supplement",
+      "checkedAt": "2026-09-14",
+      "links": {
+        "project": "https://3d-diffusion-policy.github.io/",
+        "video": "https://3d-diffusion-policy.github.io/videos/high_res/pour_robust_final.mp4"
+      },
+      "rank": 184,
+      "selectionTrack": "demonstration",
+      "selectionReason": "Publicly accessible original research demonstration with an explicit setting and related peer-reviewed paper.",
+      "video": {
+        "src": "https://3d-diffusion-policy.github.io/videos/high_res/pour_robust_final.mp4",
+        "type": "video/mp4"
+      },
+      "demoType": "real-robot",
+      "credit": "3D Diffusion Policy research team",
+      "relatedIds": [
+        "dp3"
+      ],
+      "metrics": {
+        "github": {
+          "value": 1440,
+          "source": "GitHub",
+          "sourceUrl": "https://github.com/YanjieZe/3D-Diffusion-Policy/stargazers",
+          "repository": "YanjieZe/3D-Diffusion-Policy",
+          "updatedAt": "2026-09-14"
+        }
+      },
+      "addedAt": "2026-09-14",
+      "updatedAt": "2026-09-14"
+    },
+    {
+      "id": "demo-gr1-drawer",
+      "name": "GR-1 · opening a drawer",
+      "title": "GR-1 · opening a drawer",
+      "domains": [
+        "embodied"
+      ],
+      "kinds": [
+        "demos"
+      ],
+      "year": 2024,
+      "venue": "Official demonstration",
+      "summary": "The official GR-1 page shows an end-to-end real-robot drawer-opening behavior after video-generative pretraining and policy fine-tuning.",
+      "tags": [
+        "Generative policy",
+        "Real robot"
+      ],
+      "environment": "Real tabletop articulated-object manipulation.",
+      "interface": "Language, image history, and robot state tokens condition action and future-image predictions.",
+      "limits": "This is one author-selected rollout; it does not isolate how much performance comes from video pretraining versus robot fine-tuning.",
+      "status": "selected",
+      "evidence": "Original project video and source page checked. Qualitative, author-reported evidence; not independently reproduced.",
+      "sourceType": "supplement",
+      "checkedAt": "2026-09-14",
+      "links": {
+        "project": "https://gr1-manipulation.github.io/",
+        "video": "https://gr1-manipulation.github.io/static/videos/real_exp/open_the_drawer.mp4"
+      },
+      "rank": 185,
+      "selectionTrack": "demonstration",
+      "selectionReason": "Publicly accessible original research demonstration with an explicit setting and related peer-reviewed paper.",
+      "video": {
+        "src": "https://gr1-manipulation.github.io/static/videos/real_exp/open_the_drawer.mp4",
+        "type": "video/mp4"
+      },
+      "demoType": "real-robot",
+      "credit": "GR-1 research team",
+      "relatedIds": [
+        "gr1"
+      ],
+      "metrics": {
+        "github": {
+          "value": 309,
+          "source": "GitHub",
+          "sourceUrl": "https://github.com/bytedance/GR-1/stargazers",
+          "repository": "bytedance/GR-1",
+          "updatedAt": "2026-09-14"
+        }
+      },
+      "addedAt": "2026-09-14",
+      "updatedAt": "2026-09-14"
+    },
+    {
+      "id": "demo-saycan-long-horizon",
+      "name": "SayCan · long-horizon instruction",
+      "title": "SayCan · long-horizon instruction",
+      "domains": [
+        "embodied"
+      ],
+      "kinds": [
+        "demos"
+      ],
+      "year": 2022,
+      "venue": "Official demonstration",
+      "summary": "An official SayCan demonstration shows language planning grounded in the feasible skills of a mobile manipulation robot.",
+      "tags": [
+        "Language planning",
+        "Affordances"
+      ],
+      "environment": "A real office kitchen with a mobile manipulator.",
+      "interface": "A natural-language request is decomposed into value-weighted skills and executed sequentially.",
+      "limits": "The planner selects from a fixed skill library; a successful sequence does not imply open-ended low-level control.",
+      "status": "selected",
+      "evidence": "Original project video and source page checked. Qualitative, author-reported evidence; not independently reproduced.",
+      "sourceType": "supplement",
+      "checkedAt": "2026-09-14",
+      "links": {
+        "project": "https://say-can.github.io/",
+        "video": "https://say-can.github.io/img/demo_sequence_compressed.mp4"
+      },
+      "rank": 186,
+      "selectionTrack": "demonstration",
+      "selectionReason": "Publicly accessible original research demonstration with an explicit setting and related peer-reviewed paper.",
+      "video": {
+        "src": "https://say-can.github.io/img/demo_sequence_compressed.mp4",
+        "type": "video/mp4"
+      },
+      "demoType": "real-robot",
+      "credit": "SayCan research team",
+      "relatedIds": [
+        "saycan"
+      ],
+      "metrics": {},
+      "addedAt": "2026-09-14",
+      "updatedAt": "2026-09-14"
+    },
+    {
+      "id": "demo-3d-diffuser-peg",
+      "name": "3D Diffuser Actor · peg insertion",
+      "title": "3D Diffuser Actor · peg insertion",
+      "domains": [
+        "embodied"
+      ],
+      "kinds": [
+        "demos"
+      ],
+      "year": 2024,
+      "venue": "Official demonstration",
+      "summary": "The official gallery shows a 3D trajectory diffusion policy inserting a peg into a hole on a real robot.",
+      "tags": [
+        "3D policy",
+        "Diffusion models"
+      ],
+      "environment": "Real tabletop contact-rich manipulation.",
+      "interface": "RGB-D scene features, language, and proprioception condition a denoised end-effector trajectory.",
+      "limits": "A gallery success does not establish tolerance across unseen geometry, calibration error, or contact conditions.",
+      "status": "selected",
+      "evidence": "Original project video and source page checked. Qualitative, author-reported evidence; not independently reproduced.",
+      "sourceType": "supplement",
+      "checkedAt": "2026-09-14",
+      "links": {
+        "project": "https://3d-diffuser-actor.github.io/",
+        "video": "https://3d-diffuser-actor.github.io/static/videos/realworld/new_insert_peg_in_hole_1.mp4"
+      },
+      "rank": 187,
+      "selectionTrack": "demonstration",
+      "selectionReason": "Publicly accessible original research demonstration with an explicit setting and related peer-reviewed paper.",
+      "video": {
+        "src": "https://3d-diffuser-actor.github.io/static/videos/realworld/new_insert_peg_in_hole_1.mp4",
+        "type": "video/mp4"
+      },
+      "demoType": "real-robot",
+      "credit": "3D Diffuser Actor research team",
+      "relatedIds": [
+        "3d-diffuser-actor"
+      ],
+      "metrics": {},
+      "addedAt": "2026-09-14",
+      "updatedAt": "2026-09-14"
+    },
+    {
+      "id": "demo-cliport-folding",
+      "name": "CLIPort · cloth folding",
+      "title": "CLIPort · cloth folding",
+      "domains": [
+        "embodied"
+      ],
+      "kinds": [
+        "demos"
+      ],
+      "year": 2021,
+      "venue": "Official demonstration",
+      "summary": "An official CLIPort real-robot clip shows language-conditioned cloth folding with semantic and spatial action pathways.",
+      "tags": [
+        "Vision-language",
+        "Real robot"
+      ],
+      "environment": "Real tabletop cloth manipulation.",
+      "interface": "RGB observations and language condition pick-and-place predictions.",
+      "limits": "The action abstraction is tailored to tabletop pick-and-place and cannot represent every deformation or continuous force profile.",
+      "status": "selected",
+      "evidence": "Original project video and source page checked. Qualitative, author-reported evidence; not independently reproduced.",
+      "sourceType": "supplement",
+      "checkedAt": "2026-09-14",
+      "links": {
+        "project": "https://cliport.github.io/",
+        "video": "https://cliport.github.io/media/videos/1_folding.mp4"
+      },
+      "rank": 188,
+      "selectionTrack": "demonstration",
+      "selectionReason": "Publicly accessible original research demonstration with an explicit setting and related peer-reviewed paper.",
+      "video": {
+        "src": "https://cliport.github.io/media/videos/1_folding.mp4",
+        "type": "video/mp4"
+      },
+      "demoType": "real-robot",
+      "credit": "CLIPort research team",
+      "relatedIds": [
+        "cliport"
+      ],
+      "metrics": {
+        "github": {
+          "value": 549,
+          "source": "GitHub",
+          "sourceUrl": "https://github.com/cliport/cliport/stargazers",
+          "repository": "cliport/cliport",
+          "updatedAt": "2026-09-14"
+        }
+      },
+      "addedAt": "2026-09-14",
+      "updatedAt": "2026-09-14"
+    },
+    {
+      "id": "demo-inner-monologue-recovery",
+      "name": "Inner Monologue · feedback-driven recovery",
+      "title": "Inner Monologue · feedback-driven recovery",
+      "domains": [
+        "embodied"
+      ],
+      "kinds": [
+        "demos"
+      ],
+      "year": 2022,
+      "venue": "Official demonstration",
+      "summary": "An official example shows a language planner using scene and success feedback to update a multi-step manipulation plan.",
+      "tags": [
+        "Closed-loop reasoning",
+        "Language planning"
+      ],
+      "environment": "Real or simulated tabletop rearrangement from the official evaluation gallery.",
+      "interface": "Textual environment feedback is returned to the language model between skill executions.",
+      "limits": "Recovery depends on the accuracy of external feedback modules and the coverage of the available skill library.",
+      "status": "selected",
+      "evidence": "Original project video and source page checked. Qualitative, author-reported evidence; not independently reproduced.",
+      "sourceType": "supplement",
+      "checkedAt": "2026-09-14",
+      "links": {
+        "project": "https://innermonologue.github.io/",
+        "video": "https://innermonologue.github.io/img/im_demo1_an.mp4"
+      },
+      "rank": 189,
+      "selectionTrack": "demonstration",
+      "selectionReason": "Publicly accessible original research demonstration with an explicit setting and related peer-reviewed paper.",
+      "video": {
+        "src": "https://innermonologue.github.io/img/im_demo1_an.mp4",
+        "type": "video/mp4"
+      },
+      "demoType": "real-robot",
+      "credit": "Inner Monologue research team",
+      "relatedIds": [
+        "inner-monologue"
+      ],
+      "metrics": {},
       "addedAt": "2026-09-14",
       "updatedAt": "2026-09-14"
     }

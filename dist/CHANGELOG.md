@@ -2,6 +2,10 @@
 
 Collection-history baseline: **2026-09-14**. Added and revised dates describe this index, independently of publication dates and metric retrieval dates.
 
+## 2026-09-14 · 28 representative papers and 9 original demos
+
+Collection update. Expanded game research across Atari, world models, generalist agents, Minecraft evaluation, and strategic multi-agent play; expanded embodied research across language planning, robot Transformers, visual pretraining, 3D diffusion policies, and mobile bimanual systems. Every new paper links to a verified formal publication record, and every new video comes from its original project page.
+
 ## 2026-09-14 · A warmer welcome and a shared future vision
 
 Community update. Expanded the repository welcome, community contribution paths, and long-term vision, with a new illustration connecting virtual experience, shared agent methods, and physical-world learning.

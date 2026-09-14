@@ -1,10 +1,71 @@
 {
   "metricsRefresh": {
-    "checkedAt": "2026-09-14T15:05:04.252Z",
-    "total": 89,
-    "refreshed": 89,
-    "preserved": 0,
-    "failures": []
+    "checkedAt": "2026-09-14T18:28:13.256Z",
+    "total": 133,
+    "refreshed": 121,
+    "preserved": 12,
+    "failures": [
+      {
+        "source": "GitHub",
+        "sourceUrl": "https://github.com/kzl/decision-transformer",
+        "reason": "HTTP 403"
+      },
+      {
+        "source": "GitHub",
+        "sourceUrl": "https://github.com/opendilab/LightZero",
+        "reason": "HTTP 403"
+      },
+      {
+        "source": "GitHub",
+        "sourceUrl": "https://github.com/google-research/robotics_transformer",
+        "reason": "HTTP 403"
+      },
+      {
+        "source": "GitHub",
+        "sourceUrl": "https://github.com/vimalabs/VIMA",
+        "reason": "HTTP 403"
+      },
+      {
+        "source": "GitHub",
+        "sourceUrl": "https://github.com/peract/peract",
+        "reason": "HTTP 403"
+      },
+      {
+        "source": "GitHub",
+        "sourceUrl": "https://github.com/facebookresearch/r3m",
+        "reason": "HTTP 403"
+      },
+      {
+        "source": "GitHub",
+        "sourceUrl": "https://github.com/facebookresearch/eai-vc",
+        "reason": "HTTP 403"
+      },
+      {
+        "source": "GitHub",
+        "sourceUrl": "https://github.com/MarkFzp/mobile-aloha",
+        "reason": "HTTP 403"
+      },
+      {
+        "source": "GitHub",
+        "sourceUrl": "https://github.com/bytedance/GR-1",
+        "reason": "HTTP 403"
+      },
+      {
+        "source": "OpenAlex",
+        "sourceUrl": "https://openalex.org/W4390635563",
+        "reason": "Indexed title changed; review required"
+      },
+      {
+        "source": "GitHub",
+        "sourceUrl": "https://github.com/YanjieZe/3D-Diffusion-Policy",
+        "reason": "HTTP 403"
+      },
+      {
+        "source": "GitHub",
+        "sourceUrl": "https://github.com/cliport/cliport",
+        "reason": "HTTP 403"
+      }
+    ]
   },
   "linkCheck": {
     "checkedAt": "2026-09-14T15:05:56.260Z",

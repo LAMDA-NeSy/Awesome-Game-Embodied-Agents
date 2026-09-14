@@ -2,6 +2,13 @@
   "baselineDate": "2026-09-14",
   "entries": [
     {
+      "id": "2026-09-14-representative-expansion",
+      "date": "2026-09-14",
+      "title": "28 representative papers and 9 original demos",
+      "summary": "Expanded game research across Atari, world models, generalist agents, Minecraft evaluation, and strategic multi-agent play; expanded embodied research across language planning, robot Transformers, visual pretraining, 3D diffusion policies, and mobile bimanual systems. Every new paper links to a verified formal publication record, and every new video comes from its original project page.",
+      "type": "Collection update"
+    },
+    {
       "id": "2026-09-14-community-readme-vision",
       "date": "2026-09-14",
       "title": "A warmer welcome and a shared future vision",
