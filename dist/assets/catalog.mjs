@@ -79,11 +79,11 @@ function metricLink(url,label,type,metric) {
   const isMetric=type==='citations'||type==='stars';
   if(!safeUrl(url)||(isMetric&&!hasCount(metric?.value))){
     const note=`${label} ${isMetric?'count':'link'} not available`;
-    return `<span class="paper-stat ${isMetric?'stat-missing-count':'stat-unavailable'}" role="group" aria-disabled="true" aria-label="${escapeHtml(note)}" title="${escapeHtml(note)}">${icon(type)}<span class="stat-label">${escapeHtml(label)}</span>${isMetric?'<strong aria-hidden="true">—</strong>':''}</span>`;
+    return `<span class="paper-stat ${isMetric?'stat-missing-count':'stat-unavailable'}" data-stat="${type}" role="group" aria-disabled="true" aria-label="${escapeHtml(note)}" title="${escapeHtml(note)}">${icon(type)}<span class="stat-label">${escapeHtml(label)}</span>${isMetric?'<strong aria-hidden="true">—</strong>':''}</span>`;
   }
   const counted=hasCount(metric?.value);
   const note=counted?`${metric.source} · checked ${metric.updatedAt}`:label;
-  return `<a class="paper-stat" href="${escapeHtml(url)}" target="_blank" rel="noopener noreferrer" title="${escapeHtml(note)}" aria-label="${escapeHtml(label)}${counted?`: ${formatCount(metric.value)}. ${escapeHtml(note)}`:''}">${icon(type)}<span class="stat-label">${escapeHtml(label)}</span>${counted?`<strong>${formatCount(metric.value)}</strong>`:''}</a>`;
+  return `<a class="paper-stat" data-stat="${type}" href="${escapeHtml(url)}" target="_blank" rel="noopener noreferrer" title="${escapeHtml(note)}" aria-label="${escapeHtml(label)}${counted?`: ${formatCount(metric.value)}. ${escapeHtml(note)}`:''}">${icon(type)}<span class="stat-label">${escapeHtml(label)}</span>${counted?`<strong>${formatCount(metric.value)}</strong>`:''}</a>`;
 }
 function renderPaper(r,lookup) {
   const b=r.bibliography || {};
