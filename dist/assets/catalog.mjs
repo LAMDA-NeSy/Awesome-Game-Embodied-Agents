@@ -126,7 +126,7 @@ function renderPaper(r,lookup) {
   const domain=r.domains.length>1?'cross-domain':r.domains[0];
   const domainLabel=r.domains.length>1?'GAME + EMBODIED':r.domains[0]==='game'?'GAME':'EMBODIED';
   const candidate=r.status==='candidate';
-  const evidence=candidate?'Candidate · pending review':r.selectionTrack==='recent-arxiv'?'Selected preprint':'Peer-reviewed';
+  const evidence=candidate?'Candidate · pending review':r.selectionTrack==='recent-arxiv'?'Selected preprint':'';
   const citations=r.metrics?.citations;
   const stars=r.metrics?.github;
   const stats=[metricLink(r.links.data,'Data','data'),metricLink(r.links.model,'Models','model'),metricLink(r.links.code,'Code','code'),metricLink(citations?.sourceUrl,'Citations','citations',citations),metricLink(stars?.sourceUrl,'GitHub stars','stars',stars)].join('');
@@ -135,7 +135,7 @@ function renderPaper(r,lookup) {
   const field=(label,value)=>value?`<p><b>${label}:</b> ${escapeHtml(value)}</p>`:'';
   const preview=b.preview && /^assets\/papers\/[a-z0-9-]+\.png$/.test(b.preview)?`<a class="paper-preview" href="${escapeHtml(safeUrl(r.links.pdf||r.links.paper))}" target="_blank" rel="noopener noreferrer" title="${escapeHtml(b.previewVersion||'Paper first page')}" aria-label="Open ${escapeHtml(r.name)} PDF"><img src="${escapeHtml(b.preview)}" alt="First page of ${escapeHtml(r.title)}" width="320" height="420" loading="lazy" decoding="async"></a>`:'';
   return `<article class="resource-card paper-card ${stats?'has-stats':''}" id="resource-${escapeHtml(r.id)}">
-    <div class="paper-visual">${preview}<div class="paper-classification"><span class="domain-tag ${domain}">${domainLabel}</span><span class="resource-venue">${escapeHtml(r.venue)}</span><span class="evidence-badge ${candidate?'candidate-badge':''}">${evidence}</span></div></div>
+    <div class="paper-visual">${preview}<div class="paper-classification"><span class="domain-tag ${domain}">${domainLabel}</span><span class="resource-venue">${escapeHtml(r.venue)}</span>${evidence?`<span class="evidence-badge ${candidate?'candidate-badge':''}">${evidence}</span>`:''}</div></div>
     <div class="resource-body paper-body"><h3><a href="${escapeHtml(safeUrl(r.links.paper))}" target="_blank" rel="noopener noreferrer">${escapeHtml(r.title+shortName)}</a></h3>
     <p class="paper-byline">${date.value?`<span class="paper-date" title="${escapeHtml(date.meaning)}"><span class="date-label">${escapeHtml(date.label)}</span> <time datetime="${escapeHtml(date.value)}">${escapeHtml(date.value)}</time></span>`:''}${shownAuthors?`<span class="paper-authors" title="${escapeHtml(authors.join(', '))}">${escapeHtml(shownAuthors)}</span>`:''}</p>
     <p class="summary">${escapeHtml(r.summary)}</p>

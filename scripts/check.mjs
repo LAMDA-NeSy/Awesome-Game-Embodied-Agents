@@ -73,6 +73,12 @@ specimen.metrics.citations={value:0,source:'OpenAlex',sourceUrl:'https://openale
 card=renderCard(specimen);
 assert(card.includes('Citations: 0.'),'A verified zero must remain visible');
 assert(card.includes('aria-label="GitHub stars count not available"'),'Missing stars must remain unavailable when citations are zero');
+const reviewedPaper=selected.find(r=>r.kinds.includes('papers')&&r.selectionTrack==='peer-reviewed');
+assert(reviewedPaper&&!renderCard(reviewedPaper).includes('Peer-reviewed'),'Peer-reviewed papers should rely on the venue without a redundant status label');
+const selectedPreprint=selected.find(r=>r.kinds.includes('papers')&&r.selectionTrack==='recent-arxiv');
+assert(selectedPreprint&&renderCard(selectedPreprint).includes('Selected preprint'),'Selected preprints must keep their review-status label');
+const candidatePaper=data.resources.find(r=>r.status==='candidate'&&r.kinds.includes('papers'));
+assert(candidatePaper&&renderCard(candidatePaper).includes('Candidate · pending review'),'Candidate papers must keep their pending-review label');
 assert(filterResources(data.resources,{query:'Hafner',candidates:false,view:'papers',domain:'all',topic:'all',year:'all',sort:'featured'}).some(r=>r.id==='kb-g05'),'Author search failed');
 // Venue year, source date, and collection history describe different timelines.
 const dates=[
