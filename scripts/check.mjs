@@ -1,6 +1,8 @@
 import fs from 'node:fs/promises';
 import assert from 'node:assert/strict';
-import { safeUrl, renderCard, filterResources } from '../dist/assets/catalog.mjs';
+import { safeUrl, renderCard, renderCatalogue, filterResources, sortResources, resourceDate } from '../dist/assets/catalog.mjs';
+import { syncCollectionDates } from './collection-history.mjs';
+import { classifyStatus, collectLinks, probeLink } from './check-links.mjs';
 const data=JSON.parse(await fs.readFile('data/resources.json','utf8'));
 const ids=new Set();const titles=new Set();
 const selected=data.resources.filter(r=>r.status==='selected');
@@ -9,6 +11,8 @@ for(const r of data.resources){
  assert(!ids.has(r.id),`Duplicate ID: ${r.id}`);ids.add(r.id);
  const title=r.title.toLowerCase().replace(/[^a-z0-9]/g,'');assert(!titles.has(title),`Duplicate title: ${r.title}`);titles.add(title);
  for(const field of ['name','title','summary','environment','interface','limits','evidence','selectionReason','checkedAt'])assert(r[field],`${r.id}: missing ${field}`);
+ for(const field of ['addedAt','updatedAt'])assert(/^\d{4}-\d{2}-\d{2}$/.test(r[field]),`${r.id}: missing collection ${field}`);
+ assert(r.updatedAt>=r.addedAt,`${r.id}: revision precedes addition`);
  assert(r.domains.length&&r.domains.every(d=>['game','embodied'].includes(d)),`Invalid domain: ${r.id}`);
  assert(r.kinds.length&&r.kinds.every(k=>['articles','papers','projects','datasets','benchmarks','demos'].includes(k)),`Invalid kind: ${r.id}`);
  assert(Object.values(r.links).length>0,`No sources: ${r.id}`);
@@ -70,16 +74,58 @@ card=renderCard(specimen);
 assert(card.includes('Citations: 0.'),'A verified zero must remain visible');
 assert(card.includes('aria-label="GitHub stars count not available"'),'Missing stars must remain unavailable when citations are zero');
 assert(filterResources(data.resources,{query:'Hafner',candidates:false,view:'papers',domain:'all',topic:'all',year:'all',sort:'featured'}).some(r=>r.id==='kb-g05'),'Author search failed');
+// Venue year, source date, and collection history describe different timelines.
+const dates=[
+ {id:'older-source',rank:1,year:2026,addedAt:'2026-09-10',updatedAt:'2026-09-11',bibliography:{date:'2023-06-15',source:'OpenAlex',dateLabel:'Indexed publication date (OpenAlex)'}},
+ {id:'newer-source',rank:2,year:2025,addedAt:'2026-09-12',updatedAt:'2026-09-12',bibliography:{date:'2025-12-04',source:'arXiv',dateLabel:'First arXiv submission'}},
+ {id:'missing-source',rank:0,year:null,addedAt:'2026-09-01',updatedAt:'2026-09-14'}
+];
+assert.deepEqual(sortResources(dates,'venue').map(r=>r.id),['older-source','newer-source','missing-source']);
+assert.deepEqual(sortResources(dates,'date').map(r=>r.id),['newer-source','older-source','missing-source']);
+assert.equal(sortResources(dates,'added')[0].id,'newer-source');
+assert.equal(sortResources(dates,'updated')[0].id,'missing-source');
+assert.equal(resourceDate(dates[0]).label,'Indexed');assert.equal(resourceDate(dates[1]).label,'Preprint');
+assert.equal(resourceDate(dates[2]).value,'','Do not invent an exact date from venue year');
+const grouped=renderCatalogue(selected,'all',data.resources);
+for(const kind of ['articles','papers','projects','datasets','benchmarks','demos']){
+ const items=selected.filter(r=>r.kinds.includes(kind));
+ const label={articles:'Research articles',papers:'Papers',projects:'Open-source projects',datasets:'Datasets',benchmarks:'Benchmarks & environments',demos:'Video demos'}[kind];
+ assert(grouped.includes(`<h3 class="group-title">${label}<span>${items.length}</span>`),`${kind}: group and navigation counts differ`);
+}
+const groupedIds=[...grouped.matchAll(/id="(resource-[^"]+)"/g)].map(m=>m[1]);
+assert.equal(groupedIds.length,new Set(groupedIds).size,'Shared category records need unique DOM IDs');
+const chronological=renderCatalogue(sortResources(selected,'added'),'all',data.resources,'added');
+assert.equal([...chronological.matchAll(/id="resource-/g)].length,selected.length,'Chronological all-view must count unique resources');
+assert(!chronological.includes('class="resource-group"'),'Grouping must not override chronological sorting');
+const old={id:'history',status:'selected',summary:'Original',checkedAt:'2026-09-10',addedAt:'2026-09-10',updatedAt:'2026-09-10',metrics:{citations:{value:1,updatedAt:'2026-09-10'}},bibliography:{checkedAt:'2026-09-10',authors:['A']}};
+const metricOnly=structuredClone(old);metricOnly.metrics.citations.value=2;metricOnly.checkedAt='2026-09-14';metricOnly.bibliography.checkedAt='2026-09-14';
+syncCollectionDates([metricOnly],[old],'2026-09-10','2026-09-14');assert.equal(metricOnly.updatedAt,'2026-09-10','Metrics and source checks must not reset content dates');
+const changed={...old,summary:'Revised'};syncCollectionDates([changed],[old],'2026-09-10','2026-09-14');assert.equal(changed.updatedAt,'2026-09-14');assert.equal(changed.addedAt,'2026-09-10');
+const addition={id:'new',status:'selected'};syncCollectionDates([addition],[old],'2026-09-10','2026-09-14');assert.equal(addition.addedAt,'2026-09-14');
+const promoted={...old};syncCollectionDates([promoted],[{...old,status:'candidate'}],'2026-09-10','2026-09-14');assert.equal(promoted.addedAt,'2026-09-14');
+assert.equal(classifyStatus(403),'restricted');assert.equal(classifyStatus(429),'restricted');assert.equal(classifyStatus(503),'unreachable');
+const attempts=[];const probe=await probeLink('https://example.org/paper',async(url,options)=>{attempts.push(options.method);return {status:options.method==='HEAD'?404:200};});
+assert.equal(probe.status,'ok');assert.deepEqual(attempts,['HEAD','GET'],'HEAD 404 must be confirmed by GET');
+assert.equal((await probeLink('https://example.org/paper',async()=>({status:410}))).status,'broken');
+assert.equal(collectLinks([{id:'one',links:{paper:'https://example.org/paper#first'}},{id:'two',links:{paper:'https://example.org/paper#second'}}]).length,1,'Source check must deduplicate fragments');
 assert(!/[\u3400-\u9fff]/u.test(JSON.stringify(data)), 'Catalogue contains untranslated Chinese text');
 const deployed=JSON.parse(await fs.readFile('dist/resources.json','utf8'));
 assert.deepEqual(data,deployed,'Website data differs from source');
 for(const k of ['articles','papers','projects','datasets','benchmarks','demos'])assert.equal(data.meta.counts[k],selected.filter(r=>r.kinds.includes(k)).length,'Stale count');
 const html=await fs.readFile('dist/index.html','utf8');
 for(const r of selected)assert(html.includes(`id="resource-${r.id}"`),`Missing static fallback: ${r.id}`);
-for(const p of ['dist/assets/app.js','dist/assets/catalog.mjs','dist/assets/style.css','dist/README.md','dist/CITATION.cff','dist/CONTRIBUTING.md','dist/docs/collection-policy.md','dist/docs/metadata.md','dist/selection-audit.json'])await fs.access(p);
+for(const p of ['dist/assets/app.js','dist/assets/catalog.mjs','dist/assets/updates.mjs','dist/assets/style.css','dist/README.md','dist/CITATION.cff','dist/CONTRIBUTING.md','dist/docs/collection-policy.md','dist/docs/metadata.md','dist/selection-audit.json','dist/maintenance.json','dist/updates.json','dist/CHANGELOG.md'])await fs.access(p);
+assert(html.includes('id="updates"')&&html.includes('Recently added')&&html.includes('Update log'),'Missing collection history');
+assert(!html.includes('>Newest first<'),'Ambiguous sort label');
+const updates=JSON.parse(await fs.readFile('data/updates.json','utf8'));
+assert.equal(new Set(updates.entries.map(entry=>entry.id)).size,updates.entries.length,'Duplicate update IDs');
+for(const entry of updates.entries)assert(/^\d{4}-\d{2}-\d{2}$/.test(entry.date)&&entry.title&&entry.summary&&entry.type,'Incomplete update note');
+const maintenance=JSON.parse(await fs.readFile('dist/maintenance.json','utf8'));
+if(maintenance.linkCheck){const report=maintenance.linkCheck;assert.equal(report.total,report.results.length);assert.equal(Object.values(report.summary).reduce((a,b)=>a+b,0),report.total);assert.equal(new Set(report.results.map(r=>r.url)).size,report.total);for(const result of report.results)assert(safeUrl(result.url)&&result.resourceIds.every(id=>ids.has(id)),'Invalid check source');}
+if(maintenance.metricsRefresh)assert.equal(maintenance.metricsRefresh.refreshed+maintenance.metricsRefresh.preserved,maintenance.metricsRefresh.total);
 assert(html.includes('<html lang="en">'), 'Page language must be English');
 for(const p of ['README.md','CONTRIBUTING.md','docs/collection-policy.md','data/selection-audit.json','dist/index.html','dist/assets/app.js','dist/assets/catalog.mjs'])assert(!/[\u3400-\u9fff]/u.test(await fs.readFile(p,'utf8')),`Untranslated text: ${p}`);
 assert.equal((html.match(/<video /g)||[]).length,data.meta.counts.demos,'Missing static demo players');
 const {execFileSync}=await import('node:child_process');
-for(const f of ['dist/assets/app.js','dist/assets/catalog.mjs','scripts/build.mjs','scripts/serve.mjs','scripts/refresh-metrics.mjs'])execFileSync(process.execPath,['--check',f]);
+for(const f of ['dist/assets/app.js','dist/assets/catalog.mjs','dist/assets/updates.mjs','scripts/build.mjs','scripts/serve.mjs','scripts/refresh-metrics.mjs','scripts/check-links.mjs','scripts/collection-history.mjs'])execFileSync(process.execPath,['--check',f]);
 console.log(`Validated ${data.resources.length} unique resources, date rules, sources, counts, static fallbacks, and JavaScript syntax.`);

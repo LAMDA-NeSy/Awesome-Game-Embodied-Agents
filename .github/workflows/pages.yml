@@ -3,6 +3,13 @@ on:
   push:
     branches: [main]
   workflow_dispatch:
+    inputs:
+      refresh:
+        description: Refresh verified statistics and check source links before publishing
+        type: boolean
+        default: false
+  schedule:
+    - cron: '17 1 * * 1'
 permissions:
   contents: read
   pages: write
@@ -11,13 +18,51 @@ concurrency:
   group: pages
   cancel-in-progress: true
 jobs:
+  maintain:
+    if: github.event_name == 'schedule' || (github.event_name == 'workflow_dispatch' && inputs.refresh)
+    runs-on: ubuntu-latest
+    timeout-minutes: 25
+    permissions:
+      contents: write
+    outputs:
+      commit: ${{ steps.save.outputs.commit }}
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Refresh verified source statistics
+        run: npm run refresh-metrics
+        env:
+          GITHUB_TOKEN: ${{ github.token }}
+          OPENALEX_API_KEY: ${{ secrets.OPENALEX_API_KEY }}
+      - name: Check original source links
+        run: npm run check-links
+      - run: npm run build && npm run check
+      - name: Save validated maintenance snapshots
+        id: save
+        run: |
+          git add data/resources.json data/maintenance.json dist/resources.json dist/maintenance.json dist/index.html README.md dist/README.md
+          if ! git diff --cached --quiet; then
+            git config user.name 'github-actions[bot]'
+            git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+            git commit -m 'Refresh verified metrics and source-link report'
+            git push origin HEAD:main
+          fi
+          echo "commit=$(git rev-parse HEAD)" >> "$GITHUB_OUTPUT"
   deploy:
+    needs: maintain
+    if: ${{ !cancelled() && (needs.maintain.result == 'success' || needs.maintain.result == 'skipped') }}
     runs-on: ubuntu-latest
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
     steps:
       - uses: actions/checkout@v4
+        with:
+          ref: ${{ needs.maintain.outputs.commit || github.sha }}
       - uses: actions/setup-node@v4
         with:
           node-version: '22'

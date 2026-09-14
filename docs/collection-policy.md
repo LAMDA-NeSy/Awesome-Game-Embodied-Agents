@@ -41,4 +41,4 @@ Align environments and tasks, observation access, action granularity, training d
 
 Maintain `data/resources.json`, add official sources and resource limitations, then run `npm run build` and `npm run check`. When promoting a candidate, update `status`, `selectionTrack`, `selectionReason`, `evidence`, and `checkedAt`.
 
-This is a manually curated snapshot. There is no scheduled scraper or automatic write-back to the original Feishu knowledge base. Raw source exports are excluded from the repository and published website.
+New paper selection is manually curated. Weekly checks refresh existing verified statistics and report source-link availability. Routine checks do not promote candidates, alter publication windows, or certify paper claims. There is no automatic paper scraper or write-back to the original Feishu knowledge base. Raw source exports are excluded from the repository and published website.

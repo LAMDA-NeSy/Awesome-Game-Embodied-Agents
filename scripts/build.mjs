@@ -1,7 +1,14 @@
 import fs from 'node:fs/promises';
 import { createHash } from 'node:crypto';
-import { renderCatalogue } from '../dist/assets/catalog.mjs';
+import { renderCatalogue, resourceDate, sortResources } from '../dist/assets/catalog.mjs';
+import { renderUpdates } from '../dist/assets/updates.mjs';
+import { syncCollectionDates } from './collection-history.mjs';
 const data = JSON.parse(await fs.readFile('data/resources.json', 'utf8'));
+const history = JSON.parse(await fs.readFile('data/updates.json', 'utf8'));
+let previous = { resources: [] }, maintenance = {};
+try { previous = JSON.parse(await fs.readFile('dist/resources.json', 'utf8')); } catch (error) { if (error.code !== 'ENOENT') throw error; }
+try { maintenance = JSON.parse(await fs.readFile('data/maintenance.json', 'utf8')); } catch (error) { if (error.code !== 'ENOENT') throw error; }
+syncCollectionDates(data.resources, previous.resources, history.baselineDate, new Date().toISOString().slice(0, 10));
 const selected = data.resources.filter(r => r.status === 'selected').sort((a, b) => a.rank - b.rank);
 const candidates = data.resources.filter(r => r.status === 'candidate');
 const count = kind => selected.filter(r => r.kinds.includes(kind)).length;
@@ -11,11 +18,20 @@ await fs.copyFile('data/resources.json', 'dist/resources.json');
 let html = await fs.readFile('dist/index.html', 'utf8');
 const styleVersion = createHash('sha256').update(await fs.readFile('dist/assets/style.css')).digest('hex').slice(0, 12);
 html = html.replace(/href="assets\/style\.css(?:\?v=[a-f0-9]+)?"/, `href="assets/style.css?v=${styleVersion}"`);
+const catalogueVersion = createHash('sha256').update(await fs.readFile('dist/assets/catalog.mjs')).digest('hex').slice(0, 12);
+const app = (await fs.readFile('dist/assets/app.js', 'utf8')).replace(/from '\.\/catalog\.mjs(?:\?v=[a-f0-9]+)?'/, `from './catalog.mjs?v=${catalogueVersion}'`);
+await fs.writeFile('dist/assets/app.js', app);
+const scriptVersion = createHash('sha256').update(app).digest('hex').slice(0, 12);
+html = html.replace(/src="assets\/app\.js(?:\?v=[a-f0-9]+)?"/, `src="assets/app.js?v=${scriptVersion}"`);
 html = html.replace(/(<!-- CATALOGUE:START -->)[\s\S]*?(<!-- CATALOGUE:END -->)/, () => `<!-- CATALOGUE:START -->${renderCatalogue(selected,'all',data.resources)}<!-- CATALOGUE:END -->`);
 for (const [id, value] of [['nav-total', selected.length], ['stat-total', selected.length], ['stat-papers', count('papers')], ['stat-projects', count('projects')], ['stat-benchmarks', count('benchmarks')], ['stat-articles', count('articles')], ['stat-datasets', count('datasets')], ['stat-demos', count('demos')]]) {
   html = html.replace(new RegExp(`(id="${id}">)[^<]*`), `$1${value}`);
 }
-html = html.replace(/(<p id="result-count"[^>]*>)[\s\S]*?<\/p>/, `$1${selected.length} resources · all categories</p>`);
+html = html.replace(/(<p id="result-count"[^>]*>)[\s\S]*?<\/p>/, `$1${selected.length} unique resources</p>`);
+html = html.replace(/(<!-- UPDATES:START -->)[\s\S]*?(<!-- UPDATES:END -->)/, () => `<!-- UPDATES:START -->${renderUpdates(data, history, maintenance)}<!-- UPDATES:END -->`);
+const latestContentDate = sortResources(data.resources, 'updated')[0]?.updatedAt || history.baselineDate;
+html = html.replace(/(<span id="collection-updated">)[^<]*/, `$1Collection revised · ${latestContentDate}`);
+html = html.replace(/(<span id="metrics-checked">)[^<]*/, `$1${maintenance.metricsRefresh ? `Metrics checked · ${maintenance.metricsRefresh.checkedAt.slice(0, 10)}` : 'Source-dated metrics'}`);
 const about = `<h2>About the collection</h2>
 <p>A research index connecting game agents and embodied intelligence. Game research starts from the supplied <a href="${data.meta.knowledgeUrl}" target="_blank" rel="noopener noreferrer">Game Agent knowledge base</a>; robotics and additional game resources come from official proceedings, research reports, and project repositories.</p>
 <p>The organization and website layout are inspired by <a href="${data.meta.referenceUrl}" target="_blank" rel="noopener noreferrer">Awesome Robot Use Agent</a>. This collection has its own scope, categories, and resource summaries.</p>
@@ -30,7 +46,7 @@ const about = `<h2>About the collection</h2>
 <p>The source table contained ${data.meta.sourceSnapshot.rows} rows. Removing ${data.meta.sourceSnapshot.emptyRows} untitled rows and merging ${data.meta.sourceSnapshot.duplicateRows} duplicates produced ${data.meta.sourceSnapshot.uniqueTitledRows} distinct titled leads. Historical counts on the knowledge-base homepage were not used for this snapshot.</p>
 <p>Checks primarily cover bibliographic records, project descriptions, and abstracts. Original knowledge-base review labels are retained as source claims, translated into English. They do not represent a fresh full-text review or independent experiment reproduction.</p>
 <p><a href="selection-audit.json" download>Selection audit ↓</a> · <a href="resources.json" download>Resource data ↓</a> · <a href="${data.meta.knowledgeUrl}" target="_blank" rel="noopener noreferrer">Source knowledge base ↗</a> (original access permissions apply)</p>
-<h3>Paper records and metrics</h3><p>Paper rows include full titles, credited authors, source dates, PDF links, and original first-page previews where available. The byline date comes from the linked bibliographic record; an arXiv first-submission date or proceedings publication date may differ from the conference year. Expand Details &amp; sources for the complete author list and a BibTeX citation.</p><p>Citations come from the linked OpenAlex or Crossref record, and stars from the linked GitHub repository. Each count carries its retrieval date. Counts are cached snapshots and can differ across paper versions and databases. Missing resource links appear as muted, non-clickable icons; unavailable citation and star counts show an em dash. See <a href="docs/metadata.md">metadata sources and maintenance</a>.</p><h3>Comparing game and embodied agents</h3>
+<h3>Paper records and metrics</h3><p>Paper rows include full titles, credited authors, source dates, PDF links, and original first-page previews where available. Dates are labeled Published, Preprint, or Indexed according to their source. Venue / release year and Source date are separate sort options. Year filters use the conference or journal year for papers; proceedings dates can differ. Recently added and Recently revised refer to the collection, not to publication. Expand Details &amp; sources for the complete author list and a BibTeX citation.</p><p>Citations come from the linked OpenAlex or Crossref record, and stars from the linked GitHub repository. Each count carries its retrieval date. Counts are cached snapshots and can differ across paper versions and databases. Missing resource links appear as muted, non-clickable icons; unavailable citation and star counts show an em dash. See <a href="docs/metadata.md">metadata sources and maintenance</a>.</p><h3>Comparing game and embodied agents</h3>
 <div class="table-wrap"><table><thead><tr><th>Dimension</th><th>Game research</th><th>Embodied research</th></tr></thead><tbody>
 <tr><td>Environment & task</td><td>Game, map, mode, and task scope</td><td>Hardware, scene, objects, and manipulation tasks</td></tr>
 <tr><td>Observation access</td><td>Pixels, audio, text, or engine state</td><td>Images, depth, touch, and proprioception</td></tr>
@@ -40,7 +56,7 @@ const about = `<h2>About the collection</h2>
 <tr><td>Evaluation</td><td>Map splits, task metrics, samples, and seeds</td><td>Task success, generalization, and human intervention</td></tr></tbody></table></div>
 <p>Shared methods do not by themselves establish transfer between domains. Frame generation, game navigation, robot planning, and physical execution retain their respective evidence boundaries.</p>
 <h3>Video demonstrations</h3><p>The video gallery embeds original research-team videos, with source links, credits, and related work. Game control, generated frames, real robots, and simulation are labeled separately. Selected clips illustrate behavior; they do not replace benchmark evaluations. Videos load as you approach them and play only when requested. If an external host is unavailable, use the source link on the card.</p><h3>Maintenance and contributions</h3>
-<p>The README and website share the same catalogue. This is a manually curated snapshot. Additions should include official sources and satisfy the selection criteria. Read the <a href="CONTRIBUTING.md">contribution guide</a> or visit the <a href="${data.meta.repositoryUrl}" target="_blank" rel="noopener noreferrer">GitHub repository</a>.</p>`;
+<p>The README and website share the same catalogue. New additions are manually curated. Weekly maintenance checks existing source links and refreshes verified statistics. See <a href="#updates">What’s new</a> for recent additions, the update log, and maintenance reports. Additions should include official sources and satisfy the selection criteria. Read the <a href="CONTRIBUTING.md">contribution guide</a> or visit the <a href="${data.meta.repositoryUrl}" target="_blank" rel="noopener noreferrer">GitHub repository</a>.</p>`;
 html = html.replace(/(<section id="about" class="about-panel" hidden>)[\s\S]*?<\/section>/, `$1${about}</section>`);
 await fs.writeFile('dist/index.html', html);
 const md = s => String(s || '—').replace(/\|/g, '\\|').replace(/\n/g, ' ');
@@ -48,14 +64,14 @@ const link = (url, text) => url ? `[${text}](${url})` : '';
 const links = r => Object.entries(r.links).map(([k, v]) => link(v, { paper: 'Paper', code: 'Code', project: 'Project', data: 'Data', article: 'Article', video: 'Video', pdf: 'PDF', model: 'Models' }[k] || k)).join(' · ');
 const authorLine = r => {const authors=r.bibliography?.authors||[];return authors.slice(0,3).join(', ')+(authors.length>3?' et al.':'');};
 const metricsLine = r => [r.metrics?.citations,r.metrics?.github].filter(m=>Number.isInteger(m?.value)).map(m=>link(m.sourceUrl,`${m.value.toLocaleString('en-US')} ${m.source==='GitHub'?'stars':'citations'} · ${m.source} · ${m.updatedAt}`)).join('<br>');
-const paperRows = items => items.map(r => `| **${link(r.links.paper, r.title)}**<br>${md(authorLine(r))}<br>${md(r.bibliography?.date || r.publicationDate || r.year)} | ${md(r.venue)} | ${md(r.summary)} | ${links(r)}${metricsLine(r)?'<br>'+metricsLine(r):''} |`).join('\n');
+const paperRows = items => items.map(r => {const date=resourceDate(r);return `| **${link(r.links.paper, r.title)}**<br>${md(authorLine(r))}${date.value?`<br>${date.label}: ${date.value}`:''} | ${md(r.venue)} | ${md(r.summary)} | ${links(r)}${metricsLine(r)?'<br>'+metricsLine(r):''} |`;}).join('\n');
 const projectRows = items => items.map(r => `| **${r.name}** | ${md(r.environment)} | ${md(r.interface)} | ${md(r.limits)} | ${links(r)} |`).join('\n');
 const tick = String.fromCharCode(96);
 let readme = `# Awesome Game & Embodied Agents
 
 A curated collection of research on agents that perceive, plan, and act in games and the physical world.
 
-[**Explore the website ↗**](${data.meta.siteUrl}) · [Articles](#articles) · [Papers](#papers) · [Projects](#projects) · [Datasets](#datasets) · [Benchmarks](#benchmarks) · [Video demos](#video-demos) · [Contributing](CONTRIBUTING.md)
+[**Explore the website ↗**](${data.meta.siteUrl}) · [What’s new](${data.meta.siteUrl}#updates) · [Articles](#articles) · [Papers](#papers) · [Projects](#projects) · [Datasets](#datasets) · [Benchmarks](#benchmarks) · [Video demos](#video-demos) · [Contributing](CONTRIBUTING.md)
 
 **${count('articles')} articles · ${count('papers')} papers · ${count('projects')} projects · ${count('datasets')} datasets · ${count('benchmarks')} benchmarks · ${count('demos')} video demos**
 
@@ -168,7 +184,7 @@ Entries retain sources, review dates, environments, interfaces, limitations, and
 
 ## Paper metadata
 
-The website shows full titles, author lists, source dates, Paper/PDF links, and original first-page previews. Expand a record for complete authors and a copyable BibTeX citation. Citation and GitHub star counts link to their sources and carry retrieval dates. Missing resource links appear as muted, non-clickable icons on the website; unavailable citation and star counts show an em dash. Indexed versions can have different citation counts. The byline date is identified in the record details and can differ from the conference year.
+The website shows full titles, author lists, source dates, Paper/PDF links, and original first-page previews. Expand a record for complete authors and a copyable BibTeX citation. Citation and GitHub star counts link to their sources and carry retrieval dates. Missing resource links appear as muted, non-clickable icons on the website; unavailable citation and star counts show an em dash. Indexed versions can have different citation counts. Source dates are visibly labeled Published, Preprint, or Indexed. The venue year remains separate, with explicit year and source-date sorting. Category views and homepage groups use the same membership rule; category counts overlap, while All resources counts each record once.
 
 See [metadata sources and refresh instructions](docs/metadata.md).
 
@@ -194,7 +210,9 @@ Open the local URL printed by the server.
 - **Publishing:** In repository Settings → Pages, select GitHub Actions. Pushes to ${tick}main${tick} check, build, and publish automatically. The **Publish GitHub Pages** workflow also supports manual runs.
 - **Forks:** Update ${tick}repositoryUrl${tick} and ${tick}siteUrl${tick} in the catalogue and the repository links in the page before publishing your own copy.
 
-This is a manually maintained snapshot; there is no scheduled paper scraper or automatic write-back to Feishu.
+Weekly maintenance runs every Monday at approximately 09:17 Asia/Shanghai (01:17 UTC). It refreshes previously verified citation and star records, checks source links, preserves failed snapshots with their original dates, validates the catalogue, and publishes the report. GitHub schedules may run later than the scheduled time. New papers and link corrections remain editorial decisions; there is no automatic paper selection or write-back to Feishu.
+
+See [what’s new](${data.meta.siteUrl}#updates), the [update log](CHANGELOG.md), and [maintenance instructions](docs/metadata.md). The workflow can also be started manually with its refresh option enabled.
 
 ## Acknowledgements
 
@@ -234,8 +252,12 @@ ${selected.filter(r => r.kinds.includes('demos')).map(r => `| **${md(r.name)}** 
 readme = readme.replace('## Papers\n', articleSection + '## Papers\n').replace('## Benchmarks\n', datasetSection + '## Benchmarks\n').replace('## Candidates\n', demoSection + '## Candidates\n');
 readme = readme.replace('## License\n', '## Citation\n\nIf this collection helps your work, cite the repository and the individual resources you use. A machine-readable [citation file](CITATION.cff) is included.\n\n## License\n');
 await fs.writeFile('README.md', readme);
+const changelog = `# Collection updates\n\nCollection-history baseline: **${history.baselineDate}**. Added and revised dates describe this index, independently of publication dates and metric retrieval dates.\n\n` + history.entries.map(entry => `## ${entry.date} · ${entry.title}\n\n${entry.type}. ${entry.summary}\n`).join('\n');
+await fs.writeFile('CHANGELOG.md', changelog);
 await fs.mkdir('dist/docs', { recursive: true });
-for (const f of ['README.md', 'CONTRIBUTING.md', 'LICENSE', 'CITATION.cff']) await fs.copyFile(f, 'dist/' + f);
+for (const f of ['README.md', 'CONTRIBUTING.md', 'LICENSE', 'CITATION.cff', 'CHANGELOG.md']) await fs.copyFile(f, 'dist/' + f);
+await fs.copyFile('data/updates.json', 'dist/updates.json');
+await fs.writeFile('dist/maintenance.json', JSON.stringify(maintenance, null, 2) + '\n');
 await fs.copyFile('docs/collection-policy.md', 'dist/docs/collection-policy.md');
 await fs.copyFile('docs/metadata.md', 'dist/docs/metadata.md');
 await fs.copyFile('data/selection-audit.json', 'dist/selection-audit.json');

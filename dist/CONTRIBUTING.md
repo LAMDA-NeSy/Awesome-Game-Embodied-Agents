@@ -8,7 +8,7 @@ Contributions on game and embodied agents are welcome: papers, research articles
 4. For a recent preprint, provide its first submission date and specific evidence of significance. Use `status: "candidate"` when verification is incomplete.
 5. Keep peer review, source verification, and independent reproduction distinct. Identify workshops separately from main conferences. Do not submit credentials, private reading records, or materials you lack permission to share.
 6. For a demo, use a playable video hosted by its original author or project. Include the source page, credit, demonstration setting, and associated resource IDs. Separate real robots, simulation, gameplay, teleoperation, and generated frames. Report speed changes where documented; selected clips are not benchmark success rates.
-7. Run `npm run build` and `npm run check`. Submit the catalogue and generated README/website files together.
+7. Add a dated note to `data/updates.json` for meaningful additions or corrections. Run `npm run build` and `npm run check`. Submit the catalogue and generated README/website files together.
 
 ## Catalogue conventions
 
@@ -24,3 +24,5 @@ Contributions on game and embodied agents are welcome: papers, research articles
 The site and README are generated from the same catalogue. Edit resource data first, then rebuild to keep counts and lists consistent.
 
 For paper rows, include verified authors, the source date and its meaning, and a PDF URL when available. Link any citation count and repository star count to its exact source and record the retrieval date. Leave unverified optional fields absent. See [metadata maintenance](docs/metadata.md).
+
+The build tracks collection additions and substantive content revisions separately from publication dates and statistics refreshes. Do not reuse a publication date as an inclusion date. Weekly automation maintains existing verified metrics and source-link reports; new paper selection remains reviewed.

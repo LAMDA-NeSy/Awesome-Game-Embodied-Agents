@@ -97,13 +97,15 @@
           "recordTitle": "Mastering diverse control tasks through world models"
         },
         "github": {
-          "value": 3773,
+          "value": 3774,
           "source": "GitHub",
           "sourceUrl": "https://github.com/danijar/dreamerv3/stargazers",
           "repository": "danijar/dreamerv3",
           "updatedAt": "2026-09-14"
         }
-      }
+      },
+      "addedAt": "2026-09-14",
+      "updatedAt": "2026-09-14"
     },
     {
       "id": "kb-f02",
@@ -182,7 +184,9 @@
           "repository": "microsoft/Imitating-Human-Behaviour-w-Diffusion",
           "updatedAt": "2026-09-14"
         }
-      }
+      },
+      "addedAt": "2026-09-14",
+      "updatedAt": "2026-09-14"
     },
     {
       "id": "kb-f07",
@@ -264,7 +268,9 @@
           "repository": "tencent-facul/code",
           "updatedAt": "2026-09-14"
         }
-      }
+      },
+      "addedAt": "2026-09-14",
+      "updatedAt": "2026-09-14"
     },
     {
       "id": "kb-r01",
@@ -329,7 +335,9 @@
           "repository": "microsoft/Intrepid",
           "updatedAt": "2026-09-14"
         }
-      }
+      },
+      "addedAt": "2026-09-14",
+      "updatedAt": "2026-09-14"
     },
     {
       "id": "kb-r02",
@@ -395,7 +403,9 @@
           "repository": "mahaozhe/DuRND",
           "updatedAt": "2026-09-14"
         }
-      }
+      },
+      "addedAt": "2026-09-14",
+      "updatedAt": "2026-09-14"
     },
     {
       "id": "kb-r03",
@@ -461,7 +471,9 @@
           "updatedAt": "2026-09-14",
           "recordTitle": "Action-Sufficient State Representation Learning for Control with Structural Constraints"
         }
-      }
+      },
+      "addedAt": "2026-09-14",
+      "updatedAt": "2026-09-14"
     },
     {
       "id": "kb-b01",
@@ -534,7 +546,9 @@
           "repository": "TTomilin/COOM",
           "updatedAt": "2026-09-14"
         }
-      }
+      },
+      "addedAt": "2026-09-14",
+      "updatedAt": "2026-09-14"
     },
     {
       "id": "kb-b02",
@@ -598,7 +612,9 @@
           "updatedAt": "2026-09-14",
           "recordTitle": "HASARD: A Benchmark for Vision-Based Safe Reinforcement Learning in Embodied Agents"
         }
-      }
+      },
+      "addedAt": "2026-09-14",
+      "updatedAt": "2026-09-14"
     },
     {
       "id": "kb-w01",
@@ -662,7 +678,9 @@
           "updatedAt": "2026-09-14",
           "recordTitle": "Diffusion Models Are Real-Time Game Engines"
         }
-      }
+      },
+      "addedAt": "2026-09-14",
+      "updatedAt": "2026-09-14"
     },
     {
       "id": "kb-w02",
@@ -738,7 +756,9 @@
           "repository": "eloialonso/diamond",
           "updatedAt": "2026-09-14"
         }
-      }
+      },
+      "addedAt": "2026-09-14",
+      "updatedAt": "2026-09-14"
     },
     {
       "id": "kb-w03",
@@ -812,7 +832,9 @@
           "repository": "insait-institute/StateSpaceDiffuser",
           "updatedAt": "2026-09-14"
         }
-      }
+      },
+      "addedAt": "2026-09-14",
+      "updatedAt": "2026-09-14"
     },
     {
       "id": "kb-s01",
@@ -884,7 +906,9 @@
           "repository": "LJH-coding/EDELINE",
           "updatedAt": "2026-09-14"
         }
-      }
+      },
+      "addedAt": "2026-09-14",
+      "updatedAt": "2026-09-14"
     },
     {
       "id": "kb-t01",
@@ -956,7 +980,9 @@
           "repository": "anyboby/contextual-similarity-distillation",
           "updatedAt": "2026-09-14"
         }
-      }
+      },
+      "addedAt": "2026-09-14",
+      "updatedAt": "2026-09-14"
     },
     {
       "id": "kb-t02",
@@ -1021,7 +1047,9 @@
           "updatedAt": "2026-09-14",
           "recordTitle": "Recurrent Action Transformer with Memory"
         }
-      }
+      },
+      "addedAt": "2026-09-14",
+      "updatedAt": "2026-09-14"
     },
     {
       "id": "kb-c01",
@@ -1086,7 +1114,9 @@
           "updatedAt": "2026-09-14",
           "recordTitle": "Why the Agent Made that Decision: Contrastive Explanation Learning for Reinforcement Learning"
         }
-      }
+      },
+      "addedAt": "2026-09-14",
+      "updatedAt": "2026-09-14"
     },
     {
       "id": "kb-c02",
@@ -1152,7 +1182,9 @@
           "updatedAt": "2026-09-14",
           "recordTitle": "Enhancing Robot Program Synthesis Through Environmental Context"
         }
-      }
+      },
+      "addedAt": "2026-09-14",
+      "updatedAt": "2026-09-14"
     },
     {
       "id": "kb-c03",
@@ -1221,7 +1253,9 @@
           "repository": "stefanwm13/just-cluster-it-public",
           "updatedAt": "2026-09-14"
         }
-      }
+      },
+      "addedAt": "2026-09-14",
+      "updatedAt": "2026-09-14"
     },
     {
       "id": "kb-c04",
@@ -1286,7 +1320,9 @@
           "updatedAt": "2026-09-14",
           "recordTitle": "Exploration via Elliptical Episodic Bonuses"
         }
-      }
+      },
+      "addedAt": "2026-09-14",
+      "updatedAt": "2026-09-14"
     },
     {
       "id": "kb-c05",
@@ -1359,7 +1395,9 @@
           "repository": "2016choang/sfl",
           "updatedAt": "2026-09-14"
         }
-      }
+      },
+      "addedAt": "2026-09-14",
+      "updatedAt": "2026-09-14"
     },
     {
       "id": "kb-c06",
@@ -1421,7 +1459,9 @@
           "updatedAt": "2026-09-14",
           "recordTitle": "Handling Long and Richly Constrained Tasks through Constrained Hierarchical Reinforcement Learning"
         }
-      }
+      },
+      "addedAt": "2026-09-14",
+      "updatedAt": "2026-09-14"
     },
     {
       "id": "kb-c08",
@@ -1474,7 +1514,9 @@
         "bibtex": "@misc{kb-c08,\n  title = {Diverse Projection Ensembles for Distributional Reinforcement Learning},\n  author = {Moritz Akiya Zanger and Wendelin Boehmer and Matthijs T. J. Spaan},\n  year = {2024},\n  url = {https://proceedings.iclr.cc/paper_files/paper/2024/hash/cfea00ddf5a5f514bd3368d639d1933d-Abstract-Conference.html}\n}",
         "preview": "assets/papers/kb-c08.png",
         "previewSourceUrl": "https://proceedings.iclr.cc/paper_files/paper/2024/file/cfea00ddf5a5f514bd3368d639d1933d-Paper-Conference.pdf"
-      }
+      },
+      "addedAt": "2026-09-14",
+      "updatedAt": "2026-09-14"
     },
     {
       "id": "kb-c09",
@@ -1547,7 +1589,9 @@
           "repository": "LeapLabTHU/MOSS",
           "updatedAt": "2026-09-14"
         }
-      }
+      },
+      "addedAt": "2026-09-14",
+      "updatedAt": "2026-09-14"
     },
     {
       "id": "mp5",
@@ -1618,7 +1662,9 @@
           "repository": "IranQin/MP5",
           "updatedAt": "2026-09-14"
         }
-      }
+      },
+      "addedAt": "2026-09-14",
+      "updatedAt": "2026-09-14"
     },
     {
       "id": "deps",
@@ -1679,7 +1725,9 @@
           "updatedAt": "2026-09-14",
           "recordTitle": "Describe, Explain, Plan and Select: Interactive Planning with Large Language Models Enables Open-World Multi-Task Agents"
         }
-      }
+      },
+      "addedAt": "2026-09-14",
+      "updatedAt": "2026-09-14"
     },
     {
       "id": "voyager",
@@ -1751,7 +1799,9 @@
           "repository": "MineDojo/Voyager",
           "updatedAt": "2026-09-14"
         }
-      }
+      },
+      "addedAt": "2026-09-14",
+      "updatedAt": "2026-09-14"
     },
     {
       "id": "vpt",
@@ -1815,7 +1865,9 @@
           "updatedAt": "2026-09-14",
           "recordTitle": "Video PreTraining (VPT): Learning to Act by Watching Unlabeled Online Videos"
         }
-      }
+      },
+      "addedAt": "2026-09-14",
+      "updatedAt": "2026-09-14"
     },
     {
       "id": "steve1",
@@ -1875,7 +1927,9 @@
           "updatedAt": "2026-09-14",
           "recordTitle": "STEVE-1: A Generative Model for Text-to-Behavior in Minecraft"
         }
-      }
+      },
+      "addedAt": "2026-09-14",
+      "updatedAt": "2026-09-14"
     },
     {
       "id": "openvla",
@@ -1957,7 +2011,9 @@
           "repository": "openvla/openvla",
           "updatedAt": "2026-09-14"
         }
-      }
+      },
+      "addedAt": "2026-09-14",
+      "updatedAt": "2026-09-14"
     },
     {
       "id": "diffusion-policy",
@@ -2028,7 +2084,9 @@
           "repository": "real-stanford/diffusion_policy",
           "updatedAt": "2026-09-14"
         }
-      }
+      },
+      "addedAt": "2026-09-14",
+      "updatedAt": "2026-09-14"
     },
     {
       "id": "act",
@@ -2095,7 +2153,9 @@
           "repository": "tonyzhaozh/act",
           "updatedAt": "2026-09-14"
         }
-      }
+      },
+      "addedAt": "2026-09-14",
+      "updatedAt": "2026-09-14"
     },
     {
       "id": "octo",
@@ -2177,7 +2237,9 @@
           "repository": "octo-models/octo",
           "updatedAt": "2026-09-14"
         }
-      }
+      },
+      "addedAt": "2026-09-14",
+      "updatedAt": "2026-09-14"
     },
     {
       "id": "rt2",
@@ -2285,7 +2347,9 @@
           "updatedAt": "2026-09-14",
           "recordTitle": "RT-2: Vision-Language-Action Models Transfer Web Knowledge to Robotic Control"
         }
-      }
+      },
+      "addedAt": "2026-09-14",
+      "updatedAt": "2026-09-14"
     },
     {
       "id": "voxposer",
@@ -2354,7 +2418,9 @@
           "repository": "huangwl18/VoxPoser",
           "updatedAt": "2026-09-14"
         }
-      }
+      },
+      "addedAt": "2026-09-14",
+      "updatedAt": "2026-09-14"
     },
     {
       "id": "rekep",
@@ -2423,7 +2489,9 @@
           "repository": "huangwl18/ReKep",
           "updatedAt": "2026-09-14"
         }
-      }
+      },
+      "addedAt": "2026-09-14",
+      "updatedAt": "2026-09-14"
     },
     {
       "id": "hirobot",
@@ -2483,7 +2551,9 @@
         "bibtex": "@misc{hirobot,\n  title = {Hi Robot: Open-Ended Instruction Following with Hierarchical Vision-Language-Action Models},\n  author = {Lucy Xiaoyang Shi and Brian Ichter and Michael Robert Equi and Liyiming Ke and Karl Pertsch and Quan Vuong and James Tanner and Anna Walling and Haohuan Wang and Niccolo Fusai and Adrian Li-Bell and Danny Driess and Lachy Groom and Sergey Levine and Chelsea Finn},\n  year = {2025},\n  url = {https://proceedings.mlr.press/v267/shi25d.html}\n}",
         "preview": "assets/papers/hirobot.png",
         "previewSourceUrl": "https://raw.githubusercontent.com/mlresearch/v267/main/assets/shi25d/shi25d.pdf"
-      }
+      },
+      "addedAt": "2026-09-14",
+      "updatedAt": "2026-09-14"
     },
     {
       "id": "libero",
@@ -2554,7 +2624,9 @@
           "repository": "Lifelong-Robot-Learning/LIBERO",
           "updatedAt": "2026-09-14"
         }
-      }
+      },
+      "addedAt": "2026-09-14",
+      "updatedAt": "2026-09-14"
     },
     {
       "id": "embodiedbench",
@@ -2632,7 +2704,9 @@
           "repository": "EmbodiedBench/EmbodiedBench",
           "updatedAt": "2026-09-14"
         }
-      }
+      },
+      "addedAt": "2026-09-14",
+      "updatedAt": "2026-09-14"
     },
     {
       "id": "consistency-policy",
@@ -2691,7 +2765,9 @@
           "updatedAt": "2026-09-14",
           "recordTitle": "Consistency Policy: Accelerated Visuomotor Policies via Consistency Distillation"
         }
-      }
+      },
+      "addedAt": "2026-09-14",
+      "updatedAt": "2026-09-14"
     },
     {
       "id": "baku",
@@ -2749,7 +2825,9 @@
           "updatedAt": "2026-09-14",
           "recordTitle": "BAKU: An Efficient Transformer for Multi-Task Policy Learning"
         }
-      }
+      },
+      "addedAt": "2026-09-14",
+      "updatedAt": "2026-09-14"
     },
     {
       "id": "vla-cache",
@@ -2810,7 +2888,9 @@
           "updatedAt": "2026-09-14",
           "recordTitle": "VLA-Cache: Efficient Vision-Language-Action Manipulation via Adaptive Token Caching"
         }
-      }
+      },
+      "addedAt": "2026-09-14",
+      "updatedAt": "2026-09-14"
     },
     {
       "id": "robochemist",
@@ -2872,7 +2952,9 @@
           "updatedAt": "2026-09-14",
           "recordTitle": "RoboChemist: Long-Horizon and Safety-Compliant Robotic Chemical Experimentation"
         }
-      }
+      },
+      "addedAt": "2026-09-14",
+      "updatedAt": "2026-09-14"
     },
     {
       "id": "sima2",
@@ -2998,7 +3080,9 @@
           "updatedAt": "2026-09-14",
           "recordTitle": "SIMA 2: A Generalist Embodied Agent for Virtual Worlds"
         }
-      }
+      },
+      "addedAt": "2026-09-14",
+      "updatedAt": "2026-09-14"
     },
     {
       "id": "pi-star06",
@@ -3114,7 +3198,9 @@
           "updatedAt": "2026-09-14",
           "recordTitle": "$π^{*}_{0.6}$: a VLA That Learns From Experience"
         }
-      }
+      },
+      "addedAt": "2026-09-14",
+      "updatedAt": "2026-09-14"
     },
     {
       "id": "lerobot",
@@ -3148,13 +3234,15 @@
       "selectionReason": "Standalone open-source tool or environment supporting research and reproduction; excluded from paper-window statistics.",
       "metrics": {
         "github": {
-          "value": 27476,
+          "value": 27477,
           "source": "GitHub",
           "sourceUrl": "https://github.com/huggingface/lerobot/stargazers",
           "repository": "huggingface/lerobot",
           "updatedAt": "2026-09-14"
         }
-      }
+      },
+      "addedAt": "2026-09-14",
+      "updatedAt": "2026-09-14"
     },
     {
       "id": "openpi",
@@ -3188,13 +3276,15 @@
       "selectionReason": "Standalone open-source tool or environment supporting research and reproduction; excluded from paper-window statistics.",
       "metrics": {
         "github": {
-          "value": 13794,
+          "value": 13795,
           "source": "GitHub",
           "sourceUrl": "https://github.com/Physical-Intelligence/openpi/stargazers",
           "repository": "Physical-Intelligence/openpi",
           "updatedAt": "2026-09-14"
         }
-      }
+      },
+      "addedAt": "2026-09-14",
+      "updatedAt": "2026-09-14"
     },
     {
       "id": "gymnasium",
@@ -3235,7 +3325,9 @@
           "repository": "Farama-Foundation/Gymnasium",
           "updatedAt": "2026-09-14"
         }
-      }
+      },
+      "addedAt": "2026-09-14",
+      "updatedAt": "2026-09-14"
     },
     {
       "id": "pettingzoo",
@@ -3275,7 +3367,9 @@
           "repository": "Farama-Foundation/PettingZoo",
           "updatedAt": "2026-09-14"
         }
-      }
+      },
+      "addedAt": "2026-09-14",
+      "updatedAt": "2026-09-14"
     },
     {
       "id": "genesis",
@@ -3315,7 +3409,9 @@
           "repository": "Genesis-Embodied-AI/genesis-world",
           "updatedAt": "2026-09-14"
         }
-      }
+      },
+      "addedAt": "2026-09-14",
+      "updatedAt": "2026-09-14"
     },
     {
       "id": "vizdoom",
@@ -3355,7 +3451,9 @@
           "repository": "Farama-Foundation/ViZDoom",
           "updatedAt": "2026-09-14"
         }
-      }
+      },
+      "addedAt": "2026-09-14",
+      "updatedAt": "2026-09-14"
     },
     {
       "id": "habitat",
@@ -3395,7 +3493,9 @@
           "repository": "facebookresearch/habitat-lab",
           "updatedAt": "2026-09-14"
         }
-      }
+      },
+      "addedAt": "2026-09-14",
+      "updatedAt": "2026-09-14"
     },
     {
       "id": "ai2thor",
@@ -3435,7 +3535,9 @@
           "repository": "allenai/ai2thor",
           "updatedAt": "2026-09-14"
         }
-      }
+      },
+      "addedAt": "2026-09-14",
+      "updatedAt": "2026-09-14"
     },
     {
       "id": "maniskill",
@@ -3469,13 +3571,15 @@
       "selectionReason": "Standalone open-source tool or environment supporting research and reproduction; excluded from paper-window statistics.",
       "metrics": {
         "github": {
-          "value": 3317,
+          "value": 3319,
           "source": "GitHub",
           "sourceUrl": "https://github.com/mani-skill/ManiSkill/stargazers",
           "repository": "mani-skill/ManiSkill",
           "updatedAt": "2026-09-14"
         }
-      }
+      },
+      "addedAt": "2026-09-14",
+      "updatedAt": "2026-09-14"
     },
     {
       "id": "candidate-s08",
@@ -3533,7 +3637,9 @@
           "updatedAt": "2026-09-14",
           "recordTitle": "X-Ego: Acquiring Team-Level Tactical Situational Awareness via Cross-Egocentric Contrastive Video Representation Learning"
         }
-      }
+      },
+      "addedAt": "2026-09-14",
+      "updatedAt": "2026-09-14"
     },
     {
       "id": "candidate-p01",
@@ -3615,7 +3721,9 @@
           "updatedAt": "2026-09-14",
           "recordTitle": "Game-TARS: Pretrained Foundation Models for Scalable Generalist Multimodal Game Agents"
         }
-      }
+      },
+      "addedAt": "2026-09-14",
+      "updatedAt": "2026-09-14"
     },
     {
       "id": "candidate-p02",
@@ -3674,7 +3782,9 @@
           "updatedAt": "2026-09-14",
           "recordTitle": "GameWAM: A World Action Model for Video Games"
         }
-      }
+      },
+      "addedAt": "2026-09-14",
+      "updatedAt": "2026-09-14"
     },
     {
       "id": "candidate-t03",
@@ -3731,7 +3841,9 @@
           "updatedAt": "2026-09-14",
           "recordTitle": "See, Symbolize, Act: Grounding VLMs with Spatial Representations for Better Gameplay"
         }
-      }
+      },
+      "addedAt": "2026-09-14",
+      "updatedAt": "2026-09-14"
     },
     {
       "id": "candidate-t04",
@@ -3789,7 +3901,9 @@
           "updatedAt": "2026-09-14",
           "recordTitle": "Playing DOOM with 1.3M Parameters: Specialized Small Models vs Large Language Models for Real-Time Game Control"
         }
-      }
+      },
+      "addedAt": "2026-09-14",
+      "updatedAt": "2026-09-14"
     },
     {
       "id": "candidate-t05",
@@ -3857,7 +3971,9 @@
           "updatedAt": "2026-09-14",
           "recordTitle": "Augmenting Human Performance with an XR Agent Learning from Online Behavior and BCI Evidence"
         }
-      }
+      },
+      "addedAt": "2026-09-14",
+      "updatedAt": "2026-09-14"
     },
     {
       "id": "candidate-t06",
@@ -3915,7 +4031,9 @@
           "updatedAt": "2026-09-14",
           "recordTitle": "Procedural Generation of First Person Shooter Maps using Map-Elites"
         }
-      }
+      },
+      "addedAt": "2026-09-14",
+      "updatedAt": "2026-09-14"
     },
     {
       "id": "candidate-t07",
@@ -3971,7 +4089,9 @@
           "updatedAt": "2026-09-14",
           "recordTitle": "Account Consistency from Gameplay Traces: Same-Player Verification in Counter-Strike 2"
         }
-      }
+      },
+      "addedAt": "2026-09-14",
+      "updatedAt": "2026-09-14"
     },
     {
       "id": "survey-foundation-robotics",
@@ -4042,7 +4162,9 @@
           "updatedAt": "2026-09-14",
           "recordTitle": "Foundation models in robotics: Applications, challenges, and the future"
         }
-      }
+      },
+      "addedAt": "2026-09-14",
+      "updatedAt": "2026-09-14"
     },
     {
       "id": "survey-foundation-manipulation",
@@ -4114,7 +4236,9 @@
           "updatedAt": "2026-09-14",
           "recordTitle": "What foundation models can bring for robot learning in manipulation: A survey"
         }
-      }
+      },
+      "addedAt": "2026-09-14",
+      "updatedAt": "2026-09-14"
     },
     {
       "id": "minedojo",
@@ -4190,7 +4314,9 @@
           "repository": "MineDojo/MineDojo",
           "updatedAt": "2026-09-14"
         }
-      }
+      },
+      "addedAt": "2026-09-14",
+      "updatedAt": "2026-09-14"
     },
     {
       "id": "open-x-embodiment",
@@ -4551,7 +4677,9 @@
           "repository": "google-deepmind/open_x_embodiment",
           "updatedAt": "2026-09-14"
         }
-      }
+      },
+      "addedAt": "2026-09-14",
+      "updatedAt": "2026-09-14"
     },
     {
       "id": "bridgedata-v2",
@@ -4631,7 +4759,9 @@
           "repository": "rail-berkeley/bridge_data_v2",
           "updatedAt": "2026-09-14"
         }
-      }
+      },
+      "addedAt": "2026-09-14",
+      "updatedAt": "2026-09-14"
     },
     {
       "id": "droid",
@@ -4795,7 +4925,9 @@
           "repository": "droid-dataset/droid",
           "updatedAt": "2026-09-14"
         }
-      }
+      },
+      "addedAt": "2026-09-14",
+      "updatedAt": "2026-09-14"
     },
     {
       "id": "article-vpt",
@@ -4830,7 +4962,9 @@
       "sourceDate": "2022-06-23",
       "relatedIds": [
         "vpt"
-      ]
+      ],
+      "addedAt": "2026-09-14",
+      "updatedAt": "2026-09-14"
     },
     {
       "id": "article-sima",
@@ -4865,7 +4999,9 @@
       "sourceDate": "2024-03-13",
       "relatedIds": [
         "sima2"
-      ]
+      ],
+      "addedAt": "2026-09-14",
+      "updatedAt": "2026-09-14"
     },
     {
       "id": "article-sima2",
@@ -4900,7 +5036,9 @@
       "sourceDate": "2025-11-13",
       "relatedIds": [
         "sima2"
-      ]
+      ],
+      "addedAt": "2026-09-14",
+      "updatedAt": "2026-09-14"
     },
     {
       "id": "article-pi0",
@@ -4936,7 +5074,9 @@
       "relatedIds": [
         "openpi",
         "pi-star06"
-      ]
+      ],
+      "addedAt": "2026-09-14",
+      "updatedAt": "2026-09-14"
     },
     {
       "id": "article-lerobot",
@@ -4971,7 +5111,9 @@
       "sourceDate": "2026-07-07",
       "relatedIds": [
         "lerobot"
-      ]
+      ],
+      "addedAt": "2026-09-14",
+      "updatedAt": "2026-09-14"
     },
     {
       "id": "article-robot-use",
@@ -5007,7 +5149,9 @@
       "relatedIds": [
         "openvla",
         "lerobot"
-      ]
+      ],
+      "addedAt": "2026-09-14",
+      "updatedAt": "2026-09-14"
     },
     {
       "id": "demo-voyager-diamond",
@@ -5057,7 +5201,9 @@
           "repository": "MineDojo/Voyager",
           "updatedAt": "2026-09-14"
         }
-      }
+      },
+      "addedAt": "2026-09-14",
+      "updatedAt": "2026-09-14"
     },
     {
       "id": "demo-voyager-cactus",
@@ -5107,7 +5253,9 @@
           "repository": "MineDojo/Voyager",
           "updatedAt": "2026-09-14"
         }
-      }
+      },
+      "addedAt": "2026-09-14",
+      "updatedAt": "2026-09-14"
     },
     {
       "id": "demo-gamengen",
@@ -5147,7 +5295,9 @@
       "credit": "GameNGen research team",
       "relatedIds": [
         "kb-w01"
-      ]
+      ],
+      "addedAt": "2026-09-14",
+      "updatedAt": "2026-09-14"
     },
     {
       "id": "demo-diamond",
@@ -5197,7 +5347,9 @@
           "repository": "eloialonso/diamond",
           "updatedAt": "2026-09-14"
         }
-      }
+      },
+      "addedAt": "2026-09-14",
+      "updatedAt": "2026-09-14"
     },
     {
       "id": "demo-openvla",
@@ -5247,7 +5399,9 @@
           "repository": "openvla/openvla",
           "updatedAt": "2026-09-14"
         }
-      }
+      },
+      "addedAt": "2026-09-14",
+      "updatedAt": "2026-09-14"
     },
     {
       "id": "demo-aloha",
@@ -5287,7 +5441,9 @@
       "credit": "Tony Zhao and the ALOHA / ACT team",
       "relatedIds": [
         "act"
-      ]
+      ],
+      "addedAt": "2026-09-14",
+      "updatedAt": "2026-09-14"
     },
     {
       "id": "demo-diffusion-mug",
@@ -5337,7 +5493,9 @@
           "repository": "real-stanford/diffusion_policy",
           "updatedAt": "2026-09-14"
         }
-      }
+      },
+      "addedAt": "2026-09-14",
+      "updatedAt": "2026-09-14"
     },
     {
       "id": "demo-diffusion-lift",
@@ -5387,7 +5545,9 @@
           "repository": "real-stanford/diffusion_policy",
           "updatedAt": "2026-09-14"
         }
-      }
+      },
+      "addedAt": "2026-09-14",
+      "updatedAt": "2026-09-14"
     }
   ]
 }

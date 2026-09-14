@@ -16,6 +16,7 @@ for(const r of data.resources){
   if(metric?.source==='Crossref' && metric.sourceUrl.startsWith('https://doi.org/'))jobs.set(`citations:${metric.sourceUrl}`,{kind:'citations',source:'Crossref',sourceUrl:metric.sourceUrl,url:`https://api.crossref.org/works/${metric.sourceUrl.slice(16)}`,title:metric.recordTitle});
 }
 const results=new Map();
+const failures=[];
 async function refresh([key,job]){
   try{
     const url=new URL(job.url);const headers={'User-Agent':'Awesome-Game-Embodied-Agents/1.0','Accept':'application/json'};
@@ -37,14 +38,23 @@ async function refresh([key,job]){
     }
     if(!Number.isInteger(value)||value<0)throw new Error('Missing count');
     results.set(key,metric);
-  }catch(error){console.warn(`Kept previous snapshot for ${key}: ${error.name==='TimeoutError'?'request timed out':String(error.message).replace(/api_key=[^&\s]+/g,'api_key=[redacted]')}`);}
+  }catch(error){
+    const reason=error.name==='TimeoutError'?'request timed out':/^HTTP \d+$/.test(error.message)?error.message:error.message==='Indexed title changed; review required'?error.message:'request could not be verified';
+    failures.push({source:job.source||'GitHub',sourceUrl:job.sourceUrl||`https://github.com/${job.repository}`,reason});
+    console.warn(`Kept previous snapshot for ${key}: ${reason}`);
+  }
 }
 const queue=[...jobs];let next=0;
 async function worker(){while(next<queue.length)await refresh(queue[next++]);}
 await Promise.all([worker(),worker(),worker(),worker()]);
 for(const r of data.resources){
-  if(r.links.code){const repo=new URL(r.links.code).pathname.split('/').filter(Boolean).slice(0,2).join('/');const metric=results.get(`github:${repo}`);if(metric)(r.metrics||={}).github=metric;}
+  if(r.links.code && new URL(r.links.code).hostname==='github.com'){const repo=new URL(r.links.code).pathname.split('/').filter(Boolean).slice(0,2).join('/');const metric=results.get(`github:${repo}`);if(metric)(r.metrics||={}).github=metric;}
   const metric=results.get(`citations:${r.metrics?.citations?.sourceUrl}`);if(metric)r.metrics.citations=metric;
 }
 await fs.writeFile(file,JSON.stringify(data,null,2)+'\n');
+let maintenance={};
+try{maintenance=JSON.parse(await fs.readFile('data/maintenance.json','utf8'));}catch(error){if(error.code!=='ENOENT')throw error;}
+maintenance.metricsRefresh={checkedAt:new Date().toISOString(),total:jobs.size,refreshed:results.size,preserved:failures.length,failures};
+await fs.writeFile('data/maintenance.json',JSON.stringify(maintenance,null,2)+'\n');
+if(process.env.GITHUB_STEP_SUMMARY)await fs.appendFile(process.env.GITHUB_STEP_SUMMARY,`### Statistics refresh\n\nUpdated ${results.size} of ${jobs.size} verified source records. ${failures.length} requests retained their previous values and retrieval dates.\n`);
 console.log(`Refreshed ${results.size} of ${jobs.size} source records. Run npm run build and npm run check before publishing.`);

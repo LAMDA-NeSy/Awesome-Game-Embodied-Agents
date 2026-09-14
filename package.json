@@ -9,7 +9,8 @@
     "check": "node scripts/check.mjs",
     "dev": "node scripts/serve.mjs",
     "start": "node scripts/serve.mjs",
-    "refresh-metrics": "node scripts/refresh-metrics.mjs"
+    "refresh-metrics": "node scripts/refresh-metrics.mjs",
+    "check-links": "node scripts/check-links.mjs"
   },
   "engines": {
     "node": ">=20"

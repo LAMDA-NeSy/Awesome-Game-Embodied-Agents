@@ -1,0 +1,1587 @@
+{
+  "metricsRefresh": {
+    "checkedAt": "2026-09-14T14:40:29.628Z",
+    "total": 89,
+    "refreshed": 89,
+    "preserved": 0,
+    "failures": []
+  },
+  "linkCheck": {
+    "checkedAt": "2026-09-14T14:48:40.927Z",
+    "total": 194,
+    "summary": {
+      "ok": 176,
+      "broken": 0,
+      "restricted": 6,
+      "unreachable": 12
+    },
+    "results": [
+      {
+        "url": "https://arxiv.org/abs/2301.10677",
+        "resourceIds": [
+          "kb-f02"
+        ],
+        "status": "ok",
+        "httpStatus": 200
+      },
+      {
+        "url": "https://arxiv.org/abs/2303.04137",
+        "resourceIds": [
+          "diffusion-policy"
+        ],
+        "status": "ok",
+        "httpStatus": 200
+      },
+      {
+        "url": "https://arxiv.org/abs/2305.16291",
+        "resourceIds": [
+          "voyager"
+        ],
+        "status": "ok",
+        "httpStatus": 200
+      },
+      {
+        "url": "https://arxiv.org/abs/2310.08864",
+        "resourceIds": [
+          "open-x-embodiment"
+        ],
+        "status": "ok",
+        "httpStatus": 200
+      },
+      {
+        "url": "https://arxiv.org/abs/2510.19150",
+        "resourceIds": [
+          "candidate-s08"
+        ],
+        "status": "ok",
+        "httpStatus": 200
+      },
+      {
+        "url": "https://arxiv.org/abs/2510.23691",
+        "resourceIds": [
+          "candidate-p01"
+        ],
+        "status": "ok",
+        "httpStatus": 200
+      },
+      {
+        "url": "https://arxiv.org/abs/2511.14759",
+        "resourceIds": [
+          "pi-star06"
+        ],
+        "status": "ok",
+        "httpStatus": 200
+      },
+      {
+        "url": "https://arxiv.org/abs/2512.04797",
+        "resourceIds": [
+          "sima2"
+        ],
+        "status": "ok",
+        "httpStatus": 200
+      },
+      {
+        "url": "https://arxiv.org/abs/2603.11601",
+        "resourceIds": [
+          "candidate-t03"
+        ],
+        "status": "ok",
+        "httpStatus": 200
+      },
+      {
+        "url": "https://arxiv.org/abs/2604.07385",
+        "resourceIds": [
+          "candidate-t04"
+        ],
+        "status": "ok",
+        "httpStatus": 200
+      },
+      {
+        "url": "https://arxiv.org/abs/2605.30570",
+        "resourceIds": [
+          "candidate-t06"
+        ],
+        "status": "ok",
+        "httpStatus": 200
+      },
+      {
+        "url": "https://arxiv.org/abs/2608.24893",
+        "resourceIds": [
+          "candidate-t07"
+        ],
+        "status": "ok",
+        "httpStatus": 200
+      },
+      {
+        "url": "https://arxiv.org/abs/2608.26200",
+        "resourceIds": [
+          "candidate-p02"
+        ],
+        "status": "ok",
+        "httpStatus": 200
+      },
+      {
+        "url": "https://arxiv.org/abs/2608.30369",
+        "resourceIds": [
+          "candidate-t05"
+        ],
+        "status": "ok",
+        "httpStatus": 200
+      },
+      {
+        "url": "https://arxiv.org/pdf/2301.10677",
+        "resourceIds": [
+          "kb-f02"
+        ],
+        "status": "ok",
+        "httpStatus": 200
+      },
+      {
+        "url": "https://arxiv.org/pdf/2303.04137",
+        "resourceIds": [
+          "diffusion-policy"
+        ],
+        "status": "ok",
+        "httpStatus": 200
+      },
+      {
+        "url": "https://arxiv.org/pdf/2305.16291",
+        "resourceIds": [
+          "voyager"
+        ],
+        "status": "ok",
+        "httpStatus": 200
+      },
+      {
+        "url": "https://arxiv.org/pdf/2306.09459",
+        "resourceIds": [
+          "kb-t02"
+        ],
+        "status": "ok",
+        "httpStatus": 200
+      },
+      {
+        "url": "https://arxiv.org/pdf/2310.08864",
+        "resourceIds": [
+          "open-x-embodiment"
+        ],
+        "status": "ok",
+        "httpStatus": 200
+      },
+      {
+        "url": "https://arxiv.org/pdf/2404.18201",
+        "resourceIds": [
+          "survey-foundation-manipulation"
+        ],
+        "status": "ok",
+        "httpStatus": 200
+      },
+      {
+        "url": "https://arxiv.org/pdf/2503.11339",
+        "resourceIds": [
+          "kb-t01"
+        ],
+        "status": "ok",
+        "httpStatus": 200
+      },
+      {
+        "url": "https://arxiv.org/pdf/2510.19150",
+        "resourceIds": [
+          "candidate-s08"
+        ],
+        "status": "ok",
+        "httpStatus": 200
+      },
+      {
+        "url": "https://arxiv.org/pdf/2510.23691",
+        "resourceIds": [
+          "candidate-p01"
+        ],
+        "status": "ok",
+        "httpStatus": 200
+      },
+      {
+        "url": "https://arxiv.org/pdf/2511.14759",
+        "resourceIds": [
+          "pi-star06"
+        ],
+        "status": "ok",
+        "httpStatus": 200
+      },
+      {
+        "url": "https://arxiv.org/pdf/2512.04797",
+        "resourceIds": [
+          "sima2"
+        ],
+        "status": "ok",
+        "httpStatus": 200
+      },
+      {
+        "url": "https://arxiv.org/pdf/2603.11601",
+        "resourceIds": [
+          "candidate-t03"
+        ],
+        "status": "ok",
+        "httpStatus": 200
+      },
+      {
+        "url": "https://arxiv.org/pdf/2604.07385",
+        "resourceIds": [
+          "candidate-t04"
+        ],
+        "status": "ok",
+        "httpStatus": 200
+      },
+      {
+        "url": "https://arxiv.org/pdf/2605.30570",
+        "resourceIds": [
+          "candidate-t06"
+        ],
+        "status": "ok",
+        "httpStatus": 200
+      },
+      {
+        "url": "https://arxiv.org/pdf/2608.24893",
+        "resourceIds": [
+          "candidate-t07"
+        ],
+        "status": "ok",
+        "httpStatus": 200
+      },
+      {
+        "url": "https://arxiv.org/pdf/2608.26200",
+        "resourceIds": [
+          "candidate-p02"
+        ],
+        "status": "ok",
+        "httpStatus": 200
+      },
+      {
+        "url": "https://arxiv.org/pdf/2608.30369",
+        "resourceIds": [
+          "candidate-t05"
+        ],
+        "status": "ok",
+        "httpStatus": 200
+      },
+      {
+        "url": "https://deepmind.google/blog/sima-2-an-agent-that-plays-reasons-and-learns-with-you-in-virtual-3d-worlds/",
+        "resourceIds": [
+          "article-sima2",
+          "sima2"
+        ],
+        "status": "ok",
+        "httpStatus": 200
+      },
+      {
+        "url": "https://deepmind.google/blog/sima-generalist-ai-agent-for-3d-virtual-environments/",
+        "resourceIds": [
+          "article-sima"
+        ],
+        "status": "ok",
+        "httpStatus": 200
+      },
+      {
+        "url": "https://diamond-wm.github.io/",
+        "resourceIds": [
+          "demo-diamond"
+        ],
+        "status": "ok",
+        "httpStatus": 200
+      },
+      {
+        "url": "https://diamond-wm.github.io/static/videos/8.mp4",
+        "resourceIds": [
+          "demo-diamond"
+        ],
+        "status": "ok",
+        "httpStatus": 200
+      },
+      {
+        "url": "https://diffusion-policy.cs.columbia.edu/",
+        "resourceIds": [
+          "demo-diffusion-lift",
+          "demo-diffusion-mug",
+          "diffusion-policy"
+        ],
+        "status": "ok",
+        "httpStatus": 200
+      },
+      {
+        "url": "https://diffusion-policy.cs.columbia.edu/videos/highlight_mug.mp4",
+        "resourceIds": [
+          "demo-diffusion-mug"
+        ],
+        "status": "ok",
+        "httpStatus": 200
+      },
+      {
+        "url": "https://diffusion-policy.cs.columbia.edu/videos/lift.mp4",
+        "resourceIds": [
+          "demo-diffusion-lift"
+        ],
+        "status": "ok",
+        "httpStatus": 200
+      },
+      {
+        "url": "https://doi.org/10.1109/ICRA57147.2024.10611477",
+        "resourceIds": [
+          "open-x-embodiment"
+        ],
+        "status": "ok",
+        "httpStatus": 202
+      },
+      {
+        "url": "https://doi.org/10.1177/02783649241281508",
+        "resourceIds": [
+          "survey-foundation-robotics"
+        ],
+        "status": "ok",
+        "httpStatus": 200
+      },
+      {
+        "url": "https://doi.org/10.1177/02783649251390579",
+        "resourceIds": [
+          "survey-foundation-manipulation"
+        ],
+        "status": "ok",
+        "httpStatus": 200
+      },
+      {
+        "url": "https://droid-dataset.github.io/",
+        "resourceIds": [
+          "droid"
+        ],
+        "status": "ok",
+        "httpStatus": 200
+      },
+      {
+        "url": "https://e3bagent.github.io/",
+        "resourceIds": [
+          "kb-c04"
+        ],
+        "status": "ok",
+        "httpStatus": 200
+      },
+      {
+        "url": "https://embodiedbench.github.io/",
+        "resourceIds": [
+          "embodiedbench"
+        ],
+        "status": "ok",
+        "httpStatus": 200
+      },
+      {
+        "url": "https://gamengen.github.io/",
+        "resourceIds": [
+          "demo-gamengen",
+          "kb-w01"
+        ],
+        "status": "ok",
+        "httpStatus": 200
+      },
+      {
+        "url": "https://gamengen.github.io/static/videos/e1m1_t.mp4",
+        "resourceIds": [
+          "demo-gamengen"
+        ],
+        "status": "ok",
+        "httpStatus": 200
+      },
+      {
+        "url": "https://github.com/2016choang/sfl",
+        "resourceIds": [
+          "kb-c05"
+        ],
+        "status": "ok",
+        "httpStatus": 200
+      },
+      {
+        "url": "https://github.com/allenai/ai2thor",
+        "resourceIds": [
+          "ai2thor"
+        ],
+        "status": "ok",
+        "httpStatus": 200
+      },
+      {
+        "url": "https://github.com/anyboby/contextual-similarity-distillation",
+        "resourceIds": [
+          "kb-t01"
+        ],
+        "status": "ok",
+        "httpStatus": 200
+      },
+      {
+        "url": "https://github.com/danijar/dreamerv3",
+        "resourceIds": [
+          "kb-g05"
+        ],
+        "status": "ok",
+        "httpStatus": 200
+      },
+      {
+        "url": "https://github.com/droid-dataset/droid",
+        "resourceIds": [
+          "droid"
+        ],
+        "status": "ok",
+        "httpStatus": 200
+      },
+      {
+        "url": "https://github.com/eloialonso/diamond",
+        "resourceIds": [
+          "demo-diamond",
+          "kb-w02"
+        ],
+        "status": "ok",
+        "httpStatus": 200
+      },
+      {
+        "url": "https://github.com/EmbodiedBench/EmbodiedBench",
+        "resourceIds": [
+          "embodiedbench"
+        ],
+        "status": "ok",
+        "httpStatus": 200
+      },
+      {
+        "url": "https://github.com/facebookresearch/habitat-lab",
+        "resourceIds": [
+          "habitat"
+        ],
+        "status": "ok",
+        "httpStatus": 200
+      },
+      {
+        "url": "https://github.com/Farama-Foundation/Gymnasium",
+        "resourceIds": [
+          "gymnasium"
+        ],
+        "status": "ok",
+        "httpStatus": 200
+      },
+      {
+        "url": "https://github.com/Farama-Foundation/PettingZoo",
+        "resourceIds": [
+          "pettingzoo"
+        ],
+        "status": "ok",
+        "httpStatus": 200
+      },
+      {
+        "url": "https://github.com/Farama-Foundation/ViZDoom",
+        "resourceIds": [
+          "vizdoom"
+        ],
+        "status": "ok",
+        "httpStatus": 200
+      },
+      {
+        "url": "https://github.com/Genesis-Embodied-AI/genesis-world",
+        "resourceIds": [
+          "genesis"
+        ],
+        "status": "ok",
+        "httpStatus": 200
+      },
+      {
+        "url": "https://github.com/google-deepmind/open_x_embodiment",
+        "resourceIds": [
+          "open-x-embodiment"
+        ],
+        "status": "ok",
+        "httpStatus": 200
+      },
+      {
+        "url": "https://github.com/huangwl18/ReKep",
+        "resourceIds": [
+          "rekep"
+        ],
+        "status": "ok",
+        "httpStatus": 200
+      },
+      {
+        "url": "https://github.com/huangwl18/VoxPoser",
+        "resourceIds": [
+          "voxposer"
+        ],
+        "status": "ok",
+        "httpStatus": 200
+      },
+      {
+        "url": "https://github.com/huggingface/lerobot",
+        "resourceIds": [
+          "lerobot"
+        ],
+        "status": "ok",
+        "httpStatus": 200
+      },
+      {
+        "url": "https://github.com/insait-institute/StateSpaceDiffuser",
+        "resourceIds": [
+          "kb-w03"
+        ],
+        "status": "unreachable",
+        "httpStatus": 504
+      },
+      {
+        "url": "https://github.com/IranQin/MP5",
+        "resourceIds": [
+          "mp5"
+        ],
+        "status": "ok",
+        "httpStatus": 200
+      },
+      {
+        "url": "https://github.com/LeapLabTHU/MOSS",
+        "resourceIds": [
+          "kb-c09"
+        ],
+        "status": "ok",
+        "httpStatus": 200
+      },
+      {
+        "url": "https://github.com/Lifelong-Robot-Learning/LIBERO",
+        "resourceIds": [
+          "libero"
+        ],
+        "status": "ok",
+        "httpStatus": 200
+      },
+      {
+        "url": "https://github.com/LJH-coding/EDELINE",
+        "resourceIds": [
+          "kb-s01"
+        ],
+        "status": "ok",
+        "httpStatus": 200
+      },
+      {
+        "url": "https://github.com/mahaozhe/DuRND",
+        "resourceIds": [
+          "kb-r02"
+        ],
+        "status": "ok",
+        "httpStatus": 200
+      },
+      {
+        "url": "https://github.com/mani-skill/ManiSkill",
+        "resourceIds": [
+          "maniskill"
+        ],
+        "status": "ok",
+        "httpStatus": 200
+      },
+      {
+        "url": "https://github.com/microsoft/Imitating-Human-Behaviour-w-Diffusion",
+        "resourceIds": [
+          "kb-f02"
+        ],
+        "status": "ok",
+        "httpStatus": 200
+      },
+      {
+        "url": "https://github.com/microsoft/Intrepid",
+        "resourceIds": [
+          "kb-r01"
+        ],
+        "status": "ok",
+        "httpStatus": 200
+      },
+      {
+        "url": "https://github.com/MineDojo/MineDojo",
+        "resourceIds": [
+          "minedojo"
+        ],
+        "status": "ok",
+        "httpStatus": 200
+      },
+      {
+        "url": "https://github.com/MineDojo/Voyager",
+        "resourceIds": [
+          "demo-voyager-cactus",
+          "demo-voyager-diamond",
+          "voyager"
+        ],
+        "status": "ok",
+        "httpStatus": 200
+      },
+      {
+        "url": "https://github.com/octo-models/octo",
+        "resourceIds": [
+          "octo"
+        ],
+        "status": "ok",
+        "httpStatus": 200
+      },
+      {
+        "url": "https://github.com/openvla/openvla",
+        "resourceIds": [
+          "demo-openvla",
+          "openvla"
+        ],
+        "status": "ok",
+        "httpStatus": 200
+      },
+      {
+        "url": "https://github.com/Physical-Intelligence/openpi",
+        "resourceIds": [
+          "openpi"
+        ],
+        "status": "ok",
+        "httpStatus": 200
+      },
+      {
+        "url": "https://github.com/rail-berkeley/bridge_data_v2",
+        "resourceIds": [
+          "bridgedata-v2"
+        ],
+        "status": "ok",
+        "httpStatus": 200
+      },
+      {
+        "url": "https://github.com/real-stanford/diffusion_policy",
+        "resourceIds": [
+          "demo-diffusion-lift",
+          "demo-diffusion-mug",
+          "diffusion-policy"
+        ],
+        "status": "ok",
+        "httpStatus": 200
+      },
+      {
+        "url": "https://github.com/stefanwm13/just-cluster-it-public",
+        "resourceIds": [
+          "kb-c03"
+        ],
+        "status": "ok",
+        "httpStatus": 200
+      },
+      {
+        "url": "https://github.com/tencent-facul/code",
+        "resourceIds": [
+          "kb-f07"
+        ],
+        "status": "ok",
+        "httpStatus": 200
+      },
+      {
+        "url": "https://github.com/tonyzhaozh/act",
+        "resourceIds": [
+          "act"
+        ],
+        "status": "ok",
+        "httpStatus": 200
+      },
+      {
+        "url": "https://github.com/TTomilin/COOM",
+        "resourceIds": [
+          "kb-b01"
+        ],
+        "status": "unreachable",
+        "httpStatus": 504
+      },
+      {
+        "url": "https://huggingface.co/blog/lerobot-release-v060",
+        "resourceIds": [
+          "article-lerobot"
+        ],
+        "status": "unreachable",
+        "reason": "connection failed"
+      },
+      {
+        "url": "https://huggingface.co/EmbodiedBench",
+        "resourceIds": [
+          "embodiedbench"
+        ],
+        "status": "unreachable",
+        "reason": "connection failed"
+      },
+      {
+        "url": "https://huggingface.co/openvla",
+        "resourceIds": [
+          "openvla"
+        ],
+        "status": "unreachable",
+        "reason": "connection failed"
+      },
+      {
+        "url": "https://huggingface.co/rail-berkeley",
+        "resourceIds": [
+          "octo"
+        ],
+        "status": "unreachable",
+        "reason": "connection failed"
+      },
+      {
+        "url": "https://iclr.cc/virtual/2026/poster/10007816",
+        "resourceIds": [
+          "kb-t02"
+        ],
+        "status": "ok",
+        "httpStatus": 200
+      },
+      {
+        "url": "https://iclr.cc/virtual/2026/poster/10008663",
+        "resourceIds": [
+          "kb-t01"
+        ],
+        "status": "ok",
+        "httpStatus": 200
+      },
+      {
+        "url": "https://iranqin.github.io/MP5.github.io/",
+        "resourceIds": [
+          "mp5"
+        ],
+        "status": "ok",
+        "httpStatus": 200
+      },
+      {
+        "url": "https://journals.sagepub.com/doi/10.1177/02783649241281508",
+        "resourceIds": [
+          "survey-foundation-robotics"
+        ],
+        "status": "unreachable",
+        "reason": "connection failed"
+      },
+      {
+        "url": "https://journals.sagepub.com/doi/10.1177/02783649251390579",
+        "resourceIds": [
+          "survey-foundation-manipulation"
+        ],
+        "status": "unreachable",
+        "reason": "connection failed"
+      },
+      {
+        "url": "https://journals.sagepub.com/history/e3eb5469-f176-4c99-8231-efe683fe6399/02783649241281508.17904978.pdf",
+        "resourceIds": [
+          "survey-foundation-robotics"
+        ],
+        "status": "unreachable",
+        "reason": "connection failed"
+      },
+      {
+        "url": "https://minedojo.org/",
+        "resourceIds": [
+          "minedojo"
+        ],
+        "status": "ok",
+        "httpStatus": 200
+      },
+      {
+        "url": "https://octo-models.github.io/",
+        "resourceIds": [
+          "octo"
+        ],
+        "status": "ok",
+        "httpStatus": 200
+      },
+      {
+        "url": "https://ojs.aaai.org/index.php/AAAI/article/download/30132/32004",
+        "resourceIds": [
+          "kb-c06"
+        ],
+        "status": "ok",
+        "httpStatus": 200
+      },
+      {
+        "url": "https://ojs.aaai.org/index.php/AAAI/article/download/38842/42804",
+        "resourceIds": [
+          "kb-f07"
+        ],
+        "status": "ok",
+        "httpStatus": 200
+      },
+      {
+        "url": "https://ojs.aaai.org/index.php/AAAI/article/view/30132",
+        "resourceIds": [
+          "kb-c06"
+        ],
+        "status": "ok",
+        "httpStatus": 200
+      },
+      {
+        "url": "https://ojs.aaai.org/index.php/AAAI/article/view/38842",
+        "resourceIds": [
+          "kb-f07"
+        ],
+        "status": "ok",
+        "httpStatus": 200
+      },
+      {
+        "url": "https://openaccess.thecvf.com/content/CVPR2024/html/Qin_MP5_A_Multi-modal_Open-ended_Embodied_System_in_Minecraft_via_Active_CVPR_2024_paper.html",
+        "resourceIds": [
+          "mp5"
+        ],
+        "status": "ok",
+        "httpStatus": 200
+      },
+      {
+        "url": "https://openaccess.thecvf.com/content/CVPR2024/papers/Qin_MP5_A_Multi-modal_Open-ended_Embodied_System_in_Minecraft_via_Active_CVPR_2024_paper.pdf",
+        "resourceIds": [
+          "mp5"
+        ],
+        "status": "ok",
+        "httpStatus": 200
+      },
+      {
+        "url": "https://openai.com/index/vpt/",
+        "resourceIds": [
+          "article-vpt"
+        ],
+        "status": "restricted",
+        "httpStatus": 403
+      },
+      {
+        "url": "https://openalex.org/W4381245688",
+        "resourceIds": [
+          "kb-t02"
+        ],
+        "status": "restricted",
+        "httpStatus": 403
+      },
+      {
+        "url": "https://openalex.org/W4393157199",
+        "resourceIds": [
+          "kb-c06"
+        ],
+        "status": "restricted",
+        "httpStatus": 403
+      },
+      {
+        "url": "https://openalex.org/W4417285496",
+        "resourceIds": [
+          "kb-t01"
+        ],
+        "status": "restricted",
+        "httpStatus": 403
+      },
+      {
+        "url": "https://openalex.org/W7137844787",
+        "resourceIds": [
+          "kb-f07"
+        ],
+        "status": "restricted",
+        "httpStatus": 403
+      },
+      {
+        "url": "https://openreview.net/forum?id=P8E4Br72j3",
+        "resourceIds": [
+          "voyager"
+        ],
+        "status": "ok",
+        "httpStatus": 200
+      },
+      {
+        "url": "https://openvla.github.io/",
+        "resourceIds": [
+          "demo-openvla",
+          "openvla"
+        ],
+        "status": "ok",
+        "httpStatus": 200
+      },
+      {
+        "url": "https://openvla.github.io/static/videos/carousel/bridge_pick_clutter_2.mp4",
+        "resourceIds": [
+          "demo-openvla"
+        ],
+        "status": "unreachable",
+        "reason": "timeout"
+      },
+      {
+        "url": "https://proceedings.iclr.cc/paper_files/paper/2024/file/cfea00ddf5a5f514bd3368d639d1933d-Paper-Conference.pdf",
+        "resourceIds": [
+          "kb-c08"
+        ],
+        "status": "ok",
+        "httpStatus": 200
+      },
+      {
+        "url": "https://proceedings.iclr.cc/paper_files/paper/2024/file/eb60f103645fd14c94826665f8505a6d-Paper-Conference.pdf",
+        "resourceIds": [
+          "kb-r01"
+        ],
+        "status": "ok",
+        "httpStatus": 200
+      },
+      {
+        "url": "https://proceedings.iclr.cc/paper_files/paper/2024/hash/cfea00ddf5a5f514bd3368d639d1933d-Abstract-Conference.html",
+        "resourceIds": [
+          "kb-c08"
+        ],
+        "status": "ok",
+        "httpStatus": 200
+      },
+      {
+        "url": "https://proceedings.iclr.cc/paper_files/paper/2024/hash/eb60f103645fd14c94826665f8505a6d-Abstract-Conference.html",
+        "resourceIds": [
+          "kb-r01"
+        ],
+        "status": "ok",
+        "httpStatus": 200
+      },
+      {
+        "url": "https://proceedings.iclr.cc/paper_files/paper/2025/file/5ab848771ff8c9c47aac4128e2ef9f4e-Paper-Conference.pdf",
+        "resourceIds": [
+          "kb-b02"
+        ],
+        "status": "ok",
+        "httpStatus": 200
+      },
+      {
+        "url": "https://proceedings.iclr.cc/paper_files/paper/2025/file/b71ecea210f7159f31e46631fe5c838f-Paper-Conference.pdf",
+        "resourceIds": [
+          "kb-w01"
+        ],
+        "status": "ok",
+        "httpStatus": 200
+      },
+      {
+        "url": "https://proceedings.iclr.cc/paper_files/paper/2025/hash/5ab848771ff8c9c47aac4128e2ef9f4e-Abstract-Conference.html",
+        "resourceIds": [
+          "kb-b02"
+        ],
+        "status": "ok",
+        "httpStatus": 200
+      },
+      {
+        "url": "https://proceedings.iclr.cc/paper_files/paper/2025/hash/b71ecea210f7159f31e46631fe5c838f-Abstract-Conference.html",
+        "resourceIds": [
+          "kb-w01"
+        ],
+        "status": "ok",
+        "httpStatus": 200
+      },
+      {
+        "url": "https://proceedings.mlr.press/v162/huang22f.html",
+        "resourceIds": [
+          "kb-r03"
+        ],
+        "status": "ok",
+        "httpStatus": 200
+      },
+      {
+        "url": "https://proceedings.mlr.press/v162/huang22f/huang22f.pdf",
+        "resourceIds": [
+          "kb-r03"
+        ],
+        "status": "ok",
+        "httpStatus": 200
+      },
+      {
+        "url": "https://proceedings.mlr.press/v229/huang23b.html",
+        "resourceIds": [
+          "voxposer"
+        ],
+        "status": "ok",
+        "httpStatus": 200
+      },
+      {
+        "url": "https://proceedings.mlr.press/v229/huang23b/huang23b.pdf",
+        "resourceIds": [
+          "voxposer"
+        ],
+        "status": "ok",
+        "httpStatus": 200
+      },
+      {
+        "url": "https://proceedings.mlr.press/v229/walke23a.html",
+        "resourceIds": [
+          "bridgedata-v2"
+        ],
+        "status": "ok",
+        "httpStatus": 200
+      },
+      {
+        "url": "https://proceedings.mlr.press/v229/walke23a/walke23a.pdf",
+        "resourceIds": [
+          "bridgedata-v2"
+        ],
+        "status": "ok",
+        "httpStatus": 200
+      },
+      {
+        "url": "https://proceedings.mlr.press/v229/zitkovich23a.html",
+        "resourceIds": [
+          "rt2"
+        ],
+        "status": "ok",
+        "httpStatus": 200
+      },
+      {
+        "url": "https://proceedings.mlr.press/v229/zitkovich23a/zitkovich23a.pdf",
+        "resourceIds": [
+          "rt2"
+        ],
+        "status": "ok",
+        "httpStatus": 200
+      },
+      {
+        "url": "https://proceedings.mlr.press/v235/wagner24a.html",
+        "resourceIds": [
+          "kb-c03"
+        ],
+        "status": "ok",
+        "httpStatus": 200
+      },
+      {
+        "url": "https://proceedings.mlr.press/v267/ma25j.html",
+        "resourceIds": [
+          "kb-r02"
+        ],
+        "status": "ok",
+        "httpStatus": 200
+      },
+      {
+        "url": "https://proceedings.mlr.press/v267/shi25d.html",
+        "resourceIds": [
+          "hirobot"
+        ],
+        "status": "ok",
+        "httpStatus": 200
+      },
+      {
+        "url": "https://proceedings.mlr.press/v267/yang25f.html",
+        "resourceIds": [
+          "embodiedbench"
+        ],
+        "status": "ok",
+        "httpStatus": 200
+      },
+      {
+        "url": "https://proceedings.mlr.press/v270/huang25g.html",
+        "resourceIds": [
+          "rekep"
+        ],
+        "status": "ok",
+        "httpStatus": 200
+      },
+      {
+        "url": "https://proceedings.mlr.press/v270/kim25c.html",
+        "resourceIds": [
+          "openvla"
+        ],
+        "status": "ok",
+        "httpStatus": 200
+      },
+      {
+        "url": "https://proceedings.mlr.press/v305/zhang25i.html",
+        "resourceIds": [
+          "robochemist"
+        ],
+        "status": "ok",
+        "httpStatus": 200
+      },
+      {
+        "url": "https://proceedings.neurips.cc/paper_files/paper/2021/file/e27c71957d1e6c223e0d48a165da2ee1-Paper.pdf",
+        "resourceIds": [
+          "kb-c05"
+        ],
+        "status": "ok",
+        "httpStatus": 200
+      },
+      {
+        "url": "https://proceedings.neurips.cc/paper_files/paper/2021/hash/e27c71957d1e6c223e0d48a165da2ee1-Abstract.html",
+        "resourceIds": [
+          "kb-c05"
+        ],
+        "status": "ok",
+        "httpStatus": 200
+      },
+      {
+        "url": "https://proceedings.neurips.cc/paper_files/paper/2022/file/74a67268c5cc5910f64938cac4526a90-Paper-Datasets_and_Benchmarks.pdf",
+        "resourceIds": [
+          "minedojo"
+        ],
+        "status": "ok",
+        "httpStatus": 200
+      },
+      {
+        "url": "https://proceedings.neurips.cc/paper_files/paper/2022/file/9c7008aff45b5d8f0973b23e1a22ada0-Paper-Conference.pdf",
+        "resourceIds": [
+          "vpt"
+        ],
+        "status": "ok",
+        "httpStatus": 200
+      },
+      {
+        "url": "https://proceedings.neurips.cc/paper_files/paper/2022/file/a7667ee5d545a43d2f0fda98863c260e-Paper-Conference.pdf",
+        "resourceIds": [
+          "kb-c09"
+        ],
+        "status": "ok",
+        "httpStatus": 200
+      },
+      {
+        "url": "https://proceedings.neurips.cc/paper_files/paper/2022/file/f4f79698d48bdc1a6dec20583724182b-Paper-Conference.pdf",
+        "resourceIds": [
+          "kb-c04"
+        ],
+        "status": "ok",
+        "httpStatus": 200
+      },
+      {
+        "url": "https://proceedings.neurips.cc/paper_files/paper/2022/hash/74a67268c5cc5910f64938cac4526a90-Abstract.html",
+        "resourceIds": [
+          "minedojo"
+        ],
+        "status": "ok",
+        "httpStatus": 200
+      },
+      {
+        "url": "https://proceedings.neurips.cc/paper_files/paper/2022/hash/9c7008aff45b5d8f0973b23e1a22ada0-Abstract-Conference.html",
+        "resourceIds": [
+          "vpt"
+        ],
+        "status": "ok",
+        "httpStatus": 200
+      },
+      {
+        "url": "https://proceedings.neurips.cc/paper_files/paper/2022/hash/a7667ee5d545a43d2f0fda98863c260e-Abstract-Conference.html",
+        "resourceIds": [
+          "kb-c09"
+        ],
+        "status": "ok",
+        "httpStatus": 200
+      },
+      {
+        "url": "https://proceedings.neurips.cc/paper_files/paper/2022/hash/f4f79698d48bdc1a6dec20583724182b-Abstract-Conference.html",
+        "resourceIds": [
+          "kb-c04"
+        ],
+        "status": "ok",
+        "httpStatus": 200
+      },
+      {
+        "url": "https://proceedings.neurips.cc/paper_files/paper/2023/file/0c1e94af650f5c74b1f3da467c2308c2-Paper-Conference.pdf",
+        "resourceIds": [
+          "kb-c02"
+        ],
+        "status": "ok",
+        "httpStatus": 200
+      },
+      {
+        "url": "https://proceedings.neurips.cc/paper_files/paper/2023/file/6b8dfb8c0c12e6fafc6c256cb08a5ca7-Paper-Conference.pdf",
+        "resourceIds": [
+          "deps"
+        ],
+        "status": "ok",
+        "httpStatus": 200
+      },
+      {
+        "url": "https://proceedings.neurips.cc/paper_files/paper/2023/file/8c3c666820ea055a77726d66fc7d447f-Paper-Datasets_and_Benchmarks.pdf",
+        "resourceIds": [
+          "libero"
+        ],
+        "status": "ok",
+        "httpStatus": 200
+      },
+      {
+        "url": "https://proceedings.neurips.cc/paper_files/paper/2023/file/d61d9f4fe4357296cb658795fd7999f0-Paper-Datasets_and_Benchmarks.pdf",
+        "resourceIds": [
+          "kb-b01"
+        ],
+        "status": "ok",
+        "httpStatus": 200
+      },
+      {
+        "url": "https://proceedings.neurips.cc/paper_files/paper/2023/file/dd03f856fc7f2efeec8b1c796284561d-Paper-Conference.pdf",
+        "resourceIds": [
+          "steve1"
+        ],
+        "status": "ok",
+        "httpStatus": 200
+      },
+      {
+        "url": "https://proceedings.neurips.cc/paper_files/paper/2023/hash/0c1e94af650f5c74b1f3da467c2308c2-Abstract-Conference.html",
+        "resourceIds": [
+          "kb-c02"
+        ],
+        "status": "ok",
+        "httpStatus": 200
+      },
+      {
+        "url": "https://proceedings.neurips.cc/paper_files/paper/2023/hash/6b8dfb8c0c12e6fafc6c256cb08a5ca7-Abstract-Conference.html",
+        "resourceIds": [
+          "deps"
+        ],
+        "status": "ok",
+        "httpStatus": 200
+      },
+      {
+        "url": "https://proceedings.neurips.cc/paper_files/paper/2023/hash/8c3c666820ea055a77726d66fc7d447f-Abstract-Datasets_and_Benchmarks.html",
+        "resourceIds": [
+          "libero"
+        ],
+        "status": "ok",
+        "httpStatus": 200
+      },
+      {
+        "url": "https://proceedings.neurips.cc/paper_files/paper/2023/hash/d61d9f4fe4357296cb658795fd7999f0-Abstract-Datasets_and_Benchmarks.html",
+        "resourceIds": [
+          "kb-b01"
+        ],
+        "status": "ok",
+        "httpStatus": 200
+      },
+      {
+        "url": "https://proceedings.neurips.cc/paper_files/paper/2023/hash/dd03f856fc7f2efeec8b1c796284561d-Abstract-Conference.html",
+        "resourceIds": [
+          "steve1"
+        ],
+        "status": "ok",
+        "httpStatus": 200
+      },
+      {
+        "url": "https://proceedings.neurips.cc/paper_files/paper/2024/file/6bdde0373d53d4a501249547084bed43-Paper-Conference.pdf",
+        "resourceIds": [
+          "kb-w02"
+        ],
+        "status": "ok",
+        "httpStatus": 200
+      },
+      {
+        "url": "https://proceedings.neurips.cc/paper_files/paper/2024/file/ff887781480973bd3cb6026feb378d1e-Paper-Conference.pdf",
+        "resourceIds": [
+          "baku"
+        ],
+        "status": "ok",
+        "httpStatus": 200
+      },
+      {
+        "url": "https://proceedings.neurips.cc/paper_files/paper/2024/hash/6bdde0373d53d4a501249547084bed43-Abstract-Conference.html",
+        "resourceIds": [
+          "kb-w02"
+        ],
+        "status": "ok",
+        "httpStatus": 200
+      },
+      {
+        "url": "https://proceedings.neurips.cc/paper_files/paper/2024/hash/ff887781480973bd3cb6026feb378d1e-Abstract-Conference.html",
+        "resourceIds": [
+          "baku"
+        ],
+        "status": "ok",
+        "httpStatus": 200
+      },
+      {
+        "url": "https://proceedings.neurips.cc/paper_files/paper/2025/file/63943ee9fe347f3d95892cf87d9a42e6-Paper-Conference.pdf",
+        "resourceIds": [
+          "kb-w03"
+        ],
+        "status": "ok",
+        "httpStatus": 200
+      },
+      {
+        "url": "https://proceedings.neurips.cc/paper_files/paper/2025/file/97c903fbf21a7d863af2015d8803ca8f-Paper-Conference.pdf",
+        "resourceIds": [
+          "kb-s01"
+        ],
+        "status": "ok",
+        "httpStatus": 200
+      },
+      {
+        "url": "https://proceedings.neurips.cc/paper_files/paper/2025/file/f062da1973ac9ac61fc6d44dd7fa309f-Paper-Conference.pdf",
+        "resourceIds": [
+          "vla-cache"
+        ],
+        "status": "ok",
+        "httpStatus": 200
+      },
+      {
+        "url": "https://proceedings.neurips.cc/paper_files/paper/2025/hash/97c903fbf21a7d863af2015d8803ca8f-Abstract-Conference.html",
+        "resourceIds": [
+          "kb-s01"
+        ],
+        "status": "ok",
+        "httpStatus": 200
+      },
+      {
+        "url": "https://proceedings.neurips.cc/paper_files/paper/2025/hash/f062da1973ac9ac61fc6d44dd7fa309f-Abstract-Conference.html",
+        "resourceIds": [
+          "vla-cache"
+        ],
+        "status": "ok",
+        "httpStatus": 200
+      },
+      {
+        "url": "https://proceedings.nips.cc/paper_files/paper/2025/hash/63943ee9fe347f3d95892cf87d9a42e6-Abstract-Conference.html",
+        "resourceIds": [
+          "kb-w03"
+        ],
+        "status": "ok",
+        "httpStatus": 200
+      },
+      {
+        "url": "https://rail-berkeley.github.io/bridgedata/",
+        "resourceIds": [
+          "bridgedata-v2"
+        ],
+        "status": "ok",
+        "httpStatus": 200
+      },
+      {
+        "url": "https://raw.githubusercontent.com/mlresearch/v235/main/assets/wagner24a/wagner24a.pdf",
+        "resourceIds": [
+          "kb-c03"
+        ],
+        "status": "ok",
+        "httpStatus": 200
+      },
+      {
+        "url": "https://raw.githubusercontent.com/mlresearch/v267/main/assets/ma25j/ma25j.pdf",
+        "resourceIds": [
+          "kb-r02"
+        ],
+        "status": "ok",
+        "httpStatus": 200
+      },
+      {
+        "url": "https://raw.githubusercontent.com/mlresearch/v267/main/assets/shi25d/shi25d.pdf",
+        "resourceIds": [
+          "hirobot"
+        ],
+        "status": "ok",
+        "httpStatus": 200
+      },
+      {
+        "url": "https://raw.githubusercontent.com/mlresearch/v267/main/assets/yang25f/yang25f.pdf",
+        "resourceIds": [
+          "embodiedbench"
+        ],
+        "status": "ok",
+        "httpStatus": 200
+      },
+      {
+        "url": "https://raw.githubusercontent.com/mlresearch/v270/main/assets/huang25g/huang25g.pdf",
+        "resourceIds": [
+          "rekep"
+        ],
+        "status": "ok",
+        "httpStatus": 200
+      },
+      {
+        "url": "https://raw.githubusercontent.com/mlresearch/v270/main/assets/kim25c/kim25c.pdf",
+        "resourceIds": [
+          "openvla"
+        ],
+        "status": "ok",
+        "httpStatus": 200
+      },
+      {
+        "url": "https://raw.githubusercontent.com/mlresearch/v305/main/assets/zhang25i/zhang25i.pdf",
+        "resourceIds": [
+          "robochemist"
+        ],
+        "status": "ok",
+        "httpStatus": 200
+      },
+      {
+        "url": "https://rekep-robot.github.io/",
+        "resourceIds": [
+          "rekep"
+        ],
+        "status": "ok",
+        "httpStatus": 200
+      },
+      {
+        "url": "https://robotics-transformer-x.github.io/",
+        "resourceIds": [
+          "open-x-embodiment"
+        ],
+        "status": "ok",
+        "httpStatus": 200
+      },
+      {
+        "url": "https://roboticsproceedings.org/rss19/p016.html",
+        "resourceIds": [
+          "act"
+        ],
+        "status": "ok",
+        "httpStatus": 200
+      },
+      {
+        "url": "https://sites.google.com/view/hasard-bench/",
+        "resourceIds": [
+          "kb-b02"
+        ],
+        "status": "unreachable",
+        "reason": "connection failed"
+      },
+      {
+        "url": "https://sites.google.com/view/rate-model/",
+        "resourceIds": [
+          "kb-t02"
+        ],
+        "status": "unreachable",
+        "reason": "connection failed"
+      },
+      {
+        "url": "https://tonyzhaozh.github.io/aloha/",
+        "resourceIds": [
+          "act",
+          "demo-aloha"
+        ],
+        "status": "ok",
+        "httpStatus": 200
+      },
+      {
+        "url": "https://tonyzhaozh.github.io/aloha/resources/slot_battery.mp4",
+        "resourceIds": [
+          "demo-aloha"
+        ],
+        "status": "ok",
+        "httpStatus": 200
+      },
+      {
+        "url": "https://voxposer.github.io/",
+        "resourceIds": [
+          "voxposer"
+        ],
+        "status": "ok",
+        "httpStatus": 200
+      },
+      {
+        "url": "https://voyager.minedojo.org/",
+        "resourceIds": [
+          "demo-voyager-cactus",
+          "demo-voyager-diamond",
+          "voyager"
+        ],
+        "status": "ok",
+        "httpStatus": 200
+      },
+      {
+        "url": "https://voyager.minedojo.org/assets/videos/gallery/cactus.mp4",
+        "resourceIds": [
+          "demo-voyager-cactus"
+        ],
+        "status": "ok",
+        "httpStatus": 200
+      },
+      {
+        "url": "https://voyager.minedojo.org/assets/videos/gallery/diamond.mp4",
+        "resourceIds": [
+          "demo-voyager-diamond"
+        ],
+        "status": "ok",
+        "httpStatus": 200
+      },
+      {
+        "url": "https://web.mit.edu/phillipi/www/writing/robot-use-agents.html",
+        "resourceIds": [
+          "article-robot-use"
+        ],
+        "status": "restricted",
+        "httpStatus": 403
+      },
+      {
+        "url": "https://www.ijcai.org/proceedings/2025/0074.pdf",
+        "resourceIds": [
+          "kb-c01"
+        ],
+        "status": "ok",
+        "httpStatus": 200
+      },
+      {
+        "url": "https://www.ijcai.org/proceedings/2025/74",
+        "resourceIds": [
+          "kb-c01"
+        ],
+        "status": "ok",
+        "httpStatus": 200
+      },
+      {
+        "url": "https://www.nature.com/articles/s41586-025-08744-2",
+        "resourceIds": [
+          "kb-g05"
+        ],
+        "status": "ok",
+        "httpStatus": 200
+      },
+      {
+        "url": "https://www.nature.com/articles/s41586-025-08744-2.pdf",
+        "resourceIds": [
+          "kb-g05"
+        ],
+        "status": "ok",
+        "httpStatus": 200
+      },
+      {
+        "url": "https://www.pi.website/blog/pi0",
+        "resourceIds": [
+          "article-pi0"
+        ],
+        "status": "ok",
+        "httpStatus": 200
+      },
+      {
+        "url": "https://www.pi.website/blog/pistar06",
+        "resourceIds": [
+          "pi-star06"
+        ],
+        "status": "ok",
+        "httpStatus": 200
+      },
+      {
+        "url": "https://www.roboticsproceedings.org/rss19/p016.pdf",
+        "resourceIds": [
+          "act"
+        ],
+        "status": "ok",
+        "httpStatus": 200
+      },
+      {
+        "url": "https://www.roboticsproceedings.org/rss20/p071.html",
+        "resourceIds": [
+          "consistency-policy"
+        ],
+        "status": "ok",
+        "httpStatus": 200
+      },
+      {
+        "url": "https://www.roboticsproceedings.org/rss20/p071.pdf",
+        "resourceIds": [
+          "consistency-policy"
+        ],
+        "status": "ok",
+        "httpStatus": 200
+      },
+      {
+        "url": "https://www.roboticsproceedings.org/rss20/p090.html",
+        "resourceIds": [
+          "octo"
+        ],
+        "status": "ok",
+        "httpStatus": 200
+      },
+      {
+        "url": "https://www.roboticsproceedings.org/rss20/p090.pdf",
+        "resourceIds": [
+          "octo"
+        ],
+        "status": "ok",
+        "httpStatus": 200
+      },
+      {
+        "url": "https://www.roboticsproceedings.org/rss20/p120.html",
+        "resourceIds": [
+          "droid"
+        ],
+        "status": "ok",
+        "httpStatus": 200
+      },
+      {
+        "url": "https://www.roboticsproceedings.org/rss20/p120.pdf",
+        "resourceIds": [
+          "droid"
+        ],
+        "status": "ok",
+        "httpStatus": 200
+      }
+    ]
+  }
+}

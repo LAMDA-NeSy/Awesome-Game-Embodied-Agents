@@ -5,7 +5,7 @@ Paper records share the same metadata in the website and README. The website kee
 ## Bibliography
 
 - `bibliography.authors` stores the complete credited author list. The row shows up to three names followed by “et al.”; expand **Details & sources** for all names. Author names are searchable.
-- `bibliography.date` and `dateLabel` identify the date from the linked source. Publisher record dates and first arXiv submission dates can differ from the conference year. Year filters continue to use the curated venue year.
+- `bibliography.date` and `dateLabel` identify the source date, displayed with a visible **Published**, **Preprint**, or **Indexed** label. Indexed dates are not treated as verified first-release dates. The **Source date** sort follows this displayed date, with unknown dates last. **Venue / release year** sorts by `year`; paper-year filters use the curated venue year. Legacy `sort=newest` links map to venue-year sorting. Dates with only a known year remain year-only.
 - `bibliography.sourceUrl` identifies the bibliographic record used for the authors and date: official proceedings, arXiv, Crossref, or OpenAlex.
 - `links.pdf` points to a source PDF. `bibliography.preview` is a small rendering of its actual first page. Original PDFs are not distributed in the repository. Previews retain the original paper's rights and are provided for identification with source links.
 - `bibliography.bibtex` is a basic citation of the curated paper entry. For a publisher's full proceedings or journal citation, follow the Paper link. Dataset and benchmark papers use the same metadata in all views.
@@ -33,3 +33,24 @@ The refresh script queries verified citation IDs and the listed GitHub repositor
 Optional `GITHUB_TOKEN` and `OPENALEX_API_KEY` environment variables may be used for API access or larger rate limits. Tokens are used only by the local refresh process. Do not put them in catalogue data, website files, or commits. The website makes no authenticated requests and contains no API keys.
 
 Authors, dates, links, and previews are reviewed separately against their sources. When adding a citation record, first verify its title and authors and store its canonical source URL. Do not infer a count from a similarly named paper. Metadata refreshes do not modify the collection's selection window or candidate status.
+
+## Collection history and counts
+
+`addedAt` records inclusion in the collection; `updatedAt` records a substantive content change. The build compares the previous published catalogue to detect additions and revisions. Source-check dates, metrics, and ranking changes do not reset these dates. Candidate promotion starts a new selected-entry inclusion date. Existing entries use **2026-09-14** as an explicitly labeled history baseline. Keep `dist/resources.json` available as the previous snapshot when rebuilding; new records receive the current UTC date.
+
+**Recently added** and **Recently revised** are independent from publication and venue-year sorting. All-category results use a single flat list for chronological or alphabetical sorts, so grouping cannot override the requested order. Curated-order groups use full category membership: every paper appears in Papers, including dataset and benchmark papers. Group and navigation counts match. All resources counts unique IDs, while category counts overlap.
+
+`data/updates.json` contains human-written release notes, rendered into the website and `CHANGELOG.md`. Add a dated note for meaningful editorial or website changes. Routine metric refreshes appear in the maintenance report rather than filling the editorial update log.
+
+## Weekly maintenance and source checks
+
+The **Publish GitHub Pages** workflow schedules maintenance each Monday at **01:17 UTC / 09:17 Asia/Shanghai**. GitHub may delay scheduled runs. The workflow refreshes verified statistics, checks source links, builds and validates the collection, commits only the maintenance snapshots and their generated pages, then deploys that exact commit. A manual workflow run with **refresh** enabled uses the same path. New records, acceptance changes, source corrections, and selection-window changes still require editorial review.
+
+Run `npm run check-links` locally to produce `data/maintenance.json`. The report includes a timestamp, unique URLs, affected record IDs, and each result. Checks use HEAD requests, with GET confirmation for 404/410 and a GET fallback for servers that do not implement HEAD. GET response bodies are canceled; PDFs and videos are not downloaded. One request per host is made at a time, across up to four hosts.
+
+- **Reachable:** successful HTTP response.
+- **Missing:** confirmed GET response of 404 or 410; review the source before editing a link.
+- **Access restricted:** 401, 403, or 429; a publisher or host may restrict automated access.
+- **Inconclusive:** timeout, network failure, or other server response.
+
+Restrictions and transient failures never remove links or resources. Partial statistics refreshes preserve the last verified values and dates. The website’s **What’s new** page shows both check summaries and links to the full public report. `OPENALEX_API_KEY` can optionally be configured as a repository secret; the workflow uses GitHub’s built-in token for GitHub API requests. Neither credential is published.

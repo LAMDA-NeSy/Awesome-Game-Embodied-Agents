@@ -6,6 +6,32 @@ export function externalLink(url, label) {
   const href = safeUrl(url);
   return href ? `<a href="${escapeHtml(href)}" target="_blank" rel="noopener noreferrer">${escapeHtml(label)} ↗</a>` : '';
 }
+// Source dates retain their meaning; a venue year is a separate field.
+export function resourceDate(r) {
+  const b = r.bibliography;
+  if (b?.date) {
+    const label = b.dateLabel === 'First arXiv submission' ? 'Preprint'
+      : b.source === 'OpenAlex' ? 'Indexed' : 'Published';
+    return { value: b.date, label, meaning: b.dateLabel };
+  }
+  if (r.sourceDate) return { value: r.sourceDate, label: 'Released', meaning: 'Original source date' };
+  if (r.publicationDate) return { value: r.publicationDate, label: r.selectionTrack === 'recent-arxiv' ? 'Preprint' : 'Published', meaning: 'Recorded publication date' };
+  return { value: '', label: '', meaning: '' };
+}
+export function sortResources(resources, sort = 'featured') {
+  const rank = (a, b) => a.rank - b.rank || a.id.localeCompare(b.id);
+  // Missing dates sort last. Year-only records stay year-only in the UI.
+  const descendingDate = (a, b, field, tie = rank) => String(field(b) || '').localeCompare(String(field(a) || '')) || tie(a, b);
+  const historyRank = (a, b) => Number(Boolean(b.kinds?.includes('papers'))) - Number(Boolean(a.kinds?.includes('papers'))) || rank(a, b);
+  return [...resources].sort((a, b) => {
+    if (sort === 'venue' || sort === 'newest') return (b.year || 0) - (a.year || 0) || rank(a, b);
+    if (sort === 'date') return descendingDate(a, b, r => resourceDate(r).value);
+    if (sort === 'added') return descendingDate(a, b, r => r.addedAt, historyRank);
+    if (sort === 'updated') return descendingDate(a, b, r => r.updatedAt, historyRank);
+    return sort === 'name' ? a.name.localeCompare(b.name, 'en') || rank(a, b) : rank(a, b);
+  });
+}
+const collectionDates = r => `<p class="collection-dates">${r.addedAt ? `Added ${escapeHtml(r.addedAt)}` : ''}${r.updatedAt && r.updatedAt !== r.addedAt ? ` · Revised ${escapeHtml(r.updatedAt)}` : ''}</p>`;
 export function renderCard(r, lookup = new Map()) {
   if(r.kinds.includes('demos'))return renderDemo(r,lookup);
   if(r.kinds.includes('papers'))return renderPaper(r,lookup);
@@ -22,14 +48,14 @@ export function renderCard(r, lookup = new Map()) {
     <div class="resource-body"><h3>${title}</h3>${r.title!==r.name?`<p class="full-title">${escapeHtml(r.title)}</p>`:''}
     <p class="summary">${escapeHtml(r.summary)}</p>
     <div class="tags">${r.tags.map(t=>`<span>${escapeHtml(t)}</span>`).join('')}</div>
-    <details><summary>Details &amp; evidence</summary>${field('Credit',r.credit)}${field('Environment & tasks',r.environment)}${field('Observations & actions',r.interface)}${field('Scope & limitations',r.limits)}${field('Why included',r.selectionReason)}${field('Evidence status',r.evidence)}${field('Original knowledge-base review label',r.sourceEvidence)}${field('Publication note',r.publicationNote)}${field(r.selectionTrack==='recent-arxiv'?'First submitted':'Publication date',r.publicationDate)}${r.influenceSources?.length?`<p>Evidence for editorial selection: ${r.influenceSources.map(s=>externalLink(s,'Official research report')).join(' · ')}</p>`:''}<p class="checked-date">Checked ${escapeHtml(r.checkedAt)}${r.sourceId?` · Knowledge-base ID ${escapeHtml(r.sourceId)}`:''}</p>${relatedLinks(r,lookup)}</details></div>
+    <details><summary>Details &amp; evidence</summary>${field('Credit',r.credit)}${field('Environment & tasks',r.environment)}${field('Observations & actions',r.interface)}${field('Scope & limitations',r.limits)}${field('Why included',r.selectionReason)}${field('Evidence status',r.evidence)}${field('Original knowledge-base review label',r.sourceEvidence)}${field('Publication note',r.publicationNote)}${field(r.selectionTrack==='recent-arxiv'?'First submitted':'Publication date',r.publicationDate)}${r.influenceSources?.length?`<p>Evidence for editorial selection: ${r.influenceSources.map(s=>externalLink(s,'Official research report')).join(' · ')}</p>`:''}<p class="checked-date">Checked ${escapeHtml(r.checkedAt)}${r.sourceId?` · Knowledge-base ID ${escapeHtml(r.sourceId)}`:''}</p>${collectionDates(r)}${relatedLinks(r,lookup)}</details></div>
     <nav class="resource-links" aria-label="Sources for ${escapeHtml(r.name)}">${Object.entries(r.links).map(([k,v])=>externalLink(v, {paper:'Paper',code:'Code',project:'Project',data:'Data',article:'Read article',video:'Video'}[k] || k)).join('')}${renderStarBadge(r)}<span class="evidence-badge ${candidate?'candidate-badge':''}">${evidence}</span></nav>
   </article>`;
 }
 export function filterResources(resources, state) {
   const query = state.query.trim().normalize('NFKC').toLocaleLowerCase();
   const terms = query.split(/\s+/).filter(Boolean);
-  return resources.filter(r => (state.candidates ? r.status === 'candidate' : r.status === 'selected')
+  return sortResources(resources.filter(r => (state.candidates ? r.status === 'candidate' : r.status === 'selected')
     && (state.view === 'all' || r.kinds.includes(state.view))
     && (state.domain === 'all' || r.domains.includes(state.domain))
     && (state.topic === 'all' || r.tags.includes(state.topic))
@@ -37,8 +63,7 @@ export function filterResources(resources, state) {
     && (!state.code || Boolean(r.links.code))
     && (!state.paperType || state.paperType === 'all' || r.paperType === state.paperType)
     && (!state.demoType || state.demoType === 'all' || r.demoType === state.demoType)
-    && terms.every(term => [r.name,r.title,r.summary,r.venue,r.environment,r.interface,r.credit||'',...(r.bibliography?.authors||[]),...r.tags,...(r.gameTypes||[])].join(' ').normalize('NFKC').toLocaleLowerCase().includes(term)))
-    .sort((a,b) => state.sort === 'newest' ? (b.year||0)-(a.year||0)||a.rank-b.rank : state.sort === 'name' ? a.name.localeCompare(b.name,'en') : a.rank-b.rank);
+    && terms.every(term => [r.name,r.title,r.summary,r.venue,r.environment,r.interface,r.credit||'',...(r.bibliography?.authors||[]),...r.tags,...(r.gameTypes||[])].join(' ').normalize('NFKC').toLocaleLowerCase().includes(term))), state.sort);
 }
 
 const kindNames={articles:'Research articles',papers:'Papers',projects:'Open-source projects',datasets:'Datasets',benchmarks:'Benchmarks & environments',demos:'Video demos'};
@@ -49,14 +74,21 @@ function relatedLinks(r,lookup){
 }
 function renderDemo(r,lookup){
   const video=safeUrl(r.video?.src);
-  return `<article class="demo-card" id="resource-${escapeHtml(r.id)}"><div class="demo-media"><video controls playsinline muted preload="none" src="${escapeHtml(video)}" aria-label="${escapeHtml(r.name)} video"><a href="${escapeHtml(video)}">Watch the original video</a></video><button class="video-load" type="button" hidden aria-label="Play ${escapeHtml(r.name)}"><span aria-hidden="true">▶</span><strong>${escapeHtml(r.name)}</strong><small>Play official demo</small></button></div><div class="demo-content"><div class="demo-meta"><span class="domain-tag ${r.domains[0]}">${escapeHtml(settingNames[r.demoType])}</span><span>${escapeHtml(r.year)}</span></div><p class="demo-credit">${escapeHtml(r.credit)}</p><h3>${escapeHtml(r.name)}</h3><p class="summary">${escapeHtml(r.summary)}</p><nav class="demo-links" aria-label="Sources for ${escapeHtml(r.name)}">${externalLink(r.links.project,'Original source')}${externalLink(video,'Video')}${r.links.code?externalLink(r.links.code,'Code'):''}</nav><p class="video-error" hidden>Playback is unavailable here. <a href="${escapeHtml(r.links.project)}" target="_blank" rel="noopener noreferrer">Watch on the original source site ↗</a></p><details><summary>Details &amp; evidence</summary><p><b>Setting:</b> ${escapeHtml(r.environment)}</p><p><b>Interface:</b> ${escapeHtml(r.interface)}</p><p><b>Playback &amp; limitations:</b> ${escapeHtml(r.limits)}</p><p><b>Evidence:</b> ${escapeHtml(r.evidence)}</p>${relatedLinks(r,lookup)}<p class="checked-date">Checked ${escapeHtml(r.checkedAt)}. Year identifies the source project release, not the exact recording date.</p></details></div></article>`;
+  return `<article class="demo-card" id="resource-${escapeHtml(r.id)}"><div class="demo-media"><video controls playsinline muted preload="none" src="${escapeHtml(video)}" aria-label="${escapeHtml(r.name)} video"><a href="${escapeHtml(video)}">Watch the original video</a></video><button class="video-load" type="button" hidden aria-label="Play ${escapeHtml(r.name)}"><span aria-hidden="true">▶</span><strong>${escapeHtml(r.name)}</strong><small>Play official demo</small></button></div><div class="demo-content"><div class="demo-meta"><span class="domain-tag ${r.domains[0]}">${escapeHtml(settingNames[r.demoType])}</span><span>${escapeHtml(r.year)}</span></div><p class="demo-credit">${escapeHtml(r.credit)}</p><h3>${escapeHtml(r.name)}</h3><p class="summary">${escapeHtml(r.summary)}</p><nav class="demo-links" aria-label="Sources for ${escapeHtml(r.name)}">${externalLink(r.links.project,'Original source')}${externalLink(video,'Video')}${r.links.code?externalLink(r.links.code,'Code'):''}</nav><p class="video-error" hidden>Playback is unavailable here. <a href="${escapeHtml(r.links.project)}" target="_blank" rel="noopener noreferrer">Watch on the original source site ↗</a></p><details><summary>Details &amp; evidence</summary><p><b>Setting:</b> ${escapeHtml(r.environment)}</p><p><b>Interface:</b> ${escapeHtml(r.interface)}</p><p><b>Playback &amp; limitations:</b> ${escapeHtml(r.limits)}</p><p><b>Evidence:</b> ${escapeHtml(r.evidence)}</p>${relatedLinks(r,lookup)}<p class="checked-date">Checked ${escapeHtml(r.checkedAt)}. Year identifies the source project release, not the exact recording date.</p>${collectionDates(r)}</details></div></article>`;
 }
-export function renderCatalogue(resources,view='all',allResources=resources){
+export function renderCatalogue(resources,view='all',allResources=resources,sort='featured'){
   const lookup=new Map(allResources.map(r=>[r.id,r]));
-  if(view!=='all')return `<div class="${view==='demos'?'demo-grid':'resource-list'}">${resources.map(r=>renderCard(r,lookup)).join('')}</div>`;
+  if(view!=='all' || sort!=='featured')return `<div class="${view==='demos'?'demo-grid':'resource-list'}">${resources.map(r=>renderCard(r,lookup)).join('')}</div>`;
+  const rendered = new Set();
   return Object.entries(kindNames).map(([kind,label])=>{
-    const items=resources.filter(r=>r.kinds[0]===kind);
-    return items.length?`<section class="resource-group" aria-label="${label}"><h3 class="group-title">${label}<span>${items.length}</span></h3><div class="${kind==='demos'?'demo-grid':'resource-list'}">${items.map(r=>renderCard(r,lookup)).join('')}</div></section>`:'';
+    const items=resources.filter(r=>r.kinds.includes(kind));
+    const cards = items.map(r => {
+      let card = renderCard(r, lookup);
+      if (rendered.has(r.id)) card = card.replace(`id="resource-${escapeHtml(r.id)}"`, `id="resource-${escapeHtml(r.id)}-${kind}"`);
+      rendered.add(r.id);
+      return card;
+    }).join('');
+    return items.length?`<section class="resource-group" aria-label="${label}"><h3 class="group-title">${label}<span>${items.length}</span><a href="#${kind}">Explore ${label.toLowerCase()} <span aria-hidden="true">↗</span></a></h3><div class="${kind==='demos'?'demo-grid':'resource-list'}">${cards}</div></section>`:'';
   }).join('');
 }
 
@@ -89,7 +121,7 @@ function renderPaper(r,lookup) {
   const b=r.bibliography || {};
   const authors=b.authors || [];
   const shownAuthors=authors.slice(0,3).join(', ')+(authors.length>3?' et al.':'');
-  const date=b.date || r.publicationDate || String(r.year || '');
+  const date=resourceDate(r);
   const shortName=r.name.length<=20 && !r.title.toLowerCase().includes(r.name.toLowerCase())?` (${r.name})`:'';
   const domain=r.domains.length>1?'cross-domain':r.domains[0];
   const domainLabel=r.domains.length>1?'GAME + EMBODIED':r.domains[0]==='game'?'GAME':'EMBODIED';
@@ -105,11 +137,11 @@ function renderPaper(r,lookup) {
   return `<article class="resource-card paper-card ${stats?'has-stats':''}" id="resource-${escapeHtml(r.id)}">
     <div class="paper-visual">${preview}<div class="paper-classification"><span class="domain-tag ${domain}">${domainLabel}</span><span class="resource-venue">${escapeHtml(r.venue)}</span><span class="evidence-badge ${candidate?'candidate-badge':''}">${evidence}</span></div></div>
     <div class="resource-body paper-body"><h3><a href="${escapeHtml(safeUrl(r.links.paper))}" target="_blank" rel="noopener noreferrer">${escapeHtml(r.title+shortName)}</a></h3>
-    <p class="paper-byline">${date?`<time datetime="${escapeHtml(date)}" title="${escapeHtml(b.dateLabel||'Publication year')}">${escapeHtml(date)}</time>`:''}${shownAuthors?`<span class="paper-authors" title="${escapeHtml(authors.join(', '))}">${escapeHtml(shownAuthors)}</span>`:''}</p>
+    <p class="paper-byline">${date.value?`<span class="paper-date" title="${escapeHtml(date.meaning)}"><span class="date-label">${escapeHtml(date.label)}</span> <time datetime="${escapeHtml(date.value)}">${escapeHtml(date.value)}</time></span>`:''}${shownAuthors?`<span class="paper-authors" title="${escapeHtml(authors.join(', '))}">${escapeHtml(shownAuthors)}</span>`:''}</p>
     <p class="summary">${escapeHtml(r.summary)}</p>
     <nav class="paper-actions" aria-label="Read ${escapeHtml(r.name)}">${externalLink(r.links.paper,'Paper')}${externalLink(r.links.pdf,'PDF')}${externalLink(r.links.project,'Project')}${externalLink(r.links.video,'Video')}${(lookup.size && [...lookup.values()].some(item=>item.kinds.includes('demos') && item.relatedIds?.includes(r.id)))?`<a href="#demos?q=${encodeURIComponent(r.name.split(' / ')[0])}">Watch demos ▷</a>`:''}</nav>
     <div class="tags">${r.tags.map(t=>`<span>${escapeHtml(t)}</span>`).join('')}</div>
-    <details><summary>Details &amp; sources</summary>${field('Authors',authors.join(', '))}${field('Project name',r.name)}${field('PDF preview version',b.previewVersion)}${b.sourceUrl?`<p><b>Bibliographic source:</b> ${externalLink(b.sourceUrl,b.source || 'Official publication record')}</p>`:''}${field(b.dateLabel||'Publication date',b.date)}${field('Credit',r.credit)}${field('Environment & tasks',r.environment)}${field('Observations & actions',r.interface)}${field('Scope & limitations',r.limits)}${field('Why included',r.selectionReason)}${field('Evidence status',r.evidence)}${field('Original knowledge-base review label',r.sourceEvidence)}${field('Publication note',r.publicationNote)}${r.influenceSources?.length?`<p>Evidence for editorial selection: ${r.influenceSources.map(s=>externalLink(s,'Official research report')).join(' · ')}</p>`:''}${citations&&hasCount(citations.value)?`<p><b>Citation count:</b> ${externalLink(citations.sourceUrl,`${formatCount(citations.value)} · ${citations.source}`)}. Checked ${escapeHtml(citations.updatedAt)}. Count for the linked indexed record; other versions and databases can differ.</p>`:''}${stars&&hasCount(stars.value)?`<p><b>Repository stars:</b> ${externalLink(stars.sourceUrl,`${formatCount(stars.value)} · ${stars.repository}`)}. Checked ${escapeHtml(stars.updatedAt)}.</p>`:''}${b.bibtex?`<details class="citation-details"><summary>BibTeX citation</summary><pre class="bibtex"><code>${escapeHtml(b.bibtex)}</code></pre><button class="copy-citation" type="button" hidden>Copy BibTeX</button><span class="copy-status" role="status"></span></details>`:''}<p class="checked-date">Sources checked ${escapeHtml(r.checkedAt)}${r.sourceId?` · Knowledge-base ID ${escapeHtml(r.sourceId)}`:''}</p>${relatedLinks(r,lookup)}</details></div>
+    <details><summary>Details &amp; sources</summary>${field('Authors',authors.join(', '))}${field('Project name',r.name)}${field('PDF preview version',b.previewVersion)}${b.sourceUrl?`<p><b>Bibliographic source:</b> ${externalLink(b.sourceUrl,b.source || 'Official publication record')}</p>`:''}${field(b.dateLabel||'Publication date',b.date)}${field('Credit',r.credit)}${field('Environment & tasks',r.environment)}${field('Observations & actions',r.interface)}${field('Scope & limitations',r.limits)}${field('Why included',r.selectionReason)}${field('Evidence status',r.evidence)}${field('Original knowledge-base review label',r.sourceEvidence)}${field('Publication note',r.publicationNote)}${r.influenceSources?.length?`<p>Evidence for editorial selection: ${r.influenceSources.map(s=>externalLink(s,'Official research report')).join(' · ')}</p>`:''}${citations&&hasCount(citations.value)?`<p><b>Citation count:</b> ${externalLink(citations.sourceUrl,`${formatCount(citations.value)} · ${citations.source}`)}. Checked ${escapeHtml(citations.updatedAt)}. Count for the linked indexed record; other versions and databases can differ.</p>`:''}${stars&&hasCount(stars.value)?`<p><b>Repository stars:</b> ${externalLink(stars.sourceUrl,`${formatCount(stars.value)} · ${stars.repository}`)}. Checked ${escapeHtml(stars.updatedAt)}.</p>`:''}${b.bibtex?`<details class="citation-details"><summary>BibTeX citation</summary><pre class="bibtex"><code>${escapeHtml(b.bibtex)}</code></pre><button class="copy-citation" type="button" hidden>Copy BibTeX</button><span class="copy-status" role="status"></span></details>`:''}<p class="checked-date">Sources checked ${escapeHtml(r.checkedAt)}${r.sourceId?` · Knowledge-base ID ${escapeHtml(r.sourceId)}`:''}</p>${collectionDates(r)}${relatedLinks(r,lookup)}</details></div>
 ${stats?`<aside class="paper-sidebar" aria-label="Resources and statistics for ${escapeHtml(r.name)}"><nav class="paper-stats">${stats}</nav>${sourceNote}</aside>`:''}
   </article>`;
 }
