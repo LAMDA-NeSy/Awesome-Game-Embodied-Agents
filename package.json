@@ -1,0 +1,15 @@
+{
+  "name": "awesome-game-embodied-agents",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "A source-traceable collection of game and embodied agents, with a searchable website.",
+  "scripts": {
+    "build": "node scripts/build.mjs",
+    "check": "node scripts/check.mjs",
+    "dev": "node scripts/serve.mjs",
+    "start": "node scripts/serve.mjs"
+  },
+  "engines": { "node": ">=20" },
+  "license": "MIT"
+}

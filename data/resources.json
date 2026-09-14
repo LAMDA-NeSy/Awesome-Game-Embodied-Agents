@@ -1,0 +1,2049 @@
+{
+  "meta": {
+    "title": "Awesome Game & Embodied Agents",
+    "snapshotDate": "2026-09-14",
+    "paperWindow": {
+      "from": "2021-09-14",
+      "to": "2026-09-14"
+    },
+    "arxivWindow": {
+      "from": "2025-09-14",
+      "to": "2026-09-14"
+    },
+    "sourceSnapshot": {
+      "rows": 106,
+      "emptyRows": 19,
+      "duplicateRows": 4,
+      "uniqueTitledRows": 83
+    },
+    "knowledgeUrl": "https://dy8q0bnq8y.feishu.cn/wiki/KAI9wbLEniLIIgkHAi6cU48bndd",
+    "referenceUrl": "https://github.com/kairunwen/Awesome-Robot-Use-Agent#projects",
+    "counts": {
+      "papers": 43,
+      "projects": 5,
+      "benchmarks": 8
+    },
+    "repositoryUrl": "https://github.com/labixiaoQ/Awesome-Game-Embodied-Agents",
+    "siteUrl": "https://awesome-game-embodied-agents.chengrenmin76.chatgpt.site"
+  },
+  "resources": [
+    {
+      "id": "kb-g05",
+      "name": "DreamerV3",
+      "title": "Mastering diverse control tasks through world models",
+      "domains": [
+        "game",
+        "embodied"
+      ],
+      "kinds": [
+        "papers"
+      ],
+      "year": 2025,
+      "venue": "Nature 2025",
+      "summary": "在学习到的世界模型中训练策略，以统一算法配置处理多种控制任务。适合对照游戏与机器人中的模型学习。",
+      "tags": [
+        "世界模型",
+        "强化学习"
+      ],
+      "environment": "DMLab30 含 4 个 Lasertag 射击任务；另有 Atari、Minecraft 等",
+      "interface": "各任务观测/动作/奖励 → RSSM 潜在世界模型 → 想象轨迹 actor–critic；不同任务分别训练。",
+      "limits": "固定超参数不等于共享权重通用玩家；DMLab 总均值不是 Lasertag 成绩，交互预算不同不能直接排位。 依据原有逐篇笔记整理，未独立复现；原笔记的核验声明保留为来源信息。",
+      "status": "selected",
+      "evidence": "官方书目信息核对；未独立复现实验",
+      "sourceType": "knowledge",
+      "checkedAt": "2026-09-14",
+      "links": {
+        "paper": "https://www.nature.com/articles/s41586-025-08744-2",
+        "code": "https://github.com/danijar/dreamerv3"
+      },
+      "rank": 1,
+      "sourceId": "G05",
+      "sourceEvidence": "原笔记整理",
+      "selectionReason": "近五年正式发表；官方论文页面已核对",
+      "gameTypes": [
+        "FPS",
+        "多游戏通用"
+      ],
+      "selectionTrack": "peer-reviewed"
+    },
+    {
+      "id": "kb-f02",
+      "name": "Diffusion for Human Behaviour",
+      "title": "Imitating Human Behaviour with Diffusion Models",
+      "domains": [
+        "game"
+      ],
+      "kinds": [
+        "papers"
+      ],
+      "year": 2023,
+      "venue": "ICLR 2023",
+      "summary": "用条件扩散模型联合预测鼠标与开火动作，学习人类行为中的多种合理选择。",
+      "tags": [
+        "模仿学习",
+        "扩散模型"
+      ],
+      "environment": "CS:GO Aim Train；另含机器人Kitchen及教学玩具环境",
+      "interface": "CS:GO 瞄准训练画面 → 联合鼠标水平/垂直位移与开火；半速环境。",
+      "limits": "半速、固定位置任务；分布距离与击杀表现不是同一指标，额外去噪也增加时延。 依据原有逐篇笔记整理，未独立复现；原笔记的核验声明保留为来源信息。",
+      "status": "selected",
+      "evidence": "官方书目信息核对；未独立复现实验",
+      "sourceType": "knowledge",
+      "checkedAt": "2026-09-14",
+      "links": {
+        "paper": "https://arxiv.org/abs/2301.10677",
+        "code": "https://github.com/microsoft/Imitating-Human-Behaviour-w-Diffusion"
+      },
+      "rank": 5,
+      "sourceId": "F02",
+      "sourceEvidence": "关键结论抽查",
+      "selectionReason": "近五年正式发表；官方论文页面已核对",
+      "gameTypes": [
+        "FPS"
+      ],
+      "selectionTrack": "peer-reviewed"
+    },
+    {
+      "id": "kb-f07",
+      "name": "F.A.C.U.L.",
+      "title": "F.A.C.U.L.: Language-Based Interaction with AI Companions in Gaming",
+      "domains": [
+        "game"
+      ],
+      "kinds": [
+        "papers"
+      ],
+      "year": 2026,
+      "venue": "AAAI 2026",
+      "summary": "将玩家的语言指令转成游戏队友的动作程序，结合空间指代、请求分流与行为树执行。",
+      "tags": [
+        "语言与动作",
+        "多智能体"
+      ],
+      "environment": "Arena Breakout: Infinite（暗区突围：无限）",
+      "interface": "玩家语言 + 游戏资产/位置朝向 → 意图路由与对象定位 → 原子动作程序/行为树。",
+      "limits": "高层队友交互而非逐帧瞄准；吞吐提升不等于单请求同比变快，项目旧指标与正式论文指标不得混用。 依据原有逐篇笔记整理，未独立复现；原笔记的核验声明保留为来源信息。",
+      "status": "selected",
+      "evidence": "官方书目信息核对；未独立复现实验",
+      "sourceType": "knowledge",
+      "checkedAt": "2026-09-14",
+      "links": {
+        "paper": "https://ojs.aaai.org/index.php/AAAI/article/view/38842",
+        "code": "https://github.com/tencent-facul/code"
+      },
+      "rank": 7,
+      "sourceId": "F07",
+      "sourceEvidence": "关键结论抽查",
+      "selectionReason": "近五年正式发表；官方论文页面已核对",
+      "gameTypes": [
+        "FPS"
+      ],
+      "selectionTrack": "peer-reviewed"
+    },
+    {
+      "id": "kb-r01",
+      "name": "Principled Video Representations",
+      "title": "Towards Principled Representation Learning from Videos for Reinforcement Learning",
+      "domains": [
+        "game"
+      ],
+      "kinds": [
+        "papers"
+      ],
+      "year": 2024,
+      "venue": "ICLR 2024",
+      "summary": "研究无动作标签的视频预训练如何影响控制能力，分析表征对动态背景干扰的敏感性。",
+      "tags": [
+        "表征学习",
+        "强化学习"
+      ],
+      "environment": "ViZDoom Basic、Defend the Center；另有GridWorld",
+      "interface": "无标签视频预训练 → 冻结编码器 → PPO 控制；动作标注逆模型用于对照。",
+      "limits": "人工外生干扰、冻结编码器和理论假设须保留；不要把特定视频目标的失败解释成所有视频基础模型无效。 依据原有逐篇笔记整理，未独立复现；原笔记的核验声明保留为来源信息。",
+      "status": "selected",
+      "evidence": "官方书目信息核对；未独立复现实验",
+      "sourceType": "knowledge",
+      "checkedAt": "2026-09-14",
+      "links": {
+        "paper": "https://proceedings.iclr.cc/paper_files/paper/2024/hash/eb60f103645fd14c94826665f8505a6d-Abstract-Conference.html",
+        "code": "https://github.com/microsoft/Intrepid"
+      },
+      "rank": 23,
+      "sourceId": "R01",
+      "sourceEvidence": "原笔记整理",
+      "selectionReason": "近五年正式发表；官方论文页面已核对",
+      "gameTypes": [
+        "FPS"
+      ],
+      "selectionTrack": "peer-reviewed"
+    },
+    {
+      "id": "kb-r02",
+      "name": "DuRND",
+      "title": "Catching Two Birds with One Stone: Reward Shaping with Dual Random Networks for Balancing Exploration and Exploitation",
+      "domains": [
+        "game"
+      ],
+      "kinds": [
+        "papers"
+      ],
+      "year": 2025,
+      "venue": "ICML 2025",
+      "summary": "结合新颖性与奖励相关度设计探索奖励，平衡稀疏奖励任务中的探索和利用。",
+      "tags": [
+        "强化学习",
+        "探索与技能"
+      ],
+      "environment": "ViZDoom DefendLine、SaveCenter、SlayGhosts、CollectKit；另有Atari/MiniWorld",
+      "interface": "ViZDoom 观测 → 双随机网络辅助奖励 + PPO；具体预处理与完整动作配置待核。",
+      "limits": "两个网络不是多智能体；奖励相关性不是因果贡献，收集医疗包任务无开火，定制回报不可跨场景直接混排。 依据原有逐篇笔记整理，未独立复现；原笔记的核验声明保留为来源信息。",
+      "status": "selected",
+      "evidence": "官方书目信息核对；未独立复现实验",
+      "sourceType": "knowledge",
+      "checkedAt": "2026-09-14",
+      "links": {
+        "paper": "https://proceedings.mlr.press/v267/ma25j.html",
+        "code": "https://github.com/mahaozhe/DuRND"
+      },
+      "rank": 24,
+      "sourceId": "R02",
+      "sourceEvidence": "原笔记整理",
+      "selectionReason": "近五年正式发表；官方论文页面已核对",
+      "gameTypes": [
+        "FPS"
+      ],
+      "selectionTrack": "peer-reviewed"
+    },
+    {
+      "id": "kb-r03",
+      "name": "Action-Sufficient Representations",
+      "title": "Action-Sufficient State Representation Learning for Control with Structural Constraints",
+      "domains": [
+        "game"
+      ],
+      "kinds": [
+        "papers"
+      ],
+      "year": 2022,
+      "venue": "ICML 2022",
+      "summary": "学习保留控制相关因素的紧凑状态表示，并用想象转移辅助策略学习。",
+      "tags": [
+        "表征学习",
+        "世界模型"
+      ],
+      "environment": "ViZDoom Take Cover；另有CarRacing",
+      "interface": "画面/动作/奖励序列 → 结构化潜在状态 → DQN；Take Cover 仅左右移动。",
+      "limits": "Doom 指标为生存时间而非击杀；CarRacing 结果不能移作 FPS 成绩，充分性依赖结构模型假设。 依据原有逐篇笔记整理，未独立复现；原笔记的核验声明保留为来源信息。",
+      "status": "selected",
+      "evidence": "官方书目信息核对；未独立复现实验",
+      "sourceType": "knowledge",
+      "checkedAt": "2026-09-14",
+      "links": {
+        "paper": "https://proceedings.mlr.press/v162/huang22f.html"
+      },
+      "rank": 25,
+      "sourceId": "R03",
+      "sourceEvidence": "原笔记整理",
+      "selectionReason": "近五年正式发表；官方论文页面已核对",
+      "gameTypes": [
+        "FPS"
+      ],
+      "selectionTrack": "peer-reviewed"
+    },
+    {
+      "id": "kb-b01",
+      "name": "COOM",
+      "title": "COOM: A Game Benchmark for Continual Reinforcement Learning",
+      "domains": [
+        "game"
+      ],
+      "kinds": [
+        "papers",
+        "benchmarks"
+      ],
+      "year": 2023,
+      "venue": "NeurIPS 2023 Datasets and Benchmarks",
+      "summary": "用顺序到来的视觉域与任务变化评测持续强化学习，同时观察遗忘、前向迁移与新任务学习。",
+      "tags": [
+        "持续学习",
+        "评测基准"
+      ],
+      "environment": "Doom / ViZDoom",
+      "interface": "ViZDoom 视觉任务序列 → SAC 与持续学习方法；已知任务边界，部分方法使用任务身份。",
+      "limits": "同时看性能、遗忘与前向迁移；已知任务边界/身份不能等同开放任务流，归一化 AP 不是胜率。 依据原有逐篇笔记整理，未独立复现；原笔记的核验声明保留为来源信息。",
+      "status": "selected",
+      "evidence": "官方书目信息核对；未独立复现实验",
+      "sourceType": "knowledge",
+      "checkedAt": "2026-09-14",
+      "links": {
+        "paper": "https://proceedings.neurips.cc/paper_files/paper/2023/hash/d61d9f4fe4357296cb658795fd7999f0-Abstract-Datasets_and_Benchmarks.html",
+        "code": "https://github.com/TTomilin/COOM"
+      },
+      "rank": 13,
+      "sourceId": "B01",
+      "sourceEvidence": "原笔记整理",
+      "selectionReason": "近五年正式发表；官方论文页面已核对",
+      "gameTypes": [
+        "FPS"
+      ],
+      "selectionTrack": "peer-reviewed"
+    },
+    {
+      "id": "kb-b02",
+      "name": "HASARD",
+      "title": "HASARD: A Benchmark for Vision-Based Safe Reinforcement Learning in Embodied Agents",
+      "domains": [
+        "game"
+      ],
+      "kinds": [
+        "papers",
+        "benchmarks"
+      ],
+      "year": 2025,
+      "venue": "ICLR 2025",
+      "summary": "将任务奖励与违规代价分开，评测视觉智能体在危险地形、友军伤害等约束下的决策。",
+      "tags": [
+        "安全与验证",
+        "评测基准"
+      ],
+      "environment": "Doom / ViZDoom",
+      "interface": "局部视觉 → 带独立 reward/cost 的约束 PPO 系列；含完整及简化动作配置。",
+      "limits": "期望成本预算不等于逐次零违规；固定惩罚与约束优化不同，比较需固定动作空间、预算和课程资源。 依据原有逐篇笔记整理，未独立复现；原笔记的核验声明保留为来源信息。",
+      "status": "selected",
+      "evidence": "官方书目信息核对；未独立复现实验",
+      "sourceType": "knowledge",
+      "checkedAt": "2026-09-14",
+      "links": {
+        "paper": "https://proceedings.iclr.cc/paper_files/paper/2025/hash/5ab848771ff8c9c47aac4128e2ef9f4e-Abstract-Conference.html",
+        "project": "https://sites.google.com/view/hasard-bench/"
+      },
+      "rank": 14,
+      "sourceId": "B02",
+      "sourceEvidence": "原笔记整理",
+      "selectionReason": "近五年正式发表；官方论文页面已核对",
+      "gameTypes": [
+        "FPS"
+      ],
+      "selectionTrack": "peer-reviewed"
+    },
+    {
+      "id": "kb-w01",
+      "name": "GameNGen",
+      "title": "Diffusion Models Are Real-Time Game Engines",
+      "domains": [
+        "game"
+      ],
+      "kinds": [
+        "papers"
+      ],
+      "year": 2025,
+      "venue": "ICLR 2025",
+      "summary": "基于历史画面与动作生成可交互的 DOOM 后续画面，探索神经网络作为游戏模拟器的可能性。",
+      "tags": [
+        "世界模型",
+        "环境生成"
+      ],
+      "environment": "DOOM / ViZDoom",
+      "interface": "历史游戏帧 + 玩家动作 → 扩散下一帧；PPO 主要负责训练轨迹采集。",
+      "limits": "生成帧率、视觉相似性与控制成功率不同；teacher-forcing 单帧指标不能直接代表长时逻辑一致性。 依据原有逐篇笔记整理，未独立复现；原笔记的核验声明保留为来源信息。",
+      "status": "selected",
+      "evidence": "官方书目信息核对；未独立复现实验",
+      "sourceType": "knowledge",
+      "checkedAt": "2026-09-14",
+      "links": {
+        "paper": "https://proceedings.iclr.cc/paper_files/paper/2025/hash/b71ecea210f7159f31e46631fe5c838f-Abstract-Conference.html",
+        "project": "https://gamengen.github.io/"
+      },
+      "rank": 9,
+      "sourceId": "W01",
+      "sourceEvidence": "关键结论抽查",
+      "selectionReason": "近五年正式发表；官方论文页面已核对",
+      "gameTypes": [
+        "FPS"
+      ],
+      "selectionTrack": "peer-reviewed"
+    },
+    {
+      "id": "kb-w02",
+      "name": "DIAMOND",
+      "title": "Diffusion for World Modeling: Visual Details Matter in Atari",
+      "domains": [
+        "game"
+      ],
+      "kinds": [
+        "papers"
+      ],
+      "year": 2024,
+      "venue": "NeurIPS 2024",
+      "summary": "在扩散世界模型中保留视觉细节并训练控制策略；另提供 CS:GO 交互画面生成扩展。",
+      "tags": [
+        "世界模型",
+        "扩散模型"
+      ],
+      "environment": "Atari；Counter-Strike: Global Offensive（Dust II）",
+      "interface": "CS:GO 人类画面/动作 → 低分辨率动力学 + 超分辨率生成；射击部分无 RL 策略训练。",
+      "limits": "Atari 模型内 RL 与 CS:GO 生成演示分开；接受后新增射击章节，主基准得分不能移作射击成绩。 依据原有逐篇笔记整理，未独立复现；原笔记的核验声明保留为来源信息。",
+      "status": "selected",
+      "evidence": "官方书目信息核对；未独立复现实验",
+      "sourceType": "knowledge",
+      "checkedAt": "2026-09-14",
+      "links": {
+        "paper": "https://proceedings.neurips.cc/paper_files/paper/2024/hash/6bdde0373d53d4a501249547084bed43-Abstract-Conference.html",
+        "code": "https://github.com/eloialonso/diamond"
+      },
+      "rank": 29,
+      "sourceId": "W02",
+      "sourceEvidence": "原笔记整理",
+      "selectionReason": "近五年正式发表；官方论文页面已核对",
+      "gameTypes": [
+        "FPS",
+        "多游戏通用"
+      ],
+      "selectionTrack": "peer-reviewed"
+    },
+    {
+      "id": "kb-w03",
+      "name": "StateSpaceDiffuser",
+      "title": "StateSpaceDiffuser: Bringing Long Context to Diffusion World Models",
+      "domains": [
+        "game"
+      ],
+      "kinds": [
+        "papers"
+      ],
+      "year": 2025,
+      "venue": "NeurIPS 2025",
+      "summary": "以状态空间序列模型压缩长历史，为扩散世界模型提供记忆，关注回访场景的一致性。",
+      "tags": [
+        "世界模型",
+        "规划与记忆"
+      ],
+      "environment": "MiniGrid；Counter-Strike: Global Offensive",
+      "interface": "历史图像/动作 → Cosmos 编码 + Mamba 长时状态 → DIAMOND 条件生成；含构造逆向轨迹。",
+      "limits": "正反轨迹是记忆诊断而非真实可逆物理；MiniGrid 数值与 CS:GO 用户偏好不同，均不是实战胜率。 依据原有逐篇笔记整理，未独立复现；原笔记的核验声明保留为来源信息。",
+      "status": "selected",
+      "evidence": "官方书目信息核对；未独立复现实验",
+      "sourceType": "knowledge",
+      "checkedAt": "2026-09-14",
+      "links": {
+        "paper": "https://proceedings.nips.cc/paper_files/paper/2025/hash/63943ee9fe347f3d95892cf87d9a42e6-Abstract-Conference.html",
+        "code": "https://github.com/insait-institute/StateSpaceDiffuser"
+      },
+      "rank": 30,
+      "sourceId": "W03",
+      "sourceEvidence": "原笔记整理",
+      "selectionReason": "近五年正式发表；官方论文页面已核对",
+      "gameTypes": [
+        "FPS"
+      ],
+      "selectionTrack": "peer-reviewed"
+    },
+    {
+      "id": "kb-s01",
+      "name": "EDELINE",
+      "title": "EDELINE: Enhancing Memory in Diffusion-based World Models via Linear-Time Sequence Modeling",
+      "domains": [
+        "game"
+      ],
+      "kinds": [
+        "papers"
+      ],
+      "year": 2025,
+      "venue": "NeurIPS 2025",
+      "summary": "将线性时间序列记忆加入扩散世界模型，统一预测画面、奖励和终止，并在想象轨迹中训练策略。",
+      "tags": [
+        "世界模型",
+        "规划与记忆"
+      ],
+      "environment": "ViZDoom（Basic、DeadlyCorridor、DefendCenter、HealthGathering、PredictPosition）；另含 Atari、Crafter、MiniGrid",
+      "interface": "近期图像/动作 + Mamba 循环记忆 → 扩散画面及共享奖励/终止 → 想象轨迹策略。",
+      "limits": "同时区分画面 MSE 与真实策略回报；五个 Doom 子任务指标不同，线性序列成本不等于整体实时生成。 依据原有逐篇笔记整理，未独立复现；原笔记的核验声明保留为来源信息。",
+      "status": "selected",
+      "evidence": "官方书目信息核对；未独立复现实验",
+      "sourceType": "knowledge",
+      "checkedAt": "2026-09-14",
+      "links": {
+        "paper": "https://proceedings.neurips.cc/paper_files/paper/2025/hash/97c903fbf21a7d863af2015d8803ca8f-Abstract-Conference.html",
+        "code": "https://github.com/LJH-coding/EDELINE"
+      },
+      "rank": 31,
+      "sourceId": "S01",
+      "sourceEvidence": "原笔记整理",
+      "selectionReason": "近五年正式发表；官方论文页面已核对",
+      "gameTypes": [
+        "FPS"
+      ],
+      "selectionTrack": "peer-reviewed"
+    },
+    {
+      "id": "kb-t01",
+      "name": "Contextual Similarity Distillation",
+      "title": "Contextual Similarity Distillation: Ensemble Uncertainties with a Single Model",
+      "domains": [
+        "game"
+      ],
+      "kinds": [
+        "papers"
+      ],
+      "year": 2026,
+      "venue": "ICLR 2026 Main Conference",
+      "summary": "用单个模型近似集成的不确定性，将其作为稀疏视觉导航的探索信号。",
+      "tags": [
+        "探索与技能",
+        "表征学习"
+      ],
+      "environment": "ViZDoom：MyWayHome 迷宫导航的三种起点/稀疏奖励变体",
+      "interface": "第一人称视觉迷宫输入；策略执行到达目标的导航动作，具体动作集合待核；无射击或敌人对抗。",
+      "limits": "找到目标的探索稳定性不是每局必胜；区分作者稿与正式版本；导航任务结果不能解释为完整 FPS 控制提升。",
+      "status": "selected",
+      "evidence": "官方书目信息核对；未独立复现实验",
+      "sourceType": "knowledge",
+      "checkedAt": "2026-09-14",
+      "links": {
+        "paper": "https://iclr.cc/virtual/2026/poster/10008663",
+        "code": "https://github.com/anyboby/contextual-similarity-distillation"
+      },
+      "rank": 32,
+      "sourceId": "T01",
+      "sourceEvidence": "原笔记整理",
+      "selectionReason": "近五年正式发表；官方论文页面已核对",
+      "gameTypes": [
+        "FPS"
+      ],
+      "selectionTrack": "peer-reviewed"
+    },
+    {
+      "id": "kb-t02",
+      "name": "RATE",
+      "title": "Recurrent Action Transformer with Memory",
+      "domains": [
+        "game"
+      ],
+      "kinds": [
+        "papers"
+      ],
+      "year": 2026,
+      "venue": "ICLR 2026 Main Conference",
+      "summary": "为决策 Transformer 加入跨片段记忆，研究长程任务中线索保留和回报条件动作预测。",
+      "tags": [
+        "规划与记忆",
+        "模仿学习"
+      ],
+      "environment": "ViZDoom-Two-Colors；另含 T-Maze、Memory Maze、MiniGrid、POPGym、Atari、MuJoCo",
+      "interface": "第一人称图像与历史/回报条件输入，记住颜色后导航拾取；具体动作集合待核，无敌人、瞄准或射击。",
+      "limits": "不同基准与不同提示消失时刻分开；其他环境的最长记忆跨度不是 Doom 成绩；离线数据条件和训练/测试长度必须一起记录。",
+      "status": "selected",
+      "evidence": "官方书目信息核对；未独立复现实验",
+      "sourceType": "knowledge",
+      "checkedAt": "2026-09-14",
+      "links": {
+        "paper": "https://iclr.cc/virtual/2026/poster/10007816",
+        "project": "https://sites.google.com/view/rate-model/"
+      },
+      "rank": 33,
+      "sourceId": "T02",
+      "sourceEvidence": "原笔记整理",
+      "selectionReason": "近五年正式发表；官方论文页面已核对",
+      "gameTypes": [
+        "FPS"
+      ],
+      "selectionTrack": "peer-reviewed"
+    },
+    {
+      "id": "kb-c01",
+      "name": "VisionMask",
+      "title": "Why the Agent Made that Decision: Contrastive Explanation Learning for Reinforcement Learning",
+      "domains": [
+        "game"
+      ],
+      "kinds": [
+        "papers"
+      ],
+      "year": 2025,
+      "venue": "IJCAI 2025",
+      "summary": "学习动作之间的对比视觉解释，分析强化学习策略作出某个决策的依据。",
+      "tags": [
+        "安全与验证",
+        "表征学习"
+      ],
+      "environment": "ViZDoom；第一人称视觉 DQN 决策解释",
+      "interface": "输入 ViZDoom 图像及冻结 DQN 策略；输出候选动作的视觉掩码，不更新控制策略。",
+      "limits": "Accuracy 是掩码后动作一致性而非胜率；解释指标互有取舍；需要策略梯度访问，不能视为纯黑箱解释。",
+      "status": "selected",
+      "evidence": "官方书目信息核对；未独立复现实验",
+      "sourceType": "knowledge",
+      "checkedAt": "2026-09-14",
+      "links": {
+        "paper": "https://www.ijcai.org/proceedings/2025/74"
+      },
+      "rank": 34,
+      "sourceId": "C01",
+      "sourceEvidence": "原笔记整理",
+      "selectionReason": "近五年正式发表；官方论文页面已核对",
+      "gameTypes": [
+        "FPS"
+      ],
+      "selectionTrack": "peer-reviewed"
+    },
+    {
+      "id": "kb-c02",
+      "name": "EVAPS",
+      "title": "Enhancing Robot Program Synthesis Through Environmental Context",
+      "domains": [
+        "game",
+        "embodied"
+      ],
+      "kinds": [
+        "papers"
+      ],
+      "year": 2023,
+      "venue": "NeurIPS 2023",
+      "summary": "将程序结构与执行前后的视觉上下文对齐，修复机器人领域语言中的候选程序。",
+      "tags": [
+        "程序与工具",
+        "规划与记忆"
+      ],
+      "environment": "ViZDoom；包含移动、转向和 attack 的短程序合成",
+      "interface": "输入输出示例、候选程序图与执行前后图像；输出限定 DSL 短程序，含移动、转向、attack 和敌人感知条件。",
+      "limits": "程序泛化正确率不是对战胜率；区分 Top-1 与多候选预算；限定 DSL、感知谓词、短执行长度不等于完整自主 FPS。",
+      "status": "selected",
+      "evidence": "官方书目信息核对；未独立复现实验",
+      "sourceType": "knowledge",
+      "checkedAt": "2026-09-14",
+      "links": {
+        "paper": "https://proceedings.neurips.cc/paper_files/paper/2023/hash/0c1e94af650f5c74b1f3da467c2308c2-Abstract-Conference.html"
+      },
+      "rank": 35,
+      "sourceId": "C02",
+      "sourceEvidence": "原笔记整理",
+      "selectionReason": "近五年正式发表；官方论文页面已核对",
+      "gameTypes": [
+        "FPS"
+      ],
+      "selectionTrack": "peer-reviewed"
+    },
+    {
+      "id": "kb-c03",
+      "name": "Just Cluster It",
+      "title": "Just Cluster It: An Approach for Exploration in High-Dimensions using Clustering and Pre-Trained Representations",
+      "domains": [
+        "game"
+      ],
+      "kinds": [
+        "papers"
+      ],
+      "year": 2024,
+      "venue": "ICML 2024",
+      "summary": "通过视觉特征聚类近似状态访问计数，构造回合内与跨回合探索奖励。",
+      "tags": [
+        "探索与技能",
+        "表征学习"
+      ],
+      "environment": "ViZDoom MyWayHome Sparse / Very Sparse；非战斗导航",
+      "interface": "第一人称图像经固定随机或预训练编码器；PPO 执行寻物导航，具体动作集合待核；无战斗。",
+      "limits": "随机/预训练表示分开，DINO 非 Doom 全面最优；基线底层算法不同且种子较少；导航收敛不是射击能力。",
+      "status": "selected",
+      "evidence": "官方书目信息核对；未独立复现实验",
+      "sourceType": "knowledge",
+      "checkedAt": "2026-09-14",
+      "links": {
+        "paper": "https://proceedings.mlr.press/v235/wagner24a.html",
+        "code": "https://github.com/stefanwm13/just-cluster-it-public"
+      },
+      "rank": 36,
+      "sourceId": "C03",
+      "sourceEvidence": "原笔记整理",
+      "selectionReason": "近五年正式发表；官方论文页面已核对",
+      "gameTypes": [
+        "FPS"
+      ],
+      "selectionTrack": "peer-reviewed"
+    },
+    {
+      "id": "kb-c04",
+      "name": "E3B",
+      "title": "Exploration via Elliptical Episodic Bonuses",
+      "domains": [
+        "game"
+      ],
+      "kinds": [
+        "papers"
+      ],
+      "year": 2022,
+      "venue": "NeurIPS 2022",
+      "summary": "用回合内特征覆盖程度构造椭圆探索奖励，并以逆动力学学习可控状态表示。",
+      "tags": [
+        "探索与技能",
+        "强化学习"
+      ],
+      "environment": "ViZDoom MyWayHome Dense / Sparse / Very Sparse；非战斗导航",
+      "interface": "视觉状态经逆动力学表示产生内在奖励；策略执行 MyWayHome 导航动作，具体集合待核；无射击。",
+      "limits": "MiniHack 广泛优势不能转成 Doom 全面领先；固定地图与变化环境不同；回合奖励、表示和计算开销应同时比较。",
+      "status": "selected",
+      "evidence": "官方书目信息核对；未独立复现实验",
+      "sourceType": "knowledge",
+      "checkedAt": "2026-09-14",
+      "links": {
+        "paper": "https://proceedings.neurips.cc/paper_files/paper/2022/hash/f4f79698d48bdc1a6dec20583724182b-Abstract-Conference.html",
+        "project": "https://e3bagent.github.io/"
+      },
+      "rank": 37,
+      "sourceId": "C04",
+      "sourceEvidence": "原笔记整理",
+      "selectionReason": "近五年正式发表；官方论文页面已核对",
+      "gameTypes": [
+        "FPS"
+      ],
+      "selectionTrack": "peer-reviewed"
+    },
+    {
+      "id": "kb-c05",
+      "name": "Successor Feature Landmarks",
+      "title": "Successor Feature Landmarks for Long-Horizon Goal-Conditioned Reinforcement Learning",
+      "domains": [
+        "game"
+      ],
+      "kinds": [
+        "papers"
+      ],
+      "year": 2021,
+      "venue": "NeurIPS 2021",
+      "summary": "通过后继特征组织可达地标，由高层图规划与低层目标策略配合处理长程导航。",
+      "tags": [
+        "规划与记忆",
+        "探索与技能"
+      ],
+      "environment": "ViZDoom 大型视觉迷宫 SGM Map、Test 1/2/4/6；非战斗导航",
+      "interface": "第一人称视觉输入，使用预训练 SPTM 表示；高层选择地标，低层执行离散导航动作；无战斗。",
+      "limits": "固定/随机出生点、难度与地图须分开；训练步数不含全部预训练成本；困难任务优势不能概括为所有任务最优。",
+      "status": "selected",
+      "evidence": "官方书目信息核对；未独立复现实验",
+      "sourceType": "knowledge",
+      "checkedAt": "2026-09-14",
+      "links": {
+        "paper": "https://proceedings.neurips.cc/paper_files/paper/2021/hash/e27c71957d1e6c223e0d48a165da2ee1-Abstract.html",
+        "code": "https://github.com/2016choang/sfl"
+      },
+      "rank": 38,
+      "sourceId": "C05",
+      "sourceEvidence": "原笔记整理",
+      "selectionReason": "近五年正式发表；官方论文页面已核对",
+      "gameTypes": [
+        "FPS"
+      ],
+      "publicationDate": "2021-12",
+      "selectionTrack": "peer-reviewed"
+    },
+    {
+      "id": "kb-c06",
+      "name": "CoSHRL",
+      "title": "Handling Long and Richly Constrained Tasks through Constrained Hierarchical Reinforcement Learning",
+      "domains": [
+        "game"
+      ],
+      "kinds": [
+        "papers"
+      ],
+      "year": 2024,
+      "venue": "AAAI 2024 — Safe, Robust and Responsible AI Track",
+      "summary": "组合目标条件技能与受约束路径搜索，在长期任务中权衡到达目标与累计危险成本。",
+      "tags": [
+        "规划与记忆",
+        "安全与验证"
+      ],
+      "environment": "Safe ViZDoom 四叶草迷宫；具有危险地面的非战斗导航",
+      "interface": "Safe ViZDoom 迷宫环境状态/具体视觉处理待核；低层使用四个绝对方向移动，高层选择受约束子目标；无战斗。",
+      "limits": "到达率与约束满足率分开；CVaR 随机环境证据不来自 Doom；非零违反率意味着不能宣称绝对安全，动作接口已简化。",
+      "status": "selected",
+      "evidence": "官方书目信息核对；未独立复现实验",
+      "sourceType": "knowledge",
+      "checkedAt": "2026-09-14",
+      "links": {
+        "paper": "https://ojs.aaai.org/index.php/AAAI/article/view/30132"
+      },
+      "rank": 39,
+      "sourceId": "C06",
+      "sourceEvidence": "原笔记整理",
+      "selectionReason": "近五年正式发表；官方论文页面已核对",
+      "gameTypes": [
+        "FPS"
+      ],
+      "selectionTrack": "peer-reviewed"
+    },
+    {
+      "id": "kb-c08",
+      "name": "PE-DQN",
+      "title": "Diverse Projection Ensembles for Distributional Reinforcement Learning",
+      "domains": [
+        "game"
+      ],
+      "kinds": [
+        "papers"
+      ],
+      "year": 2024,
+      "venue": "ICLR 2024",
+      "summary": "集成不同回报分布表示，用模型间分歧估计认知不确定性并驱动探索。",
+      "tags": [
+        "探索与技能",
+        "强化学习"
+      ],
+      "environment": "ViZDoom MyWayHome Dense / Sparse / Very Sparse；非战斗导航",
+      "interface": "缩小灰度图与堆叠帧输入；输出 MyWayHome 导航动作，具体集合待核；无射击或对手。",
+      "limits": "全部训练种子发现目标不等于每回合 100% 成功；分布式回报建模不是分布式计算；需对齐奖励稀疏度和探索参数。",
+      "status": "selected",
+      "evidence": "官方书目信息核对；未独立复现实验",
+      "sourceType": "knowledge",
+      "checkedAt": "2026-09-14",
+      "links": {
+        "paper": "https://proceedings.iclr.cc/paper_files/paper/2024/hash/cfea00ddf5a5f514bd3368d639d1933d-Abstract-Conference.html"
+      },
+      "rank": 40,
+      "sourceId": "C08",
+      "sourceEvidence": "原笔记整理",
+      "selectionReason": "近五年正式发表；官方论文页面已核对",
+      "gameTypes": [
+        "FPS"
+      ],
+      "selectionTrack": "peer-reviewed"
+    },
+    {
+      "id": "kb-c09",
+      "name": "MOSS",
+      "title": "A Mixture of Surprises for Unsupervised Reinforcement Learning",
+      "domains": [
+        "game"
+      ],
+      "kinds": [
+        "papers"
+      ],
+      "year": 2022,
+      "venue": "NeurIPS 2022",
+      "summary": "混合追求新颖性与降低不可预测性的技能，在无监督预训练后适配下游控制任务。",
+      "tags": [
+        "探索与技能",
+        "强化学习"
+      ],
+      "environment": "ViZDoom Defend The Line（防守射击）与 Take Cover（躲避弹丸生存）",
+      "interface": "ViZDoom 观测具体编码待核；技能条件策略用于 Defend The Line 射击与 Take Cover 躲避，后续使用任务奖励微调。",
+      "limits": "表中任务得分不是击杀或胜率；使用截尾均值与标准误而非普通均值/标准差；无监督预训练不等于零样本部署。",
+      "status": "selected",
+      "evidence": "官方书目信息核对；未独立复现实验",
+      "sourceType": "knowledge",
+      "checkedAt": "2026-09-14",
+      "links": {
+        "paper": "https://proceedings.neurips.cc/paper_files/paper/2022/hash/a7667ee5d545a43d2f0fda98863c260e-Abstract-Conference.html",
+        "code": "https://github.com/LeapLabTHU/MOSS"
+      },
+      "rank": 41,
+      "sourceId": "C09",
+      "sourceEvidence": "原笔记整理",
+      "selectionReason": "近五年正式发表；官方论文页面已核对",
+      "gameTypes": [
+        "FPS"
+      ],
+      "selectionTrack": "peer-reviewed"
+    },
+    {
+      "id": "mp5",
+      "name": "MP5",
+      "title": "MP5: A Multi-modal Open-ended Embodied System in Minecraft via Active Perception",
+      "domains": [
+        "game"
+      ],
+      "kinds": [
+        "papers"
+      ],
+      "year": 2024,
+      "venue": "CVPR 2024",
+      "summary": "通过主动感知与规划模块的协作，拆解并执行 Minecraft 中依赖上下文和过程的复杂任务。",
+      "tags": [
+        "规划与记忆",
+        "语言与动作"
+      ],
+      "environment": "Minecraft",
+      "interface": "多模态观察、主动感知、模块化动作执行",
+      "limits": "在 Minecraft 的预设接口与任务集合中评估，不直接证明真实机器人迁移。",
+      "status": "selected",
+      "evidence": "官方书目信息核对；未独立复现实验",
+      "sourceType": "knowledge",
+      "checkedAt": "2026-09-14",
+      "links": {
+        "paper": "https://openaccess.thecvf.com/content/CVPR2024/html/Qin_MP5_A_Multi-modal_Open-ended_Embodied_System_in_Minecraft_via_Active_CVPR_2024_paper.html",
+        "project": "https://iranqin.github.io/MP5.github.io/"
+      },
+      "rank": 11,
+      "selectionTrack": "peer-reviewed",
+      "selectionReason": "近五年正式会议或期刊论文；优先核对官方论文集与作者来源。"
+    },
+    {
+      "id": "deps",
+      "name": "DEPS",
+      "title": "Describe, Explain, Plan and Select: Interactive Planning with LLMs Enables Open-World Multi-Task Agents",
+      "domains": [
+        "game"
+      ],
+      "kinds": [
+        "papers"
+      ],
+      "year": 2023,
+      "venue": "NeurIPS 2023",
+      "summary": "将执行描述、失败解释和子目标选择接入语言规划，通过环境反馈修订 Minecraft 长程计划。",
+      "tags": [
+        "规划与记忆",
+        "语言与动作"
+      ],
+      "environment": "Minecraft",
+      "interface": "语言规划与技能级执行",
+      "limits": "依赖任务接口和底层执行能力；计划可行性与完整实时控制应分别评估。",
+      "status": "selected",
+      "evidence": "官方书目信息核对；未独立复现实验",
+      "sourceType": "knowledge",
+      "checkedAt": "2026-09-14",
+      "links": {
+        "paper": "https://proceedings.neurips.cc/paper_files/paper/2023/hash/6b8dfb8c0c12e6fafc6c256cb08a5ca7-Abstract-Conference.html"
+      },
+      "rank": 43,
+      "selectionTrack": "peer-reviewed",
+      "selectionReason": "近五年正式会议或期刊论文；优先核对官方论文集与作者来源。"
+    },
+    {
+      "id": "voyager",
+      "name": "Voyager",
+      "title": "Voyager: An Open-Ended Embodied Agent with Large Language Models",
+      "domains": [
+        "game"
+      ],
+      "kinds": [
+        "papers"
+      ],
+      "year": 2024,
+      "venue": "TMLR 2024",
+      "summary": "将自动课程、可复用代码技能库与执行反馈结合，在 Minecraft 中持续探索与积累技能。",
+      "tags": [
+        "程序与工具",
+        "探索与技能"
+      ],
+      "environment": "Minecraft",
+      "interface": "JavaScript 技能代码、游戏状态与执行反馈",
+      "limits": "依赖 Mineflayer 等程序接口和语言模型服务；不等同于仅用像素与键鼠控制。",
+      "status": "selected",
+      "evidence": "官方论文 PDF 与作者发表列表核对；OpenReview 页面有浏览器验证；未复现",
+      "sourceType": "knowledge",
+      "checkedAt": "2026-09-14",
+      "links": {
+        "paper": "https://openreview.net/forum?id=P8E4Br72j3",
+        "code": "https://github.com/MineDojo/Voyager",
+        "project": "https://voyager.minedojo.org/"
+      },
+      "rank": 3,
+      "selectionTrack": "peer-reviewed",
+      "selectionReason": "近五年正式会议或期刊论文；优先核对官方论文集与作者来源。"
+    },
+    {
+      "id": "vpt",
+      "name": "Video PreTraining",
+      "title": "Video PreTraining (VPT): Learning to Act by Watching Unlabeled Online Videos",
+      "domains": [
+        "game"
+      ],
+      "kinds": [
+        "papers"
+      ],
+      "year": 2022,
+      "venue": "NeurIPS 2022",
+      "summary": "用少量带动作标签的数据学习逆动力学，再为网络视频补充动作标签，扩展 Minecraft 行为预训练。",
+      "tags": [
+        "模仿学习",
+        "表征学习"
+      ],
+      "environment": "Minecraft",
+      "interface": "游戏画面 → 键鼠动作",
+      "limits": "互联网视频预训练与后续任务微调需分开记录；不能当作无需环境适配的通用策略。",
+      "status": "selected",
+      "evidence": "官方书目信息核对；未独立复现实验",
+      "sourceType": "supplement",
+      "checkedAt": "2026-09-14",
+      "links": {
+        "paper": "https://proceedings.neurips.cc/paper_files/paper/2022/hash/9c7008aff45b5d8f0973b23e1a22ada0-Abstract-Conference.html"
+      },
+      "rank": 15,
+      "selectionTrack": "peer-reviewed",
+      "selectionReason": "近五年正式会议或期刊论文；优先核对官方论文集与作者来源。"
+    },
+    {
+      "id": "steve1",
+      "name": "STEVE-1",
+      "title": "STEVE-1: A Generative Model for Text-to-Behavior in Minecraft",
+      "domains": [
+        "game"
+      ],
+      "kinds": [
+        "papers"
+      ],
+      "year": 2023,
+      "venue": "NeurIPS 2023",
+      "summary": "在 VPT 行为模型上接入文本和视觉条件，让 Minecraft 智能体执行短程开放指令。",
+      "tags": [
+        "语言与动作",
+        "模仿学习"
+      ],
+      "environment": "Minecraft",
+      "interface": "文本或视觉目标 → 低层行为",
+      "limits": "短程指令跟随是主要能力边界；复杂长程任务仍需要规划与记忆模块。",
+      "status": "selected",
+      "evidence": "官方书目信息核对；未独立复现实验",
+      "sourceType": "supplement",
+      "checkedAt": "2026-09-14",
+      "links": {
+        "paper": "https://proceedings.neurips.cc/paper_files/paper/2023/hash/dd03f856fc7f2efeec8b1c796284561d-Abstract-Conference.html"
+      },
+      "rank": 46,
+      "selectionTrack": "peer-reviewed",
+      "selectionReason": "近五年正式会议或期刊论文；优先核对官方论文集与作者来源。"
+    },
+    {
+      "id": "openvla",
+      "name": "OpenVLA",
+      "title": "OpenVLA: An Open-Source Vision-Language-Action Model",
+      "domains": [
+        "embodied"
+      ],
+      "kinds": [
+        "papers"
+      ],
+      "year": 2024,
+      "venue": "CoRL 2024",
+      "summary": "将视觉、语言与机器人动作统一建模，开放模型权重和训练工具，支持针对新任务进行高效微调。",
+      "tags": [
+        "视觉语言动作",
+        "机器人学习"
+      ],
+      "environment": "多种真实机器人操作平台",
+      "interface": "RGB 图像与语言 → 机器人动作",
+      "limits": "新硬件与动作空间需要适配；论文中的不同平台与任务成功率不能混合为统一能力评分。",
+      "status": "selected",
+      "evidence": "官方书目信息核对；未独立复现实验",
+      "sourceType": "supplement",
+      "checkedAt": "2026-09-14",
+      "links": {
+        "paper": "https://proceedings.mlr.press/v270/kim25c.html",
+        "code": "https://github.com/openvla/openvla",
+        "project": "https://openvla.github.io/"
+      },
+      "rank": 2,
+      "publicationNote": "会议于 2024 年召开；PMLR 论文集于 2025 年出版。",
+      "selectionTrack": "peer-reviewed",
+      "selectionReason": "近五年正式会议或期刊论文；优先核对官方论文集与作者来源。"
+    },
+    {
+      "id": "diffusion-policy",
+      "name": "Diffusion Policy",
+      "title": "Diffusion Policy: Visuomotor Policy Learning via Action Diffusion",
+      "domains": [
+        "embodied"
+      ],
+      "kinds": [
+        "papers"
+      ],
+      "year": 2023,
+      "venue": "RSS 2023",
+      "summary": "把机器人动作序列建模为条件去噪过程，用视觉观察生成多模态连续动作。",
+      "tags": [
+        "扩散模型",
+        "模仿学习"
+      ],
+      "environment": "模拟与真实机器人操作任务",
+      "interface": "视觉观察 → 连续动作序列",
+      "limits": "去噪步数、控制频率与训练示范分布影响表现；动作生成与环境画面生成是不同问题。",
+      "status": "selected",
+      "evidence": "官方书目信息核对；未独立复现实验",
+      "sourceType": "supplement",
+      "checkedAt": "2026-09-14",
+      "links": {
+        "paper": "https://diffusion-policy.cs.columbia.edu/",
+        "code": "https://github.com/real-stanford/diffusion_policy"
+      },
+      "rank": 4,
+      "selectionTrack": "peer-reviewed",
+      "selectionReason": "近五年正式会议或期刊论文；优先核对官方论文集与作者来源。"
+    },
+    {
+      "id": "act",
+      "name": "ACT / ALOHA",
+      "title": "Learning Fine-Grained Bimanual Manipulation with Low-Cost Hardware",
+      "domains": [
+        "embodied"
+      ],
+      "kinds": [
+        "papers"
+      ],
+      "year": 2023,
+      "venue": "RSS 2023",
+      "summary": "通过低成本双臂遥操作收集示范，利用 Transformer 预测动作块，学习精细双臂操作。",
+      "tags": [
+        "模仿学习",
+        "机器人学习"
+      ],
+      "environment": "ALOHA 双臂平台",
+      "interface": "图像与关节信息 → 动作块",
+      "limits": "需要硬件、遥操作示范和任务适配；论文任务成功率不能外推到任意精细操作。",
+      "status": "selected",
+      "evidence": "官方书目信息核对；未独立复现实验",
+      "sourceType": "supplement",
+      "checkedAt": "2026-09-14",
+      "links": {
+        "paper": "https://roboticsproceedings.org/rss19/p016.html",
+        "project": "https://tonyzhaozh.github.io/aloha/"
+      },
+      "rank": 12,
+      "selectionTrack": "peer-reviewed",
+      "selectionReason": "近五年正式会议或期刊论文；优先核对官方论文集与作者来源。"
+    },
+    {
+      "id": "octo",
+      "name": "Octo",
+      "title": "Octo: An Open-Source Generalist Robot Policy",
+      "domains": [
+        "embodied"
+      ],
+      "kinds": [
+        "papers"
+      ],
+      "year": 2024,
+      "venue": "RSS 2024",
+      "summary": "基于跨机器人示范预训练通用策略，通过语言或目标图像指定任务，并适配新的输入与动作空间。",
+      "tags": [
+        "机器人学习",
+        "视觉语言动作"
+      ],
+      "environment": "多机器人平台",
+      "interface": "语言或目标图像 → 扩散动作策略",
+      "limits": "新平台一般仍需示范与微调；开源预训练策略不等于任意机器人即插即用。",
+      "status": "selected",
+      "evidence": "官方书目信息核对；未独立复现实验",
+      "sourceType": "supplement",
+      "checkedAt": "2026-09-14",
+      "links": {
+        "paper": "https://www.roboticsproceedings.org/rss20/p090.html",
+        "project": "https://octo-models.github.io/"
+      },
+      "rank": 50,
+      "selectionTrack": "peer-reviewed",
+      "selectionReason": "近五年正式会议或期刊论文；优先核对官方论文集与作者来源。"
+    },
+    {
+      "id": "rt2",
+      "name": "RT-2",
+      "title": "RT-2: Vision-Language-Action Models Transfer Web Knowledge to Robotic Control",
+      "domains": [
+        "embodied"
+      ],
+      "kinds": [
+        "papers"
+      ],
+      "year": 2023,
+      "venue": "CoRL 2023",
+      "summary": "把机器人动作表示为 token，与视觉语言任务联合训练，研究网络知识向操作任务的迁移。",
+      "tags": [
+        "视觉语言动作",
+        "机器人学习"
+      ],
+      "environment": "真实机器人操作",
+      "interface": "图像与语言 → 动作 token",
+      "limits": "语义泛化与物理技能能力应分别判断；没有在这里提供可直接运行的完整模型。",
+      "status": "selected",
+      "evidence": "官方书目信息核对；未独立复现实验",
+      "sourceType": "supplement",
+      "checkedAt": "2026-09-14",
+      "links": {
+        "paper": "https://proceedings.mlr.press/v229/zitkovich23a.html"
+      },
+      "rank": 51,
+      "selectionTrack": "peer-reviewed",
+      "selectionReason": "近五年正式会议或期刊论文；优先核对官方论文集与作者来源。"
+    },
+    {
+      "id": "voxposer",
+      "name": "VoxPoser",
+      "title": "VoxPoser: Composable 3D Value Maps for Robotic Manipulation with Language Models",
+      "domains": [
+        "embodied"
+      ],
+      "kinds": [
+        "papers"
+      ],
+      "year": 2023,
+      "venue": "CoRL 2023",
+      "summary": "用语言模型组合感知结果与三维价值图，为机器人运动规划提供可执行的目标约束。",
+      "tags": [
+        "程序与工具",
+        "规划与记忆"
+      ],
+      "environment": "RLBench 与真实机器人操作",
+      "interface": "语言、感知 → 3D 价值图与运动规划",
+      "limits": "完整真实感知链路与校准需要另行配置；生成计划不等于保证动作可执行。",
+      "status": "selected",
+      "evidence": "官方书目信息核对；未独立复现实验",
+      "sourceType": "supplement",
+      "checkedAt": "2026-09-14",
+      "links": {
+        "paper": "https://proceedings.mlr.press/v229/huang23b.html"
+      },
+      "rank": 52,
+      "selectionTrack": "peer-reviewed",
+      "selectionReason": "近五年正式会议或期刊论文；优先核对官方论文集与作者来源。"
+    },
+    {
+      "id": "rekep",
+      "name": "ReKep",
+      "title": "ReKep: Spatio-Temporal Reasoning of Relational Keypoint Constraints for Robotic Manipulation",
+      "domains": [
+        "embodied"
+      ],
+      "kinds": [
+        "papers"
+      ],
+      "year": 2024,
+      "venue": "CoRL 2024",
+      "summary": "将指令转化为三维关键点间的时空约束，通过优化实现多阶段机器人操作。",
+      "tags": [
+        "程序与工具",
+        "规划与记忆"
+      ],
+      "environment": "单臂、双臂与移动操作",
+      "interface": "语言与 RGB-D → 关键点约束",
+      "limits": "关键点估计、几何标定和底层规划共同决定执行质量。",
+      "status": "selected",
+      "evidence": "官方书目信息核对；未独立复现实验",
+      "sourceType": "supplement",
+      "checkedAt": "2026-09-14",
+      "links": {
+        "paper": "https://proceedings.mlr.press/v270/huang25g.html"
+      },
+      "rank": 53,
+      "publicationNote": "会议年份 2024，PMLR 出版年份 2025。",
+      "selectionTrack": "peer-reviewed",
+      "selectionReason": "近五年正式会议或期刊论文；优先核对官方论文集与作者来源。"
+    },
+    {
+      "id": "hirobot",
+      "name": "Hi Robot",
+      "title": "Hi Robot: Open-Ended Instruction Following with Hierarchical Vision-Language-Action Models",
+      "domains": [
+        "embodied"
+      ],
+      "kinds": [
+        "papers"
+      ],
+      "year": 2025,
+      "venue": "ICML 2025",
+      "summary": "由高层视觉语言模型理解复杂指令与用户反馈，低层视觉语言动作模型执行具体子任务。",
+      "tags": [
+        "视觉语言动作",
+        "规划与记忆"
+      ],
+      "environment": "单臂、双臂与移动机器人",
+      "interface": "高层语言子目标 → 低层动作",
+      "limits": "任务拆解、子目标切换与低层技能覆盖共同影响长程成功率。",
+      "status": "selected",
+      "evidence": "官方书目信息核对；未独立复现实验",
+      "sourceType": "supplement",
+      "checkedAt": "2026-09-14",
+      "links": {
+        "paper": "https://proceedings.mlr.press/v267/shi25d.html"
+      },
+      "rank": 8,
+      "selectionTrack": "peer-reviewed",
+      "selectionReason": "近五年正式会议或期刊论文；优先核对官方论文集与作者来源。"
+    },
+    {
+      "id": "libero",
+      "name": "LIBERO",
+      "title": "LIBERO: Benchmarking Knowledge Transfer for Lifelong Robot Learning",
+      "domains": [
+        "embodied"
+      ],
+      "kinds": [
+        "papers",
+        "benchmarks"
+      ],
+      "year": 2023,
+      "venue": "NeurIPS 2023 D&B",
+      "summary": "通过空间、对象、目标和任务组合的变化评测机器人终身学习与知识迁移。",
+      "tags": [
+        "评测基准",
+        "持续学习"
+      ],
+      "environment": "机器人操作仿真",
+      "interface": "语言目标、模拟观测与动作",
+      "limits": "报告时需注明任务套件、示范、任务顺序与评测协议；仿真结果不等于真实部署。",
+      "status": "selected",
+      "evidence": "官方书目信息核对；未独立复现实验",
+      "sourceType": "supplement",
+      "checkedAt": "2026-09-14",
+      "links": {
+        "paper": "https://proceedings.neurips.cc/paper_files/paper/2023/hash/8c3c666820ea055a77726d66fc7d447f-Abstract-Datasets_and_Benchmarks.html",
+        "code": "https://github.com/Lifelong-Robot-Learning/LIBERO"
+      },
+      "rank": 16,
+      "selectionTrack": "peer-reviewed",
+      "selectionReason": "近五年正式会议或期刊论文；优先核对官方论文集与作者来源。"
+    },
+    {
+      "id": "embodiedbench",
+      "name": "EmbodiedBench",
+      "title": "EmbodiedBench: Comprehensive Benchmarking Multi-modal Large Language Models for Vision-Driven Embodied Agents",
+      "domains": [
+        "embodied"
+      ],
+      "kinds": [
+        "papers",
+        "benchmarks"
+      ],
+      "year": 2025,
+      "venue": "ICML 2025",
+      "summary": "系统评测多模态语言模型在视觉驱动的具身任务中的决策能力。",
+      "tags": [
+        "评测基准",
+        "语言与动作"
+      ],
+      "environment": "多个具身仿真任务与环境",
+      "interface": "视觉观察 → 环境定义的动作",
+      "limits": "任务类型、动作抽象层级和环境设置不同，不能只比较汇总成功率。",
+      "status": "selected",
+      "evidence": "官方书目信息核对；未独立复现实验",
+      "sourceType": "supplement",
+      "checkedAt": "2026-09-14",
+      "links": {
+        "paper": "https://proceedings.mlr.press/v267/yang25f.html"
+      },
+      "rank": 56,
+      "selectionTrack": "peer-reviewed",
+      "selectionReason": "近五年正式会议或期刊论文；优先核对官方论文集与作者来源。"
+    },
+    {
+      "id": "consistency-policy",
+      "name": "Consistency Policy",
+      "title": "Consistency Policy: Accelerated Visuomotor Policies via Consistency Distillation",
+      "domains": [
+        "embodied"
+      ],
+      "kinds": [
+        "papers"
+      ],
+      "year": 2024,
+      "venue": "RSS 2024",
+      "summary": "从扩散策略中蒸馏更少步数的动作生成，研究计算资源受限时的视觉控制时延。",
+      "tags": [
+        "扩散模型",
+        "机器人学习"
+      ],
+      "environment": "模拟与真实操作任务",
+      "interface": "视觉观察 → 少步动作生成",
+      "limits": "加速收益依赖计算硬件、基线采样配置与任务，不能把生成吞吐等同端到端控制频率。",
+      "status": "selected",
+      "evidence": "官方书目信息核对；未独立复现实验",
+      "sourceType": "supplement",
+      "checkedAt": "2026-09-14",
+      "links": {
+        "paper": "https://www.roboticsproceedings.org/rss20/p071.html"
+      },
+      "rank": 57,
+      "selectionTrack": "peer-reviewed",
+      "selectionReason": "近五年正式会议或期刊论文；优先核对官方论文集与作者来源。"
+    },
+    {
+      "id": "baku",
+      "name": "BAKU",
+      "title": "BAKU: An Efficient Transformer for Multi-Task Policy Learning",
+      "domains": [
+        "embodied"
+      ],
+      "kinds": [
+        "papers"
+      ],
+      "year": 2024,
+      "venue": "NeurIPS 2024",
+      "summary": "使用 Transformer 学习多任务机器人策略，研究高效架构与动作预测设计。",
+      "tags": [
+        "机器人学习",
+        "模仿学习"
+      ],
+      "environment": "LIBERO、Meta-World 与控制基准",
+      "interface": "多模态观察 → 多任务动作策略",
+      "limits": "不同基准和训练预算应分开报告；本索引未独立运行实验。",
+      "status": "selected",
+      "evidence": "官方书目信息核对；未独立复现实验",
+      "sourceType": "supplement",
+      "checkedAt": "2026-09-14",
+      "links": {
+        "paper": "https://proceedings.neurips.cc/paper_files/paper/2024/hash/ff887781480973bd3cb6026feb378d1e-Abstract-Conference.html"
+      },
+      "rank": 58,
+      "selectionTrack": "peer-reviewed",
+      "selectionReason": "近五年正式会议或期刊论文；优先核对官方论文集与作者来源。"
+    },
+    {
+      "id": "vla-cache",
+      "name": "VLA-Cache",
+      "title": "VLA-Cache: Efficient Vision-Language-Action Manipulation via Adaptive Token Caching",
+      "domains": [
+        "embodied"
+      ],
+      "kinds": [
+        "papers"
+      ],
+      "year": 2025,
+      "venue": "NeurIPS 2025",
+      "summary": "复用视觉 token 计算以加速视觉语言动作模型，关注推理时延与操作成功率的权衡。",
+      "tags": [
+        "视觉语言动作",
+        "机器人学习"
+      ],
+      "environment": "LIBERO、SIMPLER 与真实机器人",
+      "interface": "视觉语言动作模型的 token 缓存",
+      "limits": "速度取决于模型、硬件与场景变化，不能直接比较不同设备上的倍率。",
+      "status": "selected",
+      "evidence": "官方书目信息核对；未独立复现实验",
+      "sourceType": "supplement",
+      "checkedAt": "2026-09-14",
+      "links": {
+        "paper": "https://proceedings.neurips.cc/paper_files/paper/2025/hash/f062da1973ac9ac61fc6d44dd7fa309f-Abstract-Conference.html"
+      },
+      "rank": 59,
+      "selectionTrack": "peer-reviewed",
+      "selectionReason": "近五年正式会议或期刊论文；优先核对官方论文集与作者来源。"
+    },
+    {
+      "id": "robochemist",
+      "name": "RoboChemist",
+      "title": "RoboChemist: Long-Horizon and Safety-Compliant Robotic Chemical Experimentation",
+      "domains": [
+        "embodied"
+      ],
+      "kinds": [
+        "papers"
+      ],
+      "year": 2025,
+      "venue": "CoRL 2025",
+      "summary": "组合高层视觉语言规划与低层动作模型，研究多阶段实验操作中的任务反馈与规程约束。",
+      "tags": [
+        "规划与记忆",
+        "安全与验证"
+      ],
+      "environment": "机器人化学实验任务",
+      "interface": "视觉语言规划、监控与 VLA 执行",
+      "limits": "研究场景中的规程遵守证据不构成通用实验室安全认证。",
+      "status": "selected",
+      "evidence": "官方书目信息核对；未独立复现实验",
+      "sourceType": "supplement",
+      "checkedAt": "2026-09-14",
+      "links": {
+        "paper": "https://proceedings.mlr.press/v305/zhang25i.html"
+      },
+      "rank": 60,
+      "selectionTrack": "peer-reviewed",
+      "selectionReason": "近五年正式会议或期刊论文；优先核对官方论文集与作者来源。"
+    },
+    {
+      "id": "sima2",
+      "name": "SIMA 2",
+      "title": "SIMA 2: A Generalist Embodied Agent for Virtual Worlds",
+      "domains": [
+        "game"
+      ],
+      "kinds": [
+        "papers"
+      ],
+      "year": 2025,
+      "venue": "arXiv · 2025.12",
+      "summary": "将 Gemini 的推理与交互能力接入多个三维游戏环境，探索指令跟随、跨环境泛化与自我改进。",
+      "tags": [
+        "语言与动作",
+        "探索与技能"
+      ],
+      "environment": "多个三维虚拟世界",
+      "interface": "视觉与语言 → 键鼠交互",
+      "limits": "当前证据在虚拟环境；不能据此声称已经解决真实机器人控制或任意长程任务。",
+      "status": "selected",
+      "evidence": "官方书目信息核对；未独立复现实验",
+      "sourceType": "supplement",
+      "checkedAt": "2026-09-14",
+      "links": {
+        "paper": "https://arxiv.org/abs/2512.04797",
+        "project": "https://deepmind.google/blog/sima-2-an-agent-that-plays-reasons-and-learns-with-you-in-virtual-3d-worlds/"
+      },
+      "rank": 6,
+      "publicationDate": "2025-12-04",
+      "selectionTrack": "recent-arxiv",
+      "selectionReason": "编辑判断：官方跨游戏评估、交互推理与自我改进结果，为通用游戏智能体提供重要系统级研究证据；非按机构名或热度自动录入。",
+      "influenceSources": [
+        "https://deepmind.google/blog/sima-2-an-agent-that-plays-reasons-and-learns-with-you-in-virtual-3d-worlds/"
+      ]
+    },
+    {
+      "id": "pi-star06",
+      "name": "π*0.6 / RECAP",
+      "title": "π*0.6: a VLA That Learns From Experience",
+      "domains": [
+        "embodied"
+      ],
+      "kinds": [
+        "papers"
+      ],
+      "year": 2025,
+      "venue": "arXiv · 2025.11",
+      "summary": "结合示范、自主执行和人类纠正，通过优势条件化的强化学习改进视觉语言动作模型。",
+      "tags": [
+        "视觉语言动作",
+        "强化学习"
+      ],
+      "environment": "真实机器人多任务操作",
+      "interface": "VLA 动作执行、经验与纠正反馈",
+      "limits": "依赖真实数据收集和人工纠正；论文结果不代表完全无人干预的自我改进。",
+      "status": "selected",
+      "evidence": "官方书目信息核对；未独立复现实验",
+      "sourceType": "supplement",
+      "checkedAt": "2026-09-14",
+      "links": {
+        "paper": "https://arxiv.org/abs/2511.14759",
+        "project": "https://www.pi.website/blog/pistar06"
+      },
+      "rank": 10,
+      "publicationDate": "2025-11-18",
+      "selectionTrack": "recent-arxiv",
+      "selectionReason": "编辑判断：官方报告跨任务真实机器人经验学习结果，为 VLA 从示范走向执行反馈学习提供重要路线证据；不把宣传或 GitHub 星数等同论文质量。",
+      "influenceSources": [
+        "https://www.pi.website/blog/pistar06"
+      ]
+    },
+    {
+      "id": "lerobot",
+      "name": "LeRobot",
+      "title": "Robot learning: datasets, policies and hardware",
+      "domains": [
+        "embodied"
+      ],
+      "kinds": [
+        "projects"
+      ],
+      "year": null,
+      "venue": "机器人学习工具",
+      "summary": "整合机器人数据采集、数据集格式、策略训练和硬件接口，支持从示范到部署的实验流程。",
+      "tags": [
+        "机器人学习",
+        "模仿学习"
+      ],
+      "environment": "真实机器人与数据集",
+      "interface": "Python Robot 接口、训练与数据工具",
+      "limits": "需按机器人型号安装驱动并完成标定；数据集、模型与代码的许可分别核对。",
+      "status": "selected",
+      "evidence": "官方仓库用途与接口核对；未本地安装验证",
+      "sourceType": "supplement",
+      "checkedAt": "2026-09-14",
+      "links": {
+        "code": "https://github.com/huggingface/lerobot"
+      },
+      "rank": 17,
+      "selectionTrack": "infrastructure",
+      "selectionReason": "独立开源工具或环境，服务论文研究与复现；不纳入论文时间窗口统计。"
+    },
+    {
+      "id": "openpi",
+      "name": "OpenPI",
+      "title": "Physical Intelligence open robot policy tooling",
+      "domains": [
+        "embodied"
+      ],
+      "kinds": [
+        "projects"
+      ],
+      "year": null,
+      "venue": "策略训练工具",
+      "summary": "提供 Physical Intelligence 机器人策略的训练、推理和适配代码，连接模型与任务数据。",
+      "tags": [
+        "视觉语言动作",
+        "机器人学习"
+      ],
+      "environment": "机器人策略训练与推理",
+      "interface": "Python、模型服务与数据配置",
+      "limits": "模型权重和硬件依赖按具体版本准备；不假设所有论文组件都已发布。",
+      "status": "selected",
+      "evidence": "官方仓库用途与接口核对；未本地安装验证",
+      "sourceType": "supplement",
+      "checkedAt": "2026-09-14",
+      "links": {
+        "code": "https://github.com/Physical-Intelligence/openpi"
+      },
+      "rank": 94,
+      "selectionTrack": "infrastructure",
+      "selectionReason": "独立开源工具或环境，服务论文研究与复现；不纳入论文时间窗口统计。"
+    },
+    {
+      "id": "gymnasium",
+      "name": "Gymnasium",
+      "title": "A standard API for reinforcement learning environments",
+      "domains": [
+        "game",
+        "embodied"
+      ],
+      "kinds": [
+        "projects"
+      ],
+      "year": null,
+      "venue": "环境接口",
+      "summary": "为单智能体强化学习提供统一环境接口，便于构建和比较训练流程。",
+      "tags": [
+        "强化学习",
+        "评测基准"
+      ],
+      "environment": "多类单智能体环境",
+      "interface": "Python reset / step API",
+      "limits": "接口标准化不会自动对齐各环境的难度、观测权限和奖励。",
+      "status": "selected",
+      "evidence": "官方仓库用途与接口核对；未本地安装验证",
+      "sourceType": "supplement",
+      "checkedAt": "2026-09-14",
+      "links": {
+        "code": "https://github.com/Farama-Foundation/Gymnasium"
+      },
+      "rank": 95,
+      "selectionTrack": "infrastructure",
+      "selectionReason": "独立开源工具或环境，服务论文研究与复现；不纳入论文时间窗口统计。"
+    },
+    {
+      "id": "pettingzoo",
+      "name": "PettingZoo",
+      "title": "Multi-agent reinforcement learning APIs",
+      "domains": [
+        "game"
+      ],
+      "kinds": [
+        "projects"
+      ],
+      "year": null,
+      "venue": "多智能体接口",
+      "summary": "提供多智能体环境接口及参考环境，支持轮流行动与并行行动的实验设置。",
+      "tags": [
+        "多智能体",
+        "强化学习"
+      ],
+      "environment": "合作、对抗与混合任务",
+      "interface": "AEC 与 Parallel API",
+      "limits": "需注明通信机制、可观测性、对手和团队奖励设置。",
+      "status": "selected",
+      "evidence": "官方仓库用途与接口核对；未本地安装验证",
+      "sourceType": "supplement",
+      "checkedAt": "2026-09-14",
+      "links": {
+        "code": "https://github.com/Farama-Foundation/PettingZoo"
+      },
+      "rank": 96,
+      "selectionTrack": "infrastructure",
+      "selectionReason": "独立开源工具或环境，服务论文研究与复现；不纳入论文时间窗口统计。"
+    },
+    {
+      "id": "genesis",
+      "name": "Genesis",
+      "title": "General-purpose robotics simulation",
+      "domains": [
+        "embodied"
+      ],
+      "kinds": [
+        "projects"
+      ],
+      "year": null,
+      "venue": "物理仿真工具",
+      "summary": "提供机器人与具身学习使用的通用仿真基础设施，支持构建物理交互实验。",
+      "tags": [
+        "机器人学习",
+        "环境生成"
+      ],
+      "environment": "机器人仿真场景",
+      "interface": "仿真与控制接口",
+      "limits": "仿真物理、硬件和功能支持取决于具体版本；不等同于经过验证的 sim-to-real 迁移。",
+      "status": "selected",
+      "evidence": "官方仓库用途与接口核对；未本地安装验证",
+      "sourceType": "supplement",
+      "checkedAt": "2026-09-14",
+      "links": {
+        "code": "https://github.com/Genesis-Embodied-AI/genesis-world"
+      },
+      "rank": 97,
+      "selectionTrack": "infrastructure",
+      "selectionReason": "独立开源工具或环境，服务论文研究与复现；不纳入论文时间窗口统计。"
+    },
+    {
+      "id": "vizdoom",
+      "name": "ViZDoom",
+      "title": "Doom-based visual reinforcement learning environments",
+      "domains": [
+        "game"
+      ],
+      "kinds": [
+        "benchmarks"
+      ],
+      "year": null,
+      "venue": "游戏研究环境",
+      "summary": "以 DOOM 为基础提供可控的第一人称视觉任务，支持导航、生存和射击研究。",
+      "tags": [
+        "评测基准",
+        "强化学习"
+      ],
+      "environment": "DOOM",
+      "interface": "视觉观察、游戏变量与离散动作",
+      "limits": "需要说明是否读取游戏变量、帧跳与动作集；基础环境不受论文发表年限限制。",
+      "status": "selected",
+      "evidence": "官方仓库用途与接口核对；未本地安装验证",
+      "sourceType": "supplement",
+      "checkedAt": "2026-09-14",
+      "links": {
+        "code": "https://github.com/Farama-Foundation/ViZDoom"
+      },
+      "rank": 98,
+      "selectionTrack": "infrastructure",
+      "selectionReason": "独立开源工具或环境，服务论文研究与复现；不纳入论文时间窗口统计。"
+    },
+    {
+      "id": "habitat",
+      "name": "Habitat-Lab",
+      "title": "Embodied AI tasks and environments",
+      "domains": [
+        "embodied"
+      ],
+      "kinds": [
+        "benchmarks"
+      ],
+      "year": null,
+      "venue": "具身研究环境",
+      "summary": "提供具身智能任务、环境配置与训练评测组件，用于导航和交互研究。",
+      "tags": [
+        "评测基准",
+        "规划与记忆"
+      ],
+      "environment": "三维室内环境",
+      "interface": "传感器观测与任务动作接口",
+      "limits": "场景数据与模拟器需要匹配配置；评测协议随任务不同。",
+      "status": "selected",
+      "evidence": "官方仓库用途与接口核对；未本地安装验证",
+      "sourceType": "supplement",
+      "checkedAt": "2026-09-14",
+      "links": {
+        "code": "https://github.com/facebookresearch/habitat-lab"
+      },
+      "rank": 99,
+      "selectionTrack": "infrastructure",
+      "selectionReason": "独立开源工具或环境，服务论文研究与复现；不纳入论文时间窗口统计。"
+    },
+    {
+      "id": "ai2thor",
+      "name": "AI2-THOR",
+      "title": "Interactive 3D environments for visual AI",
+      "domains": [
+        "embodied"
+      ],
+      "kinds": [
+        "benchmarks"
+      ],
+      "year": null,
+      "venue": "交互研究环境",
+      "summary": "提供可交互的室内场景与对象，支撑视觉导航、物体操作和具身规划研究。",
+      "tags": [
+        "评测基准",
+        "规划与记忆"
+      ],
+      "environment": "三维室内交互场景",
+      "interface": "视觉观察与环境动作 API",
+      "limits": "离散对象交互不等于真实关节级控制；需要明确所用任务定义。",
+      "status": "selected",
+      "evidence": "官方仓库用途与接口核对；未本地安装验证",
+      "sourceType": "supplement",
+      "checkedAt": "2026-09-14",
+      "links": {
+        "code": "https://github.com/allenai/ai2thor"
+      },
+      "rank": 100,
+      "selectionTrack": "infrastructure",
+      "selectionReason": "独立开源工具或环境，服务论文研究与复现；不纳入论文时间窗口统计。"
+    },
+    {
+      "id": "maniskill",
+      "name": "ManiSkill",
+      "title": "GPU-parallelized robotics simulation and benchmarks",
+      "domains": [
+        "embodied"
+      ],
+      "kinds": [
+        "benchmarks"
+      ],
+      "year": null,
+      "venue": "机器人操作评测",
+      "summary": "为机器人操作技能提供并行仿真、任务环境与评测工具。",
+      "tags": [
+        "评测基准",
+        "机器人学习"
+      ],
+      "environment": "机器人操作仿真",
+      "interface": "仿真观察、动作与技能任务",
+      "limits": "需说明环境版本、机器人、控制模式与训练数据；仿真吞吐不等于真实控制性能。",
+      "status": "selected",
+      "evidence": "官方仓库用途与接口核对；未本地安装验证",
+      "sourceType": "supplement",
+      "checkedAt": "2026-09-14",
+      "links": {
+        "code": "https://github.com/mani-skill/ManiSkill"
+      },
+      "rank": 101,
+      "selectionTrack": "infrastructure",
+      "selectionReason": "独立开源工具或环境，服务论文研究与复现；不纳入论文时间窗口统计。"
+    },
+    {
+      "id": "candidate-s08",
+      "name": "X-Ego",
+      "title": "X-Ego: Acquiring Team-Level Tactical Situational Awareness via Cross-Egocentric Contrastive Video Representation Learning",
+      "domains": [
+        "game"
+      ],
+      "kinds": [
+        "papers"
+      ],
+      "year": 2025,
+      "venue": "候选 · arXiv",
+      "summary": "X-Ego 研究如何利用训练时同步的队友第一视角，使单人推理时也能理解部分看不见的团队态势。",
+      "tags": [
+        "待核验"
+      ],
+      "environment": "Counter-Strike 2（de_mirage地图）",
+      "interface": "训练使用同步多玩家第一视角视频；测试可用单视角，输出当前区域位置分类，不输出战斗动作。",
+      "limits": "区分多视角训练与测试权限；位置分类提升不等于胜率提升；部分编码器退化，且按回合隔离不等于跨玩家或跨地图验证。",
+      "status": "candidate",
+      "evidence": "知识库线索，未完成本轮正式收录核验",
+      "sourceType": "knowledge",
+      "checkedAt": "2026-09-14",
+      "links": {
+        "paper": "https://arxiv.org/abs/2510.19150"
+      },
+      "rank": 72,
+      "sourceId": "S08",
+      "selectionTrack": "candidate",
+      "selectionReason": "近一年预印本线索；正式接收或影响力依据尚待充分核对"
+    },
+    {
+      "id": "candidate-p01",
+      "name": "Game-TARS",
+      "title": "Game-TARS: Pretrained Foundation Models for Scalable Generalist Multimodal Game Agents",
+      "domains": [
+        "game"
+      ],
+      "kinds": [
+        "papers"
+      ],
+      "year": 2025,
+      "venue": "候选 · arXiv",
+      "summary": "Game-TARS 面向跨游戏通用控制，试图用统一键鼠表达共享不同游戏的训练数据，同时缓解通用多模态模型逐步思考造成的延迟与重复动作。",
+      "tags": [
+        "待核验"
+      ],
+      "environment": "ViZDoom；Minecraft；Web 3D；MiniWorld",
+      "interface": "多模态画面/轨迹输入，统一输出原生键盘与鼠标动作序列；各 FPS 评测具体观测权限和执行时序待核。",
+      "limits": "浏览器 time-pause 与 best-of-5 不能外推实时 FPS；Doom 回报、Minecraft 成功率及在线 Combat 消融不可混写；注意数据与规模差异。",
+      "status": "candidate",
+      "evidence": "知识库线索，未完成本轮正式收录核验",
+      "sourceType": "knowledge",
+      "checkedAt": "2026-09-14",
+      "links": {
+        "paper": "https://arxiv.org/abs/2510.23691"
+      },
+      "rank": 73,
+      "sourceId": "P01",
+      "selectionTrack": "candidate",
+      "selectionReason": "近一年预印本线索；正式接收或影响力依据尚待充分核对"
+    },
+    {
+      "id": "candidate-p02",
+      "name": "GameWAM",
+      "title": "GameWAM: A World Action Model for Video Games",
+      "domains": [
+        "game"
+      ],
+      "kinds": [
+        "papers"
+      ],
+      "year": 2026,
+      "venue": "候选 · arXiv",
+      "summary": "GameWAM 将未来画面监督与动作学习结合，研究世界变化建模能否帮助游戏控制，以及生成噪声为何会造成持续相机偏转。",
+      "tags": [
+        "待核验"
+      ],
+      "environment": "ViZDoom；Minecraft MCU",
+      "interface": "ViZDoom 输入包括画面及位置、朝向、健康等状态；使用地图内 APPO 专家轨迹；输出键鼠动作块并滚动重规划。",
+      "limits": "不是纯视觉或零样本 FPS；与基线数据、输入和架构不同，只宜作系统级比较；Minecraft 消融不可移作 Doom；执行步数不等于耗时。",
+      "status": "candidate",
+      "evidence": "知识库线索，未完成本轮正式收录核验",
+      "sourceType": "knowledge",
+      "checkedAt": "2026-09-14",
+      "links": {
+        "paper": "https://arxiv.org/abs/2608.26200"
+      },
+      "rank": 74,
+      "sourceId": "P02",
+      "selectionTrack": "candidate",
+      "selectionReason": "近一年预印本线索；正式接收或影响力依据尚待充分核对"
+    },
+    {
+      "id": "candidate-t03",
+      "name": "See, Symbolize, Act",
+      "title": "See, Symbolize, Act: Grounding VLMs with Spatial Representations for Better Gameplay",
+      "domains": [
+        "game"
+      ],
+      "kinds": [
+        "papers"
+      ],
+      "year": 2026,
+      "venue": "候选 · arXiv",
+      "summary": "See, Symbolize, Act 研究视觉语言模型的游戏失败究竟来自感知定位还是决策，并检查符号化空间信息何时有帮助。",
+      "tags": [
+        "待核验"
+      ],
+      "environment": "ViZDoom defend_the_center；另含 Atari 与 AI2-THOR",
+      "interface": "比较图像、自提取目标符号与引擎 labels buffer 真值；在 defend_the_center 输出旋转和 ATTACK。",
+      "limits": "引擎真值包含额外信息，不能将收益全归于推理；仅固定位置单场景且方差证据不足；AAAI Bridge 不等于主会。",
+      "status": "candidate",
+      "evidence": "知识库线索，未完成本轮正式收录核验",
+      "sourceType": "knowledge",
+      "checkedAt": "2026-09-14",
+      "links": {
+        "paper": "https://arxiv.org/abs/2603.11601"
+      },
+      "rank": 75,
+      "sourceId": "T03",
+      "selectionTrack": "candidate",
+      "selectionReason": "近一年预印本线索；正式接收或影响力依据尚待充分核对"
+    },
+    {
+      "id": "candidate-t04",
+      "name": "Playing DOOM with 1.3M Parameters",
+      "title": "Playing DOOM with 1.3M Parameters: Specialized Small Models vs Large Language Models for Real-Time Game Control",
+      "domains": [
+        "game"
+      ],
+      "kinds": [
+        "papers"
+      ],
+      "year": 2026,
+      "venue": "候选 · arXiv",
+      "summary": "这项工作用任务专用小模型检验低延迟控制是否比通用语言模型更适合实时射击。",
+      "tags": [
+        "待核验"
+      ],
+      "environment": "ViZDoom defend_the_center",
+      "interface": "输入 ASCII 画面及量化引擎深度；由人类示范监督学习转向/射击等复合动作，仅固定防守场景。",
+      "limits": "专用监督训练与零样本 LLM 不同；须统一回合预算、frame_skip、硬件和输入权限；随机相邻帧划分不能证明跨场景泛化。",
+      "status": "candidate",
+      "evidence": "知识库线索，未完成本轮正式收录核验",
+      "sourceType": "knowledge",
+      "checkedAt": "2026-09-14",
+      "links": {
+        "paper": "https://arxiv.org/abs/2604.07385"
+      },
+      "rank": 76,
+      "sourceId": "T04",
+      "selectionTrack": "candidate",
+      "selectionReason": "近一年预印本线索；正式接收或影响力依据尚待充分核对"
+    },
+    {
+      "id": "candidate-t05",
+      "name": "Augmenting Human Performance with an XR Agent Learning from Online Behavior and BCI Evidence",
+      "title": "Augmenting Human Performance with an XR Agent Learning from Online Behavior and BCI Evidence",
+      "domains": [
+        "game"
+      ],
+      "kinds": [
+        "papers"
+      ],
+      "year": 2026,
+      "venue": "候选 · arXiv",
+      "summary": "OLIVE 研究高速 XR 射击中如何识别人类想处理却来不及射击的目标，弥补只从实际射击学习意图的盲区。",
+      "tags": [
+        "待核验"
+      ],
+      "environment": "Unity XR SpaceShooter：区分敌我飞船并保护母舰",
+      "interface": "输入真实用户射击行为、注视锁定 EEG 与视觉信息；输出目标方向提示，实际射击由人类执行。",
+      "limits": "提示收敛与信念收敛是不同指标；探索性小样本不能概括所有组间差异；不与自主控制胜率直接比较，作者称待刊仍需独立核验。",
+      "status": "candidate",
+      "evidence": "知识库线索，未完成本轮正式收录核验",
+      "sourceType": "knowledge",
+      "checkedAt": "2026-09-14",
+      "links": {
+        "paper": "https://arxiv.org/abs/2608.30369"
+      },
+      "rank": 77,
+      "sourceId": "T05",
+      "selectionTrack": "candidate",
+      "selectionReason": "近一年预印本线索；正式接收或影响力依据尚待充分核对"
+    },
+    {
+      "id": "candidate-t06",
+      "name": "Procedural Generation of First Person Shooter Maps using Map-Elites",
+      "title": "Procedural Generation of First Person Shooter Maps using Map-Elites",
+      "domains": [
+        "game"
+      ],
+      "kinds": [
+        "papers"
+      ],
+      "year": 2026,
+      "venue": "候选 · arXiv",
+      "summary": "该工作将质量多样性搜索用于 FPS 地图生成，目标不仅是找到单个平衡地图，还要保留不同布局和战斗节奏。",
+      "tags": [
+        "待核验"
+      ],
+      "environment": "Unity Project Arena，Duel 1v1 deathmatch",
+      "interface": "输入地图表示与搜索参数，输出地图布局；预设机器人在 Unity Project Arena 1v1 死亡竞赛中提供评价。",
+      "limits": "归入生成类但非神经世界模型；击杀熵衡量平衡而非乐趣；机器人技能、武器与搜索预算决定评价，不能直接当人类体验结论。",
+      "status": "candidate",
+      "evidence": "知识库线索，未完成本轮正式收录核验",
+      "sourceType": "knowledge",
+      "checkedAt": "2026-09-14",
+      "links": {
+        "paper": "https://arxiv.org/abs/2605.30570"
+      },
+      "rank": 78,
+      "sourceId": "T06",
+      "selectionTrack": "candidate",
+      "selectionReason": "近一年预印本线索；正式接收或影响力依据尚待充分核对"
+    },
+    {
+      "id": "candidate-t07",
+      "name": "Account Consistency from Gameplay Traces",
+      "title": "Account Consistency from Gameplay Traces: Same-Player Verification in Counter-Strike 2",
+      "domains": [
+        "game"
+      ],
+      "kinds": [
+        "papers"
+      ],
+      "year": 2026,
+      "venue": "候选 · arXiv",
+      "summary": "该工作研究 CS2 账号当前对局是否仍由历史操作者完成，尝试用行为指纹减少人工逐场回放核查。",
+      "tags": [
+        "待核验"
+      ],
+      "environment": "Counter-Strike 2（CS2）真实对局 demo",
+      "interface": "输入 CS2 demo 的准星、移动、射击、经济及节奏记录；输出跨对局同人分数，不控制游戏。",
+      "limits": "AUC 不是实际准确率；固定查询集和历史数量后再比较；同人验证不等于作弊检测，历史污染与身份台账噪声影响结论。",
+      "status": "candidate",
+      "evidence": "知识库线索，未完成本轮正式收录核验",
+      "sourceType": "knowledge",
+      "checkedAt": "2026-09-14",
+      "links": {
+        "paper": "https://arxiv.org/abs/2608.24893"
+      },
+      "rank": 79,
+      "sourceId": "T07",
+      "selectionTrack": "candidate",
+      "selectionReason": "近一年预印本线索；正式接收或影响力依据尚待充分核对"
+    }
+  ]
+}

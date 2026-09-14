@@ -1,0 +1,8 @@
+.sites-runtime/
+.env
+.env.*
+!.env.example
+node_modules/
+output/
+.DS_Store
+.playwright-cli/

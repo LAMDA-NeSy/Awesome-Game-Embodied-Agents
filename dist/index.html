@@ -1,0 +1,469 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Game × Embodied — Awesome Agents</title>
+  <meta name="description" content="游戏与具身智能研究索引。精选论文、开源项目与评测环境，追溯来源，理解能力与边界。">
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%234650ec'/%3E%3Cpath d='M9 9l14 14M23 9L9 23' stroke='%23c7f278' stroke-width='5'/%3E%3C/svg%3E">
+  <link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+  <a class="skip-link" href="#content">跳到内容</a>
+  <aside class="sidebar">
+    <a class="brand" href="#all" aria-label="Awesome Agents 首页"><span class="brand-mark">×</span><span>AWESOME<br><b>AGENTS</b></span></a>
+    <div class="sidebar-label">RESEARCH COLLECTION</div>
+    <nav aria-label="资源导航">
+      <a href="#all" data-view="all" class="nav-item active"><span>◫</span>全部资源<span class="nav-count" id="nav-total">52</span></a>
+      <a href="#papers" data-view="papers" class="nav-item"><span>▤</span>精选论文</a>
+      <a href="#projects" data-view="projects" class="nav-item"><span>⌘</span>开源项目</a>
+      <a href="#benchmarks" data-view="benchmarks" class="nav-item"><span>▥</span>评测与环境</a>
+    </nav>
+    <div class="sidebar-label second-label">THE COLLECTION</div>
+    <a href="#about" data-view="about" class="nav-item"><span>⊞</span>收录标准与来源</a>
+    <a href="README.md" class="nav-item" download><span>↓</span>项目文档</a>
+    <a href="https://github.com/labixiaoQ/Awesome-Game-Embodied-Agents" class="nav-item" target="_blank" rel="noopener noreferrer"><span>↗</span>GitHub 项目</a><div class="sidebar-bottom"><span class="tiny-mark">G × E</span><p>两个研究世界<br>一条感知与行动的主线</p><span class="edition">EDITION 01 / 2026</span></div>
+  </aside>
+  <div class="workspace">
+    <header class="topbar"><span>资源索引 <span class="slash">/</span> <b id="breadcrumb">全部资源</b></span><a href="#about" class="top-note">收录快照 · 2026.09.14 <span>↗</span></a></header>
+    <main id="content">
+      <section class="intro" aria-labelledby="page-title">
+        <div><div class="eyebrow"><span class="mini-square"></span> INTELLIGENCE IN ACTION</div><h1 id="page-title">Game <span class="cross">×</span> Embodied<br><span class="title-second">Agents.</span></h1><p class="intro-copy">从游戏决策到机器人行动，探索智能体的共同能力。</p></div>
+        <div class="research-map" aria-label="研究框架：游戏与具身智能共享感知、规划和行动闭环"><div class="map-head"><span>VIRTUAL</span><span>PHYSICAL</span></div><div class="map-domains"><span>Game</span><i>×</i><span>Embodied</span></div><div class="map-line"></div><div class="map-loop"><span>感知</span><span>→</span><span>规划</span><span>→</span><span>行动</span></div><div class="map-foot">OBSERVE. PLAN. ACT. REPEAT.</div></div>
+      </section>
+      <section class="stats" aria-label="收录统计"><div><strong id="stat-papers">43</strong><span>精选论文</span></div><div><strong id="stat-projects">5</strong><span>开源项目</span></div><div><strong id="stat-benchmarks">8</strong><span>评测与环境</span></div><div class="stat-policy"><span class="policy-icon">✓</span><span>近五年顶会顶刊<br><small>近一年重要 arXiv · 保留收录依据</small></span></div></section>
+      <section id="catalogue" aria-label="研究资源目录">
+        <div class="section-heading"><h2 id="section-title">探索资源</h2><span class="section-number">01 — THE INDEX</span></div>
+        <div class="controls"><div class="domain-tabs" aria-label="研究方向"><button type="button" data-domain="all" class="selected" aria-pressed="true">全部方向</button><button type="button" data-domain="game" aria-pressed="false">游戏智能体</button><button type="button" data-domain="embodied" aria-pressed="false">具身智能</button></div><label class="search"><span aria-hidden="true">⌕</span><input id="search" type="search" placeholder="搜索论文、项目或关键词…" aria-label="搜索资源"><kbd>/</kbd></label></div>
+        <div class="filter-line"><label for="topic">研究主题</label><select id="topic"><option value="all">全部主题</option></select><label for="year">年份</label><select id="year"><option value="all">全部年份</option></select><label for="sort" class="sort-label">排序</label><select id="sort"><option value="featured">推荐阅读顺序</option><option value="newest">年份从新到旧</option><option value="name">名称 A–Z</option></select></div>
+        <div class="result-line"><p id="result-count" role="status" aria-live="polite">52 条资源 / 52 条收录</p><button id="reset" type="button" hidden>清除筛选</button></div>
+        <div class="resource-grid" id="resources"><article class="resource-card" id="resource-kb-g05">
+    <div class="card-top"><span class="domain-tag cross-domain">GAME × EMBODIED</span><span class="resource-type">Nature 2025</span></div>
+    <h3>DreamerV3</h3><p class="full-title">Mastering diverse control tasks through world models</p>
+    <p class="summary">在学习到的世界模型中训练策略，以统一算法配置处理多种控制任务。适合对照游戏与机器人中的模型学习。</p>
+    <div class="tags"><span>世界模型</span><span>强化学习</span></div>
+    <div class="card-footer"><a href="https://www.nature.com/articles/s41586-025-08744-2" target="_blank" rel="noopener noreferrer">论文 ↗</a><a href="https://github.com/danijar/dreamerv3" target="_blank" rel="noopener noreferrer">代码 ↗</a><span class="">知识库精选</span></div>
+    <details><summary>任务、接口与收录依据</summary><p><b>环境与任务：</b>DMLab30 含 4 个 Lasertag 射击任务；另有 Atari、Minecraft 等</p><p><b>观察与动作：</b>各任务观测/动作/奖励 → RSSM 潜在世界模型 → 想象轨迹 actor–critic；不同任务分别训练。</p><p><b>结论边界：</b>固定超参数不等于共享权重通用玩家；DMLab 总均值不是 Lasertag 成绩，交互预算不同不能直接排位。 依据原有逐篇笔记整理，未独立复现；原笔记的核验声明保留为来源信息。</p><p><b>收录理由：</b>近五年正式发表；官方论文页面已核对</p><p><b>证据状态：</b>官方书目信息核对；未独立复现实验</p><p><b>知识库原始核验标记：</b>原笔记整理</p><p class="checked-date">核对日期 2026-09-14 · 知识库编号 G05</p></details>
+  </article>
+<article class="resource-card" id="resource-openvla">
+    <div class="card-top"><span class="domain-tag embodied">EMBODIED AI</span><span class="resource-type">CoRL 2024</span></div>
+    <h3>OpenVLA</h3><p class="full-title">OpenVLA: An Open-Source Vision-Language-Action Model</p>
+    <p class="summary">将视觉、语言与机器人动作统一建模，开放模型权重和训练工具，支持针对新任务进行高效微调。</p>
+    <div class="tags"><span>视觉语言动作</span><span>机器人学习</span></div>
+    <div class="card-footer"><a href="https://proceedings.mlr.press/v270/kim25c.html" target="_blank" rel="noopener noreferrer">论文 ↗</a><a href="https://github.com/openvla/openvla" target="_blank" rel="noopener noreferrer">代码 ↗</a><a href="https://openvla.github.io/" target="_blank" rel="noopener noreferrer">项目 ↗</a><span class="">官方来源补充</span></div>
+    <details><summary>任务、接口与收录依据</summary><p><b>环境与任务：</b>多种真实机器人操作平台</p><p><b>观察与动作：</b>RGB 图像与语言 → 机器人动作</p><p><b>结论边界：</b>新硬件与动作空间需要适配；论文中的不同平台与任务成功率不能混合为统一能力评分。</p><p><b>收录理由：</b>近五年正式会议或期刊论文；优先核对官方论文集与作者来源。</p><p><b>证据状态：</b>官方书目信息核对；未独立复现实验</p><p><b>发表时间说明：</b>会议于 2024 年召开；PMLR 论文集于 2025 年出版。</p><p class="checked-date">核对日期 2026-09-14</p></details>
+  </article>
+<article class="resource-card" id="resource-voyager">
+    <div class="card-top"><span class="domain-tag game">GAME AGENT</span><span class="resource-type">TMLR 2024</span></div>
+    <h3>Voyager</h3><p class="full-title">Voyager: An Open-Ended Embodied Agent with Large Language Models</p>
+    <p class="summary">将自动课程、可复用代码技能库与执行反馈结合，在 Minecraft 中持续探索与积累技能。</p>
+    <div class="tags"><span>程序与工具</span><span>探索与技能</span></div>
+    <div class="card-footer"><a href="https://openreview.net/forum?id=P8E4Br72j3" target="_blank" rel="noopener noreferrer">论文 ↗</a><a href="https://github.com/MineDojo/Voyager" target="_blank" rel="noopener noreferrer">代码 ↗</a><a href="https://voyager.minedojo.org/" target="_blank" rel="noopener noreferrer">项目 ↗</a><span class="">知识库精选</span></div>
+    <details><summary>任务、接口与收录依据</summary><p><b>环境与任务：</b>Minecraft</p><p><b>观察与动作：</b>JavaScript 技能代码、游戏状态与执行反馈</p><p><b>结论边界：</b>依赖 Mineflayer 等程序接口和语言模型服务；不等同于仅用像素与键鼠控制。</p><p><b>收录理由：</b>近五年正式会议或期刊论文；优先核对官方论文集与作者来源。</p><p><b>证据状态：</b>官方论文 PDF 与作者发表列表核对；OpenReview 页面有浏览器验证；未复现</p><p class="checked-date">核对日期 2026-09-14</p></details>
+  </article>
+<article class="resource-card" id="resource-diffusion-policy">
+    <div class="card-top"><span class="domain-tag embodied">EMBODIED AI</span><span class="resource-type">RSS 2023</span></div>
+    <h3>Diffusion Policy</h3><p class="full-title">Diffusion Policy: Visuomotor Policy Learning via Action Diffusion</p>
+    <p class="summary">把机器人动作序列建模为条件去噪过程，用视觉观察生成多模态连续动作。</p>
+    <div class="tags"><span>扩散模型</span><span>模仿学习</span></div>
+    <div class="card-footer"><a href="https://diffusion-policy.cs.columbia.edu/" target="_blank" rel="noopener noreferrer">论文 ↗</a><a href="https://github.com/real-stanford/diffusion_policy" target="_blank" rel="noopener noreferrer">代码 ↗</a><span class="">官方来源补充</span></div>
+    <details><summary>任务、接口与收录依据</summary><p><b>环境与任务：</b>模拟与真实机器人操作任务</p><p><b>观察与动作：</b>视觉观察 → 连续动作序列</p><p><b>结论边界：</b>去噪步数、控制频率与训练示范分布影响表现；动作生成与环境画面生成是不同问题。</p><p><b>收录理由：</b>近五年正式会议或期刊论文；优先核对官方论文集与作者来源。</p><p><b>证据状态：</b>官方书目信息核对；未独立复现实验</p><p class="checked-date">核对日期 2026-09-14</p></details>
+  </article>
+<article class="resource-card" id="resource-kb-f02">
+    <div class="card-top"><span class="domain-tag game">GAME AGENT</span><span class="resource-type">ICLR 2023</span></div>
+    <h3>Diffusion for Human Behaviour</h3><p class="full-title">Imitating Human Behaviour with Diffusion Models</p>
+    <p class="summary">用条件扩散模型联合预测鼠标与开火动作，学习人类行为中的多种合理选择。</p>
+    <div class="tags"><span>模仿学习</span><span>扩散模型</span></div>
+    <div class="card-footer"><a href="https://arxiv.org/abs/2301.10677" target="_blank" rel="noopener noreferrer">论文 ↗</a><a href="https://github.com/microsoft/Imitating-Human-Behaviour-w-Diffusion" target="_blank" rel="noopener noreferrer">代码 ↗</a><span class="">知识库精选</span></div>
+    <details><summary>任务、接口与收录依据</summary><p><b>环境与任务：</b>CS:GO Aim Train；另含机器人Kitchen及教学玩具环境</p><p><b>观察与动作：</b>CS:GO 瞄准训练画面 → 联合鼠标水平/垂直位移与开火；半速环境。</p><p><b>结论边界：</b>半速、固定位置任务；分布距离与击杀表现不是同一指标，额外去噪也增加时延。 依据原有逐篇笔记整理，未独立复现；原笔记的核验声明保留为来源信息。</p><p><b>收录理由：</b>近五年正式发表；官方论文页面已核对</p><p><b>证据状态：</b>官方书目信息核对；未独立复现实验</p><p><b>知识库原始核验标记：</b>关键结论抽查</p><p class="checked-date">核对日期 2026-09-14 · 知识库编号 F02</p></details>
+  </article>
+<article class="resource-card" id="resource-sima2">
+    <div class="card-top"><span class="domain-tag game">GAME AGENT</span><span class="resource-type">arXiv · 2025.12</span></div>
+    <h3>SIMA 2</h3><p class="full-title">SIMA 2: A Generalist Embodied Agent for Virtual Worlds</p>
+    <p class="summary">将 Gemini 的推理与交互能力接入多个三维游戏环境，探索指令跟随、跨环境泛化与自我改进。</p>
+    <div class="tags"><span>语言与动作</span><span>探索与技能</span></div>
+    <div class="card-footer"><a href="https://arxiv.org/abs/2512.04797" target="_blank" rel="noopener noreferrer">论文 ↗</a><a href="https://deepmind.google/blog/sima-2-an-agent-that-plays-reasons-and-learns-with-you-in-virtual-3d-worlds/" target="_blank" rel="noopener noreferrer">项目 ↗</a><span class="">重要预印本 · 编辑精选</span></div>
+    <details><summary>任务、接口与收录依据</summary><p><b>环境与任务：</b>多个三维虚拟世界</p><p><b>观察与动作：</b>视觉与语言 → 键鼠交互</p><p><b>结论边界：</b>当前证据在虚拟环境；不能据此声称已经解决真实机器人控制或任意长程任务。</p><p><b>收录理由：</b>编辑判断：官方跨游戏评估、交互推理与自我改进结果，为通用游戏智能体提供重要系统级研究证据；非按机构名或热度自动录入。</p><p><b>证据状态：</b>官方书目信息核对；未独立复现实验</p><p><b>首次提交：</b>2025-12-04</p><p>重要性判断的证据：<a href="https://deepmind.google/blog/sima-2-an-agent-that-plays-reasons-and-learns-with-you-in-virtual-3d-worlds/" target="_blank" rel="noopener noreferrer">官方研究报告 ↗</a></p><p class="checked-date">核对日期 2026-09-14</p></details>
+  </article>
+<article class="resource-card" id="resource-kb-f07">
+    <div class="card-top"><span class="domain-tag game">GAME AGENT</span><span class="resource-type">AAAI 2026</span></div>
+    <h3>F.A.C.U.L.</h3><p class="full-title">F.A.C.U.L.: Language-Based Interaction with AI Companions in Gaming</p>
+    <p class="summary">将玩家的语言指令转成游戏队友的动作程序，结合空间指代、请求分流与行为树执行。</p>
+    <div class="tags"><span>语言与动作</span><span>多智能体</span></div>
+    <div class="card-footer"><a href="https://ojs.aaai.org/index.php/AAAI/article/view/38842" target="_blank" rel="noopener noreferrer">论文 ↗</a><a href="https://github.com/tencent-facul/code" target="_blank" rel="noopener noreferrer">代码 ↗</a><span class="">知识库精选</span></div>
+    <details><summary>任务、接口与收录依据</summary><p><b>环境与任务：</b>Arena Breakout: Infinite（暗区突围：无限）</p><p><b>观察与动作：</b>玩家语言 + 游戏资产/位置朝向 → 意图路由与对象定位 → 原子动作程序/行为树。</p><p><b>结论边界：</b>高层队友交互而非逐帧瞄准；吞吐提升不等于单请求同比变快，项目旧指标与正式论文指标不得混用。 依据原有逐篇笔记整理，未独立复现；原笔记的核验声明保留为来源信息。</p><p><b>收录理由：</b>近五年正式发表；官方论文页面已核对</p><p><b>证据状态：</b>官方书目信息核对；未独立复现实验</p><p><b>知识库原始核验标记：</b>关键结论抽查</p><p class="checked-date">核对日期 2026-09-14 · 知识库编号 F07</p></details>
+  </article>
+<article class="resource-card" id="resource-hirobot">
+    <div class="card-top"><span class="domain-tag embodied">EMBODIED AI</span><span class="resource-type">ICML 2025</span></div>
+    <h3>Hi Robot</h3><p class="full-title">Hi Robot: Open-Ended Instruction Following with Hierarchical Vision-Language-Action Models</p>
+    <p class="summary">由高层视觉语言模型理解复杂指令与用户反馈，低层视觉语言动作模型执行具体子任务。</p>
+    <div class="tags"><span>视觉语言动作</span><span>规划与记忆</span></div>
+    <div class="card-footer"><a href="https://proceedings.mlr.press/v267/shi25d.html" target="_blank" rel="noopener noreferrer">论文 ↗</a><span class="">官方来源补充</span></div>
+    <details><summary>任务、接口与收录依据</summary><p><b>环境与任务：</b>单臂、双臂与移动机器人</p><p><b>观察与动作：</b>高层语言子目标 → 低层动作</p><p><b>结论边界：</b>任务拆解、子目标切换与低层技能覆盖共同影响长程成功率。</p><p><b>收录理由：</b>近五年正式会议或期刊论文；优先核对官方论文集与作者来源。</p><p><b>证据状态：</b>官方书目信息核对；未独立复现实验</p><p class="checked-date">核对日期 2026-09-14</p></details>
+  </article>
+<article class="resource-card" id="resource-kb-w01">
+    <div class="card-top"><span class="domain-tag game">GAME AGENT</span><span class="resource-type">ICLR 2025</span></div>
+    <h3>GameNGen</h3><p class="full-title">Diffusion Models Are Real-Time Game Engines</p>
+    <p class="summary">基于历史画面与动作生成可交互的 DOOM 后续画面，探索神经网络作为游戏模拟器的可能性。</p>
+    <div class="tags"><span>世界模型</span><span>环境生成</span></div>
+    <div class="card-footer"><a href="https://proceedings.iclr.cc/paper_files/paper/2025/hash/b71ecea210f7159f31e46631fe5c838f-Abstract-Conference.html" target="_blank" rel="noopener noreferrer">论文 ↗</a><a href="https://gamengen.github.io/" target="_blank" rel="noopener noreferrer">项目 ↗</a><span class="">知识库精选</span></div>
+    <details><summary>任务、接口与收录依据</summary><p><b>环境与任务：</b>DOOM / ViZDoom</p><p><b>观察与动作：</b>历史游戏帧 + 玩家动作 → 扩散下一帧；PPO 主要负责训练轨迹采集。</p><p><b>结论边界：</b>生成帧率、视觉相似性与控制成功率不同；teacher-forcing 单帧指标不能直接代表长时逻辑一致性。 依据原有逐篇笔记整理，未独立复现；原笔记的核验声明保留为来源信息。</p><p><b>收录理由：</b>近五年正式发表；官方论文页面已核对</p><p><b>证据状态：</b>官方书目信息核对；未独立复现实验</p><p><b>知识库原始核验标记：</b>关键结论抽查</p><p class="checked-date">核对日期 2026-09-14 · 知识库编号 W01</p></details>
+  </article>
+<article class="resource-card" id="resource-pi-star06">
+    <div class="card-top"><span class="domain-tag embodied">EMBODIED AI</span><span class="resource-type">arXiv · 2025.11</span></div>
+    <h3>π*0.6 / RECAP</h3><p class="full-title">π*0.6: a VLA That Learns From Experience</p>
+    <p class="summary">结合示范、自主执行和人类纠正，通过优势条件化的强化学习改进视觉语言动作模型。</p>
+    <div class="tags"><span>视觉语言动作</span><span>强化学习</span></div>
+    <div class="card-footer"><a href="https://arxiv.org/abs/2511.14759" target="_blank" rel="noopener noreferrer">论文 ↗</a><a href="https://www.pi.website/blog/pistar06" target="_blank" rel="noopener noreferrer">项目 ↗</a><span class="">重要预印本 · 编辑精选</span></div>
+    <details><summary>任务、接口与收录依据</summary><p><b>环境与任务：</b>真实机器人多任务操作</p><p><b>观察与动作：</b>VLA 动作执行、经验与纠正反馈</p><p><b>结论边界：</b>依赖真实数据收集和人工纠正；论文结果不代表完全无人干预的自我改进。</p><p><b>收录理由：</b>编辑判断：官方报告跨任务真实机器人经验学习结果，为 VLA 从示范走向执行反馈学习提供重要路线证据；不把宣传或 GitHub 星数等同论文质量。</p><p><b>证据状态：</b>官方书目信息核对；未独立复现实验</p><p><b>首次提交：</b>2025-11-18</p><p>重要性判断的证据：<a href="https://www.pi.website/blog/pistar06" target="_blank" rel="noopener noreferrer">官方研究报告 ↗</a></p><p class="checked-date">核对日期 2026-09-14</p></details>
+  </article>
+<article class="resource-card" id="resource-mp5">
+    <div class="card-top"><span class="domain-tag game">GAME AGENT</span><span class="resource-type">CVPR 2024</span></div>
+    <h3>MP5</h3><p class="full-title">MP5: A Multi-modal Open-ended Embodied System in Minecraft via Active Perception</p>
+    <p class="summary">通过主动感知与规划模块的协作，拆解并执行 Minecraft 中依赖上下文和过程的复杂任务。</p>
+    <div class="tags"><span>规划与记忆</span><span>语言与动作</span></div>
+    <div class="card-footer"><a href="https://openaccess.thecvf.com/content/CVPR2024/html/Qin_MP5_A_Multi-modal_Open-ended_Embodied_System_in_Minecraft_via_Active_CVPR_2024_paper.html" target="_blank" rel="noopener noreferrer">论文 ↗</a><a href="https://iranqin.github.io/MP5.github.io/" target="_blank" rel="noopener noreferrer">项目 ↗</a><span class="">知识库精选</span></div>
+    <details><summary>任务、接口与收录依据</summary><p><b>环境与任务：</b>Minecraft</p><p><b>观察与动作：</b>多模态观察、主动感知、模块化动作执行</p><p><b>结论边界：</b>在 Minecraft 的预设接口与任务集合中评估，不直接证明真实机器人迁移。</p><p><b>收录理由：</b>近五年正式会议或期刊论文；优先核对官方论文集与作者来源。</p><p><b>证据状态：</b>官方书目信息核对；未独立复现实验</p><p class="checked-date">核对日期 2026-09-14</p></details>
+  </article>
+<article class="resource-card" id="resource-act">
+    <div class="card-top"><span class="domain-tag embodied">EMBODIED AI</span><span class="resource-type">RSS 2023</span></div>
+    <h3>ACT / ALOHA</h3><p class="full-title">Learning Fine-Grained Bimanual Manipulation with Low-Cost Hardware</p>
+    <p class="summary">通过低成本双臂遥操作收集示范，利用 Transformer 预测动作块，学习精细双臂操作。</p>
+    <div class="tags"><span>模仿学习</span><span>机器人学习</span></div>
+    <div class="card-footer"><a href="https://roboticsproceedings.org/rss19/p016.html" target="_blank" rel="noopener noreferrer">论文 ↗</a><a href="https://tonyzhaozh.github.io/aloha/" target="_blank" rel="noopener noreferrer">项目 ↗</a><span class="">官方来源补充</span></div>
+    <details><summary>任务、接口与收录依据</summary><p><b>环境与任务：</b>ALOHA 双臂平台</p><p><b>观察与动作：</b>图像与关节信息 → 动作块</p><p><b>结论边界：</b>需要硬件、遥操作示范和任务适配；论文任务成功率不能外推到任意精细操作。</p><p><b>收录理由：</b>近五年正式会议或期刊论文；优先核对官方论文集与作者来源。</p><p><b>证据状态：</b>官方书目信息核对；未独立复现实验</p><p class="checked-date">核对日期 2026-09-14</p></details>
+  </article>
+<article class="resource-card" id="resource-kb-b01">
+    <div class="card-top"><span class="domain-tag game">GAME AGENT</span><span class="resource-type">NeurIPS 2023 Datasets and Benchmarks</span></div>
+    <h3>COOM</h3><p class="full-title">COOM: A Game Benchmark for Continual Reinforcement Learning</p>
+    <p class="summary">用顺序到来的视觉域与任务变化评测持续强化学习，同时观察遗忘、前向迁移与新任务学习。</p>
+    <div class="tags"><span>持续学习</span><span>评测基准</span></div>
+    <div class="card-footer"><a href="https://proceedings.neurips.cc/paper_files/paper/2023/hash/d61d9f4fe4357296cb658795fd7999f0-Abstract-Datasets_and_Benchmarks.html" target="_blank" rel="noopener noreferrer">论文 ↗</a><a href="https://github.com/TTomilin/COOM" target="_blank" rel="noopener noreferrer">代码 ↗</a><span class="">知识库精选</span></div>
+    <details><summary>任务、接口与收录依据</summary><p><b>环境与任务：</b>Doom / ViZDoom</p><p><b>观察与动作：</b>ViZDoom 视觉任务序列 → SAC 与持续学习方法；已知任务边界，部分方法使用任务身份。</p><p><b>结论边界：</b>同时看性能、遗忘与前向迁移；已知任务边界/身份不能等同开放任务流，归一化 AP 不是胜率。 依据原有逐篇笔记整理，未独立复现；原笔记的核验声明保留为来源信息。</p><p><b>收录理由：</b>近五年正式发表；官方论文页面已核对</p><p><b>证据状态：</b>官方书目信息核对；未独立复现实验</p><p><b>知识库原始核验标记：</b>原笔记整理</p><p class="checked-date">核对日期 2026-09-14 · 知识库编号 B01</p></details>
+  </article>
+<article class="resource-card" id="resource-kb-b02">
+    <div class="card-top"><span class="domain-tag game">GAME AGENT</span><span class="resource-type">ICLR 2025</span></div>
+    <h3>HASARD</h3><p class="full-title">HASARD: A Benchmark for Vision-Based Safe Reinforcement Learning in Embodied Agents</p>
+    <p class="summary">将任务奖励与违规代价分开，评测视觉智能体在危险地形、友军伤害等约束下的决策。</p>
+    <div class="tags"><span>安全与验证</span><span>评测基准</span></div>
+    <div class="card-footer"><a href="https://proceedings.iclr.cc/paper_files/paper/2025/hash/5ab848771ff8c9c47aac4128e2ef9f4e-Abstract-Conference.html" target="_blank" rel="noopener noreferrer">论文 ↗</a><a href="https://sites.google.com/view/hasard-bench/" target="_blank" rel="noopener noreferrer">项目 ↗</a><span class="">知识库精选</span></div>
+    <details><summary>任务、接口与收录依据</summary><p><b>环境与任务：</b>Doom / ViZDoom</p><p><b>观察与动作：</b>局部视觉 → 带独立 reward/cost 的约束 PPO 系列；含完整及简化动作配置。</p><p><b>结论边界：</b>期望成本预算不等于逐次零违规；固定惩罚与约束优化不同，比较需固定动作空间、预算和课程资源。 依据原有逐篇笔记整理，未独立复现；原笔记的核验声明保留为来源信息。</p><p><b>收录理由：</b>近五年正式发表；官方论文页面已核对</p><p><b>证据状态：</b>官方书目信息核对；未独立复现实验</p><p><b>知识库原始核验标记：</b>原笔记整理</p><p class="checked-date">核对日期 2026-09-14 · 知识库编号 B02</p></details>
+  </article>
+<article class="resource-card" id="resource-vpt">
+    <div class="card-top"><span class="domain-tag game">GAME AGENT</span><span class="resource-type">NeurIPS 2022</span></div>
+    <h3>Video PreTraining</h3><p class="full-title">Video PreTraining (VPT): Learning to Act by Watching Unlabeled Online Videos</p>
+    <p class="summary">用少量带动作标签的数据学习逆动力学，再为网络视频补充动作标签，扩展 Minecraft 行为预训练。</p>
+    <div class="tags"><span>模仿学习</span><span>表征学习</span></div>
+    <div class="card-footer"><a href="https://proceedings.neurips.cc/paper_files/paper/2022/hash/9c7008aff45b5d8f0973b23e1a22ada0-Abstract-Conference.html" target="_blank" rel="noopener noreferrer">论文 ↗</a><span class="">官方来源补充</span></div>
+    <details><summary>任务、接口与收录依据</summary><p><b>环境与任务：</b>Minecraft</p><p><b>观察与动作：</b>游戏画面 → 键鼠动作</p><p><b>结论边界：</b>互联网视频预训练与后续任务微调需分开记录；不能当作无需环境适配的通用策略。</p><p><b>收录理由：</b>近五年正式会议或期刊论文；优先核对官方论文集与作者来源。</p><p><b>证据状态：</b>官方书目信息核对；未独立复现实验</p><p class="checked-date">核对日期 2026-09-14</p></details>
+  </article>
+<article class="resource-card" id="resource-libero">
+    <div class="card-top"><span class="domain-tag embodied">EMBODIED AI</span><span class="resource-type">NeurIPS 2023 D&amp;B</span></div>
+    <h3>LIBERO</h3><p class="full-title">LIBERO: Benchmarking Knowledge Transfer for Lifelong Robot Learning</p>
+    <p class="summary">通过空间、对象、目标和任务组合的变化评测机器人终身学习与知识迁移。</p>
+    <div class="tags"><span>评测基准</span><span>持续学习</span></div>
+    <div class="card-footer"><a href="https://proceedings.neurips.cc/paper_files/paper/2023/hash/8c3c666820ea055a77726d66fc7d447f-Abstract-Datasets_and_Benchmarks.html" target="_blank" rel="noopener noreferrer">论文 ↗</a><a href="https://github.com/Lifelong-Robot-Learning/LIBERO" target="_blank" rel="noopener noreferrer">代码 ↗</a><span class="">官方来源补充</span></div>
+    <details><summary>任务、接口与收录依据</summary><p><b>环境与任务：</b>机器人操作仿真</p><p><b>观察与动作：</b>语言目标、模拟观测与动作</p><p><b>结论边界：</b>报告时需注明任务套件、示范、任务顺序与评测协议；仿真结果不等于真实部署。</p><p><b>收录理由：</b>近五年正式会议或期刊论文；优先核对官方论文集与作者来源。</p><p><b>证据状态：</b>官方书目信息核对；未独立复现实验</p><p class="checked-date">核对日期 2026-09-14</p></details>
+  </article>
+<article class="resource-card" id="resource-lerobot">
+    <div class="card-top"><span class="domain-tag embodied">EMBODIED AI</span><span class="resource-type">机器人学习工具</span></div>
+    <h3>LeRobot</h3><p class="full-title">Robot learning: datasets, policies and hardware</p>
+    <p class="summary">整合机器人数据采集、数据集格式、策略训练和硬件接口，支持从示范到部署的实验流程。</p>
+    <div class="tags"><span>机器人学习</span><span>模仿学习</span></div>
+    <div class="card-footer"><a href="https://github.com/huggingface/lerobot" target="_blank" rel="noopener noreferrer">代码 ↗</a><span class="">官方来源补充</span></div>
+    <details><summary>任务、接口与收录依据</summary><p><b>环境与任务：</b>真实机器人与数据集</p><p><b>观察与动作：</b>Python Robot 接口、训练与数据工具</p><p><b>结论边界：</b>需按机器人型号安装驱动并完成标定；数据集、模型与代码的许可分别核对。</p><p><b>收录理由：</b>独立开源工具或环境，服务论文研究与复现；不纳入论文时间窗口统计。</p><p><b>证据状态：</b>官方仓库用途与接口核对；未本地安装验证</p><p class="checked-date">核对日期 2026-09-14</p></details>
+  </article>
+<article class="resource-card" id="resource-kb-r01">
+    <div class="card-top"><span class="domain-tag game">GAME AGENT</span><span class="resource-type">ICLR 2024</span></div>
+    <h3>Principled Video Representations</h3><p class="full-title">Towards Principled Representation Learning from Videos for Reinforcement Learning</p>
+    <p class="summary">研究无动作标签的视频预训练如何影响控制能力，分析表征对动态背景干扰的敏感性。</p>
+    <div class="tags"><span>表征学习</span><span>强化学习</span></div>
+    <div class="card-footer"><a href="https://proceedings.iclr.cc/paper_files/paper/2024/hash/eb60f103645fd14c94826665f8505a6d-Abstract-Conference.html" target="_blank" rel="noopener noreferrer">论文 ↗</a><a href="https://github.com/microsoft/Intrepid" target="_blank" rel="noopener noreferrer">代码 ↗</a><span class="">知识库精选</span></div>
+    <details><summary>任务、接口与收录依据</summary><p><b>环境与任务：</b>ViZDoom Basic、Defend the Center；另有GridWorld</p><p><b>观察与动作：</b>无标签视频预训练 → 冻结编码器 → PPO 控制；动作标注逆模型用于对照。</p><p><b>结论边界：</b>人工外生干扰、冻结编码器和理论假设须保留；不要把特定视频目标的失败解释成所有视频基础模型无效。 依据原有逐篇笔记整理，未独立复现；原笔记的核验声明保留为来源信息。</p><p><b>收录理由：</b>近五年正式发表；官方论文页面已核对</p><p><b>证据状态：</b>官方书目信息核对；未独立复现实验</p><p><b>知识库原始核验标记：</b>原笔记整理</p><p class="checked-date">核对日期 2026-09-14 · 知识库编号 R01</p></details>
+  </article>
+<article class="resource-card" id="resource-kb-r02">
+    <div class="card-top"><span class="domain-tag game">GAME AGENT</span><span class="resource-type">ICML 2025</span></div>
+    <h3>DuRND</h3><p class="full-title">Catching Two Birds with One Stone: Reward Shaping with Dual Random Networks for Balancing Exploration and Exploitation</p>
+    <p class="summary">结合新颖性与奖励相关度设计探索奖励，平衡稀疏奖励任务中的探索和利用。</p>
+    <div class="tags"><span>强化学习</span><span>探索与技能</span></div>
+    <div class="card-footer"><a href="https://proceedings.mlr.press/v267/ma25j.html" target="_blank" rel="noopener noreferrer">论文 ↗</a><a href="https://github.com/mahaozhe/DuRND" target="_blank" rel="noopener noreferrer">代码 ↗</a><span class="">知识库精选</span></div>
+    <details><summary>任务、接口与收录依据</summary><p><b>环境与任务：</b>ViZDoom DefendLine、SaveCenter、SlayGhosts、CollectKit；另有Atari/MiniWorld</p><p><b>观察与动作：</b>ViZDoom 观测 → 双随机网络辅助奖励 + PPO；具体预处理与完整动作配置待核。</p><p><b>结论边界：</b>两个网络不是多智能体；奖励相关性不是因果贡献，收集医疗包任务无开火，定制回报不可跨场景直接混排。 依据原有逐篇笔记整理，未独立复现；原笔记的核验声明保留为来源信息。</p><p><b>收录理由：</b>近五年正式发表；官方论文页面已核对</p><p><b>证据状态：</b>官方书目信息核对；未独立复现实验</p><p><b>知识库原始核验标记：</b>原笔记整理</p><p class="checked-date">核对日期 2026-09-14 · 知识库编号 R02</p></details>
+  </article>
+<article class="resource-card" id="resource-kb-r03">
+    <div class="card-top"><span class="domain-tag game">GAME AGENT</span><span class="resource-type">ICML 2022</span></div>
+    <h3>Action-Sufficient Representations</h3><p class="full-title">Action-Sufficient State Representation Learning for Control with Structural Constraints</p>
+    <p class="summary">学习保留控制相关因素的紧凑状态表示，并用想象转移辅助策略学习。</p>
+    <div class="tags"><span>表征学习</span><span>世界模型</span></div>
+    <div class="card-footer"><a href="https://proceedings.mlr.press/v162/huang22f.html" target="_blank" rel="noopener noreferrer">论文 ↗</a><span class="">知识库精选</span></div>
+    <details><summary>任务、接口与收录依据</summary><p><b>环境与任务：</b>ViZDoom Take Cover；另有CarRacing</p><p><b>观察与动作：</b>画面/动作/奖励序列 → 结构化潜在状态 → DQN；Take Cover 仅左右移动。</p><p><b>结论边界：</b>Doom 指标为生存时间而非击杀；CarRacing 结果不能移作 FPS 成绩，充分性依赖结构模型假设。 依据原有逐篇笔记整理，未独立复现；原笔记的核验声明保留为来源信息。</p><p><b>收录理由：</b>近五年正式发表；官方论文页面已核对</p><p><b>证据状态：</b>官方书目信息核对；未独立复现实验</p><p><b>知识库原始核验标记：</b>原笔记整理</p><p class="checked-date">核对日期 2026-09-14 · 知识库编号 R03</p></details>
+  </article>
+<article class="resource-card" id="resource-kb-w02">
+    <div class="card-top"><span class="domain-tag game">GAME AGENT</span><span class="resource-type">NeurIPS 2024</span></div>
+    <h3>DIAMOND</h3><p class="full-title">Diffusion for World Modeling: Visual Details Matter in Atari</p>
+    <p class="summary">在扩散世界模型中保留视觉细节并训练控制策略；另提供 CS:GO 交互画面生成扩展。</p>
+    <div class="tags"><span>世界模型</span><span>扩散模型</span></div>
+    <div class="card-footer"><a href="https://proceedings.neurips.cc/paper_files/paper/2024/hash/6bdde0373d53d4a501249547084bed43-Abstract-Conference.html" target="_blank" rel="noopener noreferrer">论文 ↗</a><a href="https://github.com/eloialonso/diamond" target="_blank" rel="noopener noreferrer">代码 ↗</a><span class="">知识库精选</span></div>
+    <details><summary>任务、接口与收录依据</summary><p><b>环境与任务：</b>Atari；Counter-Strike: Global Offensive（Dust II）</p><p><b>观察与动作：</b>CS:GO 人类画面/动作 → 低分辨率动力学 + 超分辨率生成；射击部分无 RL 策略训练。</p><p><b>结论边界：</b>Atari 模型内 RL 与 CS:GO 生成演示分开；接受后新增射击章节，主基准得分不能移作射击成绩。 依据原有逐篇笔记整理，未独立复现；原笔记的核验声明保留为来源信息。</p><p><b>收录理由：</b>近五年正式发表；官方论文页面已核对</p><p><b>证据状态：</b>官方书目信息核对；未独立复现实验</p><p><b>知识库原始核验标记：</b>原笔记整理</p><p class="checked-date">核对日期 2026-09-14 · 知识库编号 W02</p></details>
+  </article>
+<article class="resource-card" id="resource-kb-w03">
+    <div class="card-top"><span class="domain-tag game">GAME AGENT</span><span class="resource-type">NeurIPS 2025</span></div>
+    <h3>StateSpaceDiffuser</h3><p class="full-title">StateSpaceDiffuser: Bringing Long Context to Diffusion World Models</p>
+    <p class="summary">以状态空间序列模型压缩长历史，为扩散世界模型提供记忆，关注回访场景的一致性。</p>
+    <div class="tags"><span>世界模型</span><span>规划与记忆</span></div>
+    <div class="card-footer"><a href="https://proceedings.nips.cc/paper_files/paper/2025/hash/63943ee9fe347f3d95892cf87d9a42e6-Abstract-Conference.html" target="_blank" rel="noopener noreferrer">论文 ↗</a><a href="https://github.com/insait-institute/StateSpaceDiffuser" target="_blank" rel="noopener noreferrer">代码 ↗</a><span class="">知识库精选</span></div>
+    <details><summary>任务、接口与收录依据</summary><p><b>环境与任务：</b>MiniGrid；Counter-Strike: Global Offensive</p><p><b>观察与动作：</b>历史图像/动作 → Cosmos 编码 + Mamba 长时状态 → DIAMOND 条件生成；含构造逆向轨迹。</p><p><b>结论边界：</b>正反轨迹是记忆诊断而非真实可逆物理；MiniGrid 数值与 CS:GO 用户偏好不同，均不是实战胜率。 依据原有逐篇笔记整理，未独立复现；原笔记的核验声明保留为来源信息。</p><p><b>收录理由：</b>近五年正式发表；官方论文页面已核对</p><p><b>证据状态：</b>官方书目信息核对；未独立复现实验</p><p><b>知识库原始核验标记：</b>原笔记整理</p><p class="checked-date">核对日期 2026-09-14 · 知识库编号 W03</p></details>
+  </article>
+<article class="resource-card" id="resource-kb-s01">
+    <div class="card-top"><span class="domain-tag game">GAME AGENT</span><span class="resource-type">NeurIPS 2025</span></div>
+    <h3>EDELINE</h3><p class="full-title">EDELINE: Enhancing Memory in Diffusion-based World Models via Linear-Time Sequence Modeling</p>
+    <p class="summary">将线性时间序列记忆加入扩散世界模型，统一预测画面、奖励和终止，并在想象轨迹中训练策略。</p>
+    <div class="tags"><span>世界模型</span><span>规划与记忆</span></div>
+    <div class="card-footer"><a href="https://proceedings.neurips.cc/paper_files/paper/2025/hash/97c903fbf21a7d863af2015d8803ca8f-Abstract-Conference.html" target="_blank" rel="noopener noreferrer">论文 ↗</a><a href="https://github.com/LJH-coding/EDELINE" target="_blank" rel="noopener noreferrer">代码 ↗</a><span class="">知识库精选</span></div>
+    <details><summary>任务、接口与收录依据</summary><p><b>环境与任务：</b>ViZDoom（Basic、DeadlyCorridor、DefendCenter、HealthGathering、PredictPosition）；另含 Atari、Crafter、MiniGrid</p><p><b>观察与动作：</b>近期图像/动作 + Mamba 循环记忆 → 扩散画面及共享奖励/终止 → 想象轨迹策略。</p><p><b>结论边界：</b>同时区分画面 MSE 与真实策略回报；五个 Doom 子任务指标不同，线性序列成本不等于整体实时生成。 依据原有逐篇笔记整理，未独立复现；原笔记的核验声明保留为来源信息。</p><p><b>收录理由：</b>近五年正式发表；官方论文页面已核对</p><p><b>证据状态：</b>官方书目信息核对；未独立复现实验</p><p><b>知识库原始核验标记：</b>原笔记整理</p><p class="checked-date">核对日期 2026-09-14 · 知识库编号 S01</p></details>
+  </article>
+<article class="resource-card" id="resource-kb-t01">
+    <div class="card-top"><span class="domain-tag game">GAME AGENT</span><span class="resource-type">ICLR 2026 Main Conference</span></div>
+    <h3>Contextual Similarity Distillation</h3><p class="full-title">Contextual Similarity Distillation: Ensemble Uncertainties with a Single Model</p>
+    <p class="summary">用单个模型近似集成的不确定性，将其作为稀疏视觉导航的探索信号。</p>
+    <div class="tags"><span>探索与技能</span><span>表征学习</span></div>
+    <div class="card-footer"><a href="https://iclr.cc/virtual/2026/poster/10008663" target="_blank" rel="noopener noreferrer">论文 ↗</a><a href="https://github.com/anyboby/contextual-similarity-distillation" target="_blank" rel="noopener noreferrer">代码 ↗</a><span class="">知识库精选</span></div>
+    <details><summary>任务、接口与收录依据</summary><p><b>环境与任务：</b>ViZDoom：MyWayHome 迷宫导航的三种起点/稀疏奖励变体</p><p><b>观察与动作：</b>第一人称视觉迷宫输入；策略执行到达目标的导航动作，具体动作集合待核；无射击或敌人对抗。</p><p><b>结论边界：</b>找到目标的探索稳定性不是每局必胜；区分作者稿与正式版本；导航任务结果不能解释为完整 FPS 控制提升。</p><p><b>收录理由：</b>近五年正式发表；官方论文页面已核对</p><p><b>证据状态：</b>官方书目信息核对；未独立复现实验</p><p><b>知识库原始核验标记：</b>原笔记整理</p><p class="checked-date">核对日期 2026-09-14 · 知识库编号 T01</p></details>
+  </article>
+<article class="resource-card" id="resource-kb-t02">
+    <div class="card-top"><span class="domain-tag game">GAME AGENT</span><span class="resource-type">ICLR 2026 Main Conference</span></div>
+    <h3>RATE</h3><p class="full-title">Recurrent Action Transformer with Memory</p>
+    <p class="summary">为决策 Transformer 加入跨片段记忆，研究长程任务中线索保留和回报条件动作预测。</p>
+    <div class="tags"><span>规划与记忆</span><span>模仿学习</span></div>
+    <div class="card-footer"><a href="https://iclr.cc/virtual/2026/poster/10007816" target="_blank" rel="noopener noreferrer">论文 ↗</a><a href="https://sites.google.com/view/rate-model/" target="_blank" rel="noopener noreferrer">项目 ↗</a><span class="">知识库精选</span></div>
+    <details><summary>任务、接口与收录依据</summary><p><b>环境与任务：</b>ViZDoom-Two-Colors；另含 T-Maze、Memory Maze、MiniGrid、POPGym、Atari、MuJoCo</p><p><b>观察与动作：</b>第一人称图像与历史/回报条件输入，记住颜色后导航拾取；具体动作集合待核，无敌人、瞄准或射击。</p><p><b>结论边界：</b>不同基准与不同提示消失时刻分开；其他环境的最长记忆跨度不是 Doom 成绩；离线数据条件和训练/测试长度必须一起记录。</p><p><b>收录理由：</b>近五年正式发表；官方论文页面已核对</p><p><b>证据状态：</b>官方书目信息核对；未独立复现实验</p><p><b>知识库原始核验标记：</b>原笔记整理</p><p class="checked-date">核对日期 2026-09-14 · 知识库编号 T02</p></details>
+  </article>
+<article class="resource-card" id="resource-kb-c01">
+    <div class="card-top"><span class="domain-tag game">GAME AGENT</span><span class="resource-type">IJCAI 2025</span></div>
+    <h3>VisionMask</h3><p class="full-title">Why the Agent Made that Decision: Contrastive Explanation Learning for Reinforcement Learning</p>
+    <p class="summary">学习动作之间的对比视觉解释，分析强化学习策略作出某个决策的依据。</p>
+    <div class="tags"><span>安全与验证</span><span>表征学习</span></div>
+    <div class="card-footer"><a href="https://www.ijcai.org/proceedings/2025/74" target="_blank" rel="noopener noreferrer">论文 ↗</a><span class="">知识库精选</span></div>
+    <details><summary>任务、接口与收录依据</summary><p><b>环境与任务：</b>ViZDoom；第一人称视觉 DQN 决策解释</p><p><b>观察与动作：</b>输入 ViZDoom 图像及冻结 DQN 策略；输出候选动作的视觉掩码，不更新控制策略。</p><p><b>结论边界：</b>Accuracy 是掩码后动作一致性而非胜率；解释指标互有取舍；需要策略梯度访问，不能视为纯黑箱解释。</p><p><b>收录理由：</b>近五年正式发表；官方论文页面已核对</p><p><b>证据状态：</b>官方书目信息核对；未独立复现实验</p><p><b>知识库原始核验标记：</b>原笔记整理</p><p class="checked-date">核对日期 2026-09-14 · 知识库编号 C01</p></details>
+  </article>
+<article class="resource-card" id="resource-kb-c02">
+    <div class="card-top"><span class="domain-tag cross-domain">GAME × EMBODIED</span><span class="resource-type">NeurIPS 2023</span></div>
+    <h3>EVAPS</h3><p class="full-title">Enhancing Robot Program Synthesis Through Environmental Context</p>
+    <p class="summary">将程序结构与执行前后的视觉上下文对齐，修复机器人领域语言中的候选程序。</p>
+    <div class="tags"><span>程序与工具</span><span>规划与记忆</span></div>
+    <div class="card-footer"><a href="https://proceedings.neurips.cc/paper_files/paper/2023/hash/0c1e94af650f5c74b1f3da467c2308c2-Abstract-Conference.html" target="_blank" rel="noopener noreferrer">论文 ↗</a><span class="">知识库精选</span></div>
+    <details><summary>任务、接口与收录依据</summary><p><b>环境与任务：</b>ViZDoom；包含移动、转向和 attack 的短程序合成</p><p><b>观察与动作：</b>输入输出示例、候选程序图与执行前后图像；输出限定 DSL 短程序，含移动、转向、attack 和敌人感知条件。</p><p><b>结论边界：</b>程序泛化正确率不是对战胜率；区分 Top-1 与多候选预算；限定 DSL、感知谓词、短执行长度不等于完整自主 FPS。</p><p><b>收录理由：</b>近五年正式发表；官方论文页面已核对</p><p><b>证据状态：</b>官方书目信息核对；未独立复现实验</p><p><b>知识库原始核验标记：</b>原笔记整理</p><p class="checked-date">核对日期 2026-09-14 · 知识库编号 C02</p></details>
+  </article>
+<article class="resource-card" id="resource-kb-c03">
+    <div class="card-top"><span class="domain-tag game">GAME AGENT</span><span class="resource-type">ICML 2024</span></div>
+    <h3>Just Cluster It</h3><p class="full-title">Just Cluster It: An Approach for Exploration in High-Dimensions using Clustering and Pre-Trained Representations</p>
+    <p class="summary">通过视觉特征聚类近似状态访问计数，构造回合内与跨回合探索奖励。</p>
+    <div class="tags"><span>探索与技能</span><span>表征学习</span></div>
+    <div class="card-footer"><a href="https://proceedings.mlr.press/v235/wagner24a.html" target="_blank" rel="noopener noreferrer">论文 ↗</a><a href="https://github.com/stefanwm13/just-cluster-it-public" target="_blank" rel="noopener noreferrer">代码 ↗</a><span class="">知识库精选</span></div>
+    <details><summary>任务、接口与收录依据</summary><p><b>环境与任务：</b>ViZDoom MyWayHome Sparse / Very Sparse；非战斗导航</p><p><b>观察与动作：</b>第一人称图像经固定随机或预训练编码器；PPO 执行寻物导航，具体动作集合待核；无战斗。</p><p><b>结论边界：</b>随机/预训练表示分开，DINO 非 Doom 全面最优；基线底层算法不同且种子较少；导航收敛不是射击能力。</p><p><b>收录理由：</b>近五年正式发表；官方论文页面已核对</p><p><b>证据状态：</b>官方书目信息核对；未独立复现实验</p><p><b>知识库原始核验标记：</b>原笔记整理</p><p class="checked-date">核对日期 2026-09-14 · 知识库编号 C03</p></details>
+  </article>
+<article class="resource-card" id="resource-kb-c04">
+    <div class="card-top"><span class="domain-tag game">GAME AGENT</span><span class="resource-type">NeurIPS 2022</span></div>
+    <h3>E3B</h3><p class="full-title">Exploration via Elliptical Episodic Bonuses</p>
+    <p class="summary">用回合内特征覆盖程度构造椭圆探索奖励，并以逆动力学学习可控状态表示。</p>
+    <div class="tags"><span>探索与技能</span><span>强化学习</span></div>
+    <div class="card-footer"><a href="https://proceedings.neurips.cc/paper_files/paper/2022/hash/f4f79698d48bdc1a6dec20583724182b-Abstract-Conference.html" target="_blank" rel="noopener noreferrer">论文 ↗</a><a href="https://e3bagent.github.io/" target="_blank" rel="noopener noreferrer">项目 ↗</a><span class="">知识库精选</span></div>
+    <details><summary>任务、接口与收录依据</summary><p><b>环境与任务：</b>ViZDoom MyWayHome Dense / Sparse / Very Sparse；非战斗导航</p><p><b>观察与动作：</b>视觉状态经逆动力学表示产生内在奖励；策略执行 MyWayHome 导航动作，具体集合待核；无射击。</p><p><b>结论边界：</b>MiniHack 广泛优势不能转成 Doom 全面领先；固定地图与变化环境不同；回合奖励、表示和计算开销应同时比较。</p><p><b>收录理由：</b>近五年正式发表；官方论文页面已核对</p><p><b>证据状态：</b>官方书目信息核对；未独立复现实验</p><p><b>知识库原始核验标记：</b>原笔记整理</p><p class="checked-date">核对日期 2026-09-14 · 知识库编号 C04</p></details>
+  </article>
+<article class="resource-card" id="resource-kb-c05">
+    <div class="card-top"><span class="domain-tag game">GAME AGENT</span><span class="resource-type">NeurIPS 2021</span></div>
+    <h3>Successor Feature Landmarks</h3><p class="full-title">Successor Feature Landmarks for Long-Horizon Goal-Conditioned Reinforcement Learning</p>
+    <p class="summary">通过后继特征组织可达地标，由高层图规划与低层目标策略配合处理长程导航。</p>
+    <div class="tags"><span>规划与记忆</span><span>探索与技能</span></div>
+    <div class="card-footer"><a href="https://proceedings.neurips.cc/paper_files/paper/2021/hash/e27c71957d1e6c223e0d48a165da2ee1-Abstract.html" target="_blank" rel="noopener noreferrer">论文 ↗</a><a href="https://github.com/2016choang/sfl" target="_blank" rel="noopener noreferrer">代码 ↗</a><span class="">知识库精选</span></div>
+    <details><summary>任务、接口与收录依据</summary><p><b>环境与任务：</b>ViZDoom 大型视觉迷宫 SGM Map、Test 1/2/4/6；非战斗导航</p><p><b>观察与动作：</b>第一人称视觉输入，使用预训练 SPTM 表示；高层选择地标，低层执行离散导航动作；无战斗。</p><p><b>结论边界：</b>固定/随机出生点、难度与地图须分开；训练步数不含全部预训练成本；困难任务优势不能概括为所有任务最优。</p><p><b>收录理由：</b>近五年正式发表；官方论文页面已核对</p><p><b>证据状态：</b>官方书目信息核对；未独立复现实验</p><p><b>知识库原始核验标记：</b>原笔记整理</p><p><b>首次提交：</b>2021-12</p><p class="checked-date">核对日期 2026-09-14 · 知识库编号 C05</p></details>
+  </article>
+<article class="resource-card" id="resource-kb-c06">
+    <div class="card-top"><span class="domain-tag game">GAME AGENT</span><span class="resource-type">AAAI 2024 — Safe, Robust and Responsible AI Track</span></div>
+    <h3>CoSHRL</h3><p class="full-title">Handling Long and Richly Constrained Tasks through Constrained Hierarchical Reinforcement Learning</p>
+    <p class="summary">组合目标条件技能与受约束路径搜索，在长期任务中权衡到达目标与累计危险成本。</p>
+    <div class="tags"><span>规划与记忆</span><span>安全与验证</span></div>
+    <div class="card-footer"><a href="https://ojs.aaai.org/index.php/AAAI/article/view/30132" target="_blank" rel="noopener noreferrer">论文 ↗</a><span class="">知识库精选</span></div>
+    <details><summary>任务、接口与收录依据</summary><p><b>环境与任务：</b>Safe ViZDoom 四叶草迷宫；具有危险地面的非战斗导航</p><p><b>观察与动作：</b>Safe ViZDoom 迷宫环境状态/具体视觉处理待核；低层使用四个绝对方向移动，高层选择受约束子目标；无战斗。</p><p><b>结论边界：</b>到达率与约束满足率分开；CVaR 随机环境证据不来自 Doom；非零违反率意味着不能宣称绝对安全，动作接口已简化。</p><p><b>收录理由：</b>近五年正式发表；官方论文页面已核对</p><p><b>证据状态：</b>官方书目信息核对；未独立复现实验</p><p><b>知识库原始核验标记：</b>原笔记整理</p><p class="checked-date">核对日期 2026-09-14 · 知识库编号 C06</p></details>
+  </article>
+<article class="resource-card" id="resource-kb-c08">
+    <div class="card-top"><span class="domain-tag game">GAME AGENT</span><span class="resource-type">ICLR 2024</span></div>
+    <h3>PE-DQN</h3><p class="full-title">Diverse Projection Ensembles for Distributional Reinforcement Learning</p>
+    <p class="summary">集成不同回报分布表示，用模型间分歧估计认知不确定性并驱动探索。</p>
+    <div class="tags"><span>探索与技能</span><span>强化学习</span></div>
+    <div class="card-footer"><a href="https://proceedings.iclr.cc/paper_files/paper/2024/hash/cfea00ddf5a5f514bd3368d639d1933d-Abstract-Conference.html" target="_blank" rel="noopener noreferrer">论文 ↗</a><span class="">知识库精选</span></div>
+    <details><summary>任务、接口与收录依据</summary><p><b>环境与任务：</b>ViZDoom MyWayHome Dense / Sparse / Very Sparse；非战斗导航</p><p><b>观察与动作：</b>缩小灰度图与堆叠帧输入；输出 MyWayHome 导航动作，具体集合待核；无射击或对手。</p><p><b>结论边界：</b>全部训练种子发现目标不等于每回合 100% 成功；分布式回报建模不是分布式计算；需对齐奖励稀疏度和探索参数。</p><p><b>收录理由：</b>近五年正式发表；官方论文页面已核对</p><p><b>证据状态：</b>官方书目信息核对；未独立复现实验</p><p><b>知识库原始核验标记：</b>原笔记整理</p><p class="checked-date">核对日期 2026-09-14 · 知识库编号 C08</p></details>
+  </article>
+<article class="resource-card" id="resource-kb-c09">
+    <div class="card-top"><span class="domain-tag game">GAME AGENT</span><span class="resource-type">NeurIPS 2022</span></div>
+    <h3>MOSS</h3><p class="full-title">A Mixture of Surprises for Unsupervised Reinforcement Learning</p>
+    <p class="summary">混合追求新颖性与降低不可预测性的技能，在无监督预训练后适配下游控制任务。</p>
+    <div class="tags"><span>探索与技能</span><span>强化学习</span></div>
+    <div class="card-footer"><a href="https://proceedings.neurips.cc/paper_files/paper/2022/hash/a7667ee5d545a43d2f0fda98863c260e-Abstract-Conference.html" target="_blank" rel="noopener noreferrer">论文 ↗</a><a href="https://github.com/LeapLabTHU/MOSS" target="_blank" rel="noopener noreferrer">代码 ↗</a><span class="">知识库精选</span></div>
+    <details><summary>任务、接口与收录依据</summary><p><b>环境与任务：</b>ViZDoom Defend The Line（防守射击）与 Take Cover（躲避弹丸生存）</p><p><b>观察与动作：</b>ViZDoom 观测具体编码待核；技能条件策略用于 Defend The Line 射击与 Take Cover 躲避，后续使用任务奖励微调。</p><p><b>结论边界：</b>表中任务得分不是击杀或胜率；使用截尾均值与标准误而非普通均值/标准差；无监督预训练不等于零样本部署。</p><p><b>收录理由：</b>近五年正式发表；官方论文页面已核对</p><p><b>证据状态：</b>官方书目信息核对；未独立复现实验</p><p><b>知识库原始核验标记：</b>原笔记整理</p><p class="checked-date">核对日期 2026-09-14 · 知识库编号 C09</p></details>
+  </article>
+<article class="resource-card" id="resource-deps">
+    <div class="card-top"><span class="domain-tag game">GAME AGENT</span><span class="resource-type">NeurIPS 2023</span></div>
+    <h3>DEPS</h3><p class="full-title">Describe, Explain, Plan and Select: Interactive Planning with LLMs Enables Open-World Multi-Task Agents</p>
+    <p class="summary">将执行描述、失败解释和子目标选择接入语言规划，通过环境反馈修订 Minecraft 长程计划。</p>
+    <div class="tags"><span>规划与记忆</span><span>语言与动作</span></div>
+    <div class="card-footer"><a href="https://proceedings.neurips.cc/paper_files/paper/2023/hash/6b8dfb8c0c12e6fafc6c256cb08a5ca7-Abstract-Conference.html" target="_blank" rel="noopener noreferrer">论文 ↗</a><span class="">知识库精选</span></div>
+    <details><summary>任务、接口与收录依据</summary><p><b>环境与任务：</b>Minecraft</p><p><b>观察与动作：</b>语言规划与技能级执行</p><p><b>结论边界：</b>依赖任务接口和底层执行能力；计划可行性与完整实时控制应分别评估。</p><p><b>收录理由：</b>近五年正式会议或期刊论文；优先核对官方论文集与作者来源。</p><p><b>证据状态：</b>官方书目信息核对；未独立复现实验</p><p class="checked-date">核对日期 2026-09-14</p></details>
+  </article>
+<article class="resource-card" id="resource-steve1">
+    <div class="card-top"><span class="domain-tag game">GAME AGENT</span><span class="resource-type">NeurIPS 2023</span></div>
+    <h3>STEVE-1</h3><p class="full-title">STEVE-1: A Generative Model for Text-to-Behavior in Minecraft</p>
+    <p class="summary">在 VPT 行为模型上接入文本和视觉条件，让 Minecraft 智能体执行短程开放指令。</p>
+    <div class="tags"><span>语言与动作</span><span>模仿学习</span></div>
+    <div class="card-footer"><a href="https://proceedings.neurips.cc/paper_files/paper/2023/hash/dd03f856fc7f2efeec8b1c796284561d-Abstract-Conference.html" target="_blank" rel="noopener noreferrer">论文 ↗</a><span class="">官方来源补充</span></div>
+    <details><summary>任务、接口与收录依据</summary><p><b>环境与任务：</b>Minecraft</p><p><b>观察与动作：</b>文本或视觉目标 → 低层行为</p><p><b>结论边界：</b>短程指令跟随是主要能力边界；复杂长程任务仍需要规划与记忆模块。</p><p><b>收录理由：</b>近五年正式会议或期刊论文；优先核对官方论文集与作者来源。</p><p><b>证据状态：</b>官方书目信息核对；未独立复现实验</p><p class="checked-date">核对日期 2026-09-14</p></details>
+  </article>
+<article class="resource-card" id="resource-octo">
+    <div class="card-top"><span class="domain-tag embodied">EMBODIED AI</span><span class="resource-type">RSS 2024</span></div>
+    <h3>Octo</h3><p class="full-title">Octo: An Open-Source Generalist Robot Policy</p>
+    <p class="summary">基于跨机器人示范预训练通用策略，通过语言或目标图像指定任务，并适配新的输入与动作空间。</p>
+    <div class="tags"><span>机器人学习</span><span>视觉语言动作</span></div>
+    <div class="card-footer"><a href="https://www.roboticsproceedings.org/rss20/p090.html" target="_blank" rel="noopener noreferrer">论文 ↗</a><a href="https://octo-models.github.io/" target="_blank" rel="noopener noreferrer">项目 ↗</a><span class="">官方来源补充</span></div>
+    <details><summary>任务、接口与收录依据</summary><p><b>环境与任务：</b>多机器人平台</p><p><b>观察与动作：</b>语言或目标图像 → 扩散动作策略</p><p><b>结论边界：</b>新平台一般仍需示范与微调；开源预训练策略不等于任意机器人即插即用。</p><p><b>收录理由：</b>近五年正式会议或期刊论文；优先核对官方论文集与作者来源。</p><p><b>证据状态：</b>官方书目信息核对；未独立复现实验</p><p class="checked-date">核对日期 2026-09-14</p></details>
+  </article>
+<article class="resource-card" id="resource-rt2">
+    <div class="card-top"><span class="domain-tag embodied">EMBODIED AI</span><span class="resource-type">CoRL 2023</span></div>
+    <h3>RT-2</h3><p class="full-title">RT-2: Vision-Language-Action Models Transfer Web Knowledge to Robotic Control</p>
+    <p class="summary">把机器人动作表示为 token，与视觉语言任务联合训练，研究网络知识向操作任务的迁移。</p>
+    <div class="tags"><span>视觉语言动作</span><span>机器人学习</span></div>
+    <div class="card-footer"><a href="https://proceedings.mlr.press/v229/zitkovich23a.html" target="_blank" rel="noopener noreferrer">论文 ↗</a><span class="">官方来源补充</span></div>
+    <details><summary>任务、接口与收录依据</summary><p><b>环境与任务：</b>真实机器人操作</p><p><b>观察与动作：</b>图像与语言 → 动作 token</p><p><b>结论边界：</b>语义泛化与物理技能能力应分别判断；没有在这里提供可直接运行的完整模型。</p><p><b>收录理由：</b>近五年正式会议或期刊论文；优先核对官方论文集与作者来源。</p><p><b>证据状态：</b>官方书目信息核对；未独立复现实验</p><p class="checked-date">核对日期 2026-09-14</p></details>
+  </article>
+<article class="resource-card" id="resource-voxposer">
+    <div class="card-top"><span class="domain-tag embodied">EMBODIED AI</span><span class="resource-type">CoRL 2023</span></div>
+    <h3>VoxPoser</h3><p class="full-title">VoxPoser: Composable 3D Value Maps for Robotic Manipulation with Language Models</p>
+    <p class="summary">用语言模型组合感知结果与三维价值图，为机器人运动规划提供可执行的目标约束。</p>
+    <div class="tags"><span>程序与工具</span><span>规划与记忆</span></div>
+    <div class="card-footer"><a href="https://proceedings.mlr.press/v229/huang23b.html" target="_blank" rel="noopener noreferrer">论文 ↗</a><span class="">官方来源补充</span></div>
+    <details><summary>任务、接口与收录依据</summary><p><b>环境与任务：</b>RLBench 与真实机器人操作</p><p><b>观察与动作：</b>语言、感知 → 3D 价值图与运动规划</p><p><b>结论边界：</b>完整真实感知链路与校准需要另行配置；生成计划不等于保证动作可执行。</p><p><b>收录理由：</b>近五年正式会议或期刊论文；优先核对官方论文集与作者来源。</p><p><b>证据状态：</b>官方书目信息核对；未独立复现实验</p><p class="checked-date">核对日期 2026-09-14</p></details>
+  </article>
+<article class="resource-card" id="resource-rekep">
+    <div class="card-top"><span class="domain-tag embodied">EMBODIED AI</span><span class="resource-type">CoRL 2024</span></div>
+    <h3>ReKep</h3><p class="full-title">ReKep: Spatio-Temporal Reasoning of Relational Keypoint Constraints for Robotic Manipulation</p>
+    <p class="summary">将指令转化为三维关键点间的时空约束，通过优化实现多阶段机器人操作。</p>
+    <div class="tags"><span>程序与工具</span><span>规划与记忆</span></div>
+    <div class="card-footer"><a href="https://proceedings.mlr.press/v270/huang25g.html" target="_blank" rel="noopener noreferrer">论文 ↗</a><span class="">官方来源补充</span></div>
+    <details><summary>任务、接口与收录依据</summary><p><b>环境与任务：</b>单臂、双臂与移动操作</p><p><b>观察与动作：</b>语言与 RGB-D → 关键点约束</p><p><b>结论边界：</b>关键点估计、几何标定和底层规划共同决定执行质量。</p><p><b>收录理由：</b>近五年正式会议或期刊论文；优先核对官方论文集与作者来源。</p><p><b>证据状态：</b>官方书目信息核对；未独立复现实验</p><p><b>发表时间说明：</b>会议年份 2024，PMLR 出版年份 2025。</p><p class="checked-date">核对日期 2026-09-14</p></details>
+  </article>
+<article class="resource-card" id="resource-embodiedbench">
+    <div class="card-top"><span class="domain-tag embodied">EMBODIED AI</span><span class="resource-type">ICML 2025</span></div>
+    <h3>EmbodiedBench</h3><p class="full-title">EmbodiedBench: Comprehensive Benchmarking Multi-modal Large Language Models for Vision-Driven Embodied Agents</p>
+    <p class="summary">系统评测多模态语言模型在视觉驱动的具身任务中的决策能力。</p>
+    <div class="tags"><span>评测基准</span><span>语言与动作</span></div>
+    <div class="card-footer"><a href="https://proceedings.mlr.press/v267/yang25f.html" target="_blank" rel="noopener noreferrer">论文 ↗</a><span class="">官方来源补充</span></div>
+    <details><summary>任务、接口与收录依据</summary><p><b>环境与任务：</b>多个具身仿真任务与环境</p><p><b>观察与动作：</b>视觉观察 → 环境定义的动作</p><p><b>结论边界：</b>任务类型、动作抽象层级和环境设置不同，不能只比较汇总成功率。</p><p><b>收录理由：</b>近五年正式会议或期刊论文；优先核对官方论文集与作者来源。</p><p><b>证据状态：</b>官方书目信息核对；未独立复现实验</p><p class="checked-date">核对日期 2026-09-14</p></details>
+  </article>
+<article class="resource-card" id="resource-consistency-policy">
+    <div class="card-top"><span class="domain-tag embodied">EMBODIED AI</span><span class="resource-type">RSS 2024</span></div>
+    <h3>Consistency Policy</h3><p class="full-title">Consistency Policy: Accelerated Visuomotor Policies via Consistency Distillation</p>
+    <p class="summary">从扩散策略中蒸馏更少步数的动作生成，研究计算资源受限时的视觉控制时延。</p>
+    <div class="tags"><span>扩散模型</span><span>机器人学习</span></div>
+    <div class="card-footer"><a href="https://www.roboticsproceedings.org/rss20/p071.html" target="_blank" rel="noopener noreferrer">论文 ↗</a><span class="">官方来源补充</span></div>
+    <details><summary>任务、接口与收录依据</summary><p><b>环境与任务：</b>模拟与真实操作任务</p><p><b>观察与动作：</b>视觉观察 → 少步动作生成</p><p><b>结论边界：</b>加速收益依赖计算硬件、基线采样配置与任务，不能把生成吞吐等同端到端控制频率。</p><p><b>收录理由：</b>近五年正式会议或期刊论文；优先核对官方论文集与作者来源。</p><p><b>证据状态：</b>官方书目信息核对；未独立复现实验</p><p class="checked-date">核对日期 2026-09-14</p></details>
+  </article>
+<article class="resource-card" id="resource-baku">
+    <div class="card-top"><span class="domain-tag embodied">EMBODIED AI</span><span class="resource-type">NeurIPS 2024</span></div>
+    <h3>BAKU</h3><p class="full-title">BAKU: An Efficient Transformer for Multi-Task Policy Learning</p>
+    <p class="summary">使用 Transformer 学习多任务机器人策略，研究高效架构与动作预测设计。</p>
+    <div class="tags"><span>机器人学习</span><span>模仿学习</span></div>
+    <div class="card-footer"><a href="https://proceedings.neurips.cc/paper_files/paper/2024/hash/ff887781480973bd3cb6026feb378d1e-Abstract-Conference.html" target="_blank" rel="noopener noreferrer">论文 ↗</a><span class="">官方来源补充</span></div>
+    <details><summary>任务、接口与收录依据</summary><p><b>环境与任务：</b>LIBERO、Meta-World 与控制基准</p><p><b>观察与动作：</b>多模态观察 → 多任务动作策略</p><p><b>结论边界：</b>不同基准和训练预算应分开报告；本索引未独立运行实验。</p><p><b>收录理由：</b>近五年正式会议或期刊论文；优先核对官方论文集与作者来源。</p><p><b>证据状态：</b>官方书目信息核对；未独立复现实验</p><p class="checked-date">核对日期 2026-09-14</p></details>
+  </article>
+<article class="resource-card" id="resource-vla-cache">
+    <div class="card-top"><span class="domain-tag embodied">EMBODIED AI</span><span class="resource-type">NeurIPS 2025</span></div>
+    <h3>VLA-Cache</h3><p class="full-title">VLA-Cache: Efficient Vision-Language-Action Manipulation via Adaptive Token Caching</p>
+    <p class="summary">复用视觉 token 计算以加速视觉语言动作模型，关注推理时延与操作成功率的权衡。</p>
+    <div class="tags"><span>视觉语言动作</span><span>机器人学习</span></div>
+    <div class="card-footer"><a href="https://proceedings.neurips.cc/paper_files/paper/2025/hash/f062da1973ac9ac61fc6d44dd7fa309f-Abstract-Conference.html" target="_blank" rel="noopener noreferrer">论文 ↗</a><span class="">官方来源补充</span></div>
+    <details><summary>任务、接口与收录依据</summary><p><b>环境与任务：</b>LIBERO、SIMPLER 与真实机器人</p><p><b>观察与动作：</b>视觉语言动作模型的 token 缓存</p><p><b>结论边界：</b>速度取决于模型、硬件与场景变化，不能直接比较不同设备上的倍率。</p><p><b>收录理由：</b>近五年正式会议或期刊论文；优先核对官方论文集与作者来源。</p><p><b>证据状态：</b>官方书目信息核对；未独立复现实验</p><p class="checked-date">核对日期 2026-09-14</p></details>
+  </article>
+<article class="resource-card" id="resource-robochemist">
+    <div class="card-top"><span class="domain-tag embodied">EMBODIED AI</span><span class="resource-type">CoRL 2025</span></div>
+    <h3>RoboChemist</h3><p class="full-title">RoboChemist: Long-Horizon and Safety-Compliant Robotic Chemical Experimentation</p>
+    <p class="summary">组合高层视觉语言规划与低层动作模型，研究多阶段实验操作中的任务反馈与规程约束。</p>
+    <div class="tags"><span>规划与记忆</span><span>安全与验证</span></div>
+    <div class="card-footer"><a href="https://proceedings.mlr.press/v305/zhang25i.html" target="_blank" rel="noopener noreferrer">论文 ↗</a><span class="">官方来源补充</span></div>
+    <details><summary>任务、接口与收录依据</summary><p><b>环境与任务：</b>机器人化学实验任务</p><p><b>观察与动作：</b>视觉语言规划、监控与 VLA 执行</p><p><b>结论边界：</b>研究场景中的规程遵守证据不构成通用实验室安全认证。</p><p><b>收录理由：</b>近五年正式会议或期刊论文；优先核对官方论文集与作者来源。</p><p><b>证据状态：</b>官方书目信息核对；未独立复现实验</p><p class="checked-date">核对日期 2026-09-14</p></details>
+  </article>
+<article class="resource-card" id="resource-openpi">
+    <div class="card-top"><span class="domain-tag embodied">EMBODIED AI</span><span class="resource-type">策略训练工具</span></div>
+    <h3>OpenPI</h3><p class="full-title">Physical Intelligence open robot policy tooling</p>
+    <p class="summary">提供 Physical Intelligence 机器人策略的训练、推理和适配代码，连接模型与任务数据。</p>
+    <div class="tags"><span>视觉语言动作</span><span>机器人学习</span></div>
+    <div class="card-footer"><a href="https://github.com/Physical-Intelligence/openpi" target="_blank" rel="noopener noreferrer">代码 ↗</a><span class="">官方来源补充</span></div>
+    <details><summary>任务、接口与收录依据</summary><p><b>环境与任务：</b>机器人策略训练与推理</p><p><b>观察与动作：</b>Python、模型服务与数据配置</p><p><b>结论边界：</b>模型权重和硬件依赖按具体版本准备；不假设所有论文组件都已发布。</p><p><b>收录理由：</b>独立开源工具或环境，服务论文研究与复现；不纳入论文时间窗口统计。</p><p><b>证据状态：</b>官方仓库用途与接口核对；未本地安装验证</p><p class="checked-date">核对日期 2026-09-14</p></details>
+  </article>
+<article class="resource-card" id="resource-gymnasium">
+    <div class="card-top"><span class="domain-tag cross-domain">GAME × EMBODIED</span><span class="resource-type">环境接口</span></div>
+    <h3>Gymnasium</h3><p class="full-title">A standard API for reinforcement learning environments</p>
+    <p class="summary">为单智能体强化学习提供统一环境接口，便于构建和比较训练流程。</p>
+    <div class="tags"><span>强化学习</span><span>评测基准</span></div>
+    <div class="card-footer"><a href="https://github.com/Farama-Foundation/Gymnasium" target="_blank" rel="noopener noreferrer">代码 ↗</a><span class="">官方来源补充</span></div>
+    <details><summary>任务、接口与收录依据</summary><p><b>环境与任务：</b>多类单智能体环境</p><p><b>观察与动作：</b>Python reset / step API</p><p><b>结论边界：</b>接口标准化不会自动对齐各环境的难度、观测权限和奖励。</p><p><b>收录理由：</b>独立开源工具或环境，服务论文研究与复现；不纳入论文时间窗口统计。</p><p><b>证据状态：</b>官方仓库用途与接口核对；未本地安装验证</p><p class="checked-date">核对日期 2026-09-14</p></details>
+  </article>
+<article class="resource-card" id="resource-pettingzoo">
+    <div class="card-top"><span class="domain-tag game">GAME AGENT</span><span class="resource-type">多智能体接口</span></div>
+    <h3>PettingZoo</h3><p class="full-title">Multi-agent reinforcement learning APIs</p>
+    <p class="summary">提供多智能体环境接口及参考环境，支持轮流行动与并行行动的实验设置。</p>
+    <div class="tags"><span>多智能体</span><span>强化学习</span></div>
+    <div class="card-footer"><a href="https://github.com/Farama-Foundation/PettingZoo" target="_blank" rel="noopener noreferrer">代码 ↗</a><span class="">官方来源补充</span></div>
+    <details><summary>任务、接口与收录依据</summary><p><b>环境与任务：</b>合作、对抗与混合任务</p><p><b>观察与动作：</b>AEC 与 Parallel API</p><p><b>结论边界：</b>需注明通信机制、可观测性、对手和团队奖励设置。</p><p><b>收录理由：</b>独立开源工具或环境，服务论文研究与复现；不纳入论文时间窗口统计。</p><p><b>证据状态：</b>官方仓库用途与接口核对；未本地安装验证</p><p class="checked-date">核对日期 2026-09-14</p></details>
+  </article>
+<article class="resource-card" id="resource-genesis">
+    <div class="card-top"><span class="domain-tag embodied">EMBODIED AI</span><span class="resource-type">物理仿真工具</span></div>
+    <h3>Genesis</h3><p class="full-title">General-purpose robotics simulation</p>
+    <p class="summary">提供机器人与具身学习使用的通用仿真基础设施，支持构建物理交互实验。</p>
+    <div class="tags"><span>机器人学习</span><span>环境生成</span></div>
+    <div class="card-footer"><a href="https://github.com/Genesis-Embodied-AI/genesis-world" target="_blank" rel="noopener noreferrer">代码 ↗</a><span class="">官方来源补充</span></div>
+    <details><summary>任务、接口与收录依据</summary><p><b>环境与任务：</b>机器人仿真场景</p><p><b>观察与动作：</b>仿真与控制接口</p><p><b>结论边界：</b>仿真物理、硬件和功能支持取决于具体版本；不等同于经过验证的 sim-to-real 迁移。</p><p><b>收录理由：</b>独立开源工具或环境，服务论文研究与复现；不纳入论文时间窗口统计。</p><p><b>证据状态：</b>官方仓库用途与接口核对；未本地安装验证</p><p class="checked-date">核对日期 2026-09-14</p></details>
+  </article>
+<article class="resource-card" id="resource-vizdoom">
+    <div class="card-top"><span class="domain-tag game">GAME AGENT</span><span class="resource-type">游戏研究环境</span></div>
+    <h3>ViZDoom</h3><p class="full-title">Doom-based visual reinforcement learning environments</p>
+    <p class="summary">以 DOOM 为基础提供可控的第一人称视觉任务，支持导航、生存和射击研究。</p>
+    <div class="tags"><span>评测基准</span><span>强化学习</span></div>
+    <div class="card-footer"><a href="https://github.com/Farama-Foundation/ViZDoom" target="_blank" rel="noopener noreferrer">代码 ↗</a><span class="">官方来源补充</span></div>
+    <details><summary>任务、接口与收录依据</summary><p><b>环境与任务：</b>DOOM</p><p><b>观察与动作：</b>视觉观察、游戏变量与离散动作</p><p><b>结论边界：</b>需要说明是否读取游戏变量、帧跳与动作集；基础环境不受论文发表年限限制。</p><p><b>收录理由：</b>独立开源工具或环境，服务论文研究与复现；不纳入论文时间窗口统计。</p><p><b>证据状态：</b>官方仓库用途与接口核对；未本地安装验证</p><p class="checked-date">核对日期 2026-09-14</p></details>
+  </article>
+<article class="resource-card" id="resource-habitat">
+    <div class="card-top"><span class="domain-tag embodied">EMBODIED AI</span><span class="resource-type">具身研究环境</span></div>
+    <h3>Habitat-Lab</h3><p class="full-title">Embodied AI tasks and environments</p>
+    <p class="summary">提供具身智能任务、环境配置与训练评测组件，用于导航和交互研究。</p>
+    <div class="tags"><span>评测基准</span><span>规划与记忆</span></div>
+    <div class="card-footer"><a href="https://github.com/facebookresearch/habitat-lab" target="_blank" rel="noopener noreferrer">代码 ↗</a><span class="">官方来源补充</span></div>
+    <details><summary>任务、接口与收录依据</summary><p><b>环境与任务：</b>三维室内环境</p><p><b>观察与动作：</b>传感器观测与任务动作接口</p><p><b>结论边界：</b>场景数据与模拟器需要匹配配置；评测协议随任务不同。</p><p><b>收录理由：</b>独立开源工具或环境，服务论文研究与复现；不纳入论文时间窗口统计。</p><p><b>证据状态：</b>官方仓库用途与接口核对；未本地安装验证</p><p class="checked-date">核对日期 2026-09-14</p></details>
+  </article>
+<article class="resource-card" id="resource-ai2thor">
+    <div class="card-top"><span class="domain-tag embodied">EMBODIED AI</span><span class="resource-type">交互研究环境</span></div>
+    <h3>AI2-THOR</h3><p class="full-title">Interactive 3D environments for visual AI</p>
+    <p class="summary">提供可交互的室内场景与对象，支撑视觉导航、物体操作和具身规划研究。</p>
+    <div class="tags"><span>评测基准</span><span>规划与记忆</span></div>
+    <div class="card-footer"><a href="https://github.com/allenai/ai2thor" target="_blank" rel="noopener noreferrer">代码 ↗</a><span class="">官方来源补充</span></div>
+    <details><summary>任务、接口与收录依据</summary><p><b>环境与任务：</b>三维室内交互场景</p><p><b>观察与动作：</b>视觉观察与环境动作 API</p><p><b>结论边界：</b>离散对象交互不等于真实关节级控制；需要明确所用任务定义。</p><p><b>收录理由：</b>独立开源工具或环境，服务论文研究与复现；不纳入论文时间窗口统计。</p><p><b>证据状态：</b>官方仓库用途与接口核对；未本地安装验证</p><p class="checked-date">核对日期 2026-09-14</p></details>
+  </article>
+<article class="resource-card" id="resource-maniskill">
+    <div class="card-top"><span class="domain-tag embodied">EMBODIED AI</span><span class="resource-type">机器人操作评测</span></div>
+    <h3>ManiSkill</h3><p class="full-title">GPU-parallelized robotics simulation and benchmarks</p>
+    <p class="summary">为机器人操作技能提供并行仿真、任务环境与评测工具。</p>
+    <div class="tags"><span>评测基准</span><span>机器人学习</span></div>
+    <div class="card-footer"><a href="https://github.com/mani-skill/ManiSkill" target="_blank" rel="noopener noreferrer">代码 ↗</a><span class="">官方来源补充</span></div>
+    <details><summary>任务、接口与收录依据</summary><p><b>环境与任务：</b>机器人操作仿真</p><p><b>观察与动作：</b>仿真观察、动作与技能任务</p><p><b>结论边界：</b>需说明环境版本、机器人、控制模式与训练数据；仿真吞吐不等于真实控制性能。</p><p><b>收录理由：</b>独立开源工具或环境，服务论文研究与复现；不纳入论文时间窗口统计。</p><p><b>证据状态：</b>官方仓库用途与接口核对；未本地安装验证</p><p class="checked-date">核对日期 2026-09-14</p></details>
+  </article></div>
+      </section>
+      <section id="about" class="about-panel" hidden><div class="section-heading"><h2>有依据地收录，有边界地比较。</h2><span class="section-number">THE EDITORIAL NOTE</span></div>
+<p>这是一份连接游戏与具身智能的研究资源索引。游戏方向以你提供的 Game Agent 知识库为起点，具身方向和部分游戏论文通过官方论文集、研究报告与项目仓库补充。结构参考 <a href="https://github.com/kairunwen/Awesome-Robot-Use-Agent#projects" target="_blank" rel="noopener noreferrer">Awesome-Robot-Use-Agent</a>，分类与内容独立整理。</p>
+<div class="notice"><b>收录快照 · 2026-09-14</b><p>共 52 项精选资源：43 篇论文、5 个独立项目、8 个评测与环境。基准论文同时出现在两个视图，数量不直接相加。另有 8 篇候选，不计入精选。</p></div>
+<h3>01 / 收录标准</h3><div class="table-wrap"><table><thead><tr><th>类别</th><th>时间窗口</th><th>收录依据</th></tr></thead><tbody><tr><td>顶会顶刊</td><td>2021.09.14 — 2026.09.14</td><td>优先 NeurIPS、ICLR、ICML、CVPR、ICCV、ECCV、AAAI、IJCAI，以及 RSS、CoRL、ICRA、IROS 等机器人主会；期刊优先 Nature、Science、T-RO、IJRR、TPAMI、JMLR、TMLR 等。以官方发表记录核对，Workshop 单独区分。</td></tr><tr><td>重要 arXiv</td><td>2025.09.14 — 2026.09.14</td><td>以首次提交日期计算。保留系统评估、模型／环境开放等重要性理由与来源。属于编辑判断，未做引用量排名。</td></tr><tr><td>工具与环境</td><td>按当前用途核对</td><td>独立基础设施单独收录，不受论文发表窗口限制；保留接口与部署边界。</td></tr></tbody></table></div>
+<p>此清单是本项目的领域选刊口径，不表示这些会议和期刊属于同一个官方等级。详见 <a href="docs/collection-policy.md" download>完整收录标准</a>。</p>
+<h3>02 / 来源与核验</h3><p>本次读取论文总表 106 行，去除 19 个无标题记录，并合并 4 个重复条目，得到 83 条有标题的独立线索。知识库首页的历史计数未用于本版统计。</p><p>正式论文的书目信息与官方来源已核对；原知识库的核验标记保留在相关条目中。本次没有逐篇重新阅读全文，也没有独立复现实验。候选、已发表、已核验和已复现分别记录。</p><p><a href="https://dy8q0bnq8y.feishu.cn/wiki/KAI9wbLEniLIIgkHAi6cU48bndd" target="_blank" rel="noopener noreferrer">源知识库（按原权限访问） ↗</a> · <a href="selection-audit.json" download>查看原始条目的筛选记录</a> · <a href="resources.json" download>下载资源数据 JSON</a></p>
+<h3>03 / 两个方向如何比较</h3><div class="table-wrap"><table><thead><tr><th>维度</th><th>游戏研究</th><th>具身研究</th></tr></thead><tbody><tr><td>环境与任务</td><td>游戏、地图、模式、任务范围</td><td>硬件、场景、物体、操作任务</td></tr><tr><td>观察权限</td><td>像素、声音、文本、引擎状态</td><td>图像、深度、触觉、本体信息</td></tr><tr><td>动作层级</td><td>键鼠、程序 API、预定义技能</td><td>关节、末端位姿、导航或操作技能</td></tr><tr><td>数据与学习</td><td>玩家轨迹、在线交互、视频预训练</td><td>示范、遥操作、仿真与真实交互</td></tr><tr><td>执行约束</td><td>决策时延、帧率、是否暂停</td><td>控制频率、碰撞、硬件限制</td></tr><tr><td>评测证据</td><td>地图划分、任务指标、样本与种子</td><td>任务成功率、泛化、人工干预</td></tr></tbody></table></div>
+<p>共享方法并不意味着能力已经跨域迁移。画面生成、游戏导航、机器人规划与物理执行，应当各自保留证据边界。</p>
+<h3>04 / 持续维护</h3><p>README 和网站使用同一份资源数据。此版本是人工整理快照；新增论文需按收录标准补充来源后更新。查看 <a href="CONTRIBUTING.md" download>贡献指南</a> 或 <a href="README.md" download>项目文档</a>。</p></section>
+      <footer><span>AWESOME GAME & EMBODIED AGENTS</span><span>基于可追溯证据，持续理解智能体。</span><a href="https://github.com/kairunwen/Awesome-Robot-Use-Agent#projects" target="_blank" rel="noopener noreferrer">灵感来源 ↗</a></footer>
+    </main>
+  </div>
+  <script type="module" src="assets/app.js"></script>
+</body></html>
