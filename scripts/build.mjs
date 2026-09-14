@@ -1,4 +1,5 @@
 import fs from 'node:fs/promises';
+import { createHash } from 'node:crypto';
 import { renderCatalogue } from '../dist/assets/catalog.mjs';
 const data = JSON.parse(await fs.readFile('data/resources.json', 'utf8'));
 const selected = data.resources.filter(r => r.status === 'selected').sort((a, b) => a.rank - b.rank);
@@ -8,6 +9,8 @@ data.meta.counts = Object.fromEntries(['articles', 'papers', 'projects', 'datase
 await fs.writeFile('data/resources.json', JSON.stringify(data, null, 2) + '\n');
 await fs.copyFile('data/resources.json', 'dist/resources.json');
 let html = await fs.readFile('dist/index.html', 'utf8');
+const styleVersion = createHash('sha256').update(await fs.readFile('dist/assets/style.css')).digest('hex').slice(0, 12);
+html = html.replace(/href="assets\/style\.css(?:\?v=[a-f0-9]+)?"/, `href="assets/style.css?v=${styleVersion}"`);
 html = html.replace(/(<!-- CATALOGUE:START -->)[\s\S]*?(<!-- CATALOGUE:END -->)/, () => `<!-- CATALOGUE:START -->${renderCatalogue(selected,'all',data.resources)}<!-- CATALOGUE:END -->`);
 for (const [id, value] of [['nav-total', selected.length], ['stat-total', selected.length], ['stat-papers', count('papers')], ['stat-projects', count('projects')], ['stat-benchmarks', count('benchmarks')], ['stat-articles', count('articles')], ['stat-datasets', count('datasets')], ['stat-demos', count('demos')]]) {
   html = html.replace(new RegExp(`(id="${id}">)[^<]*`), `$1${value}`);
