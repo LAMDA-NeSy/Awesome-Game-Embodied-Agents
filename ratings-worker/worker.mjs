@@ -36,8 +36,8 @@ export default {
       const paperIds=(url.searchParams.get('papers')||'').split(',').filter(Boolean);
       if(!paperIds.length||paperIds.length>80||paperIds.some(id=>!validPaperId(id)))return withCors(json({error:'Invalid paper list'},400),request,env);
       const entries=await Promise.all(paperIds.map(async paperId=>{
-        const id=env.RATINGS.idFromName(paperId);
-        const response=await env.RATINGS.get(id).fetch('https://ratings.internal/summary');
+        const id=env.RATINGS_V2.idFromName(paperId);
+        const response=await env.RATINGS_V2.get(id).fetch('https://ratings.internal/summary');
         return [paperId,await response.json()];
       }));
       return withCors(json({ratings:Object.fromEntries(entries)}),request,env);
@@ -49,8 +49,8 @@ export default {
       try{body=await request.json();}catch{return withCors(json({error:'Invalid JSON'},400),request,env);}
       const {paperId,score,voterId}=body||{};
       if(!validPaperId(paperId)||!Number.isInteger(score)||score<0||score>5||typeof voterId!=='string'||voterId.length<8||voterId.length>128)return withCors(json({error:'Invalid rating'},400),request,env);
-      const id=env.RATINGS.idFromName(paperId);
-      const response=await env.RATINGS.get(id).fetch('https://ratings.internal/vote',{
+      const id=env.RATINGS_V2.idFromName(paperId);
+      const response=await env.RATINGS_V2.get(id).fetch('https://ratings.internal/vote',{
         method:'POST',
         headers:{'content-type':'application/json'},
         body:JSON.stringify({score,voterHash:await hash(`${paperId}:${voterId}`)})
@@ -61,7 +61,7 @@ export default {
   }
 };
 
-export class PaperRatings {
+export class PaperRatingsV2 {
   constructor(state){this.state=state;}
   async fetch(request){
     const url=new URL(request.url);

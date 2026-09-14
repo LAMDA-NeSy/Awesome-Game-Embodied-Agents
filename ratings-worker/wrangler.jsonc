@@ -5,11 +5,12 @@
   "compatibility_date": "2026-09-14",
   "durable_objects": {
     "bindings": [
-      { "name": "RATINGS", "class_name": "PaperRatings" }
+      { "name": "RATINGS_V2", "class_name": "PaperRatingsV2" }
     ]
   },
   "migrations": [
-    { "tag": "v1", "new_sqlite_classes": ["PaperRatings"] }
+    { "tag": "v1", "new_sqlite_classes": ["PaperRatings"] },
+    { "tag": "v2", "new_sqlite_classes": ["PaperRatingsV2"], "deleted_classes": ["PaperRatings"] }
   ],
   "vars": {
     "ALLOWED_ORIGIN": "https://labixiaoq.github.io"
