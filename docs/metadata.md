@@ -1,6 +1,6 @@
 # Paper metadata and statistics
 
-Paper records share the same metadata in the website and README. Unknown optional fields are omitted. A measured count of zero is a valid result; it is distinct from a missing count.
+Paper records share the same metadata in the website and README. The website keeps five visible slots for Data, Models, Code, Citations, and GitHub stars. A measured count of zero is a valid result; it is distinct from a missing count.
 
 ## Bibliography
 
@@ -16,7 +16,7 @@ Paper records share the same metadata in the website and README. Unknown optiona
 
 Citation counts come from OpenAlex's `cited_by_count` or Crossref's `is-referenced-by-count`, for the specific linked record. Preprint and published records may have different counts; this collection does not combine them or present these numbers as Google Scholar totals. Stars come from GitHub's `stargazers_count`; they describe the repository, not paper quality. Counts are cached snapshots and do not control inclusion.
 
-Missing model, data, code, preview, or count fields are hidden. Available links go to the original team or publisher. Model or dataset collections are shown only when linked by the research project.
+Missing model, data, or code links appear as muted, non-clickable icons. Unavailable citation and GitHub star counts display “—” with an explanatory tooltip and accessible label. These placeholders are not links and cannot receive keyboard focus. Unknown counts are never displayed as zero. Other missing optional metadata, including previews, remains omitted. Available links go to the original team or publisher. Model or dataset collections are shown only when linked by the research project.
 
 ## Refresh existing statistics
 

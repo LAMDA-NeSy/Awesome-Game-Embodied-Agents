@@ -61,11 +61,14 @@ for(const r of data.resources){
 const specimen=structuredClone(selected.find(r=>r.kinds.includes('papers')));
 specimen.metrics={citations:{value:null},github:{value:null}};
 let card=renderCard(specimen);
-assert(!card.includes('Citations:')&&!card.includes('GitHub stars'),'Missing metrics should be hidden');
+assert.equal((card.match(/class="paper-stat /g)||[]).length+(card.match(/class="paper-stat"/g)||[]).length,5,'Keep all five resource and metric slots');
+assert.equal((card.match(/<strong aria-hidden="true">—<\/strong>/g)||[]).length,2,'Missing counts must show a dash');
+assert(card.includes('aria-label="Citations count not available"')&&card.includes('aria-label="GitHub stars count not available"'),'Missing counts must have accessible labels');
+assert(card.includes('stat-unavailable'),'Missing resource links must show disabled icons');
 specimen.metrics.citations={value:0,source:'OpenAlex',sourceUrl:'https://openalex.org/W4409147637',updatedAt:'2026-09-14'};
 card=renderCard(specimen);
 assert(card.includes('Citations: 0.'),'A verified zero must remain visible');
-assert(!card.includes('GitHub stars'),'Missing stars should stay hidden');
+assert(card.includes('aria-label="GitHub stars count not available"'),'Missing stars must remain unavailable when citations are zero');
 assert(filterResources(data.resources,{query:'Hafner',candidates:false,view:'papers',domain:'all',topic:'all',year:'all',sort:'featured'}).some(r=>r.id==='kb-g05'),'Author search failed');
 assert(!/[\u3400-\u9fff]/u.test(JSON.stringify(data)), 'Catalogue contains untranslated Chinese text');
 const deployed=JSON.parse(await fs.readFile('dist/resources.json','utf8'));

@@ -76,7 +76,11 @@ function renderStarBadge(r) {
   return hasCount(metric?.value) && safeUrl(metric.sourceUrl) ? `<a class="github-star-badge" href="${escapeHtml(metric.sourceUrl)}" target="_blank" rel="noopener noreferrer" title="GitHub stars · checked ${escapeHtml(metric.updatedAt)}">${icon('stars')} ${formatCount(metric.value)} stars</a>` : '';
 }
 function metricLink(url,label,type,metric) {
-  if(!safeUrl(url))return '';
+  const isMetric=type==='citations'||type==='stars';
+  if(!safeUrl(url)||(isMetric&&!hasCount(metric?.value))){
+    const note=`${label} ${isMetric?'count':'link'} not available`;
+    return `<span class="paper-stat ${isMetric?'stat-missing-count':'stat-unavailable'}" role="group" aria-disabled="true" aria-label="${escapeHtml(note)}" title="${escapeHtml(note)}">${icon(type)}<span class="stat-label">${escapeHtml(label)}</span>${isMetric?'<strong aria-hidden="true">—</strong>':''}</span>`;
+  }
   const counted=hasCount(metric?.value);
   const note=counted?`${metric.source} · checked ${metric.updatedAt}`:label;
   return `<a class="paper-stat" href="${escapeHtml(url)}" target="_blank" rel="noopener noreferrer" title="${escapeHtml(note)}" aria-label="${escapeHtml(label)}${counted?`: ${formatCount(metric.value)}. ${escapeHtml(note)}`:''}">${icon(type)}<span class="stat-label">${escapeHtml(label)}</span>${counted?`<strong>${formatCount(metric.value)}</strong>`:''}</a>`;
@@ -93,7 +97,7 @@ function renderPaper(r,lookup) {
   const evidence=candidate?'Candidate · pending review':r.selectionTrack==='recent-arxiv'?'Selected preprint':'Peer-reviewed';
   const citations=r.metrics?.citations;
   const stars=r.metrics?.github;
-  const stats=[metricLink(r.links.data,'Data','data'),metricLink(r.links.model,'Models','model'),metricLink(r.links.code,'Code','code'),hasCount(citations?.value)?metricLink(citations.sourceUrl,'Citations','citations',citations):'',hasCount(stars?.value)?metricLink(stars.sourceUrl,'GitHub stars','stars',stars):''].join('');
+  const stats=[metricLink(r.links.data,'Data','data'),metricLink(r.links.model,'Models','model'),metricLink(r.links.code,'Code','code'),metricLink(citations?.sourceUrl,'Citations','citations',citations),metricLink(stars?.sourceUrl,'GitHub stars','stars',stars)].join('');
   const sources=[citations,stars].filter(m=>hasCount(m?.value)&&safeUrl(m.sourceUrl));
   const sourceNote=sources.length?`<p class="metrics-updated">${sources.map(m=>externalLink(m.sourceUrl,m.source)).join(' · ')}<br>Checked ${escapeHtml([...new Set(sources.map(m=>m.updatedAt))].join(' / '))}</p>`:'';
   const field=(label,value)=>value?`<p><b>${label}:</b> ${escapeHtml(value)}</p>`:'';

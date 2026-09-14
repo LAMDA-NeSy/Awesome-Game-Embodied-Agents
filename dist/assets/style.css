@@ -34,7 +34,9 @@
 .paper-sidebar{border-left:1px solid var(--line);padding:20px 0 0 20px;align-self:stretch;min-width:0}
 .paper-stats{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:25px 8px;align-items:start}
 .paper-stat{display:flex;flex-direction:column;align-items:center;gap:7px;color:#65584b;text-decoration:none;padding:5px 0;text-align:center;line-height:1.35;min-width:0;border-radius:4px}
-.paper-stat:hover{color:var(--accent);background:#eee5d8}
+a.paper-stat:hover{color:var(--accent);background:#eee5d8}
+.paper-stat.stat-unavailable{color:#b7aa97;cursor:default}
+.paper-stat.stat-missing-count{color:#65584b;cursor:default}
 .stat-label{font-size:.625rem;letter-spacing:.055em;text-transform:uppercase;white-space:nowrap}
 .paper-stat strong{font-size:.9375rem;font-weight:500;font-variant-numeric:tabular-nums;letter-spacing:0}
 .metrics-updated{color:#8a7967;text-align:center;font-size:.625rem;line-height:1.8;margin:25px 0 0}

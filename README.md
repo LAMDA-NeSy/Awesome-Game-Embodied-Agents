@@ -218,7 +218,7 @@ Entries retain sources, review dates, environments, interfaces, limitations, and
 
 ## Paper metadata
 
-The website shows full titles, author lists, source dates, Paper/PDF links, and original first-page previews. Expand a record for complete authors and a copyable BibTeX citation. Citation and GitHub star counts link to their sources and carry retrieval dates; unavailable fields are omitted. Indexed versions can have different citation counts. The byline date is identified in the record details and can differ from the conference year.
+The website shows full titles, author lists, source dates, Paper/PDF links, and original first-page previews. Expand a record for complete authors and a copyable BibTeX citation. Citation and GitHub star counts link to their sources and carry retrieval dates. Missing resource links appear as muted, non-clickable icons on the website; unavailable citation and star counts show an em dash. Indexed versions can have different citation counts. The byline date is identified in the record details and can differ from the conference year.
 
 See [metadata sources and refresh instructions](docs/metadata.md).
 
