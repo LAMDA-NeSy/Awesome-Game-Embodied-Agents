@@ -31,7 +31,7 @@
 .paper-actions a:hover{border-color:#a48460;background:#f0e7dc;color:var(--ink)}
 .paper-body .tags{margin-bottom:16px}
 .paper-body details summary{color:var(--muted);font-size:.8125rem}
-.paper-sidebar{border-left:1px solid var(--line);padding:4px 0 0 12px;align-self:start;min-width:0}
+.paper-sidebar{border-left:1px solid var(--line);padding:4px 0 0 12px;align-self:stretch;min-width:0}
 .paper-stats{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:8px 6px;align-items:start}
 .paper-stat{display:flex;flex-direction:column;align-items:center;gap:3px;color:#65584b;text-decoration:none;padding:3px 0;text-align:center;line-height:1.35;min-width:0;border-radius:4px}
 .paper-stat svg{width:16px;height:16px;flex:none}
