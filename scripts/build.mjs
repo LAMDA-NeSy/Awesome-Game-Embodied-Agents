@@ -1,38 +1,230 @@
 import fs from 'node:fs/promises';
-import { renderCard, escapeHtml } from '../dist/assets/catalog.mjs';
-const data=JSON.parse(await fs.readFile('data/resources.json','utf8'));
-const selected=data.resources.filter(r=>r.status==='selected').sort((a,b)=>a.rank-b.rank);
-const candidates=data.resources.filter(r=>r.status==='candidate');
-const count=kind=>selected.filter(r=>r.kinds.includes(kind)).length;
-data.meta.counts=Object.fromEntries(['papers','projects','benchmarks'].map(k=>[k,count(k)]));
-await fs.writeFile('data/resources.json',JSON.stringify(data,null,2)+'\n');
-await fs.copyFile('data/resources.json','dist/resources.json');
-let html=await fs.readFile('dist/index.html','utf8');
-const content=selected.map(renderCard).join('\n');
-html=html.replace(/(<div class="resource-grid" id="resources">)[\s\S]*?(<\/div>\s*<\/section>)/,`$1${content}$2`);
-for(const [id,value] of [['nav-total',selected.length],['stat-papers',count('papers')],['stat-projects',count('projects')],['stat-benchmarks',count('benchmarks')]])html=html.replace(new RegExp(`(id="${id}">)[^<]*`),`$1${value}`);
-html=html.replace(/(<p id="result-count"[^>]*>)[\s\S]*?<\/p>/,`$1${selected.length} 条资源 / ${selected.length} 条收录</p>`);
-const about=`<div class="section-heading"><h2>有依据地收录，有边界地比较。</h2><span class="section-number">THE EDITORIAL NOTE</span></div>
-<p>这是一份连接游戏与具身智能的研究资源索引。游戏方向以你提供的 Game Agent 知识库为起点，具身方向和部分游戏论文通过官方论文集、研究报告与项目仓库补充。结构参考 <a href="https://github.com/kairunwen/Awesome-Robot-Use-Agent#projects" target="_blank" rel="noopener noreferrer">Awesome-Robot-Use-Agent</a>，分类与内容独立整理。</p>
-<div class="notice"><b>收录快照 · ${data.meta.snapshotDate}</b><p>共 ${selected.length} 项精选资源：${count('papers')} 篇论文、${count('projects')} 个独立项目、${count('benchmarks')} 个评测与环境。基准论文同时出现在两个视图，数量不直接相加。另有 ${candidates.length} 篇候选，不计入精选。</p></div>
-<h3>01 / 收录标准</h3><div class="table-wrap"><table><thead><tr><th>类别</th><th>时间窗口</th><th>收录依据</th></tr></thead><tbody><tr><td>顶会顶刊</td><td>2021.09.14 — 2026.09.14</td><td>优先 NeurIPS、ICLR、ICML、CVPR、ICCV、ECCV、AAAI、IJCAI，以及 RSS、CoRL、ICRA、IROS 等机器人主会；期刊优先 Nature、Science、T-RO、IJRR、TPAMI、JMLR、TMLR 等。以官方发表记录核对，Workshop 单独区分。</td></tr><tr><td>重要 arXiv</td><td>2025.09.14 — 2026.09.14</td><td>以首次提交日期计算。保留系统评估、模型／环境开放等重要性理由与来源。属于编辑判断，未做引用量排名。</td></tr><tr><td>工具与环境</td><td>按当前用途核对</td><td>独立基础设施单独收录，不受论文发表窗口限制；保留接口与部署边界。</td></tr></tbody></table></div>
-<p>此清单是本项目的领域选刊口径，不表示这些会议和期刊属于同一个官方等级。详见 <a href="docs/collection-policy.md" download>完整收录标准</a>。</p>
-<h3>02 / 来源与核验</h3><p>本次读取论文总表 ${data.meta.sourceSnapshot.rows} 行，去除 ${data.meta.sourceSnapshot.emptyRows} 个无标题记录，并合并 ${data.meta.sourceSnapshot.duplicateRows} 个重复条目，得到 ${data.meta.sourceSnapshot.uniqueTitledRows} 条有标题的独立线索。知识库首页的历史计数未用于本版统计。</p><p>正式论文的书目信息与官方来源已核对；原知识库的核验标记保留在相关条目中。本次没有逐篇重新阅读全文，也没有独立复现实验。候选、已发表、已核验和已复现分别记录。</p><p><a href="${data.meta.knowledgeUrl}" target="_blank" rel="noopener noreferrer">源知识库（按原权限访问） ↗</a> · <a href="selection-audit.json" download>查看原始条目的筛选记录</a> · <a href="resources.json" download>下载资源数据 JSON</a></p>
-<h3>03 / 两个方向如何比较</h3><div class="table-wrap"><table><thead><tr><th>维度</th><th>游戏研究</th><th>具身研究</th></tr></thead><tbody><tr><td>环境与任务</td><td>游戏、地图、模式、任务范围</td><td>硬件、场景、物体、操作任务</td></tr><tr><td>观察权限</td><td>像素、声音、文本、引擎状态</td><td>图像、深度、触觉、本体信息</td></tr><tr><td>动作层级</td><td>键鼠、程序 API、预定义技能</td><td>关节、末端位姿、导航或操作技能</td></tr><tr><td>数据与学习</td><td>玩家轨迹、在线交互、视频预训练</td><td>示范、遥操作、仿真与真实交互</td></tr><tr><td>执行约束</td><td>决策时延、帧率、是否暂停</td><td>控制频率、碰撞、硬件限制</td></tr><tr><td>评测证据</td><td>地图划分、任务指标、样本与种子</td><td>任务成功率、泛化、人工干预</td></tr></tbody></table></div>
-<p>共享方法并不意味着能力已经跨域迁移。画面生成、游戏导航、机器人规划与物理执行，应当各自保留证据边界。</p>
-<h3>04 / 持续维护</h3><p>README 和网站使用同一份资源数据。此版本是人工整理快照；新增论文需按收录标准补充来源后更新。查看 <a href="CONTRIBUTING.md" download>贡献指南</a> 或 <a href="README.md" download>项目文档</a>。</p>`;
-html=html.replace(/(<section id="about" class="about-panel" hidden>)[\s\S]*?<\/section>/,`$1${about}</section>`);
-await fs.writeFile('dist/index.html',html);
-const md=s=>String(s||'—').replace(/\|/g,'／').replace(/\n/g,' ');
-const link=(url,text)=>url?`[${text}](${url})`:'';
-const links=r=>Object.entries(r.links).map(([k,v])=>link(v,{paper:'Paper',code:'Code',project:'Project'}[k]||k)).join(' · ');
-const paperRows=items=>items.map(r=>`| **${link(r.links.paper,r.name)}**<br>${md(r.title)} | ${md(r.venue)} | ${md(r.summary)} | ${links(r)} |`).join('\n');
-const projectRows=items=>items.map(r=>`| **${r.name}** | ${md(r.environment)} | ${md(r.interface)} | ${md(r.limits)} | ${links(r)} |`).join('\n');
-let readme=`# Awesome Game & Embodied Agents\n\n游戏与具身智能研究资源集：从感知、规划和记忆，到游戏动作与机器人控制。\n\n**${count('papers')} 篇精选论文 · ${count('projects')} 个独立开源项目 · ${count('benchmarks')} 个评测／环境 · ${candidates.length} 篇候选**\n\n快照：${data.meta.snapshotDate}。具有论文的基准共享同一条记录，视图计数存在重叠；精选资源总数为 ${selected.length}。\n\n本项目基于用户提供的 [Game Agent 知识库](${data.meta.knowledgeUrl})，参考 [Awesome-Robot-Use-Agent](${data.meta.referenceUrl}) 的资源组织方式；具身与部分游戏内容从官方来源补充。\n\n[精选论文](#papers) · [开源项目](#projects) · [评测环境](#benchmarks) · [候选论文](#candidates) · [收录标准](docs/collection-policy.md) · [贡献指南](CONTRIBUTING.md)\n\n## 收录范围\n\n- 正式论文：2021-09-14 至 2026-09-14 的相关顶会顶刊，官方发表记录可追溯。\n- 重要 arXiv：首次提交于 2025-09-14 至 2026-09-14，附重要性判断和研究证据，未确认正式接收时明确标注预印本。\n- 未充分核对的条目独立列为候选；基础设施按用途收录，不受论文年限限制。\n- 不声称穷尽检索、统一排名或已独立复现；元数据核对不等于阅读全文。\n\n## Papers\n\n### Game Agents\n\n| Paper | Venue | Research focus | Sources |\n| --- | --- | --- | --- |\n${paperRows(selected.filter(r=>r.kinds.includes('papers')&&r.domains.includes('game')))}\n\n### Embodied Agents\n\n跨域论文在两个方向均显示，但数据中只有一个条目。会议年与论文集出版年不同时，以会议年展示，并在数据的 publicationNote 中注明。\n\n| Paper | Venue | Research focus | Sources |\n| --- | --- | --- | --- |\n${paperRows(selected.filter(r=>r.kinds.includes('papers')&&r.domains.includes('embodied')))}\n\n## Projects\n\n独立工具、框架与基础设施。论文配套代码随论文列出。\n\n| Project | Environment / role | Interface | Setup & limits | Official sources |\n| --- | --- | --- | --- | --- |\n${projectRows(selected.filter(r=>r.kinds.includes('projects')))}\n\n## Benchmarks\n\n同一基准若有正式论文，保留论文与环境两种视图。使用时需记录版本、动作空间、观测权限和任务子集。\n\n| Benchmark / environment | Environment / task | Interface | Evaluation boundary | Sources |\n| --- | --- | --- | --- | --- |\n${projectRows(selected.filter(r=>r.kinds.includes('benchmarks')))}\n\n## Candidates\n\n以下是知识库中的近一年线索，影响力或正式发表证据尚待充分核验，不计入精选。\n\n| Paper | Recorded year | Pending review | Source |\n| --- | --- | --- | --- |\n${candidates.map(r=>`| ${md(r.title)} | ${r.year} | ${md(r.selectionReason)} | ${links(r)} |`).join('\n')}\n\n## 来源与筛选记录\n\n本次论文总表读取 ${data.meta.sourceSnapshot.rows} 行，${data.meta.sourceSnapshot.emptyRows} 行无标题，合并 ${data.meta.sourceSnapshot.duplicateRows} 行重复，得到 ${data.meta.sourceSnapshot.uniqueTitledRows} 条独立有标题线索。未入选不代表质量判断；具体处理见 [筛选记录](data/selection-audit.json)。\n\n每个条目保留来源、核对日期、环境、接口、比较边界与收录依据；保留的知识库原核验声明不视作本次重新核验。原始导出位于被忽略的本地目录，不包含于发布内容。未同步修改原飞书知识库。\n\n## Website\n\n无需第三方前端依赖。Node.js 20+：\n\n\`\`\`sh\nnpm run build\nnpm run check\nnpm run dev\n\`\`\`\n\n打开终端打印的本地网址。网页支持领域、类型、主题、年份、关键词筛选，以及可分享的 URL 筛选状态。静态 HTML 自带完整精选列表，交互数据加载失败时仍可阅读。\n\n- 内容入口：\`data/resources.json\`。\n- 网站输出：\`dist/\`，可部署到任意静态托管。\n- 生成步骤会同步 README、静态页面和网站数据；不要直接修改生成的列表。\n- 网站通过 GitHub Pages 发布。仓库 Settings → Pages 中的发布来源选择 GitHub Actions。\n- 更新并推送到 \`main\` 后自动检查、构建和发布；也可在 Actions → Publish GitHub Pages 中手动运行。\n- 新部署状态可在仓库 Actions 查看；复制仓库时请同步修改 \`data/resources.json\` 中的网站和仓库地址。\n\n## License & attribution\n\n原始网站代码采用 [MIT](LICENSE)。引用论文、第三方代码、模型、数据和知识库内容保留各自权利。此索引不重新授权被引用作品。\n`;
-readme=readme.replace('## Website', `## Website\n\n[展示网站](${data.meta.siteUrl}) · [GitHub 项目](${data.meta.repositoryUrl})\n\n展示网站由 GitHub Pages 托管，网页公开访问。`);
-await fs.writeFile('README.md',readme);
-await fs.mkdir('dist/docs',{recursive:true});
-for(const f of ['README.md','CONTRIBUTING.md','LICENSE'])await fs.copyFile(f,'dist/'+f);
-await fs.copyFile('docs/collection-policy.md','dist/docs/collection-policy.md');
-await fs.copyFile('data/selection-audit.json','dist/selection-audit.json');
+import { renderCatalogue } from '../dist/assets/catalog.mjs';
+const data = JSON.parse(await fs.readFile('data/resources.json', 'utf8'));
+const selected = data.resources.filter(r => r.status === 'selected').sort((a, b) => a.rank - b.rank);
+const candidates = data.resources.filter(r => r.status === 'candidate');
+const count = kind => selected.filter(r => r.kinds.includes(kind)).length;
+data.meta.counts = Object.fromEntries(['articles', 'papers', 'projects', 'datasets', 'benchmarks', 'demos'].map(k => [k, count(k)]));
+await fs.writeFile('data/resources.json', JSON.stringify(data, null, 2) + '\n');
+await fs.copyFile('data/resources.json', 'dist/resources.json');
+let html = await fs.readFile('dist/index.html', 'utf8');
+html = html.replace(/(<!-- CATALOGUE:START -->)[\s\S]*?(<!-- CATALOGUE:END -->)/, () => `<!-- CATALOGUE:START -->${renderCatalogue(selected,'all',data.resources)}<!-- CATALOGUE:END -->`);
+for (const [id, value] of [['nav-total', selected.length], ['stat-total', selected.length], ['stat-papers', count('papers')], ['stat-projects', count('projects')], ['stat-benchmarks', count('benchmarks')], ['stat-articles', count('articles')], ['stat-datasets', count('datasets')], ['stat-demos', count('demos')]]) {
+  html = html.replace(new RegExp(`(id="${id}">)[^<]*`), `$1${value}`);
+}
+html = html.replace(/(<p id="result-count"[^>]*>)[\s\S]*?<\/p>/, `$1${selected.length} resources · all categories</p>`);
+const about = `<h2>About the collection</h2>
+<p>A research index connecting game agents and embodied intelligence. Game research starts from the supplied <a href="${data.meta.knowledgeUrl}" target="_blank" rel="noopener noreferrer">Game Agent knowledge base</a>; robotics and additional game resources come from official proceedings, research reports, and project repositories.</p>
+<p>The organization and website layout are inspired by <a href="${data.meta.referenceUrl}" target="_blank" rel="noopener noreferrer">Awesome Robot Use Agent</a>. This collection has its own scope, categories, and resource summaries.</p>
+<div class="notice"><b>Snapshot · ${data.meta.snapshotDate}</b><p>${selected.length} unique curated resources: ${count('articles')} articles, ${count('papers')} papers, ${count('projects')} standalone projects, ${count('datasets')} datasets, ${count('benchmarks')} benchmarks or environments, and ${count('demos')} video demonstrations. Dataset and benchmark papers appear in multiple views, so these counts overlap. ${candidates.length} candidates are listed separately.</p></div>
+<h3>Selection criteria</h3>
+<div class="table-wrap"><table><thead><tr><th>Track</th><th>Publication window</th><th>Selection basis</th></tr></thead><tbody>
+<tr><td>Leading conferences & journals</td><td>14 Sep 2021 – 14 Sep 2026</td><td>Relevant main-conference papers and journal articles with official publication records. Priority venues include NeurIPS, ICLR, ICML, CVPR, ICCV, ECCV, AAAI, IJCAI, RSS, CoRL, ICRA, IROS, Nature, Science, T-RO, IJRR, TPAMI, JMLR, and TMLR.</td></tr>
+<tr><td>Selected arXiv research</td><td>14 Sep 2025 – 14 Sep 2026</td><td>First submission date, with a specific editorial rationale and supporting sources. Evidence can include systematic evaluations, released models or environments, and substantial research reports. No citation ranking is claimed.</td></tr>
+<tr><td>Tools & environments</td><td>Reviewed for current research use</td><td>Standalone infrastructure is assessed by purpose, interface, and setup requirements. The paper publication window does not apply.</td></tr></tbody></table></div>
+<p>This venue list reflects the collection's subject-specific editorial policy, rather than a single official ranking. Workshops and unconfirmed submissions are distinguished from main-conference publications. See the <a href="docs/collection-policy.md">full collection policy</a>.</p>
+<h3>Sources and verification</h3>
+<p>The source table contained ${data.meta.sourceSnapshot.rows} rows. Removing ${data.meta.sourceSnapshot.emptyRows} untitled rows and merging ${data.meta.sourceSnapshot.duplicateRows} duplicates produced ${data.meta.sourceSnapshot.uniqueTitledRows} distinct titled leads. Historical counts on the knowledge-base homepage were not used for this snapshot.</p>
+<p>Checks primarily cover bibliographic records, project descriptions, and abstracts. Original knowledge-base review labels are retained as source claims, translated into English. They do not represent a fresh full-text review or independent experiment reproduction.</p>
+<p><a href="selection-audit.json" download>Selection audit ↓</a> · <a href="resources.json" download>Resource data ↓</a> · <a href="${data.meta.knowledgeUrl}" target="_blank" rel="noopener noreferrer">Source knowledge base ↗</a> (original access permissions apply)</p>
+<h3>Comparing game and embodied agents</h3>
+<div class="table-wrap"><table><thead><tr><th>Dimension</th><th>Game research</th><th>Embodied research</th></tr></thead><tbody>
+<tr><td>Environment & task</td><td>Game, map, mode, and task scope</td><td>Hardware, scene, objects, and manipulation tasks</td></tr>
+<tr><td>Observation access</td><td>Pixels, audio, text, or engine state</td><td>Images, depth, touch, and proprioception</td></tr>
+<tr><td>Action abstraction</td><td>Keyboard/mouse, program APIs, or skills</td><td>Joints, end-effector poses, or navigation/manipulation skills</td></tr>
+<tr><td>Data & learning</td><td>Player traces, online interaction, video pretraining</td><td>Demonstrations, teleoperation, simulation, real interaction</td></tr>
+<tr><td>Execution constraints</td><td>Decision latency, frame rate, paused execution</td><td>Control frequency, collisions, hardware limits</td></tr>
+<tr><td>Evaluation</td><td>Map splits, task metrics, samples, and seeds</td><td>Task success, generalization, and human intervention</td></tr></tbody></table></div>
+<p>Shared methods do not by themselves establish transfer between domains. Frame generation, game navigation, robot planning, and physical execution retain their respective evidence boundaries.</p>
+<h3>Video demonstrations</h3><p>The video gallery embeds original research-team videos, with source links, credits, and related work. Game control, generated frames, real robots, and simulation are labeled separately. Selected clips illustrate behavior; they do not replace benchmark evaluations. Videos load as you approach them and play only when requested. If an external host is unavailable, use the source link on the card.</p><h3>Maintenance and contributions</h3>
+<p>The README and website share the same catalogue. This is a manually curated snapshot. Additions should include official sources and satisfy the selection criteria. Read the <a href="CONTRIBUTING.md">contribution guide</a> or visit the <a href="${data.meta.repositoryUrl}" target="_blank" rel="noopener noreferrer">GitHub repository</a>.</p>`;
+html = html.replace(/(<section id="about" class="about-panel" hidden>)[\s\S]*?<\/section>/, `$1${about}</section>`);
+await fs.writeFile('dist/index.html', html);
+const md = s => String(s || '—').replace(/\|/g, '\\|').replace(/\n/g, ' ');
+const link = (url, text) => url ? `[${text}](${url})` : '';
+const links = r => Object.entries(r.links).map(([k, v]) => link(v, { paper: 'Paper', code: 'Code', project: 'Project', data: 'Data', article: 'Article', video: 'Video' }[k] || k)).join(' · ');
+const paperRows = items => items.map(r => `| **${link(r.links.paper, r.name)}**<br>${md(r.title)} | ${md(r.venue)} | ${md(r.summary)} | ${links(r)} |`).join('\n');
+const projectRows = items => items.map(r => `| **${r.name}** | ${md(r.environment)} | ${md(r.interface)} | ${md(r.limits)} | ${links(r)} |`).join('\n');
+const tick = String.fromCharCode(96);
+let readme = `# Awesome Game & Embodied Agents
+
+A curated collection of research on agents that perceive, plan, and act in games and the physical world.
+
+[**Explore the website ↗**](${data.meta.siteUrl}) · [Articles](#articles) · [Papers](#papers) · [Projects](#projects) · [Datasets](#datasets) · [Benchmarks](#benchmarks) · [Video demos](#video-demos) · [Contributing](CONTRIBUTING.md)
+
+**${count('articles')} articles · ${count('papers')} papers · ${count('projects')} projects · ${count('datasets')} datasets · ${count('benchmarks')} benchmarks · ${count('demos')} video demos**
+
+${candidates.length} candidate papers remain separate from the curated collection.
+
+Snapshot: **${data.meta.snapshotDate}**. There are **${selected.length} unique curated resources**. Dataset and benchmark papers appear in multiple views, so category counts overlap.
+
+Game agents operate in virtual environments through observations, game APIs, or keyboard and mouse actions. Embodied agents connect perception and planning to simulated or physical robot actions. This collection brings their methods together while documenting the interfaces and evaluation conditions that make comparisons meaningful.
+
+## Contents
+
+- [Getting started](#getting-started)
+- [Selection criteria](#selection-criteria)
+- [Articles](#articles)
+- [Papers](#papers)
+  - [Surveys](#surveys)
+  - [Game agents](#game-agents)
+  - [Embodied agents](#embodied-agents)
+- [Projects](#projects)
+- [Datasets](#datasets)
+- [Benchmarks](#benchmarks)
+- [Video demos](#video-demos)
+- [Candidates](#candidates)
+- [Sources and verification](#sources-and-verification)
+- [Website and maintenance](#website-and-maintenance)
+- [Acknowledgements](#acknowledgements)
+
+## Getting started
+
+- **Read:** Explore [game-agent papers](#game-agents) on world models, exploration, memory, and control, or [embodied-agent papers](#embodied-agents) on robot policies and planning.
+- **Build:** Find [open-source projects](#projects) for data collection, policy training, and environment interfaces.
+- **Evaluate:** Choose [benchmarks and environments](#benchmarks), then align observation access, action spaces, training budgets, and evaluation protocols.
+- **Contribute:** Follow the [contribution guide](CONTRIBUTING.md) to propose a resource with official sources and a clear inclusion rationale.
+
+## Selection criteria
+
+| Track | Window | Required evidence |
+| --- | --- | --- |
+| Leading conferences and journals | ${data.meta.paperWindow.from} – ${data.meta.paperWindow.to} | Relevant main-conference or journal publication, checked against an official record |
+| Important recent arXiv research | ${data.meta.arxivWindow.from} – ${data.meta.arxivWindow.to} | First submission date, explicit editorial rationale, and supporting research evidence |
+| Tools and environments | Reviewed for current research use | Official purpose, interfaces, and setup requirements; no paper-age cutoff |
+
+Priority venues include NeurIPS, ICLR, ICML, CVPR, ICCV, ECCV, AAAI, IJCAI, RSS, CoRL, ICRA, IROS, Nature, Science, T-RO, IJRR, TPAMI, JMLR, and TMLR. This is a subject-specific editorial policy, not a claim that every venue belongs to the same official tier.
+
+Unconfirmed work is listed as a candidate. Preprints are labeled separately from peer-reviewed papers. The collection does not claim exhaustive coverage, a citation ranking, or independent reproduction of the listed experiments. See the [full policy](docs/collection-policy.md).
+
+## Papers
+
+### Surveys
+
+| Survey | Venue | Research focus | Sources |
+| --- | --- | --- | --- |
+${paperRows(selected.filter(r => r.paperType === 'survey'))}
+
+### Game agents
+
+| Paper | Venue | Research focus | Sources |
+| --- | --- | --- | --- |
+${paperRows(selected.filter(r => r.kinds.includes('papers') && r.paperType === 'method' && r.domains.includes('game')))}
+
+### Embodied agents
+
+Cross-domain papers appear in both sections but have a single catalogue record. Where conference and proceedings years differ, the conference year is displayed and the distinction is recorded in ${tick}publicationNote${tick}.
+
+| Paper | Venue | Research focus | Sources |
+| --- | --- | --- | --- |
+${paperRows(selected.filter(r => r.kinds.includes('papers') && r.paperType === 'method' && r.domains.includes('embodied')))}
+
+### Dataset papers
+
+| Paper | Venue | Research focus | Sources |
+| --- | --- | --- | --- |
+${paperRows(selected.filter(r => r.paperType === 'dataset'))}
+
+### Benchmark papers
+
+| Paper | Venue | Research focus | Sources |
+| --- | --- | --- | --- |
+${paperRows(selected.filter(r => r.paperType === 'benchmark'))}
+
+## Projects
+
+Standalone tools, frameworks, and research infrastructure. Code accompanying a paper is linked from its paper entry.
+
+| Project | Environment / role | Interface | Setup and limitations | Official sources |
+| --- | --- | --- | --- | --- |
+${projectRows(selected.filter(r => r.kinds.includes('projects')))}
+
+## Benchmarks
+
+Benchmark papers share a record with their environment listing. Report the environment version, action space, observation access, and task subset when using them.
+
+| Benchmark / environment | Environment / task | Interface | Evaluation boundary | Sources |
+| --- | --- | --- | --- | --- |
+${projectRows(selected.filter(r => r.kinds.includes('benchmarks')))}
+
+## Candidates
+
+These recent leads from the knowledge base need further verification of publication or significance. They are excluded from curated counts.
+
+| Paper | Recorded year | Pending review | Source |
+| --- | --- | --- | --- |
+${candidates.map(r => `| ${md(r.title)} | ${r.year} | ${md(r.selectionReason)} | ${links(r)} |`).join('\n')}
+
+## Sources and verification
+
+The source table contained ${data.meta.sourceSnapshot.rows} rows: ${data.meta.sourceSnapshot.emptyRows} had no title and ${data.meta.sourceSnapshot.duplicateRows} were duplicates, leaving ${data.meta.sourceSnapshot.uniqueTitledRows} distinct titled leads. See the [selection audit](data/selection-audit.json) for their disposition. Exclusion from this snapshot is not a judgment of research quality.
+
+Entries retain sources, review dates, environments, interfaces, limitations, and inclusion rationales. Original knowledge-base review labels have been translated into English and retained as source claims; they do not mean that a fresh full-text review or independent reproduction was performed. The raw export remains in an ignored local directory and is excluded from the repository and website. The original knowledge base has not been modified.
+
+## Website and maintenance
+
+[**Live website**](${data.meta.siteUrl}) · [GitHub repository](${data.meta.repositoryUrl})
+
+The public website is hosted on GitHub Pages. It supports domain, resource type, topic, year, and keyword filters, with shareable URL state. The static HTML includes the complete curated list and remains readable if interactive data loading fails.
+
+No third-party frontend dependencies are required. With Node.js 20 or later:
+
+\`\`\`sh
+npm run build
+npm run check
+npm run dev
+\`\`\`
+
+Open the local URL printed by the server.
+
+- **Catalogue:** ${tick}data/resources.json${tick} is the source of truth. Keep summaries and labels in English.
+- **Website:** ${tick}dist/${tick} contains the static page and browser assets.
+- **Generated content:** The build synchronizes the README, resource list, website data, and supporting documents. Edit the catalogue and build script rather than generated resource rows.
+- **Publishing:** In repository Settings → Pages, select GitHub Actions. Pushes to ${tick}main${tick} check, build, and publish automatically. The **Publish GitHub Pages** workflow also supports manual runs.
+- **Forks:** Update ${tick}repositoryUrl${tick} and ${tick}siteUrl${tick} in the catalogue and the repository links in the page before publishing your own copy.
+
+This is a manually maintained snapshot; there is no scheduled paper scraper or automatic write-back to Feishu.
+
+## Acknowledgements
+
+The game research starts from the supplied [Game Agent knowledge base](${data.meta.knowledgeUrl}) (original access permissions apply). Additional game and embodied resources were collected from official sources. The resource organization and website layout are inspired by [Awesome Robot Use Agent](${data.meta.referenceUrl}) by [Kairun Wen](https://github.com/kairunwen).
+
+## License
+
+Original website code is released under the [MIT License](LICENSE). Papers, third-party code, models, datasets, and knowledge-base materials retain their respective rights. This index does not relicense referenced works.
+`;
+const articleSection = `## Articles
+
+Official author and research-team articles provide context and implementation guidance; they are not counted as peer-reviewed papers.
+
+| Article | Author / team | Date | Research focus |
+| --- | --- | --- | --- |
+${selected.filter(r => r.kinds.includes('articles')).map(r => `| ${link(r.links.article, md(r.title))} | ${md(r.credit)} | ${r.sourceDate || r.year} | ${md(r.summary)} |`).join('\n')}
+
+`;
+const datasetSection = `## Datasets
+
+These four datasets share records with their peer-reviewed papers. Follow the official data links for downloads, documentation, and license terms.
+
+| Dataset | Domain | Contents | Sources |
+| --- | --- | --- | --- |
+${selected.filter(r => r.kinds.includes('datasets')).map(r => `| **${r.name}** | ${r.domains.join(' / ')} | ${md(r.summary)} | ${links(r)} |`).join('\n')}
+
+`;
+const demoSection = `## Video demos
+
+[**Watch the playable video gallery**](${data.meta.siteUrl}#demos). Videos are embedded from original project hosts; no third-party video is copied into this repository. Games, generated worlds, real robots, and simulation have separate filters. The year identifies the source project release, not the exact recording date. Clips are qualitative author-reported evidence, not independently measured success rates.
+
+| Demo | Setting | Credit | Watch / source | Related work |
+| --- | --- | --- | --- | --- |
+${selected.filter(r => r.kinds.includes('demos')).map(r => `| **${md(r.name)}** | ${md(r.demoType)} | ${md(r.credit)} | ${links(r)} | ${(r.relatedIds || []).map(id => {const item=data.resources.find(x=>x.id===id);return link(item.links.paper || item.links.project || item.links.code, item.name);}).join(' · ')} |`).join('\n')}
+
+`;
+readme = readme.replace('## Papers\n', articleSection + '## Papers\n').replace('## Benchmarks\n', datasetSection + '## Benchmarks\n').replace('## Candidates\n', demoSection + '## Candidates\n');
+readme = readme.replace('## License\n', '## Citation\n\nIf this collection helps your work, cite the repository and the individual resources you use. A machine-readable [citation file](CITATION.cff) is included.\n\n## License\n');
+await fs.writeFile('README.md', readme);
+await fs.mkdir('dist/docs', { recursive: true });
+for (const f of ['README.md', 'CONTRIBUTING.md', 'LICENSE', 'CITATION.cff']) await fs.copyFile(f, 'dist/' + f);
+await fs.copyFile('docs/collection-policy.md', 'dist/docs/collection-policy.md');
+await fs.copyFile('data/selection-audit.json', 'dist/selection-audit.json');
 console.log(`Built ${selected.length} selected resources and ${candidates.length} candidates.`);

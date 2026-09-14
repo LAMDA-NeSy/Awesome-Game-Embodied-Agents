@@ -2,582 +2,582 @@
   {
     "title": "Counter-Strike Deathmatch with Large-Scale Behavioural Cloning",
     "source": "https://arxiv.org/abs/2104.04258",
-    "originalVenue": "IEEE Conference on Games (CoG) 2022，Best Paper Award",
-    "result": "暂不纳入精选",
-    "reason": "本轮精选未覆盖，或发表渠道、年限、主题相关性尚未满足已核对口径；并非论文质量评价"
+    "originalVenue": "IEEE Conference on Games (CoG) 2022, Best Paper Award",
+    "result": "Not included in this snapshot",
+    "reason": "Not covered by this snapshot, or the venue, date, or relevance does not yet satisfy the verified scope. This is not a judgment of research quality."
   },
   {
     "title": "Imitating Human Behaviour with Diffusion Models",
     "source": "https://arxiv.org/abs/2301.10677",
-    "originalVenue": "ICLR 2023，主会 Poster",
-    "result": "精选",
-    "reason": "正式发表记录与官方来源可核对"
+    "originalVenue": "ICLR 2023, main-conference poster",
+    "result": "Selected",
+    "reason": "Publication records and official sources are traceable."
   },
   {
     "title": "Learning to Move Like Professional Counter-Strike Players",
     "source": "https://onlinelibrary.wiley.com/doi/10.1111/cgf.15173",
-    "originalVenue": "Computer Graphics Forum 43(8), e15173；SCA 2024",
-    "result": "暂不纳入精选",
-    "reason": "本轮精选未覆盖，或发表渠道、年限、主题相关性尚未满足已核对口径；并非论文质量评价"
+    "originalVenue": "Computer Graphics Forum 43(8), e15173; SCA 2024",
+    "result": "Not included in this snapshot",
+    "reason": "Not covered by this snapshot, or the venue, date, or relevance does not yet satisfy the verified scope. This is not a judgment of research quality."
   },
   {
     "title": "Training Interactive Agent in Large FPS Game Map with Rule-enhanced Reinforcement Learning",
     "source": "https://ieeexplore.ieee.org/document/10645654/",
     "originalVenue": "IEEE Conference on Games (CoG) 2024",
-    "result": "暂不纳入精选",
-    "reason": "本轮精选未覆盖，或发表渠道、年限、主题相关性尚未满足已核对口径；并非论文质量评价"
+    "result": "Not included in this snapshot",
+    "reason": "Not covered by this snapshot, or the venue, date, or relevance does not yet satisfy the verified scope. This is not a judgment of research quality."
   },
   {
     "title": "Human-Like Bots for Tactical Shooters Using Compute-Efficient Sensors",
     "source": "https://ieeexplore.ieee.org/document/11104932/",
     "originalVenue": "IEEE Transactions on Games 17(4):1046–1059",
-    "result": "暂不纳入精选",
-    "reason": "本轮精选未覆盖，或发表渠道、年限、主题相关性尚未满足已核对口径；并非论文质量评价"
+    "result": "Not included in this snapshot",
+    "reason": "Not covered by this snapshot, or the venue, date, or relevance does not yet satisfy the verified scope. This is not a judgment of research quality."
   },
   {
     "title": "Will GPT-4 Run DOOM?",
     "source": "https://ieeexplore.ieee.org/document/10752360",
-    "originalVenue": "IEEE Transactions on Games 17(2):451–459（2024 Early Access）",
-    "result": "暂不纳入精选",
-    "reason": "本轮精选未覆盖，或发表渠道、年限、主题相关性尚未满足已核对口径；并非论文质量评价"
+    "originalVenue": "IEEE Transactions on Games 17(2):451–459 (2024 Early Access)",
+    "result": "Not included in this snapshot",
+    "reason": "Not covered by this snapshot, or the venue, date, or relevance does not yet satisfy the verified scope. This is not a judgment of research quality."
   },
   {
     "title": "F.A.C.U.L.: Language-Based Interaction with AI Companions in Gaming",
     "source": "https://ojs.aaai.org/index.php/AAAI/article/view/38842",
-    "originalVenue": "AAAI 2026，主会 Humans and AI，40(21):17841–17849",
-    "result": "精选",
-    "reason": "正式发表记录与官方来源可核对"
+    "originalVenue": "AAAI 2026, main conference, Humans and AI, 40(21):17841–17849",
+    "result": "Selected",
+    "reason": "Publication records and official sources are traceable."
   },
   {
     "title": "Towards Principled Representation Learning from Videos for Reinforcement Learning",
     "source": "https://proceedings.iclr.cc/paper_files/paper/2024/hash/eb60f103645fd14c94826665f8505a6d-Abstract-Conference.html",
-    "originalVenue": "ICLR 2024（Spotlight）",
-    "result": "精选",
-    "reason": "正式发表记录与官方来源可核对"
+    "originalVenue": "ICLR 2024 (Spotlight)",
+    "result": "Selected",
+    "reason": "Publication records and official sources are traceable."
   },
   {
     "title": "Catching Two Birds with One Stone: Reward Shaping with Dual Random Networks for Balancing Exploration and Exploitation",
     "source": "https://proceedings.mlr.press/v267/ma25j.html",
-    "originalVenue": "ICML 2025，PMLR 267:41975–41991",
-    "result": "精选",
-    "reason": "正式发表记录与官方来源可核对"
+    "originalVenue": "ICML 2025, PMLR 267:41975–41991",
+    "result": "Selected",
+    "reason": "Publication records and official sources are traceable."
   },
   {
     "title": "Action-Sufficient State Representation Learning for Control with Structural Constraints",
     "source": "https://proceedings.mlr.press/v162/huang22f.html",
-    "originalVenue": "ICML 2022，PMLR 162:9260–9279",
-    "result": "精选",
-    "reason": "正式发表记录与官方来源可核对"
+    "originalVenue": "ICML 2022, PMLR 162:9260–9279",
+    "result": "Selected",
+    "reason": "Publication records and official sources are traceable."
   },
   {
     "title": "Stabilizing Visual Reinforcement Learning via Asymmetric Interactive Cooperation",
     "source": "https://openaccess.thecvf.com/content/ICCV2023/html/Zhai_Stabilizing_Visual_Reinforcement_Learning_via_Asymmetric_Interactive_Cooperation_ICCV_2023_paper.html",
-    "originalVenue": "ICCV 2023，pp.207–216",
-    "result": "暂不纳入精选",
-    "reason": "本轮精选未覆盖，或发表渠道、年限、主题相关性尚未满足已核对口径；并非论文质量评价"
+    "originalVenue": "ICCV 2023, pp.207–216",
+    "result": "Not included in this snapshot",
+    "reason": "Not covered by this snapshot, or the venue, date, or relevance does not yet satisfy the verified scope. This is not a judgment of research quality."
   },
   {
     "title": "Learning Task-Independent Game State Representations from Unlabeled Images",
     "source": "https://ieee-cog.org/2022/assets/papers/paper_37.pdf",
-    "originalVenue": "IEEE Conference on Games（CoG）2022",
-    "result": "暂不纳入精选",
-    "reason": "本轮精选未覆盖，或发表渠道、年限、主题相关性尚未满足已核对口径；并非论文质量评价"
+    "originalVenue": "IEEE Conference on Games (CoG)2022",
+    "result": "Not included in this snapshot",
+    "reason": "Not covered by this snapshot, or the venue, date, or relevance does not yet satisfy the verified scope. This is not a judgment of research quality."
   },
   {
     "title": "UBG: An Unreal BattleGround Benchmark With Object-Aware Hierarchical Proximal Policy Optimization",
     "source": "https://ieeexplore.ieee.org/document/11007665/",
-    "originalVenue": "IEEE Transactions on Neural Networks and Learning Systems（TNNLS），36(9):17239–17252",
-    "result": "暂不纳入精选",
-    "reason": "本轮精选未覆盖，或发表渠道、年限、主题相关性尚未满足已核对口径；并非论文质量评价"
+    "originalVenue": "IEEE Transactions on Neural Networks and Learning Systems (TNNLS), 36(9):17239–17252",
+    "result": "Not included in this snapshot",
+    "reason": "Not covered by this snapshot, or the venue, date, or relevance does not yet satisfy the verified scope. This is not a judgment of research quality."
   },
   {
     "title": "Composing Reinforcement Learning Policies, with Formal Guarantees",
     "source": "https://www.ifaamas.org/Proceedings/aamas2025/pdfs/p574.pdf",
-    "originalVenue": "AAMAS 2025，Research Paper Track（AAAI Track）",
-    "result": "暂不纳入精选",
-    "reason": "本轮精选未覆盖，或发表渠道、年限、主题相关性尚未满足已核对口径；并非论文质量评价"
+    "originalVenue": "AAMAS 2025, Research Paper Track (AAAI Track)",
+    "result": "Not included in this snapshot",
+    "reason": "Not covered by this snapshot, or the venue, date, or relevance does not yet satisfy the verified scope. This is not a judgment of research quality."
   },
   {
     "title": "Hadamax Encoding: Elevating Performance in Model-Free Atari",
     "source": "https://proceedings.neurips.cc/paper_files/paper/2025/hash/df66483458ea3038bd0699e918a7b3ab-Abstract-Conference.html",
-    "originalVenue": "NeurIPS 2025，Main Conference Track",
-    "result": "暂不纳入精选",
-    "reason": "本轮精选未覆盖，或发表渠道、年限、主题相关性尚未满足已核对口径；并非论文质量评价"
+    "originalVenue": "NeurIPS 2025, Main Conference Track",
+    "result": "Not included in this snapshot",
+    "reason": "Not covered by this snapshot, or the venue, date, or relevance does not yet satisfy the verified scope. This is not a judgment of research quality."
   },
   {
     "title": "COOM: A Game Benchmark for Continual Reinforcement Learning",
     "source": "https://proceedings.neurips.cc/paper_files/paper/2023/hash/d61d9f4fe4357296cb658795fd7999f0-Abstract-Datasets_and_Benchmarks.html",
     "originalVenue": "NeurIPS 2023 Datasets and Benchmarks",
-    "result": "精选",
-    "reason": "正式发表记录与官方来源可核对"
+    "result": "Selected",
+    "reason": "Publication records and official sources are traceable."
   },
   {
     "title": "HASARD: A Benchmark for Vision-Based Safe Reinforcement Learning in Embodied Agents",
     "source": "https://proceedings.iclr.cc/paper_files/paper/2025/hash/5ab848771ff8c9c47aac4128e2ef9f4e-Abstract-Conference.html",
     "originalVenue": "ICLR 2025",
-    "result": "精选",
-    "reason": "正式发表记录与官方来源可核对"
+    "result": "Selected",
+    "reason": "Publication records and official sources are traceable."
   },
   {
     "title": "LevDoom: A Benchmark for Generalization on Level Difficulty in Reinforcement Learning",
     "source": "https://ieee-cog.org/2022/assets/papers/paper_30.pdf",
     "originalVenue": "IEEE Conference on Games (CoG) 2022",
-    "result": "暂不纳入精选",
-    "reason": "本轮精选未覆盖，或发表渠道、年限、主题相关性尚未满足已核对口径；并非论文质量评价"
+    "result": "Not included in this snapshot",
+    "reason": "Not covered by this snapshot, or the venue, date, or relevance does not yet satisfy the verified scope. This is not a judgment of research quality."
   },
   {
     "title": "Mastering diverse control tasks through world models",
     "source": "https://www.nature.com/articles/s41586-025-08744-2",
-    "originalVenue": "Nature 640:647–653（DreamerV3）",
-    "result": "精选",
-    "reason": "正式发表记录与官方来源可核对"
+    "originalVenue": "Nature 640:647–653 (DreamerV3)",
+    "result": "Selected",
+    "reason": "Publication records and official sources are traceable."
   },
   {
     "title": "Diffusion Models Are Real-Time Game Engines",
     "source": "https://proceedings.iclr.cc/paper_files/paper/2025/hash/b71ecea210f7159f31e46631fe5c838f-Abstract-Conference.html",
     "originalVenue": "ICLR 2025",
-    "result": "精选",
-    "reason": "正式发表记录与官方来源可核对"
+    "result": "Selected",
+    "reason": "Publication records and official sources are traceable."
   },
   {
     "title": "Diffusion for World Modeling: Visual Details Matter in Atari",
     "source": "https://proceedings.neurips.cc/paper_files/paper/2024/hash/6bdde0373d53d4a501249547084bed43-Abstract-Conference.html",
-    "originalVenue": "NeurIPS 2024（Spotlight）",
-    "result": "精选",
-    "reason": "正式发表记录与官方来源可核对"
+    "originalVenue": "NeurIPS 2024 (Spotlight)",
+    "result": "Selected",
+    "reason": "Publication records and official sources are traceable."
   },
   {
     "title": "StateSpaceDiffuser: Bringing Long Context to Diffusion World Models",
     "source": "https://proceedings.nips.cc/paper_files/paper/2025/hash/63943ee9fe347f3d95892cf87d9a42e6-Abstract-Conference.html",
     "originalVenue": "NeurIPS 2025",
-    "result": "精选",
-    "reason": "正式发表记录与官方来源可核对"
+    "result": "Selected",
+    "reason": "Publication records and official sources are traceable."
   },
   {
     "title": "BotScreen: Trust Everybody, but Cut the Aimbots Yourself",
     "source": "https://www.usenix.org/conference/usenixsecurity23/presentation/choi",
-    "originalVenue": "USENIX Security 2023（Distinguished Paper Award）",
-    "result": "暂不纳入精选",
-    "reason": "本轮精选未覆盖，或发表渠道、年限、主题相关性尚未满足已核对口径；并非论文质量评价"
+    "originalVenue": "USENIX Security 2023 (Distinguished Paper Award)",
+    "result": "Not included in this snapshot",
+    "reason": "Not covered by this snapshot, or the venue, date, or relevance does not yet satisfy the verified scope. This is not a judgment of research quality."
   },
   {
     "title": "Invisibility Cloak: Proactive Defense Against Visual Game Cheating",
     "source": "https://www.usenix.org/conference/usenixsecurity24/presentation/sun-chenxin",
     "originalVenue": "USENIX Security 2024",
-    "result": "暂不纳入精选",
-    "reason": "本轮精选未覆盖，或发表渠道、年限、主题相关性尚未满足已核对口径；并非论文质量评价"
+    "result": "Not included in this snapshot",
+    "reason": "Not covered by this snapshot, or the venue, date, or relevance does not yet satisfy the verified scope. This is not a judgment of research quality."
   },
   {
     "title": "GAN-Aimbots: Using Machine Learning for Cheating in First Person Shooters",
     "source": "https://doi.org/10.1109/TG.2022.3173450",
-    "originalVenue": "IEEE Transactions on Games 15(4):566–579, 2023（2022 Early Access）",
-    "result": "暂不纳入精选",
-    "reason": "本轮精选未覆盖，或发表渠道、年限、主题相关性尚未满足已核对口径；并非论文质量评价"
+    "originalVenue": "IEEE Transactions on Games 15(4):566–579, 2023 (2022 Early Access)",
+    "result": "Not included in this snapshot",
+    "reason": "Not covered by this snapshot, or the venue, date, or relevance does not yet satisfy the verified scope. This is not a judgment of research quality."
   },
   {
     "title": "EDELINE: Enhancing Memory in Diffusion-based World Models via Linear-Time Sequence Modeling",
     "source": "https://proceedings.neurips.cc/paper_files/paper/2025/hash/97c903fbf21a7d863af2015d8803ca8f-Abstract-Conference.html",
-    "originalVenue": "NeurIPS 2025（Spotlight）",
-    "result": "精选",
-    "reason": "正式发表记录与官方来源可核对"
+    "originalVenue": "NeurIPS 2025 (Spotlight)",
+    "result": "Selected",
+    "reason": "Publication records and official sources are traceable."
   },
   {
     "title": "XGuardian: Towards Generalized, Explainable and More Effective Server-side Anti-cheat in First-Person Shooter Games",
     "source": "https://www.usenix.org/conference/usenixsecurity26/presentation/zhang-jiayi",
     "originalVenue": "USENIX Security 2026",
-    "result": "暂不纳入精选",
-    "reason": "本轮精选未覆盖，或发表渠道、年限、主题相关性尚未满足已核对口径；并非论文质量评价"
+    "result": "Not included in this snapshot",
+    "reason": "Not covered by this snapshot, or the venue, date, or relevance does not yet satisfy the verified scope. This is not a judgment of research quality."
   },
   {
     "title": "Identify As A Human Does: A Pathfinder of Next-Generation Anti-Cheat Framework for First-Person Shooter Games",
     "source": "https://doi.org/10.1109/TIFS.2025.3635024",
     "originalVenue": "IEEE Transactions on Information Forensics and Security 2026, 21:240–255",
-    "result": "暂不纳入精选",
-    "reason": "本轮精选未覆盖，或发表渠道、年限、主题相关性尚未满足已核对口径；并非论文质量评价"
+    "result": "Not included in this snapshot",
+    "reason": "Not covered by this snapshot, or the venue, date, or relevance does not yet satisfy the verified scope. This is not a judgment of research quality."
   },
   {
     "title": "AMuCS: Affective multimodal Counter-Strike video game dataset",
     "source": "https://www.nature.com/articles/s41597-025-05596-3",
     "originalVenue": "Scientific Data 2025, 12:1325",
-    "result": "暂不纳入精选",
-    "reason": "本轮精选未覆盖，或发表渠道、年限、主题相关性尚未满足已核对口径；并非论文质量评价"
+    "result": "Not included in this snapshot",
+    "reason": "Not covered by this snapshot, or the venue, date, or relevance does not yet satisfy the verified scope. This is not a judgment of research quality."
   },
   {
     "title": "Sonic Doom: Enhanced Sound Design and Accessibility in a First-Person Shooter Game",
     "source": "https://researchportal.tuni.fi/en/publications/sonic-doom-enhanced-sound-design-and-accessibility-in-a-first-per/",
-    "originalVenue": "IEEE Conference on Games（CoG）2025",
-    "result": "暂不纳入精选",
-    "reason": "本轮精选未覆盖，或发表渠道、年限、主题相关性尚未满足已核对口径；并非论文质量评价"
+    "originalVenue": "IEEE Conference on Games (CoG)2025",
+    "result": "Not included in this snapshot",
+    "reason": "Not covered by this snapshot, or the venue, date, or relevance does not yet satisfy the verified scope. This is not a judgment of research quality."
   },
   {
     "title": "AntiCheatPT: A Transformer-Based Approach to Cheat Detection in Competitive Computer Games",
     "source": "https://doi.org/10.1109/CoG64752.2025.11114092",
-    "originalVenue": "IEEE Conference on Games（CoG）2025",
-    "result": "暂不纳入精选",
-    "reason": "本轮精选未覆盖，或发表渠道、年限、主题相关性尚未满足已核对口径；并非论文质量评价"
+    "originalVenue": "IEEE Conference on Games (CoG)2025",
+    "result": "Not included in this snapshot",
+    "reason": "Not covered by this snapshot, or the venue, date, or relevance does not yet satisfy the verified scope. This is not a judgment of research quality."
   },
   {
     "title": "GameSR: Real-Time Super-Resolution for Interactive Gaming",
     "source": "https://doi.org/10.1109/TG.2026.3710843",
-    "originalVenue": "IEEE Transactions on Games 2026（Accepted / In press）",
-    "result": "暂不纳入精选",
-    "reason": "本轮精选未覆盖，或发表渠道、年限、主题相关性尚未满足已核对口径；并非论文质量评价"
+    "originalVenue": "IEEE Transactions on Games 2026 (Accepted / In press)",
+    "result": "Not included in this snapshot",
+    "reason": "Not covered by this snapshot, or the venue, date, or relevance does not yet satisfy the verified scope. This is not a judgment of research quality."
   },
   {
     "title": "X-Ego: Acquiring Team-Level Tactical Situational Awareness via Cross-Egocentric Contrastive Video Representation Learning",
     "source": "https://arxiv.org/abs/2510.19150",
-    "originalVenue": "arXiv 2025（前沿补充；未核验正式接收）",
-    "result": "候选",
-    "reason": "近一年预印本线索；正式接收或影响力依据尚待充分核对"
+    "originalVenue": "arXiv 2025 (additional research lead; official acceptance unverified)",
+    "result": "Candidate",
+    "reason": "Recent preprint lead; official acceptance or evidence of significance needs further verification."
   },
   {
     "title": "Game-TARS: Pretrained Foundation Models for Scalable Generalist Multimodal Game Agents",
     "source": "https://arxiv.org/abs/2510.23691",
     "originalVenue": "arXiv:2510.23691",
-    "result": "候选",
-    "reason": "近一年预印本线索；正式接收或影响力依据尚待充分核对"
+    "result": "Candidate",
+    "reason": "Recent preprint lead; official acceptance or evidence of significance needs further verification."
   },
   {
     "title": "GameWAM: A World Action Model for Video Games",
     "source": "https://arxiv.org/abs/2608.26200",
     "originalVenue": "arXiv:2608.26200",
-    "result": "候选",
-    "reason": "近一年预印本线索；正式接收或影响力依据尚待充分核对"
+    "result": "Candidate",
+    "reason": "Recent preprint lead; official acceptance or evidence of significance needs further verification."
   },
   {
     "title": "Contextual Similarity Distillation: Ensemble Uncertainties with a Single Model",
     "source": "https://iclr.cc/virtual/2026/poster/10008663",
     "originalVenue": "ICLR 2026 Main Conference",
-    "result": "精选",
-    "reason": "正式发表记录与官方来源可核对"
+    "result": "Selected",
+    "reason": "Publication records and official sources are traceable."
   },
   {
     "title": "Recurrent Action Transformer with Memory",
     "source": "https://iclr.cc/virtual/2026/poster/10007816",
     "originalVenue": "ICLR 2026 Main Conference",
-    "result": "精选",
-    "reason": "正式发表记录与官方来源可核对"
+    "result": "Selected",
+    "reason": "Publication records and official sources are traceable."
   },
   {
     "title": "See, Symbolize, Act: Grounding VLMs with Spatial Representations for Better Gameplay",
     "source": "https://arxiv.org/abs/2603.11601",
-    "originalVenue": "arXiv 2026；AAAI 2026 LMReasoning Bridge（非 AAAI 主会）",
-    "result": "候选",
-    "reason": "近一年预印本线索；正式接收或影响力依据尚待充分核对"
+    "originalVenue": "arXiv 2026; AAAI 2026 LMReasoning Bridge (not the AAAI main conference)",
+    "result": "Candidate",
+    "reason": "Recent preprint lead; official acceptance or evidence of significance needs further verification."
   },
   {
     "title": "Playing DOOM with 1.3M Parameters: Specialized Small Models vs Large Language Models for Real-Time Game Control",
     "source": "https://arxiv.org/abs/2604.07385",
     "originalVenue": "arXiv 2026",
-    "result": "候选",
-    "reason": "近一年预印本线索；正式接收或影响力依据尚待充分核对"
+    "result": "Candidate",
+    "reason": "Recent preprint lead; official acceptance or evidence of significance needs further verification."
   },
   {
     "title": "Augmenting Human Performance with an XR Agent Learning from Online Behavior and BCI Evidence",
     "source": "https://arxiv.org/abs/2608.30369",
-    "originalVenue": "arXiv 2026；作者注明 ACM UIST 2026 已录用待刊",
-    "result": "候选",
-    "reason": "近一年预印本线索；正式接收或影响力依据尚待充分核对"
+    "originalVenue": "arXiv 2026; author reports acceptance at ACM UIST 2026, forthcoming",
+    "result": "Candidate",
+    "reason": "Recent preprint lead; official acceptance or evidence of significance needs further verification."
   },
   {
     "title": "Procedural Generation of First Person Shooter Maps using Map-Elites",
     "source": "https://arxiv.org/abs/2605.30570",
     "originalVenue": "arXiv 2026",
-    "result": "候选",
-    "reason": "近一年预印本线索；正式接收或影响力依据尚待充分核对"
+    "result": "Candidate",
+    "reason": "Recent preprint lead; official acceptance or evidence of significance needs further verification."
   },
   {
     "title": "Account Consistency from Gameplay Traces: Same-Player Verification in Counter-Strike 2",
     "source": "https://arxiv.org/abs/2608.24893",
     "originalVenue": "arXiv 2026",
-    "result": "候选",
-    "reason": "近一年预印本线索；正式接收或影响力依据尚待充分核对"
+    "result": "Candidate",
+    "reason": "Recent preprint lead; official acceptance or evidence of significance needs further verification."
   },
   {
     "title": "Why the Agent Made that Decision: Contrastive Explanation Learning for Reinforcement Learning",
     "source": "https://www.ijcai.org/proceedings/2025/74",
     "originalVenue": "IJCAI 2025",
-    "result": "精选",
-    "reason": "正式发表记录与官方来源可核对"
+    "result": "Selected",
+    "reason": "Publication records and official sources are traceable."
   },
   {
     "title": "Enhancing Robot Program Synthesis Through Environmental Context",
     "source": "https://proceedings.neurips.cc/paper_files/paper/2023/hash/0c1e94af650f5c74b1f3da467c2308c2-Abstract-Conference.html",
     "originalVenue": "NeurIPS 2023",
-    "result": "精选",
-    "reason": "正式发表记录与官方来源可核对"
+    "result": "Selected",
+    "reason": "Publication records and official sources are traceable."
   },
   {
     "title": "Just Cluster It: An Approach for Exploration in High-Dimensions using Clustering and Pre-Trained Representations",
     "source": "https://proceedings.mlr.press/v235/wagner24a.html",
     "originalVenue": "ICML 2024",
-    "result": "精选",
-    "reason": "正式发表记录与官方来源可核对"
+    "result": "Selected",
+    "reason": "Publication records and official sources are traceable."
   },
   {
     "title": "Exploration via Elliptical Episodic Bonuses",
     "source": "https://proceedings.neurips.cc/paper_files/paper/2022/hash/f4f79698d48bdc1a6dec20583724182b-Abstract-Conference.html",
     "originalVenue": "NeurIPS 2022",
-    "result": "精选",
-    "reason": "正式发表记录与官方来源可核对"
+    "result": "Selected",
+    "reason": "Publication records and official sources are traceable."
   },
   {
     "title": "Successor Feature Landmarks for Long-Horizon Goal-Conditioned Reinforcement Learning",
     "source": "https://proceedings.neurips.cc/paper_files/paper/2021/hash/e27c71957d1e6c223e0d48a165da2ee1-Abstract.html",
     "originalVenue": "NeurIPS 2021",
-    "result": "精选",
-    "reason": "正式发表记录与官方来源可核对"
+    "result": "Selected",
+    "reason": "Publication records and official sources are traceable."
   },
   {
     "title": "Handling Long and Richly Constrained Tasks through Constrained Hierarchical Reinforcement Learning",
     "source": "https://ojs.aaai.org/index.php/AAAI/article/view/30132",
     "originalVenue": "AAAI 2024 — Safe, Robust and Responsible AI Track",
-    "result": "精选",
-    "reason": "正式发表记录与官方来源可核对"
+    "result": "Selected",
+    "reason": "Publication records and official sources are traceable."
   },
   {
     "title": "NeuralField-LDM: Scene Generation with Hierarchical Latent Diffusion Models",
     "source": "https://openaccess.thecvf.com/content/CVPR2023/html/Kim_NeuralField-LDM_Scene_Generation_With_Hierarchical_Latent_Diffusion_Models_CVPR_2023_paper.html",
     "originalVenue": "CVPR 2023",
-    "result": "暂不纳入精选",
-    "reason": "本轮精选未覆盖，或发表渠道、年限、主题相关性尚未满足已核对口径；并非论文质量评价"
+    "result": "Not included in this snapshot",
+    "reason": "Not covered by this snapshot, or the venue, date, or relevance does not yet satisfy the verified scope. This is not a judgment of research quality."
   },
   {
     "title": "Diverse Projection Ensembles for Distributional Reinforcement Learning",
     "source": "https://proceedings.iclr.cc/paper_files/paper/2024/hash/cfea00ddf5a5f514bd3368d639d1933d-Abstract-Conference.html",
     "originalVenue": "ICLR 2024",
-    "result": "精选",
-    "reason": "正式发表记录与官方来源可核对"
+    "result": "Selected",
+    "reason": "Publication records and official sources are traceable."
   },
   {
     "title": "A Mixture of Surprises for Unsupervised Reinforcement Learning",
     "source": "https://proceedings.neurips.cc/paper_files/paper/2022/hash/a7667ee5d545a43d2f0fda98863c260e-Abstract-Conference.html",
     "originalVenue": "NeurIPS 2022",
-    "result": "精选",
-    "reason": "正式发表记录与官方来源可核对"
+    "result": "Selected",
+    "reason": "Publication records and official sources are traceable."
   },
   {
     "title": "GAUDI: A Neural Architect for Immersive 3D Scene Generation",
     "source": "https://proceedings.neurips.cc/paper_files/paper/2022/hash/a03037317560b8c5f2fb4b6466d4c439-Abstract-Conference.html",
     "originalVenue": "NeurIPS 2022",
-    "result": "暂不纳入精选",
-    "reason": "本轮精选未覆盖，或发表渠道、年限、主题相关性尚未满足已核对口径；并非论文质量评价"
+    "result": "Not included in this snapshot",
+    "reason": "Not covered by this snapshot, or the venue, date, or relevance does not yet satisfy the verified scope. This is not a judgment of research quality."
   },
   {
     "title": "Unconstrained Scene Generation with Locally Conditioned Radiance Fields",
     "source": "https://openaccess.thecvf.com/content/ICCV2021/html/DeVries_Unconstrained_Scene_Generation_With_Locally_Conditioned_Radiance_Fields_ICCV_2021_paper.html",
     "originalVenue": "ICCV 2021",
-    "result": "暂不纳入精选",
-    "reason": "本轮精选未覆盖，或发表渠道、年限、主题相关性尚未满足已核对口径；并非论文质量评价"
+    "result": "Not included in this snapshot",
+    "reason": "Not covered by this snapshot, or the venue, date, or relevance does not yet satisfy the verified scope. This is not a judgment of research quality."
   },
   {
     "title": "SoK: Another Arms Race – 20 Years of (Anti-)Cheating in Video Games",
     "source": "https://www.usenix.org/conference/usenixsecurity26/presentation/klostermeyer",
     "originalVenue": "USENIX Security 2026",
-    "result": "暂不纳入精选",
-    "reason": "本轮精选未覆盖，或发表渠道、年限、主题相关性尚未满足已核对口径；并非论文质量评价"
+    "result": "Not included in this snapshot",
+    "reason": "Not covered by this snapshot, or the venue, date, or relevance does not yet satisfy the verified scope. This is not a judgment of research quality."
   },
   {
     "title": "Modeling visually-guided aim-and-shoot behavior in first-person shooters",
     "source": "https://doi.org/10.1016/j.ijhcs.2025.103503",
     "originalVenue": "International Journal of Human-Computer Studies",
-    "result": "暂不纳入精选",
-    "reason": "本轮精选未覆盖，或发表渠道、年限、主题相关性尚未满足已核对口径；并非论文质量评价"
+    "result": "Not included in this snapshot",
+    "reason": "Not covered by this snapshot, or the venue, date, or relevance does not yet satisfy the verified scope. This is not a judgment of research quality."
   },
   {
     "title": "AdvMap: Crafting Adversarial Maps to Counter AI Aimbot in First-Person Shooter Games",
     "source": "https://doi.org/10.1109/TG.2025.3537824",
     "originalVenue": "IEEE Transactions on Games 17(3):753–764",
-    "result": "暂不纳入精选",
-    "reason": "本轮精选未覆盖，或发表渠道、年限、主题相关性尚未满足已核对口径；并非论文质量评价"
+    "result": "Not included in this snapshot",
+    "reason": "Not covered by this snapshot, or the venue, date, or relevance does not yet satisfy the verified scope. This is not a judgment of research quality."
   },
   {
     "title": "The Fittest Wins: A Multistage Framework Achieving New SOTA in ViZDoom Competition",
     "source": "https://doi.org/10.1109/TG.2023.3259724",
     "originalVenue": "IEEE Transactions on Games 16(1):225–234",
-    "result": "暂不纳入精选",
-    "reason": "本轮精选未覆盖，或发表渠道、年限、主题相关性尚未满足已核对口径；并非论文质量评价"
+    "result": "Not included in this snapshot",
+    "reason": "Not covered by this snapshot, or the venue, date, or relevance does not yet satisfy the verified scope. This is not a judgment of research quality."
   },
   {
     "title": "BEDD: The MineRL BASALT Evaluation and Demonstrations Dataset for Training and Benchmarking Agents that Solve Fuzzy Tasks",
     "source": "https://proceedings.neurips.cc/paper_files/paper/2023/hash/67a6726dcd555b982cabb3446ffac01d-Abstract.html",
     "originalVenue": "NeurIPS 2023 Datasets and Benchmarks Track",
-    "result": "暂不纳入精选",
-    "reason": "本轮精选未覆盖，或发表渠道、年限、主题相关性尚未满足已核对口径；并非论文质量评价"
+    "result": "Not included in this snapshot",
+    "reason": "Not covered by this snapshot, or the venue, date, or relevance does not yet satisfy the verified scope. This is not a judgment of research quality."
   },
   {
     "title": "Skill Reinforcement Learning and Planning for Open-World Long-Horizon Tasks",
     "source": "https://neurips.cc/virtual/2023/82756",
     "originalVenue": "Foundation Models for Decision Making Workshop at NeurIPS 2023",
-    "result": "暂不纳入精选",
-    "reason": "本轮精选未覆盖，或发表渠道、年限、主题相关性尚未满足已核对口径；并非论文质量评价"
+    "result": "Not included in this snapshot",
+    "reason": "Not covered by this snapshot, or the venue, date, or relevance does not yet satisfy the verified scope. This is not a judgment of research quality."
   },
   {
     "title": "Ghost in the Minecraft: Generally Capable Agents for Open-World Environments via Large Language Models with Text-based Knowledge and Memory",
     "source": "https://arxiv.org/abs/2305.17144",
     "originalVenue": "arXiv:2305.17144",
-    "result": "暂不纳入精选",
-    "reason": "本轮精选未覆盖，或发表渠道、年限、主题相关性尚未满足已核对口径；并非论文质量评价"
+    "result": "Not included in this snapshot",
+    "reason": "Not covered by this snapshot, or the venue, date, or relevance does not yet satisfy the verified scope. This is not a judgment of research quality."
   },
   {
     "title": "Experience Transfer for Multimodal LLM Agents in Minecraft Game",
     "source": "https://arxiv.org/abs/2604.05533",
     "originalVenue": "arXiv (Cornell University)",
-    "result": "暂不纳入精选",
-    "reason": "本轮精选未覆盖，或发表渠道、年限、主题相关性尚未满足已核对口径；并非论文质量评价"
+    "result": "Not included in this snapshot",
+    "reason": "Not covered by this snapshot, or the venue, date, or relevance does not yet satisfy the verified scope. This is not a judgment of research quality."
   },
   {
     "title": "JARVIS-1: Open-World Multi-task Agents with Memory-Augmented Multimodal Language Models",
     "source": "http://arxiv.org/abs/2311.05997",
     "originalVenue": "arXiv (Cornell University)",
-    "result": "暂不纳入精选",
-    "reason": "本轮精选未覆盖，或发表渠道、年限、主题相关性尚未满足已核对口径；并非论文质量评价"
+    "result": "Not included in this snapshot",
+    "reason": "Not covered by this snapshot, or the venue, date, or relevance does not yet satisfy the verified scope. This is not a judgment of research quality."
   },
   {
     "title": "Voyager: An Open-Ended Embodied Agent with Large Language Models",
     "source": "http://arxiv.org/abs/2305.16291",
     "originalVenue": "arXiv (Cornell University)",
-    "result": "精选",
-    "reason": "正式发表记录与官方来源可核对"
+    "result": "Selected",
+    "reason": "Publication records and official sources are traceable."
   },
   {
     "title": "AutoMem: Automated Learning of Memory as a Cognitive Skill",
     "source": "https://doi.org/10.48550/arxiv.2607.01224",
     "originalVenue": "arXiv (Cornell University)",
-    "result": "暂不纳入精选",
-    "reason": "本轮精选未覆盖，或发表渠道、年限、主题相关性尚未满足已核对口径；并非论文质量评价"
+    "result": "Not included in this snapshot",
+    "reason": "Not covered by this snapshot, or the venue, date, or relevance does not yet satisfy the verified scope. This is not a judgment of research quality."
   },
   {
     "title": "Optimus-1: Hybrid Multimodal Memory Empowered Agents Excel in Long-Horizon Tasks",
     "source": "http://arxiv.org/abs/2408.03615",
     "originalVenue": "arXiv (Cornell University)",
-    "result": "暂不纳入精选",
-    "reason": "本轮精选未覆盖，或发表渠道、年限、主题相关性尚未满足已核对口径；并非论文质量评价"
+    "result": "Not included in this snapshot",
+    "reason": "Not covered by this snapshot, or the venue, date, or relevance does not yet satisfy the verified scope. This is not a judgment of research quality."
   },
   {
     "title": "Compositional Machine Design as Program Synthesis with LLMs",
     "source": "https://arxiv.org/abs/2510.14980",
     "originalVenue": "arXiv (Cornell University)",
-    "result": "暂不纳入精选",
-    "reason": "本轮精选未覆盖，或发表渠道、年限、主题相关性尚未满足已核对口径；并非论文质量评价"
+    "result": "Not included in this snapshot",
+    "reason": "Not covered by this snapshot, or the venue, date, or relevance does not yet satisfy the verified scope. This is not a judgment of research quality."
   },
   {
     "title": "BuildArena: A Physics-Aligned Interactive Benchmark of LLMs for Engineering Construction",
     "source": "https://arxiv.org/abs/2510.16559",
     "originalVenue": "arXiv (Cornell University)",
-    "result": "暂不纳入精选",
-    "reason": "本轮精选未覆盖，或发表渠道、年限、主题相关性尚未满足已核对口径；并非论文质量评价"
+    "result": "Not included in this snapshot",
+    "reason": "Not covered by this snapshot, or the venue, date, or relevance does not yet satisfy the verified scope. This is not a judgment of research quality."
   },
   {
     "title": "Do Embodied Agents Dream of Pixelated Sheep: Embodied Decision Making using Language Guided World Modelling",
     "source": "http://arxiv.org/abs/2301.12050",
     "originalVenue": "arXiv (Cornell University)",
-    "result": "暂不纳入精选",
-    "reason": "本轮精选未覆盖，或发表渠道、年限、主题相关性尚未满足已核对口径；并非论文质量评价"
+    "result": "Not included in this snapshot",
+    "reason": "Not covered by this snapshot, or the venue, date, or relevance does not yet satisfy the verified scope. This is not a judgment of research quality."
   },
   {
     "title": "Describe, Explain, Plan and Select: Interactive Planning with Large Language Models Enables Open-World Multi-Task Agents",
     "source": "http://arxiv.org/abs/2302.01560",
     "originalVenue": "arXiv (Cornell University)",
-    "result": "暂不纳入精选",
-    "reason": "本轮精选未覆盖，或发表渠道、年限、主题相关性尚未满足已核对口径；并非论文质量评价"
+    "result": "Not included in this snapshot",
+    "reason": "Not covered by this snapshot, or the venue, date, or relevance does not yet satisfy the verified scope. This is not a judgment of research quality."
   },
   {
     "title": "Cradle: Empowering Foundation Agents Towards General Computer Control",
     "source": "http://arxiv.org/abs/2403.03186",
     "originalVenue": "arXiv (Cornell University)",
-    "result": "暂不纳入精选",
-    "reason": "本轮精选未覆盖，或发表渠道、年限、主题相关性尚未满足已核对口径；并非论文质量评价"
+    "result": "Not included in this snapshot",
+    "reason": "Not covered by this snapshot, or the venue, date, or relevance does not yet satisfy the verified scope. This is not a judgment of research quality."
   },
   {
     "title": "MP5: A Multi-modal Open-ended Embodied System in Minecraft via Active Perception",
     "source": "https://doi.org/10.1109/CVPR52733.2024.01543",
     "originalVenue": "Computer Vision and Pattern Recognition",
-    "result": "精选",
-    "reason": "正式发表记录与官方来源可核对"
+    "result": "Selected",
+    "reason": "Publication records and official sources are traceable."
   },
   {
     "title": "A Survey on Large Language Model-Based Game Agents",
     "source": "https://arxiv.org/abs/2404.02039",
     "originalVenue": "ACM Computing Surveys (CSUR), 2026",
-    "result": "暂不纳入精选",
-    "reason": "本轮精选未覆盖，或发表渠道、年限、主题相关性尚未满足已核对口径；并非论文质量评价"
+    "result": "Not included in this snapshot",
+    "reason": "Not covered by this snapshot, or the venue, date, or relevance does not yet satisfy the verified scope. This is not a judgment of research quality."
   },
   {
     "title": "Large Language Models and Games: A Survey and Roadmap",
     "source": "https://doi.org/10.1109/TG.2024.3461510",
     "originalVenue": "IEEE Transactions on Games, 2024",
-    "result": "暂不纳入精选",
-    "reason": "本轮精选未覆盖，或发表渠道、年限、主题相关性尚未满足已核对口径；并非论文质量评价"
+    "result": "Not included in this snapshot",
+    "reason": "Not covered by this snapshot, or the venue, date, or relevance does not yet satisfy the verified scope. This is not a judgment of research quality."
   },
   {
     "title": "Games for Artificial Intelligence Research: A Review and Perspectives",
     "source": "https://doi.org/10.1109/TAI.2024.3410935",
     "originalVenue": "IEEE Transactions on Artificial Intelligence, 5(12): 5949–5968, 2024",
-    "result": "暂不纳入精选",
-    "reason": "本轮精选未覆盖，或发表渠道、年限、主题相关性尚未满足已核对口径；并非论文质量评价"
+    "result": "Not included in this snapshot",
+    "reason": "Not covered by this snapshot, or the venue, date, or relevance does not yet satisfy the verified scope. This is not a judgment of research quality."
   },
   {
     "title": "Intelligent games meeting with multi-agent deep reinforcement learning: a comprehensive review",
     "source": "https://doi.org/10.1007/s10462-025-11166-1",
     "originalVenue": "Artificial Intelligence Review, 58(6), Article 165, 2025",
-    "result": "暂不纳入精选",
-    "reason": "本轮精选未覆盖，或发表渠道、年限、主题相关性尚未满足已核对口径；并非论文质量评价"
+    "result": "Not included in this snapshot",
+    "reason": "Not covered by this snapshot, or the venue, date, or relevance does not yet satisfy the verified scope. This is not a judgment of research quality."
   },
   {
     "title": "Reinforcement Learning Applied to AI Bots in First-Person Shooters: A Systematic Review",
     "source": "https://doi.org/10.3390/a16070323",
     "originalVenue": "Algorithms, 16(7), 323, 2023",
-    "result": "暂不纳入精选",
-    "reason": "本轮精选未覆盖，或发表渠道、年限、主题相关性尚未满足已核对口径；并非论文质量评价"
+    "result": "Not included in this snapshot",
+    "reason": "Not covered by this snapshot, or the venue, date, or relevance does not yet satisfy the verified scope. This is not a judgment of research quality."
   },
   {
     "title": "Towards Generalist Game Players: An Investigation of Foundation Models in the Game Multiverse",
     "source": "https://arxiv.org/abs/2605.09965",
     "originalVenue": "arXiv, 2026",
-    "result": "暂不纳入精选",
-    "reason": "本轮精选未覆盖，或发表渠道、年限、主题相关性尚未满足已核对口径；并非论文质量评价"
+    "result": "Not included in this snapshot",
+    "reason": "Not covered by this snapshot, or the venue, date, or relevance does not yet satisfy the verified scope. This is not a judgment of research quality."
   },
   {
     "title": "A Survey of Text Games for Reinforcement Learning Informed by Natural Language",
     "source": "https://doi.org/10.1162/tacl_a_00495",
     "originalVenue": "Transactions of the Association for Computational Linguistics, 10: 873–887, 2022",
-    "result": "暂不纳入精选",
-    "reason": "本轮精选未覆盖，或发表渠道、年限、主题相关性尚未满足已核对口径；并非论文质量评价"
+    "result": "Not included in this snapshot",
+    "reason": "Not covered by this snapshot, or the venue, date, or relevance does not yet satisfy the verified scope. This is not a judgment of research quality."
   },
   {
     "title": "A Survey on Large Language Model-Based Social Agents in Game-Theoretic Scenarios",
     "source": "https://openreview.net/forum?id=CsoSWpR5xC",
     "originalVenue": "Transactions on Machine Learning Research (TMLR), 2025",
-    "result": "暂不纳入精选",
-    "reason": "本轮精选未覆盖，或发表渠道、年限、主题相关性尚未满足已核对口径；并非论文质量评价"
+    "result": "Not included in this snapshot",
+    "reason": "Not covered by this snapshot, or the venue, date, or relevance does not yet satisfy the verified scope. This is not a judgment of research quality."
   },
   {
     "title": "The Many Challenges of Human-Like Agents in Virtual Game Environments",
     "source": "https://arxiv.org/abs/2505.20011",
     "originalVenue": "AAMAS 2025: 1996–2005",
-    "result": "暂不纳入精选",
-    "reason": "本轮精选未覆盖，或发表渠道、年限、主题相关性尚未满足已核对口径；并非论文质量评价"
+    "result": "Not included in this snapshot",
+    "reason": "Not covered by this snapshot, or the venue, date, or relevance does not yet satisfy the verified scope. This is not a judgment of research quality."
   },
   {
     "title": "Multiagent Deep Reinforcement Learning Algorithms in StarCraft II: A Review",
     "source": "https://doi.org/10.1109/ACCESS.2024.3497322",
     "originalVenue": "IEEE Access, 12: 167452–167470, 2024",
-    "result": "暂不纳入精选",
-    "reason": "本轮精选未覆盖，或发表渠道、年限、主题相关性尚未满足已核对口径；并非论文质量评价"
+    "result": "Not included in this snapshot",
+    "reason": "Not covered by this snapshot, or the venue, date, or relevance does not yet satisfy the verified scope. This is not a judgment of research quality."
   },
   {
     "title": "A Survey on Game Playing Agents and Large Models: Methods, Applications, and Challenges",
     "source": "https://arxiv.org/abs/2403.10249",
     "originalVenue": "arXiv, 2024",
-    "result": "暂不纳入精选",
-    "reason": "本轮精选未覆盖，或发表渠道、年限、主题相关性尚未满足已核对口径；并非论文质量评价"
+    "result": "Not included in this snapshot",
+    "reason": "Not covered by this snapshot, or the venue, date, or relevance does not yet satisfy the verified scope. This is not a judgment of research quality."
   },
   {
     "title": "A Comprehensive Review of Multi-Agent Reinforcement Learning in Video Games",
     "source": "https://doi.org/10.1109/TG.2025.3588809",
     "originalVenue": "IEEE Transactions on Games, 2025",
-    "result": "暂不纳入精选",
-    "reason": "本轮精选未覆盖，或发表渠道、年限、主题相关性尚未满足已核对口径；并非论文质量评价"
+    "result": "Not included in this snapshot",
+    "reason": "Not covered by this snapshot, or the venue, date, or relevance does not yet satisfy the verified scope. This is not a judgment of research quality."
   }
 ]

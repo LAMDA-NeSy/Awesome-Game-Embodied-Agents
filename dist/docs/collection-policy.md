@@ -1,33 +1,44 @@
-# 收录标准
+# Collection policy
 
-当前快照：2026-09-14。时间窗口按此次整理日期固定，后续更新时滚动重审。
+Snapshot: **2026-09-14**. Publication windows are fixed for this edition and should be reviewed when the catalogue is updated.
 
-## 精选论文
+## Curated papers
 
-- 正式发表：2021-09-14 至 2026-09-14 的相关顶会、顶刊论文。
-- 本版优先覆盖 NeurIPS（含 Datasets & Benchmarks 正式轨）、ICLR、ICML、CVPR、ICCV、ECCV、AAAI、IJCAI，以及机器人领域的 RSS、CoRL、ICRA、IROS；期刊优先 Nature、Science、T-RO、IJRR、TPAMI、JMLR、TMLR 等。此清单是本项目的领域选刊口径，不声称这些 venue 属于同一个官方等级。
-- Workshop、Bridge、投稿中和作者自行宣称录用不能自动作为主会论文收录。须以会议论文集、出版社或官方接收记录为准。
-- 会议召开年份与论文集出版年份不同时分别注明。2021 年论文必须核对具体时间处于窗口内。本版唯一 2021 年条目属于 2021 年 12 月的 NeurIPS。
-- 论文需要直接涉及游戏或具身智能体的感知、决策、动作、规划、学习、协作或评测。纯画面生成作为支撑研究时须明确其作用，不能写成控制能力。
+- Include relevant leading-conference and journal papers published from **2021-09-14 through 2026-09-14**.
+- Priority venues include NeurIPS (including the formal Datasets and Benchmarks track), ICLR, ICML, CVPR, ICCV, ECCV, AAAI, IJCAI, RSS, CoRL, ICRA, and IROS; journals include Nature, Science, T-RO, IJRR, TPAMI, JMLR, and TMLR. This is a subject-specific selection policy, not a single official venue ranking.
+- Workshops, Bridges, submissions, and author-only acceptance claims do not automatically qualify as main-conference publications. Use official proceedings, publisher records, or official acceptance lists.
+- Distinguish conference years from proceedings publication years. Papers from 2021 need a precise date within the window; the original 2021 entry is from NeurIPS in December.
+- Research should directly concern agent perception, decision-making, actions, planning, learning, cooperation, or evaluation. Describe frame generation as supporting research rather than control capability.
+- Group surveys, methods/frameworks, dataset papers, and benchmark papers by contribution. Multiple views may share the same record.
 
-## 近一年重要 arXiv
+## Important recent arXiv research
 
-- 首次提交日期在 2025-09-14 至 2026-09-14。更新版本日期不重置时间窗口。
-- 需要可追溯的重要性理由：例如开放并被采用的模型／环境、多个任务的扎实系统评估、独立后续工作或官方完整研究报告提供的关键路线证据。
-- “重要”是编辑判断，必须写出理由和对应证据链接；机构名称、社交热度和未核实的引用量不单独构成理由。首版不宣称做过引用影响力的定量评估。
-- 本版将 SIMA 2 和 π*0.6 / RECAP 作为重要路线论文收录，均保留首次提交日期、官方研究报告与具体判断依据。未确认正式接收时标记为 arXiv，不写成顶会论文。
-- 影响力或书目信息不足的研究进入候选区，不计入精选统计。
+- First submission must fall between **2025-09-14 and 2026-09-14**. A revised version does not reset the window.
+- Provide traceable reasons for significance: released and adopted models or environments, substantial multi-task evaluations, independent follow-up work, or a complete official research report establishing a significant research direction.
+- Importance is an editorial judgment that needs a rationale and evidence links. Institutional reputation, social engagement, and unverified citation counts are insufficient on their own. This edition does not claim a quantitative citation-impact assessment.
+- SIMA 2 and π*0.6 / RECAP are selected as significant research directions, with first submission dates, official reports, and explicit rationales retained. They remain labeled arXiv unless formal acceptance is verified.
+- Work lacking sufficient bibliographic or significance evidence stays in the candidate view and is excluded from curated counts.
 
-## 工具与评测
+## Articles, tools, datasets, and benchmarks
 
-论文的近五年限制不用于淘汰仍可使用的独立研究基础设施。开源项目与环境按官方用途、接口、部署要求和许可入口组织。具有正式论文的基准可同时出现在论文与评测视图；多个视图共享同一记录，统计不应相加为总量。
+Official research articles provide context and implementation guidance. They are not counted as peer-reviewed papers. Standalone infrastructure is assessed by current purpose, interface, setup requirements, and license source; it is not excluded solely because of the paper-age window.
 
-## 证据与边界
+Dataset and benchmark papers can appear in multiple views with one shared record. Category counts must not be summed as the total number of unique entries.
 
-网站整理、来源核对、知识库既有全文核验、个人已读和独立复现是不同状态。此次核对主要涉及书目信息、项目说明与摘要，不代表逐篇全文复核或实验复现。
+## Video demonstrations
 
-比较时至少对齐：环境与任务、观测权限、动作粒度、训练数据与预算、执行时延、评测协议。单项导航、画面生成、可执行程序和真实机器人控制分别陈述。本站不提供跨游戏或跨硬件的混合排行榜。
+Use public videos from original research teams, official project pages, or clearly credited community authors. Retain an accessible source-page link, creator credit, known release date or year, task setting, and related paper/project links. Embed the original hosted video rather than copying it into this repository.
 
-## 更新方式
+Separate game control, generated game frames, real-robot execution, simulation, and teleoperation. Explain playback speed when the source specifies it. A curated or edited demonstration is author-reported qualitative evidence, not an independently measured success rate or proof of general autonomy. A publication date attached to a related paper does not prove the exact recording date of a clip.
 
-维护 `data/resources.json`，补充原文、官方发表证据和条目边界后运行 `npm run build` 与 `npm run check`。候选转正时更新 `status`、`selectionTrack`、`selectionReason`、`evidence` 和 `checkedAt`。此版本是人工整理快照，未配置定期抓取或自动回写飞书。
+## Evidence and comparison boundaries
+
+Catalogue editing, source checks, prior knowledge-base full-text review, personal reading, and independent reproduction are distinct states. Checks here primarily cover bibliographic records, project descriptions, and abstracts. Original Chinese knowledge-base review labels are translated into English and retained as source claims, not re-certified.
+
+Align environments and tasks, observation access, action granularity, training data and budget, execution latency, and evaluation protocols before comparing results. Keep navigation, frame generation, executable programs, and real robot control separate. This website does not offer a mixed leaderboard across games or hardware.
+
+## Updates
+
+Maintain `data/resources.json`, add official sources and resource limitations, then run `npm run build` and `npm run check`. When promoting a candidate, update `status`, `selectionTrack`, `selectionReason`, `evidence`, and `checkedAt`.
+
+This is a manually curated snapshot. There is no scheduled scraper or automatic write-back to the original Feishu knowledge base. Raw source exports are excluded from the repository and published website.

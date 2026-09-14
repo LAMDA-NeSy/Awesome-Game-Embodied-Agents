@@ -1,14 +1,24 @@
 # Contributing
 
-欢迎提交与游戏和具身智能相关的论文、工具与环境。
+Contributions on game and embodied agents are welcome: papers, research articles, tools, datasets, benchmarks, and source-linked video demonstrations.
 
-1. 阅读 [收录标准](docs/collection-policy.md)，确认时间窗口和发表渠道。
-2. 在 `data/resources.json` 增加或更新条目；通过标题、DOI、arXiv ID 检查是否重复。
-3. 填写官方原文、代码或项目链接、简述、环境、输入与动作、局限和收录理由。
-4. 新预印本提供首次提交日期及重要性证据；证据不足请使用 `status: "candidate"`。
-5. 不把未运行的实验写成“已复现”，不把 Workshop 写成主会，不提交个人阅读记录、未授权材料或访问凭据。
-6. 运行 `npm run build` 和 `npm run check`，一起提交数据与生成的 README / 展示文件。
+1. Read the [collection policy](docs/collection-policy.md) and check the publication window and venue for papers.
+2. Add or update a record in `data/resources.json`. Check titles, DOIs, and arXiv IDs for duplicates.
+3. Write the summary, environment, observation/action interface, limitations, and inclusion rationale in English. Include official paper, code, data, or project links where available.
+4. For a recent preprint, provide its first submission date and specific evidence of significance. Use `status: "candidate"` when verification is incomplete.
+5. Keep peer review, source verification, and independent reproduction distinct. Identify workshops separately from main conferences. Do not submit credentials, private reading records, or materials you lack permission to share.
+6. For a demo, use a playable video hosted by its original author or project. Include the source page, credit, demonstration setting, and associated resource IDs. Separate real robots, simulation, gameplay, teleoperation, and generated frames. Report speed changes where documented; selected clips are not benchmark success rates.
+7. Run `npm run build` and `npm run check`. Submit the catalogue and generated README/website files together.
 
-`year` 表示会议召开年份或期刊发表年份；`publicationNote` 记录与论文集出版年份的差异。`kinds` 支持同一基准同时属于 `papers` 和 `benchmarks`，请勿为两个视图复制同一条记录。
+## Catalogue conventions
 
-独立基础设施的 `year` 可以为 `null`，避免把核对日期写成项目首次发布年。新增外部链接必须来自确认过的 HTTPS 官方来源。
+- `year` is the conference year or journal publication year for papers. Use `publicationNote` when proceedings are published in a different year.
+- `kinds` can contain more than one category. A dataset or benchmark paper can share one record with its dataset or benchmark listing; do not duplicate it just to populate two views.
+- `paperType` distinguishes `survey`, `method`, `dataset`, and `benchmark` contributions.
+- Standalone infrastructure may use `year: null` to avoid mistaking a review date for an original release year.
+- Article and video dates describe the original source, when known. Do not invent a day when only a year is available.
+- `relatedIds` links an article or demonstration to an existing paper or project. Distinct demonstrations may have separate records with unique titles.
+- External links must be verified HTTPS URLs. Video URLs must be traceable to the credited source page; do not rehost third-party media in this repository.
+- Keep official-source claims and editorial judgments explicit. No automated citation, star, or view counts should be added without a reliable retrieval source and date.
+
+The site and README are generated from the same catalogue. Edit resource data first, then rebuild to keep counts and lists consistent.
