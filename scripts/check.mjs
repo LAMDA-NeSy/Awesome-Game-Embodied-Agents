@@ -4,6 +4,7 @@ import { safeUrl, renderCard, renderCatalogue, filterResources, sortResources, r
 import { syncCollectionDates } from './collection-history.mjs';
 import { classifyStatus, collectLinks, probeLink } from './check-links.mjs';
 const data=JSON.parse(await fs.readFile('data/resources.json','utf8'));
+assert(typeof data.meta.ratingsApiUrl==='string'&&(!data.meta.ratingsApiUrl||safeUrl(data.meta.ratingsApiUrl)),'Ratings API must be empty or a valid HTTPS URL');
 const ids=new Set();const titles=new Set();
 const selected=data.resources.filter(r=>r.status==='selected');
 const allowed=/NeurIPS|ICLR|ICML|CVPR|ICCV|ECCV|AAAI|IJCAI|CoRL|RSS|ICRA|IROS|Nature|Science|TMLR|JMLR|T-RO|IJRR|TPAMI/;
@@ -88,7 +89,12 @@ assert(selectedPreprint&&renderCard(selectedPreprint).includes('Selected preprin
 const candidatePaper=data.resources.find(r=>r.status==='candidate'&&r.kinds.includes('papers'));
 assert(candidatePaper&&renderCard(candidatePaper).includes('Candidate · pending review'),'Candidate papers must keep their pending-review label');
 const affiliatedPaper=selected.find(r=>r.kinds.includes('papers')&&r.institutions?.some(item=>item.logo));
-assert(affiliatedPaper&&renderCard(affiliatedPaper).includes('class="paper-institutions"'),'Verified paper affiliations must render after source links');
+const affiliatedCard=affiliatedPaper&&renderCard(affiliatedPaper);
+assert(affiliatedCard&&/<h3>[\s\S]*paper-title-institutions[\s\S]*<\/h3>/.test(affiliatedCard),'Verified paper affiliations must render beside the title');
+assert(!/<nav class="paper-actions"[\s\S]*paper-title-institutions[\s\S]*<\/nav>/.test(affiliatedCard),'Affiliations must not remain in the source-action row');
+assert.equal((affiliatedCard.match(/class="rating-star"/g)||[]).length,5,'Selected paper cards must include a five-star rating control');
+assert(affiliatedCard.includes('Community')&&affiliatedCard.includes('Your rating'),'Paper ratings must distinguish the site-wide average from the visitor rating');
+assert(!renderCard(candidatePaper).includes('paper-rating'),'Candidate papers must not collect ratings before curation');
 assert(filterResources(data.resources,{query:'Hafner',candidates:false,view:'papers',domain:'all',topic:'all',year:'all',sort:'featured'}).some(r=>r.id==='kb-g05'),'Author search failed');
 // Venue year, source date, and collection history describe different timelines.
 const dates=[

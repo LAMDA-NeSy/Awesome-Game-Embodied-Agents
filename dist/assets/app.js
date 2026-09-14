@@ -1,10 +1,14 @@
-import { renderCatalogue, filterResources, escapeHtml } from './catalog.mjs?v=a913914aea01';
+import { renderCatalogue, filterResources, escapeHtml } from './catalog.mjs?v=dd986cab806e';
 const $ = s => document.querySelector(s);
 const labels = {all:'All resources',articles:'Research articles',papers:'Papers',projects:'Open-source projects',datasets:'Datasets',benchmarks:'Benchmarks & environments',demos:'Video demos',about:'Collection policy',updates:'What’s new'};
 const defaults = {view:'all',domain:'all',topic:'all',year:'all',sort:'featured',query:'',candidates:false,code:false,paperType:'all',demoType:'all'};
 const state = {...defaults};
 let data;
 let videoObserver;
+const ratingStorageKey='awesome-gea-paper-ratings-v1';
+const ratingVoterKey='awesome-gea-rating-voter-v1';
+const communityRatings=new Map();
+const loadedRatingIds=new Set();
 function readHash() {
   const [view, query=''] = location.hash.slice(1).split('?');
   const p = new URLSearchParams(query);
@@ -67,6 +71,7 @@ function render() {
   $('#empty-reset')?.addEventListener('click',reset);
   bindVideos();
   bindCitations();
+  bindRatings();
 }
 function bindCitations(){
   document.querySelectorAll('.copy-citation').forEach(button=>{button.hidden=false;button.addEventListener('click',async()=>{
@@ -75,6 +80,87 @@ function bindCitations(){
     try{await navigator.clipboard.writeText(container.querySelector('code').textContent);status.textContent='Copied';}
     catch{status.textContent='Select and copy the citation above.';}
   });});
+}
+function readRatings(){
+  try{
+    const value=JSON.parse(localStorage.getItem(ratingStorageKey)||'{}');
+    return value&&typeof value==='object'?value:{};
+  }catch{return {};}
+}
+function writeRatings(ratings){
+  try{localStorage.setItem(ratingStorageKey,JSON.stringify(ratings));return true;}
+  catch{return false;}
+}
+function voterId(){
+  try{
+    let value=localStorage.getItem(ratingVoterKey);
+    if(!value){value=crypto.randomUUID?.()||`${Date.now()}-${Math.random().toString(36).slice(2)}`;localStorage.setItem(ratingVoterKey,value);}
+    return value;
+  }catch{return `session-${Math.random().toString(36).slice(2)}`;}
+}
+function ratingsApi(){
+  try{const url=new URL(data?.meta?.ratingsApiUrl);return url.protocol==='https:'?url:null;}
+  catch{return null;}
+}
+function paintPersonalRating(group,value,message=''){
+  group.querySelectorAll('.rating-star').forEach(button=>{
+    const starValue=Number(button.dataset.ratingValue);
+    button.classList.toggle('selected',starValue<=value);
+    button.setAttribute('aria-pressed',String(starValue===value));
+  });
+  const status=group.querySelector('.rating-status');
+  if(status)status.textContent=value?`${value} / 5${message?` · ${message}`:''}`:'Not rated';
+}
+function paintCommunityRating(group,rating){
+  const average=group.querySelector('.community-rating-value');
+  const total=Number(rating?.count)||0;
+  if(average){
+    average.textContent=total?`${Number(rating.average).toFixed(1)} · ${total.toLocaleString('en-US')}`:'—';
+    average.setAttribute('aria-label',total?`${Number(rating.average).toFixed(1)} out of 5 from ${total} community ${total===1?'rating':'ratings'}`:'No community ratings yet');
+  }
+}
+async function loadCommunityRatings(groups){
+  const api=ratingsApi();
+  const ids=[...new Set(groups.map(group=>group.dataset.ratingId).filter(id=>id&&!loadedRatingIds.has(id)))];
+  if(!api||!ids.length)return;
+  ids.forEach(id=>loadedRatingIds.add(id));
+  try{
+    api.searchParams.set('papers',ids.join(','));
+    const response=await fetch(api,{headers:{accept:'application/json'}});
+    if(!response.ok)throw new Error(`HTTP ${response.status}`);
+    const payload=await response.json();
+    for(const [id,rating] of Object.entries(payload.ratings||{}))communityRatings.set(id,rating);
+    groups.forEach(group=>paintCommunityRating(group,communityRatings.get(group.dataset.ratingId)));
+  }catch{ids.forEach(id=>loadedRatingIds.delete(id));}
+}
+function bindRatings(){
+  const groups=[...document.querySelectorAll('.paper-rating')];
+  const ratings=readRatings();
+  groups.forEach(group=>{
+    const id=group.dataset.ratingId;
+    const stored=Number(ratings[id]);
+    paintPersonalRating(group,stored>=1&&stored<=5?stored:0);
+    paintCommunityRating(group,communityRatings.get(id));
+    group.querySelectorAll('.rating-star').forEach(button=>button.addEventListener('click',async()=>{
+      const value=Number(button.dataset.ratingValue);
+      ratings[id]=value;
+      const saved=writeRatings(ratings);
+      paintPersonalRating(group,value,saved?'Saved on this device':'Selected');
+      const api=ratingsApi();
+      if(!api)return;
+      group.setAttribute('aria-busy','true');
+      try{
+        const response=await fetch(api,{method:'POST',headers:{'content-type':'application/json','accept':'application/json'},body:JSON.stringify({paperId:id,score:value,voterId:voterId()})});
+        if(!response.ok)throw new Error(`HTTP ${response.status}`);
+        const result=await response.json();
+        communityRatings.set(id,result);
+        paintCommunityRating(group,result);
+        paintPersonalRating(group,value,'Counted site-wide');
+      }catch{paintPersonalRating(group,value,'Saved on this device');}
+      finally{group.removeAttribute('aria-busy');}
+    }));
+  });
+  loadCommunityRatings(groups);
 }
 function bindVideos(){
   videoObserver?.disconnect();

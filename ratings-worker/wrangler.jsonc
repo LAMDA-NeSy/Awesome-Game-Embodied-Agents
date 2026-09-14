@@ -1,0 +1,17 @@
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "awesome-gea-ratings",
+  "main": "worker.mjs",
+  "compatibility_date": "2026-09-15",
+  "durable_objects": {
+    "bindings": [
+      { "name": "RATINGS", "class_name": "PaperRatings" }
+    ]
+  },
+  "migrations": [
+    { "tag": "v1", "new_sqlite_classes": ["PaperRatings"] }
+  ],
+  "vars": {
+    "ALLOWED_ORIGIN": "https://labixiaoq.github.io"
+  }
+}
