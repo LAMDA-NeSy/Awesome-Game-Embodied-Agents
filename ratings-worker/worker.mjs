@@ -48,7 +48,7 @@ export default {
       let body;
       try{body=await request.json();}catch{return withCors(json({error:'Invalid JSON'},400),request,env);}
       const {paperId,score,voterId}=body||{};
-      if(!validPaperId(paperId)||!Number.isInteger(score)||score<1||score>5||typeof voterId!=='string'||voterId.length<8||voterId.length>128)return withCors(json({error:'Invalid rating'},400),request,env);
+      if(!validPaperId(paperId)||!Number.isInteger(score)||score<0||score>5||typeof voterId!=='string'||voterId.length<8||voterId.length>128)return withCors(json({error:'Invalid rating'},400),request,env);
       const id=env.RATINGS.idFromName(paperId);
       const response=await env.RATINGS.get(id).fetch('https://ratings.internal/vote',{
         method:'POST',
@@ -72,9 +72,10 @@ export class PaperRatings {
         const key=`vote:${voterHash}`;
         const previous=await storage.get(key);
         const totals=await storage.get(['sum','count']);
-        const sum=(totals.get('sum')||0)- (Number(previous)||0)+score;
-        const count=(totals.get('count')||0)+(previous===undefined?1:0);
-        await storage.put({[key]:score,sum,count});
+        const sum=Math.max(0,(totals.get('sum')||0)-(Number(previous)||0)+score);
+        const count=Math.max(0,(totals.get('count')||0)+(previous===undefined&&score>0?1:0)-(previous!==undefined&&score===0?1:0));
+        if(score>0)await storage.put(key,score);else await storage.delete(key);
+        await storage.put({sum,count});
       });
       return json(await this.summary());
     }

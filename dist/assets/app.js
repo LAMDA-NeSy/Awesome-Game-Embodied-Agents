@@ -142,8 +142,9 @@ function bindRatings(){
     paintPersonalRating(group,stored>=1&&stored<=5?stored:0);
     paintCommunityRating(group,communityRatings.get(id));
     group.querySelectorAll('.rating-star').forEach(button=>button.addEventListener('click',async()=>{
-      const value=Number(button.dataset.ratingValue);
-      ratings[id]=value;
+      const clicked=Number(button.dataset.ratingValue);
+      const value=Number(ratings[id])===clicked?0:clicked;
+      if(value)ratings[id]=value;else delete ratings[id];
       const saved=writeRatings(ratings);
       paintPersonalRating(group,value,saved?'Saved on this device':'Selected');
       const api=ratingsApi();
@@ -155,7 +156,7 @@ function bindRatings(){
         const result=await response.json();
         communityRatings.set(id,result);
         paintCommunityRating(group,result);
-        paintPersonalRating(group,value,'Counted site-wide');
+        paintPersonalRating(group,value,value?'Counted site-wide':'Rating removed');
       }catch{paintPersonalRating(group,value,'Saved on this device');}
       finally{group.removeAttribute('aria-busy');}
     }));
