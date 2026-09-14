@@ -4,7 +4,9 @@ Paper ratings use a small Cloudflare Worker with Durable Object storage. A visit
 
 The public catalogue remains on GitHub Pages. The Worker accepts writes only from the published site origin and the local preview origin. It stores a one-way hash of the browser-generated voter ID rather than the raw value. This is a lightweight community signal, not an authenticated scientific ranking.
 
-To enable live averages:
+The live endpoint is `https://awesome-gea-ratings.ratings-worker.workers.dev/ratings`.
+
+To redeploy or move the service:
 
 1. Deploy `ratings-worker/worker.mjs` with `ratings-worker/wrangler.jsonc` from a Cloudflare account.
 2. Add the resulting HTTPS endpoint, including `/ratings`, to `meta.ratingsApiUrl` in `data/resources.json`.

@@ -28,7 +28,7 @@
     },
     "repositoryUrl": "https://github.com/labixiaoQ/Awesome-Game-Embodied-Agents",
     "siteUrl": "https://labixiaoq.github.io/Awesome-Game-Embodied-Agents/",
-    "ratingsApiUrl": "",
+    "ratingsApiUrl": "https://awesome-gea-ratings.ratings-worker.workers.dev/ratings",
     "language": "en"
   },
   "resources": [
