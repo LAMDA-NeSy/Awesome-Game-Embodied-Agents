@@ -58,7 +58,8 @@
       "checkedAt": "2026-09-14",
       "links": {
         "paper": "https://www.nature.com/articles/s41586-025-08744-2",
-        "code": "https://github.com/danijar/dreamerv3"
+        "code": "https://github.com/danijar/dreamerv3",
+        "pdf": "https://www.nature.com/articles/s41586-025-08744-2.pdf"
       },
       "rank": 1,
       "sourceId": "G05",
@@ -69,7 +70,40 @@
         "Multi-game"
       ],
       "selectionTrack": "peer-reviewed",
-      "paperType": "method"
+      "paperType": "method",
+      "bibliography": {
+        "source": "Publisher",
+        "sourceUrl": "https://www.nature.com/articles/s41586-025-08744-2",
+        "checkedAt": "2026-09-14",
+        "authors": [
+          "Danijar Hafner",
+          "Jurgis Pasukonis",
+          "Jimmy Ba",
+          "Timothy Lillicrap"
+        ],
+        "date": "2025-04-02",
+        "dateLabel": "Publisher record date",
+        "doi": "10.1038/s41586-025-08744-2",
+        "bibtex": "@misc{kb-g05,\n  title = {Mastering diverse control tasks through world models},\n  author = {Danijar Hafner and Jurgis Pasukonis and Jimmy Ba and Timothy Lillicrap},\n  year = {2025},\n  url = {https://www.nature.com/articles/s41586-025-08744-2},\n  doi = {10.1038/s41586-025-08744-2}\n}",
+        "preview": "assets/papers/kb-g05.png",
+        "previewSourceUrl": "https://www.nature.com/articles/s41586-025-08744-2.pdf"
+      },
+      "metrics": {
+        "citations": {
+          "value": 133,
+          "source": "OpenAlex",
+          "sourceUrl": "https://openalex.org/W4409147637",
+          "updatedAt": "2026-09-14",
+          "recordTitle": "Mastering diverse control tasks through world models"
+        },
+        "github": {
+          "value": 3773,
+          "source": "GitHub",
+          "sourceUrl": "https://github.com/danijar/dreamerv3/stargazers",
+          "repository": "danijar/dreamerv3",
+          "updatedAt": "2026-09-14"
+        }
+      }
     },
     {
       "id": "kb-f02",
@@ -97,7 +131,8 @@
       "checkedAt": "2026-09-14",
       "links": {
         "paper": "https://arxiv.org/abs/2301.10677",
-        "code": "https://github.com/microsoft/Imitating-Human-Behaviour-w-Diffusion"
+        "code": "https://github.com/microsoft/Imitating-Human-Behaviour-w-Diffusion",
+        "pdf": "https://arxiv.org/pdf/2301.10677"
       },
       "rank": 5,
       "sourceId": "F02",
@@ -107,7 +142,47 @@
         "FPS"
       ],
       "selectionTrack": "peer-reviewed",
-      "paperType": "method"
+      "paperType": "method",
+      "bibliography": {
+        "source": "arXiv",
+        "sourceUrl": "https://arxiv.org/abs/2301.10677",
+        "checkedAt": "2026-09-14",
+        "authors": [
+          "Tim Pearce",
+          "Tabish Rashid",
+          "Anssi Kanervisto",
+          "Dave Bignell",
+          "Mingfei Sun",
+          "Raluca Georgescu",
+          "Sergio Valcarcel Macua",
+          "Shan Zheng Tan",
+          "Ida Momennejad",
+          "Katja Hofmann",
+          "Sam Devlin"
+        ],
+        "date": "2023-01-25",
+        "dateLabel": "First arXiv submission",
+        "arxivId": "2301.10677",
+        "bibtex": "@misc{kb-f02,\n  title = {Imitating Human Behaviour with Diffusion Models},\n  author = {Tim Pearce and Tabish Rashid and Anssi Kanervisto and Dave Bignell and Mingfei Sun and Raluca Georgescu and Sergio Valcarcel Macua and Shan Zheng Tan and Ida Momennejad and Katja Hofmann and Sam Devlin},\n  year = {2023},\n  url = {https://arxiv.org/abs/2301.10677}\n}",
+        "preview": "assets/papers/kb-f02.png",
+        "previewSourceUrl": "https://arxiv.org/pdf/2301.10677"
+      },
+      "metrics": {
+        "citations": {
+          "value": 23,
+          "source": "OpenAlex",
+          "sourceUrl": "https://openalex.org/W4318242039",
+          "updatedAt": "2026-09-14",
+          "recordTitle": "Imitating Human Behaviour with Diffusion Models"
+        },
+        "github": {
+          "value": 156,
+          "source": "GitHub",
+          "sourceUrl": "https://github.com/microsoft/Imitating-Human-Behaviour-w-Diffusion/stargazers",
+          "repository": "microsoft/Imitating-Human-Behaviour-w-Diffusion",
+          "updatedAt": "2026-09-14"
+        }
+      }
     },
     {
       "id": "kb-f07",
@@ -135,7 +210,8 @@
       "checkedAt": "2026-09-14",
       "links": {
         "paper": "https://ojs.aaai.org/index.php/AAAI/article/view/38842",
-        "code": "https://github.com/tencent-facul/code"
+        "code": "https://github.com/tencent-facul/code",
+        "pdf": "https://ojs.aaai.org/index.php/AAAI/article/download/38842/42804"
       },
       "rank": 7,
       "sourceId": "F07",
@@ -145,7 +221,50 @@
         "FPS"
       ],
       "selectionTrack": "peer-reviewed",
-      "paperType": "method"
+      "paperType": "method",
+      "bibliography": {
+        "source": "OpenAlex",
+        "sourceUrl": "https://openalex.org/W7137844787",
+        "checkedAt": "2026-09-14",
+        "authors": [
+          "Wenya Wei",
+          "Sipeng Yang",
+          "Qixian Zhou",
+          "Ruochen Liu",
+          "Xuelei Zhang",
+          "Yifu Yuan",
+          "Yan Jiang",
+          "Yongle Luo",
+          "Hailong Wang",
+          "Tianzhou Wang",
+          "Peipei Jin",
+          "Wangtong Liu",
+          "Zhou Zhao",
+          "Xiaogang Jin",
+          "Elvis S. Liu"
+        ],
+        "date": "2026-03-14",
+        "dateLabel": "Indexed publication date (OpenAlex)",
+        "bibtex": "@misc{kb-f07,\n  title = {F.A.C.U.L.: Language-Based Interaction with AI Companions in Gaming},\n  author = {Wenya Wei and Sipeng Yang and Qixian Zhou and Ruochen Liu and Xuelei Zhang and Yifu Yuan and Yan Jiang and Yongle Luo and Hailong Wang and Tianzhou Wang and Peipei Jin and Wangtong Liu and Zhou Zhao and Xiaogang Jin and Elvis S. Liu},\n  year = {2026},\n  url = {https://ojs.aaai.org/index.php/AAAI/article/view/38842}\n}",
+        "preview": "assets/papers/kb-f07.png",
+        "previewSourceUrl": "https://ojs.aaai.org/index.php/AAAI/article/download/38842/42804"
+      },
+      "metrics": {
+        "citations": {
+          "value": 1,
+          "source": "OpenAlex",
+          "sourceUrl": "https://openalex.org/W7137844787",
+          "updatedAt": "2026-09-14",
+          "recordTitle": "F.A.C.U.L.: Language-Based Interaction with AI Companions in Gaming"
+        },
+        "github": {
+          "value": 0,
+          "source": "GitHub",
+          "sourceUrl": "https://github.com/tencent-facul/code/stargazers",
+          "repository": "tencent-facul/code",
+          "updatedAt": "2026-09-14"
+        }
+      }
     },
     {
       "id": "kb-r01",
@@ -173,7 +292,8 @@
       "checkedAt": "2026-09-14",
       "links": {
         "paper": "https://proceedings.iclr.cc/paper_files/paper/2024/hash/eb60f103645fd14c94826665f8505a6d-Abstract-Conference.html",
-        "code": "https://github.com/microsoft/Intrepid"
+        "code": "https://github.com/microsoft/Intrepid",
+        "pdf": "https://proceedings.iclr.cc/paper_files/paper/2024/file/eb60f103645fd14c94826665f8505a6d-Paper-Conference.pdf"
       },
       "rank": 23,
       "sourceId": "R01",
@@ -183,7 +303,33 @@
         "FPS"
       ],
       "selectionTrack": "peer-reviewed",
-      "paperType": "method"
+      "paperType": "method",
+      "bibliography": {
+        "source": "Publisher",
+        "sourceUrl": "https://proceedings.iclr.cc/paper_files/paper/2024/hash/eb60f103645fd14c94826665f8505a6d-Abstract-Conference.html",
+        "checkedAt": "2026-09-14",
+        "authors": [
+          "Dipendra Kumar Misra",
+          "Akanksha Saran",
+          "Tengyang Xie",
+          "Alex Lamb",
+          "John Langford"
+        ],
+        "date": "2024-05-31",
+        "dateLabel": "Publisher record date",
+        "bibtex": "@misc{kb-r01,\n  title = {Towards Principled Representation Learning from Videos for Reinforcement Learning},\n  author = {Dipendra Kumar Misra and Akanksha Saran and Tengyang Xie and Alex Lamb and John Langford},\n  year = {2024},\n  url = {https://proceedings.iclr.cc/paper_files/paper/2024/hash/eb60f103645fd14c94826665f8505a6d-Abstract-Conference.html}\n}",
+        "preview": "assets/papers/kb-r01.png",
+        "previewSourceUrl": "https://proceedings.iclr.cc/paper_files/paper/2024/file/eb60f103645fd14c94826665f8505a6d-Paper-Conference.pdf"
+      },
+      "metrics": {
+        "github": {
+          "value": 36,
+          "source": "GitHub",
+          "sourceUrl": "https://github.com/microsoft/Intrepid/stargazers",
+          "repository": "microsoft/Intrepid",
+          "updatedAt": "2026-09-14"
+        }
+      }
     },
     {
       "id": "kb-r02",
@@ -211,7 +357,8 @@
       "checkedAt": "2026-09-14",
       "links": {
         "paper": "https://proceedings.mlr.press/v267/ma25j.html",
-        "code": "https://github.com/mahaozhe/DuRND"
+        "code": "https://github.com/mahaozhe/DuRND",
+        "pdf": "https://raw.githubusercontent.com/mlresearch/v267/main/assets/ma25j/ma25j.pdf"
       },
       "rank": 24,
       "sourceId": "R02",
@@ -221,7 +368,34 @@
         "FPS"
       ],
       "selectionTrack": "peer-reviewed",
-      "paperType": "method"
+      "paperType": "method",
+      "bibliography": {
+        "source": "Publisher",
+        "sourceUrl": "https://proceedings.mlr.press/v267/ma25j.html",
+        "checkedAt": "2026-09-14",
+        "authors": [
+          "Haozhe Ma",
+          "Fangling Li",
+          "Jing Yu Lim",
+          "Zhengding Luo",
+          "Thanh Vinh Vo",
+          "Tze-Yun Leong"
+        ],
+        "date": "2025-10-06",
+        "dateLabel": "Publisher record date",
+        "bibtex": "@misc{kb-r02,\n  title = {Catching Two Birds with One Stone: Reward Shaping with Dual Random Networks for Balancing Exploration and Exploitation},\n  author = {Haozhe Ma and Fangling Li and Jing Yu Lim and Zhengding Luo and Thanh Vinh Vo and Tze-Yun Leong},\n  year = {2025},\n  url = {https://proceedings.mlr.press/v267/ma25j.html}\n}",
+        "preview": "assets/papers/kb-r02.png",
+        "previewSourceUrl": "https://raw.githubusercontent.com/mlresearch/v267/main/assets/ma25j/ma25j.pdf"
+      },
+      "metrics": {
+        "github": {
+          "value": 8,
+          "source": "GitHub",
+          "sourceUrl": "https://github.com/mahaozhe/DuRND/stargazers",
+          "repository": "mahaozhe/DuRND",
+          "updatedAt": "2026-09-14"
+        }
+      }
     },
     {
       "id": "kb-r03",
@@ -248,7 +422,8 @@
       "sourceType": "knowledge",
       "checkedAt": "2026-09-14",
       "links": {
-        "paper": "https://proceedings.mlr.press/v162/huang22f.html"
+        "paper": "https://proceedings.mlr.press/v162/huang22f.html",
+        "pdf": "https://proceedings.mlr.press/v162/huang22f/huang22f.pdf"
       },
       "rank": 25,
       "sourceId": "R03",
@@ -258,7 +433,35 @@
         "FPS"
       ],
       "selectionTrack": "peer-reviewed",
-      "paperType": "method"
+      "paperType": "method",
+      "bibliography": {
+        "source": "Publisher",
+        "sourceUrl": "https://proceedings.mlr.press/v162/huang22f.html",
+        "checkedAt": "2026-09-14",
+        "authors": [
+          "Biwei Huang",
+          "Chaochao Lu",
+          "Liu Leqi",
+          "Jose Miguel Hernandez-Lobato",
+          "Clark Glymour",
+          "Bernhard Schölkopf",
+          "Kun Zhang"
+        ],
+        "date": "2022-06-28",
+        "dateLabel": "Publisher record date",
+        "bibtex": "@misc{kb-r03,\n  title = {Action-Sufficient State Representation Learning for Control with Structural Constraints},\n  author = {Biwei Huang and Chaochao Lu and Liu Leqi and Jose Miguel Hernandez-Lobato and Clark Glymour and Bernhard Schölkopf and Kun Zhang},\n  year = {2022},\n  url = {https://proceedings.mlr.press/v162/huang22f.html}\n}",
+        "preview": "assets/papers/kb-r03.png",
+        "previewSourceUrl": "https://proceedings.mlr.press/v162/huang22f/huang22f.pdf"
+      },
+      "metrics": {
+        "citations": {
+          "value": 5,
+          "source": "OpenAlex",
+          "sourceUrl": "https://openalex.org/W3207211828",
+          "updatedAt": "2026-09-14",
+          "recordTitle": "Action-Sufficient State Representation Learning for Control with Structural Constraints"
+        }
+      }
     },
     {
       "id": "kb-b01",
@@ -287,7 +490,8 @@
       "checkedAt": "2026-09-14",
       "links": {
         "paper": "https://proceedings.neurips.cc/paper_files/paper/2023/hash/d61d9f4fe4357296cb658795fd7999f0-Abstract-Datasets_and_Benchmarks.html",
-        "code": "https://github.com/TTomilin/COOM"
+        "code": "https://github.com/TTomilin/COOM",
+        "pdf": "https://proceedings.neurips.cc/paper_files/paper/2023/file/d61d9f4fe4357296cb658795fd7999f0-Paper-Datasets_and_Benchmarks.pdf"
       },
       "rank": 13,
       "sourceId": "B01",
@@ -297,7 +501,40 @@
         "FPS"
       ],
       "selectionTrack": "peer-reviewed",
-      "paperType": "benchmark"
+      "paperType": "benchmark",
+      "bibliography": {
+        "source": "Publisher",
+        "sourceUrl": "https://proceedings.neurips.cc/paper_files/paper/2023/hash/d61d9f4fe4357296cb658795fd7999f0-Abstract-Datasets_and_Benchmarks.html",
+        "checkedAt": "2026-09-14",
+        "authors": [
+          "Tristan Tomilin",
+          "Meng Fang",
+          "Yudi Zhang",
+          "Mykola Pechenizkiy"
+        ],
+        "date": "2023-12-15",
+        "dateLabel": "Publisher record date",
+        "doi": "10.52202/075280-2965",
+        "bibtex": "@misc{kb-b01,\n  title = {COOM: A Game Benchmark for Continual Reinforcement Learning},\n  author = {Tristan Tomilin and Meng Fang and Yudi Zhang and Mykola Pechenizkiy},\n  year = {2023},\n  url = {https://proceedings.neurips.cc/paper_files/paper/2023/hash/d61d9f4fe4357296cb658795fd7999f0-Abstract-Datasets_and_Benchmarks.html},\n  doi = {10.52202/075280-2965}\n}",
+        "preview": "assets/papers/kb-b01.png",
+        "previewSourceUrl": "https://proceedings.neurips.cc/paper_files/paper/2023/file/d61d9f4fe4357296cb658795fd7999f0-Paper-Datasets_and_Benchmarks.pdf"
+      },
+      "metrics": {
+        "citations": {
+          "value": 1,
+          "source": "OpenAlex",
+          "sourceUrl": "https://openalex.org/W7133239981",
+          "updatedAt": "2026-09-14",
+          "recordTitle": "COOM: A Game Benchmark for Continual Reinforcement Learning"
+        },
+        "github": {
+          "value": 27,
+          "source": "GitHub",
+          "sourceUrl": "https://github.com/TTomilin/COOM/stargazers",
+          "repository": "TTomilin/COOM",
+          "updatedAt": "2026-09-14"
+        }
+      }
     },
     {
       "id": "kb-b02",
@@ -326,7 +563,8 @@
       "checkedAt": "2026-09-14",
       "links": {
         "paper": "https://proceedings.iclr.cc/paper_files/paper/2025/hash/5ab848771ff8c9c47aac4128e2ef9f4e-Abstract-Conference.html",
-        "project": "https://sites.google.com/view/hasard-bench/"
+        "project": "https://sites.google.com/view/hasard-bench/",
+        "pdf": "https://proceedings.iclr.cc/paper_files/paper/2025/file/5ab848771ff8c9c47aac4128e2ef9f4e-Paper-Conference.pdf"
       },
       "rank": 14,
       "sourceId": "B02",
@@ -336,7 +574,31 @@
         "FPS"
       ],
       "selectionTrack": "peer-reviewed",
-      "paperType": "benchmark"
+      "paperType": "benchmark",
+      "bibliography": {
+        "source": "Publisher",
+        "sourceUrl": "https://proceedings.iclr.cc/paper_files/paper/2025/hash/5ab848771ff8c9c47aac4128e2ef9f4e-Abstract-Conference.html",
+        "checkedAt": "2026-09-14",
+        "authors": [
+          "Tristan Tomilin",
+          "Meng Fang",
+          "Mykola Pechenizkiy"
+        ],
+        "date": "2025-05-01",
+        "dateLabel": "Publisher record date",
+        "bibtex": "@misc{kb-b02,\n  title = {HASARD: A Benchmark for Vision-Based Safe Reinforcement Learning in Embodied Agents},\n  author = {Tristan Tomilin and Meng Fang and Mykola Pechenizkiy},\n  year = {2025},\n  url = {https://proceedings.iclr.cc/paper_files/paper/2025/hash/5ab848771ff8c9c47aac4128e2ef9f4e-Abstract-Conference.html}\n}",
+        "preview": "assets/papers/kb-b02.png",
+        "previewSourceUrl": "https://proceedings.iclr.cc/paper_files/paper/2025/file/5ab848771ff8c9c47aac4128e2ef9f4e-Paper-Conference.pdf"
+      },
+      "metrics": {
+        "citations": {
+          "value": 0,
+          "source": "OpenAlex",
+          "sourceUrl": "https://openalex.org/W4414577619",
+          "updatedAt": "2026-09-14",
+          "recordTitle": "HASARD: A Benchmark for Vision-Based Safe Reinforcement Learning in Embodied Agents"
+        }
+      }
     },
     {
       "id": "kb-w01",
@@ -364,7 +626,8 @@
       "checkedAt": "2026-09-14",
       "links": {
         "paper": "https://proceedings.iclr.cc/paper_files/paper/2025/hash/b71ecea210f7159f31e46631fe5c838f-Abstract-Conference.html",
-        "project": "https://gamengen.github.io/"
+        "project": "https://gamengen.github.io/",
+        "pdf": "https://proceedings.iclr.cc/paper_files/paper/2025/file/b71ecea210f7159f31e46631fe5c838f-Paper-Conference.pdf"
       },
       "rank": 9,
       "sourceId": "W01",
@@ -374,7 +637,32 @@
         "FPS"
       ],
       "selectionTrack": "peer-reviewed",
-      "paperType": "method"
+      "paperType": "method",
+      "bibliography": {
+        "source": "Publisher",
+        "sourceUrl": "https://proceedings.iclr.cc/paper_files/paper/2025/hash/b71ecea210f7159f31e46631fe5c838f-Abstract-Conference.html",
+        "checkedAt": "2026-09-14",
+        "authors": [
+          "Dani Valevski",
+          "Yaniv Leviathan",
+          "Moab Arar",
+          "Shlomi Fruchter"
+        ],
+        "date": "2025-05-01",
+        "dateLabel": "Publisher record date",
+        "bibtex": "@misc{kb-w01,\n  title = {Diffusion Models Are Real-Time Game Engines},\n  author = {Dani Valevski and Yaniv Leviathan and Moab Arar and Shlomi Fruchter},\n  year = {2025},\n  url = {https://proceedings.iclr.cc/paper_files/paper/2025/hash/b71ecea210f7159f31e46631fe5c838f-Abstract-Conference.html}\n}",
+        "preview": "assets/papers/kb-w01.png",
+        "previewSourceUrl": "https://proceedings.iclr.cc/paper_files/paper/2025/file/b71ecea210f7159f31e46631fe5c838f-Paper-Conference.pdf"
+      },
+      "metrics": {
+        "citations": {
+          "value": 4,
+          "source": "OpenAlex",
+          "sourceUrl": "https://openalex.org/W4402704721",
+          "updatedAt": "2026-09-14",
+          "recordTitle": "Diffusion Models Are Real-Time Game Engines"
+        }
+      }
     },
     {
       "id": "kb-w02",
@@ -402,7 +690,8 @@
       "checkedAt": "2026-09-14",
       "links": {
         "paper": "https://proceedings.neurips.cc/paper_files/paper/2024/hash/6bdde0373d53d4a501249547084bed43-Abstract-Conference.html",
-        "code": "https://github.com/eloialonso/diamond"
+        "code": "https://github.com/eloialonso/diamond",
+        "pdf": "https://proceedings.neurips.cc/paper_files/paper/2024/file/6bdde0373d53d4a501249547084bed43-Paper-Conference.pdf"
       },
       "rank": 29,
       "sourceId": "W02",
@@ -413,7 +702,43 @@
         "Multi-game"
       ],
       "selectionTrack": "peer-reviewed",
-      "paperType": "method"
+      "paperType": "method",
+      "bibliography": {
+        "source": "Publisher",
+        "sourceUrl": "https://proceedings.neurips.cc/paper_files/paper/2024/hash/6bdde0373d53d4a501249547084bed43-Abstract-Conference.html",
+        "checkedAt": "2026-09-14",
+        "authors": [
+          "Eloi Alonso",
+          "Adam Jelley",
+          "Vincent Micheli",
+          "Anssi Kanervisto",
+          "Amos Storkey",
+          "Tim Pearce",
+          "François Fleuret"
+        ],
+        "date": "2024-12-16",
+        "dateLabel": "Publisher record date",
+        "doi": "10.52202/079017-1873",
+        "bibtex": "@misc{kb-w02,\n  title = {Diffusion for World Modeling: Visual Details Matter in Atari},\n  author = {Eloi Alonso and Adam Jelley and Vincent Micheli and Anssi Kanervisto and Amos Storkey and Tim Pearce and François Fleuret},\n  year = {2024},\n  url = {https://proceedings.neurips.cc/paper_files/paper/2024/hash/6bdde0373d53d4a501249547084bed43-Abstract-Conference.html},\n  doi = {10.52202/079017-1873}\n}",
+        "preview": "assets/papers/kb-w02.png",
+        "previewSourceUrl": "https://proceedings.neurips.cc/paper_files/paper/2024/file/6bdde0373d53d4a501249547084bed43-Paper-Conference.pdf"
+      },
+      "metrics": {
+        "citations": {
+          "value": 2,
+          "source": "OpenAlex",
+          "sourceUrl": "https://openalex.org/W4398229893",
+          "updatedAt": "2026-09-14",
+          "recordTitle": "Diffusion for World Modeling: Visual Details Matter in Atari"
+        },
+        "github": {
+          "value": 2104,
+          "source": "GitHub",
+          "sourceUrl": "https://github.com/eloialonso/diamond/stargazers",
+          "repository": "eloialonso/diamond",
+          "updatedAt": "2026-09-14"
+        }
+      }
     },
     {
       "id": "kb-w03",
@@ -441,7 +766,8 @@
       "checkedAt": "2026-09-14",
       "links": {
         "paper": "https://proceedings.nips.cc/paper_files/paper/2025/hash/63943ee9fe347f3d95892cf87d9a42e6-Abstract-Conference.html",
-        "code": "https://github.com/insait-institute/StateSpaceDiffuser"
+        "code": "https://github.com/insait-institute/StateSpaceDiffuser",
+        "pdf": "https://proceedings.neurips.cc/paper_files/paper/2025/file/63943ee9fe347f3d95892cf87d9a42e6-Paper-Conference.pdf"
       },
       "rank": 30,
       "sourceId": "W03",
@@ -451,7 +777,42 @@
         "FPS"
       ],
       "selectionTrack": "peer-reviewed",
-      "paperType": "method"
+      "paperType": "method",
+      "bibliography": {
+        "source": "Publisher",
+        "sourceUrl": "https://proceedings.nips.cc/paper_files/paper/2025/hash/63943ee9fe347f3d95892cf87d9a42e6-Abstract-Conference.html",
+        "checkedAt": "2026-09-14",
+        "authors": [
+          "Nedko Savov",
+          "Naser Kazemi",
+          "Deheng Zhang",
+          "Danda Pani Paudel",
+          "Xi Wang",
+          "Luc V Gool"
+        ],
+        "date": "2026-04-23",
+        "dateLabel": "Publisher record date",
+        "doi": "10.52202/085713-2316",
+        "bibtex": "@misc{kb-w03,\n  title = {StateSpaceDiffuser: Bringing Long Context to Diffusion World Models},\n  author = {Nedko Savov and Naser Kazemi and Deheng Zhang and Danda Pani Paudel and Xi Wang and Luc V Gool},\n  year = {2026},\n  url = {https://proceedings.nips.cc/paper_files/paper/2025/hash/63943ee9fe347f3d95892cf87d9a42e6-Abstract-Conference.html},\n  doi = {10.52202/085713-2316}\n}",
+        "preview": "assets/papers/kb-w03.png",
+        "previewSourceUrl": "https://proceedings.neurips.cc/paper_files/paper/2025/file/63943ee9fe347f3d95892cf87d9a42e6-Paper-Conference.pdf"
+      },
+      "metrics": {
+        "citations": {
+          "value": 0,
+          "source": "OpenAlex",
+          "sourceUrl": "https://openalex.org/W4416048054",
+          "updatedAt": "2026-09-14",
+          "recordTitle": "StateSpaceDiffuser: Bringing Long Context to Diffusion World Models"
+        },
+        "github": {
+          "value": 6,
+          "source": "GitHub",
+          "sourceUrl": "https://github.com/insait-institute/StateSpaceDiffuser/stargazers",
+          "repository": "insait-institute/StateSpaceDiffuser",
+          "updatedAt": "2026-09-14"
+        }
+      }
     },
     {
       "id": "kb-s01",
@@ -479,7 +840,8 @@
       "checkedAt": "2026-09-14",
       "links": {
         "paper": "https://proceedings.neurips.cc/paper_files/paper/2025/hash/97c903fbf21a7d863af2015d8803ca8f-Abstract-Conference.html",
-        "code": "https://github.com/LJH-coding/EDELINE"
+        "code": "https://github.com/LJH-coding/EDELINE",
+        "pdf": "https://proceedings.neurips.cc/paper_files/paper/2025/file/97c903fbf21a7d863af2015d8803ca8f-Paper-Conference.pdf"
       },
       "rank": 31,
       "sourceId": "S01",
@@ -489,7 +851,40 @@
         "FPS"
       ],
       "selectionTrack": "peer-reviewed",
-      "paperType": "method"
+      "paperType": "method",
+      "bibliography": {
+        "source": "Publisher",
+        "sourceUrl": "https://proceedings.neurips.cc/paper_files/paper/2025/hash/97c903fbf21a7d863af2015d8803ca8f-Abstract-Conference.html",
+        "checkedAt": "2026-09-14",
+        "authors": [
+          "Jia-Hua Lee",
+          "Bor-Jiun Lin",
+          "Wei-Fang Sun",
+          "Chun-Yi Lee"
+        ],
+        "date": "2026-04-23",
+        "dateLabel": "Publisher record date",
+        "doi": "10.52202/085713-3526",
+        "bibtex": "@misc{kb-s01,\n  title = {EDELINE: Enhancing Memory in Diffusion-based World Models via Linear-Time Sequence Modeling},\n  author = {Jia-Hua Lee and Bor-Jiun Lin and Wei-Fang Sun and Chun-Yi Lee},\n  year = {2026},\n  url = {https://proceedings.neurips.cc/paper_files/paper/2025/hash/97c903fbf21a7d863af2015d8803ca8f-Abstract-Conference.html},\n  doi = {10.52202/085713-3526}\n}",
+        "preview": "assets/papers/kb-s01.png",
+        "previewSourceUrl": "https://proceedings.neurips.cc/paper_files/paper/2025/file/97c903fbf21a7d863af2015d8803ca8f-Paper-Conference.pdf"
+      },
+      "metrics": {
+        "citations": {
+          "value": 0,
+          "source": "OpenAlex",
+          "sourceUrl": "https://openalex.org/W4407123592",
+          "updatedAt": "2026-09-14",
+          "recordTitle": "EDELINE: Enhancing Memory in Diffusion-based World Models via Linear-Time Sequence Modeling"
+        },
+        "github": {
+          "value": 20,
+          "source": "GitHub",
+          "sourceUrl": "https://github.com/LJH-coding/EDELINE/stargazers",
+          "repository": "LJH-coding/EDELINE",
+          "updatedAt": "2026-09-14"
+        }
+      }
     },
     {
       "id": "kb-t01",
@@ -517,7 +912,8 @@
       "checkedAt": "2026-09-14",
       "links": {
         "paper": "https://iclr.cc/virtual/2026/poster/10008663",
-        "code": "https://github.com/anyboby/contextual-similarity-distillation"
+        "code": "https://github.com/anyboby/contextual-similarity-distillation",
+        "pdf": "https://arxiv.org/pdf/2503.11339"
       },
       "rank": 32,
       "sourceId": "T01",
@@ -527,7 +923,40 @@
         "FPS"
       ],
       "selectionTrack": "peer-reviewed",
-      "paperType": "method"
+      "paperType": "method",
+      "bibliography": {
+        "source": "OpenAlex",
+        "sourceUrl": "https://openalex.org/W4417285496",
+        "checkedAt": "2026-09-14",
+        "authors": [
+          "Moritz A. Zanger",
+          "Pascal R. Van der Vaart",
+          "Wendelin Böhmer",
+          "Matthijs T. J. Spaan"
+        ],
+        "date": "2025-03-14",
+        "dateLabel": "Indexed publication date (OpenAlex)",
+        "arxivId": "2503.11339",
+        "bibtex": "@misc{kb-t01,\n  title = {Contextual Similarity Distillation: Ensemble Uncertainties with a Single Model},\n  author = {Moritz A. Zanger and Pascal R. Van der Vaart and Wendelin Böhmer and Matthijs T. J. Spaan},\n  year = {2025},\n  url = {https://iclr.cc/virtual/2026/poster/10008663}\n}",
+        "preview": "assets/papers/kb-t01.png",
+        "previewSourceUrl": "https://arxiv.org/pdf/2503.11339"
+      },
+      "metrics": {
+        "citations": {
+          "value": 0,
+          "source": "OpenAlex",
+          "sourceUrl": "https://openalex.org/W4417285496",
+          "updatedAt": "2026-09-14",
+          "recordTitle": "Contextual Similarity Distillation: Ensemble Uncertainties with a Single Model"
+        },
+        "github": {
+          "value": 1,
+          "source": "GitHub",
+          "sourceUrl": "https://github.com/anyboby/contextual-similarity-distillation/stargazers",
+          "repository": "anyboby/contextual-similarity-distillation",
+          "updatedAt": "2026-09-14"
+        }
+      }
     },
     {
       "id": "kb-t02",
@@ -555,7 +984,8 @@
       "checkedAt": "2026-09-14",
       "links": {
         "paper": "https://iclr.cc/virtual/2026/poster/10007816",
-        "project": "https://sites.google.com/view/rate-model/"
+        "project": "https://sites.google.com/view/rate-model/",
+        "pdf": "https://arxiv.org/pdf/2306.09459"
       },
       "rank": 33,
       "sourceId": "T02",
@@ -565,7 +995,33 @@
         "FPS"
       ],
       "selectionTrack": "peer-reviewed",
-      "paperType": "method"
+      "paperType": "method",
+      "bibliography": {
+        "source": "OpenAlex",
+        "sourceUrl": "https://openalex.org/W4381245688",
+        "checkedAt": "2026-09-14",
+        "authors": [
+          "Egor Cherepanov",
+          "Alexey Staroverov",
+          "Alexey K. Kovalev",
+          "Aleksandr I. Panov"
+        ],
+        "date": "2023-06-15",
+        "dateLabel": "Indexed publication date (OpenAlex)",
+        "arxivId": "2306.09459",
+        "bibtex": "@misc{kb-t02,\n  title = {Recurrent Action Transformer with Memory},\n  author = {Egor Cherepanov and Alexey Staroverov and Alexey K. Kovalev and Aleksandr I. Panov},\n  year = {2023},\n  url = {https://iclr.cc/virtual/2026/poster/10007816}\n}",
+        "preview": "assets/papers/kb-t02.png",
+        "previewSourceUrl": "https://arxiv.org/pdf/2306.09459"
+      },
+      "metrics": {
+        "citations": {
+          "value": 1,
+          "source": "OpenAlex",
+          "sourceUrl": "https://openalex.org/W4381245688",
+          "updatedAt": "2026-09-14",
+          "recordTitle": "Recurrent Action Transformer with Memory"
+        }
+      }
     },
     {
       "id": "kb-c01",
@@ -592,7 +1048,8 @@
       "sourceType": "knowledge",
       "checkedAt": "2026-09-14",
       "links": {
-        "paper": "https://www.ijcai.org/proceedings/2025/74"
+        "paper": "https://www.ijcai.org/proceedings/2025/74",
+        "pdf": "https://www.ijcai.org/proceedings/2025/0074.pdf"
       },
       "rank": 34,
       "sourceId": "C01",
@@ -602,7 +1059,34 @@
         "FPS"
       ],
       "selectionTrack": "peer-reviewed",
-      "paperType": "method"
+      "paperType": "method",
+      "bibliography": {
+        "source": "Publisher",
+        "sourceUrl": "https://www.ijcai.org/proceedings/2025/74",
+        "checkedAt": "2026-09-14",
+        "authors": [
+          "Rui Zuo",
+          "Simon Khan",
+          "Zifan Wang",
+          "Garrett Ethan Katz",
+          "Qinru Qiu"
+        ],
+        "date": "2025-09-16",
+        "dateLabel": "Publisher record date",
+        "doi": "10.24963/ijcai.2025/74",
+        "bibtex": "@misc{kb-c01,\n  title = {Why the Agent Made that Decision: Contrastive Explanation Learning for Reinforcement Learning},\n  author = {Rui Zuo and Simon Khan and Zifan Wang and Garrett Ethan Katz and Qinru Qiu},\n  year = {2025},\n  url = {https://www.ijcai.org/proceedings/2025/74},\n  doi = {10.24963/ijcai.2025/74}\n}",
+        "preview": "assets/papers/kb-c01.png",
+        "previewSourceUrl": "https://www.ijcai.org/proceedings/2025/0074.pdf"
+      },
+      "metrics": {
+        "citations": {
+          "value": 1,
+          "source": "OpenAlex",
+          "sourceUrl": "https://openalex.org/W4414360152",
+          "updatedAt": "2026-09-14",
+          "recordTitle": "Why the Agent Made that Decision: Contrastive Explanation Learning for Reinforcement Learning"
+        }
+      }
     },
     {
       "id": "kb-c02",
@@ -630,7 +1114,8 @@
       "sourceType": "knowledge",
       "checkedAt": "2026-09-14",
       "links": {
-        "paper": "https://proceedings.neurips.cc/paper_files/paper/2023/hash/0c1e94af650f5c74b1f3da467c2308c2-Abstract-Conference.html"
+        "paper": "https://proceedings.neurips.cc/paper_files/paper/2023/hash/0c1e94af650f5c74b1f3da467c2308c2-Abstract-Conference.html",
+        "pdf": "https://proceedings.neurips.cc/paper_files/paper/2023/file/0c1e94af650f5c74b1f3da467c2308c2-Paper-Conference.pdf"
       },
       "rank": 35,
       "sourceId": "C02",
@@ -640,7 +1125,34 @@
         "FPS"
       ],
       "selectionTrack": "peer-reviewed",
-      "paperType": "method"
+      "paperType": "method",
+      "bibliography": {
+        "source": "Publisher",
+        "sourceUrl": "https://proceedings.neurips.cc/paper_files/paper/2023/hash/0c1e94af650f5c74b1f3da467c2308c2-Abstract-Conference.html",
+        "checkedAt": "2026-09-14",
+        "authors": [
+          "Tianyi Chen",
+          "Qidi Wang",
+          "Zhen Dong",
+          "Liwei Shen",
+          "Xin Peng"
+        ],
+        "date": "2023-12-15",
+        "dateLabel": "Publisher record date",
+        "doi": "10.52202/075280-0171",
+        "bibtex": "@misc{kb-c02,\n  title = {Enhancing Robot Program Synthesis Through Environmental Context},\n  author = {Tianyi Chen and Qidi Wang and Zhen Dong and Liwei Shen and Xin Peng},\n  year = {2023},\n  url = {https://proceedings.neurips.cc/paper_files/paper/2023/hash/0c1e94af650f5c74b1f3da467c2308c2-Abstract-Conference.html},\n  doi = {10.52202/075280-0171}\n}",
+        "preview": "assets/papers/kb-c02.png",
+        "previewSourceUrl": "https://proceedings.neurips.cc/paper_files/paper/2023/file/0c1e94af650f5c74b1f3da467c2308c2-Paper-Conference.pdf"
+      },
+      "metrics": {
+        "citations": {
+          "value": 0,
+          "source": "OpenAlex",
+          "sourceUrl": "https://openalex.org/W7133226547",
+          "updatedAt": "2026-09-14",
+          "recordTitle": "Enhancing Robot Program Synthesis Through Environmental Context"
+        }
+      }
     },
     {
       "id": "kb-c03",
@@ -668,7 +1180,8 @@
       "checkedAt": "2026-09-14",
       "links": {
         "paper": "https://proceedings.mlr.press/v235/wagner24a.html",
-        "code": "https://github.com/stefanwm13/just-cluster-it-public"
+        "code": "https://github.com/stefanwm13/just-cluster-it-public",
+        "pdf": "https://raw.githubusercontent.com/mlresearch/v235/main/assets/wagner24a/wagner24a.pdf"
       },
       "rank": 36,
       "sourceId": "C03",
@@ -678,7 +1191,37 @@
         "FPS"
       ],
       "selectionTrack": "peer-reviewed",
-      "paperType": "method"
+      "paperType": "method",
+      "bibliography": {
+        "source": "Publisher",
+        "sourceUrl": "https://proceedings.mlr.press/v235/wagner24a.html",
+        "checkedAt": "2026-09-14",
+        "authors": [
+          "Stefan Sylvius Wagner",
+          "Stefan Harmeling"
+        ],
+        "date": "2024-07-08",
+        "dateLabel": "Publisher record date",
+        "bibtex": "@misc{kb-c03,\n  title = {Just Cluster It: An Approach for Exploration in High-Dimensions using Clustering and Pre-Trained Representations},\n  author = {Stefan Sylvius Wagner and Stefan Harmeling},\n  year = {2024},\n  url = {https://proceedings.mlr.press/v235/wagner24a.html}\n}",
+        "preview": "assets/papers/kb-c03.png",
+        "previewSourceUrl": "https://raw.githubusercontent.com/mlresearch/v235/main/assets/wagner24a/wagner24a.pdf"
+      },
+      "metrics": {
+        "citations": {
+          "value": 1,
+          "source": "OpenAlex",
+          "sourceUrl": "https://openalex.org/W4391622581",
+          "updatedAt": "2026-09-14",
+          "recordTitle": "Just Cluster It: An Approach for Exploration in High-Dimensions using Clustering and Pre-Trained Representations"
+        },
+        "github": {
+          "value": 4,
+          "source": "GitHub",
+          "sourceUrl": "https://github.com/stefanwm13/just-cluster-it-public/stargazers",
+          "repository": "stefanwm13/just-cluster-it-public",
+          "updatedAt": "2026-09-14"
+        }
+      }
     },
     {
       "id": "kb-c04",
@@ -706,7 +1249,8 @@
       "checkedAt": "2026-09-14",
       "links": {
         "paper": "https://proceedings.neurips.cc/paper_files/paper/2022/hash/f4f79698d48bdc1a6dec20583724182b-Abstract-Conference.html",
-        "project": "https://e3bagent.github.io/"
+        "project": "https://e3bagent.github.io/",
+        "pdf": "https://proceedings.neurips.cc/paper_files/paper/2022/file/f4f79698d48bdc1a6dec20583724182b-Paper-Conference.pdf"
       },
       "rank": 37,
       "sourceId": "C04",
@@ -716,7 +1260,33 @@
         "FPS"
       ],
       "selectionTrack": "peer-reviewed",
-      "paperType": "method"
+      "paperType": "method",
+      "bibliography": {
+        "source": "Publisher",
+        "sourceUrl": "https://proceedings.neurips.cc/paper_files/paper/2022/hash/f4f79698d48bdc1a6dec20583724182b-Abstract-Conference.html",
+        "checkedAt": "2026-09-14",
+        "authors": [
+          "Mikael Henaff",
+          "Roberta Raileanu",
+          "Minqi Jiang",
+          "Tim Rocktäschel"
+        ],
+        "date": "2022-12-06",
+        "dateLabel": "Publisher record date",
+        "doi": "10.52202/068431-2728",
+        "bibtex": "@misc{kb-c04,\n  title = {Exploration via Elliptical Episodic Bonuses},\n  author = {Mikael Henaff and Roberta Raileanu and Minqi Jiang and Tim Rocktäschel},\n  year = {2022},\n  url = {https://proceedings.neurips.cc/paper_files/paper/2022/hash/f4f79698d48bdc1a6dec20583724182b-Abstract-Conference.html},\n  doi = {10.52202/068431-2728}\n}",
+        "preview": "assets/papers/kb-c04.png",
+        "previewSourceUrl": "https://proceedings.neurips.cc/paper_files/paper/2022/file/f4f79698d48bdc1a6dec20583724182b-Paper-Conference.pdf"
+      },
+      "metrics": {
+        "citations": {
+          "value": 8,
+          "source": "OpenAlex",
+          "sourceUrl": "https://openalex.org/W4306176261",
+          "updatedAt": "2026-09-14",
+          "recordTitle": "Exploration via Elliptical Episodic Bonuses"
+        }
+      }
     },
     {
       "id": "kb-c05",
@@ -744,7 +1314,8 @@
       "checkedAt": "2026-09-14",
       "links": {
         "paper": "https://proceedings.neurips.cc/paper_files/paper/2021/hash/e27c71957d1e6c223e0d48a165da2ee1-Abstract.html",
-        "code": "https://github.com/2016choang/sfl"
+        "code": "https://github.com/2016choang/sfl",
+        "pdf": "https://proceedings.neurips.cc/paper_files/paper/2021/file/e27c71957d1e6c223e0d48a165da2ee1-Paper.pdf"
       },
       "rank": 38,
       "sourceId": "C05",
@@ -755,7 +1326,40 @@
       ],
       "publicationDate": "2021-12",
       "selectionTrack": "peer-reviewed",
-      "paperType": "method"
+      "paperType": "method",
+      "bibliography": {
+        "source": "Publisher",
+        "sourceUrl": "https://proceedings.neurips.cc/paper_files/paper/2021/hash/e27c71957d1e6c223e0d48a165da2ee1-Abstract.html",
+        "checkedAt": "2026-09-14",
+        "authors": [
+          "Christopher Hoang",
+          "Sungryull Sohn",
+          "Jongwook Choi",
+          "Wilka Carvalho",
+          "Honglak Lee"
+        ],
+        "date": "2021-12-06",
+        "dateLabel": "Publisher record date",
+        "bibtex": "@misc{kb-c05,\n  title = {Successor Feature Landmarks for Long-Horizon Goal-Conditioned Reinforcement Learning},\n  author = {Christopher Hoang and Sungryull Sohn and Jongwook Choi and Wilka Carvalho and Honglak Lee},\n  year = {2021},\n  url = {https://proceedings.neurips.cc/paper_files/paper/2021/hash/e27c71957d1e6c223e0d48a165da2ee1-Abstract.html}\n}",
+        "preview": "assets/papers/kb-c05.png",
+        "previewSourceUrl": "https://proceedings.neurips.cc/paper_files/paper/2021/file/e27c71957d1e6c223e0d48a165da2ee1-Paper.pdf"
+      },
+      "metrics": {
+        "citations": {
+          "value": 3,
+          "source": "OpenAlex",
+          "sourceUrl": "https://openalex.org/W3212475937",
+          "updatedAt": "2026-09-14",
+          "recordTitle": "Successor Feature Landmarks for Long-Horizon Goal-Conditioned Reinforcement Learning"
+        },
+        "github": {
+          "value": 8,
+          "source": "GitHub",
+          "sourceUrl": "https://github.com/2016choang/sfl/stargazers",
+          "repository": "2016choang/sfl",
+          "updatedAt": "2026-09-14"
+        }
+      }
     },
     {
       "id": "kb-c06",
@@ -782,7 +1386,8 @@
       "sourceType": "knowledge",
       "checkedAt": "2026-09-14",
       "links": {
-        "paper": "https://ojs.aaai.org/index.php/AAAI/article/view/30132"
+        "paper": "https://ojs.aaai.org/index.php/AAAI/article/view/30132",
+        "pdf": "https://ojs.aaai.org/index.php/AAAI/article/download/30132/32004"
       },
       "rank": 39,
       "sourceId": "C06",
@@ -792,7 +1397,31 @@
         "FPS"
       ],
       "selectionTrack": "peer-reviewed",
-      "paperType": "method"
+      "paperType": "method",
+      "bibliography": {
+        "source": "OpenAlex",
+        "sourceUrl": "https://openalex.org/W4393157199",
+        "checkedAt": "2026-09-14",
+        "authors": [
+          "Yuxiao Lu",
+          "Arunesh Sinha",
+          "Pradeep Varakantham"
+        ],
+        "date": "2024-03-24",
+        "dateLabel": "Indexed publication date (OpenAlex)",
+        "bibtex": "@misc{kb-c06,\n  title = {Handling Long and Richly Constrained Tasks through Constrained Hierarchical Reinforcement Learning},\n  author = {Yuxiao Lu and Arunesh Sinha and Pradeep Varakantham},\n  year = {2024},\n  url = {https://ojs.aaai.org/index.php/AAAI/article/view/30132}\n}",
+        "preview": "assets/papers/kb-c06.png",
+        "previewSourceUrl": "https://ojs.aaai.org/index.php/AAAI/article/download/30132/32004"
+      },
+      "metrics": {
+        "citations": {
+          "value": 2,
+          "source": "OpenAlex",
+          "sourceUrl": "https://openalex.org/W4393157199",
+          "updatedAt": "2026-09-14",
+          "recordTitle": "Handling Long and Richly Constrained Tasks through Constrained Hierarchical Reinforcement Learning"
+        }
+      }
     },
     {
       "id": "kb-c08",
@@ -819,7 +1448,8 @@
       "sourceType": "knowledge",
       "checkedAt": "2026-09-14",
       "links": {
-        "paper": "https://proceedings.iclr.cc/paper_files/paper/2024/hash/cfea00ddf5a5f514bd3368d639d1933d-Abstract-Conference.html"
+        "paper": "https://proceedings.iclr.cc/paper_files/paper/2024/hash/cfea00ddf5a5f514bd3368d639d1933d-Abstract-Conference.html",
+        "pdf": "https://proceedings.iclr.cc/paper_files/paper/2024/file/cfea00ddf5a5f514bd3368d639d1933d-Paper-Conference.pdf"
       },
       "rank": 40,
       "sourceId": "C08",
@@ -829,7 +1459,22 @@
         "FPS"
       ],
       "selectionTrack": "peer-reviewed",
-      "paperType": "method"
+      "paperType": "method",
+      "bibliography": {
+        "source": "Publisher",
+        "sourceUrl": "https://proceedings.iclr.cc/paper_files/paper/2024/hash/cfea00ddf5a5f514bd3368d639d1933d-Abstract-Conference.html",
+        "checkedAt": "2026-09-14",
+        "authors": [
+          "Moritz Akiya Zanger",
+          "Wendelin Boehmer",
+          "Matthijs T. J. Spaan"
+        ],
+        "date": "2024-05-31",
+        "dateLabel": "Publisher record date",
+        "bibtex": "@misc{kb-c08,\n  title = {Diverse Projection Ensembles for Distributional Reinforcement Learning},\n  author = {Moritz Akiya Zanger and Wendelin Boehmer and Matthijs T. J. Spaan},\n  year = {2024},\n  url = {https://proceedings.iclr.cc/paper_files/paper/2024/hash/cfea00ddf5a5f514bd3368d639d1933d-Abstract-Conference.html}\n}",
+        "preview": "assets/papers/kb-c08.png",
+        "previewSourceUrl": "https://proceedings.iclr.cc/paper_files/paper/2024/file/cfea00ddf5a5f514bd3368d639d1933d-Paper-Conference.pdf"
+      }
     },
     {
       "id": "kb-c09",
@@ -857,7 +1502,8 @@
       "checkedAt": "2026-09-14",
       "links": {
         "paper": "https://proceedings.neurips.cc/paper_files/paper/2022/hash/a7667ee5d545a43d2f0fda98863c260e-Abstract-Conference.html",
-        "code": "https://github.com/LeapLabTHU/MOSS"
+        "code": "https://github.com/LeapLabTHU/MOSS",
+        "pdf": "https://proceedings.neurips.cc/paper_files/paper/2022/file/a7667ee5d545a43d2f0fda98863c260e-Paper-Conference.pdf"
       },
       "rank": 41,
       "sourceId": "C09",
@@ -867,7 +1513,41 @@
         "FPS"
       ],
       "selectionTrack": "peer-reviewed",
-      "paperType": "method"
+      "paperType": "method",
+      "bibliography": {
+        "source": "Publisher",
+        "sourceUrl": "https://proceedings.neurips.cc/paper_files/paper/2022/hash/a7667ee5d545a43d2f0fda98863c260e-Abstract-Conference.html",
+        "checkedAt": "2026-09-14",
+        "authors": [
+          "Andrew Zhao",
+          "Matthieu Lin",
+          "Yangguang Li",
+          "Yong-jin Liu",
+          "Gao Huang"
+        ],
+        "date": "2022-12-06",
+        "dateLabel": "Publisher record date",
+        "doi": "10.52202/068431-1891",
+        "bibtex": "@misc{kb-c09,\n  title = {A Mixture of Surprises for Unsupervised Reinforcement Learning},\n  author = {Andrew Zhao and Matthieu Lin and Yangguang Li and Yong-jin Liu and Gao Huang},\n  year = {2022},\n  url = {https://proceedings.neurips.cc/paper_files/paper/2022/hash/a7667ee5d545a43d2f0fda98863c260e-Abstract-Conference.html},\n  doi = {10.52202/068431-1891}\n}",
+        "preview": "assets/papers/kb-c09.png",
+        "previewSourceUrl": "https://proceedings.neurips.cc/paper_files/paper/2022/file/a7667ee5d545a43d2f0fda98863c260e-Paper-Conference.pdf"
+      },
+      "metrics": {
+        "citations": {
+          "value": 2,
+          "source": "OpenAlex",
+          "sourceUrl": "https://openalex.org/W4306295186",
+          "updatedAt": "2026-09-14",
+          "recordTitle": "A Mixture of Surprises for Unsupervised Reinforcement Learning"
+        },
+        "github": {
+          "value": 23,
+          "source": "GitHub",
+          "sourceUrl": "https://github.com/LeapLabTHU/MOSS/stargazers",
+          "repository": "LeapLabTHU/MOSS",
+          "updatedAt": "2026-09-14"
+        }
+      }
     },
     {
       "id": "mp5",
@@ -895,12 +1575,50 @@
       "checkedAt": "2026-09-14",
       "links": {
         "paper": "https://openaccess.thecvf.com/content/CVPR2024/html/Qin_MP5_A_Multi-modal_Open-ended_Embodied_System_in_Minecraft_via_Active_CVPR_2024_paper.html",
-        "project": "https://iranqin.github.io/MP5.github.io/"
+        "project": "https://iranqin.github.io/MP5.github.io/",
+        "code": "https://github.com/IranQin/MP5",
+        "pdf": "https://openaccess.thecvf.com/content/CVPR2024/papers/Qin_MP5_A_Multi-modal_Open-ended_Embodied_System_in_Minecraft_via_Active_CVPR_2024_paper.pdf"
       },
       "rank": 11,
       "selectionTrack": "peer-reviewed",
       "selectionReason": "Conference or journal paper within the five-year window; official proceedings and author sources are prioritized.",
-      "paperType": "method"
+      "paperType": "method",
+      "bibliography": {
+        "source": "Publisher",
+        "sourceUrl": "https://openaccess.thecvf.com/content/CVPR2024/html/Qin_MP5_A_Multi-modal_Open-ended_Embodied_System_in_Minecraft_via_Active_CVPR_2024_paper.html",
+        "checkedAt": "2026-09-14",
+        "authors": [
+          "Yiran Qin",
+          "Enshen Zhou",
+          "Qichang Liu",
+          "Zhenfei Yin",
+          "Lu Sheng",
+          "Ruimao Zhang",
+          "Yu Qiao",
+          "Jing Shao"
+        ],
+        "date": "2024",
+        "dateLabel": "Publisher record date",
+        "bibtex": "@misc{mp5,\n  title = {MP5: A Multi-modal Open-ended Embodied System in Minecraft via Active Perception},\n  author = {Yiran Qin and Enshen Zhou and Qichang Liu and Zhenfei Yin and Lu Sheng and Ruimao Zhang and Yu Qiao and Jing Shao},\n  year = {2024},\n  url = {https://openaccess.thecvf.com/content/CVPR2024/html/Qin_MP5_A_Multi-modal_Open-ended_Embodied_System_in_Minecraft_via_Active_CVPR_2024_paper.html}\n}",
+        "preview": "assets/papers/mp5.png",
+        "previewSourceUrl": "https://openaccess.thecvf.com/content/CVPR2024/papers/Qin_MP5_A_Multi-modal_Open-ended_Embodied_System_in_Minecraft_via_Active_CVPR_2024_paper.pdf"
+      },
+      "metrics": {
+        "citations": {
+          "value": 1,
+          "source": "OpenAlex",
+          "sourceUrl": "https://openalex.org/W4389761566",
+          "updatedAt": "2026-09-14",
+          "recordTitle": "MP5: A Multi-modal Open-ended Embodied System in Minecraft via Active Perception"
+        },
+        "github": {
+          "value": 108,
+          "source": "GitHub",
+          "sourceUrl": "https://github.com/IranQin/MP5/stargazers",
+          "repository": "IranQin/MP5",
+          "updatedAt": "2026-09-14"
+        }
+      }
     },
     {
       "id": "deps",
@@ -927,12 +1645,41 @@
       "sourceType": "knowledge",
       "checkedAt": "2026-09-14",
       "links": {
-        "paper": "https://proceedings.neurips.cc/paper_files/paper/2023/hash/6b8dfb8c0c12e6fafc6c256cb08a5ca7-Abstract-Conference.html"
+        "paper": "https://proceedings.neurips.cc/paper_files/paper/2023/hash/6b8dfb8c0c12e6fafc6c256cb08a5ca7-Abstract-Conference.html",
+        "pdf": "https://proceedings.neurips.cc/paper_files/paper/2023/file/6b8dfb8c0c12e6fafc6c256cb08a5ca7-Paper-Conference.pdf"
       },
       "rank": 43,
       "selectionTrack": "peer-reviewed",
       "selectionReason": "Conference or journal paper within the five-year window; official proceedings and author sources are prioritized.",
-      "paperType": "method"
+      "paperType": "method",
+      "bibliography": {
+        "source": "Publisher",
+        "sourceUrl": "https://proceedings.neurips.cc/paper_files/paper/2023/hash/6b8dfb8c0c12e6fafc6c256cb08a5ca7-Abstract-Conference.html",
+        "checkedAt": "2026-09-14",
+        "authors": [
+          "Zihao Wang",
+          "Shaofei Cai",
+          "Guanzhou Chen",
+          "Anji Liu",
+          "Xiaojian (Shawn) Ma",
+          "Yitao Liang"
+        ],
+        "date": "2023-12-15",
+        "dateLabel": "Publisher record date",
+        "doi": "10.52202/075280-1480",
+        "bibtex": "@misc{deps,\n  title = {Describe, Explain, Plan and Select: Interactive Planning with LLMs Enables Open-World Multi-Task Agents},\n  author = {Zihao Wang and Shaofei Cai and Guanzhou Chen and Anji Liu and Xiaojian (Shawn) Ma and Yitao Liang},\n  year = {2023},\n  url = {https://proceedings.neurips.cc/paper_files/paper/2023/hash/6b8dfb8c0c12e6fafc6c256cb08a5ca7-Abstract-Conference.html},\n  doi = {10.52202/075280-1480}\n}",
+        "preview": "assets/papers/deps.png",
+        "previewSourceUrl": "https://proceedings.neurips.cc/paper_files/paper/2023/file/6b8dfb8c0c12e6fafc6c256cb08a5ca7-Paper-Conference.pdf"
+      },
+      "metrics": {
+        "citations": {
+          "value": 51,
+          "source": "OpenAlex",
+          "sourceUrl": "https://openalex.org/W4319323461",
+          "updatedAt": "2026-09-14",
+          "recordTitle": "Describe, Explain, Plan and Select: Interactive Planning with Large Language Models Enables Open-World Multi-Task Agents"
+        }
+      }
     },
     {
       "id": "voyager",
@@ -961,12 +1708,50 @@
       "links": {
         "paper": "https://openreview.net/forum?id=P8E4Br72j3",
         "code": "https://github.com/MineDojo/Voyager",
-        "project": "https://voyager.minedojo.org/"
+        "project": "https://voyager.minedojo.org/",
+        "pdf": "https://arxiv.org/pdf/2305.16291"
       },
       "rank": 3,
       "selectionTrack": "peer-reviewed",
       "selectionReason": "Conference or journal paper within the five-year window; official proceedings and author sources are prioritized.",
-      "paperType": "method"
+      "paperType": "method",
+      "bibliography": {
+        "source": "arXiv",
+        "sourceUrl": "https://arxiv.org/abs/2305.16291",
+        "checkedAt": "2026-09-14",
+        "authors": [
+          "Guanzhi Wang",
+          "Yuqi Xie",
+          "Yunfan Jiang",
+          "Ajay Mandlekar",
+          "Chaowei Xiao",
+          "Yuke Zhu",
+          "Linxi Fan",
+          "Anima Anandkumar"
+        ],
+        "date": "2023-05-25",
+        "dateLabel": "First arXiv submission",
+        "arxivId": "2305.16291",
+        "bibtex": "@misc{voyager,\n  title = {Voyager: An Open-Ended Embodied Agent with Large Language Models},\n  author = {Guanzhi Wang and Yuqi Xie and Yunfan Jiang and Ajay Mandlekar and Chaowei Xiao and Yuke Zhu and Linxi Fan and Anima Anandkumar},\n  year = {2023},\n  url = {https://openreview.net/forum?id=P8E4Br72j3}\n}",
+        "preview": "assets/papers/voyager.png",
+        "previewSourceUrl": "https://arxiv.org/pdf/2305.16291"
+      },
+      "metrics": {
+        "citations": {
+          "value": 203,
+          "source": "OpenAlex",
+          "sourceUrl": "https://openalex.org/W4378505261",
+          "updatedAt": "2026-09-14",
+          "recordTitle": "Voyager: An Open-Ended Embodied Agent with Large Language Models"
+        },
+        "github": {
+          "value": 7196,
+          "source": "GitHub",
+          "sourceUrl": "https://github.com/MineDojo/Voyager/stargazers",
+          "repository": "MineDojo/Voyager",
+          "updatedAt": "2026-09-14"
+        }
+      }
     },
     {
       "id": "vpt",
@@ -993,12 +1778,44 @@
       "sourceType": "supplement",
       "checkedAt": "2026-09-14",
       "links": {
-        "paper": "https://proceedings.neurips.cc/paper_files/paper/2022/hash/9c7008aff45b5d8f0973b23e1a22ada0-Abstract-Conference.html"
+        "paper": "https://proceedings.neurips.cc/paper_files/paper/2022/hash/9c7008aff45b5d8f0973b23e1a22ada0-Abstract-Conference.html",
+        "pdf": "https://proceedings.neurips.cc/paper_files/paper/2022/file/9c7008aff45b5d8f0973b23e1a22ada0-Paper-Conference.pdf"
       },
       "rank": 15,
       "selectionTrack": "peer-reviewed",
       "selectionReason": "Conference or journal paper within the five-year window; official proceedings and author sources are prioritized.",
-      "paperType": "method"
+      "paperType": "method",
+      "bibliography": {
+        "source": "Publisher",
+        "sourceUrl": "https://proceedings.neurips.cc/paper_files/paper/2022/hash/9c7008aff45b5d8f0973b23e1a22ada0-Abstract-Conference.html",
+        "checkedAt": "2026-09-14",
+        "authors": [
+          "Bowen Baker",
+          "Ilge Akkaya",
+          "Peter Zhokov",
+          "Joost Huizinga",
+          "Jie Tang",
+          "Adrien Ecoffet",
+          "Brandon Houghton",
+          "Raul Sampedro",
+          "Jeff Clune"
+        ],
+        "date": "2022-12-06",
+        "dateLabel": "Publisher record date",
+        "doi": "10.52202/068431-1789",
+        "bibtex": "@misc{vpt,\n  title = {Video PreTraining (VPT): Learning to Act by Watching Unlabeled Online Videos},\n  author = {Bowen Baker and Ilge Akkaya and Peter Zhokov and Joost Huizinga and Jie Tang and Adrien Ecoffet and Brandon Houghton and Raul Sampedro and Jeff Clune},\n  year = {2022},\n  url = {https://proceedings.neurips.cc/paper_files/paper/2022/hash/9c7008aff45b5d8f0973b23e1a22ada0-Abstract-Conference.html},\n  doi = {10.52202/068431-1789}\n}",
+        "preview": "assets/papers/vpt.png",
+        "previewSourceUrl": "https://proceedings.neurips.cc/paper_files/paper/2022/file/9c7008aff45b5d8f0973b23e1a22ada0-Paper-Conference.pdf"
+      },
+      "metrics": {
+        "citations": {
+          "value": 50,
+          "source": "OpenAlex",
+          "sourceUrl": "https://openalex.org/W4283460722",
+          "updatedAt": "2026-09-14",
+          "recordTitle": "Video PreTraining (VPT): Learning to Act by Watching Unlabeled Online Videos"
+        }
+      }
     },
     {
       "id": "steve1",
@@ -1025,12 +1842,40 @@
       "sourceType": "supplement",
       "checkedAt": "2026-09-14",
       "links": {
-        "paper": "https://proceedings.neurips.cc/paper_files/paper/2023/hash/dd03f856fc7f2efeec8b1c796284561d-Abstract-Conference.html"
+        "paper": "https://proceedings.neurips.cc/paper_files/paper/2023/hash/dd03f856fc7f2efeec8b1c796284561d-Abstract-Conference.html",
+        "pdf": "https://proceedings.neurips.cc/paper_files/paper/2023/file/dd03f856fc7f2efeec8b1c796284561d-Paper-Conference.pdf"
       },
       "rank": 46,
       "selectionTrack": "peer-reviewed",
       "selectionReason": "Conference or journal paper within the five-year window; official proceedings and author sources are prioritized.",
-      "paperType": "method"
+      "paperType": "method",
+      "bibliography": {
+        "source": "Publisher",
+        "sourceUrl": "https://proceedings.neurips.cc/paper_files/paper/2023/hash/dd03f856fc7f2efeec8b1c796284561d-Abstract-Conference.html",
+        "checkedAt": "2026-09-14",
+        "authors": [
+          "Shalev Lifshitz",
+          "Keiran Paster",
+          "Harris Chan",
+          "Jimmy Ba",
+          "Sheila McIlraith"
+        ],
+        "date": "2023-12-15",
+        "dateLabel": "Publisher record date",
+        "doi": "10.52202/075280-3064",
+        "bibtex": "@misc{steve1,\n  title = {STEVE-1: A Generative Model for Text-to-Behavior in Minecraft},\n  author = {Shalev Lifshitz and Keiran Paster and Harris Chan and Jimmy Ba and Sheila McIlraith},\n  year = {2023},\n  url = {https://proceedings.neurips.cc/paper_files/paper/2023/hash/dd03f856fc7f2efeec8b1c796284561d-Abstract-Conference.html},\n  doi = {10.52202/075280-3064}\n}",
+        "preview": "assets/papers/steve1.png",
+        "previewSourceUrl": "https://proceedings.neurips.cc/paper_files/paper/2023/file/dd03f856fc7f2efeec8b1c796284561d-Paper-Conference.pdf"
+      },
+      "metrics": {
+        "citations": {
+          "value": 7,
+          "source": "OpenAlex",
+          "sourceUrl": "https://openalex.org/W4379357893",
+          "updatedAt": "2026-09-14",
+          "recordTitle": "STEVE-1: A Generative Model for Text-to-Behavior in Minecraft"
+        }
+      }
     },
     {
       "id": "openvla",
@@ -1059,13 +1904,60 @@
       "links": {
         "paper": "https://proceedings.mlr.press/v270/kim25c.html",
         "code": "https://github.com/openvla/openvla",
-        "project": "https://openvla.github.io/"
+        "project": "https://openvla.github.io/",
+        "model": "https://huggingface.co/openvla",
+        "pdf": "https://raw.githubusercontent.com/mlresearch/v270/main/assets/kim25c/kim25c.pdf"
       },
       "rank": 2,
       "publicationNote": "The conference took place in 2024; PMLR proceedings were published in 2025.",
       "selectionTrack": "peer-reviewed",
       "selectionReason": "Conference or journal paper within the five-year window; official proceedings and author sources are prioritized.",
-      "paperType": "method"
+      "paperType": "method",
+      "bibliography": {
+        "source": "Publisher",
+        "sourceUrl": "https://proceedings.mlr.press/v270/kim25c.html",
+        "checkedAt": "2026-09-14",
+        "authors": [
+          "Moo Jin Kim",
+          "Karl Pertsch",
+          "Siddharth Karamcheti",
+          "Ted Xiao",
+          "Ashwin Balakrishna",
+          "Suraj Nair",
+          "Rafael Rafailov",
+          "Ethan P Foster",
+          "Pannag R Sanketi",
+          "Quan Vuong",
+          "Thomas Kollar",
+          "Benjamin Burchfiel",
+          "Russ Tedrake",
+          "Dorsa Sadigh",
+          "Sergey Levine",
+          "Percy Liang",
+          "Chelsea Finn"
+        ],
+        "date": "2025-01-12",
+        "dateLabel": "Publisher record date",
+        "bibtex": "@misc{openvla,\n  title = {OpenVLA: An Open-Source Vision-Language-Action Model},\n  author = {Moo Jin Kim and Karl Pertsch and Siddharth Karamcheti and Ted Xiao and Ashwin Balakrishna and Suraj Nair and Rafael Rafailov and Ethan P Foster and Pannag R Sanketi and Quan Vuong and Thomas Kollar and Benjamin Burchfiel and Russ Tedrake and Dorsa Sadigh and Sergey Levine and Percy Liang and Chelsea Finn},\n  year = {2025},\n  url = {https://proceedings.mlr.press/v270/kim25c.html}\n}",
+        "preview": "assets/papers/openvla.png",
+        "previewSourceUrl": "https://raw.githubusercontent.com/mlresearch/v270/main/assets/kim25c/kim25c.pdf"
+      },
+      "metrics": {
+        "citations": {
+          "value": 43,
+          "source": "OpenAlex",
+          "sourceUrl": "https://openalex.org/W4399695759",
+          "updatedAt": "2026-09-14",
+          "recordTitle": "OpenVLA: An Open-Source Vision-Language-Action Model"
+        },
+        "github": {
+          "value": 7008,
+          "source": "GitHub",
+          "sourceUrl": "https://github.com/openvla/openvla/stargazers",
+          "repository": "openvla/openvla",
+          "updatedAt": "2026-09-14"
+        }
+      }
     },
     {
       "id": "diffusion-policy",
@@ -1093,12 +1985,50 @@
       "checkedAt": "2026-09-14",
       "links": {
         "paper": "https://diffusion-policy.cs.columbia.edu/",
-        "code": "https://github.com/real-stanford/diffusion_policy"
+        "code": "https://github.com/real-stanford/diffusion_policy",
+        "pdf": "https://arxiv.org/pdf/2303.04137"
       },
       "rank": 4,
       "selectionTrack": "peer-reviewed",
       "selectionReason": "Conference or journal paper within the five-year window; official proceedings and author sources are prioritized.",
-      "paperType": "method"
+      "paperType": "method",
+      "bibliography": {
+        "source": "arXiv",
+        "sourceUrl": "https://arxiv.org/abs/2303.04137",
+        "checkedAt": "2026-09-14",
+        "authors": [
+          "Cheng Chi",
+          "Zhenjia Xu",
+          "Siyuan Feng",
+          "Eric Cousineau",
+          "Yilun Du",
+          "Benjamin Burchfiel",
+          "Russ Tedrake",
+          "Shuran Song"
+        ],
+        "date": "2023-03-07",
+        "dateLabel": "First arXiv submission",
+        "arxivId": "2303.04137",
+        "bibtex": "@misc{diffusion-policy,\n  title = {Diffusion Policy: Visuomotor Policy Learning via Action Diffusion},\n  author = {Cheng Chi and Zhenjia Xu and Siyuan Feng and Eric Cousineau and Yilun Du and Benjamin Burchfiel and Russ Tedrake and Shuran Song},\n  year = {2023},\n  url = {https://diffusion-policy.cs.columbia.edu/}\n}",
+        "preview": "assets/papers/diffusion-policy.png",
+        "previewSourceUrl": "https://arxiv.org/pdf/2303.04137"
+      },
+      "metrics": {
+        "citations": {
+          "value": 488,
+          "source": "OpenAlex",
+          "sourceUrl": "https://openalex.org/W4385403811",
+          "updatedAt": "2026-09-14",
+          "recordTitle": "Diffusion Policy: Visuomotor Policy Learning via Action Diffusion"
+        },
+        "github": {
+          "value": 4541,
+          "source": "GitHub",
+          "sourceUrl": "https://github.com/real-stanford/diffusion_policy/stargazers",
+          "repository": "real-stanford/diffusion_policy",
+          "updatedAt": "2026-09-14"
+        }
+      }
     },
     {
       "id": "act",
@@ -1126,12 +2056,46 @@
       "checkedAt": "2026-09-14",
       "links": {
         "paper": "https://roboticsproceedings.org/rss19/p016.html",
-        "project": "https://tonyzhaozh.github.io/aloha/"
+        "project": "https://tonyzhaozh.github.io/aloha/",
+        "code": "https://github.com/tonyzhaozh/act",
+        "pdf": "https://www.roboticsproceedings.org/rss19/p016.pdf"
       },
       "rank": 12,
       "selectionTrack": "peer-reviewed",
       "selectionReason": "Conference or journal paper within the five-year window; official proceedings and author sources are prioritized.",
-      "paperType": "method"
+      "paperType": "method",
+      "bibliography": {
+        "source": "Publisher",
+        "sourceUrl": "https://roboticsproceedings.org/rss19/p016.html",
+        "checkedAt": "2026-09-14",
+        "authors": [
+          "Tony Z. Zhao",
+          "Vikash Kumar",
+          "Sergey Levine",
+          "Chelsea Finn"
+        ],
+        "date": "2023-07-10",
+        "dateLabel": "Publisher record date",
+        "bibtex": "@misc{act,\n  title = {Learning Fine-Grained Bimanual Manipulation with Low-Cost Hardware},\n  author = {Tony Z. Zhao and Vikash Kumar and Sergey Levine and Chelsea Finn},\n  year = {2023},\n  url = {https://roboticsproceedings.org/rss19/p016.html}\n}",
+        "preview": "assets/papers/act.png",
+        "previewSourceUrl": "https://www.roboticsproceedings.org/rss19/p016.pdf"
+      },
+      "metrics": {
+        "citations": {
+          "value": 586,
+          "source": "OpenAlex",
+          "sourceUrl": "https://openalex.org/W4385430674",
+          "updatedAt": "2026-09-14",
+          "recordTitle": "Learning Fine-Grained Bimanual Manipulation with Low-Cost Hardware"
+        },
+        "github": {
+          "value": 2221,
+          "source": "GitHub",
+          "sourceUrl": "https://github.com/tonyzhaozh/act/stargazers",
+          "repository": "tonyzhaozh/act",
+          "updatedAt": "2026-09-14"
+        }
+      }
     },
     {
       "id": "octo",
@@ -1159,12 +2123,61 @@
       "checkedAt": "2026-09-14",
       "links": {
         "paper": "https://www.roboticsproceedings.org/rss20/p090.html",
-        "project": "https://octo-models.github.io/"
+        "project": "https://octo-models.github.io/",
+        "code": "https://github.com/octo-models/octo",
+        "model": "https://huggingface.co/rail-berkeley",
+        "pdf": "https://www.roboticsproceedings.org/rss20/p090.pdf"
       },
       "rank": 50,
       "selectionTrack": "peer-reviewed",
       "selectionReason": "Conference or journal paper within the five-year window; official proceedings and author sources are prioritized.",
-      "paperType": "method"
+      "paperType": "method",
+      "bibliography": {
+        "source": "Publisher",
+        "sourceUrl": "https://www.roboticsproceedings.org/rss20/p090.html",
+        "checkedAt": "2026-09-14",
+        "authors": [
+          "Dibya Ghosh",
+          "Homer Rich Walke",
+          "Karl Pertsch",
+          "Kevin Black",
+          "Oier Mees",
+          "Sudeep Dasari",
+          "Joey Hejna",
+          "Tobias Kreiman",
+          "Charles Xu",
+          "Jianlan Luo",
+          "You Liang Tan",
+          "Lawrence Yunliang Chen",
+          "Quan Vuong",
+          "Ted Xiao",
+          "Pannag R Sanketi",
+          "Dorsa Sadigh",
+          "Chelsea Finn",
+          "Sergey Levine"
+        ],
+        "date": "2024-07-15",
+        "dateLabel": "Publisher record date",
+        "bibtex": "@misc{octo,\n  title = {Octo: An Open-Source Generalist Robot Policy},\n  author = {Dibya Ghosh and Homer Rich Walke and Karl Pertsch and Kevin Black and Oier Mees and Sudeep Dasari and Joey Hejna and Tobias Kreiman and Charles Xu and Jianlan Luo and You Liang Tan and Lawrence Yunliang Chen and Quan Vuong and Ted Xiao and Pannag R Sanketi and Dorsa Sadigh and Chelsea Finn and Sergey Levine},\n  year = {2024},\n  url = {https://www.roboticsproceedings.org/rss20/p090.html}\n}",
+        "preview": "assets/papers/octo.png",
+        "previewSourceUrl": "https://www.roboticsproceedings.org/rss20/p090.pdf"
+      },
+      "metrics": {
+        "citations": {
+          "value": 98,
+          "source": "OpenAlex",
+          "sourceUrl": "https://openalex.org/W4402353985",
+          "updatedAt": "2026-09-14",
+          "recordTitle": "Octo: An Open-Source Generalist Robot Policy"
+        },
+        "github": {
+          "value": 1772,
+          "source": "GitHub",
+          "sourceUrl": "https://github.com/octo-models/octo/stargazers",
+          "repository": "octo-models/octo",
+          "updatedAt": "2026-09-14"
+        }
+      }
     },
     {
       "id": "rt2",
@@ -1191,12 +2204,88 @@
       "sourceType": "supplement",
       "checkedAt": "2026-09-14",
       "links": {
-        "paper": "https://proceedings.mlr.press/v229/zitkovich23a.html"
+        "paper": "https://proceedings.mlr.press/v229/zitkovich23a.html",
+        "pdf": "https://proceedings.mlr.press/v229/zitkovich23a/zitkovich23a.pdf"
       },
       "rank": 51,
       "selectionTrack": "peer-reviewed",
       "selectionReason": "Conference or journal paper within the five-year window; official proceedings and author sources are prioritized.",
-      "paperType": "method"
+      "paperType": "method",
+      "bibliography": {
+        "source": "Publisher",
+        "sourceUrl": "https://proceedings.mlr.press/v229/zitkovich23a.html",
+        "checkedAt": "2026-09-14",
+        "authors": [
+          "Brianna Zitkovich",
+          "Tianhe Yu",
+          "Sichun Xu",
+          "Peng Xu",
+          "Ted Xiao",
+          "Fei Xia",
+          "Jialin Wu",
+          "Paul Wohlhart",
+          "Stefan Welker",
+          "Ayzaan Wahid",
+          "Quan Vuong",
+          "Vincent Vanhoucke",
+          "Huong Tran",
+          "Radu Soricut",
+          "Anikait Singh",
+          "Jaspiar Singh",
+          "Pierre Sermanet",
+          "Pannag R. Sanketi",
+          "Grecia Salazar",
+          "Michael S. Ryoo",
+          "Krista Reymann",
+          "Kanishka Rao",
+          "Karl Pertsch",
+          "Igor Mordatch",
+          "Henryk Michalewski",
+          "Yao Lu",
+          "Sergey Levine",
+          "Lisa Lee",
+          "Tsang-Wei Edward Lee",
+          "Isabel Leal",
+          "Yuheng Kuang",
+          "Dmitry Kalashnikov",
+          "Ryan Julian",
+          "Nikhil J. Joshi",
+          "Alex Irpan",
+          "Brian Ichter",
+          "Jasmine Hsu",
+          "Alexander Herzog",
+          "Karol Hausman",
+          "Keerthana Gopalakrishnan",
+          "Chuyuan Fu",
+          "Pete Florence",
+          "Chelsea Finn",
+          "Kumar Avinava Dubey",
+          "Danny Driess",
+          "Tianli Ding",
+          "Krzysztof Marcin Choromanski",
+          "Xi Chen",
+          "Yevgen Chebotar",
+          "Justice Carbajal",
+          "Noah Brown",
+          "Anthony Brohan",
+          "Montserrat Gonzalez Arenas",
+          "Kehang Han"
+        ],
+        "date": "2023-12-02",
+        "dateLabel": "Publisher record date",
+        "bibtex": "@misc{rt2,\n  title = {RT-2: Vision-Language-Action Models Transfer Web Knowledge to Robotic Control},\n  author = {Brianna Zitkovich and Tianhe Yu and Sichun Xu and Peng Xu and Ted Xiao and Fei Xia and Jialin Wu and Paul Wohlhart and Stefan Welker and Ayzaan Wahid and Quan Vuong and Vincent Vanhoucke and Huong Tran and Radu Soricut and Anikait Singh and Jaspiar Singh and Pierre Sermanet and Pannag R. Sanketi and Grecia Salazar and Michael S. Ryoo and Krista Reymann and Kanishka Rao and Karl Pertsch and Igor Mordatch and Henryk Michalewski and Yao Lu and Sergey Levine and Lisa Lee and Tsang-Wei Edward Lee and Isabel Leal and Yuheng Kuang and Dmitry Kalashnikov and Ryan Julian and Nikhil J. Joshi and Alex Irpan and Brian Ichter and Jasmine Hsu and Alexander Herzog and Karol Hausman and Keerthana Gopalakrishnan and Chuyuan Fu and Pete Florence and Chelsea Finn and Kumar Avinava Dubey and Danny Driess and Tianli Ding and Krzysztof Marcin Choromanski and Xi Chen and Yevgen Chebotar and Justice Carbajal and Noah Brown and Anthony Brohan and Montserrat Gonzalez Arenas and Kehang Han},\n  year = {2023},\n  url = {https://proceedings.mlr.press/v229/zitkovich23a.html}\n}",
+        "preview": "assets/papers/rt2.png",
+        "previewSourceUrl": "https://proceedings.mlr.press/v229/zitkovich23a/zitkovich23a.pdf"
+      },
+      "metrics": {
+        "citations": {
+          "value": 273,
+          "source": "OpenAlex",
+          "sourceUrl": "https://openalex.org/W4385473486",
+          "updatedAt": "2026-09-14",
+          "recordTitle": "RT-2: Vision-Language-Action Models Transfer Web Knowledge to Robotic Control"
+        }
+      }
     },
     {
       "id": "voxposer",
@@ -1223,12 +2312,49 @@
       "sourceType": "supplement",
       "checkedAt": "2026-09-14",
       "links": {
-        "paper": "https://proceedings.mlr.press/v229/huang23b.html"
+        "paper": "https://proceedings.mlr.press/v229/huang23b.html",
+        "project": "https://voxposer.github.io/",
+        "code": "https://github.com/huangwl18/VoxPoser",
+        "pdf": "https://proceedings.mlr.press/v229/huang23b/huang23b.pdf"
       },
       "rank": 52,
       "selectionTrack": "peer-reviewed",
       "selectionReason": "Conference or journal paper within the five-year window; official proceedings and author sources are prioritized.",
-      "paperType": "method"
+      "paperType": "method",
+      "bibliography": {
+        "source": "Publisher",
+        "sourceUrl": "https://proceedings.mlr.press/v229/huang23b.html",
+        "checkedAt": "2026-09-14",
+        "authors": [
+          "Wenlong Huang",
+          "Chen Wang",
+          "Ruohan Zhang",
+          "Yunzhu Li",
+          "Jiajun Wu",
+          "Li Fei-Fei"
+        ],
+        "date": "2023-12-02",
+        "dateLabel": "Publisher record date",
+        "bibtex": "@misc{voxposer,\n  title = {VoxPoser: Composable 3D Value Maps for Robotic Manipulation with Language Models},\n  author = {Wenlong Huang and Chen Wang and Ruohan Zhang and Yunzhu Li and Jiajun Wu and Li Fei-Fei},\n  year = {2023},\n  url = {https://proceedings.mlr.press/v229/huang23b.html}\n}",
+        "preview": "assets/papers/voxposer.png",
+        "previewSourceUrl": "https://proceedings.mlr.press/v229/huang23b/huang23b.pdf"
+      },
+      "metrics": {
+        "citations": {
+          "value": 87,
+          "source": "OpenAlex",
+          "sourceUrl": "https://openalex.org/W4384264726",
+          "updatedAt": "2026-09-14",
+          "recordTitle": "VoxPoser: Composable 3D Value Maps for Robotic Manipulation with Language Models"
+        },
+        "github": {
+          "value": 835,
+          "source": "GitHub",
+          "sourceUrl": "https://github.com/huangwl18/VoxPoser/stargazers",
+          "repository": "huangwl18/VoxPoser",
+          "updatedAt": "2026-09-14"
+        }
+      }
     },
     {
       "id": "rekep",
@@ -1255,13 +2381,49 @@
       "sourceType": "supplement",
       "checkedAt": "2026-09-14",
       "links": {
-        "paper": "https://proceedings.mlr.press/v270/huang25g.html"
+        "paper": "https://proceedings.mlr.press/v270/huang25g.html",
+        "project": "https://rekep-robot.github.io/",
+        "code": "https://github.com/huangwl18/ReKep",
+        "pdf": "https://raw.githubusercontent.com/mlresearch/v270/main/assets/huang25g/huang25g.pdf"
       },
       "rank": 53,
       "publicationNote": "Conference year: 2024. PMLR publication year: 2025.",
       "selectionTrack": "peer-reviewed",
       "selectionReason": "Conference or journal paper within the five-year window; official proceedings and author sources are prioritized.",
-      "paperType": "method"
+      "paperType": "method",
+      "bibliography": {
+        "source": "Publisher",
+        "sourceUrl": "https://proceedings.mlr.press/v270/huang25g.html",
+        "checkedAt": "2026-09-14",
+        "authors": [
+          "Wenlong Huang",
+          "Chen Wang",
+          "Yunzhu Li",
+          "Ruohan Zhang",
+          "Li Fei-Fei"
+        ],
+        "date": "2025-01-12",
+        "dateLabel": "Publisher record date",
+        "bibtex": "@misc{rekep,\n  title = {ReKep: Spatio-Temporal Reasoning of Relational Keypoint Constraints for Robotic Manipulation},\n  author = {Wenlong Huang and Chen Wang and Yunzhu Li and Ruohan Zhang and Li Fei-Fei},\n  year = {2025},\n  url = {https://proceedings.mlr.press/v270/huang25g.html}\n}",
+        "preview": "assets/papers/rekep.png",
+        "previewSourceUrl": "https://raw.githubusercontent.com/mlresearch/v270/main/assets/huang25g/huang25g.pdf"
+      },
+      "metrics": {
+        "citations": {
+          "value": 9,
+          "source": "OpenAlex",
+          "sourceUrl": "https://openalex.org/W4402955063",
+          "updatedAt": "2026-09-14",
+          "recordTitle": "ReKep: Spatio-Temporal Reasoning of Relational Keypoint Constraints for Robotic Manipulation"
+        },
+        "github": {
+          "value": 986,
+          "source": "GitHub",
+          "sourceUrl": "https://github.com/huangwl18/ReKep/stargazers",
+          "repository": "huangwl18/ReKep",
+          "updatedAt": "2026-09-14"
+        }
+      }
     },
     {
       "id": "hirobot",
@@ -1288,12 +2450,40 @@
       "sourceType": "supplement",
       "checkedAt": "2026-09-14",
       "links": {
-        "paper": "https://proceedings.mlr.press/v267/shi25d.html"
+        "paper": "https://proceedings.mlr.press/v267/shi25d.html",
+        "pdf": "https://raw.githubusercontent.com/mlresearch/v267/main/assets/shi25d/shi25d.pdf"
       },
       "rank": 8,
       "selectionTrack": "peer-reviewed",
       "selectionReason": "Conference or journal paper within the five-year window; official proceedings and author sources are prioritized.",
-      "paperType": "method"
+      "paperType": "method",
+      "bibliography": {
+        "source": "Publisher",
+        "sourceUrl": "https://proceedings.mlr.press/v267/shi25d.html",
+        "checkedAt": "2026-09-14",
+        "authors": [
+          "Lucy Xiaoyang Shi",
+          "Brian Ichter",
+          "Michael Robert Equi",
+          "Liyiming Ke",
+          "Karl Pertsch",
+          "Quan Vuong",
+          "James Tanner",
+          "Anna Walling",
+          "Haohuan Wang",
+          "Niccolo Fusai",
+          "Adrian Li-Bell",
+          "Danny Driess",
+          "Lachy Groom",
+          "Sergey Levine",
+          "Chelsea Finn"
+        ],
+        "date": "2025-10-06",
+        "dateLabel": "Publisher record date",
+        "bibtex": "@misc{hirobot,\n  title = {Hi Robot: Open-Ended Instruction Following with Hierarchical Vision-Language-Action Models},\n  author = {Lucy Xiaoyang Shi and Brian Ichter and Michael Robert Equi and Liyiming Ke and Karl Pertsch and Quan Vuong and James Tanner and Anna Walling and Haohuan Wang and Niccolo Fusai and Adrian Li-Bell and Danny Driess and Lachy Groom and Sergey Levine and Chelsea Finn},\n  year = {2025},\n  url = {https://proceedings.mlr.press/v267/shi25d.html}\n}",
+        "preview": "assets/papers/hirobot.png",
+        "previewSourceUrl": "https://raw.githubusercontent.com/mlresearch/v267/main/assets/shi25d/shi25d.pdf"
+      }
     },
     {
       "id": "libero",
@@ -1322,12 +2512,49 @@
       "checkedAt": "2026-09-14",
       "links": {
         "paper": "https://proceedings.neurips.cc/paper_files/paper/2023/hash/8c3c666820ea055a77726d66fc7d447f-Abstract-Datasets_and_Benchmarks.html",
-        "code": "https://github.com/Lifelong-Robot-Learning/LIBERO"
+        "code": "https://github.com/Lifelong-Robot-Learning/LIBERO",
+        "pdf": "https://proceedings.neurips.cc/paper_files/paper/2023/file/8c3c666820ea055a77726d66fc7d447f-Paper-Datasets_and_Benchmarks.pdf"
       },
       "rank": 16,
       "selectionTrack": "peer-reviewed",
       "selectionReason": "Conference or journal paper within the five-year window; official proceedings and author sources are prioritized.",
-      "paperType": "benchmark"
+      "paperType": "benchmark",
+      "bibliography": {
+        "source": "Publisher",
+        "sourceUrl": "https://proceedings.neurips.cc/paper_files/paper/2023/hash/8c3c666820ea055a77726d66fc7d447f-Abstract-Datasets_and_Benchmarks.html",
+        "checkedAt": "2026-09-14",
+        "authors": [
+          "Bo Liu",
+          "Yifeng Zhu",
+          "Chongkai Gao",
+          "Yihao Feng",
+          "Qiang Liu",
+          "Yuke Zhu",
+          "Peter Stone"
+        ],
+        "date": "2023-12-15",
+        "dateLabel": "Publisher record date",
+        "doi": "10.52202/075280-1939",
+        "bibtex": "@misc{libero,\n  title = {LIBERO: Benchmarking Knowledge Transfer for Lifelong Robot Learning},\n  author = {Bo Liu and Yifeng Zhu and Chongkai Gao and Yihao Feng and Qiang Liu and Yuke Zhu and Peter Stone},\n  year = {2023},\n  url = {https://proceedings.neurips.cc/paper_files/paper/2023/hash/8c3c666820ea055a77726d66fc7d447f-Abstract-Datasets_and_Benchmarks.html},\n  doi = {10.52202/075280-1939}\n}",
+        "preview": "assets/papers/libero.png",
+        "previewSourceUrl": "https://proceedings.neurips.cc/paper_files/paper/2023/file/8c3c666820ea055a77726d66fc7d447f-Paper-Datasets_and_Benchmarks.pdf"
+      },
+      "metrics": {
+        "citations": {
+          "value": 7,
+          "source": "OpenAlex",
+          "sourceUrl": "https://openalex.org/W4379919389",
+          "updatedAt": "2026-09-14",
+          "recordTitle": "LIBERO: Benchmarking Knowledge Transfer for Lifelong Robot Learning"
+        },
+        "github": {
+          "value": 2311,
+          "source": "GitHub",
+          "sourceUrl": "https://github.com/Lifelong-Robot-Learning/LIBERO/stargazers",
+          "repository": "Lifelong-Robot-Learning/LIBERO",
+          "updatedAt": "2026-09-14"
+        }
+      }
     },
     {
       "id": "embodiedbench",
@@ -1355,12 +2582,57 @@
       "sourceType": "supplement",
       "checkedAt": "2026-09-14",
       "links": {
-        "paper": "https://proceedings.mlr.press/v267/yang25f.html"
+        "paper": "https://proceedings.mlr.press/v267/yang25f.html",
+        "project": "https://embodiedbench.github.io/",
+        "code": "https://github.com/EmbodiedBench/EmbodiedBench",
+        "data": "https://huggingface.co/EmbodiedBench",
+        "pdf": "https://raw.githubusercontent.com/mlresearch/v267/main/assets/yang25f/yang25f.pdf"
       },
       "rank": 56,
       "selectionTrack": "peer-reviewed",
       "selectionReason": "Conference or journal paper within the five-year window; official proceedings and author sources are prioritized.",
-      "paperType": "benchmark"
+      "paperType": "benchmark",
+      "bibliography": {
+        "source": "Publisher",
+        "sourceUrl": "https://proceedings.mlr.press/v267/yang25f.html",
+        "checkedAt": "2026-09-14",
+        "authors": [
+          "Rui Yang",
+          "Hanyang Chen",
+          "Junyu Zhang",
+          "Mark Zhao",
+          "Cheng Qian",
+          "Kangrui Wang",
+          "Qineng Wang",
+          "Teja Venkat Koripella",
+          "Marziyeh Movahedi",
+          "Manling Li",
+          "Heng Ji",
+          "Huan Zhang",
+          "Tong Zhang"
+        ],
+        "date": "2025-10-06",
+        "dateLabel": "Publisher record date",
+        "bibtex": "@misc{embodiedbench,\n  title = {EmbodiedBench: Comprehensive Benchmarking Multi-modal Large Language Models for Vision-Driven Embodied Agents},\n  author = {Rui Yang and Hanyang Chen and Junyu Zhang and Mark Zhao and Cheng Qian and Kangrui Wang and Qineng Wang and Teja Venkat Koripella and Marziyeh Movahedi and Manling Li and Heng Ji and Huan Zhang and Tong Zhang},\n  year = {2025},\n  url = {https://proceedings.mlr.press/v267/yang25f.html}\n}",
+        "preview": "assets/papers/embodiedbench.png",
+        "previewSourceUrl": "https://raw.githubusercontent.com/mlresearch/v267/main/assets/yang25f/yang25f.pdf"
+      },
+      "metrics": {
+        "citations": {
+          "value": 1,
+          "source": "OpenAlex",
+          "sourceUrl": "https://openalex.org/W4407590542",
+          "updatedAt": "2026-09-14",
+          "recordTitle": "EmbodiedBench: Comprehensive Benchmarking Multi-modal Large Language Models for Vision-Driven Embodied Agents"
+        },
+        "github": {
+          "value": 341,
+          "source": "GitHub",
+          "sourceUrl": "https://github.com/EmbodiedBench/EmbodiedBench/stargazers",
+          "repository": "EmbodiedBench/EmbodiedBench",
+          "updatedAt": "2026-09-14"
+        }
+      }
     },
     {
       "id": "consistency-policy",
@@ -1387,12 +2659,39 @@
       "sourceType": "supplement",
       "checkedAt": "2026-09-14",
       "links": {
-        "paper": "https://www.roboticsproceedings.org/rss20/p071.html"
+        "paper": "https://www.roboticsproceedings.org/rss20/p071.html",
+        "pdf": "https://www.roboticsproceedings.org/rss20/p071.pdf"
       },
       "rank": 57,
       "selectionTrack": "peer-reviewed",
       "selectionReason": "Conference or journal paper within the five-year window; official proceedings and author sources are prioritized.",
-      "paperType": "method"
+      "paperType": "method",
+      "bibliography": {
+        "source": "Publisher",
+        "sourceUrl": "https://www.roboticsproceedings.org/rss20/p071.html",
+        "checkedAt": "2026-09-14",
+        "authors": [
+          "Aaditya Prasad",
+          "Kevin Lin",
+          "Jimmy Wu",
+          "Linqi Zhou",
+          "Jeannette Bohg"
+        ],
+        "date": "2024-07-15",
+        "dateLabel": "Publisher record date",
+        "bibtex": "@misc{consistency-policy,\n  title = {Consistency Policy: Accelerated Visuomotor Policies via Consistency Distillation},\n  author = {Aaditya Prasad and Kevin Lin and Jimmy Wu and Linqi Zhou and Jeannette Bohg},\n  year = {2024},\n  url = {https://www.roboticsproceedings.org/rss20/p071.html}\n}",
+        "preview": "assets/papers/consistency-policy.png",
+        "previewSourceUrl": "https://www.roboticsproceedings.org/rss20/p071.pdf"
+      },
+      "metrics": {
+        "citations": {
+          "value": 50,
+          "source": "OpenAlex",
+          "sourceUrl": "https://openalex.org/W4402354007",
+          "updatedAt": "2026-09-14",
+          "recordTitle": "Consistency Policy: Accelerated Visuomotor Policies via Consistency Distillation"
+        }
+      }
     },
     {
       "id": "baku",
@@ -1419,12 +2718,38 @@
       "sourceType": "supplement",
       "checkedAt": "2026-09-14",
       "links": {
-        "paper": "https://proceedings.neurips.cc/paper_files/paper/2024/hash/ff887781480973bd3cb6026feb378d1e-Abstract-Conference.html"
+        "paper": "https://proceedings.neurips.cc/paper_files/paper/2024/hash/ff887781480973bd3cb6026feb378d1e-Abstract-Conference.html",
+        "pdf": "https://proceedings.neurips.cc/paper_files/paper/2024/file/ff887781480973bd3cb6026feb378d1e-Paper-Conference.pdf"
       },
       "rank": 58,
       "selectionTrack": "peer-reviewed",
       "selectionReason": "Conference or journal paper within the five-year window; official proceedings and author sources are prioritized.",
-      "paperType": "method"
+      "paperType": "method",
+      "bibliography": {
+        "source": "Publisher",
+        "sourceUrl": "https://proceedings.neurips.cc/paper_files/paper/2024/hash/ff887781480973bd3cb6026feb378d1e-Abstract-Conference.html",
+        "checkedAt": "2026-09-14",
+        "authors": [
+          "Siddhant Haldar",
+          "Zhuoran Peng",
+          "Lerrel Pinto"
+        ],
+        "date": "2024-12-16",
+        "dateLabel": "Publisher record date",
+        "doi": "10.52202/079017-4484",
+        "bibtex": "@misc{baku,\n  title = {BAKU: An Efficient Transformer for Multi-Task Policy Learning},\n  author = {Siddhant Haldar and Zhuoran Peng and Lerrel Pinto},\n  year = {2024},\n  url = {https://proceedings.neurips.cc/paper_files/paper/2024/hash/ff887781480973bd3cb6026feb378d1e-Abstract-Conference.html},\n  doi = {10.52202/079017-4484}\n}",
+        "preview": "assets/papers/baku.png",
+        "previewSourceUrl": "https://proceedings.neurips.cc/paper_files/paper/2024/file/ff887781480973bd3cb6026feb378d1e-Paper-Conference.pdf"
+      },
+      "metrics": {
+        "citations": {
+          "value": 1,
+          "source": "OpenAlex",
+          "sourceUrl": "https://openalex.org/W4399598096",
+          "updatedAt": "2026-09-14",
+          "recordTitle": "BAKU: An Efficient Transformer for Multi-Task Policy Learning"
+        }
+      }
     },
     {
       "id": "vla-cache",
@@ -1451,12 +2776,41 @@
       "sourceType": "supplement",
       "checkedAt": "2026-09-14",
       "links": {
-        "paper": "https://proceedings.neurips.cc/paper_files/paper/2025/hash/f062da1973ac9ac61fc6d44dd7fa309f-Abstract-Conference.html"
+        "paper": "https://proceedings.neurips.cc/paper_files/paper/2025/hash/f062da1973ac9ac61fc6d44dd7fa309f-Abstract-Conference.html",
+        "pdf": "https://proceedings.neurips.cc/paper_files/paper/2025/file/f062da1973ac9ac61fc6d44dd7fa309f-Paper-Conference.pdf"
       },
       "rank": 59,
       "selectionTrack": "peer-reviewed",
       "selectionReason": "Conference or journal paper within the five-year window; official proceedings and author sources are prioritized.",
-      "paperType": "method"
+      "paperType": "method",
+      "bibliography": {
+        "source": "Publisher",
+        "sourceUrl": "https://proceedings.neurips.cc/paper_files/paper/2025/hash/f062da1973ac9ac61fc6d44dd7fa309f-Abstract-Conference.html",
+        "checkedAt": "2026-09-14",
+        "authors": [
+          "Siyu Xu",
+          "Yunke Wang",
+          "Chenghao Xia",
+          "Dihao Zhu",
+          "Tao Huang",
+          "Chang Xu"
+        ],
+        "date": "2026-04-23",
+        "dateLabel": "Publisher record date",
+        "doi": "10.52202/085713-5484",
+        "bibtex": "@misc{vla-cache,\n  title = {VLA-Cache: Efficient Vision-Language-Action Manipulation via Adaptive Token Caching},\n  author = {Siyu Xu and Yunke Wang and Chenghao Xia and Dihao Zhu and Tao Huang and Chang Xu},\n  year = {2026},\n  url = {https://proceedings.neurips.cc/paper_files/paper/2025/hash/f062da1973ac9ac61fc6d44dd7fa309f-Abstract-Conference.html},\n  doi = {10.52202/085713-5484}\n}",
+        "preview": "assets/papers/vla-cache.png",
+        "previewSourceUrl": "https://proceedings.neurips.cc/paper_files/paper/2025/file/f062da1973ac9ac61fc6d44dd7fa309f-Paper-Conference.pdf"
+      },
+      "metrics": {
+        "citations": {
+          "value": 0,
+          "source": "OpenAlex",
+          "sourceUrl": "https://openalex.org/W4407185791",
+          "updatedAt": "2026-09-14",
+          "recordTitle": "VLA-Cache: Efficient Vision-Language-Action Manipulation via Adaptive Token Caching"
+        }
+      }
     },
     {
       "id": "robochemist",
@@ -1483,12 +2837,42 @@
       "sourceType": "supplement",
       "checkedAt": "2026-09-14",
       "links": {
-        "paper": "https://proceedings.mlr.press/v305/zhang25i.html"
+        "paper": "https://proceedings.mlr.press/v305/zhang25i.html",
+        "pdf": "https://raw.githubusercontent.com/mlresearch/v305/main/assets/zhang25i/zhang25i.pdf"
       },
       "rank": 60,
       "selectionTrack": "peer-reviewed",
       "selectionReason": "Conference or journal paper within the five-year window; official proceedings and author sources are prioritized.",
-      "paperType": "method"
+      "paperType": "method",
+      "bibliography": {
+        "source": "Publisher",
+        "sourceUrl": "https://proceedings.mlr.press/v305/zhang25i.html",
+        "checkedAt": "2026-09-14",
+        "authors": [
+          "Zongzheng Zhang",
+          "Chenghao Yue",
+          "Haobo Xu",
+          "Minwen Liao",
+          "Xianglin Qi",
+          "Huan-ang Gao",
+          "Ziwei Wang",
+          "Hao Zhao"
+        ],
+        "date": "2025-10-07",
+        "dateLabel": "Publisher record date",
+        "bibtex": "@misc{robochemist,\n  title = {RoboChemist: Long-Horizon and Safety-Compliant Robotic Chemical Experimentation},\n  author = {Zongzheng Zhang and Chenghao Yue and Haobo Xu and Minwen Liao and Xianglin Qi and Huan-ang Gao and Ziwei Wang and Hao Zhao},\n  year = {2025},\n  url = {https://proceedings.mlr.press/v305/zhang25i.html}\n}",
+        "preview": "assets/papers/robochemist.png",
+        "previewSourceUrl": "https://raw.githubusercontent.com/mlresearch/v305/main/assets/zhang25i/zhang25i.pdf"
+      },
+      "metrics": {
+        "citations": {
+          "value": 1,
+          "source": "OpenAlex",
+          "sourceUrl": "https://openalex.org/W4417071139",
+          "updatedAt": "2026-09-14",
+          "recordTitle": "RoboChemist: Long-Horizon and Safety-Compliant Robotic Chemical Experimentation"
+        }
+      }
     },
     {
       "id": "sima2",
@@ -1516,7 +2900,8 @@
       "checkedAt": "2026-09-14",
       "links": {
         "paper": "https://arxiv.org/abs/2512.04797",
-        "project": "https://deepmind.google/blog/sima-2-an-agent-that-plays-reasons-and-learns-with-you-in-virtual-3d-worlds/"
+        "project": "https://deepmind.google/blog/sima-2-an-agent-that-plays-reasons-and-learns-with-you-in-virtual-3d-worlds/",
+        "pdf": "https://arxiv.org/pdf/2512.04797"
       },
       "rank": 6,
       "publicationDate": "2025-12-04",
@@ -1525,7 +2910,95 @@
       "influenceSources": [
         "https://deepmind.google/blog/sima-2-an-agent-that-plays-reasons-and-learns-with-you-in-virtual-3d-worlds/"
       ],
-      "paperType": "method"
+      "paperType": "method",
+      "bibliography": {
+        "source": "arXiv",
+        "sourceUrl": "https://arxiv.org/abs/2512.04797",
+        "checkedAt": "2026-09-14",
+        "authors": [
+          "SIMA team",
+          "Adrian Bolton",
+          "Alexander Lerchner",
+          "Alexandra Cordell",
+          "Alexandre Moufarek",
+          "Andrew Bolt",
+          "Andrew Lampinen",
+          "Anna Mitenkova",
+          "Arne Olav Hallingstad",
+          "Bojan Vujatovic",
+          "Bonnie Li",
+          "Cong Lu",
+          "Daan Wierstra",
+          "Daniel P. Sawyer",
+          "Daniel Slater",
+          "David Reichert",
+          "Davide Vercelli",
+          "Demis Hassabis",
+          "Drew A. Hudson",
+          "Duncan Williams",
+          "Ed Hirst",
+          "Fabio Pardo",
+          "Felix Hill",
+          "Frederic Besse",
+          "Hannah Openshaw",
+          "Harris Chan",
+          "Hubert Soyer",
+          "Jane X. Wang",
+          "Jeff Clune",
+          "John Agapiou",
+          "John Reid",
+          "Joseph Marino",
+          "Junkyung Kim",
+          "Karol Gregor",
+          "Kaustubh Sridhar",
+          "Kay McKinney",
+          "Laura Kampis",
+          "Lei M. Zhang",
+          "Loic Matthey",
+          "Luyu Wang",
+          "Maria Abi Raad",
+          "Maria Loks-Thompson",
+          "Martin Engelcke",
+          "Matija Kecman",
+          "Matthew Jackson",
+          "Maxime Gazeau",
+          "Ollie Purkiss",
+          "Oscar Knagg",
+          "Peter Stys",
+          "Piermaria Mendolicchio",
+          "Raia Hadsell",
+          "Rosemary Ke",
+          "Ryan Faulkner",
+          "Sarah Chakera",
+          "Satinder Singh Baveja",
+          "Shane Legg",
+          "Sheleem Kashem",
+          "Tayfun Terzi",
+          "Thomas Keck",
+          "Tim Harley",
+          "Tim Scholtes",
+          "Tyson Roberts",
+          "Volodymyr Mnih",
+          "Yulan Liu",
+          "Zhengdong Wang",
+          "Zoubin Ghahramani"
+        ],
+        "date": "2025-12-04",
+        "dateLabel": "First arXiv submission",
+        "arxivId": "2512.04797",
+        "bibtex": "@misc{sima2,\n  title = {SIMA 2: A Generalist Embodied Agent for Virtual Worlds},\n  author = {{SIMA team} and Adrian Bolton and Alexander Lerchner and Alexandra Cordell and Alexandre Moufarek and Andrew Bolt and Andrew Lampinen and Anna Mitenkova and Arne Olav Hallingstad and Bojan Vujatovic and Bonnie Li and Cong Lu and Daan Wierstra and Daniel P. Sawyer and Daniel Slater and David Reichert and Davide Vercelli and Demis Hassabis and Drew A. Hudson and Duncan Williams and Ed Hirst and Fabio Pardo and Felix Hill and Frederic Besse and Hannah Openshaw and Harris Chan and Hubert Soyer and Jane X. Wang and Jeff Clune and John Agapiou and John Reid and Joseph Marino and Junkyung Kim and Karol Gregor and Kaustubh Sridhar and Kay McKinney and Laura Kampis and Lei M. Zhang and Loic Matthey and Luyu Wang and Maria Abi Raad and Maria Loks-Thompson and Martin Engelcke and Matija Kecman and Matthew Jackson and Maxime Gazeau and Ollie Purkiss and Oscar Knagg and Peter Stys and Piermaria Mendolicchio and Raia Hadsell and Rosemary Ke and Ryan Faulkner and Sarah Chakera and Satinder Singh Baveja and Shane Legg and Sheleem Kashem and Tayfun Terzi and Thomas Keck and Tim Harley and Tim Scholtes and Tyson Roberts and Volodymyr Mnih and Yulan Liu and Zhengdong Wang and Zoubin Ghahramani},\n  year = {2025},\n  url = {https://arxiv.org/abs/2512.04797}\n}",
+        "preview": "assets/papers/sima2.png",
+        "previewSourceUrl": "https://arxiv.org/pdf/2512.04797"
+      },
+      "metrics": {
+        "citations": {
+          "value": 0,
+          "source": "OpenAlex",
+          "sourceUrl": "https://openalex.org/W4417086995",
+          "updatedAt": "2026-09-14",
+          "recordTitle": "SIMA 2: A Generalist Embodied Agent for Virtual Worlds"
+        }
+      }
     },
     {
       "id": "pi-star06",
@@ -1553,7 +3026,8 @@
       "checkedAt": "2026-09-14",
       "links": {
         "paper": "https://arxiv.org/abs/2511.14759",
-        "project": "https://www.pi.website/blog/pistar06"
+        "project": "https://www.pi.website/blog/pistar06",
+        "pdf": "https://arxiv.org/pdf/2511.14759"
       },
       "rank": 10,
       "publicationDate": "2025-11-18",
@@ -1562,7 +3036,85 @@
       "influenceSources": [
         "https://www.pi.website/blog/pistar06"
       ],
-      "paperType": "method"
+      "paperType": "method",
+      "bibliography": {
+        "source": "arXiv",
+        "sourceUrl": "https://arxiv.org/abs/2511.14759",
+        "checkedAt": "2026-09-14",
+        "authors": [
+          "Physical Intelligence",
+          "Ali Amin",
+          "Raichelle Aniceto",
+          "Ashwin Balakrishna",
+          "Kevin Black",
+          "Ken Conley",
+          "Grace Connors",
+          "James Darpinian",
+          "Karan Dhabalia",
+          "Jared DiCarlo",
+          "Danny Driess",
+          "Michael Equi",
+          "Adnan Esmail",
+          "Yunhao Fang",
+          "Chelsea Finn",
+          "Catherine Glossop",
+          "Thomas Godden",
+          "Ivan Goryachev",
+          "Lachy Groom",
+          "Hunter Hancock",
+          "Karol Hausman",
+          "Gashon Hussein",
+          "Brian Ichter",
+          "Szymon Jakubczak",
+          "Rowan Jen",
+          "Tim Jones",
+          "Ben Katz",
+          "Liyiming Ke",
+          "Chandra Kuchi",
+          "Marinda Lamb",
+          "Devin LeBlanc",
+          "Sergey Levine",
+          "Adrian Li-Bell",
+          "Yao Lu",
+          "Vishnu Mano",
+          "Mohith Mothukuri",
+          "Suraj Nair",
+          "Karl Pertsch",
+          "Allen Z. Ren",
+          "Charvi Sharma",
+          "Lucy Xiaoyang Shi",
+          "Laura Smith",
+          "Jost Tobias Springenberg",
+          "Kyle Stachowicz",
+          "Will Stoeckle",
+          "Alex Swerdlow",
+          "James Tanner",
+          "Marcel Torne",
+          "Quan Vuong",
+          "Anna Walling",
+          "Haohuan Wang",
+          "Blake Williams",
+          "Sukwon Yoo",
+          "Lili Yu",
+          "Ury Zhilinsky",
+          "Zhiyuan Zhou"
+        ],
+        "date": "2025-11-18",
+        "dateLabel": "First arXiv submission",
+        "arxivId": "2511.14759",
+        "bibtex": "@misc{pi-star06,\n  title = {π*0.6: a VLA That Learns From Experience},\n  author = {{Physical Intelligence} and Ali Amin and Raichelle Aniceto and Ashwin Balakrishna and Kevin Black and Ken Conley and Grace Connors and James Darpinian and Karan Dhabalia and Jared DiCarlo and Danny Driess and Michael Equi and Adnan Esmail and Yunhao Fang and Chelsea Finn and Catherine Glossop and Thomas Godden and Ivan Goryachev and Lachy Groom and Hunter Hancock and Karol Hausman and Gashon Hussein and Brian Ichter and Szymon Jakubczak and Rowan Jen and Tim Jones and Ben Katz and Liyiming Ke and Chandra Kuchi and Marinda Lamb and Devin LeBlanc and Sergey Levine and Adrian Li-Bell and Yao Lu and Vishnu Mano and Mohith Mothukuri and Suraj Nair and Karl Pertsch and Allen Z. Ren and Charvi Sharma and Lucy Xiaoyang Shi and Laura Smith and Jost Tobias Springenberg and Kyle Stachowicz and Will Stoeckle and Alex Swerdlow and James Tanner and Marcel Torne and Quan Vuong and Anna Walling and Haohuan Wang and Blake Williams and Sukwon Yoo and Lili Yu and Ury Zhilinsky and Zhiyuan Zhou},\n  year = {2025},\n  url = {https://arxiv.org/abs/2511.14759}\n}",
+        "preview": "assets/papers/pi-star06.png",
+        "previewSourceUrl": "https://arxiv.org/pdf/2511.14759"
+      },
+      "metrics": {
+        "citations": {
+          "value": 0,
+          "source": "OpenAlex",
+          "sourceUrl": "https://openalex.org/W4417215404",
+          "updatedAt": "2026-09-14",
+          "recordTitle": "$π^{*}_{0.6}$: a VLA That Learns From Experience"
+        }
+      }
     },
     {
       "id": "lerobot",
@@ -1593,7 +3145,16 @@
       },
       "rank": 17,
       "selectionTrack": "infrastructure",
-      "selectionReason": "Standalone open-source tool or environment supporting research and reproduction; excluded from paper-window statistics."
+      "selectionReason": "Standalone open-source tool or environment supporting research and reproduction; excluded from paper-window statistics.",
+      "metrics": {
+        "github": {
+          "value": 27476,
+          "source": "GitHub",
+          "sourceUrl": "https://github.com/huggingface/lerobot/stargazers",
+          "repository": "huggingface/lerobot",
+          "updatedAt": "2026-09-14"
+        }
+      }
     },
     {
       "id": "openpi",
@@ -1624,7 +3185,16 @@
       },
       "rank": 94,
       "selectionTrack": "infrastructure",
-      "selectionReason": "Standalone open-source tool or environment supporting research and reproduction; excluded from paper-window statistics."
+      "selectionReason": "Standalone open-source tool or environment supporting research and reproduction; excluded from paper-window statistics.",
+      "metrics": {
+        "github": {
+          "value": 13794,
+          "source": "GitHub",
+          "sourceUrl": "https://github.com/Physical-Intelligence/openpi/stargazers",
+          "repository": "Physical-Intelligence/openpi",
+          "updatedAt": "2026-09-14"
+        }
+      }
     },
     {
       "id": "gymnasium",
@@ -1656,7 +3226,16 @@
       },
       "rank": 95,
       "selectionTrack": "infrastructure",
-      "selectionReason": "Standalone open-source tool or environment supporting research and reproduction; excluded from paper-window statistics."
+      "selectionReason": "Standalone open-source tool or environment supporting research and reproduction; excluded from paper-window statistics.",
+      "metrics": {
+        "github": {
+          "value": 12531,
+          "source": "GitHub",
+          "sourceUrl": "https://github.com/Farama-Foundation/Gymnasium/stargazers",
+          "repository": "Farama-Foundation/Gymnasium",
+          "updatedAt": "2026-09-14"
+        }
+      }
     },
     {
       "id": "pettingzoo",
@@ -1687,7 +3266,16 @@
       },
       "rank": 96,
       "selectionTrack": "infrastructure",
-      "selectionReason": "Standalone open-source tool or environment supporting research and reproduction; excluded from paper-window statistics."
+      "selectionReason": "Standalone open-source tool or environment supporting research and reproduction; excluded from paper-window statistics.",
+      "metrics": {
+        "github": {
+          "value": 3514,
+          "source": "GitHub",
+          "sourceUrl": "https://github.com/Farama-Foundation/PettingZoo/stargazers",
+          "repository": "Farama-Foundation/PettingZoo",
+          "updatedAt": "2026-09-14"
+        }
+      }
     },
     {
       "id": "genesis",
@@ -1718,7 +3306,16 @@
       },
       "rank": 97,
       "selectionTrack": "infrastructure",
-      "selectionReason": "Standalone open-source tool or environment supporting research and reproduction; excluded from paper-window statistics."
+      "selectionReason": "Standalone open-source tool or environment supporting research and reproduction; excluded from paper-window statistics.",
+      "metrics": {
+        "github": {
+          "value": 29946,
+          "source": "GitHub",
+          "sourceUrl": "https://github.com/Genesis-Embodied-AI/genesis-world/stargazers",
+          "repository": "Genesis-Embodied-AI/genesis-world",
+          "updatedAt": "2026-09-14"
+        }
+      }
     },
     {
       "id": "vizdoom",
@@ -1749,7 +3346,16 @@
       },
       "rank": 98,
       "selectionTrack": "infrastructure",
-      "selectionReason": "Standalone open-source tool or environment supporting research and reproduction; excluded from paper-window statistics."
+      "selectionReason": "Standalone open-source tool or environment supporting research and reproduction; excluded from paper-window statistics.",
+      "metrics": {
+        "github": {
+          "value": 2072,
+          "source": "GitHub",
+          "sourceUrl": "https://github.com/Farama-Foundation/ViZDoom/stargazers",
+          "repository": "Farama-Foundation/ViZDoom",
+          "updatedAt": "2026-09-14"
+        }
+      }
     },
     {
       "id": "habitat",
@@ -1780,7 +3386,16 @@
       },
       "rank": 99,
       "selectionTrack": "infrastructure",
-      "selectionReason": "Standalone open-source tool or environment supporting research and reproduction; excluded from paper-window statistics."
+      "selectionReason": "Standalone open-source tool or environment supporting research and reproduction; excluded from paper-window statistics.",
+      "metrics": {
+        "github": {
+          "value": 3130,
+          "source": "GitHub",
+          "sourceUrl": "https://github.com/facebookresearch/habitat-lab/stargazers",
+          "repository": "facebookresearch/habitat-lab",
+          "updatedAt": "2026-09-14"
+        }
+      }
     },
     {
       "id": "ai2thor",
@@ -1811,7 +3426,16 @@
       },
       "rank": 100,
       "selectionTrack": "infrastructure",
-      "selectionReason": "Standalone open-source tool or environment supporting research and reproduction; excluded from paper-window statistics."
+      "selectionReason": "Standalone open-source tool or environment supporting research and reproduction; excluded from paper-window statistics.",
+      "metrics": {
+        "github": {
+          "value": 1791,
+          "source": "GitHub",
+          "sourceUrl": "https://github.com/allenai/ai2thor/stargazers",
+          "repository": "allenai/ai2thor",
+          "updatedAt": "2026-09-14"
+        }
+      }
     },
     {
       "id": "maniskill",
@@ -1842,7 +3466,16 @@
       },
       "rank": 101,
       "selectionTrack": "infrastructure",
-      "selectionReason": "Standalone open-source tool or environment supporting research and reproduction; excluded from paper-window statistics."
+      "selectionReason": "Standalone open-source tool or environment supporting research and reproduction; excluded from paper-window statistics.",
+      "metrics": {
+        "github": {
+          "value": 3317,
+          "source": "GitHub",
+          "sourceUrl": "https://github.com/mani-skill/ManiSkill/stargazers",
+          "repository": "mani-skill/ManiSkill",
+          "updatedAt": "2026-09-14"
+        }
+      }
     },
     {
       "id": "candidate-s08",
@@ -1868,13 +3501,39 @@
       "sourceType": "knowledge",
       "checkedAt": "2026-09-14",
       "links": {
-        "paper": "https://arxiv.org/abs/2510.19150"
+        "paper": "https://arxiv.org/abs/2510.19150",
+        "pdf": "https://arxiv.org/pdf/2510.19150"
       },
       "rank": 72,
       "sourceId": "S08",
       "selectionTrack": "candidate",
       "selectionReason": "Recent preprint lead; official acceptance or evidence of significance needs further verification.",
-      "paperType": "method"
+      "paperType": "method",
+      "bibliography": {
+        "source": "arXiv",
+        "sourceUrl": "https://arxiv.org/abs/2510.19150",
+        "checkedAt": "2026-09-14",
+        "authors": [
+          "Yunzhe Wang",
+          "Soham Hans",
+          "Volkan Ustun"
+        ],
+        "date": "2025-10-22",
+        "dateLabel": "First arXiv submission",
+        "arxivId": "2510.19150",
+        "bibtex": "@misc{candidate-s08,\n  title = {X-Ego: Acquiring Team-Level Tactical Situational Awareness via Cross-Egocentric Contrastive Video Representation Learning},\n  author = {Yunzhe Wang and Soham Hans and Volkan Ustun},\n  year = {2025},\n  url = {https://arxiv.org/abs/2510.19150}\n}",
+        "preview": "assets/papers/candidate-s08.png",
+        "previewSourceUrl": "https://arxiv.org/pdf/2510.19150"
+      },
+      "metrics": {
+        "citations": {
+          "value": 0,
+          "source": "OpenAlex",
+          "sourceUrl": "https://openalex.org/W4416246481",
+          "updatedAt": "2026-09-14",
+          "recordTitle": "X-Ego: Acquiring Team-Level Tactical Situational Awareness via Cross-Egocentric Contrastive Video Representation Learning"
+        }
+      }
     },
     {
       "id": "candidate-p01",
@@ -1900,13 +3559,63 @@
       "sourceType": "knowledge",
       "checkedAt": "2026-09-14",
       "links": {
-        "paper": "https://arxiv.org/abs/2510.23691"
+        "paper": "https://arxiv.org/abs/2510.23691",
+        "pdf": "https://arxiv.org/pdf/2510.23691"
       },
       "rank": 73,
       "sourceId": "P01",
       "selectionTrack": "candidate",
       "selectionReason": "Recent preprint lead; official acceptance or evidence of significance needs further verification.",
-      "paperType": "method"
+      "paperType": "method",
+      "bibliography": {
+        "source": "arXiv",
+        "sourceUrl": "https://arxiv.org/abs/2510.23691",
+        "checkedAt": "2026-09-14",
+        "authors": [
+          "Zihao Wang",
+          "Xujing Li",
+          "Yining Ye",
+          "Junjie Fang",
+          "Haoming Wang",
+          "Longxiang Liu",
+          "Shihao Liang",
+          "Junting Lu",
+          "Zhiyong Wu",
+          "Jiazhan Feng",
+          "Wanjun Zhong",
+          "Zili Li",
+          "Yu Wang",
+          "Yu Miao",
+          "Bo Zhou",
+          "Yuanfan Li",
+          "Hao Wang",
+          "Zhongkai Zhao",
+          "Faming Wu",
+          "Zhengxuan Jiang",
+          "Weihao Tan",
+          "Heyuan Yao",
+          "Shi Yan",
+          "Xiangyang Li",
+          "Yitao Liang",
+          "Yujia Qin",
+          "Guang Shi"
+        ],
+        "date": "2025-10-27",
+        "dateLabel": "First arXiv submission",
+        "arxivId": "2510.23691",
+        "bibtex": "@misc{candidate-p01,\n  title = {Game-TARS: Pretrained Foundation Models for Scalable Generalist Multimodal Game Agents},\n  author = {Zihao Wang and Xujing Li and Yining Ye and Junjie Fang and Haoming Wang and Longxiang Liu and Shihao Liang and Junting Lu and Zhiyong Wu and Jiazhan Feng and Wanjun Zhong and Zili Li and Yu Wang and Yu Miao and Bo Zhou and Yuanfan Li and Hao Wang and Zhongkai Zhao and Faming Wu and Zhengxuan Jiang and Weihao Tan and Heyuan Yao and Shi Yan and Xiangyang Li and Yitao Liang and Yujia Qin and Guang Shi},\n  year = {2025},\n  url = {https://arxiv.org/abs/2510.23691}\n}",
+        "preview": "assets/papers/candidate-p01.png",
+        "previewSourceUrl": "https://arxiv.org/pdf/2510.23691"
+      },
+      "metrics": {
+        "citations": {
+          "value": 0,
+          "source": "OpenAlex",
+          "sourceUrl": "https://openalex.org/W7102387721",
+          "updatedAt": "2026-09-14",
+          "recordTitle": "Game-TARS: Pretrained Foundation Models for Scalable Generalist Multimodal Game Agents"
+        }
+      }
     },
     {
       "id": "candidate-p02",
@@ -1932,13 +3641,40 @@
       "sourceType": "knowledge",
       "checkedAt": "2026-09-14",
       "links": {
-        "paper": "https://arxiv.org/abs/2608.26200"
+        "paper": "https://arxiv.org/abs/2608.26200",
+        "pdf": "https://arxiv.org/pdf/2608.26200"
       },
       "rank": 74,
       "sourceId": "P02",
       "selectionTrack": "candidate",
       "selectionReason": "Recent preprint lead; official acceptance or evidence of significance needs further verification.",
-      "paperType": "method"
+      "paperType": "method",
+      "bibliography": {
+        "source": "arXiv",
+        "sourceUrl": "https://arxiv.org/abs/2608.26200",
+        "checkedAt": "2026-09-14",
+        "authors": [
+          "Yuncheng Guo",
+          "Zhanqiu Zhang",
+          "Yiwen Guo",
+          "Weijia Li"
+        ],
+        "date": "2026-08-25",
+        "dateLabel": "First arXiv submission",
+        "arxivId": "2608.26200",
+        "bibtex": "@misc{candidate-p02,\n  title = {GameWAM: A World Action Model for Video Games},\n  author = {Yuncheng Guo and Zhanqiu Zhang and Yiwen Guo and Weijia Li},\n  year = {2026},\n  url = {https://arxiv.org/abs/2608.26200}\n}",
+        "preview": "assets/papers/candidate-p02.png",
+        "previewSourceUrl": "https://arxiv.org/pdf/2608.26200"
+      },
+      "metrics": {
+        "citations": {
+          "value": 0,
+          "source": "OpenAlex",
+          "sourceUrl": "https://openalex.org/W7204581771",
+          "updatedAt": "2026-09-14",
+          "recordTitle": "GameWAM: A World Action Model for Video Games"
+        }
+      }
     },
     {
       "id": "candidate-t03",
@@ -1964,13 +3700,38 @@
       "sourceType": "knowledge",
       "checkedAt": "2026-09-14",
       "links": {
-        "paper": "https://arxiv.org/abs/2603.11601"
+        "paper": "https://arxiv.org/abs/2603.11601",
+        "pdf": "https://arxiv.org/pdf/2603.11601"
       },
       "rank": 75,
       "sourceId": "T03",
       "selectionTrack": "candidate",
       "selectionReason": "Recent preprint lead; official acceptance or evidence of significance needs further verification.",
-      "paperType": "method"
+      "paperType": "method",
+      "bibliography": {
+        "source": "arXiv",
+        "sourceUrl": "https://arxiv.org/abs/2603.11601",
+        "checkedAt": "2026-09-14",
+        "authors": [
+          "Ashish Baghel",
+          "Paras Chopra"
+        ],
+        "date": "2026-03-12",
+        "dateLabel": "First arXiv submission",
+        "arxivId": "2603.11601",
+        "bibtex": "@misc{candidate-t03,\n  title = {See, Symbolize, Act: Grounding VLMs with Spatial Representations for Better Gameplay},\n  author = {Ashish Baghel and Paras Chopra},\n  year = {2026},\n  url = {https://arxiv.org/abs/2603.11601}\n}",
+        "preview": "assets/papers/candidate-t03.png",
+        "previewSourceUrl": "https://arxiv.org/pdf/2603.11601"
+      },
+      "metrics": {
+        "citations": {
+          "value": 0,
+          "source": "OpenAlex",
+          "sourceUrl": "https://openalex.org/W7135428496",
+          "updatedAt": "2026-09-14",
+          "recordTitle": "See, Symbolize, Act: Grounding VLMs with Spatial Representations for Better Gameplay"
+        }
+      }
     },
     {
       "id": "candidate-t04",
@@ -1996,13 +3757,39 @@
       "sourceType": "knowledge",
       "checkedAt": "2026-09-14",
       "links": {
-        "paper": "https://arxiv.org/abs/2604.07385"
+        "paper": "https://arxiv.org/abs/2604.07385",
+        "pdf": "https://arxiv.org/pdf/2604.07385"
       },
       "rank": 76,
       "sourceId": "T04",
       "selectionTrack": "candidate",
       "selectionReason": "Recent preprint lead; official acceptance or evidence of significance needs further verification.",
-      "paperType": "method"
+      "paperType": "method",
+      "bibliography": {
+        "source": "arXiv",
+        "sourceUrl": "https://arxiv.org/abs/2604.07385",
+        "checkedAt": "2026-09-14",
+        "authors": [
+          "David Golchinfar",
+          "Daryoush Vaziri",
+          "Alexander Marquardt"
+        ],
+        "date": "2026-04-08",
+        "dateLabel": "First arXiv submission",
+        "arxivId": "2604.07385",
+        "bibtex": "@misc{candidate-t04,\n  title = {Playing DOOM with 1.3M Parameters: Specialized Small Models vs Large Language Models for Real-Time Game Control},\n  author = {David Golchinfar and Daryoush Vaziri and Alexander Marquardt},\n  year = {2026},\n  url = {https://arxiv.org/abs/2604.07385}\n}",
+        "preview": "assets/papers/candidate-t04.png",
+        "previewSourceUrl": "https://arxiv.org/pdf/2604.07385"
+      },
+      "metrics": {
+        "citations": {
+          "value": 0,
+          "source": "OpenAlex",
+          "sourceUrl": "https://openalex.org/W7153669982",
+          "updatedAt": "2026-09-14",
+          "recordTitle": "Playing DOOM with 1.3M Parameters: Specialized Small Models vs Large Language Models for Real-Time Game Control"
+        }
+      }
     },
     {
       "id": "candidate-t05",
@@ -2028,13 +3815,49 @@
       "sourceType": "knowledge",
       "checkedAt": "2026-09-14",
       "links": {
-        "paper": "https://arxiv.org/abs/2608.30369"
+        "paper": "https://arxiv.org/abs/2608.30369",
+        "pdf": "https://arxiv.org/pdf/2608.30369"
       },
       "rank": 77,
       "sourceId": "T05",
       "selectionTrack": "candidate",
       "selectionReason": "Recent preprint lead; official acceptance or evidence of significance needs further verification.",
-      "paperType": "method"
+      "paperType": "method",
+      "bibliography": {
+        "source": "arXiv",
+        "sourceUrl": "https://arxiv.org/abs/2608.30369",
+        "checkedAt": "2026-09-14",
+        "authors": [
+          "Ziheng Li",
+          "Xichen He",
+          "Haoyan Chen",
+          "Charlie Zou",
+          "Sheng Bai",
+          "Benjamin Yang",
+          "Mengyuan Wu",
+          "Jake Ledner",
+          "Yi-Jie Cheng",
+          "Akito Yamauchi",
+          "Dishita G Turakhia",
+          "Steven Feiner",
+          "Paul Sajda"
+        ],
+        "date": "2026-08-31",
+        "dateLabel": "First arXiv submission",
+        "arxivId": "2608.30369",
+        "bibtex": "@misc{candidate-t05,\n  title = {Augmenting Human Performance with an XR Agent Learning from Online Behavior and BCI Evidence},\n  author = {Ziheng Li and Xichen He and Haoyan Chen and Charlie Zou and Sheng Bai and Benjamin Yang and Mengyuan Wu and Jake Ledner and Yi-Jie Cheng and Akito Yamauchi and Dishita G Turakhia and Steven Feiner and Paul Sajda},\n  year = {2026},\n  url = {https://arxiv.org/abs/2608.30369}\n}",
+        "preview": "assets/papers/candidate-t05.png",
+        "previewSourceUrl": "https://arxiv.org/pdf/2608.30369"
+      },
+      "metrics": {
+        "citations": {
+          "value": 0,
+          "source": "OpenAlex",
+          "sourceUrl": "https://openalex.org/W7204885827",
+          "updatedAt": "2026-09-14",
+          "recordTitle": "Augmenting Human Performance with an XR Agent Learning from Online Behavior and BCI Evidence"
+        }
+      }
     },
     {
       "id": "candidate-t06",
@@ -2060,13 +3883,39 @@
       "sourceType": "knowledge",
       "checkedAt": "2026-09-14",
       "links": {
-        "paper": "https://arxiv.org/abs/2605.30570"
+        "paper": "https://arxiv.org/abs/2605.30570",
+        "pdf": "https://arxiv.org/pdf/2605.30570"
       },
       "rank": 78,
       "sourceId": "T06",
       "selectionTrack": "candidate",
       "selectionReason": "Recent preprint lead; official acceptance or evidence of significance needs further verification.",
-      "paperType": "method"
+      "paperType": "method",
+      "bibliography": {
+        "source": "arXiv",
+        "sourceUrl": "https://arxiv.org/abs/2605.30570",
+        "checkedAt": "2026-09-14",
+        "authors": [
+          "Simone de Donato",
+          "Pier Luca Lanzi",
+          "Daniele Loiacono"
+        ],
+        "date": "2026-05-28",
+        "dateLabel": "First arXiv submission",
+        "arxivId": "2605.30570",
+        "bibtex": "@misc{candidate-t06,\n  title = {Procedural Generation of First Person Shooter Maps using Map-Elites},\n  author = {Simone de Donato and Pier Luca Lanzi and Daniele Loiacono},\n  year = {2026},\n  url = {https://arxiv.org/abs/2605.30570}\n}",
+        "preview": "assets/papers/candidate-t06.png",
+        "previewSourceUrl": "https://arxiv.org/pdf/2605.30570"
+      },
+      "metrics": {
+        "citations": {
+          "value": 0,
+          "source": "OpenAlex",
+          "sourceUrl": "https://openalex.org/W7163287888",
+          "updatedAt": "2026-09-14",
+          "recordTitle": "Procedural Generation of First Person Shooter Maps using Map-Elites"
+        }
+      }
     },
     {
       "id": "candidate-t07",
@@ -2092,13 +3941,37 @@
       "sourceType": "knowledge",
       "checkedAt": "2026-09-14",
       "links": {
-        "paper": "https://arxiv.org/abs/2608.24893"
+        "paper": "https://arxiv.org/abs/2608.24893",
+        "pdf": "https://arxiv.org/pdf/2608.24893"
       },
       "rank": 79,
       "sourceId": "T07",
       "selectionTrack": "candidate",
       "selectionReason": "Recent preprint lead; official acceptance or evidence of significance needs further verification.",
-      "paperType": "method"
+      "paperType": "method",
+      "bibliography": {
+        "source": "arXiv",
+        "sourceUrl": "https://arxiv.org/abs/2608.24893",
+        "checkedAt": "2026-09-14",
+        "authors": [
+          "Xuchen Zhang"
+        ],
+        "date": "2026-06-20",
+        "dateLabel": "First arXiv submission",
+        "arxivId": "2608.24893",
+        "bibtex": "@misc{candidate-t07,\n  title = {Account Consistency from Gameplay Traces: Same-Player Verification in Counter-Strike 2},\n  author = {Xuchen Zhang},\n  year = {2026},\n  url = {https://arxiv.org/abs/2608.24893}\n}",
+        "preview": "assets/papers/candidate-t07.png",
+        "previewSourceUrl": "https://arxiv.org/pdf/2608.24893"
+      },
+      "metrics": {
+        "citations": {
+          "value": 0,
+          "source": "OpenAlex",
+          "sourceUrl": "https://openalex.org/W7204671282",
+          "updatedAt": "2026-09-14",
+          "recordTitle": "Account Consistency from Gameplay Traces: Same-Player Verification in Counter-Strike 2"
+        }
+      }
     },
     {
       "id": "survey-foundation-robotics",
@@ -2125,13 +3998,51 @@
       "sourceType": "supplement",
       "checkedAt": "2026-09-14",
       "links": {
-        "paper": "https://journals.sagepub.com/doi/10.1177/02783649241281508"
+        "paper": "https://journals.sagepub.com/doi/10.1177/02783649241281508",
+        "pdf": "https://journals.sagepub.com/history/e3eb5469-f176-4c99-8231-efe683fe6399/02783649241281508.17904978.pdf"
       },
       "rank": 160,
       "selectionTrack": "peer-reviewed",
       "selectionReason": "Within the five-year publication window; official journal or conference record verified.",
       "paperType": "survey",
-      "credit": "Roya Firoozi and collaborators"
+      "credit": "Roya Firoozi and collaborators",
+      "bibliography": {
+        "source": "Crossref",
+        "sourceUrl": "https://doi.org/10.1177/02783649241281508",
+        "checkedAt": "2026-09-14",
+        "authors": [
+          "Roya Firoozi",
+          "Johnathan Tucker",
+          "Stephen Tian",
+          "Anirudha Majumdar",
+          "Jiankai Sun",
+          "Weiyu Liu",
+          "Yuke Zhu",
+          "Shuran Song",
+          "Ashish Kapoor",
+          "Karol Hausman",
+          "Brian Ichter",
+          "Danny Driess",
+          "Jiajun Wu",
+          "Cewu Lu",
+          "Mac Schwager"
+        ],
+        "date": "2024-09-25",
+        "dateLabel": "Publication date (Crossref)",
+        "doi": "10.1177/02783649241281508",
+        "bibtex": "@misc{survey-foundation-robotics,\n  title = {Foundation models in robotics: Applications, challenges, and the future},\n  author = {Roya Firoozi and Johnathan Tucker and Stephen Tian and Anirudha Majumdar and Jiankai Sun and Weiyu Liu and Yuke Zhu and Shuran Song and Ashish Kapoor and Karol Hausman and Brian Ichter and Danny Driess and Jiajun Wu and Cewu Lu and Mac Schwager},\n  year = {2024},\n  url = {https://journals.sagepub.com/doi/10.1177/02783649241281508},\n  doi = {10.1177/02783649241281508}\n}",
+        "preview": "assets/papers/survey-foundation-robotics.png",
+        "previewSourceUrl": "https://journals.sagepub.com/history/e3eb5469-f176-4c99-8231-efe683fe6399/02783649241281508.17904978.pdf"
+      },
+      "metrics": {
+        "citations": {
+          "value": 202,
+          "source": "OpenAlex",
+          "sourceUrl": "https://openalex.org/W4402890475",
+          "updatedAt": "2026-09-14",
+          "recordTitle": "Foundation models in robotics: Applications, challenges, and the future"
+        }
+      }
     },
     {
       "id": "survey-foundation-manipulation",
@@ -2158,14 +4069,52 @@
       "sourceType": "supplement",
       "checkedAt": "2026-09-14",
       "links": {
-        "paper": "https://journals.sagepub.com/doi/10.1177/02783649251390579"
+        "paper": "https://journals.sagepub.com/doi/10.1177/02783649251390579",
+        "pdf": "https://arxiv.org/pdf/2404.18201"
       },
       "rank": 161,
       "selectionTrack": "peer-reviewed",
       "selectionReason": "Within the five-year publication window; official journal or conference record verified.",
       "paperType": "survey",
       "credit": "Dingzhe Li and collaborators",
-      "publicationNote": "First published online on 2025-11-20; the journal issue is dated 2026."
+      "publicationNote": "First published online on 2025-11-20; the journal issue is dated 2026.",
+      "bibliography": {
+        "source": "Crossref",
+        "sourceUrl": "https://doi.org/10.1177/02783649251390579",
+        "checkedAt": "2026-09-14",
+        "authors": [
+          "Dingzhe Li",
+          "Yixiang Jin",
+          "YuHao Sun",
+          "Yong A",
+          "Hongze Yu",
+          "Jun Shi",
+          "Xiaoshuai Hao",
+          "Peng Hao",
+          "Huaping Liu",
+          "Xiang Li",
+          "Xinde Li",
+          "Fuchun Sun",
+          "Jianwei Zhang",
+          "Bin Fang"
+        ],
+        "date": "2025-11-20",
+        "dateLabel": "Publication date (Crossref)",
+        "doi": "10.1177/02783649251390579",
+        "bibtex": "@misc{survey-foundation-manipulation,\n  title = {What foundation models can bring for robot learning in manipulation: A survey},\n  author = {Dingzhe Li and Yixiang Jin and YuHao Sun and Yong A and Hongze Yu and Jun Shi and Xiaoshuai Hao and Peng Hao and Huaping Liu and Xiang Li and Xinde Li and Fuchun Sun and Jianwei Zhang and Bin Fang},\n  year = {2025},\n  url = {https://journals.sagepub.com/doi/10.1177/02783649251390579},\n  doi = {10.1177/02783649251390579}\n}",
+        "preview": "assets/papers/survey-foundation-manipulation.png",
+        "previewVersion": "arXiv version",
+        "previewSourceUrl": "https://arxiv.org/pdf/2404.18201"
+      },
+      "metrics": {
+        "citations": {
+          "value": 6,
+          "source": "OpenAlex",
+          "sourceUrl": "https://openalex.org/W4416422407",
+          "updatedAt": "2026-09-14",
+          "recordTitle": "What foundation models can bring for robot learning in manipulation: A survey"
+        }
+      }
     },
     {
       "id": "minedojo",
@@ -2195,13 +4144,53 @@
       "links": {
         "paper": "https://proceedings.neurips.cc/paper_files/paper/2022/hash/74a67268c5cc5910f64938cac4526a90-Abstract.html",
         "code": "https://github.com/MineDojo/MineDojo",
-        "data": "https://minedojo.org/"
+        "data": "https://minedojo.org/",
+        "pdf": "https://proceedings.neurips.cc/paper_files/paper/2022/file/74a67268c5cc5910f64938cac4526a90-Paper-Datasets_and_Benchmarks.pdf"
       },
       "rank": 162,
       "selectionTrack": "peer-reviewed",
       "selectionReason": "Within the five-year publication window; official journal or conference record verified.",
       "paperType": "dataset",
-      "credit": "MineDojo research team"
+      "credit": "MineDojo research team",
+      "bibliography": {
+        "source": "Publisher",
+        "sourceUrl": "https://proceedings.neurips.cc/paper_files/paper/2022/hash/74a67268c5cc5910f64938cac4526a90-Abstract.html",
+        "checkedAt": "2026-09-14",
+        "authors": [
+          "Linxi Fan",
+          "Guanzhi Wang",
+          "Yunfan Jiang",
+          "Ajay Mandlekar",
+          "Yuncong Yang",
+          "Haoyi Zhu",
+          "Andrew Tang",
+          "De-An Huang",
+          "Yuke Zhu",
+          "Anima Anandkumar"
+        ],
+        "date": "2022-12-06",
+        "dateLabel": "Publisher record date",
+        "doi": "10.52202/068431-1333",
+        "bibtex": "@misc{minedojo,\n  title = {MineDojo: Building Open-Ended Embodied Agents with Internet-Scale Knowledge},\n  author = {Linxi Fan and Guanzhi Wang and Yunfan Jiang and Ajay Mandlekar and Yuncong Yang and Haoyi Zhu and Andrew Tang and De-An Huang and Yuke Zhu and Anima Anandkumar},\n  year = {2022},\n  url = {https://proceedings.neurips.cc/paper_files/paper/2022/hash/74a67268c5cc5910f64938cac4526a90-Abstract.html},\n  doi = {10.52202/068431-1333}\n}",
+        "preview": "assets/papers/minedojo.png",
+        "previewSourceUrl": "https://proceedings.neurips.cc/paper_files/paper/2022/file/74a67268c5cc5910f64938cac4526a90-Paper-Datasets_and_Benchmarks.pdf"
+      },
+      "metrics": {
+        "citations": {
+          "value": 59,
+          "source": "OpenAlex",
+          "sourceUrl": "https://openalex.org/W4283218993",
+          "updatedAt": "2026-09-14",
+          "recordTitle": "MineDojo: Building Open-Ended Embodied Agents with Internet-Scale Knowledge"
+        },
+        "github": {
+          "value": 2257,
+          "source": "GitHub",
+          "sourceUrl": "https://github.com/MineDojo/MineDojo/stargazers",
+          "repository": "MineDojo/MineDojo",
+          "updatedAt": "2026-09-14"
+        }
+      }
     },
     {
       "id": "open-x-embodiment",
@@ -2231,13 +4220,338 @@
       "links": {
         "paper": "https://doi.org/10.1109/ICRA57147.2024.10611477",
         "code": "https://github.com/google-deepmind/open_x_embodiment",
-        "data": "https://robotics-transformer-x.github.io/"
+        "data": "https://robotics-transformer-x.github.io/",
+        "pdf": "https://arxiv.org/pdf/2310.08864"
       },
       "rank": 163,
       "selectionTrack": "peer-reviewed",
       "selectionReason": "Within the five-year publication window; official journal or conference record verified.",
       "paperType": "dataset",
-      "credit": "Open X-Embodiment Collaboration"
+      "credit": "Open X-Embodiment Collaboration",
+      "bibliography": {
+        "source": "arXiv",
+        "sourceUrl": "https://arxiv.org/abs/2310.08864",
+        "checkedAt": "2026-09-14",
+        "authors": [
+          "Embodiment Collaboration",
+          "Abby O'Neill",
+          "Abdul Rehman",
+          "Abhinav Gupta",
+          "Abhiram Maddukuri",
+          "Abhishek Gupta",
+          "Abhishek Padalkar",
+          "Abraham Lee",
+          "Acorn Pooley",
+          "Agrim Gupta",
+          "Ajay Mandlekar",
+          "Ajinkya Jain",
+          "Albert Tung",
+          "Alex Bewley",
+          "Alex Herzog",
+          "Alex Irpan",
+          "Alexander Khazatsky",
+          "Anant Rai",
+          "Anchit Gupta",
+          "Andrew Wang",
+          "Andrey Kolobov",
+          "Anikait Singh",
+          "Animesh Garg",
+          "Aniruddha Kembhavi",
+          "Annie Xie",
+          "Anthony Brohan",
+          "Antonin Raffin",
+          "Archit Sharma",
+          "Arefeh Yavary",
+          "Arhan Jain",
+          "Ashwin Balakrishna",
+          "Ayzaan Wahid",
+          "Ben Burgess-Limerick",
+          "Beomjoon Kim",
+          "Bernhard Schölkopf",
+          "Blake Wulfe",
+          "Brian Ichter",
+          "Cewu Lu",
+          "Charles Xu",
+          "Charlotte Le",
+          "Chelsea Finn",
+          "Chen Wang",
+          "Chenfeng Xu",
+          "Cheng Chi",
+          "Chenguang Huang",
+          "Christine Chan",
+          "Christopher Agia",
+          "Chuer Pan",
+          "Chuyuan Fu",
+          "Coline Devin",
+          "Danfei Xu",
+          "Daniel Morton",
+          "Danny Driess",
+          "Daphne Chen",
+          "Deepak Pathak",
+          "Dhruv Shah",
+          "Dieter Büchler",
+          "Dinesh Jayaraman",
+          "Dmitry Kalashnikov",
+          "Dorsa Sadigh",
+          "Edward Johns",
+          "Ethan Foster",
+          "Fangchen Liu",
+          "Federico Ceola",
+          "Fei Xia",
+          "Feiyu Zhao",
+          "Felipe Vieira Frujeri",
+          "Freek Stulp",
+          "Gaoyue Zhou",
+          "Gaurav S. Sukhatme",
+          "Gautam Salhotra",
+          "Ge Yan",
+          "Gilbert Feng",
+          "Giulio Schiavi",
+          "Glen Berseth",
+          "Gregory Kahn",
+          "Guangwen Yang",
+          "Guanzhi Wang",
+          "Hao Su",
+          "Hao-Shu Fang",
+          "Haochen Shi",
+          "Henghui Bao",
+          "Heni Ben Amor",
+          "Henrik I Christensen",
+          "Hiroki Furuta",
+          "Homanga Bharadhwaj",
+          "Homer Walke",
+          "Hongjie Fang",
+          "Huy Ha",
+          "Igor Mordatch",
+          "Ilija Radosavovic",
+          "Isabel Leal",
+          "Jacky Liang",
+          "Jad Abou-Chakra",
+          "Jaehyung Kim",
+          "Jaimyn Drake",
+          "Jan Peters",
+          "Jan Schneider",
+          "Jasmine Hsu",
+          "Jay Vakil",
+          "Jeannette Bohg",
+          "Jeffrey Bingham",
+          "Jeffrey Wu",
+          "Jensen Gao",
+          "Jiaheng Hu",
+          "Jiajun Wu",
+          "Jialin Wu",
+          "Jiankai Sun",
+          "Jianlan Luo",
+          "Jiayuan Gu",
+          "Jie Tan",
+          "Jihoon Oh",
+          "Jimmy Wu",
+          "Jingpei Lu",
+          "Jingyun Yang",
+          "Jitendra Malik",
+          "João Silvério",
+          "Joey Hejna",
+          "Jonathan Booher",
+          "Jonathan Tompson",
+          "Jonathan Yang",
+          "Jordi Salvador",
+          "Joseph J. Lim",
+          "Junhyek Han",
+          "Kaiyuan Wang",
+          "Kanishka Rao",
+          "Karl Pertsch",
+          "Karol Hausman",
+          "Keegan Go",
+          "Keerthana Gopalakrishnan",
+          "Ken Goldberg",
+          "Kendra Byrne",
+          "Kenneth Oslund",
+          "Kento Kawaharazuka",
+          "Kevin Black",
+          "Kevin Lin",
+          "Kevin Zhang",
+          "Kiana Ehsani",
+          "Kiran Lekkala",
+          "Kirsty Ellis",
+          "Krishan Rana",
+          "Krishnan Srinivasan",
+          "Kuan Fang",
+          "Kunal Pratap Singh",
+          "Kuo-Hao Zeng",
+          "Kyle Hatch",
+          "Kyle Hsu",
+          "Laurent Itti",
+          "Lawrence Yunliang Chen",
+          "Lerrel Pinto",
+          "Li Fei-Fei",
+          "Liam Tan",
+          "Linxi \"Jim\" Fan",
+          "Lionel Ott",
+          "Lisa Lee",
+          "Luca Weihs",
+          "Magnum Chen",
+          "Marion Lepert",
+          "Marius Memmel",
+          "Masayoshi Tomizuka",
+          "Masha Itkina",
+          "Mateo Guaman Castro",
+          "Max Spero",
+          "Maximilian Du",
+          "Michael Ahn",
+          "Michael C. Yip",
+          "Mingtong Zhang",
+          "Mingyu Ding",
+          "Minho Heo",
+          "Mohan Kumar Srirama",
+          "Mohit Sharma",
+          "Moo Jin Kim",
+          "Muhammad Zubair Irshad",
+          "Naoaki Kanazawa",
+          "Nicklas Hansen",
+          "Nicolas Heess",
+          "Nikhil J Joshi",
+          "Niko Suenderhauf",
+          "Ning Liu",
+          "Norman Di Palo",
+          "Nur Muhammad Mahi Shafiullah",
+          "Oier Mees",
+          "Oliver Kroemer",
+          "Osbert Bastani",
+          "Pannag R Sanketi",
+          "Patrick \"Tree\" Miller",
+          "Patrick Yin",
+          "Paul Wohlhart",
+          "Peng Xu",
+          "Peter David Fagan",
+          "Peter Mitrano",
+          "Pierre Sermanet",
+          "Pieter Abbeel",
+          "Priya Sundaresan",
+          "Qiuyu Chen",
+          "Quan Vuong",
+          "Rafael Rafailov",
+          "Ran Tian",
+          "Ria Doshi",
+          "Roberto Martín-Martín",
+          "Rohan Baijal",
+          "Rosario Scalise",
+          "Rose Hendrix",
+          "Roy Lin",
+          "Runjia Qian",
+          "Ruohan Zhang",
+          "Russell Mendonca",
+          "Rutav Shah",
+          "Ryan Hoque",
+          "Ryan Julian",
+          "Samuel Bustamante",
+          "Sean Kirmani",
+          "Sergey Levine",
+          "Shan Lin",
+          "Sherry Moore",
+          "Shikhar Bahl",
+          "Shivin Dass",
+          "Shubham Sonawani",
+          "Shubham Tulsiani",
+          "Shuran Song",
+          "Sichun Xu",
+          "Siddhant Haldar",
+          "Siddharth Karamcheti",
+          "Simeon Adebola",
+          "Simon Guist",
+          "Soroush Nasiriany",
+          "Stefan Schaal",
+          "Stefan Welker",
+          "Stephen Tian",
+          "Subramanian Ramamoorthy",
+          "Sudeep Dasari",
+          "Suneel Belkhale",
+          "Sungjae Park",
+          "Suraj Nair",
+          "Suvir Mirchandani",
+          "Takayuki Osa",
+          "Tanmay Gupta",
+          "Tatsuya Harada",
+          "Tatsuya Matsushima",
+          "Ted Xiao",
+          "Thomas Kollar",
+          "Tianhe Yu",
+          "Tianli Ding",
+          "Todor Davchev",
+          "Tony Z. Zhao",
+          "Travis Armstrong",
+          "Trevor Darrell",
+          "Trinity Chung",
+          "Vidhi Jain",
+          "Vikash Kumar",
+          "Vincent Vanhoucke",
+          "Vitor Guizilini",
+          "Wei Zhan",
+          "Wenxuan Zhou",
+          "Wolfram Burgard",
+          "Xi Chen",
+          "Xiangyu Chen",
+          "Xiaolong Wang",
+          "Xinghao Zhu",
+          "Xinyang Geng",
+          "Xiyuan Liu",
+          "Xu Liangwei",
+          "Xuanlin Li",
+          "Yansong Pang",
+          "Yao Lu",
+          "Yecheng Jason Ma",
+          "Yejin Kim",
+          "Yevgen Chebotar",
+          "Yifan Zhou",
+          "Yifeng Zhu",
+          "Yilin Wu",
+          "Ying Xu",
+          "Yixuan Wang",
+          "Yonatan Bisk",
+          "Yongqiang Dou",
+          "Yoonyoung Cho",
+          "Youngwoon Lee",
+          "Yuchen Cui",
+          "Yue Cao",
+          "Yueh-Hua Wu",
+          "Yujin Tang",
+          "Yuke Zhu",
+          "Yunchu Zhang",
+          "Yunfan Jiang",
+          "Yunshuang Li",
+          "Yunzhu Li",
+          "Yusuke Iwasawa",
+          "Yutaka Matsuo",
+          "Zehan Ma",
+          "Zhuo Xu",
+          "Zichen Jeff Cui",
+          "Zichen Zhang",
+          "Zipeng Fu",
+          "Zipeng Lin"
+        ],
+        "date": "2023-10-13",
+        "dateLabel": "First arXiv submission",
+        "doi": "10.1109/icra57147.2024.10611477",
+        "arxivId": "2310.08864",
+        "bibtex": "@misc{open-x-embodiment,\n  title = {Open X-Embodiment: Robotic Learning Datasets and RT-X Models},\n  author = {Embodiment Collaboration and Abby O'Neill and Abdul Rehman and Abhinav Gupta and Abhiram Maddukuri and Abhishek Gupta and Abhishek Padalkar and Abraham Lee and Acorn Pooley and Agrim Gupta and Ajay Mandlekar and Ajinkya Jain and Albert Tung and Alex Bewley and Alex Herzog and Alex Irpan and Alexander Khazatsky and Anant Rai and Anchit Gupta and Andrew Wang and Andrey Kolobov and Anikait Singh and Animesh Garg and Aniruddha Kembhavi and Annie Xie and Anthony Brohan and Antonin Raffin and Archit Sharma and Arefeh Yavary and Arhan Jain and Ashwin Balakrishna and Ayzaan Wahid and Ben Burgess-Limerick and Beomjoon Kim and Bernhard Schölkopf and Blake Wulfe and Brian Ichter and Cewu Lu and Charles Xu and Charlotte Le and Chelsea Finn and Chen Wang and Chenfeng Xu and Cheng Chi and Chenguang Huang and Christine Chan and Christopher Agia and Chuer Pan and Chuyuan Fu and Coline Devin and Danfei Xu and Daniel Morton and Danny Driess and Daphne Chen and Deepak Pathak and Dhruv Shah and Dieter Büchler and Dinesh Jayaraman and Dmitry Kalashnikov and Dorsa Sadigh and Edward Johns and Ethan Foster and Fangchen Liu and Federico Ceola and Fei Xia and Feiyu Zhao and Felipe Vieira Frujeri and Freek Stulp and Gaoyue Zhou and Gaurav S. Sukhatme and Gautam Salhotra and Ge Yan and Gilbert Feng and Giulio Schiavi and Glen Berseth and Gregory Kahn and Guangwen Yang and Guanzhi Wang and Hao Su and Hao-Shu Fang and Haochen Shi and Henghui Bao and Heni Ben Amor and Henrik I Christensen and Hiroki Furuta and Homanga Bharadhwaj and Homer Walke and Hongjie Fang and Huy Ha and Igor Mordatch and Ilija Radosavovic and Isabel Leal and Jacky Liang and Jad Abou-Chakra and Jaehyung Kim and Jaimyn Drake and Jan Peters and Jan Schneider and Jasmine Hsu and Jay Vakil and Jeannette Bohg and Jeffrey Bingham and Jeffrey Wu and Jensen Gao and Jiaheng Hu and Jiajun Wu and Jialin Wu and Jiankai Sun and Jianlan Luo and Jiayuan Gu and Jie Tan and Jihoon Oh and Jimmy Wu and Jingpei Lu and Jingyun Yang and Jitendra Malik and João Silvério and Joey Hejna and Jonathan Booher and Jonathan Tompson and Jonathan Yang and Jordi Salvador and Joseph J. Lim and Junhyek Han and Kaiyuan Wang and Kanishka Rao and Karl Pertsch and Karol Hausman and Keegan Go and Keerthana Gopalakrishnan and Ken Goldberg and Kendra Byrne and Kenneth Oslund and Kento Kawaharazuka and Kevin Black and Kevin Lin and Kevin Zhang and Kiana Ehsani and Kiran Lekkala and Kirsty Ellis and Krishan Rana and Krishnan Srinivasan and Kuan Fang and Kunal Pratap Singh and Kuo-Hao Zeng and Kyle Hatch and Kyle Hsu and Laurent Itti and Lawrence Yunliang Chen and Lerrel Pinto and Li Fei-Fei and Liam Tan and Linxi \"Jim\" Fan and Lionel Ott and Lisa Lee and Luca Weihs and Magnum Chen and Marion Lepert and Marius Memmel and Masayoshi Tomizuka and Masha Itkina and Mateo Guaman Castro and Max Spero and Maximilian Du and Michael Ahn and Michael C. Yip and Mingtong Zhang and Mingyu Ding and Minho Heo and Mohan Kumar Srirama and Mohit Sharma and Moo Jin Kim and Muhammad Zubair Irshad and Naoaki Kanazawa and Nicklas Hansen and Nicolas Heess and Nikhil J Joshi and Niko Suenderhauf and Ning Liu and Norman Di Palo and Nur Muhammad Mahi Shafiullah and Oier Mees and Oliver Kroemer and Osbert Bastani and Pannag R Sanketi and Patrick \"Tree\" Miller and Patrick Yin and Paul Wohlhart and Peng Xu and Peter David Fagan and Peter Mitrano and Pierre Sermanet and Pieter Abbeel and Priya Sundaresan and Qiuyu Chen and Quan Vuong and Rafael Rafailov and Ran Tian and Ria Doshi and Roberto Martín-Martín and Rohan Baijal and Rosario Scalise and Rose Hendrix and Roy Lin and Runjia Qian and Ruohan Zhang and Russell Mendonca and Rutav Shah and Ryan Hoque and Ryan Julian and Samuel Bustamante and Sean Kirmani and Sergey Levine and Shan Lin and Sherry Moore and Shikhar Bahl and Shivin Dass and Shubham Sonawani and Shubham Tulsiani and Shuran Song and Sichun Xu and Siddhant Haldar and Siddharth Karamcheti and Simeon Adebola and Simon Guist and Soroush Nasiriany and Stefan Schaal and Stefan Welker and Stephen Tian and Subramanian Ramamoorthy and Sudeep Dasari and Suneel Belkhale and Sungjae Park and Suraj Nair and Suvir Mirchandani and Takayuki Osa and Tanmay Gupta and Tatsuya Harada and Tatsuya Matsushima and Ted Xiao and Thomas Kollar and Tianhe Yu and Tianli Ding and Todor Davchev and Tony Z. Zhao and Travis Armstrong and Trevor Darrell and Trinity Chung and Vidhi Jain and Vikash Kumar and Vincent Vanhoucke and Vitor Guizilini and Wei Zhan and Wenxuan Zhou and Wolfram Burgard and Xi Chen and Xiangyu Chen and Xiaolong Wang and Xinghao Zhu and Xinyang Geng and Xiyuan Liu and Xu Liangwei and Xuanlin Li and Yansong Pang and Yao Lu and Yecheng Jason Ma and Yejin Kim and Yevgen Chebotar and Yifan Zhou and Yifeng Zhu and Yilin Wu and Ying Xu and Yixuan Wang and Yonatan Bisk and Yongqiang Dou and Yoonyoung Cho and Youngwoon Lee and Yuchen Cui and Yue Cao and Yueh-Hua Wu and Yujin Tang and Yuke Zhu and Yunchu Zhang and Yunfan Jiang and Yunshuang Li and Yunzhu Li and Yusuke Iwasawa and Yutaka Matsuo and Zehan Ma and Zhuo Xu and Zichen Jeff Cui and Zichen Zhang and Zipeng Fu and Zipeng Lin},\n  year = {2023},\n  url = {https://doi.org/10.1109/ICRA57147.2024.10611477},\n  doi = {10.1109/icra57147.2024.10611477}\n}",
+        "preview": "assets/papers/open-x-embodiment.png",
+        "previewSourceUrl": "https://arxiv.org/pdf/2310.08864"
+      },
+      "metrics": {
+        "citations": {
+          "value": 103,
+          "source": "OpenAlex",
+          "sourceUrl": "https://openalex.org/W4387764390",
+          "updatedAt": "2026-09-14",
+          "recordTitle": "Open X-Embodiment: Robotic Learning Datasets and RT-X Models"
+        },
+        "github": {
+          "value": 2033,
+          "source": "GitHub",
+          "sourceUrl": "https://github.com/google-deepmind/open_x_embodiment/stargazers",
+          "repository": "google-deepmind/open_x_embodiment",
+          "updatedAt": "2026-09-14"
+        }
+      }
     },
     {
       "id": "bridgedata-v2",
@@ -2266,13 +4580,58 @@
       "checkedAt": "2026-09-14",
       "links": {
         "paper": "https://proceedings.mlr.press/v229/walke23a.html",
-        "data": "https://rail-berkeley.github.io/bridgedata/"
+        "data": "https://rail-berkeley.github.io/bridgedata/",
+        "project": "https://rail-berkeley.github.io/bridgedata/",
+        "code": "https://github.com/rail-berkeley/bridge_data_v2",
+        "pdf": "https://proceedings.mlr.press/v229/walke23a/walke23a.pdf"
       },
       "rank": 164,
       "selectionTrack": "peer-reviewed",
       "selectionReason": "Within the five-year publication window; official journal or conference record verified.",
       "paperType": "dataset",
-      "credit": "Homer Rich Walke and collaborators"
+      "credit": "Homer Rich Walke and collaborators",
+      "bibliography": {
+        "source": "Publisher",
+        "sourceUrl": "https://proceedings.mlr.press/v229/walke23a.html",
+        "checkedAt": "2026-09-14",
+        "authors": [
+          "Homer Rich Walke",
+          "Kevin Black",
+          "Tony Z. Zhao",
+          "Quan Vuong",
+          "Chongyi Zheng",
+          "Philippe Hansen-Estruch",
+          "Andre Wang He",
+          "Vivek Myers",
+          "Moo Jin Kim",
+          "Max Du",
+          "Abraham Lee",
+          "Kuan Fang",
+          "Chelsea Finn",
+          "Sergey Levine"
+        ],
+        "date": "2023-12-02",
+        "dateLabel": "Publisher record date",
+        "bibtex": "@misc{bridgedata-v2,\n  title = {BridgeData V2: A Dataset for Robot Learning at Scale},\n  author = {Homer Rich Walke and Kevin Black and Tony Z. Zhao and Quan Vuong and Chongyi Zheng and Philippe Hansen-Estruch and Andre Wang He and Vivek Myers and Moo Jin Kim and Max Du and Abraham Lee and Kuan Fang and Chelsea Finn and Sergey Levine},\n  year = {2023},\n  url = {https://proceedings.mlr.press/v229/walke23a.html}\n}",
+        "preview": "assets/papers/bridgedata-v2.png",
+        "previewSourceUrl": "https://proceedings.mlr.press/v229/walke23a/walke23a.pdf"
+      },
+      "metrics": {
+        "citations": {
+          "value": 12,
+          "source": "OpenAlex",
+          "sourceUrl": "https://openalex.org/W4386185624",
+          "updatedAt": "2026-09-14",
+          "recordTitle": "BridgeData V2: A Dataset for Robot Learning at Scale"
+        },
+        "github": {
+          "value": 291,
+          "source": "GitHub",
+          "sourceUrl": "https://github.com/rail-berkeley/bridge_data_v2/stargazers",
+          "repository": "rail-berkeley/bridge_data_v2",
+          "updatedAt": "2026-09-14"
+        }
+      }
     },
     {
       "id": "droid",
@@ -2301,13 +4660,142 @@
       "checkedAt": "2026-09-14",
       "links": {
         "paper": "https://www.roboticsproceedings.org/rss20/p120.html",
-        "data": "https://droid-dataset.github.io/"
+        "data": "https://droid-dataset.github.io/",
+        "project": "https://droid-dataset.github.io/",
+        "code": "https://github.com/droid-dataset/droid",
+        "pdf": "https://www.roboticsproceedings.org/rss20/p120.pdf"
       },
       "rank": 165,
       "selectionTrack": "peer-reviewed",
       "selectionReason": "Within the five-year publication window; official journal or conference record verified.",
       "paperType": "dataset",
-      "credit": "Alexander Khazatsky and the DROID collaboration"
+      "credit": "Alexander Khazatsky and the DROID collaboration",
+      "bibliography": {
+        "source": "Publisher",
+        "sourceUrl": "https://www.roboticsproceedings.org/rss20/p120.html",
+        "checkedAt": "2026-09-14",
+        "authors": [
+          "Alexander Khazatsky",
+          "Karl Pertsch",
+          "Suraj Nair",
+          "Ashwin Balakrishna",
+          "Sudeep Dasari",
+          "Siddharth Karamcheti",
+          "Soroush Nasiriany",
+          "Mohan Kumar Srirama",
+          "Lawrence Yunliang Chen",
+          "Kirsty Ellis",
+          "Peter David Fagan",
+          "Joey Hejna",
+          "Masha Itkina",
+          "Marion Lepert",
+          "Yecheng Jason Ma",
+          "Patrick Tree Miller",
+          "Jimmy Wu",
+          "Suneel Belkhale",
+          "Shivin Dass",
+          "Huy Ha",
+          "Arhan Jain",
+          "Abraham Lee",
+          "Youngwoon Lee",
+          "Marius Memmel",
+          "Sungjae Park",
+          "Ilija Radosavovic",
+          "Kaiyuan Wang",
+          "Albert Zhan",
+          "Kevin Black",
+          "Cheng Chi",
+          "Kyle Beltran Hatch",
+          "Shan Lin",
+          "Jingpei Lu",
+          "Jean Mercat",
+          "Abdul Rehman",
+          "Pannag R Sanketi",
+          "Archit Sharma",
+          "Cody Simpson",
+          "Quan Vuong",
+          "Homer Rich Walke",
+          "Blake Wulfe",
+          "Ted Xiao",
+          "Jonathan Heewon Yang",
+          "Arefeh Yavary",
+          "Tony Z. Zhao",
+          "Christopher Agia",
+          "Rohan Baijal",
+          "Mateo Guaman Castro",
+          "Daphne Chen",
+          "Qiuyu Chen",
+          "Trinity Chung",
+          "Jaimyn Drake",
+          "Ethan Paul Foster",
+          "Jensen Gao",
+          "David Antonio Herrera",
+          "Minho Heo",
+          "Kyle Hsu",
+          "Jiaheng Hu",
+          "Donovon Jackson",
+          "Charlotte Le",
+          "Yunshuang Li",
+          "Roy Lin",
+          "Zehan Ma",
+          "Abhiram Maddukuri",
+          "Suvir Mirchandani",
+          "Daniel Morton",
+          "Tony Nguyen",
+          "Abigail O'Neill",
+          "Rosario Scalise",
+          "Derick Seale",
+          "Victor Son",
+          "Stephen Tian",
+          "Emi Tran",
+          "Andrew E. Wang",
+          "Yilin Wu",
+          "Annie Xie",
+          "Jingyun Yang",
+          "Patrick Yin",
+          "Yunchu Zhang",
+          "Osbert Bastani",
+          "Glen Berseth",
+          "Jeannette Bohg",
+          "Ken Goldberg",
+          "Abhinav Gupta",
+          "Abhishek Gupta",
+          "Dinesh Jayaraman",
+          "Joseph J Lim",
+          "Jitendra Malik",
+          "Roberto Martín-Martín",
+          "Subramanian Ramamoorthy",
+          "Dorsa Sadigh",
+          "Shuran Song",
+          "Jiajun Wu",
+          "Michael C. Yip",
+          "Yuke Zhu",
+          "Thomas Kollar",
+          "Sergey Levine",
+          "Chelsea Finn"
+        ],
+        "date": "2024-07-15",
+        "dateLabel": "Publisher record date",
+        "bibtex": "@misc{droid,\n  title = {DROID: A Large-Scale In-The-Wild Robot Manipulation Dataset},\n  author = {Alexander Khazatsky and Karl Pertsch and Suraj Nair and Ashwin Balakrishna and Sudeep Dasari and Siddharth Karamcheti and Soroush Nasiriany and Mohan Kumar Srirama and Lawrence Yunliang Chen and Kirsty Ellis and Peter David Fagan and Joey Hejna and Masha Itkina and Marion Lepert and Yecheng Jason Ma and Patrick Tree Miller and Jimmy Wu and Suneel Belkhale and Shivin Dass and Huy Ha and Arhan Jain and Abraham Lee and Youngwoon Lee and Marius Memmel and Sungjae Park and Ilija Radosavovic and Kaiyuan Wang and Albert Zhan and Kevin Black and Cheng Chi and Kyle Beltran Hatch and Shan Lin and Jingpei Lu and Jean Mercat and Abdul Rehman and Pannag R Sanketi and Archit Sharma and Cody Simpson and Quan Vuong and Homer Rich Walke and Blake Wulfe and Ted Xiao and Jonathan Heewon Yang and Arefeh Yavary and Tony Z. Zhao and Christopher Agia and Rohan Baijal and Mateo Guaman Castro and Daphne Chen and Qiuyu Chen and Trinity Chung and Jaimyn Drake and Ethan Paul Foster and Jensen Gao and David Antonio Herrera and Minho Heo and Kyle Hsu and Jiaheng Hu and Donovon Jackson and Charlotte Le and Yunshuang Li and Roy Lin and Zehan Ma and Abhiram Maddukuri and Suvir Mirchandani and Daniel Morton and Tony Nguyen and Abigail O'Neill and Rosario Scalise and Derick Seale and Victor Son and Stephen Tian and Emi Tran and Andrew E. Wang and Yilin Wu and Annie Xie and Jingyun Yang and Patrick Yin and Yunchu Zhang and Osbert Bastani and Glen Berseth and Jeannette Bohg and Ken Goldberg and Abhinav Gupta and Abhishek Gupta and Dinesh Jayaraman and Joseph J Lim and Jitendra Malik and Roberto Martín-Martín and Subramanian Ramamoorthy and Dorsa Sadigh and Shuran Song and Jiajun Wu and Michael C. Yip and Yuke Zhu and Thomas Kollar and Sergey Levine and Chelsea Finn},\n  year = {2024},\n  url = {https://www.roboticsproceedings.org/rss20/p120.html}\n}",
+        "preview": "assets/papers/droid.png",
+        "previewSourceUrl": "https://www.roboticsproceedings.org/rss20/p120.pdf"
+      },
+      "metrics": {
+        "citations": {
+          "value": 137,
+          "source": "OpenAlex",
+          "sourceUrl": "https://openalex.org/W4402354047",
+          "updatedAt": "2026-09-14",
+          "recordTitle": "DROID: A Large-Scale In-The-Wild Robot Manipulation Dataset"
+        },
+        "github": {
+          "value": 440,
+          "source": "GitHub",
+          "sourceUrl": "https://github.com/droid-dataset/droid/stargazers",
+          "repository": "droid-dataset/droid",
+          "updatedAt": "2026-09-14"
+        }
+      }
     },
     {
       "id": "article-vpt",
@@ -2560,7 +5048,16 @@
       "credit": "Voyager research team",
       "relatedIds": [
         "voyager"
-      ]
+      ],
+      "metrics": {
+        "github": {
+          "value": 7196,
+          "source": "GitHub",
+          "sourceUrl": "https://github.com/MineDojo/Voyager/stargazers",
+          "repository": "MineDojo/Voyager",
+          "updatedAt": "2026-09-14"
+        }
+      }
     },
     {
       "id": "demo-voyager-cactus",
@@ -2601,7 +5098,16 @@
       "credit": "Voyager research team",
       "relatedIds": [
         "voyager"
-      ]
+      ],
+      "metrics": {
+        "github": {
+          "value": 7196,
+          "source": "GitHub",
+          "sourceUrl": "https://github.com/MineDojo/Voyager/stargazers",
+          "repository": "MineDojo/Voyager",
+          "updatedAt": "2026-09-14"
+        }
+      }
     },
     {
       "id": "demo-gamengen",
@@ -2682,7 +5188,16 @@
       "credit": "DIAMOND research team",
       "relatedIds": [
         "kb-w02"
-      ]
+      ],
+      "metrics": {
+        "github": {
+          "value": 2104,
+          "source": "GitHub",
+          "sourceUrl": "https://github.com/eloialonso/diamond/stargazers",
+          "repository": "eloialonso/diamond",
+          "updatedAt": "2026-09-14"
+        }
+      }
     },
     {
       "id": "demo-openvla",
@@ -2723,7 +5238,16 @@
       "credit": "OpenVLA research team",
       "relatedIds": [
         "openvla"
-      ]
+      ],
+      "metrics": {
+        "github": {
+          "value": 7008,
+          "source": "GitHub",
+          "sourceUrl": "https://github.com/openvla/openvla/stargazers",
+          "repository": "openvla/openvla",
+          "updatedAt": "2026-09-14"
+        }
+      }
     },
     {
       "id": "demo-aloha",
@@ -2804,7 +5328,16 @@
       "credit": "Cheng Chi and the Diffusion Policy team",
       "relatedIds": [
         "diffusion-policy"
-      ]
+      ],
+      "metrics": {
+        "github": {
+          "value": 4541,
+          "source": "GitHub",
+          "sourceUrl": "https://github.com/real-stanford/diffusion_policy/stargazers",
+          "repository": "real-stanford/diffusion_policy",
+          "updatedAt": "2026-09-14"
+        }
+      }
     },
     {
       "id": "demo-diffusion-lift",
@@ -2845,7 +5378,16 @@
       "credit": "Cheng Chi and the Diffusion Policy team",
       "relatedIds": [
         "diffusion-policy"
-      ]
+      ],
+      "metrics": {
+        "github": {
+          "value": 4541,
+          "source": "GitHub",
+          "sourceUrl": "https://github.com/real-stanford/diffusion_policy/stargazers",
+          "repository": "real-stanford/diffusion_policy",
+          "updatedAt": "2026-09-14"
+        }
+      }
     }
   ]
 }

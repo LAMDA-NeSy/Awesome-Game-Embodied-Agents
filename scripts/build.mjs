@@ -27,7 +27,7 @@ const about = `<h2>About the collection</h2>
 <p>The source table contained ${data.meta.sourceSnapshot.rows} rows. Removing ${data.meta.sourceSnapshot.emptyRows} untitled rows and merging ${data.meta.sourceSnapshot.duplicateRows} duplicates produced ${data.meta.sourceSnapshot.uniqueTitledRows} distinct titled leads. Historical counts on the knowledge-base homepage were not used for this snapshot.</p>
 <p>Checks primarily cover bibliographic records, project descriptions, and abstracts. Original knowledge-base review labels are retained as source claims, translated into English. They do not represent a fresh full-text review or independent experiment reproduction.</p>
 <p><a href="selection-audit.json" download>Selection audit ↓</a> · <a href="resources.json" download>Resource data ↓</a> · <a href="${data.meta.knowledgeUrl}" target="_blank" rel="noopener noreferrer">Source knowledge base ↗</a> (original access permissions apply)</p>
-<h3>Comparing game and embodied agents</h3>
+<h3>Paper records and metrics</h3><p>Paper rows include full titles, credited authors, source dates, PDF links, and original first-page previews where available. The byline date comes from the linked bibliographic record; an arXiv first-submission date or proceedings publication date may differ from the conference year. Expand Details &amp; sources for the complete author list and a BibTeX citation.</p><p>Citations come from the linked OpenAlex or Crossref record, and stars from the linked GitHub repository. Each count carries its retrieval date. Counts are cached snapshots and can differ across paper versions and databases. Unavailable fields are omitted. See <a href="docs/metadata.md">metadata sources and maintenance</a>.</p><h3>Comparing game and embodied agents</h3>
 <div class="table-wrap"><table><thead><tr><th>Dimension</th><th>Game research</th><th>Embodied research</th></tr></thead><tbody>
 <tr><td>Environment & task</td><td>Game, map, mode, and task scope</td><td>Hardware, scene, objects, and manipulation tasks</td></tr>
 <tr><td>Observation access</td><td>Pixels, audio, text, or engine state</td><td>Images, depth, touch, and proprioception</td></tr>
@@ -42,8 +42,10 @@ html = html.replace(/(<section id="about" class="about-panel" hidden>)[\s\S]*?<\
 await fs.writeFile('dist/index.html', html);
 const md = s => String(s || '—').replace(/\|/g, '\\|').replace(/\n/g, ' ');
 const link = (url, text) => url ? `[${text}](${url})` : '';
-const links = r => Object.entries(r.links).map(([k, v]) => link(v, { paper: 'Paper', code: 'Code', project: 'Project', data: 'Data', article: 'Article', video: 'Video' }[k] || k)).join(' · ');
-const paperRows = items => items.map(r => `| **${link(r.links.paper, r.name)}**<br>${md(r.title)} | ${md(r.venue)} | ${md(r.summary)} | ${links(r)} |`).join('\n');
+const links = r => Object.entries(r.links).map(([k, v]) => link(v, { paper: 'Paper', code: 'Code', project: 'Project', data: 'Data', article: 'Article', video: 'Video', pdf: 'PDF', model: 'Models' }[k] || k)).join(' · ');
+const authorLine = r => {const authors=r.bibliography?.authors||[];return authors.slice(0,3).join(', ')+(authors.length>3?' et al.':'');};
+const metricsLine = r => [r.metrics?.citations,r.metrics?.github].filter(m=>Number.isInteger(m?.value)).map(m=>link(m.sourceUrl,`${m.value.toLocaleString('en-US')} ${m.source==='GitHub'?'stars':'citations'} · ${m.source} · ${m.updatedAt}`)).join('<br>');
+const paperRows = items => items.map(r => `| **${link(r.links.paper, r.title)}**<br>${md(authorLine(r))}<br>${md(r.bibliography?.date || r.publicationDate || r.year)} | ${md(r.venue)} | ${md(r.summary)} | ${links(r)}${metricsLine(r)?'<br>'+metricsLine(r):''} |`).join('\n');
 const projectRows = items => items.map(r => `| **${r.name}** | ${md(r.environment)} | ${md(r.interface)} | ${md(r.limits)} | ${links(r)} |`).join('\n');
 const tick = String.fromCharCode(96);
 let readme = `# Awesome Game & Embodied Agents
@@ -161,6 +163,12 @@ The source table contained ${data.meta.sourceSnapshot.rows} rows: ${data.meta.so
 
 Entries retain sources, review dates, environments, interfaces, limitations, and inclusion rationales. Original knowledge-base review labels have been translated into English and retained as source claims; they do not mean that a fresh full-text review or independent reproduction was performed. The raw export remains in an ignored local directory and is excluded from the repository and website. The original knowledge base has not been modified.
 
+## Paper metadata
+
+The website shows full titles, author lists, source dates, Paper/PDF links, and original first-page previews. Expand a record for complete authors and a copyable BibTeX citation. Citation and GitHub star counts link to their sources and carry retrieval dates; unavailable fields are omitted. Indexed versions can have different citation counts. The byline date is identified in the record details and can differ from the conference year.
+
+See [metadata sources and refresh instructions](docs/metadata.md).
+
 ## Website and maintenance
 
 [**Live website**](${data.meta.siteUrl}) · [GitHub repository](${data.meta.repositoryUrl})
@@ -226,5 +234,6 @@ await fs.writeFile('README.md', readme);
 await fs.mkdir('dist/docs', { recursive: true });
 for (const f of ['README.md', 'CONTRIBUTING.md', 'LICENSE', 'CITATION.cff']) await fs.copyFile(f, 'dist/' + f);
 await fs.copyFile('docs/collection-policy.md', 'dist/docs/collection-policy.md');
+await fs.copyFile('docs/metadata.md', 'dist/docs/metadata.md');
 await fs.copyFile('data/selection-audit.json', 'dist/selection-audit.json');
 console.log(`Built ${selected.length} selected resources and ${candidates.length} candidates.`);

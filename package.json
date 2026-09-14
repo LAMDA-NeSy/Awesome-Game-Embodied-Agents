@@ -8,8 +8,11 @@
     "build": "node scripts/build.mjs",
     "check": "node scripts/check.mjs",
     "dev": "node scripts/serve.mjs",
-    "start": "node scripts/serve.mjs"
+    "start": "node scripts/serve.mjs",
+    "refresh-metrics": "node scripts/refresh-metrics.mjs"
   },
-  "engines": { "node": ">=20" },
+  "engines": {
+    "node": ">=20"
+  },
   "license": "MIT"
 }

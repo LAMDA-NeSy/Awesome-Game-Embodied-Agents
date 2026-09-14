@@ -52,6 +52,15 @@ function render() {
   $('#resources').innerHTML=results.length?renderCatalogue(results,state.view,data.resources):'<div class="empty-state"><h3>No matching resources</h3><p>Try a shorter query or clear your filters.</p><button type="button" id="empty-reset">Clear filters</button></div>';
   $('#empty-reset')?.addEventListener('click',reset);
   bindVideos();
+  bindCitations();
+}
+function bindCitations(){
+  document.querySelectorAll('.copy-citation').forEach(button=>{button.hidden=false;button.addEventListener('click',async()=>{
+    const container=button.closest('.citation-details');
+    const status=container.querySelector('.copy-status');
+    try{await navigator.clipboard.writeText(container.querySelector('code').textContent);status.textContent='Copied';}
+    catch{status.textContent='Select and copy the citation above.';}
+  });});
 }
 function bindVideos(){
   videoObserver?.disconnect();

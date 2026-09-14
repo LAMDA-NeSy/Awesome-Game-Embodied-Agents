@@ -22,3 +22,5 @@ Contributions on game and embodied agents are welcome: papers, research articles
 - Keep official-source claims and editorial judgments explicit. No automated citation, star, or view counts should be added without a reliable retrieval source and date.
 
 The site and README are generated from the same catalogue. Edit resource data first, then rebuild to keep counts and lists consistent.
+
+For paper rows, include verified authors, the source date and its meaning, and a PDF URL when available. Link any citation count and repository star count to its exact source and record the retrieval date. Leave unverified optional fields absent. See [metadata maintenance](docs/metadata.md).
