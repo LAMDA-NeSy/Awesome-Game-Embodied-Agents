@@ -20,7 +20,7 @@
     "referenceUrl": "https://github.com/kairunwen/Awesome-Robot-Use-Agent#projects",
     "counts": {
       "articles": 6,
-      "papers": 77,
+      "papers": 83,
       "projects": 5,
       "datasets": 4,
       "benchmarks": 8,
@@ -102,15 +102,15 @@
           "value": 133,
           "source": "OpenAlex",
           "sourceUrl": "https://openalex.org/W4409147637",
-          "updatedAt": "2026-09-14",
+          "updatedAt": "2026-09-15",
           "recordTitle": "Mastering diverse control tasks through world models"
         },
         "github": {
-          "value": 3774,
+          "value": 3776,
           "source": "GitHub",
           "sourceUrl": "https://github.com/danijar/dreamerv3/stargazers",
           "repository": "danijar/dreamerv3",
-          "updatedAt": "2026-09-14"
+          "updatedAt": "2026-09-15"
         }
       },
       "addedAt": "2026-09-14",
@@ -183,7 +183,7 @@
           "value": 23,
           "source": "OpenAlex",
           "sourceUrl": "https://openalex.org/W4318242039",
-          "updatedAt": "2026-09-14",
+          "updatedAt": "2026-09-15",
           "recordTitle": "Imitating Human Behaviour with Diffusion Models"
         },
         "github": {
@@ -191,7 +191,7 @@
           "source": "GitHub",
           "sourceUrl": "https://github.com/microsoft/Imitating-Human-Behaviour-w-Diffusion/stargazers",
           "repository": "microsoft/Imitating-Human-Behaviour-w-Diffusion",
-          "updatedAt": "2026-09-14"
+          "updatedAt": "2026-09-15"
         }
       },
       "addedAt": "2026-09-14",
@@ -267,7 +267,7 @@
           "value": 1,
           "source": "OpenAlex",
           "sourceUrl": "https://openalex.org/W7137844787",
-          "updatedAt": "2026-09-14",
+          "updatedAt": "2026-09-15",
           "recordTitle": "F.A.C.U.L.: Language-Based Interaction with AI Companions in Gaming"
         },
         "github": {
@@ -275,7 +275,7 @@
           "source": "GitHub",
           "sourceUrl": "https://github.com/tencent-facul/code/stargazers",
           "repository": "tencent-facul/code",
-          "updatedAt": "2026-09-14"
+          "updatedAt": "2026-09-15"
         }
       },
       "addedAt": "2026-09-14",
@@ -342,7 +342,7 @@
           "source": "GitHub",
           "sourceUrl": "https://github.com/microsoft/Intrepid/stargazers",
           "repository": "microsoft/Intrepid",
-          "updatedAt": "2026-09-14"
+          "updatedAt": "2026-09-15"
         }
       },
       "addedAt": "2026-09-14",
@@ -410,7 +410,7 @@
           "source": "GitHub",
           "sourceUrl": "https://github.com/mahaozhe/DuRND/stargazers",
           "repository": "mahaozhe/DuRND",
-          "updatedAt": "2026-09-14"
+          "updatedAt": "2026-09-15"
         }
       },
       "addedAt": "2026-09-14",
@@ -477,7 +477,7 @@
           "value": 5,
           "source": "OpenAlex",
           "sourceUrl": "https://openalex.org/W3207211828",
-          "updatedAt": "2026-09-14",
+          "updatedAt": "2026-09-15",
           "recordTitle": "Action-Sufficient State Representation Learning for Control with Structural Constraints"
         }
       },
@@ -545,7 +545,7 @@
           "value": 1,
           "source": "OpenAlex",
           "sourceUrl": "https://openalex.org/W7133239981",
-          "updatedAt": "2026-09-14",
+          "updatedAt": "2026-09-15",
           "recordTitle": "COOM: A Game Benchmark for Continual Reinforcement Learning"
         },
         "github": {
@@ -553,7 +553,7 @@
           "source": "GitHub",
           "sourceUrl": "https://github.com/TTomilin/COOM/stargazers",
           "repository": "TTomilin/COOM",
-          "updatedAt": "2026-09-14"
+          "updatedAt": "2026-09-15"
         }
       },
       "addedAt": "2026-09-14",
@@ -618,7 +618,7 @@
           "value": 0,
           "source": "OpenAlex",
           "sourceUrl": "https://openalex.org/W4414577619",
-          "updatedAt": "2026-09-14",
+          "updatedAt": "2026-09-15",
           "recordTitle": "HASARD: A Benchmark for Vision-Based Safe Reinforcement Learning in Embodied Agents"
         }
       },
@@ -692,7 +692,7 @@
           "value": 4,
           "source": "OpenAlex",
           "sourceUrl": "https://openalex.org/W4402704721",
-          "updatedAt": "2026-09-14",
+          "updatedAt": "2026-09-15",
           "recordTitle": "Diffusion Models Are Real-Time Game Engines"
         }
       },
@@ -763,7 +763,7 @@
           "value": 2,
           "source": "OpenAlex",
           "sourceUrl": "https://openalex.org/W4398229893",
-          "updatedAt": "2026-09-14",
+          "updatedAt": "2026-09-15",
           "recordTitle": "Diffusion for World Modeling: Visual Details Matter in Atari"
         },
         "github": {
@@ -771,7 +771,7 @@
           "source": "GitHub",
           "sourceUrl": "https://github.com/eloialonso/diamond/stargazers",
           "repository": "eloialonso/diamond",
-          "updatedAt": "2026-09-14"
+          "updatedAt": "2026-09-15"
         }
       },
       "addedAt": "2026-09-14",
@@ -839,7 +839,7 @@
           "value": 0,
           "source": "OpenAlex",
           "sourceUrl": "https://openalex.org/W4416048054",
-          "updatedAt": "2026-09-14",
+          "updatedAt": "2026-09-15",
           "recordTitle": "StateSpaceDiffuser: Bringing Long Context to Diffusion World Models"
         },
         "github": {
@@ -847,7 +847,7 @@
           "source": "GitHub",
           "sourceUrl": "https://github.com/insait-institute/StateSpaceDiffuser/stargazers",
           "repository": "insait-institute/StateSpaceDiffuser",
-          "updatedAt": "2026-09-14"
+          "updatedAt": "2026-09-15"
         }
       },
       "addedAt": "2026-09-14",
@@ -913,7 +913,7 @@
           "value": 0,
           "source": "OpenAlex",
           "sourceUrl": "https://openalex.org/W4407123592",
-          "updatedAt": "2026-09-14",
+          "updatedAt": "2026-09-15",
           "recordTitle": "EDELINE: Enhancing Memory in Diffusion-based World Models via Linear-Time Sequence Modeling"
         },
         "github": {
@@ -921,7 +921,7 @@
           "source": "GitHub",
           "sourceUrl": "https://github.com/LJH-coding/EDELINE/stargazers",
           "repository": "LJH-coding/EDELINE",
-          "updatedAt": "2026-09-14"
+          "updatedAt": "2026-09-15"
         }
       },
       "addedAt": "2026-09-14",
@@ -987,7 +987,7 @@
           "value": 0,
           "source": "OpenAlex",
           "sourceUrl": "https://openalex.org/W4417285496",
-          "updatedAt": "2026-09-14",
+          "updatedAt": "2026-09-15",
           "recordTitle": "Contextual Similarity Distillation: Ensemble Uncertainties with a Single Model"
         },
         "github": {
@@ -995,7 +995,7 @@
           "source": "GitHub",
           "sourceUrl": "https://github.com/anyboby/contextual-similarity-distillation/stargazers",
           "repository": "anyboby/contextual-similarity-distillation",
-          "updatedAt": "2026-09-14"
+          "updatedAt": "2026-09-15"
         }
       },
       "addedAt": "2026-09-14",
@@ -1061,7 +1061,7 @@
           "value": 1,
           "source": "OpenAlex",
           "sourceUrl": "https://openalex.org/W4381245688",
-          "updatedAt": "2026-09-14",
+          "updatedAt": "2026-09-15",
           "recordTitle": "Recurrent Action Transformer with Memory"
         }
       },
@@ -1128,7 +1128,7 @@
           "value": 1,
           "source": "OpenAlex",
           "sourceUrl": "https://openalex.org/W4414360152",
-          "updatedAt": "2026-09-14",
+          "updatedAt": "2026-09-15",
           "recordTitle": "Why the Agent Made that Decision: Contrastive Explanation Learning for Reinforcement Learning"
         }
       },
@@ -1196,7 +1196,7 @@
           "value": 0,
           "source": "OpenAlex",
           "sourceUrl": "https://openalex.org/W7133226547",
-          "updatedAt": "2026-09-14",
+          "updatedAt": "2026-09-15",
           "recordTitle": "Enhancing Robot Program Synthesis Through Environmental Context"
         }
       },
@@ -1260,7 +1260,7 @@
           "value": 1,
           "source": "OpenAlex",
           "sourceUrl": "https://openalex.org/W4391622581",
-          "updatedAt": "2026-09-14",
+          "updatedAt": "2026-09-15",
           "recordTitle": "Just Cluster It: An Approach for Exploration in High-Dimensions using Clustering and Pre-Trained Representations"
         },
         "github": {
@@ -1268,7 +1268,7 @@
           "source": "GitHub",
           "sourceUrl": "https://github.com/stefanwm13/just-cluster-it-public/stargazers",
           "repository": "stefanwm13/just-cluster-it-public",
-          "updatedAt": "2026-09-14"
+          "updatedAt": "2026-09-15"
         }
       },
       "addedAt": "2026-09-14",
@@ -1334,7 +1334,7 @@
           "value": 8,
           "source": "OpenAlex",
           "sourceUrl": "https://openalex.org/W4306176261",
-          "updatedAt": "2026-09-14",
+          "updatedAt": "2026-09-15",
           "recordTitle": "Exploration via Elliptical Episodic Bonuses"
         }
       },
@@ -1402,7 +1402,7 @@
           "value": 3,
           "source": "OpenAlex",
           "sourceUrl": "https://openalex.org/W3212475937",
-          "updatedAt": "2026-09-14",
+          "updatedAt": "2026-09-15",
           "recordTitle": "Successor Feature Landmarks for Long-Horizon Goal-Conditioned Reinforcement Learning"
         },
         "github": {
@@ -1410,7 +1410,7 @@
           "source": "GitHub",
           "sourceUrl": "https://github.com/2016choang/sfl/stargazers",
           "repository": "2016choang/sfl",
-          "updatedAt": "2026-09-14"
+          "updatedAt": "2026-09-15"
         }
       },
       "addedAt": "2026-09-14",
@@ -1473,7 +1473,7 @@
           "value": 2,
           "source": "OpenAlex",
           "sourceUrl": "https://openalex.org/W4393157199",
-          "updatedAt": "2026-09-14",
+          "updatedAt": "2026-09-15",
           "recordTitle": "Handling Long and Richly Constrained Tasks through Constrained Hierarchical Reinforcement Learning"
         }
       },
@@ -1596,7 +1596,7 @@
           "value": 2,
           "source": "OpenAlex",
           "sourceUrl": "https://openalex.org/W4306295186",
-          "updatedAt": "2026-09-14",
+          "updatedAt": "2026-09-15",
           "recordTitle": "A Mixture of Surprises for Unsupervised Reinforcement Learning"
         },
         "github": {
@@ -1604,7 +1604,7 @@
           "source": "GitHub",
           "sourceUrl": "https://github.com/LeapLabTHU/MOSS/stargazers",
           "repository": "LeapLabTHU/MOSS",
-          "updatedAt": "2026-09-14"
+          "updatedAt": "2026-09-15"
         }
       },
       "addedAt": "2026-09-14",
@@ -1669,7 +1669,7 @@
           "value": 1,
           "source": "OpenAlex",
           "sourceUrl": "https://openalex.org/W4389761566",
-          "updatedAt": "2026-09-14",
+          "updatedAt": "2026-09-15",
           "recordTitle": "MP5: A Multi-modal Open-ended Embodied System in Minecraft via Active Perception"
         },
         "github": {
@@ -1677,7 +1677,7 @@
           "source": "GitHub",
           "sourceUrl": "https://github.com/IranQin/MP5/stargazers",
           "repository": "IranQin/MP5",
-          "updatedAt": "2026-09-14"
+          "updatedAt": "2026-09-15"
         }
       },
       "addedAt": "2026-09-14",
@@ -1739,7 +1739,7 @@
           "value": 51,
           "source": "OpenAlex",
           "sourceUrl": "https://openalex.org/W4319323461",
-          "updatedAt": "2026-09-14",
+          "updatedAt": "2026-09-15",
           "recordTitle": "Describe, Explain, Plan and Select: Interactive Planning with Large Language Models Enables Open-World Multi-Task Agents"
         }
       },
@@ -1806,15 +1806,15 @@
           "value": 203,
           "source": "OpenAlex",
           "sourceUrl": "https://openalex.org/W4378505261",
-          "updatedAt": "2026-09-14",
+          "updatedAt": "2026-09-15",
           "recordTitle": "Voyager: An Open-Ended Embodied Agent with Large Language Models"
         },
         "github": {
-          "value": 7196,
+          "value": 7199,
           "source": "GitHub",
           "sourceUrl": "https://github.com/MineDojo/Voyager/stargazers",
           "repository": "MineDojo/Voyager",
-          "updatedAt": "2026-09-14"
+          "updatedAt": "2026-09-15"
         }
       },
       "addedAt": "2026-09-14",
@@ -1887,7 +1887,7 @@
           "value": 50,
           "source": "OpenAlex",
           "sourceUrl": "https://openalex.org/W4283460722",
-          "updatedAt": "2026-09-14",
+          "updatedAt": "2026-09-15",
           "recordTitle": "Video PreTraining (VPT): Learning to Act by Watching Unlabeled Online Videos"
         }
       },
@@ -1949,7 +1949,7 @@
           "value": 7,
           "source": "OpenAlex",
           "sourceUrl": "https://openalex.org/W4379357893",
-          "updatedAt": "2026-09-14",
+          "updatedAt": "2026-09-15",
           "recordTitle": "STEVE-1: A Generative Model for Text-to-Behavior in Minecraft"
         }
       },
@@ -2045,15 +2045,15 @@
           "value": 43,
           "source": "OpenAlex",
           "sourceUrl": "https://openalex.org/W4399695759",
-          "updatedAt": "2026-09-14",
+          "updatedAt": "2026-09-15",
           "recordTitle": "OpenVLA: An Open-Source Vision-Language-Action Model"
         },
         "github": {
-          "value": 7009,
+          "value": 7010,
           "source": "GitHub",
           "sourceUrl": "https://github.com/openvla/openvla/stargazers",
           "repository": "openvla/openvla",
-          "updatedAt": "2026-09-14"
+          "updatedAt": "2026-09-15"
         }
       },
       "addedAt": "2026-09-14",
@@ -2125,7 +2125,7 @@
           "value": 488,
           "source": "OpenAlex",
           "sourceUrl": "https://openalex.org/W4385403811",
-          "updatedAt": "2026-09-14",
+          "updatedAt": "2026-09-15",
           "recordTitle": "Diffusion Policy: Visuomotor Policy Learning via Action Diffusion"
         },
         "github": {
@@ -2133,7 +2133,7 @@
           "source": "GitHub",
           "sourceUrl": "https://github.com/real-stanford/diffusion_policy/stargazers",
           "repository": "real-stanford/diffusion_policy",
-          "updatedAt": "2026-09-14"
+          "updatedAt": "2026-09-15"
         }
       },
       "addedAt": "2026-09-14",
@@ -2202,7 +2202,7 @@
           "value": 586,
           "source": "OpenAlex",
           "sourceUrl": "https://openalex.org/W4385430674",
-          "updatedAt": "2026-09-14",
+          "updatedAt": "2026-09-15",
           "recordTitle": "Learning Fine-Grained Bimanual Manipulation with Low-Cost Hardware"
         },
         "github": {
@@ -2210,7 +2210,7 @@
           "source": "GitHub",
           "sourceUrl": "https://github.com/tonyzhaozh/act/stargazers",
           "repository": "tonyzhaozh/act",
-          "updatedAt": "2026-09-14"
+          "updatedAt": "2026-09-15"
         }
       },
       "addedAt": "2026-09-14",
@@ -2293,7 +2293,7 @@
           "value": 98,
           "source": "OpenAlex",
           "sourceUrl": "https://openalex.org/W4402353985",
-          "updatedAt": "2026-09-14",
+          "updatedAt": "2026-09-15",
           "recordTitle": "Octo: An Open-Source Generalist Robot Policy"
         },
         "github": {
@@ -2301,7 +2301,7 @@
           "source": "GitHub",
           "sourceUrl": "https://github.com/octo-models/octo/stargazers",
           "repository": "octo-models/octo",
-          "updatedAt": "2026-09-14"
+          "updatedAt": "2026-09-15"
         }
       },
       "addedAt": "2026-09-14",
@@ -2418,7 +2418,7 @@
           "value": 273,
           "source": "OpenAlex",
           "sourceUrl": "https://openalex.org/W4385473486",
-          "updatedAt": "2026-09-14",
+          "updatedAt": "2026-09-15",
           "recordTitle": "RT-2: Vision-Language-Action Models Transfer Web Knowledge to Robotic Control"
         }
       },
@@ -2490,7 +2490,7 @@
           "value": 87,
           "source": "OpenAlex",
           "sourceUrl": "https://openalex.org/W4384264726",
-          "updatedAt": "2026-09-14",
+          "updatedAt": "2026-09-15",
           "recordTitle": "VoxPoser: Composable 3D Value Maps for Robotic Manipulation with Language Models"
         },
         "github": {
@@ -2498,7 +2498,7 @@
           "source": "GitHub",
           "sourceUrl": "https://github.com/huangwl18/VoxPoser/stargazers",
           "repository": "huangwl18/VoxPoser",
-          "updatedAt": "2026-09-14"
+          "updatedAt": "2026-09-15"
         }
       },
       "addedAt": "2026-09-14",
@@ -2569,7 +2569,7 @@
           "value": 9,
           "source": "OpenAlex",
           "sourceUrl": "https://openalex.org/W4402955063",
-          "updatedAt": "2026-09-14",
+          "updatedAt": "2026-09-15",
           "recordTitle": "ReKep: Spatio-Temporal Reasoning of Relational Keypoint Constraints for Robotic Manipulation"
         },
         "github": {
@@ -2577,7 +2577,7 @@
           "source": "GitHub",
           "sourceUrl": "https://github.com/huangwl18/ReKep/stargazers",
           "repository": "huangwl18/ReKep",
-          "updatedAt": "2026-09-14"
+          "updatedAt": "2026-09-15"
         }
       },
       "addedAt": "2026-09-14",
@@ -2712,15 +2712,15 @@
           "value": 7,
           "source": "OpenAlex",
           "sourceUrl": "https://openalex.org/W4379919389",
-          "updatedAt": "2026-09-14",
+          "updatedAt": "2026-09-15",
           "recordTitle": "LIBERO: Benchmarking Knowledge Transfer for Lifelong Robot Learning"
         },
         "github": {
-          "value": 2311,
+          "value": 2313,
           "source": "GitHub",
           "sourceUrl": "https://github.com/Lifelong-Robot-Learning/LIBERO/stargazers",
           "repository": "Lifelong-Robot-Learning/LIBERO",
-          "updatedAt": "2026-09-14"
+          "updatedAt": "2026-09-15"
         }
       },
       "addedAt": "2026-09-14",
@@ -2792,7 +2792,7 @@
           "value": 1,
           "source": "OpenAlex",
           "sourceUrl": "https://openalex.org/W4407590542",
-          "updatedAt": "2026-09-14",
+          "updatedAt": "2026-09-15",
           "recordTitle": "EmbodiedBench: Comprehensive Benchmarking Multi-modal Large Language Models for Vision-Driven Embodied Agents"
         },
         "github": {
@@ -2800,7 +2800,7 @@
           "source": "GitHub",
           "sourceUrl": "https://github.com/EmbodiedBench/EmbodiedBench/stargazers",
           "repository": "EmbodiedBench/EmbodiedBench",
-          "updatedAt": "2026-09-14"
+          "updatedAt": "2026-09-15"
         }
       },
       "addedAt": "2026-09-14",
@@ -2860,7 +2860,7 @@
           "value": 50,
           "source": "OpenAlex",
           "sourceUrl": "https://openalex.org/W4402354007",
-          "updatedAt": "2026-09-14",
+          "updatedAt": "2026-09-15",
           "recordTitle": "Consistency Policy: Accelerated Visuomotor Policies via Consistency Distillation"
         }
       },
@@ -2920,7 +2920,7 @@
           "value": 1,
           "source": "OpenAlex",
           "sourceUrl": "https://openalex.org/W4399598096",
-          "updatedAt": "2026-09-14",
+          "updatedAt": "2026-09-15",
           "recordTitle": "BAKU: An Efficient Transformer for Multi-Task Policy Learning"
         }
       },
@@ -2983,7 +2983,7 @@
           "value": 0,
           "source": "OpenAlex",
           "sourceUrl": "https://openalex.org/W4407185791",
-          "updatedAt": "2026-09-14",
+          "updatedAt": "2026-09-15",
           "recordTitle": "VLA-Cache: Efficient Vision-Language-Action Manipulation via Adaptive Token Caching"
         }
       },
@@ -3047,7 +3047,7 @@
           "value": 1,
           "source": "OpenAlex",
           "sourceUrl": "https://openalex.org/W4417071139",
-          "updatedAt": "2026-09-14",
+          "updatedAt": "2026-09-15",
           "recordTitle": "RoboChemist: Long-Horizon and Safety-Compliant Robotic Chemical Experimentation"
         }
       },
@@ -3183,12 +3183,671 @@
           "value": 0,
           "source": "OpenAlex",
           "sourceUrl": "https://openalex.org/W4417086995",
-          "updatedAt": "2026-09-14",
+          "updatedAt": "2026-09-15",
           "recordTitle": "SIMA 2: A Generalist Embodied Agent for Virtual Worlds"
         }
       },
       "addedAt": "2026-09-14",
       "updatedAt": "2026-09-14"
+    },
+    {
+      "id": "pi0-paper",
+      "institutions": [
+        {
+          "name": "Physical Intelligence",
+          "url": "https://www.pi.website/",
+          "logo": "assets/institutions/physical-intelligence.svg",
+          "mark": "PI"
+        }
+      ],
+      "name": "π0",
+      "title": "π0: A Vision-Language-Action Flow Model for General Robot Control",
+      "domains": [
+        "embodied"
+      ],
+      "kinds": [
+        "papers"
+      ],
+      "year": 2025,
+      "venue": "RSS 2025",
+      "summary": "Introduces a generalist VLA that augments a pretrained vision-language model with a flow-matching action expert for dexterous, high-frequency robot control.",
+      "tags": [
+        "Vision-language-action",
+        "Flow matching"
+      ],
+      "environment": "More than 10,000 hours of cross-embodiment robot data spanning single-arm, dual-arm, and mobile manipulation tasks.",
+      "interface": "Images, robot state, and language prompts map to continuous action chunks at control rates up to 50 Hz.",
+      "limits": "The evaluation uses the team's robot platforms and data mixture; out-of-the-box and task-specific post-training results should be distinguished.",
+      "status": "selected",
+      "evidence": "Official paper, project page, and bibliographic metadata checked; experiments not independently reproduced.",
+      "sourceType": "supplement",
+      "checkedAt": "2026-09-15",
+      "links": {
+        "paper": "https://www.roboticsproceedings.org/rss21/p010.html",
+        "project": "https://www.pi.website/blog/pi0",
+        "pdf": "https://arxiv.org/pdf/2410.24164",
+        "code": "https://github.com/Physical-Intelligence/openpi"
+      },
+      "rank": 2,
+      "selectionTrack": "peer-reviewed",
+      "selectionReason": "Published at a leading robotics or machine-learning venue within the five-year window; official paper and project sources verified.",
+      "paperType": "method",
+      "bibliography": {
+        "source": "arXiv",
+        "sourceUrl": "https://arxiv.org/abs/2410.24164",
+        "checkedAt": "2026-09-15",
+        "authors": [
+          "Kevin Black",
+          "Noah Brown",
+          "Danny Driess",
+          "Adnan Esmail",
+          "Michael Equi",
+          "Chelsea Finn",
+          "Niccolo Fusai",
+          "Lachy Groom",
+          "Karol Hausman",
+          "Brian Ichter",
+          "Szymon Jakubczak",
+          "Tim Jones",
+          "Liyiming Ke",
+          "Sergey Levine",
+          "Adrian Li-Bell",
+          "Mohith Mothukuri",
+          "Suraj Nair",
+          "Karl Pertsch",
+          "Lucy Xiaoyang Shi",
+          "Laura Smith",
+          "James Tanner",
+          "Quan Vuong",
+          "Anna Walling",
+          "Haohuan Wang",
+          "Ury Zhilinsky"
+        ],
+        "date": "2024-10-31",
+        "dateLabel": "First arXiv submission",
+        "arxivId": "2410.24164",
+        "bibtex": "@inproceedings{pi0-paper,\n  title = {π0: A Vision-Language-Action Flow Model for General Robot Control},\n  author = {Kevin Black and Noah Brown and Danny Driess and Adnan Esmail and Michael Equi and Chelsea Finn and Niccolo Fusai and Lachy Groom and Karol Hausman and Brian Ichter and Szymon Jakubczak and Tim Jones and Liyiming Ke and Sergey Levine and Adrian Li-Bell and Mohith Mothukuri and Suraj Nair and Karl Pertsch and Lucy Xiaoyang Shi and Laura Smith and James Tanner and Quan Vuong and Anna Walling and Haohuan Wang and Ury Zhilinsky},\n  year = {2025},\n  booktitle = {RSS},\n  url = {https://arxiv.org/abs/2410.24164}\n}",
+        "preview": "assets/papers/pi0-paper.png",
+        "previewSourceUrl": "https://arxiv.org/pdf/2410.24164",
+        "doi": "10.15607/RSS.2025.XXI.010"
+      },
+      "relatedIds": [
+        "openpi",
+        "article-pi0",
+        "pi-star06"
+      ],
+      "addedAt": "2026-09-15",
+      "updatedAt": "2026-09-15",
+      "metrics": {
+        "citations": {
+          "value": 229,
+          "source": "OpenAlex",
+          "sourceUrl": "https://openalex.org/W4414079054",
+          "updatedAt": "2026-09-15",
+          "recordTitle": "π0: A Vision-Language-Action Flow Model for General Robot Control"
+        },
+        "github": {
+          "value": 13801,
+          "source": "GitHub",
+          "sourceUrl": "https://github.com/Physical-Intelligence/openpi/stargazers",
+          "repository": "Physical-Intelligence/openpi",
+          "updatedAt": "2026-09-15"
+        }
+      }
+    },
+    {
+      "id": "pi0-fast",
+      "institutions": [
+        {
+          "name": "Physical Intelligence",
+          "url": "https://www.pi.website/",
+          "logo": "assets/institutions/physical-intelligence.svg",
+          "mark": "PI"
+        },
+        {
+          "name": "UC Berkeley",
+          "url": "https://www.berkeley.edu/",
+          "mark": "UCB"
+        },
+        {
+          "name": "Stanford University",
+          "url": "https://www.stanford.edu/",
+          "logo": "assets/institutions/stanford.png",
+          "mark": "SU"
+        }
+      ],
+      "name": "π0-FAST",
+      "title": "FAST: Efficient Action Tokenization for Vision-Language-Action Models",
+      "domains": [
+        "embodied"
+      ],
+      "kinds": [
+        "papers"
+      ],
+      "year": 2025,
+      "venue": "RSS 2025",
+      "summary": "Compresses continuous action chunks with a discrete cosine transform and byte-pair encoding, enabling efficient autoregressive VLA training and the π0-FAST policy.",
+      "tags": [
+        "Vision-language-action",
+        "Action tokenization"
+      ],
+      "environment": "Dexterous manipulation and DROID generalization experiments, including policies trained on roughly 10,000 hours of robot data.",
+      "interface": "Continuous robot trajectories are converted into compact frequency-space tokens for autoregressive prediction.",
+      "limits": "FAST improves token efficiency, but performance still depends on the policy backbone, data mixture, robot interface, and deployment calibration.",
+      "status": "selected",
+      "evidence": "Official paper, project page, and bibliographic metadata checked; experiments not independently reproduced.",
+      "sourceType": "supplement",
+      "checkedAt": "2026-09-15",
+      "links": {
+        "paper": "https://www.roboticsproceedings.org/rss21/p012.html",
+        "project": "https://www.pi.website/research/fast",
+        "pdf": "https://arxiv.org/pdf/2501.09747",
+        "code": "https://github.com/Physical-Intelligence/openpi"
+      },
+      "rank": 3,
+      "selectionTrack": "peer-reviewed",
+      "selectionReason": "Published at a leading robotics or machine-learning venue within the five-year window; official paper and project sources verified.",
+      "paperType": "method",
+      "bibliography": {
+        "source": "arXiv",
+        "sourceUrl": "https://arxiv.org/abs/2501.09747",
+        "checkedAt": "2026-09-15",
+        "authors": [
+          "Karl Pertsch",
+          "Kyle Stachowicz",
+          "Brian Ichter",
+          "Danny Driess",
+          "Suraj Nair",
+          "Quan Vuong",
+          "Oier Mees",
+          "Chelsea Finn",
+          "Sergey Levine"
+        ],
+        "date": "2025-01-16",
+        "dateLabel": "First arXiv submission",
+        "arxivId": "2501.09747",
+        "bibtex": "@inproceedings{pi0-fast,\n  title = {FAST: Efficient Action Tokenization for Vision-Language-Action Models},\n  author = {Karl Pertsch and Kyle Stachowicz and Brian Ichter and Danny Driess and Suraj Nair and Quan Vuong and Oier Mees and Chelsea Finn and Sergey Levine},\n  year = {2025},\n  booktitle = {RSS},\n  url = {https://arxiv.org/abs/2501.09747}\n}",
+        "preview": "assets/papers/pi0-fast.png",
+        "previewSourceUrl": "https://arxiv.org/pdf/2501.09747",
+        "doi": "10.15607/RSS.2025.XXI.012"
+      },
+      "relatedIds": [
+        "openpi",
+        "article-pi0",
+        "pi-star06"
+      ],
+      "addedAt": "2026-09-15",
+      "updatedAt": "2026-09-15",
+      "metrics": {
+        "citations": {
+          "value": 58,
+          "source": "OpenAlex",
+          "sourceUrl": "https://openalex.org/W4414051084",
+          "updatedAt": "2026-09-15",
+          "recordTitle": "FAST: Efficient Action Tokenization for Vision-Language-Action Models"
+        },
+        "github": {
+          "value": 13801,
+          "source": "GitHub",
+          "sourceUrl": "https://github.com/Physical-Intelligence/openpi/stargazers",
+          "repository": "Physical-Intelligence/openpi",
+          "updatedAt": "2026-09-15"
+        }
+      }
+    },
+    {
+      "id": "pi05",
+      "institutions": [
+        {
+          "name": "Physical Intelligence",
+          "url": "https://www.pi.website/",
+          "logo": "assets/institutions/physical-intelligence.svg",
+          "mark": "PI"
+        }
+      ],
+      "name": "π0.5",
+      "title": "π0.5: a Vision-Language-Action Model with Open-World Generalization",
+      "domains": [
+        "embodied"
+      ],
+      "kinds": [
+        "papers"
+      ],
+      "year": 2025,
+      "venue": "CoRL 2025",
+      "summary": "Extends π0 with heterogeneous co-training across robot actions, semantic subtasks, object grounding, language instructions, and web data for open-world generalization.",
+      "tags": [
+        "Vision-language-action",
+        "Open-world generalization"
+      ],
+      "environment": "Long-horizon mobile manipulation in previously unseen homes, including kitchen and bedroom cleanup.",
+      "interface": "A high-level policy predicts semantic subtasks while a low-level action expert controls the robot from multimodal observations and language.",
+      "limits": "Generalization is evaluated on the reported homes and task families; long-horizon demonstrations still include failures and do not establish unrestricted household autonomy.",
+      "status": "selected",
+      "evidence": "Official paper, project page, and bibliographic metadata checked; experiments not independently reproduced.",
+      "sourceType": "supplement",
+      "checkedAt": "2026-09-15",
+      "links": {
+        "paper": "https://openreview.net/forum?id=vlhoswksBO",
+        "project": "https://www.pi.website/blog/pi05",
+        "pdf": "https://arxiv.org/pdf/2504.16054",
+        "code": "https://github.com/Physical-Intelligence/openpi"
+      },
+      "rank": 4,
+      "selectionTrack": "peer-reviewed",
+      "selectionReason": "Published at a leading robotics or machine-learning venue within the five-year window; official paper and project sources verified.",
+      "paperType": "method",
+      "bibliography": {
+        "source": "arXiv",
+        "sourceUrl": "https://arxiv.org/abs/2504.16054",
+        "checkedAt": "2026-09-15",
+        "authors": [
+          "Physical Intelligence",
+          "Kevin Black",
+          "Noah Brown",
+          "James Darpinian",
+          "Karan Dhabalia",
+          "Danny Driess",
+          "Adnan Esmail",
+          "Michael Equi",
+          "Chelsea Finn",
+          "Niccolo Fusai",
+          "Manuel Y. Galliker",
+          "Dibya Ghosh",
+          "Lachy Groom",
+          "Karol Hausman",
+          "Brian Ichter",
+          "Szymon Jakubczak",
+          "Tim Jones",
+          "Liyiming Ke",
+          "Devin LeBlanc",
+          "Sergey Levine",
+          "Adrian Li-Bell",
+          "Mohith Mothukuri",
+          "Suraj Nair",
+          "Karl Pertsch",
+          "Allen Z. Ren",
+          "Lucy Xiaoyang Shi",
+          "Laura Smith",
+          "Jost Tobias Springenberg",
+          "Kyle Stachowicz",
+          "James Tanner",
+          "Quan Vuong",
+          "Homer Walke",
+          "Anna Walling",
+          "Haohuan Wang",
+          "Lili Yu",
+          "Ury Zhilinsky"
+        ],
+        "date": "2025-04-22",
+        "dateLabel": "First arXiv submission",
+        "arxivId": "2504.16054",
+        "bibtex": "@inproceedings{pi05,\n  title = {π0.5: a Vision-Language-Action Model with Open-World Generalization},\n  author = {Physical Intelligence and Kevin Black and Noah Brown and James Darpinian and Karan Dhabalia and Danny Driess and Adnan Esmail and Michael Equi and Chelsea Finn and Niccolo Fusai and Manuel Y. Galliker and Dibya Ghosh and Lachy Groom and Karol Hausman and Brian Ichter and Szymon Jakubczak and Tim Jones and Liyiming Ke and Devin LeBlanc and Sergey Levine and Adrian Li-Bell and Mohith Mothukuri and Suraj Nair and Karl Pertsch and Allen Z. Ren and Lucy Xiaoyang Shi and Laura Smith and Jost Tobias Springenberg and Kyle Stachowicz and James Tanner and Quan Vuong and Homer Walke and Anna Walling and Haohuan Wang and Lili Yu and Ury Zhilinsky},\n  year = {2025},\n  booktitle = {CoRL},\n  url = {https://arxiv.org/abs/2504.16054}\n}",
+        "preview": "assets/papers/pi05.png",
+        "previewSourceUrl": "https://arxiv.org/pdf/2504.16054"
+      },
+      "relatedIds": [
+        "openpi",
+        "article-pi0",
+        "pi-star06"
+      ],
+      "addedAt": "2026-09-15",
+      "updatedAt": "2026-09-15",
+      "metrics": {
+        "citations": {
+          "value": 3,
+          "source": "OpenAlex",
+          "sourceUrl": "https://openalex.org/W4414674749",
+          "updatedAt": "2026-09-15",
+          "recordTitle": "$π_{0.5}$: a Vision-Language-Action Model with Open-World Generalization"
+        },
+        "github": {
+          "value": 13801,
+          "source": "GitHub",
+          "sourceUrl": "https://github.com/Physical-Intelligence/openpi/stargazers",
+          "repository": "Physical-Intelligence/openpi",
+          "updatedAt": "2026-09-15"
+        }
+      }
+    },
+    {
+      "id": "pi05-ki",
+      "institutions": [
+        {
+          "name": "Physical Intelligence",
+          "url": "https://www.pi.website/",
+          "logo": "assets/institutions/physical-intelligence.svg",
+          "mark": "PI"
+        }
+      ],
+      "name": "π0.5 + KI",
+      "title": "Knowledge Insulating Vision-Language-Action Models: Train Fast, Run Fast, Generalize Better",
+      "domains": [
+        "embodied"
+      ],
+      "kinds": [
+        "papers"
+      ],
+      "year": 2025,
+      "venue": "NeurIPS 2025",
+      "summary": "Separates continuous-action gradients from the pretrained VLM backbone while using FAST tokens and vision-language co-training to preserve semantic knowledge and speed up learning.",
+      "tags": [
+        "Vision-language-action",
+        "Knowledge insulation"
+      ],
+      "environment": "Real-robot mobile and tabletop manipulation plus the DROID and LIBERO benchmarks.",
+      "interface": "The VLM backbone learns from discrete action and vision-language objectives while a separate flow-matching action expert produces continuous actions.",
+      "limits": "Knowledge insulation addresses gradient interference in the studied architecture; it does not remove the need for diverse data or guarantee transfer to every robot.",
+      "status": "selected",
+      "evidence": "Official paper, project page, and bibliographic metadata checked; experiments not independently reproduced.",
+      "sourceType": "supplement",
+      "checkedAt": "2026-09-15",
+      "links": {
+        "paper": "https://papers.nips.cc/paper_files/paper/2025/hash/94e936034d12bcd04834ec2773f02aff-Abstract-Conference.html",
+        "project": "https://www.pi.website/research/knowledge_insulation",
+        "pdf": "https://arxiv.org/pdf/2505.23705",
+        "code": "https://github.com/Physical-Intelligence/openpi"
+      },
+      "rank": 5,
+      "selectionTrack": "peer-reviewed",
+      "selectionReason": "Published at a leading robotics or machine-learning venue within the five-year window; official paper and project sources verified.",
+      "paperType": "method",
+      "bibliography": {
+        "source": "arXiv",
+        "sourceUrl": "https://arxiv.org/abs/2505.23705",
+        "checkedAt": "2026-09-15",
+        "authors": [
+          "Danny Driess",
+          "Jost Tobias Springenberg",
+          "Brian Ichter",
+          "Lili Yu",
+          "Adrian Li-Bell",
+          "Karl Pertsch",
+          "Allen Z. Ren",
+          "Homer Walke",
+          "Quan Vuong",
+          "Lucy Xiaoyang Shi",
+          "Sergey Levine"
+        ],
+        "date": "2025-05-29",
+        "dateLabel": "First arXiv submission",
+        "arxivId": "2505.23705",
+        "bibtex": "@inproceedings{pi05-ki,\n  title = {Knowledge Insulating Vision-Language-Action Models: Train Fast, Run Fast, Generalize Better},\n  author = {Danny Driess and Jost Tobias Springenberg and Brian Ichter and Lili Yu and Adrian Li-Bell and Karl Pertsch and Allen Z. Ren and Homer Walke and Quan Vuong and Lucy Xiaoyang Shi and Sergey Levine},\n  year = {2025},\n  booktitle = {NeurIPS},\n  url = {https://arxiv.org/abs/2505.23705}\n}",
+        "preview": "assets/papers/pi05-ki.png",
+        "previewSourceUrl": "https://arxiv.org/pdf/2505.23705",
+        "doi": "10.52202/085713-3439"
+      },
+      "relatedIds": [
+        "openpi",
+        "article-pi0",
+        "pi-star06"
+      ],
+      "addedAt": "2026-09-15",
+      "updatedAt": "2026-09-15",
+      "metrics": {
+        "citations": {
+          "value": 0,
+          "source": "OpenAlex",
+          "sourceUrl": "https://openalex.org/W4416613198",
+          "updatedAt": "2026-09-15",
+          "recordTitle": "Knowledge Insulating Vision-Language-Action Models: Train Fast, Run Fast, Generalize Better"
+        },
+        "github": {
+          "value": 13801,
+          "source": "GitHub",
+          "sourceUrl": "https://github.com/Physical-Intelligence/openpi/stargazers",
+          "repository": "Physical-Intelligence/openpi",
+          "updatedAt": "2026-09-15"
+        }
+      }
+    },
+    {
+      "id": "pi05-ego",
+      "institutions": [
+        {
+          "name": "Physical Intelligence",
+          "url": "https://www.pi.website/",
+          "logo": "assets/institutions/physical-intelligence.svg",
+          "mark": "PI"
+        },
+        {
+          "name": "Georgia Institute of Technology",
+          "url": "https://www.gatech.edu/",
+          "mark": "GT"
+        }
+      ],
+      "name": "π0.5 + ego",
+      "title": "Emergence of Human to Robot Transfer in Vision-Language-Action Models",
+      "domains": [
+        "embodied"
+      ],
+      "kinds": [
+        "papers"
+      ],
+      "year": 2026,
+      "venue": "RSS 2026",
+      "summary": "Shows that human-to-robot transfer emerges with sufficiently diverse VLA pretraining, then adapts π0.5 with egocentric human demonstrations through simple co-training.",
+      "tags": [
+        "Vision-language-action",
+        "Human-to-robot transfer"
+      ],
+      "environment": "Real-world scene, object, and task generalization using wearable-camera human data and multiple robot embodiments.",
+      "interface": "Egocentric human hand trajectories and robot demonstrations share high-level subtask and low-level action learning objectives.",
+      "limits": "The transfer gains depend on diverse robot pretraining and targeted human data; human videos alone do not directly solve the embodiment gap.",
+      "status": "selected",
+      "evidence": "Official paper, project page, and bibliographic metadata checked; experiments not independently reproduced.",
+      "sourceType": "supplement",
+      "checkedAt": "2026-09-15",
+      "links": {
+        "paper": "https://www.roboticsproceedings.org/rss22/p072.html",
+        "project": "https://www.pi.website/research/human_to_robot",
+        "pdf": "https://arxiv.org/pdf/2512.22414"
+      },
+      "rank": 6,
+      "selectionTrack": "peer-reviewed",
+      "selectionReason": "Published at a leading robotics or machine-learning venue within the five-year window; official paper and project sources verified.",
+      "paperType": "method",
+      "bibliography": {
+        "source": "arXiv",
+        "sourceUrl": "https://arxiv.org/abs/2512.22414",
+        "checkedAt": "2026-09-15",
+        "authors": [
+          "Simar Kareer",
+          "Karl Pertsch",
+          "James Darpinian",
+          "Judy Hoffman",
+          "Danfei Xu",
+          "Sergey Levine",
+          "Chelsea Finn",
+          "Suraj Nair"
+        ],
+        "date": "2025-12-27",
+        "dateLabel": "First arXiv submission",
+        "arxivId": "2512.22414",
+        "bibtex": "@inproceedings{pi05-ego,\n  title = {Emergence of Human to Robot Transfer in Vision-Language-Action Models},\n  author = {Simar Kareer and Karl Pertsch and James Darpinian and Judy Hoffman and Danfei Xu and Sergey Levine and Chelsea Finn and Suraj Nair},\n  year = {2026},\n  booktitle = {RSS},\n  url = {https://arxiv.org/abs/2512.22414}\n}",
+        "preview": "assets/papers/pi05-ego.png",
+        "previewSourceUrl": "https://arxiv.org/pdf/2512.22414",
+        "doi": "10.15607/RSS.2026.XXII.072"
+      },
+      "relatedIds": [
+        "openpi",
+        "article-pi0",
+        "pi-star06"
+      ],
+      "addedAt": "2026-09-15",
+      "updatedAt": "2026-09-15",
+      "metrics": {
+        "citations": {
+          "value": 0,
+          "source": "OpenAlex",
+          "sourceUrl": "https://openalex.org/W7117736774",
+          "updatedAt": "2026-09-15",
+          "recordTitle": "Emergence of Human to Robot Transfer in Vision-Language-Action Models"
+        }
+      }
+    },
+    {
+      "id": "pi07",
+      "institutions": [
+        {
+          "name": "Physical Intelligence",
+          "url": "https://www.pi.website/",
+          "logo": "assets/institutions/physical-intelligence.svg",
+          "mark": "PI"
+        }
+      ],
+      "name": "π0.7",
+      "title": "π0.7: a Steerable Generalist Robotic Foundation Model with Emergent Capabilities",
+      "domains": [
+        "embodied"
+      ],
+      "kinds": [
+        "papers"
+      ],
+      "year": 2026,
+      "venue": "arXiv · 2026.04",
+      "summary": "Uses diverse multimodal context—language, subgoal images, control labels, speed, and quality—to steer a single generalist policy and recombine skills across robots and tasks.",
+      "tags": [
+        "Vision-language-action",
+        "Compositional generalization"
+      ],
+      "environment": "Dexterous and long-horizon real-world manipulation across multiple robot platforms, homes, objects, and kitchen appliances.",
+      "interface": "Text instructions, multimodal prompts, metadata, visual subgoals, observations, and memory condition a high-level policy and continuous action expert.",
+      "limits": "The evidence comes from the authors' controlled evaluations and demonstrations; emergent generalization remains task- and platform-bounded.",
+      "status": "selected",
+      "evidence": "Official paper, project page, and bibliographic metadata checked; experiments not independently reproduced.",
+      "sourceType": "supplement",
+      "checkedAt": "2026-09-15",
+      "links": {
+        "paper": "https://arxiv.org/abs/2604.15483",
+        "project": "https://www.pi.website/blog/pi07",
+        "pdf": "https://arxiv.org/pdf/2604.15483"
+      },
+      "rank": 7,
+      "selectionTrack": "recent-arxiv",
+      "selectionReason": "Editorial selection: the official report presents broad controlled evaluations of steerable, compositional, and cross-embodiment behavior in the newest π-series model. Public demonstrations support significance but are not treated as independent reproduction.",
+      "paperType": "method",
+      "bibliography": {
+        "source": "arXiv",
+        "sourceUrl": "https://arxiv.org/abs/2604.15483",
+        "checkedAt": "2026-09-15",
+        "authors": [
+          "Physical Intelligence",
+          "Bo Ai",
+          "Ali Amin",
+          "Raichelle Aniceto",
+          "Ashwin Balakrishna",
+          "Greg Balke",
+          "Kevin Black",
+          "George Bokinsky",
+          "Shihao Cao",
+          "Thomas Charbonnier",
+          "Vedant Choudhary",
+          "Foster Collins",
+          "Ken Conley",
+          "Grace Connors",
+          "James Darpinian",
+          "Karan Dhabalia",
+          "Maitrayee Dhaka",
+          "Jared DiCarlo",
+          "Danny Driess",
+          "Michael Equi",
+          "Adnan Esmail",
+          "Yunhao Fang",
+          "Chelsea Finn",
+          "Catherine Glossop",
+          "Thomas Godden",
+          "Ivan Goryachev",
+          "Lachlan Groom",
+          "Haroun Habeeb",
+          "Hunter Hancock",
+          "Karol Hausman",
+          "Gashon Hussein",
+          "Victor Hwang",
+          "Brian Ichter",
+          "Connor Jacobsen",
+          "Szymon Jakubczak",
+          "Rowan Jen",
+          "Tim Jones",
+          "Gregg Kammerer",
+          "Ben Katz",
+          "Liyiming Ke",
+          "Mairbek Khadikov",
+          "Chandra Kuchi",
+          "Marinda Lamb",
+          "Devin LeBlanc",
+          "Brendon LeCount",
+          "Sergey Levine",
+          "Xinyu Li",
+          "Adrian Li-Bell",
+          "Vladislav Lialin",
+          "Zhonglin Liang",
+          "Wallace Lim",
+          "Yao Lu",
+          "Enyu Luo",
+          "Vishnu Mano",
+          "Nandan Marwaha",
+          "Aikys Mongush",
+          "Liam Murphy",
+          "Suraj Nair",
+          "Tyler Patterson",
+          "Karl Pertsch",
+          "Allen Z. Ren",
+          "Gavin Schelske",
+          "Charvi Sharma",
+          "Baifeng Shi",
+          "Lucy Xiaoyang Shi",
+          "Laura Smith",
+          "Jost Tobias Springenberg",
+          "Kyle Stachowicz",
+          "Will Stoeckle",
+          "Jiaming Tang",
+          "Jimmy Tanner",
+          "Shalom Tekeste",
+          "Marcel Torne",
+          "Kyle Vedder",
+          "Quan Vuong",
+          "Anna Walling",
+          "Haohuan Wang",
+          "Jason Wang",
+          "XuDong Wang",
+          "Chris Whalen",
+          "Samuel Whitmore",
+          "Blake Williams",
+          "Charles Xu",
+          "Sukwon Yoo",
+          "Lili Yu",
+          "Wuming Zhang",
+          "Zhuoyang Zhang",
+          "Ury Zhilinsky"
+        ],
+        "date": "2026-04-16",
+        "dateLabel": "First arXiv submission",
+        "arxivId": "2604.15483",
+        "bibtex": "@misc{pi07,\n  title = {π0.7: a Steerable Generalist Robotic Foundation Model with Emergent Capabilities},\n  author = {Physical Intelligence and Bo Ai and Ali Amin and Raichelle Aniceto and Ashwin Balakrishna and Greg Balke and Kevin Black and George Bokinsky and Shihao Cao and Thomas Charbonnier and Vedant Choudhary and Foster Collins and Ken Conley and Grace Connors and James Darpinian and Karan Dhabalia and Maitrayee Dhaka and Jared DiCarlo and Danny Driess and Michael Equi and Adnan Esmail and Yunhao Fang and Chelsea Finn and Catherine Glossop and Thomas Godden and Ivan Goryachev and Lachlan Groom and Haroun Habeeb and Hunter Hancock and Karol Hausman and Gashon Hussein and Victor Hwang and Brian Ichter and Connor Jacobsen and Szymon Jakubczak and Rowan Jen and Tim Jones and Gregg Kammerer and Ben Katz and Liyiming Ke and Mairbek Khadikov and Chandra Kuchi and Marinda Lamb and Devin LeBlanc and Brendon LeCount and Sergey Levine and Xinyu Li and Adrian Li-Bell and Vladislav Lialin and Zhonglin Liang and Wallace Lim and Yao Lu and Enyu Luo and Vishnu Mano and Nandan Marwaha and Aikys Mongush and Liam Murphy and Suraj Nair and Tyler Patterson and Karl Pertsch and Allen Z. Ren and Gavin Schelske and Charvi Sharma and Baifeng Shi and Lucy Xiaoyang Shi and Laura Smith and Jost Tobias Springenberg and Kyle Stachowicz and Will Stoeckle and Jiaming Tang and Jimmy Tanner and Shalom Tekeste and Marcel Torne and Kyle Vedder and Quan Vuong and Anna Walling and Haohuan Wang and Jason Wang and XuDong Wang and Chris Whalen and Samuel Whitmore and Blake Williams and Charles Xu and Sukwon Yoo and Lili Yu and Wuming Zhang and Zhuoyang Zhang and Ury Zhilinsky},\n  year = {2026},\n  url = {https://arxiv.org/abs/2604.15483}\n}",
+        "preview": "assets/papers/pi07.png",
+        "previewSourceUrl": "https://arxiv.org/pdf/2604.15483"
+      },
+      "relatedIds": [
+        "openpi",
+        "article-pi0",
+        "pi-star06"
+      ],
+      "addedAt": "2026-09-15",
+      "updatedAt": "2026-09-15",
+      "publicationDate": "2026-04-16",
+      "influenceSources": [
+        "https://www.pi.website/blog/pi07"
+      ],
+      "metrics": {
+        "citations": {
+          "value": 0,
+          "source": "OpenAlex",
+          "sourceUrl": "https://openalex.org/W7155019052",
+          "updatedAt": "2026-09-15",
+          "recordTitle": "$π_{0.7}$: a Steerable Generalist Robotic Foundation Model with Emergent Capabilities"
+        }
+      }
     },
     {
       "id": "pi-star06",
@@ -3309,12 +3968,22 @@
           "value": 0,
           "source": "OpenAlex",
           "sourceUrl": "https://openalex.org/W4417215404",
-          "updatedAt": "2026-09-14",
+          "updatedAt": "2026-09-15",
           "recordTitle": "$π^{*}_{0.6}$: a VLA That Learns From Experience"
         }
       },
       "addedAt": "2026-09-14",
-      "updatedAt": "2026-09-14"
+      "updatedAt": "2026-09-15",
+      "relatedIds": [
+        "openpi",
+        "article-pi0",
+        "pi0-paper",
+        "pi0-fast",
+        "pi05",
+        "pi05-ki",
+        "pi05-ego",
+        "pi07"
+      ]
     },
     {
       "id": "lerobot",
@@ -3348,11 +4017,11 @@
       "selectionReason": "Standalone open-source tool or environment supporting research and reproduction; excluded from paper-window statistics.",
       "metrics": {
         "github": {
-          "value": 27476,
+          "value": 27487,
           "source": "GitHub",
           "sourceUrl": "https://github.com/huggingface/lerobot/stargazers",
           "repository": "huggingface/lerobot",
-          "updatedAt": "2026-09-14"
+          "updatedAt": "2026-09-15"
         }
       },
       "addedAt": "2026-09-14",
@@ -3390,15 +4059,24 @@
       "selectionReason": "Standalone open-source tool or environment supporting research and reproduction; excluded from paper-window statistics.",
       "metrics": {
         "github": {
-          "value": 13796,
+          "value": 13801,
           "source": "GitHub",
           "sourceUrl": "https://github.com/Physical-Intelligence/openpi/stargazers",
           "repository": "Physical-Intelligence/openpi",
-          "updatedAt": "2026-09-14"
+          "updatedAt": "2026-09-15"
         }
       },
       "addedAt": "2026-09-14",
-      "updatedAt": "2026-09-14"
+      "updatedAt": "2026-09-15",
+      "relatedIds": [
+        "pi0-paper",
+        "pi0-fast",
+        "pi05",
+        "pi05-ki",
+        "pi05-ego",
+        "pi07",
+        "pi-star06"
+      ]
     },
     {
       "id": "gymnasium",
@@ -3433,11 +4111,11 @@
       "selectionReason": "Standalone open-source tool or environment supporting research and reproduction; excluded from paper-window statistics.",
       "metrics": {
         "github": {
-          "value": 12531,
+          "value": 12533,
           "source": "GitHub",
           "sourceUrl": "https://github.com/Farama-Foundation/Gymnasium/stargazers",
           "repository": "Farama-Foundation/Gymnasium",
-          "updatedAt": "2026-09-14"
+          "updatedAt": "2026-09-15"
         }
       },
       "addedAt": "2026-09-14",
@@ -3475,11 +4153,11 @@
       "selectionReason": "Standalone open-source tool or environment supporting research and reproduction; excluded from paper-window statistics.",
       "metrics": {
         "github": {
-          "value": 3514,
+          "value": 3515,
           "source": "GitHub",
           "sourceUrl": "https://github.com/Farama-Foundation/PettingZoo/stargazers",
           "repository": "Farama-Foundation/PettingZoo",
-          "updatedAt": "2026-09-14"
+          "updatedAt": "2026-09-15"
         }
       },
       "addedAt": "2026-09-14",
@@ -3517,11 +4195,11 @@
       "selectionReason": "Standalone open-source tool or environment supporting research and reproduction; excluded from paper-window statistics.",
       "metrics": {
         "github": {
-          "value": 29948,
+          "value": 29949,
           "source": "GitHub",
           "sourceUrl": "https://github.com/Genesis-Embodied-AI/genesis-world/stargazers",
           "repository": "Genesis-Embodied-AI/genesis-world",
-          "updatedAt": "2026-09-14"
+          "updatedAt": "2026-09-15"
         }
       },
       "addedAt": "2026-09-14",
@@ -3563,7 +4241,7 @@
           "source": "GitHub",
           "sourceUrl": "https://github.com/Farama-Foundation/ViZDoom/stargazers",
           "repository": "Farama-Foundation/ViZDoom",
-          "updatedAt": "2026-09-14"
+          "updatedAt": "2026-09-15"
         }
       },
       "addedAt": "2026-09-14",
@@ -3605,7 +4283,7 @@
           "source": "GitHub",
           "sourceUrl": "https://github.com/facebookresearch/habitat-lab/stargazers",
           "repository": "facebookresearch/habitat-lab",
-          "updatedAt": "2026-09-14"
+          "updatedAt": "2026-09-15"
         }
       },
       "addedAt": "2026-09-14",
@@ -3643,11 +4321,11 @@
       "selectionReason": "Standalone open-source tool or environment supporting research and reproduction; excluded from paper-window statistics.",
       "metrics": {
         "github": {
-          "value": 1791,
+          "value": 1792,
           "source": "GitHub",
           "sourceUrl": "https://github.com/allenai/ai2thor/stargazers",
           "repository": "allenai/ai2thor",
-          "updatedAt": "2026-09-14"
+          "updatedAt": "2026-09-15"
         }
       },
       "addedAt": "2026-09-14",
@@ -3689,7 +4367,7 @@
           "source": "GitHub",
           "sourceUrl": "https://github.com/mani-skill/ManiSkill/stargazers",
           "repository": "mani-skill/ManiSkill",
-          "updatedAt": "2026-09-14"
+          "updatedAt": "2026-09-15"
         }
       },
       "addedAt": "2026-09-14",
@@ -3748,7 +4426,7 @@
           "value": 0,
           "source": "OpenAlex",
           "sourceUrl": "https://openalex.org/W4416246481",
-          "updatedAt": "2026-09-14",
+          "updatedAt": "2026-09-15",
           "recordTitle": "X-Ego: Acquiring Team-Level Tactical Situational Awareness via Cross-Egocentric Contrastive Video Representation Learning"
         }
       },
@@ -3832,7 +4510,7 @@
           "value": 0,
           "source": "OpenAlex",
           "sourceUrl": "https://openalex.org/W7102387721",
-          "updatedAt": "2026-09-14",
+          "updatedAt": "2026-09-15",
           "recordTitle": "Game-TARS: Pretrained Foundation Models for Scalable Generalist Multimodal Game Agents"
         }
       },
@@ -3893,7 +4571,7 @@
           "value": 0,
           "source": "OpenAlex",
           "sourceUrl": "https://openalex.org/W7204581771",
-          "updatedAt": "2026-09-14",
+          "updatedAt": "2026-09-15",
           "recordTitle": "GameWAM: A World Action Model for Video Games"
         }
       },
@@ -3952,7 +4630,7 @@
           "value": 0,
           "source": "OpenAlex",
           "sourceUrl": "https://openalex.org/W7135428496",
-          "updatedAt": "2026-09-14",
+          "updatedAt": "2026-09-15",
           "recordTitle": "See, Symbolize, Act: Grounding VLMs with Spatial Representations for Better Gameplay"
         }
       },
@@ -4012,7 +4690,7 @@
           "value": 0,
           "source": "OpenAlex",
           "sourceUrl": "https://openalex.org/W7153669982",
-          "updatedAt": "2026-09-14",
+          "updatedAt": "2026-09-15",
           "recordTitle": "Playing DOOM with 1.3M Parameters: Specialized Small Models vs Large Language Models for Real-Time Game Control"
         }
       },
@@ -4082,7 +4760,7 @@
           "value": 0,
           "source": "OpenAlex",
           "sourceUrl": "https://openalex.org/W7204885827",
-          "updatedAt": "2026-09-14",
+          "updatedAt": "2026-09-15",
           "recordTitle": "Augmenting Human Performance with an XR Agent Learning from Online Behavior and BCI Evidence"
         }
       },
@@ -4142,7 +4820,7 @@
           "value": 0,
           "source": "OpenAlex",
           "sourceUrl": "https://openalex.org/W7163287888",
-          "updatedAt": "2026-09-14",
+          "updatedAt": "2026-09-15",
           "recordTitle": "Procedural Generation of First Person Shooter Maps using Map-Elites"
         }
       },
@@ -4200,7 +4878,7 @@
           "value": 0,
           "source": "OpenAlex",
           "sourceUrl": "https://openalex.org/W7204671282",
-          "updatedAt": "2026-09-14",
+          "updatedAt": "2026-09-15",
           "recordTitle": "Account Consistency from Gameplay Traces: Same-Player Verification in Counter-Strike 2"
         }
       },
@@ -4273,7 +4951,7 @@
           "value": 202,
           "source": "OpenAlex",
           "sourceUrl": "https://openalex.org/W4402890475",
-          "updatedAt": "2026-09-14",
+          "updatedAt": "2026-09-15",
           "recordTitle": "Foundation models in robotics: Applications, challenges, and the future"
         }
       },
@@ -4377,7 +5055,7 @@
           "value": 6,
           "source": "OpenAlex",
           "sourceUrl": "https://openalex.org/W4416422407",
-          "updatedAt": "2026-09-14",
+          "updatedAt": "2026-09-15",
           "recordTitle": "What foundation models can bring for robot learning in manipulation: A survey"
         }
       },
@@ -4456,7 +5134,7 @@
           "value": 59,
           "source": "OpenAlex",
           "sourceUrl": "https://openalex.org/W4283218993",
-          "updatedAt": "2026-09-14",
+          "updatedAt": "2026-09-15",
           "recordTitle": "MineDojo: Building Open-Ended Embodied Agents with Internet-Scale Knowledge"
         },
         "github": {
@@ -4464,7 +5142,7 @@
           "source": "GitHub",
           "sourceUrl": "https://github.com/MineDojo/MineDojo/stargazers",
           "repository": "MineDojo/MineDojo",
-          "updatedAt": "2026-09-14"
+          "updatedAt": "2026-09-15"
         }
       },
       "addedAt": "2026-09-14",
@@ -4827,7 +5505,7 @@
           "value": 103,
           "source": "OpenAlex",
           "sourceUrl": "https://openalex.org/W4387764390",
-          "updatedAt": "2026-09-14",
+          "updatedAt": "2026-09-15",
           "recordTitle": "Open X-Embodiment: Robotic Learning Datasets and RT-X Models"
         },
         "github": {
@@ -4835,7 +5513,7 @@
           "source": "GitHub",
           "sourceUrl": "https://github.com/google-deepmind/open_x_embodiment/stargazers",
           "repository": "google-deepmind/open_x_embodiment",
-          "updatedAt": "2026-09-14"
+          "updatedAt": "2026-09-15"
         }
       },
       "addedAt": "2026-09-14",
@@ -4922,7 +5600,7 @@
           "value": 12,
           "source": "OpenAlex",
           "sourceUrl": "https://openalex.org/W4386185624",
-          "updatedAt": "2026-09-14",
+          "updatedAt": "2026-09-15",
           "recordTitle": "BridgeData V2: A Dataset for Robot Learning at Scale"
         },
         "github": {
@@ -4930,7 +5608,7 @@
           "source": "GitHub",
           "sourceUrl": "https://github.com/rail-berkeley/bridge_data_v2/stargazers",
           "repository": "rail-berkeley/bridge_data_v2",
-          "updatedAt": "2026-09-14"
+          "updatedAt": "2026-09-15"
         }
       },
       "addedAt": "2026-09-14",
@@ -5096,7 +5774,7 @@
           "value": 137,
           "source": "OpenAlex",
           "sourceUrl": "https://openalex.org/W4402354047",
-          "updatedAt": "2026-09-14",
+          "updatedAt": "2026-09-15",
           "recordTitle": "DROID: A Large-Scale In-The-Wild Robot Manipulation Dataset"
         },
         "github": {
@@ -5104,7 +5782,7 @@
           "source": "GitHub",
           "sourceUrl": "https://github.com/droid-dataset/droid/stargazers",
           "repository": "droid-dataset/droid",
-          "updatedAt": "2026-09-14"
+          "updatedAt": "2026-09-15"
         }
       },
       "addedAt": "2026-09-14",
@@ -5254,10 +5932,16 @@
       "sourceDate": "2024-10-31",
       "relatedIds": [
         "openpi",
+        "pi0-paper",
+        "pi0-fast",
+        "pi05",
+        "pi05-ki",
+        "pi05-ego",
+        "pi07",
         "pi-star06"
       ],
       "addedAt": "2026-09-14",
-      "updatedAt": "2026-09-14"
+      "updatedAt": "2026-09-15"
     },
     {
       "id": "article-lerobot",
@@ -5376,11 +6060,11 @@
       ],
       "metrics": {
         "github": {
-          "value": 7196,
+          "value": 7199,
           "source": "GitHub",
           "sourceUrl": "https://github.com/MineDojo/Voyager/stargazers",
           "repository": "MineDojo/Voyager",
-          "updatedAt": "2026-09-14"
+          "updatedAt": "2026-09-15"
         }
       },
       "addedAt": "2026-09-14",
@@ -5428,11 +6112,11 @@
       ],
       "metrics": {
         "github": {
-          "value": 7196,
+          "value": 7199,
           "source": "GitHub",
           "sourceUrl": "https://github.com/MineDojo/Voyager/stargazers",
           "repository": "MineDojo/Voyager",
-          "updatedAt": "2026-09-14"
+          "updatedAt": "2026-09-15"
         }
       },
       "addedAt": "2026-09-14",
@@ -5526,7 +6210,7 @@
           "source": "GitHub",
           "sourceUrl": "https://github.com/eloialonso/diamond/stargazers",
           "repository": "eloialonso/diamond",
-          "updatedAt": "2026-09-14"
+          "updatedAt": "2026-09-15"
         }
       },
       "addedAt": "2026-09-14",
@@ -5574,11 +6258,11 @@
       ],
       "metrics": {
         "github": {
-          "value": 7009,
+          "value": 7010,
           "source": "GitHub",
           "sourceUrl": "https://github.com/openvla/openvla/stargazers",
           "repository": "openvla/openvla",
-          "updatedAt": "2026-09-14"
+          "updatedAt": "2026-09-15"
         }
       },
       "addedAt": "2026-09-14",
@@ -5672,7 +6356,7 @@
           "source": "GitHub",
           "sourceUrl": "https://github.com/real-stanford/diffusion_policy/stargazers",
           "repository": "real-stanford/diffusion_policy",
-          "updatedAt": "2026-09-14"
+          "updatedAt": "2026-09-15"
         }
       },
       "addedAt": "2026-09-14",
@@ -5724,7 +6408,7 @@
           "source": "GitHub",
           "sourceUrl": "https://github.com/real-stanford/diffusion_policy/stargazers",
           "repository": "real-stanford/diffusion_policy",
-          "updatedAt": "2026-09-14"
+          "updatedAt": "2026-09-15"
         }
       },
       "addedAt": "2026-09-14",
@@ -5798,7 +6482,7 @@
           "value": 40,
           "source": "OpenAlex",
           "sourceUrl": "https://openalex.org/W3208460365",
-          "updatedAt": "2026-09-14",
+          "updatedAt": "2026-09-15",
           "recordTitle": "Mastering Atari Games with Limited Data"
         },
         "github": {
@@ -5806,7 +6490,7 @@
           "source": "GitHub",
           "sourceUrl": "https://github.com/YeWR/EfficientZero/stargazers",
           "repository": "YeWR/EfficientZero",
-          "updatedAt": "2026-09-14"
+          "updatedAt": "2026-09-15"
         }
       },
       "addedAt": "2026-09-14",
@@ -5891,7 +6575,7 @@
           "value": 66,
           "source": "OpenAlex",
           "sourceUrl": "https://openalex.org/W4307868887",
-          "updatedAt": "2026-09-14",
+          "updatedAt": "2026-09-15",
           "recordTitle": "A Generalist Agent"
         }
       },
@@ -5982,7 +6666,7 @@
           "value": 223,
           "source": "OpenAlex",
           "sourceUrl": "https://openalex.org/W4309663019",
-          "updatedAt": "2026-09-14",
+          "updatedAt": "2026-09-15",
           "recordTitle": "Human-level play in the game of Diplomacy by combining language models with strategic reasoning"
         },
         "github": {
@@ -5990,7 +6674,7 @@
           "source": "GitHub",
           "sourceUrl": "https://github.com/facebookresearch/diplomacy_cicero/stargazers",
           "repository": "facebookresearch/diplomacy_cicero",
-          "updatedAt": "2026-09-14"
+          "updatedAt": "2026-09-15"
         }
       },
       "addedAt": "2026-09-14",
@@ -6088,7 +6772,7 @@
           "value": 152,
           "source": "OpenAlex",
           "sourceUrl": "https://openalex.org/W4310705874",
-          "updatedAt": "2026-09-14",
+          "updatedAt": "2026-09-15",
           "recordTitle": "Mastering the game of Stratego with model-free multiagent reinforcement learning"
         }
       },
@@ -6155,7 +6839,7 @@
           "value": 11,
           "source": "OpenAlex",
           "sourceUrl": "https://openalex.org/W4294435908",
-          "updatedAt": "2026-09-14",
+          "updatedAt": "2026-09-15",
           "recordTitle": "Transformers are Sample-Efficient World Models"
         },
         "github": {
@@ -6163,7 +6847,7 @@
           "source": "GitHub",
           "sourceUrl": "https://github.com/eloialonso/iris/stargazers",
           "repository": "eloialonso/iris",
-          "updatedAt": "2026-09-14"
+          "updatedAt": "2026-09-15"
         }
       },
       "addedAt": "2026-09-14",
@@ -6252,7 +6936,7 @@
           "value": 12,
           "source": "OpenAlex",
           "sourceUrl": "https://openalex.org/W4392182423",
-          "updatedAt": "2026-09-14",
+          "updatedAt": "2026-09-15",
           "recordTitle": "Genie: Generative Interactive Environments"
         }
       },
@@ -6322,7 +7006,7 @@
           "value": 1,
           "source": "OpenAlex",
           "sourceUrl": "https://openalex.org/W4389469779",
-          "updatedAt": "2026-09-14",
+          "updatedAt": "2026-09-15",
           "recordTitle": "BEDD: The MineRL BASALT Evaluation and Demonstrations Dataset for Training and Benchmarking Agents that Solve Fuzzy Tasks"
         },
         "github": {
@@ -6330,7 +7014,7 @@
           "source": "GitHub",
           "sourceUrl": "https://github.com/minerllabs/basalt-benchmark/stargazers",
           "repository": "minerllabs/basalt-benchmark",
-          "updatedAt": "2026-09-14"
+          "updatedAt": "2026-09-15"
         }
       },
       "addedAt": "2026-09-14",
@@ -6397,7 +7081,7 @@
           "value": 1,
           "source": "OpenAlex",
           "sourceUrl": "https://openalex.org/W3201036908",
-          "updatedAt": "2026-09-14",
+          "updatedAt": "2026-09-15",
           "recordTitle": "Benchmarking the Spectrum of Agent Capabilities"
         },
         "github": {
@@ -6405,7 +7089,7 @@
           "source": "GitHub",
           "sourceUrl": "https://github.com/danijar/crafter/stargazers",
           "repository": "danijar/crafter",
-          "updatedAt": "2026-09-14"
+          "updatedAt": "2026-09-15"
         }
       },
       "addedAt": "2026-09-14",
@@ -6480,7 +7164,7 @@
           "value": 27,
           "source": "OpenAlex",
           "sourceUrl": "https://openalex.org/W4281663178",
-          "updatedAt": "2026-09-14",
+          "updatedAt": "2026-09-15",
           "recordTitle": "Multi-Game Decision Transformers"
         }
       },
@@ -6553,7 +7237,7 @@
           "value": 11,
           "source": "OpenAlex",
           "sourceUrl": "https://openalex.org/W4305033123",
-          "updatedAt": "2026-09-14",
+          "updatedAt": "2026-09-15",
           "recordTitle": "Mastering the Game of No-Press Diplomacy via Human-Regularized Reinforcement Learning and Planning"
         },
         "github": {
@@ -6561,7 +7245,7 @@
           "source": "GitHub",
           "sourceUrl": "https://github.com/facebookresearch/diplomacy_cicero/stargazers",
           "repository": "facebookresearch/diplomacy_cicero",
-          "updatedAt": "2026-09-14"
+          "updatedAt": "2026-09-15"
         }
       },
       "addedAt": "2026-09-14",
@@ -6640,15 +7324,15 @@
           "value": 465,
           "source": "OpenAlex",
           "sourceUrl": "https://openalex.org/W3169291081",
-          "updatedAt": "2026-09-14",
+          "updatedAt": "2026-09-15",
           "recordTitle": "Decision Transformer: Reinforcement Learning via Sequence Modeling"
         },
         "github": {
-          "value": 2831,
+          "value": 2832,
           "source": "GitHub",
           "sourceUrl": "https://github.com/kzl/decision-transformer/stargazers",
           "repository": "kzl/decision-transformer",
-          "updatedAt": "2026-09-14"
+          "updatedAt": "2026-09-15"
         }
       },
       "addedAt": "2026-09-14",
@@ -6720,7 +7404,7 @@
           "value": 2,
           "source": "OpenAlex",
           "sourceUrl": "https://openalex.org/W4387635629",
-          "updatedAt": "2026-09-14",
+          "updatedAt": "2026-09-15",
           "recordTitle": "LightZero: A Unified Benchmark for Monte Carlo Tree Search in General Sequential Decision Scenarios"
         },
         "github": {
@@ -6728,7 +7412,7 @@
           "source": "GitHub",
           "sourceUrl": "https://github.com/opendilab/LightZero/stargazers",
           "repository": "opendilab/LightZero",
-          "updatedAt": "2026-09-14"
+          "updatedAt": "2026-09-15"
         }
       },
       "addedAt": "2026-09-14",
@@ -6837,7 +7521,7 @@
           "value": 523,
           "source": "OpenAlex",
           "sourceUrl": "https://openalex.org/W4224912544",
-          "updatedAt": "2026-09-14",
+          "updatedAt": "2026-09-15",
           "recordTitle": "Do As I Can, Not As I Say: Grounding Language in Robotic Affordances"
         }
       },
@@ -6924,7 +7608,7 @@
           "value": 357,
           "source": "OpenAlex",
           "sourceUrl": "https://openalex.org/W4323572061",
-          "updatedAt": "2026-09-14",
+          "updatedAt": "2026-09-15",
           "recordTitle": "PaLM-E: An Embodied Multimodal Language Model"
         }
       },
@@ -7047,7 +7731,7 @@
           "value": 612,
           "source": "OpenAlex",
           "sourceUrl": "https://openalex.org/W4385430679",
-          "updatedAt": "2026-09-14",
+          "updatedAt": "2026-09-15",
           "recordTitle": "RT-1: Robotics Transformer for Real-World Control at Scale"
         },
         "github": {
@@ -7055,7 +7739,7 @@
           "source": "GitHub",
           "sourceUrl": "https://github.com/google-research/robotics_transformer/stargazers",
           "repository": "google-research/robotics_transformer",
-          "updatedAt": "2026-09-14"
+          "updatedAt": "2026-09-15"
         }
       },
       "addedAt": "2026-09-14",
@@ -7142,7 +7826,7 @@
           "value": 65,
           "source": "OpenAlex",
           "sourceUrl": "https://openalex.org/W4303648971",
-          "updatedAt": "2026-09-14",
+          "updatedAt": "2026-09-15",
           "recordTitle": "VIMA: General Robot Manipulation with Multimodal Prompts"
         },
         "github": {
@@ -7150,7 +7834,7 @@
           "source": "GitHub",
           "sourceUrl": "https://github.com/vimalabs/VIMA/stargazers",
           "repository": "vimalabs/VIMA",
-          "updatedAt": "2026-09-14"
+          "updatedAt": "2026-09-15"
         }
       },
       "addedAt": "2026-09-14",
@@ -7223,7 +7907,7 @@
           "value": 49,
           "source": "OpenAlex",
           "sourceUrl": "https://openalex.org/W4297812239",
-          "updatedAt": "2026-09-14",
+          "updatedAt": "2026-09-15",
           "recordTitle": "Perceiver-Actor: A Multi-Task Transformer for Robotic Manipulation"
         },
         "github": {
@@ -7231,7 +7915,7 @@
           "source": "GitHub",
           "sourceUrl": "https://github.com/peract/peract/stargazers",
           "repository": "peract/peract",
-          "updatedAt": "2026-09-14"
+          "updatedAt": "2026-09-15"
         }
       },
       "addedAt": "2026-09-14",
@@ -7306,7 +7990,7 @@
           "value": 82,
           "source": "OpenAlex",
           "sourceUrl": "https://openalex.org/W4221159977",
-          "updatedAt": "2026-09-14",
+          "updatedAt": "2026-09-15",
           "recordTitle": "R3M: A Universal Visual Representation for Robot Manipulation"
         },
         "github": {
@@ -7314,7 +7998,7 @@
           "source": "GitHub",
           "sourceUrl": "https://github.com/facebookresearch/r3m/stargazers",
           "repository": "facebookresearch/r3m",
-          "updatedAt": "2026-09-14"
+          "updatedAt": "2026-09-15"
         }
       },
       "addedAt": "2026-09-14",
@@ -7406,7 +8090,7 @@
           "value": 21,
           "source": "OpenAlex",
           "sourceUrl": "https://openalex.org/W4362514550",
-          "updatedAt": "2026-09-14",
+          "updatedAt": "2026-09-15",
           "recordTitle": "Where are we in the search for an Artificial Visual Cortex for Embodied Intelligence?"
         },
         "github": {
@@ -7414,7 +8098,7 @@
           "source": "GitHub",
           "sourceUrl": "https://github.com/facebookresearch/eai-vc/stargazers",
           "repository": "facebookresearch/eai-vc",
-          "updatedAt": "2026-09-14"
+          "updatedAt": "2026-09-15"
         }
       },
       "addedAt": "2026-09-14",
@@ -7517,7 +8201,7 @@
           "value": 9,
           "source": "OpenAlex",
           "sourceUrl": "https://openalex.org/W4381586832",
-          "updatedAt": "2026-09-14",
+          "updatedAt": "2026-09-15",
           "recordTitle": "RoboCat: A Self-Improving Generalist Agent for Robotic Manipulation"
         }
       },
@@ -7590,11 +8274,11 @@
           "recordTitle": "Mobile ALOHA: Learning Bimanual Mobile Manipulation using Low-Cost Whole-Body Teleoperation"
         },
         "github": {
-          "value": 4469,
+          "value": 4470,
           "source": "GitHub",
           "sourceUrl": "https://github.com/MarkFzp/mobile-aloha/stargazers",
           "repository": "MarkFzp/mobile-aloha",
-          "updatedAt": "2026-09-14"
+          "updatedAt": "2026-09-15"
         }
       },
       "addedAt": "2026-09-14",
@@ -7667,7 +8351,7 @@
           "value": 4,
           "source": "OpenAlex",
           "sourceUrl": "https://openalex.org/W4390136276",
-          "updatedAt": "2026-09-14",
+          "updatedAt": "2026-09-15",
           "recordTitle": "Unleashing Large-Scale Video Generative Pre-training for Visual Robot Manipulation"
         },
         "github": {
@@ -7675,7 +8359,7 @@
           "source": "GitHub",
           "sourceUrl": "https://github.com/bytedance/GR-1/stargazers",
           "repository": "bytedance/GR-1",
-          "updatedAt": "2026-09-14"
+          "updatedAt": "2026-09-15"
         }
       },
       "addedAt": "2026-09-14",
@@ -7741,7 +8425,7 @@
           "value": 4,
           "source": "OpenAlex",
           "sourceUrl": "https://openalex.org/W4391949089",
-          "updatedAt": "2026-09-14",
+          "updatedAt": "2026-09-15",
           "recordTitle": "3D Diffuser Actor: Policy Diffusion with 3D Scene Representations"
         }
       },
@@ -7818,7 +8502,7 @@
           "value": 181,
           "source": "OpenAlex",
           "sourceUrl": "https://openalex.org/W4402354045",
-          "updatedAt": "2026-09-14",
+          "updatedAt": "2026-09-15",
           "recordTitle": "3D Diffusion Policy: Generalizable Visuomotor Policy Learning via Simple 3D Representations"
         },
         "github": {
@@ -7826,7 +8510,7 @@
           "source": "GitHub",
           "sourceUrl": "https://github.com/YanjieZe/3D-Diffusion-Policy/stargazers",
           "repository": "YanjieZe/3D-Diffusion-Policy",
-          "updatedAt": "2026-09-14"
+          "updatedAt": "2026-09-15"
         }
       },
       "addedAt": "2026-09-14",
@@ -7900,7 +8584,7 @@
           "value": 100,
           "source": "OpenAlex",
           "sourceUrl": "https://openalex.org/W3203511201",
-          "updatedAt": "2026-09-14",
+          "updatedAt": "2026-09-15",
           "recordTitle": "CLIPort: What and Where Pathways for Robotic Manipulation"
         },
         "github": {
@@ -7908,7 +8592,7 @@
           "source": "GitHub",
           "sourceUrl": "https://github.com/cliport/cliport/stargazers",
           "repository": "cliport/cliport",
-          "updatedAt": "2026-09-14"
+          "updatedAt": "2026-09-15"
         }
       },
       "addedAt": "2026-09-14",
@@ -7989,7 +8673,7 @@
           "value": 208,
           "source": "OpenAlex",
           "sourceUrl": "https://openalex.org/W4285428875",
-          "updatedAt": "2026-09-14",
+          "updatedAt": "2026-09-15",
           "recordTitle": "Inner Monologue: Embodied Reasoning through Planning with Language Models"
         }
       },
@@ -8077,7 +8761,7 @@
           "value": 5,
           "source": "OpenAlex",
           "sourceUrl": "https://openalex.org/W4388512477",
-          "updatedAt": "2026-09-14",
+          "updatedAt": "2026-09-15",
           "recordTitle": "RT-Trajectory: Robotic Task Generalization via Hindsight Trajectory Sketches"
         }
       },
@@ -8150,7 +8834,7 @@
           "value": 669,
           "source": "OpenAlex",
           "sourceUrl": "https://openalex.org/W4383097638",
-          "updatedAt": "2026-09-14",
+          "updatedAt": "2026-09-15",
           "recordTitle": "Code as Policies: Language Model Programs for Embodied Control"
         }
       },

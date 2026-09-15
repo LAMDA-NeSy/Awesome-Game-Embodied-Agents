@@ -2,6 +2,10 @@
 
 Collection-history baseline: **2026-09-14**. Added and revised dates describe this index, independently of publication dates and metric retrieval dates.
 
+## 2026-09-15 · The complete Physical Intelligence π model line
+
+Collection update. Added the full π model progression from π0 and π0-FAST through π0.5, knowledge insulation, human-to-robot transfer, π*0.6, and π0.7, with official papers, project pages, affiliations, previews, and available metrics.
+
 ## 2026-09-14 · 28 representative papers and 9 original demos
 
 Collection update. Expanded game research across Atari, world models, generalist agents, Minecraft evaluation, and strategic multi-agent play; expanded embodied research across language planning, robot Transformers, visual pretraining, 3D diffusion policies, and mobile bimanual systems. Every new paper links to a verified formal publication record, and every new video comes from its original project page.

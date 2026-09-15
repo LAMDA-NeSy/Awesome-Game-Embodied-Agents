@@ -1,10 +1,180 @@
 {
   "metricsRefresh": {
-    "checkedAt": "2026-09-14T18:28:13.256Z",
-    "total": 133,
-    "refreshed": 121,
-    "preserved": 12,
+    "checkedAt": "2026-09-15T04:49:08.268Z",
+    "total": 139,
+    "refreshed": 93,
+    "preserved": 46,
     "failures": [
+      {
+        "source": "GitHub",
+        "sourceUrl": "https://github.com/LJH-coding/EDELINE",
+        "reason": "HTTP 403"
+      },
+      {
+        "source": "GitHub",
+        "sourceUrl": "https://github.com/anyboby/contextual-similarity-distillation",
+        "reason": "HTTP 403"
+      },
+      {
+        "source": "GitHub",
+        "sourceUrl": "https://github.com/stefanwm13/just-cluster-it-public",
+        "reason": "HTTP 403"
+      },
+      {
+        "source": "GitHub",
+        "sourceUrl": "https://github.com/2016choang/sfl",
+        "reason": "HTTP 403"
+      },
+      {
+        "source": "GitHub",
+        "sourceUrl": "https://github.com/LeapLabTHU/MOSS",
+        "reason": "HTTP 403"
+      },
+      {
+        "source": "GitHub",
+        "sourceUrl": "https://github.com/IranQin/MP5",
+        "reason": "HTTP 403"
+      },
+      {
+        "source": "GitHub",
+        "sourceUrl": "https://github.com/MineDojo/Voyager",
+        "reason": "HTTP 403"
+      },
+      {
+        "source": "GitHub",
+        "sourceUrl": "https://github.com/openvla/openvla",
+        "reason": "HTTP 403"
+      },
+      {
+        "source": "GitHub",
+        "sourceUrl": "https://github.com/real-stanford/diffusion_policy",
+        "reason": "HTTP 403"
+      },
+      {
+        "source": "GitHub",
+        "sourceUrl": "https://github.com/tonyzhaozh/act",
+        "reason": "HTTP 403"
+      },
+      {
+        "source": "GitHub",
+        "sourceUrl": "https://github.com/octo-models/octo",
+        "reason": "HTTP 403"
+      },
+      {
+        "source": "GitHub",
+        "sourceUrl": "https://github.com/huangwl18/VoxPoser",
+        "reason": "HTTP 403"
+      },
+      {
+        "source": "GitHub",
+        "sourceUrl": "https://github.com/huangwl18/ReKep",
+        "reason": "HTTP 403"
+      },
+      {
+        "source": "GitHub",
+        "sourceUrl": "https://github.com/Lifelong-Robot-Learning/LIBERO",
+        "reason": "HTTP 403"
+      },
+      {
+        "source": "GitHub",
+        "sourceUrl": "https://github.com/EmbodiedBench/EmbodiedBench",
+        "reason": "HTTP 403"
+      },
+      {
+        "source": "GitHub",
+        "sourceUrl": "https://github.com/Physical-Intelligence/openpi",
+        "reason": "HTTP 403"
+      },
+      {
+        "source": "OpenAlex",
+        "sourceUrl": "https://openalex.org/W4414079054",
+        "reason": "Indexed title changed; review required"
+      },
+      {
+        "source": "GitHub",
+        "sourceUrl": "https://github.com/huggingface/lerobot",
+        "reason": "HTTP 403"
+      },
+      {
+        "source": "GitHub",
+        "sourceUrl": "https://github.com/Farama-Foundation/Gymnasium",
+        "reason": "HTTP 403"
+      },
+      {
+        "source": "GitHub",
+        "sourceUrl": "https://github.com/Genesis-Embodied-AI/genesis-world",
+        "reason": "HTTP 403"
+      },
+      {
+        "source": "GitHub",
+        "sourceUrl": "https://github.com/Farama-Foundation/ViZDoom",
+        "reason": "HTTP 403"
+      },
+      {
+        "source": "GitHub",
+        "sourceUrl": "https://github.com/allenai/ai2thor",
+        "reason": "HTTP 403"
+      },
+      {
+        "source": "GitHub",
+        "sourceUrl": "https://github.com/Farama-Foundation/PettingZoo",
+        "reason": "HTTP 403"
+      },
+      {
+        "source": "GitHub",
+        "sourceUrl": "https://github.com/mani-skill/ManiSkill",
+        "reason": "HTTP 403"
+      },
+      {
+        "source": "GitHub",
+        "sourceUrl": "https://github.com/facebookresearch/habitat-lab",
+        "reason": "HTTP 403"
+      },
+      {
+        "source": "GitHub",
+        "sourceUrl": "https://github.com/MineDojo/MineDojo",
+        "reason": "HTTP 403"
+      },
+      {
+        "source": "GitHub",
+        "sourceUrl": "https://github.com/google-deepmind/open_x_embodiment",
+        "reason": "HTTP 403"
+      },
+      {
+        "source": "GitHub",
+        "sourceUrl": "https://github.com/rail-berkeley/bridge_data_v2",
+        "reason": "HTTP 403"
+      },
+      {
+        "source": "GitHub",
+        "sourceUrl": "https://github.com/droid-dataset/droid",
+        "reason": "HTTP 403"
+      },
+      {
+        "source": "GitHub",
+        "sourceUrl": "https://github.com/YeWR/EfficientZero",
+        "reason": "HTTP 403"
+      },
+      {
+        "source": "GitHub",
+        "sourceUrl": "https://github.com/facebookresearch/diplomacy_cicero",
+        "reason": "HTTP 403"
+      },
+      {
+        "source": "GitHub",
+        "sourceUrl": "https://github.com/eloialonso/iris",
+        "reason": "HTTP 403"
+      },
+      {
+        "source": "GitHub",
+        "sourceUrl": "https://github.com/minerllabs/basalt-benchmark",
+        "reason": "HTTP 403"
+      },
+      {
+        "source": "GitHub",
+        "sourceUrl": "https://github.com/danijar/crafter",
+        "reason": "HTTP 403"
+      },
       {
         "source": "GitHub",
         "sourceUrl": "https://github.com/kzl/decision-transformer",

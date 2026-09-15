@@ -2,6 +2,13 @@
   "baselineDate": "2026-09-14",
   "entries": [
     {
+      "id": "2026-09-15-pi-series",
+      "date": "2026-09-15",
+      "title": "The complete Physical Intelligence π model line",
+      "summary": "Added the full π model progression from π0 and π0-FAST through π0.5, knowledge insulation, human-to-robot transfer, π*0.6, and π0.7, with official papers, project pages, affiliations, previews, and available metrics.",
+      "type": "Collection update"
+    },
+    {
       "id": "2026-09-14-representative-expansion",
       "date": "2026-09-14",
       "title": "28 representative papers and 9 original demos",
