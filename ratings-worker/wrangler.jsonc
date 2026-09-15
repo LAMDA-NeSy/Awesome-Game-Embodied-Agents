@@ -13,6 +13,6 @@
     { "tag": "v2", "new_sqlite_classes": ["PaperRatingsV2"], "deleted_classes": ["PaperRatings"] }
   ],
   "vars": {
-    "ALLOWED_ORIGIN": "https://labixiaoq.github.io"
+    "ALLOWED_ORIGIN": "https://lamda-nesy.github.io"
   }
 }

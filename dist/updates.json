@@ -2,6 +2,13 @@
   "baselineDate": "2026-09-14",
   "entries": [
     {
+      "id": "2026-09-15-lamda-nesy-home",
+      "date": "2026-09-15",
+      "title": "A new home in the LAMDA-NeSy organization",
+      "summary": "Moved the repository and website to LAMDA-NeSy while preserving the project history, contributors, issues, and community stars. Future releases and contributions now live under the organization.",
+      "type": "Community update"
+    },
+    {
       "id": "2026-09-15-pi-series",
       "date": "2026-09-15",
       "title": "The complete Physical Intelligence π model line",

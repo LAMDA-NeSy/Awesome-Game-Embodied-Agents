@@ -3,9 +3,9 @@ message: "Please cite this collection and the individual papers, datasets, and p
 type: software
 title: "Awesome Game & Embodied Agents"
 authors:
-  - name: "labixiaoQ"
-repository-code: "https://github.com/labixiaoQ/Awesome-Game-Embodied-Agents"
-url: "https://labixiaoq.github.io/Awesome-Game-Embodied-Agents/"
+  - name: "Renmin Cheng"
+repository-code: "https://github.com/LAMDA-NeSy/Awesome-Game-Embodied-Agents"
+url: "https://lamda-nesy.github.io/Awesome-Game-Embodied-Agents/"
 version: "2026.09.14"
 license: MIT
 abstract: "A curated research collection of game and embodied agents, with papers, projects, datasets, benchmarks, and source-linked video demonstrations."

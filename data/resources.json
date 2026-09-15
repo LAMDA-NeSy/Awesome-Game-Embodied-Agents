@@ -26,8 +26,8 @@
       "benchmarks": 8,
       "demos": 17
     },
-    "repositoryUrl": "https://github.com/labixiaoQ/Awesome-Game-Embodied-Agents",
-    "siteUrl": "https://labixiaoq.github.io/Awesome-Game-Embodied-Agents/",
+    "repositoryUrl": "https://github.com/LAMDA-NeSy/Awesome-Game-Embodied-Agents",
+    "siteUrl": "https://lamda-nesy.github.io/Awesome-Game-Embodied-Agents/",
     "ratingsApiUrl": "https://awesome-gea-ratings.ratings-worker.workers.dev/ratings",
     "language": "en"
   },

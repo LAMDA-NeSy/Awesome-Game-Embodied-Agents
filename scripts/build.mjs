@@ -293,7 +293,7 @@ const conciseReadme = `<div align="center">
 
 [![Awesome](https://img.shields.io/badge/Awesome-List-173c31.svg?style=for-the-badge&labelColor=102c25&logo=awesomelists&logoColor=white)](https://awesome.re) [![Website](https://img.shields.io/badge/Website-Explore-173c31.svg?style=for-the-badge&labelColor=102c25&logo=githubpages&logoColor=white)](${data.meta.siteUrl}) [![Resources](https://img.shields.io/badge/Resources-${selected.length}-173c31.svg?style=for-the-badge&labelColor=102c25&logo=readthedocs&logoColor=white)](${data.meta.siteUrl}#all) [![Papers](https://img.shields.io/badge/Papers-${count('papers')}-173c31.svg?style=for-the-badge&labelColor=102c25&logo=arxiv&logoColor=white)](${data.meta.siteUrl}#papers) [![Demos](https://img.shields.io/badge/Demos-${count('demos')}-173c31.svg?style=for-the-badge&labelColor=102c25&logo=youtube&logoColor=white)](${data.meta.siteUrl}#demos)
 <br>
-[![PRs welcome](https://img.shields.io/badge/PRs-Welcome-c8a85b.svg?style=for-the-badge&labelColor=8b6c2e&logo=git&logoColor=white)](CONTRIBUTING.md) [![License: MIT](https://img.shields.io/badge/License-MIT-c8a85b.svg?style=for-the-badge&labelColor=8b6c2e)](LICENSE) [![GitHub Stars](https://img.shields.io/github/stars/labixiaoQ/Awesome-Game-Embodied-Agents?style=for-the-badge&label=Stars&labelColor=8b6c2e&color=c8a85b&logo=github&logoColor=white)](${data.meta.repositoryUrl})
+[![PRs welcome](https://img.shields.io/badge/PRs-Welcome-c8a85b.svg?style=for-the-badge&labelColor=8b6c2e&logo=git&logoColor=white)](CONTRIBUTING.md) [![License: MIT](https://img.shields.io/badge/License-MIT-c8a85b.svg?style=for-the-badge&labelColor=8b6c2e)](LICENSE) [![GitHub Stars](https://img.shields.io/github/stars/LAMDA-NeSy/Awesome-Game-Embodied-Agents?style=for-the-badge&label=Stars&labelColor=8b6c2e&color=c8a85b&logo=github&logoColor=white)](${data.meta.repositoryUrl})
 
 [Game research](${data.meta.siteUrl}#papers?domain=game) · [Embodied research](${data.meta.siteUrl}#papers?domain=embodied) · [Projects](${data.meta.siteUrl}#projects) · [Datasets](${data.meta.siteUrl}#datasets) · [Benchmarks](${data.meta.siteUrl}#benchmarks) · [Video demos](${data.meta.siteUrl}#demos)
 
@@ -361,7 +361,7 @@ If this collection helps your work, cite the repository and the individual resou
 ${'```'}bibtex
 @misc{awesome-game-embodied-agents,
   title  = {Awesome Game & Embodied Agents},
-  author = {labixiaoQ and contributors},
+  author = {Renmin Cheng and contributors},
   year   = {2026},
   url    = {${data.meta.repositoryUrl}}
 }
