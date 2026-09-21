@@ -1,89 +1,19 @@
 {
   "metricsRefresh": {
-    "checkedAt": "2026-09-15T04:49:08.268Z",
+    "checkedAt": "2026-09-21T06:18:03.201Z",
     "total": 139,
-    "refreshed": 93,
-    "preserved": 46,
+    "refreshed": 126,
+    "preserved": 13,
     "failures": [
       {
-        "source": "GitHub",
-        "sourceUrl": "https://github.com/LJH-coding/EDELINE",
-        "reason": "HTTP 403"
+        "source": "OpenAlex",
+        "sourceUrl": "https://openalex.org/W4414051084",
+        "reason": "HTTP 429"
       },
       {
-        "source": "GitHub",
-        "sourceUrl": "https://github.com/anyboby/contextual-similarity-distillation",
-        "reason": "HTTP 403"
-      },
-      {
-        "source": "GitHub",
-        "sourceUrl": "https://github.com/stefanwm13/just-cluster-it-public",
-        "reason": "HTTP 403"
-      },
-      {
-        "source": "GitHub",
-        "sourceUrl": "https://github.com/2016choang/sfl",
-        "reason": "HTTP 403"
-      },
-      {
-        "source": "GitHub",
-        "sourceUrl": "https://github.com/LeapLabTHU/MOSS",
-        "reason": "HTTP 403"
-      },
-      {
-        "source": "GitHub",
-        "sourceUrl": "https://github.com/IranQin/MP5",
-        "reason": "HTTP 403"
-      },
-      {
-        "source": "GitHub",
-        "sourceUrl": "https://github.com/MineDojo/Voyager",
-        "reason": "HTTP 403"
-      },
-      {
-        "source": "GitHub",
-        "sourceUrl": "https://github.com/openvla/openvla",
-        "reason": "HTTP 403"
-      },
-      {
-        "source": "GitHub",
-        "sourceUrl": "https://github.com/real-stanford/diffusion_policy",
-        "reason": "HTTP 403"
-      },
-      {
-        "source": "GitHub",
-        "sourceUrl": "https://github.com/tonyzhaozh/act",
-        "reason": "HTTP 403"
-      },
-      {
-        "source": "GitHub",
-        "sourceUrl": "https://github.com/octo-models/octo",
-        "reason": "HTTP 403"
-      },
-      {
-        "source": "GitHub",
-        "sourceUrl": "https://github.com/huangwl18/VoxPoser",
-        "reason": "HTTP 403"
-      },
-      {
-        "source": "GitHub",
-        "sourceUrl": "https://github.com/huangwl18/ReKep",
-        "reason": "HTTP 403"
-      },
-      {
-        "source": "GitHub",
-        "sourceUrl": "https://github.com/Lifelong-Robot-Learning/LIBERO",
-        "reason": "HTTP 403"
-      },
-      {
-        "source": "GitHub",
-        "sourceUrl": "https://github.com/EmbodiedBench/EmbodiedBench",
-        "reason": "HTTP 403"
-      },
-      {
-        "source": "GitHub",
-        "sourceUrl": "https://github.com/Physical-Intelligence/openpi",
-        "reason": "HTTP 403"
+        "source": "OpenAlex",
+        "sourceUrl": "https://openalex.org/W4416613198",
+        "reason": "HTTP 429"
       },
       {
         "source": "OpenAlex",
@@ -91,134 +21,34 @@
         "reason": "Indexed title changed; review required"
       },
       {
-        "source": "GitHub",
-        "sourceUrl": "https://github.com/huggingface/lerobot",
-        "reason": "HTTP 403"
+        "source": "OpenAlex",
+        "sourceUrl": "https://openalex.org/W7155019052",
+        "reason": "HTTP 429"
       },
       {
-        "source": "GitHub",
-        "sourceUrl": "https://github.com/Farama-Foundation/Gymnasium",
-        "reason": "HTTP 403"
+        "source": "OpenAlex",
+        "sourceUrl": "https://openalex.org/W4417215404",
+        "reason": "HTTP 429"
       },
       {
-        "source": "GitHub",
-        "sourceUrl": "https://github.com/Genesis-Embodied-AI/genesis-world",
-        "reason": "HTTP 403"
+        "source": "OpenAlex",
+        "sourceUrl": "https://openalex.org/W4386185624",
+        "reason": "HTTP 429"
       },
       {
-        "source": "GitHub",
-        "sourceUrl": "https://github.com/Farama-Foundation/ViZDoom",
-        "reason": "HTTP 403"
+        "source": "OpenAlex",
+        "sourceUrl": "https://openalex.org/W4281663178",
+        "reason": "HTTP 429"
       },
       {
-        "source": "GitHub",
-        "sourceUrl": "https://github.com/allenai/ai2thor",
-        "reason": "HTTP 403"
+        "source": "OpenAlex",
+        "sourceUrl": "https://openalex.org/W4224912544",
+        "reason": "HTTP 429"
       },
       {
-        "source": "GitHub",
-        "sourceUrl": "https://github.com/Farama-Foundation/PettingZoo",
-        "reason": "HTTP 403"
-      },
-      {
-        "source": "GitHub",
-        "sourceUrl": "https://github.com/mani-skill/ManiSkill",
-        "reason": "HTTP 403"
-      },
-      {
-        "source": "GitHub",
-        "sourceUrl": "https://github.com/facebookresearch/habitat-lab",
-        "reason": "HTTP 403"
-      },
-      {
-        "source": "GitHub",
-        "sourceUrl": "https://github.com/MineDojo/MineDojo",
-        "reason": "HTTP 403"
-      },
-      {
-        "source": "GitHub",
-        "sourceUrl": "https://github.com/google-deepmind/open_x_embodiment",
-        "reason": "HTTP 403"
-      },
-      {
-        "source": "GitHub",
-        "sourceUrl": "https://github.com/rail-berkeley/bridge_data_v2",
-        "reason": "HTTP 403"
-      },
-      {
-        "source": "GitHub",
-        "sourceUrl": "https://github.com/droid-dataset/droid",
-        "reason": "HTTP 403"
-      },
-      {
-        "source": "GitHub",
-        "sourceUrl": "https://github.com/YeWR/EfficientZero",
-        "reason": "HTTP 403"
-      },
-      {
-        "source": "GitHub",
-        "sourceUrl": "https://github.com/facebookresearch/diplomacy_cicero",
-        "reason": "HTTP 403"
-      },
-      {
-        "source": "GitHub",
-        "sourceUrl": "https://github.com/eloialonso/iris",
-        "reason": "HTTP 403"
-      },
-      {
-        "source": "GitHub",
-        "sourceUrl": "https://github.com/minerllabs/basalt-benchmark",
-        "reason": "HTTP 403"
-      },
-      {
-        "source": "GitHub",
-        "sourceUrl": "https://github.com/danijar/crafter",
-        "reason": "HTTP 403"
-      },
-      {
-        "source": "GitHub",
-        "sourceUrl": "https://github.com/kzl/decision-transformer",
-        "reason": "HTTP 403"
-      },
-      {
-        "source": "GitHub",
-        "sourceUrl": "https://github.com/opendilab/LightZero",
-        "reason": "HTTP 403"
-      },
-      {
-        "source": "GitHub",
-        "sourceUrl": "https://github.com/google-research/robotics_transformer",
-        "reason": "HTTP 403"
-      },
-      {
-        "source": "GitHub",
-        "sourceUrl": "https://github.com/vimalabs/VIMA",
-        "reason": "HTTP 403"
-      },
-      {
-        "source": "GitHub",
-        "sourceUrl": "https://github.com/peract/peract",
-        "reason": "HTTP 403"
-      },
-      {
-        "source": "GitHub",
-        "sourceUrl": "https://github.com/facebookresearch/r3m",
-        "reason": "HTTP 403"
-      },
-      {
-        "source": "GitHub",
-        "sourceUrl": "https://github.com/facebookresearch/eai-vc",
-        "reason": "HTTP 403"
-      },
-      {
-        "source": "GitHub",
-        "sourceUrl": "https://github.com/MarkFzp/mobile-aloha",
-        "reason": "HTTP 403"
-      },
-      {
-        "source": "GitHub",
-        "sourceUrl": "https://github.com/bytedance/GR-1",
-        "reason": "HTTP 403"
+        "source": "OpenAlex",
+        "sourceUrl": "https://openalex.org/W4385430679",
+        "reason": "HTTP 429"
       },
       {
         "source": "OpenAlex",
@@ -226,27 +56,74 @@
         "reason": "Indexed title changed; review required"
       },
       {
-        "source": "GitHub",
-        "sourceUrl": "https://github.com/YanjieZe/3D-Diffusion-Policy",
-        "reason": "HTTP 403"
+        "source": "OpenAlex",
+        "sourceUrl": "https://openalex.org/W4391949089",
+        "reason": "HTTP 429"
       },
       {
-        "source": "GitHub",
-        "sourceUrl": "https://github.com/cliport/cliport",
-        "reason": "HTTP 403"
+        "source": "OpenAlex",
+        "sourceUrl": "https://openalex.org/W4285428875",
+        "reason": "HTTP 429"
+      },
+      {
+        "source": "OpenAlex",
+        "sourceUrl": "https://openalex.org/W4388512477",
+        "reason": "HTTP 429"
       }
     ]
   },
   "linkCheck": {
-    "checkedAt": "2026-09-14T15:05:56.260Z",
-    "total": 194,
+    "checkedAt": "2026-09-21T06:18:46.313Z",
+    "total": 321,
     "summary": {
-      "ok": 184,
+      "ok": 305,
       "broken": 0,
-      "restricted": 10,
-      "unreachable": 0
+      "restricted": 12,
+      "unreachable": 4
     },
     "results": [
+      {
+        "url": "https://3d-diffuser-actor.github.io/",
+        "resourceIds": [
+          "3d-diffuser-actor",
+          "demo-3d-diffuser-peg"
+        ],
+        "status": "ok",
+        "httpStatus": 200
+      },
+      {
+        "url": "https://3d-diffuser-actor.github.io/static/videos/realworld/new_insert_peg_in_hole_1.mp4",
+        "resourceIds": [
+          "demo-3d-diffuser-peg"
+        ],
+        "status": "ok",
+        "httpStatus": 200
+      },
+      {
+        "url": "https://3d-diffusion-policy.github.io/",
+        "resourceIds": [
+          "demo-dp3-pour",
+          "dp3"
+        ],
+        "status": "ok",
+        "httpStatus": 200
+      },
+      {
+        "url": "https://3d-diffusion-policy.github.io/videos/high_res/pour_robust_final.mp4",
+        "resourceIds": [
+          "demo-dp3-pour"
+        ],
+        "status": "ok",
+        "httpStatus": 200
+      },
+      {
+        "url": "https://ai.meta.com/research/cicero/",
+        "resourceIds": [
+          "cicero"
+        ],
+        "status": "ok",
+        "httpStatus": 200
+      },
       {
         "url": "https://arxiv.org/abs/2301.10677",
         "resourceIds": [
@@ -275,6 +152,38 @@
         "url": "https://arxiv.org/abs/2310.08864",
         "resourceIds": [
           "open-x-embodiment"
+        ],
+        "status": "ok",
+        "httpStatus": 200
+      },
+      {
+        "url": "https://arxiv.org/abs/2410.24164",
+        "resourceIds": [
+          "pi0-paper"
+        ],
+        "status": "ok",
+        "httpStatus": 200
+      },
+      {
+        "url": "https://arxiv.org/abs/2501.09747",
+        "resourceIds": [
+          "pi0-fast"
+        ],
+        "status": "ok",
+        "httpStatus": 200
+      },
+      {
+        "url": "https://arxiv.org/abs/2504.16054",
+        "resourceIds": [
+          "pi05"
+        ],
+        "status": "ok",
+        "httpStatus": 200
+      },
+      {
+        "url": "https://arxiv.org/abs/2505.23705",
+        "resourceIds": [
+          "pi05-ki"
         ],
         "status": "ok",
         "httpStatus": 200
@@ -312,6 +221,14 @@
         "httpStatus": 200
       },
       {
+        "url": "https://arxiv.org/abs/2512.22414",
+        "resourceIds": [
+          "pi05-ego"
+        ],
+        "status": "ok",
+        "httpStatus": 200
+      },
+      {
         "url": "https://arxiv.org/abs/2603.11601",
         "resourceIds": [
           "candidate-t03"
@@ -323,6 +240,14 @@
         "url": "https://arxiv.org/abs/2604.07385",
         "resourceIds": [
           "candidate-t04"
+        ],
+        "status": "ok",
+        "httpStatus": 200
+      },
+      {
+        "url": "https://arxiv.org/abs/2604.15483",
+        "resourceIds": [
+          "pi07"
         ],
         "status": "ok",
         "httpStatus": 200
@@ -355,6 +280,30 @@
         "url": "https://arxiv.org/abs/2608.30369",
         "resourceIds": [
           "candidate-t05"
+        ],
+        "status": "ok",
+        "httpStatus": 200
+      },
+      {
+        "url": "https://arxiv.org/pdf/2206.15378",
+        "resourceIds": [
+          "deepnash"
+        ],
+        "status": "ok",
+        "httpStatus": 200
+      },
+      {
+        "url": "https://arxiv.org/pdf/2209.07753",
+        "resourceIds": [
+          "code-as-policies"
+        ],
+        "status": "ok",
+        "httpStatus": 200
+      },
+      {
+        "url": "https://arxiv.org/pdf/2211.08966",
+        "resourceIds": [
+          "cicero"
         ],
         "status": "ok",
         "httpStatus": 200
@@ -408,9 +357,41 @@
         "httpStatus": 200
       },
       {
+        "url": "https://arxiv.org/pdf/2410.24164",
+        "resourceIds": [
+          "pi0-paper"
+        ],
+        "status": "ok",
+        "httpStatus": 200
+      },
+      {
+        "url": "https://arxiv.org/pdf/2501.09747",
+        "resourceIds": [
+          "pi0-fast"
+        ],
+        "status": "ok",
+        "httpStatus": 200
+      },
+      {
         "url": "https://arxiv.org/pdf/2503.11339",
         "resourceIds": [
           "kb-t01"
+        ],
+        "status": "ok",
+        "httpStatus": 200
+      },
+      {
+        "url": "https://arxiv.org/pdf/2504.16054",
+        "resourceIds": [
+          "pi05"
+        ],
+        "status": "ok",
+        "httpStatus": 200
+      },
+      {
+        "url": "https://arxiv.org/pdf/2505.23705",
+        "resourceIds": [
+          "pi05-ki"
         ],
         "status": "ok",
         "httpStatus": 200
@@ -448,6 +429,14 @@
         "httpStatus": 200
       },
       {
+        "url": "https://arxiv.org/pdf/2512.22414",
+        "resourceIds": [
+          "pi05-ego"
+        ],
+        "status": "ok",
+        "httpStatus": 200
+      },
+      {
         "url": "https://arxiv.org/pdf/2603.11601",
         "resourceIds": [
           "candidate-t03"
@@ -459,6 +448,14 @@
         "url": "https://arxiv.org/pdf/2604.07385",
         "resourceIds": [
           "candidate-t04"
+        ],
+        "status": "ok",
+        "httpStatus": 200
+      },
+      {
+        "url": "https://arxiv.org/pdf/2604.15483",
+        "resourceIds": [
+          "pi07"
         ],
         "status": "ok",
         "httpStatus": 200
@@ -496,6 +493,48 @@
         "httpStatus": 200
       },
       {
+        "url": "https://cliport.github.io/",
+        "resourceIds": [
+          "cliport",
+          "demo-cliport-folding"
+        ],
+        "status": "ok",
+        "httpStatus": 200
+      },
+      {
+        "url": "https://cliport.github.io/media/videos/1_folding.mp4",
+        "resourceIds": [
+          "demo-cliport-folding"
+        ],
+        "status": "ok",
+        "httpStatus": 200
+      },
+      {
+        "url": "https://code-as-policies.github.io/",
+        "resourceIds": [
+          "code-as-policies"
+        ],
+        "status": "ok",
+        "httpStatus": 200
+      },
+      {
+        "url": "https://danijar.com/asset/crafter/video.mp4",
+        "resourceIds": [
+          "demo-crafter-human"
+        ],
+        "status": "ok",
+        "httpStatus": 200
+      },
+      {
+        "url": "https://danijar.com/project/crafter/",
+        "resourceIds": [
+          "crafter",
+          "demo-crafter-human"
+        ],
+        "status": "ok",
+        "httpStatus": 200
+      },
+      {
         "url": "https://deepmind.google/blog/sima-2-an-agent-that-plays-reasons-and-learns-with-you-in-virtual-3d-worlds/",
         "resourceIds": [
           "article-sima2",
@@ -508,6 +547,30 @@
         "url": "https://deepmind.google/blog/sima-generalist-ai-agent-for-3d-virtual-environments/",
         "resourceIds": [
           "article-sima"
+        ],
+        "status": "ok",
+        "httpStatus": 200
+      },
+      {
+        "url": "https://deepmind.google/discover/blog/a-generalist-agent/",
+        "resourceIds": [
+          "gato"
+        ],
+        "status": "ok",
+        "httpStatus": 200
+      },
+      {
+        "url": "https://deepmind.google/discover/blog/mastering-stratego-the-classic-game-of-imperfect-information/",
+        "resourceIds": [
+          "deepnash"
+        ],
+        "status": "ok",
+        "httpStatus": 200
+      },
+      {
+        "url": "https://deepmind.google/discover/blog/robocat-a-self-improving-robotic-agent/",
+        "resourceIds": [
+          "robocat"
         ],
         "status": "ok",
         "httpStatus": 200
@@ -555,12 +618,36 @@
         "httpStatus": 200
       },
       {
+        "url": "https://doi.org/10.1109/ICRA48891.2023.10160591",
+        "resourceIds": [
+          "code-as-policies"
+        ],
+        "status": "ok",
+        "httpStatus": 202
+      },
+      {
         "url": "https://doi.org/10.1109/ICRA57147.2024.10611477",
         "resourceIds": [
           "open-x-embodiment"
         ],
         "status": "ok",
         "httpStatus": 202
+      },
+      {
+        "url": "https://doi.org/10.1126/science.add4679",
+        "resourceIds": [
+          "deepnash"
+        ],
+        "status": "restricted",
+        "httpStatus": 403
+      },
+      {
+        "url": "https://doi.org/10.1126/science.ade9097",
+        "resourceIds": [
+          "cicero"
+        ],
+        "status": "restricted",
+        "httpStatus": 403
       },
       {
         "url": "https://doi.org/10.1177/02783649241281508",
@@ -595,9 +682,81 @@
         "httpStatus": 200
       },
       {
+        "url": "https://eai-vc.github.io/",
+        "resourceIds": [
+          "vc1"
+        ],
+        "status": "ok",
+        "httpStatus": 200
+      },
+      {
         "url": "https://embodiedbench.github.io/",
         "resourceIds": [
           "embodiedbench"
+        ],
+        "status": "ok",
+        "httpStatus": 200
+      },
+      {
+        "url": "https://export.arxiv.org/pdf/2109.06780",
+        "resourceIds": [
+          "crafter"
+        ],
+        "status": "ok",
+        "httpStatus": 200
+      },
+      {
+        "url": "https://export.arxiv.org/pdf/2205.06175",
+        "resourceIds": [
+          "gato"
+        ],
+        "status": "ok",
+        "httpStatus": 200
+      },
+      {
+        "url": "https://export.arxiv.org/pdf/2209.00588",
+        "resourceIds": [
+          "iris"
+        ],
+        "status": "ok",
+        "httpStatus": 200
+      },
+      {
+        "url": "https://export.arxiv.org/pdf/2210.05492",
+        "resourceIds": [
+          "diplodocus"
+        ],
+        "status": "ok",
+        "httpStatus": 200
+      },
+      {
+        "url": "https://export.arxiv.org/pdf/2306.11706",
+        "resourceIds": [
+          "robocat"
+        ],
+        "status": "ok",
+        "httpStatus": 200
+      },
+      {
+        "url": "https://export.arxiv.org/pdf/2401.02117",
+        "resourceIds": [
+          "mobile-aloha"
+        ],
+        "status": "ok",
+        "httpStatus": 200
+      },
+      {
+        "url": "https://export.arxiv.org/pdf/2402.10885",
+        "resourceIds": [
+          "3d-diffuser-actor"
+        ],
+        "status": "ok",
+        "httpStatus": 200
+      },
+      {
+        "url": "https://export.arxiv.org/pdf/2402.15391",
+        "resourceIds": [
+          "genie"
         ],
         "status": "ok",
         "httpStatus": 200
@@ -644,6 +803,30 @@
         "httpStatus": 200
       },
       {
+        "url": "https://github.com/bytedance/GR-1",
+        "resourceIds": [
+          "gr1"
+        ],
+        "status": "ok",
+        "httpStatus": 200
+      },
+      {
+        "url": "https://github.com/cliport/cliport",
+        "resourceIds": [
+          "cliport"
+        ],
+        "status": "ok",
+        "httpStatus": 200
+      },
+      {
+        "url": "https://github.com/danijar/crafter",
+        "resourceIds": [
+          "crafter"
+        ],
+        "status": "ok",
+        "httpStatus": 200
+      },
+      {
         "url": "https://github.com/danijar/dreamerv3",
         "resourceIds": [
           "kb-g05"
@@ -669,6 +852,14 @@
         "httpStatus": 200
       },
       {
+        "url": "https://github.com/eloialonso/iris",
+        "resourceIds": [
+          "iris"
+        ],
+        "status": "ok",
+        "httpStatus": 200
+      },
+      {
         "url": "https://github.com/EmbodiedBench/EmbodiedBench",
         "resourceIds": [
           "embodiedbench"
@@ -677,9 +868,34 @@
         "httpStatus": 200
       },
       {
+        "url": "https://github.com/facebookresearch/diplomacy_cicero",
+        "resourceIds": [
+          "cicero",
+          "diplodocus"
+        ],
+        "status": "ok",
+        "httpStatus": 200
+      },
+      {
+        "url": "https://github.com/facebookresearch/eai-vc",
+        "resourceIds": [
+          "vc1"
+        ],
+        "status": "ok",
+        "httpStatus": 200
+      },
+      {
         "url": "https://github.com/facebookresearch/habitat-lab",
         "resourceIds": [
           "habitat"
+        ],
+        "status": "ok",
+        "httpStatus": 200
+      },
+      {
+        "url": "https://github.com/facebookresearch/r3m",
+        "resourceIds": [
+          "r3m"
         ],
         "status": "ok",
         "httpStatus": 200
@@ -725,6 +941,14 @@
         "httpStatus": 200
       },
       {
+        "url": "https://github.com/google-research/robotics_transformer",
+        "resourceIds": [
+          "rt1"
+        ],
+        "status": "ok",
+        "httpStatus": 200
+      },
+      {
         "url": "https://github.com/huangwl18/ReKep",
         "resourceIds": [
           "rekep"
@@ -760,6 +984,14 @@
         "url": "https://github.com/IranQin/MP5",
         "resourceIds": [
           "mp5"
+        ],
+        "status": "ok",
+        "httpStatus": 200
+      },
+      {
+        "url": "https://github.com/kzl/decision-transformer",
+        "resourceIds": [
+          "decision-transformer"
         ],
         "status": "ok",
         "httpStatus": 200
@@ -805,6 +1037,14 @@
         "httpStatus": 200
       },
       {
+        "url": "https://github.com/MarkFzp/mobile-aloha",
+        "resourceIds": [
+          "mobile-aloha"
+        ],
+        "status": "ok",
+        "httpStatus": 200
+      },
+      {
         "url": "https://github.com/microsoft/Imitating-Human-Behaviour-w-Diffusion",
         "resourceIds": [
           "kb-f02"
@@ -839,9 +1079,25 @@
         "httpStatus": 200
       },
       {
+        "url": "https://github.com/minerllabs/basalt-benchmark",
+        "resourceIds": [
+          "bedd"
+        ],
+        "status": "ok",
+        "httpStatus": 200
+      },
+      {
         "url": "https://github.com/octo-models/octo",
         "resourceIds": [
           "octo"
+        ],
+        "status": "ok",
+        "httpStatus": 200
+      },
+      {
+        "url": "https://github.com/opendilab/LightZero",
+        "resourceIds": [
+          "lightzero"
         ],
         "status": "ok",
         "httpStatus": 200
@@ -856,9 +1112,21 @@
         "httpStatus": 200
       },
       {
+        "url": "https://github.com/peract/peract",
+        "resourceIds": [
+          "peract"
+        ],
+        "status": "ok",
+        "httpStatus": 200
+      },
+      {
         "url": "https://github.com/Physical-Intelligence/openpi",
         "resourceIds": [
-          "openpi"
+          "openpi",
+          "pi0-fast",
+          "pi0-paper",
+          "pi05",
+          "pi05-ki"
         ],
         "status": "ok",
         "httpStatus": 200
@@ -914,6 +1182,47 @@
         "httpStatus": 200
       },
       {
+        "url": "https://github.com/vimalabs/VIMA",
+        "resourceIds": [
+          "vima"
+        ],
+        "status": "ok",
+        "httpStatus": 200
+      },
+      {
+        "url": "https://github.com/YanjieZe/3D-Diffusion-Policy",
+        "resourceIds": [
+          "dp3"
+        ],
+        "status": "ok",
+        "httpStatus": 200
+      },
+      {
+        "url": "https://github.com/YeWR/EfficientZero",
+        "resourceIds": [
+          "efficientzero"
+        ],
+        "status": "ok",
+        "httpStatus": 200
+      },
+      {
+        "url": "https://gr1-manipulation.github.io/",
+        "resourceIds": [
+          "demo-gr1-drawer",
+          "gr1"
+        ],
+        "status": "ok",
+        "httpStatus": 200
+      },
+      {
+        "url": "https://gr1-manipulation.github.io/static/videos/real_exp/open_the_drawer.mp4",
+        "resourceIds": [
+          "demo-gr1-drawer"
+        ],
+        "status": "ok",
+        "httpStatus": 200
+      },
+      {
         "url": "https://huggingface.co/blog/lerobot-release-v060",
         "resourceIds": [
           "article-lerobot"
@@ -962,6 +1271,23 @@
         "httpStatus": 200
       },
       {
+        "url": "https://innermonologue.github.io/",
+        "resourceIds": [
+          "demo-inner-monologue-recovery",
+          "inner-monologue"
+        ],
+        "status": "ok",
+        "httpStatus": 200
+      },
+      {
+        "url": "https://innermonologue.github.io/img/im_demo1_an.mp4",
+        "resourceIds": [
+          "demo-inner-monologue-recovery"
+        ],
+        "status": "ok",
+        "httpStatus": 200
+      },
+      {
         "url": "https://iranqin.github.io/MP5.github.io/",
         "resourceIds": [
           "mp5"
@@ -1002,6 +1328,23 @@
         "httpStatus": 200
       },
       {
+        "url": "https://mobile-aloha.github.io/",
+        "resourceIds": [
+          "demo-mobile-aloha-shrimp",
+          "mobile-aloha"
+        ],
+        "status": "ok",
+        "httpStatus": 200
+      },
+      {
+        "url": "https://mobile-aloha.github.io/resources/skills/cook_shrimp.mp4",
+        "resourceIds": [
+          "demo-mobile-aloha-shrimp"
+        ],
+        "status": "ok",
+        "httpStatus": 200
+      },
+      {
         "url": "https://octo-models.github.io/",
         "resourceIds": [
           "octo"
@@ -1014,32 +1357,32 @@
         "resourceIds": [
           "kb-c06"
         ],
-        "status": "ok",
-        "httpStatus": 200
+        "status": "unreachable",
+        "reason": "connection failed"
       },
       {
         "url": "https://ojs.aaai.org/index.php/AAAI/article/download/38842/42804",
         "resourceIds": [
           "kb-f07"
         ],
-        "status": "ok",
-        "httpStatus": 200
+        "status": "unreachable",
+        "reason": "connection failed"
       },
       {
         "url": "https://ojs.aaai.org/index.php/AAAI/article/view/30132",
         "resourceIds": [
           "kb-c06"
         ],
-        "status": "ok",
-        "httpStatus": 200
+        "status": "unreachable",
+        "reason": "connection failed"
       },
       {
         "url": "https://ojs.aaai.org/index.php/AAAI/article/view/38842",
         "resourceIds": [
           "kb-f07"
         ],
-        "status": "ok",
-        "httpStatus": 200
+        "status": "unreachable",
+        "reason": "connection failed"
       },
       {
         "url": "https://openaccess.thecvf.com/content/CVPR2024/html/Qin_MP5_A_Multi-modal_Open-ended_Embodied_System_in_Minecraft_via_Active_CVPR_2024_paper.html",
@@ -1098,9 +1441,57 @@
         "httpStatus": 403
       },
       {
+        "url": "https://openreview.net/forum?id=1ikK0kHjvj",
+        "resourceIds": [
+          "gato"
+        ],
+        "status": "ok",
+        "httpStatus": 200
+      },
+      {
+        "url": "https://openreview.net/forum?id=1W0z96MFEoH",
+        "resourceIds": [
+          "crafter"
+        ],
+        "status": "ok",
+        "httpStatus": 200
+      },
+      {
+        "url": "https://openreview.net/forum?id=F61FwJTZhb",
+        "resourceIds": [
+          "diplodocus"
+        ],
+        "status": "ok",
+        "httpStatus": 200
+      },
+      {
         "url": "https://openreview.net/forum?id=P8E4Br72j3",
         "resourceIds": [
           "voyager"
+        ],
+        "status": "ok",
+        "httpStatus": 200
+      },
+      {
+        "url": "https://openreview.net/forum?id=vhFu1Acb0xb",
+        "resourceIds": [
+          "iris"
+        ],
+        "status": "ok",
+        "httpStatus": 200
+      },
+      {
+        "url": "https://openreview.net/forum?id=vlhoswksBO",
+        "resourceIds": [
+          "pi05"
+        ],
+        "status": "ok",
+        "httpStatus": 200
+      },
+      {
+        "url": "https://openreview.net/forum?id=vsCpLiIWHu",
+        "resourceIds": [
+          "robocat"
         ],
         "status": "ok",
         "httpStatus": 200
@@ -1123,6 +1514,46 @@
         "httpStatus": 200
       },
       {
+        "url": "https://palm-e.github.io/",
+        "resourceIds": [
+          "palm-e"
+        ],
+        "status": "ok",
+        "httpStatus": 200
+      },
+      {
+        "url": "https://papers.nips.cc/paper_files/paper/2025/hash/94e936034d12bcd04834ec2773f02aff-Abstract-Conference.html",
+        "resourceIds": [
+          "pi05-ki"
+        ],
+        "status": "ok",
+        "httpStatus": 200
+      },
+      {
+        "url": "https://peract.github.io/",
+        "resourceIds": [
+          "peract"
+        ],
+        "status": "ok",
+        "httpStatus": 200
+      },
+      {
+        "url": "https://proceedings.iclr.cc/paper_files/paper/2024/file/2c37c5bcef24b9541550261dcd63261b-Paper-Conference.pdf",
+        "resourceIds": [
+          "gr1"
+        ],
+        "status": "ok",
+        "httpStatus": 200
+      },
+      {
+        "url": "https://proceedings.iclr.cc/paper_files/paper/2024/file/c383e44d9a878d1982d9abb838bd5d8a-Paper-Conference.pdf",
+        "resourceIds": [
+          "rt-trajectory"
+        ],
+        "status": "ok",
+        "httpStatus": 200
+      },
+      {
         "url": "https://proceedings.iclr.cc/paper_files/paper/2024/file/cfea00ddf5a5f514bd3368d639d1933d-Paper-Conference.pdf",
         "resourceIds": [
           "kb-c08"
@@ -1134,6 +1565,22 @@
         "url": "https://proceedings.iclr.cc/paper_files/paper/2024/file/eb60f103645fd14c94826665f8505a6d-Paper-Conference.pdf",
         "resourceIds": [
           "kb-r01"
+        ],
+        "status": "ok",
+        "httpStatus": 200
+      },
+      {
+        "url": "https://proceedings.iclr.cc/paper_files/paper/2024/hash/2c37c5bcef24b9541550261dcd63261b-Abstract-Conference.html",
+        "resourceIds": [
+          "gr1"
+        ],
+        "status": "ok",
+        "httpStatus": 200
+      },
+      {
+        "url": "https://proceedings.iclr.cc/paper_files/paper/2024/hash/c383e44d9a878d1982d9abb838bd5d8a-Abstract-Conference.html",
+        "resourceIds": [
+          "rt-trajectory"
         ],
         "status": "ok",
         "httpStatus": 200
@@ -1203,6 +1650,118 @@
         "httpStatus": 200
       },
       {
+        "url": "https://proceedings.mlr.press/v164/shridhar22a.html",
+        "resourceIds": [
+          "cliport"
+        ],
+        "status": "ok",
+        "httpStatus": 200
+      },
+      {
+        "url": "https://proceedings.mlr.press/v164/shridhar22a/shridhar22a.pdf",
+        "resourceIds": [
+          "cliport"
+        ],
+        "status": "ok",
+        "httpStatus": 200
+      },
+      {
+        "url": "https://proceedings.mlr.press/v202/driess23a.html",
+        "resourceIds": [
+          "palm-e"
+        ],
+        "status": "ok",
+        "httpStatus": 200
+      },
+      {
+        "url": "https://proceedings.mlr.press/v202/driess23a/driess23a.pdf",
+        "resourceIds": [
+          "palm-e"
+        ],
+        "status": "ok",
+        "httpStatus": 200
+      },
+      {
+        "url": "https://proceedings.mlr.press/v202/jiang23b.html",
+        "resourceIds": [
+          "vima"
+        ],
+        "status": "ok",
+        "httpStatus": 200
+      },
+      {
+        "url": "https://proceedings.mlr.press/v202/jiang23b/jiang23b.pdf",
+        "resourceIds": [
+          "vima"
+        ],
+        "status": "ok",
+        "httpStatus": 200
+      },
+      {
+        "url": "https://proceedings.mlr.press/v205/huang23c.html",
+        "resourceIds": [
+          "inner-monologue"
+        ],
+        "status": "ok",
+        "httpStatus": 200
+      },
+      {
+        "url": "https://proceedings.mlr.press/v205/huang23c/huang23c.pdf",
+        "resourceIds": [
+          "inner-monologue"
+        ],
+        "status": "ok",
+        "httpStatus": 200
+      },
+      {
+        "url": "https://proceedings.mlr.press/v205/ichter23a.html",
+        "resourceIds": [
+          "saycan"
+        ],
+        "status": "ok",
+        "httpStatus": 200
+      },
+      {
+        "url": "https://proceedings.mlr.press/v205/ichter23a/ichter23a.pdf",
+        "resourceIds": [
+          "saycan"
+        ],
+        "status": "ok",
+        "httpStatus": 200
+      },
+      {
+        "url": "https://proceedings.mlr.press/v205/nair23a.html",
+        "resourceIds": [
+          "r3m"
+        ],
+        "status": "ok",
+        "httpStatus": 200
+      },
+      {
+        "url": "https://proceedings.mlr.press/v205/nair23a/nair23a.pdf",
+        "resourceIds": [
+          "r3m"
+        ],
+        "status": "ok",
+        "httpStatus": 200
+      },
+      {
+        "url": "https://proceedings.mlr.press/v205/shridhar23a.html",
+        "resourceIds": [
+          "peract"
+        ],
+        "status": "ok",
+        "httpStatus": 200
+      },
+      {
+        "url": "https://proceedings.mlr.press/v205/shridhar23a/shridhar23a.pdf",
+        "resourceIds": [
+          "peract"
+        ],
+        "status": "ok",
+        "httpStatus": 200
+      },
+      {
         "url": "https://proceedings.mlr.press/v229/huang23b.html",
         "resourceIds": [
           "voxposer"
@@ -1251,6 +1810,14 @@
         "httpStatus": 200
       },
       {
+        "url": "https://proceedings.mlr.press/v235/bruce24a.html",
+        "resourceIds": [
+          "genie"
+        ],
+        "status": "ok",
+        "httpStatus": 200
+      },
+      {
         "url": "https://proceedings.mlr.press/v235/wagner24a.html",
         "resourceIds": [
           "kb-c03"
@@ -1283,9 +1850,25 @@
         "httpStatus": 200
       },
       {
+        "url": "https://proceedings.mlr.press/v270/fu25b.html",
+        "resourceIds": [
+          "mobile-aloha"
+        ],
+        "status": "ok",
+        "httpStatus": 200
+      },
+      {
         "url": "https://proceedings.mlr.press/v270/huang25g.html",
         "resourceIds": [
           "rekep"
+        ],
+        "status": "ok",
+        "httpStatus": 200
+      },
+      {
+        "url": "https://proceedings.mlr.press/v270/ke25a.html",
+        "resourceIds": [
+          "3d-diffuser-actor"
         ],
         "status": "ok",
         "httpStatus": 200
@@ -1307,9 +1890,25 @@
         "httpStatus": 200
       },
       {
+        "url": "https://proceedings.neurips.cc/paper_files/paper/2021/file/d5eca8dc3820cad9fe56a3bafda65ca1-Paper.pdf",
+        "resourceIds": [
+          "efficientzero"
+        ],
+        "status": "ok",
+        "httpStatus": 200
+      },
+      {
         "url": "https://proceedings.neurips.cc/paper_files/paper/2021/file/e27c71957d1e6c223e0d48a165da2ee1-Paper.pdf",
         "resourceIds": [
           "kb-c05"
+        ],
+        "status": "ok",
+        "httpStatus": 200
+      },
+      {
+        "url": "https://proceedings.neurips.cc/paper_files/paper/2021/hash/7f489f642a0ddb10272b5c31057f0663-Abstract.html",
+        "resourceIds": [
+          "decision-transformer"
         ],
         "status": "ok",
         "httpStatus": 200
@@ -1347,6 +1946,14 @@
         "httpStatus": 200
       },
       {
+        "url": "https://proceedings.neurips.cc/paper_files/paper/2022/file/b2cac94f82928a85055987d9fd44753f-Paper-Conference.pdf",
+        "resourceIds": [
+          "multi-game-dt"
+        ],
+        "status": "ok",
+        "httpStatus": 200
+      },
+      {
         "url": "https://proceedings.neurips.cc/paper_files/paper/2022/file/f4f79698d48bdc1a6dec20583724182b-Paper-Conference.pdf",
         "resourceIds": [
           "kb-c04"
@@ -1379,9 +1986,25 @@
         "httpStatus": 200
       },
       {
+        "url": "https://proceedings.neurips.cc/paper_files/paper/2022/hash/b2cac94f82928a85055987d9fd44753f-Abstract-Conference.html",
+        "resourceIds": [
+          "multi-game-dt"
+        ],
+        "status": "ok",
+        "httpStatus": 200
+      },
+      {
         "url": "https://proceedings.neurips.cc/paper_files/paper/2022/hash/f4f79698d48bdc1a6dec20583724182b-Abstract-Conference.html",
         "resourceIds": [
           "kb-c04"
+        ],
+        "status": "ok",
+        "httpStatus": 200
+      },
+      {
+        "url": "https://proceedings.neurips.cc/paper_files/paper/2023/file/022ca1bed6b574b962c48a2856eb207b-Paper-Conference.pdf",
+        "resourceIds": [
+          "vc1"
         ],
         "status": "ok",
         "httpStatus": 200
@@ -1395,9 +2018,25 @@
         "httpStatus": 200
       },
       {
+        "url": "https://proceedings.neurips.cc/paper_files/paper/2023/file/67a6726dcd555b982cabb3446ffac01d-Paper-Datasets_and_Benchmarks.pdf",
+        "resourceIds": [
+          "bedd"
+        ],
+        "status": "ok",
+        "httpStatus": 200
+      },
+      {
         "url": "https://proceedings.neurips.cc/paper_files/paper/2023/file/6b8dfb8c0c12e6fafc6c256cb08a5ca7-Paper-Conference.pdf",
         "resourceIds": [
           "deps"
+        ],
+        "status": "ok",
+        "httpStatus": 200
+      },
+      {
+        "url": "https://proceedings.neurips.cc/paper_files/paper/2023/file/765043fe026f7d704c96cec027f13843-Paper-Datasets_and_Benchmarks.pdf",
+        "resourceIds": [
+          "lightzero"
         ],
         "status": "ok",
         "httpStatus": 200
@@ -1427,6 +2066,14 @@
         "httpStatus": 200
       },
       {
+        "url": "https://proceedings.neurips.cc/paper_files/paper/2023/hash/022ca1bed6b574b962c48a2856eb207b-Abstract-Conference.html",
+        "resourceIds": [
+          "vc1"
+        ],
+        "status": "ok",
+        "httpStatus": 200
+      },
+      {
         "url": "https://proceedings.neurips.cc/paper_files/paper/2023/hash/0c1e94af650f5c74b1f3da467c2308c2-Abstract-Conference.html",
         "resourceIds": [
           "kb-c02"
@@ -1435,9 +2082,25 @@
         "httpStatus": 200
       },
       {
+        "url": "https://proceedings.neurips.cc/paper_files/paper/2023/hash/67a6726dcd555b982cabb3446ffac01d-Abstract.html",
+        "resourceIds": [
+          "bedd"
+        ],
+        "status": "ok",
+        "httpStatus": 200
+      },
+      {
         "url": "https://proceedings.neurips.cc/paper_files/paper/2023/hash/6b8dfb8c0c12e6fafc6c256cb08a5ca7-Abstract-Conference.html",
         "resourceIds": [
           "deps"
+        ],
+        "status": "ok",
+        "httpStatus": 200
+      },
+      {
+        "url": "https://proceedings.neurips.cc/paper_files/paper/2023/hash/765043fe026f7d704c96cec027f13843-Abstract-Datasets_and_Benchmarks.html",
+        "resourceIds": [
+          "lightzero"
         ],
         "status": "ok",
         "httpStatus": 200
@@ -1539,6 +2202,22 @@
         "httpStatus": 200
       },
       {
+        "url": "https://proceedings.neurips.cc/paper/2021/file/7f489f642a0ddb10272b5c31057f0663-Paper.pdf",
+        "resourceIds": [
+          "decision-transformer"
+        ],
+        "status": "ok",
+        "httpStatus": 200
+      },
+      {
+        "url": "https://proceedings.neurips.cc/paper/2021/hash/d5eca8dc3820cad9fe56a3bafda65ca1-Abstract.html",
+        "resourceIds": [
+          "efficientzero"
+        ],
+        "status": "ok",
+        "httpStatus": 200
+      },
+      {
         "url": "https://proceedings.nips.cc/paper_files/paper/2025/hash/63943ee9fe347f3d95892cf87d9a42e6-Abstract-Conference.html",
         "resourceIds": [
           "kb-w03"
@@ -1627,9 +2306,66 @@
         "httpStatus": 200
       },
       {
+        "url": "https://robotics-transformer.github.io/",
+        "resourceIds": [
+          "rt1"
+        ],
+        "status": "ok",
+        "httpStatus": 200
+      },
+      {
         "url": "https://roboticsproceedings.org/rss19/p016.html",
         "resourceIds": [
           "act"
+        ],
+        "status": "ok",
+        "httpStatus": 200
+      },
+      {
+        "url": "https://roboticsproceedings.org/rss19/p025.html",
+        "resourceIds": [
+          "rt1"
+        ],
+        "status": "ok",
+        "httpStatus": 200
+      },
+      {
+        "url": "https://rt-trajectory.github.io/",
+        "resourceIds": [
+          "rt-trajectory"
+        ],
+        "status": "ok",
+        "httpStatus": 200
+      },
+      {
+        "url": "https://say-can.github.io/",
+        "resourceIds": [
+          "demo-saycan-long-horizon",
+          "saycan"
+        ],
+        "status": "ok",
+        "httpStatus": 200
+      },
+      {
+        "url": "https://say-can.github.io/img/demo_sequence_compressed.mp4",
+        "resourceIds": [
+          "demo-saycan-long-horizon"
+        ],
+        "status": "ok",
+        "httpStatus": 200
+      },
+      {
+        "url": "https://sites.google.com/berkeley.edu/decision-transformer",
+        "resourceIds": [
+          "decision-transformer"
+        ],
+        "status": "ok",
+        "httpStatus": 200
+      },
+      {
+        "url": "https://sites.google.com/view/genie-2024/",
+        "resourceIds": [
+          "genie"
         ],
         "status": "ok",
         "httpStatus": 200
@@ -1643,9 +2379,25 @@
         "httpStatus": 200
       },
       {
+        "url": "https://sites.google.com/view/multi-game-transformers",
+        "resourceIds": [
+          "multi-game-dt"
+        ],
+        "status": "ok",
+        "httpStatus": 200
+      },
+      {
         "url": "https://sites.google.com/view/rate-model/",
         "resourceIds": [
           "kb-t02"
+        ],
+        "status": "ok",
+        "httpStatus": 200
+      },
+      {
+        "url": "https://sites.google.com/view/robot-r3m/",
+        "resourceIds": [
+          "r3m"
         ],
         "status": "ok",
         "httpStatus": 200
@@ -1663,6 +2415,23 @@
         "url": "https://tonyzhaozh.github.io/aloha/resources/slot_battery.mp4",
         "resourceIds": [
           "demo-aloha"
+        ],
+        "status": "ok",
+        "httpStatus": 200
+      },
+      {
+        "url": "https://vimalabs.github.io/",
+        "resourceIds": [
+          "demo-vima-imitation",
+          "vima"
+        ],
+        "status": "ok",
+        "httpStatus": 200
+      },
+      {
+        "url": "https://vimalabs.github.io/assets/videos/demos/one_shot_video_imitation/follow_motion/1.mp4",
+        "resourceIds": [
+          "demo-vima-imitation"
         ],
         "status": "ok",
         "httpStatus": 200
@@ -1697,6 +2466,14 @@
         "url": "https://voyager.minedojo.org/assets/videos/gallery/diamond.mp4",
         "resourceIds": [
           "demo-voyager-diamond"
+        ],
+        "status": "ok",
+        "httpStatus": 200
+      },
+      {
+        "url": "https://web.mit.edu/~gfarina/www/2023/no_press_diplomacy_iclr23/",
+        "resourceIds": [
+          "diplodocus"
         ],
         "status": "ok",
         "httpStatus": 200
@@ -1744,7 +2521,24 @@
       {
         "url": "https://www.pi.website/blog/pi0",
         "resourceIds": [
-          "article-pi0"
+          "article-pi0",
+          "pi0-paper"
+        ],
+        "status": "ok",
+        "httpStatus": 200
+      },
+      {
+        "url": "https://www.pi.website/blog/pi05",
+        "resourceIds": [
+          "pi05"
+        ],
+        "status": "ok",
+        "httpStatus": 200
+      },
+      {
+        "url": "https://www.pi.website/blog/pi07",
+        "resourceIds": [
+          "pi07"
         ],
         "status": "ok",
         "httpStatus": 200
@@ -1758,9 +2552,57 @@
         "httpStatus": 200
       },
       {
+        "url": "https://www.pi.website/research/fast",
+        "resourceIds": [
+          "pi0-fast"
+        ],
+        "status": "ok",
+        "httpStatus": 200
+      },
+      {
+        "url": "https://www.pi.website/research/human_to_robot",
+        "resourceIds": [
+          "pi05-ego"
+        ],
+        "status": "ok",
+        "httpStatus": 200
+      },
+      {
+        "url": "https://www.pi.website/research/knowledge_insulation",
+        "resourceIds": [
+          "pi05-ki"
+        ],
+        "status": "ok",
+        "httpStatus": 200
+      },
+      {
         "url": "https://www.roboticsproceedings.org/rss19/p016.pdf",
         "resourceIds": [
           "act"
+        ],
+        "status": "ok",
+        "httpStatus": 200
+      },
+      {
+        "url": "https://www.roboticsproceedings.org/rss19/p025.pdf",
+        "resourceIds": [
+          "rt1"
+        ],
+        "status": "ok",
+        "httpStatus": 200
+      },
+      {
+        "url": "https://www.roboticsproceedings.org/rss20/p067.html",
+        "resourceIds": [
+          "dp3"
+        ],
+        "status": "ok",
+        "httpStatus": 200
+      },
+      {
+        "url": "https://www.roboticsproceedings.org/rss20/p067.pdf",
+        "resourceIds": [
+          "dp3"
         ],
         "status": "ok",
         "httpStatus": 200
@@ -1809,6 +2651,30 @@
         "url": "https://www.roboticsproceedings.org/rss20/p120.pdf",
         "resourceIds": [
           "droid"
+        ],
+        "status": "ok",
+        "httpStatus": 200
+      },
+      {
+        "url": "https://www.roboticsproceedings.org/rss21/p010.html",
+        "resourceIds": [
+          "pi0-paper"
+        ],
+        "status": "ok",
+        "httpStatus": 200
+      },
+      {
+        "url": "https://www.roboticsproceedings.org/rss21/p012.html",
+        "resourceIds": [
+          "pi0-fast"
+        ],
+        "status": "ok",
+        "httpStatus": 200
+      },
+      {
+        "url": "https://www.roboticsproceedings.org/rss22/p072.html",
+        "resourceIds": [
+          "pi05-ego"
         ],
         "status": "ok",
         "httpStatus": 200
