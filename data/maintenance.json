@@ -1,10 +1,35 @@
 {
   "metricsRefresh": {
-    "checkedAt": "2026-09-21T06:18:03.201Z",
+    "checkedAt": "2026-09-28T06:50:11.539Z",
     "total": 139,
-    "refreshed": 126,
-    "preserved": 13,
+    "refreshed": 111,
+    "preserved": 28,
     "failures": [
+      {
+        "source": "OpenAlex",
+        "sourceUrl": "https://openalex.org/W4407590542",
+        "reason": "HTTP 429"
+      },
+      {
+        "source": "OpenAlex",
+        "sourceUrl": "https://openalex.org/W4399598096",
+        "reason": "HTTP 429"
+      },
+      {
+        "source": "OpenAlex",
+        "sourceUrl": "https://openalex.org/W4407185791",
+        "reason": "HTTP 429"
+      },
+      {
+        "source": "OpenAlex",
+        "sourceUrl": "https://openalex.org/W4417071139",
+        "reason": "HTTP 429"
+      },
+      {
+        "source": "OpenAlex",
+        "sourceUrl": "https://openalex.org/W4414079054",
+        "reason": "HTTP 429"
+      },
       {
         "source": "OpenAlex",
         "sourceUrl": "https://openalex.org/W4414051084",
@@ -17,8 +42,8 @@
       },
       {
         "source": "OpenAlex",
-        "sourceUrl": "https://openalex.org/W4414079054",
-        "reason": "Indexed title changed; review required"
+        "sourceUrl": "https://openalex.org/W7117736774",
+        "reason": "HTTP 429"
       },
       {
         "source": "OpenAlex",
@@ -32,7 +57,47 @@
       },
       {
         "source": "OpenAlex",
-        "sourceUrl": "https://openalex.org/W4386185624",
+        "sourceUrl": "https://openalex.org/W7135428496",
+        "reason": "HTTP 404"
+      },
+      {
+        "source": "OpenAlex",
+        "sourceUrl": "https://openalex.org/W7153669982",
+        "reason": "HTTP 404"
+      },
+      {
+        "source": "OpenAlex",
+        "sourceUrl": "https://openalex.org/W7204671282",
+        "reason": "HTTP 404"
+      },
+      {
+        "source": "OpenAlex",
+        "sourceUrl": "https://openalex.org/W4402890475",
+        "reason": "HTTP 429"
+      },
+      {
+        "source": "OpenAlex",
+        "sourceUrl": "https://openalex.org/W4283218993",
+        "reason": "HTTP 429"
+      },
+      {
+        "source": "OpenAlex",
+        "sourceUrl": "https://openalex.org/W7163287888",
+        "reason": "HTTP 404"
+      },
+      {
+        "source": "OpenAlex",
+        "sourceUrl": "https://openalex.org/W4309663019",
+        "reason": "HTTP 429"
+      },
+      {
+        "source": "OpenAlex",
+        "sourceUrl": "https://openalex.org/W4294435908",
+        "reason": "HTTP 429"
+      },
+      {
+        "source": "OpenAlex",
+        "sourceUrl": "https://openalex.org/W4392182423",
         "reason": "HTTP 429"
       },
       {
@@ -42,18 +107,28 @@
       },
       {
         "source": "OpenAlex",
+        "sourceUrl": "https://openalex.org/W4305033123",
+        "reason": "HTTP 429"
+      },
+      {
+        "source": "OpenAlex",
         "sourceUrl": "https://openalex.org/W4224912544",
         "reason": "HTTP 429"
       },
       {
         "source": "OpenAlex",
-        "sourceUrl": "https://openalex.org/W4385430679",
+        "sourceUrl": "https://openalex.org/W4323572061",
         "reason": "HTTP 429"
       },
       {
         "source": "OpenAlex",
         "sourceUrl": "https://openalex.org/W4390635563",
         "reason": "Indexed title changed; review required"
+      },
+      {
+        "source": "OpenAlex",
+        "sourceUrl": "https://openalex.org/W4390136276",
+        "reason": "HTTP 429"
       },
       {
         "source": "OpenAlex",
@@ -67,18 +142,18 @@
       },
       {
         "source": "OpenAlex",
-        "sourceUrl": "https://openalex.org/W4388512477",
+        "sourceUrl": "https://openalex.org/W4383097638",
         "reason": "HTTP 429"
       }
     ]
   },
   "linkCheck": {
-    "checkedAt": "2026-09-21T06:18:46.313Z",
+    "checkedAt": "2026-09-28T06:50:52.879Z",
     "total": 321,
     "summary": {
-      "ok": 305,
+      "ok": 298,
       "broken": 0,
-      "restricted": 12,
+      "restricted": 19,
       "unreachable": 4
     },
     "results": [
@@ -2524,56 +2599,56 @@
           "article-pi0",
           "pi0-paper"
         ],
-        "status": "ok",
-        "httpStatus": 200
+        "status": "restricted",
+        "httpStatus": 429
       },
       {
         "url": "https://www.pi.website/blog/pi05",
         "resourceIds": [
           "pi05"
         ],
-        "status": "ok",
-        "httpStatus": 200
+        "status": "restricted",
+        "httpStatus": 429
       },
       {
         "url": "https://www.pi.website/blog/pi07",
         "resourceIds": [
           "pi07"
         ],
-        "status": "ok",
-        "httpStatus": 200
+        "status": "restricted",
+        "httpStatus": 429
       },
       {
         "url": "https://www.pi.website/blog/pistar06",
         "resourceIds": [
           "pi-star06"
         ],
-        "status": "ok",
-        "httpStatus": 200
+        "status": "restricted",
+        "httpStatus": 429
       },
       {
         "url": "https://www.pi.website/research/fast",
         "resourceIds": [
           "pi0-fast"
         ],
-        "status": "ok",
-        "httpStatus": 200
+        "status": "restricted",
+        "httpStatus": 429
       },
       {
         "url": "https://www.pi.website/research/human_to_robot",
         "resourceIds": [
           "pi05-ego"
         ],
-        "status": "ok",
-        "httpStatus": 200
+        "status": "restricted",
+        "httpStatus": 429
       },
       {
         "url": "https://www.pi.website/research/knowledge_insulation",
         "resourceIds": [
           "pi05-ki"
         ],
-        "status": "ok",
-        "httpStatus": 200
+        "status": "restricted",
+        "httpStatus": 429
       },
       {
         "url": "https://www.roboticsproceedings.org/rss19/p016.pdf",
