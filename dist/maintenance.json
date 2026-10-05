@@ -1,18 +1,38 @@
 {
   "metricsRefresh": {
-    "checkedAt": "2026-09-28T06:50:11.539Z",
+    "checkedAt": "2026-10-05T07:00:03.292Z",
     "total": 139,
-    "refreshed": 111,
-    "preserved": 28,
+    "refreshed": 101,
+    "preserved": 38,
     "failures": [
       {
         "source": "OpenAlex",
-        "sourceUrl": "https://openalex.org/W4407590542",
+        "sourceUrl": "https://openalex.org/W4283460722",
         "reason": "HTTP 429"
       },
       {
         "source": "OpenAlex",
-        "sourceUrl": "https://openalex.org/W4399598096",
+        "sourceUrl": "https://openalex.org/W4379357893",
+        "reason": "HTTP 429"
+      },
+      {
+        "source": "OpenAlex",
+        "sourceUrl": "https://openalex.org/W4399695759",
+        "reason": "HTTP 429"
+      },
+      {
+        "source": "OpenAlex",
+        "sourceUrl": "https://openalex.org/W4385430674",
+        "reason": "HTTP 429"
+      },
+      {
+        "source": "OpenAlex",
+        "sourceUrl": "https://openalex.org/W4384264726",
+        "reason": "HTTP 429"
+      },
+      {
+        "source": "OpenAlex",
+        "sourceUrl": "https://openalex.org/W4402955063",
         "reason": "HTTP 429"
       },
       {
@@ -32,7 +52,17 @@
       },
       {
         "source": "OpenAlex",
+        "sourceUrl": "https://openalex.org/W4417086995",
+        "reason": "HTTP 429"
+      },
+      {
+        "source": "OpenAlex",
         "sourceUrl": "https://openalex.org/W4414051084",
+        "reason": "HTTP 429"
+      },
+      {
+        "source": "OpenAlex",
+        "sourceUrl": "https://openalex.org/W4414674749",
         "reason": "HTTP 429"
       },
       {
@@ -67,7 +97,7 @@
       },
       {
         "source": "OpenAlex",
-        "sourceUrl": "https://openalex.org/W7204671282",
+        "sourceUrl": "https://openalex.org/W7163287888",
         "reason": "HTTP 404"
       },
       {
@@ -77,22 +107,27 @@
       },
       {
         "source": "OpenAlex",
+        "sourceUrl": "https://openalex.org/W7204671282",
+        "reason": "HTTP 404"
+      },
+      {
+        "source": "OpenAlex",
+        "sourceUrl": "https://openalex.org/W4416422407",
+        "reason": "HTTP 429"
+      },
+      {
+        "source": "OpenAlex",
         "sourceUrl": "https://openalex.org/W4283218993",
         "reason": "HTTP 429"
       },
       {
         "source": "OpenAlex",
-        "sourceUrl": "https://openalex.org/W7163287888",
-        "reason": "HTTP 404"
-      },
-      {
-        "source": "OpenAlex",
-        "sourceUrl": "https://openalex.org/W4309663019",
+        "sourceUrl": "https://openalex.org/W4387764390",
         "reason": "HTTP 429"
       },
       {
         "source": "OpenAlex",
-        "sourceUrl": "https://openalex.org/W4294435908",
+        "sourceUrl": "https://openalex.org/W4310705874",
         "reason": "HTTP 429"
       },
       {
@@ -102,12 +137,17 @@
       },
       {
         "source": "OpenAlex",
+        "sourceUrl": "https://openalex.org/W4389469779",
+        "reason": "HTTP 429"
+      },
+      {
+        "source": "OpenAlex",
         "sourceUrl": "https://openalex.org/W4281663178",
         "reason": "HTTP 429"
       },
       {
         "source": "OpenAlex",
-        "sourceUrl": "https://openalex.org/W4305033123",
+        "sourceUrl": "https://openalex.org/W3169291081",
         "reason": "HTTP 429"
       },
       {
@@ -122,8 +162,18 @@
       },
       {
         "source": "OpenAlex",
+        "sourceUrl": "https://openalex.org/W4385430679",
+        "reason": "HTTP 429"
+      },
+      {
+        "source": "OpenAlex",
+        "sourceUrl": "https://openalex.org/W4221159977",
+        "reason": "HTTP 429"
+      },
+      {
+        "source": "OpenAlex",
         "sourceUrl": "https://openalex.org/W4390635563",
-        "reason": "Indexed title changed; review required"
+        "reason": "HTTP 429"
       },
       {
         "source": "OpenAlex",
@@ -132,7 +182,7 @@
       },
       {
         "source": "OpenAlex",
-        "sourceUrl": "https://openalex.org/W4391949089",
+        "sourceUrl": "https://openalex.org/W4402354045",
         "reason": "HTTP 429"
       },
       {
@@ -148,13 +198,13 @@
     ]
   },
   "linkCheck": {
-    "checkedAt": "2026-09-28T06:50:52.879Z",
+    "checkedAt": "2026-10-05T07:00:41.808Z",
     "total": 321,
     "summary": {
-      "ok": 298,
+      "ok": 302,
       "broken": 0,
       "restricted": 19,
-      "unreachable": 4
+      "unreachable": 0
     },
     "results": [
       {
@@ -1432,32 +1482,32 @@
         "resourceIds": [
           "kb-c06"
         ],
-        "status": "unreachable",
-        "reason": "connection failed"
+        "status": "ok",
+        "httpStatus": 200
       },
       {
         "url": "https://ojs.aaai.org/index.php/AAAI/article/download/38842/42804",
         "resourceIds": [
           "kb-f07"
         ],
-        "status": "unreachable",
-        "reason": "connection failed"
+        "status": "ok",
+        "httpStatus": 200
       },
       {
         "url": "https://ojs.aaai.org/index.php/AAAI/article/view/30132",
         "resourceIds": [
           "kb-c06"
         ],
-        "status": "unreachable",
-        "reason": "connection failed"
+        "status": "ok",
+        "httpStatus": 200
       },
       {
         "url": "https://ojs.aaai.org/index.php/AAAI/article/view/38842",
         "resourceIds": [
           "kb-f07"
         ],
-        "status": "unreachable",
-        "reason": "connection failed"
+        "status": "ok",
+        "httpStatus": 200
       },
       {
         "url": "https://openaccess.thecvf.com/content/CVPR2024/html/Qin_MP5_A_Multi-modal_Open-ended_Embodied_System_in_Minecraft_via_Active_CVPR_2024_paper.html",
