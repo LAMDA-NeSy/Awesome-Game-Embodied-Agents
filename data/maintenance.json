@@ -1,13 +1,18 @@
 {
   "metricsRefresh": {
-    "checkedAt": "2026-10-05T07:00:03.292Z",
+    "checkedAt": "2026-10-12T07:19:27.540Z",
     "total": 139,
-    "refreshed": 101,
-    "preserved": 38,
+    "refreshed": 97,
+    "preserved": 42,
     "failures": [
       {
         "source": "OpenAlex",
-        "sourceUrl": "https://openalex.org/W4283460722",
+        "sourceUrl": "https://openalex.org/W4319323461",
+        "reason": "HTTP 429"
+      },
+      {
+        "source": "OpenAlex",
+        "sourceUrl": "https://openalex.org/W4378505261",
         "reason": "HTTP 429"
       },
       {
@@ -22,7 +27,7 @@
       },
       {
         "source": "OpenAlex",
-        "sourceUrl": "https://openalex.org/W4385430674",
+        "sourceUrl": "https://openalex.org/W4385473486",
         "reason": "HTTP 429"
       },
       {
@@ -42,17 +47,22 @@
       },
       {
         "source": "OpenAlex",
+        "sourceUrl": "https://openalex.org/W4399598096",
+        "reason": "HTTP 429"
+      },
+      {
+        "source": "OpenAlex",
+        "sourceUrl": "https://openalex.org/W4417086995",
+        "reason": "HTTP 429"
+      },
+      {
+        "source": "OpenAlex",
         "sourceUrl": "https://openalex.org/W4417071139",
         "reason": "HTTP 429"
       },
       {
         "source": "OpenAlex",
         "sourceUrl": "https://openalex.org/W4414079054",
-        "reason": "HTTP 429"
-      },
-      {
-        "source": "OpenAlex",
-        "sourceUrl": "https://openalex.org/W4417086995",
         "reason": "HTTP 429"
       },
       {
@@ -77,11 +87,6 @@
       },
       {
         "source": "OpenAlex",
-        "sourceUrl": "https://openalex.org/W7155019052",
-        "reason": "HTTP 429"
-      },
-      {
-        "source": "OpenAlex",
         "sourceUrl": "https://openalex.org/W4417215404",
         "reason": "HTTP 429"
       },
@@ -92,23 +97,18 @@
       },
       {
         "source": "OpenAlex",
+        "sourceUrl": "https://openalex.org/W7204885827",
+        "reason": "HTTP 429"
+      },
+      {
+        "source": "OpenAlex",
         "sourceUrl": "https://openalex.org/W7153669982",
         "reason": "HTTP 404"
       },
       {
         "source": "OpenAlex",
-        "sourceUrl": "https://openalex.org/W7163287888",
-        "reason": "HTTP 404"
-      },
-      {
-        "source": "OpenAlex",
-        "sourceUrl": "https://openalex.org/W4402890475",
-        "reason": "HTTP 429"
-      },
-      {
-        "source": "OpenAlex",
         "sourceUrl": "https://openalex.org/W7204671282",
-        "reason": "HTTP 404"
+        "reason": "HTTP 429"
       },
       {
         "source": "OpenAlex",
@@ -127,6 +127,21 @@
       },
       {
         "source": "OpenAlex",
+        "sourceUrl": "https://openalex.org/W7163287888",
+        "reason": "HTTP 404"
+      },
+      {
+        "source": "OpenAlex",
+        "sourceUrl": "https://openalex.org/W3208460365",
+        "reason": "HTTP 429"
+      },
+      {
+        "source": "OpenAlex",
+        "sourceUrl": "https://openalex.org/W4309663019",
+        "reason": "HTTP 429"
+      },
+      {
+        "source": "OpenAlex",
         "sourceUrl": "https://openalex.org/W4310705874",
         "reason": "HTTP 429"
       },
@@ -137,7 +152,7 @@
       },
       {
         "source": "OpenAlex",
-        "sourceUrl": "https://openalex.org/W4389469779",
+        "sourceUrl": "https://openalex.org/W3201036908",
         "reason": "HTTP 429"
       },
       {
@@ -147,7 +162,7 @@
       },
       {
         "source": "OpenAlex",
-        "sourceUrl": "https://openalex.org/W3169291081",
+        "sourceUrl": "https://openalex.org/W4305033123",
         "reason": "HTTP 429"
       },
       {
@@ -167,7 +182,7 @@
       },
       {
         "source": "OpenAlex",
-        "sourceUrl": "https://openalex.org/W4221159977",
+        "sourceUrl": "https://openalex.org/W4362514550",
         "reason": "HTTP 429"
       },
       {
@@ -182,12 +197,17 @@
       },
       {
         "source": "OpenAlex",
-        "sourceUrl": "https://openalex.org/W4402354045",
+        "sourceUrl": "https://openalex.org/W4391949089",
         "reason": "HTTP 429"
       },
       {
         "source": "OpenAlex",
         "sourceUrl": "https://openalex.org/W4285428875",
+        "reason": "HTTP 429"
+      },
+      {
+        "source": "OpenAlex",
+        "sourceUrl": "https://openalex.org/W4388512477",
         "reason": "HTTP 429"
       },
       {
@@ -198,7 +218,7 @@
     ]
   },
   "linkCheck": {
-    "checkedAt": "2026-10-05T07:00:41.808Z",
+    "checkedAt": "2026-10-12T07:20:05.870Z",
     "total": 321,
     "summary": {
       "ok": 302,
