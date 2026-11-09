@@ -1,14 +1,124 @@
 {
   "metricsRefresh": {
-    "checkedAt": "2026-11-02T07:38:41.707Z",
+    "checkedAt": "2026-11-09T07:54:43.204Z",
     "total": 139,
-    "refreshed": 129,
-    "preserved": 10,
+    "refreshed": 105,
+    "preserved": 34,
     "failures": [
       {
         "source": "OpenAlex",
-        "sourceUrl": "https://openalex.org/W4414079054",
+        "sourceUrl": "https://openalex.org/W4319323461",
         "reason": "Indexed title changed; review required"
+      },
+      {
+        "source": "OpenAlex",
+        "sourceUrl": "https://openalex.org/W4399695759",
+        "reason": "HTTP 429"
+      },
+      {
+        "source": "OpenAlex",
+        "sourceUrl": "https://openalex.org/W4385403811",
+        "reason": "HTTP 429"
+      },
+      {
+        "source": "OpenAlex",
+        "sourceUrl": "https://openalex.org/W4384264726",
+        "reason": "HTTP 429"
+      },
+      {
+        "source": "OpenAlex",
+        "sourceUrl": "https://openalex.org/W4402955063",
+        "reason": "HTTP 429"
+      },
+      {
+        "source": "OpenAlex",
+        "sourceUrl": "https://openalex.org/W4402354007",
+        "reason": "HTTP 429"
+      },
+      {
+        "source": "OpenAlex",
+        "sourceUrl": "https://openalex.org/W4407185791",
+        "reason": "HTTP 429"
+      },
+      {
+        "source": "OpenAlex",
+        "sourceUrl": "https://openalex.org/W4417071139",
+        "reason": "HTTP 429"
+      },
+      {
+        "source": "OpenAlex",
+        "sourceUrl": "https://openalex.org/W4417086995",
+        "reason": "HTTP 429"
+      },
+      {
+        "source": "OpenAlex",
+        "sourceUrl": "https://openalex.org/W4414079054",
+        "reason": "HTTP 429"
+      },
+      {
+        "source": "OpenAlex",
+        "sourceUrl": "https://openalex.org/W4414051084",
+        "reason": "HTTP 429"
+      },
+      {
+        "source": "OpenAlex",
+        "sourceUrl": "https://openalex.org/W4416613198",
+        "reason": "HTTP 429"
+      },
+      {
+        "source": "OpenAlex",
+        "sourceUrl": "https://openalex.org/W7117736774",
+        "reason": "HTTP 429"
+      },
+      {
+        "source": "OpenAlex",
+        "sourceUrl": "https://openalex.org/W4417215404",
+        "reason": "HTTP 429"
+      },
+      {
+        "source": "OpenAlex",
+        "sourceUrl": "https://openalex.org/W7163287888",
+        "reason": "HTTP 429"
+      },
+      {
+        "source": "OpenAlex",
+        "sourceUrl": "https://openalex.org/W4416422407",
+        "reason": "HTTP 429"
+      },
+      {
+        "source": "OpenAlex",
+        "sourceUrl": "https://openalex.org/W4402890475",
+        "reason": "HTTP 429"
+      },
+      {
+        "source": "OpenAlex",
+        "sourceUrl": "https://openalex.org/W4283218993",
+        "reason": "HTTP 429"
+      },
+      {
+        "source": "OpenAlex",
+        "sourceUrl": "https://openalex.org/W4387764390",
+        "reason": "HTTP 429"
+      },
+      {
+        "source": "OpenAlex",
+        "sourceUrl": "https://openalex.org/W4386185624",
+        "reason": "HTTP 429"
+      },
+      {
+        "source": "OpenAlex",
+        "sourceUrl": "https://openalex.org/W4307868887",
+        "reason": "HTTP 429"
+      },
+      {
+        "source": "OpenAlex",
+        "sourceUrl": "https://openalex.org/W4310705874",
+        "reason": "HTTP 429"
+      },
+      {
+        "source": "OpenAlex",
+        "sourceUrl": "https://openalex.org/W4392182423",
+        "reason": "HTTP 429"
       },
       {
         "source": "OpenAlex",
@@ -27,23 +137,28 @@
       },
       {
         "source": "OpenAlex",
-        "sourceUrl": "https://openalex.org/W4224912544",
-        "reason": "HTTP 429"
-      },
-      {
-        "source": "OpenAlex",
         "sourceUrl": "https://openalex.org/W4323572061",
         "reason": "HTTP 429"
       },
       {
         "source": "OpenAlex",
-        "sourceUrl": "https://openalex.org/W4381586832",
+        "sourceUrl": "https://openalex.org/W4385430679",
+        "reason": "HTTP 429"
+      },
+      {
+        "source": "OpenAlex",
+        "sourceUrl": "https://openalex.org/W4303648971",
         "reason": "HTTP 429"
       },
       {
         "source": "OpenAlex",
         "sourceUrl": "https://openalex.org/W4390635563",
-        "reason": "Indexed title changed; review required"
+        "reason": "HTTP 429"
+      },
+      {
+        "source": "OpenAlex",
+        "sourceUrl": "https://openalex.org/W4390136276",
+        "reason": "HTTP 429"
       },
       {
         "source": "OpenAlex",
@@ -54,17 +169,22 @@
         "source": "OpenAlex",
         "sourceUrl": "https://openalex.org/W4388512477",
         "reason": "HTTP 429"
+      },
+      {
+        "source": "OpenAlex",
+        "sourceUrl": "https://openalex.org/W4383097638",
+        "reason": "HTTP 429"
       }
     ]
   },
   "linkCheck": {
-    "checkedAt": "2026-11-02T07:39:24.073Z",
+    "checkedAt": "2026-11-09T08:04:16.748Z",
     "total": 321,
     "summary": {
-      "ok": 313,
+      "ok": 225,
       "broken": 0,
       "restricted": 8,
-      "unreachable": 0
+      "unreachable": 88
     },
     "results": [
       {
@@ -776,8 +896,8 @@
         "resourceIds": [
           "ai2thor"
         ],
-        "status": "ok",
-        "httpStatus": 200
+        "status": "unreachable",
+        "httpStatus": 504
       },
       {
         "url": "https://github.com/anyboby/contextual-similarity-distillation",
@@ -792,24 +912,24 @@
         "resourceIds": [
           "gr1"
         ],
-        "status": "ok",
-        "httpStatus": 200
+        "status": "unreachable",
+        "httpStatus": 504
       },
       {
         "url": "https://github.com/cliport/cliport",
         "resourceIds": [
           "cliport"
         ],
-        "status": "ok",
-        "httpStatus": 200
+        "status": "unreachable",
+        "httpStatus": 504
       },
       {
         "url": "https://github.com/danijar/crafter",
         "resourceIds": [
           "crafter"
         ],
-        "status": "ok",
-        "httpStatus": 200
+        "status": "unreachable",
+        "httpStatus": 504
       },
       {
         "url": "https://github.com/danijar/dreamerv3",
@@ -824,8 +944,8 @@
         "resourceIds": [
           "droid"
         ],
-        "status": "ok",
-        "httpStatus": 200
+        "status": "unreachable",
+        "httpStatus": 504
       },
       {
         "url": "https://github.com/eloialonso/diamond",
@@ -841,8 +961,8 @@
         "resourceIds": [
           "iris"
         ],
-        "status": "ok",
-        "httpStatus": 200
+        "status": "unreachable",
+        "httpStatus": 504
       },
       {
         "url": "https://github.com/EmbodiedBench/EmbodiedBench",
@@ -858,56 +978,56 @@
           "cicero",
           "diplodocus"
         ],
-        "status": "ok",
-        "httpStatus": 200
+        "status": "unreachable",
+        "httpStatus": 504
       },
       {
         "url": "https://github.com/facebookresearch/eai-vc",
         "resourceIds": [
           "vc1"
         ],
-        "status": "ok",
-        "httpStatus": 200
+        "status": "unreachable",
+        "httpStatus": 504
       },
       {
         "url": "https://github.com/facebookresearch/habitat-lab",
         "resourceIds": [
           "habitat"
         ],
-        "status": "ok",
-        "httpStatus": 200
+        "status": "unreachable",
+        "httpStatus": 504
       },
       {
         "url": "https://github.com/facebookresearch/r3m",
         "resourceIds": [
           "r3m"
         ],
-        "status": "ok",
-        "httpStatus": 200
+        "status": "unreachable",
+        "httpStatus": 504
       },
       {
         "url": "https://github.com/Farama-Foundation/Gymnasium",
         "resourceIds": [
           "gymnasium"
         ],
-        "status": "ok",
-        "httpStatus": 200
+        "status": "unreachable",
+        "httpStatus": 504
       },
       {
         "url": "https://github.com/Farama-Foundation/PettingZoo",
         "resourceIds": [
           "pettingzoo"
         ],
-        "status": "ok",
-        "httpStatus": 200
+        "status": "unreachable",
+        "httpStatus": 504
       },
       {
         "url": "https://github.com/Farama-Foundation/ViZDoom",
         "resourceIds": [
           "vizdoom"
         ],
-        "status": "ok",
-        "httpStatus": 200
+        "status": "unreachable",
+        "httpStatus": 504
       },
       {
         "url": "https://github.com/Genesis-Embodied-AI/genesis-world",
@@ -930,8 +1050,8 @@
         "resourceIds": [
           "rt1"
         ],
-        "status": "ok",
-        "httpStatus": 200
+        "status": "unreachable",
+        "httpStatus": 504
       },
       {
         "url": "https://github.com/huangwl18/ReKep",
@@ -946,8 +1066,8 @@
         "resourceIds": [
           "voxposer"
         ],
-        "status": "ok",
-        "httpStatus": 200
+        "status": "unreachable",
+        "httpStatus": 504
       },
       {
         "url": "https://github.com/huggingface/lerobot",
@@ -970,24 +1090,24 @@
         "resourceIds": [
           "mp5"
         ],
-        "status": "ok",
-        "httpStatus": 200
+        "status": "unreachable",
+        "httpStatus": 504
       },
       {
         "url": "https://github.com/kzl/decision-transformer",
         "resourceIds": [
           "decision-transformer"
         ],
-        "status": "ok",
-        "httpStatus": 200
+        "status": "unreachable",
+        "httpStatus": 504
       },
       {
         "url": "https://github.com/LeapLabTHU/MOSS",
         "resourceIds": [
           "kb-c09"
         ],
-        "status": "ok",
-        "httpStatus": 200
+        "status": "unreachable",
+        "httpStatus": 504
       },
       {
         "url": "https://github.com/Lifelong-Robot-Learning/LIBERO",
@@ -1002,32 +1122,32 @@
         "resourceIds": [
           "kb-s01"
         ],
-        "status": "ok",
-        "httpStatus": 200
+        "status": "unreachable",
+        "httpStatus": 504
       },
       {
         "url": "https://github.com/mahaozhe/DuRND",
         "resourceIds": [
           "kb-r02"
         ],
-        "status": "ok",
-        "httpStatus": 200
+        "status": "unreachable",
+        "httpStatus": 504
       },
       {
         "url": "https://github.com/mani-skill/ManiSkill",
         "resourceIds": [
           "maniskill"
         ],
-        "status": "ok",
-        "httpStatus": 200
+        "status": "unreachable",
+        "httpStatus": 504
       },
       {
         "url": "https://github.com/MarkFzp/mobile-aloha",
         "resourceIds": [
           "mobile-aloha"
         ],
-        "status": "ok",
-        "httpStatus": 200
+        "status": "unreachable",
+        "httpStatus": 504
       },
       {
         "url": "https://github.com/microsoft/Imitating-Human-Behaviour-w-Diffusion",
@@ -1050,8 +1170,8 @@
         "resourceIds": [
           "minedojo"
         ],
-        "status": "ok",
-        "httpStatus": 200
+        "status": "unreachable",
+        "httpStatus": 504
       },
       {
         "url": "https://github.com/MineDojo/Voyager",
@@ -1060,8 +1180,8 @@
           "demo-voyager-diamond",
           "voyager"
         ],
-        "status": "ok",
-        "httpStatus": 200
+        "status": "unreachable",
+        "httpStatus": 504
       },
       {
         "url": "https://github.com/minerllabs/basalt-benchmark",
@@ -1084,8 +1204,8 @@
         "resourceIds": [
           "lightzero"
         ],
-        "status": "ok",
-        "httpStatus": 200
+        "status": "unreachable",
+        "httpStatus": 504
       },
       {
         "url": "https://github.com/openvla/openvla",
@@ -1093,16 +1213,16 @@
           "demo-openvla",
           "openvla"
         ],
-        "status": "ok",
-        "httpStatus": 200
+        "status": "unreachable",
+        "httpStatus": 504
       },
       {
         "url": "https://github.com/peract/peract",
         "resourceIds": [
           "peract"
         ],
-        "status": "ok",
-        "httpStatus": 200
+        "status": "unreachable",
+        "httpStatus": 504
       },
       {
         "url": "https://github.com/Physical-Intelligence/openpi",
@@ -1113,16 +1233,16 @@
           "pi05",
           "pi05-ki"
         ],
-        "status": "ok",
-        "httpStatus": 200
+        "status": "unreachable",
+        "httpStatus": 504
       },
       {
         "url": "https://github.com/rail-berkeley/bridge_data_v2",
         "resourceIds": [
           "bridgedata-v2"
         ],
-        "status": "ok",
-        "httpStatus": 200
+        "status": "unreachable",
+        "httpStatus": 504
       },
       {
         "url": "https://github.com/real-stanford/diffusion_policy",
@@ -1139,8 +1259,8 @@
         "resourceIds": [
           "kb-c03"
         ],
-        "status": "ok",
-        "httpStatus": 200
+        "status": "unreachable",
+        "httpStatus": 504
       },
       {
         "url": "https://github.com/tencent-facul/code",
@@ -1171,24 +1291,24 @@
         "resourceIds": [
           "vima"
         ],
-        "status": "ok",
-        "httpStatus": 200
+        "status": "unreachable",
+        "httpStatus": 504
       },
       {
         "url": "https://github.com/YanjieZe/3D-Diffusion-Policy",
         "resourceIds": [
           "dp3"
         ],
-        "status": "ok",
-        "httpStatus": 200
+        "status": "unreachable",
+        "httpStatus": 504
       },
       {
         "url": "https://github.com/YeWR/EfficientZero",
         "resourceIds": [
           "efficientzero"
         ],
-        "status": "ok",
-        "httpStatus": 200
+        "status": "unreachable",
+        "httpStatus": 504
       },
       {
         "url": "https://gr1-manipulation.github.io/",
@@ -1511,8 +1631,8 @@
         "resourceIds": [
           "pi05-ki"
         ],
-        "status": "ok",
-        "httpStatus": 200
+        "status": "unreachable",
+        "reason": "connection failed"
       },
       {
         "url": "https://peract.github.io/",
@@ -1527,96 +1647,96 @@
         "resourceIds": [
           "gr1"
         ],
-        "status": "ok",
-        "httpStatus": 200
+        "status": "unreachable",
+        "reason": "connection failed"
       },
       {
         "url": "https://proceedings.iclr.cc/paper_files/paper/2024/file/c383e44d9a878d1982d9abb838bd5d8a-Paper-Conference.pdf",
         "resourceIds": [
           "rt-trajectory"
         ],
-        "status": "ok",
-        "httpStatus": 200
+        "status": "unreachable",
+        "reason": "connection failed"
       },
       {
         "url": "https://proceedings.iclr.cc/paper_files/paper/2024/file/cfea00ddf5a5f514bd3368d639d1933d-Paper-Conference.pdf",
         "resourceIds": [
           "kb-c08"
         ],
-        "status": "ok",
-        "httpStatus": 200
+        "status": "unreachable",
+        "reason": "connection failed"
       },
       {
         "url": "https://proceedings.iclr.cc/paper_files/paper/2024/file/eb60f103645fd14c94826665f8505a6d-Paper-Conference.pdf",
         "resourceIds": [
           "kb-r01"
         ],
-        "status": "ok",
-        "httpStatus": 200
+        "status": "unreachable",
+        "reason": "connection failed"
       },
       {
         "url": "https://proceedings.iclr.cc/paper_files/paper/2024/hash/2c37c5bcef24b9541550261dcd63261b-Abstract-Conference.html",
         "resourceIds": [
           "gr1"
         ],
-        "status": "ok",
-        "httpStatus": 200
+        "status": "unreachable",
+        "reason": "connection failed"
       },
       {
         "url": "https://proceedings.iclr.cc/paper_files/paper/2024/hash/c383e44d9a878d1982d9abb838bd5d8a-Abstract-Conference.html",
         "resourceIds": [
           "rt-trajectory"
         ],
-        "status": "ok",
-        "httpStatus": 200
+        "status": "unreachable",
+        "reason": "connection failed"
       },
       {
         "url": "https://proceedings.iclr.cc/paper_files/paper/2024/hash/cfea00ddf5a5f514bd3368d639d1933d-Abstract-Conference.html",
         "resourceIds": [
           "kb-c08"
         ],
-        "status": "ok",
-        "httpStatus": 200
+        "status": "unreachable",
+        "reason": "connection failed"
       },
       {
         "url": "https://proceedings.iclr.cc/paper_files/paper/2024/hash/eb60f103645fd14c94826665f8505a6d-Abstract-Conference.html",
         "resourceIds": [
           "kb-r01"
         ],
-        "status": "ok",
-        "httpStatus": 200
+        "status": "unreachable",
+        "reason": "connection failed"
       },
       {
         "url": "https://proceedings.iclr.cc/paper_files/paper/2025/file/5ab848771ff8c9c47aac4128e2ef9f4e-Paper-Conference.pdf",
         "resourceIds": [
           "kb-b02"
         ],
-        "status": "ok",
-        "httpStatus": 200
+        "status": "unreachable",
+        "reason": "connection failed"
       },
       {
         "url": "https://proceedings.iclr.cc/paper_files/paper/2025/file/b71ecea210f7159f31e46631fe5c838f-Paper-Conference.pdf",
         "resourceIds": [
           "kb-w01"
         ],
-        "status": "ok",
-        "httpStatus": 200
+        "status": "unreachable",
+        "reason": "connection failed"
       },
       {
         "url": "https://proceedings.iclr.cc/paper_files/paper/2025/hash/5ab848771ff8c9c47aac4128e2ef9f4e-Abstract-Conference.html",
         "resourceIds": [
           "kb-b02"
         ],
-        "status": "ok",
-        "httpStatus": 200
+        "status": "unreachable",
+        "reason": "connection failed"
       },
       {
         "url": "https://proceedings.iclr.cc/paper_files/paper/2025/hash/b71ecea210f7159f31e46631fe5c838f-Abstract-Conference.html",
         "resourceIds": [
           "kb-w01"
         ],
-        "status": "ok",
-        "httpStatus": 200
+        "status": "unreachable",
+        "reason": "connection failed"
       },
       {
         "url": "https://proceedings.mlr.press/v162/huang22f.html",
@@ -1879,336 +1999,336 @@
         "resourceIds": [
           "efficientzero"
         ],
-        "status": "ok",
-        "httpStatus": 200
+        "status": "unreachable",
+        "reason": "connection failed"
       },
       {
         "url": "https://proceedings.neurips.cc/paper_files/paper/2021/file/e27c71957d1e6c223e0d48a165da2ee1-Paper.pdf",
         "resourceIds": [
           "kb-c05"
         ],
-        "status": "ok",
-        "httpStatus": 200
+        "status": "unreachable",
+        "reason": "connection failed"
       },
       {
         "url": "https://proceedings.neurips.cc/paper_files/paper/2021/hash/7f489f642a0ddb10272b5c31057f0663-Abstract.html",
         "resourceIds": [
           "decision-transformer"
         ],
-        "status": "ok",
-        "httpStatus": 200
+        "status": "unreachable",
+        "reason": "connection failed"
       },
       {
         "url": "https://proceedings.neurips.cc/paper_files/paper/2021/hash/e27c71957d1e6c223e0d48a165da2ee1-Abstract.html",
         "resourceIds": [
           "kb-c05"
         ],
-        "status": "ok",
-        "httpStatus": 200
+        "status": "unreachable",
+        "reason": "connection failed"
       },
       {
         "url": "https://proceedings.neurips.cc/paper_files/paper/2022/file/74a67268c5cc5910f64938cac4526a90-Paper-Datasets_and_Benchmarks.pdf",
         "resourceIds": [
           "minedojo"
         ],
-        "status": "ok",
-        "httpStatus": 200
+        "status": "unreachable",
+        "reason": "connection failed"
       },
       {
         "url": "https://proceedings.neurips.cc/paper_files/paper/2022/file/9c7008aff45b5d8f0973b23e1a22ada0-Paper-Conference.pdf",
         "resourceIds": [
           "vpt"
         ],
-        "status": "ok",
-        "httpStatus": 200
+        "status": "unreachable",
+        "reason": "connection failed"
       },
       {
         "url": "https://proceedings.neurips.cc/paper_files/paper/2022/file/a7667ee5d545a43d2f0fda98863c260e-Paper-Conference.pdf",
         "resourceIds": [
           "kb-c09"
         ],
-        "status": "ok",
-        "httpStatus": 200
+        "status": "unreachable",
+        "reason": "connection failed"
       },
       {
         "url": "https://proceedings.neurips.cc/paper_files/paper/2022/file/b2cac94f82928a85055987d9fd44753f-Paper-Conference.pdf",
         "resourceIds": [
           "multi-game-dt"
         ],
-        "status": "ok",
-        "httpStatus": 200
+        "status": "unreachable",
+        "reason": "connection failed"
       },
       {
         "url": "https://proceedings.neurips.cc/paper_files/paper/2022/file/f4f79698d48bdc1a6dec20583724182b-Paper-Conference.pdf",
         "resourceIds": [
           "kb-c04"
         ],
-        "status": "ok",
-        "httpStatus": 200
+        "status": "unreachable",
+        "reason": "connection failed"
       },
       {
         "url": "https://proceedings.neurips.cc/paper_files/paper/2022/hash/74a67268c5cc5910f64938cac4526a90-Abstract.html",
         "resourceIds": [
           "minedojo"
         ],
-        "status": "ok",
-        "httpStatus": 200
+        "status": "unreachable",
+        "reason": "connection failed"
       },
       {
         "url": "https://proceedings.neurips.cc/paper_files/paper/2022/hash/9c7008aff45b5d8f0973b23e1a22ada0-Abstract-Conference.html",
         "resourceIds": [
           "vpt"
         ],
-        "status": "ok",
-        "httpStatus": 200
+        "status": "unreachable",
+        "reason": "connection failed"
       },
       {
         "url": "https://proceedings.neurips.cc/paper_files/paper/2022/hash/a7667ee5d545a43d2f0fda98863c260e-Abstract-Conference.html",
         "resourceIds": [
           "kb-c09"
         ],
-        "status": "ok",
-        "httpStatus": 200
+        "status": "unreachable",
+        "reason": "connection failed"
       },
       {
         "url": "https://proceedings.neurips.cc/paper_files/paper/2022/hash/b2cac94f82928a85055987d9fd44753f-Abstract-Conference.html",
         "resourceIds": [
           "multi-game-dt"
         ],
-        "status": "ok",
-        "httpStatus": 200
+        "status": "unreachable",
+        "reason": "connection failed"
       },
       {
         "url": "https://proceedings.neurips.cc/paper_files/paper/2022/hash/f4f79698d48bdc1a6dec20583724182b-Abstract-Conference.html",
         "resourceIds": [
           "kb-c04"
         ],
-        "status": "ok",
-        "httpStatus": 200
+        "status": "unreachable",
+        "reason": "connection failed"
       },
       {
         "url": "https://proceedings.neurips.cc/paper_files/paper/2023/file/022ca1bed6b574b962c48a2856eb207b-Paper-Conference.pdf",
         "resourceIds": [
           "vc1"
         ],
-        "status": "ok",
-        "httpStatus": 200
+        "status": "unreachable",
+        "reason": "connection failed"
       },
       {
         "url": "https://proceedings.neurips.cc/paper_files/paper/2023/file/0c1e94af650f5c74b1f3da467c2308c2-Paper-Conference.pdf",
         "resourceIds": [
           "kb-c02"
         ],
-        "status": "ok",
-        "httpStatus": 200
+        "status": "unreachable",
+        "reason": "connection failed"
       },
       {
         "url": "https://proceedings.neurips.cc/paper_files/paper/2023/file/67a6726dcd555b982cabb3446ffac01d-Paper-Datasets_and_Benchmarks.pdf",
         "resourceIds": [
           "bedd"
         ],
-        "status": "ok",
-        "httpStatus": 200
+        "status": "unreachable",
+        "reason": "connection failed"
       },
       {
         "url": "https://proceedings.neurips.cc/paper_files/paper/2023/file/6b8dfb8c0c12e6fafc6c256cb08a5ca7-Paper-Conference.pdf",
         "resourceIds": [
           "deps"
         ],
-        "status": "ok",
-        "httpStatus": 200
+        "status": "unreachable",
+        "reason": "connection failed"
       },
       {
         "url": "https://proceedings.neurips.cc/paper_files/paper/2023/file/765043fe026f7d704c96cec027f13843-Paper-Datasets_and_Benchmarks.pdf",
         "resourceIds": [
           "lightzero"
         ],
-        "status": "ok",
-        "httpStatus": 200
+        "status": "unreachable",
+        "reason": "connection failed"
       },
       {
         "url": "https://proceedings.neurips.cc/paper_files/paper/2023/file/8c3c666820ea055a77726d66fc7d447f-Paper-Datasets_and_Benchmarks.pdf",
         "resourceIds": [
           "libero"
         ],
-        "status": "ok",
-        "httpStatus": 200
+        "status": "unreachable",
+        "reason": "connection failed"
       },
       {
         "url": "https://proceedings.neurips.cc/paper_files/paper/2023/file/d61d9f4fe4357296cb658795fd7999f0-Paper-Datasets_and_Benchmarks.pdf",
         "resourceIds": [
           "kb-b01"
         ],
-        "status": "ok",
-        "httpStatus": 200
+        "status": "unreachable",
+        "reason": "connection failed"
       },
       {
         "url": "https://proceedings.neurips.cc/paper_files/paper/2023/file/dd03f856fc7f2efeec8b1c796284561d-Paper-Conference.pdf",
         "resourceIds": [
           "steve1"
         ],
-        "status": "ok",
-        "httpStatus": 200
+        "status": "unreachable",
+        "reason": "connection failed"
       },
       {
         "url": "https://proceedings.neurips.cc/paper_files/paper/2023/hash/022ca1bed6b574b962c48a2856eb207b-Abstract-Conference.html",
         "resourceIds": [
           "vc1"
         ],
-        "status": "ok",
-        "httpStatus": 200
+        "status": "unreachable",
+        "reason": "connection failed"
       },
       {
         "url": "https://proceedings.neurips.cc/paper_files/paper/2023/hash/0c1e94af650f5c74b1f3da467c2308c2-Abstract-Conference.html",
         "resourceIds": [
           "kb-c02"
         ],
-        "status": "ok",
-        "httpStatus": 200
+        "status": "unreachable",
+        "reason": "connection failed"
       },
       {
         "url": "https://proceedings.neurips.cc/paper_files/paper/2023/hash/67a6726dcd555b982cabb3446ffac01d-Abstract.html",
         "resourceIds": [
           "bedd"
         ],
-        "status": "ok",
-        "httpStatus": 200
+        "status": "unreachable",
+        "reason": "connection failed"
       },
       {
         "url": "https://proceedings.neurips.cc/paper_files/paper/2023/hash/6b8dfb8c0c12e6fafc6c256cb08a5ca7-Abstract-Conference.html",
         "resourceIds": [
           "deps"
         ],
-        "status": "ok",
-        "httpStatus": 200
+        "status": "unreachable",
+        "reason": "connection failed"
       },
       {
         "url": "https://proceedings.neurips.cc/paper_files/paper/2023/hash/765043fe026f7d704c96cec027f13843-Abstract-Datasets_and_Benchmarks.html",
         "resourceIds": [
           "lightzero"
         ],
-        "status": "ok",
-        "httpStatus": 200
+        "status": "unreachable",
+        "reason": "connection failed"
       },
       {
         "url": "https://proceedings.neurips.cc/paper_files/paper/2023/hash/8c3c666820ea055a77726d66fc7d447f-Abstract-Datasets_and_Benchmarks.html",
         "resourceIds": [
           "libero"
         ],
-        "status": "ok",
-        "httpStatus": 200
+        "status": "unreachable",
+        "reason": "connection failed"
       },
       {
         "url": "https://proceedings.neurips.cc/paper_files/paper/2023/hash/d61d9f4fe4357296cb658795fd7999f0-Abstract-Datasets_and_Benchmarks.html",
         "resourceIds": [
           "kb-b01"
         ],
-        "status": "ok",
-        "httpStatus": 200
+        "status": "unreachable",
+        "reason": "connection failed"
       },
       {
         "url": "https://proceedings.neurips.cc/paper_files/paper/2023/hash/dd03f856fc7f2efeec8b1c796284561d-Abstract-Conference.html",
         "resourceIds": [
           "steve1"
         ],
-        "status": "ok",
-        "httpStatus": 200
+        "status": "unreachable",
+        "reason": "connection failed"
       },
       {
         "url": "https://proceedings.neurips.cc/paper_files/paper/2024/file/6bdde0373d53d4a501249547084bed43-Paper-Conference.pdf",
         "resourceIds": [
           "kb-w02"
         ],
-        "status": "ok",
-        "httpStatus": 200
+        "status": "unreachable",
+        "reason": "connection failed"
       },
       {
         "url": "https://proceedings.neurips.cc/paper_files/paper/2024/file/ff887781480973bd3cb6026feb378d1e-Paper-Conference.pdf",
         "resourceIds": [
           "baku"
         ],
-        "status": "ok",
-        "httpStatus": 200
+        "status": "unreachable",
+        "reason": "connection failed"
       },
       {
         "url": "https://proceedings.neurips.cc/paper_files/paper/2024/hash/6bdde0373d53d4a501249547084bed43-Abstract-Conference.html",
         "resourceIds": [
           "kb-w02"
         ],
-        "status": "ok",
-        "httpStatus": 200
+        "status": "unreachable",
+        "reason": "connection failed"
       },
       {
         "url": "https://proceedings.neurips.cc/paper_files/paper/2024/hash/ff887781480973bd3cb6026feb378d1e-Abstract-Conference.html",
         "resourceIds": [
           "baku"
         ],
-        "status": "ok",
-        "httpStatus": 200
+        "status": "unreachable",
+        "reason": "connection failed"
       },
       {
         "url": "https://proceedings.neurips.cc/paper_files/paper/2025/file/63943ee9fe347f3d95892cf87d9a42e6-Paper-Conference.pdf",
         "resourceIds": [
           "kb-w03"
         ],
-        "status": "ok",
-        "httpStatus": 200
+        "status": "unreachable",
+        "reason": "connection failed"
       },
       {
         "url": "https://proceedings.neurips.cc/paper_files/paper/2025/file/97c903fbf21a7d863af2015d8803ca8f-Paper-Conference.pdf",
         "resourceIds": [
           "kb-s01"
         ],
-        "status": "ok",
-        "httpStatus": 200
+        "status": "unreachable",
+        "reason": "connection failed"
       },
       {
         "url": "https://proceedings.neurips.cc/paper_files/paper/2025/file/f062da1973ac9ac61fc6d44dd7fa309f-Paper-Conference.pdf",
         "resourceIds": [
           "vla-cache"
         ],
-        "status": "ok",
-        "httpStatus": 200
+        "status": "unreachable",
+        "reason": "connection failed"
       },
       {
         "url": "https://proceedings.neurips.cc/paper_files/paper/2025/hash/97c903fbf21a7d863af2015d8803ca8f-Abstract-Conference.html",
         "resourceIds": [
           "kb-s01"
         ],
-        "status": "ok",
-        "httpStatus": 200
+        "status": "unreachable",
+        "reason": "connection failed"
       },
       {
         "url": "https://proceedings.neurips.cc/paper_files/paper/2025/hash/f062da1973ac9ac61fc6d44dd7fa309f-Abstract-Conference.html",
         "resourceIds": [
           "vla-cache"
         ],
-        "status": "ok",
-        "httpStatus": 200
+        "status": "unreachable",
+        "reason": "connection failed"
       },
       {
         "url": "https://proceedings.neurips.cc/paper/2021/file/7f489f642a0ddb10272b5c31057f0663-Paper.pdf",
         "resourceIds": [
           "decision-transformer"
         ],
-        "status": "ok",
-        "httpStatus": 200
+        "status": "unreachable",
+        "reason": "connection failed"
       },
       {
         "url": "https://proceedings.neurips.cc/paper/2021/hash/d5eca8dc3820cad9fe56a3bafda65ca1-Abstract.html",
         "resourceIds": [
           "efficientzero"
         ],
-        "status": "ok",
-        "httpStatus": 200
+        "status": "unreachable",
+        "reason": "connection failed"
       },
       {
         "url": "https://proceedings.nips.cc/paper_files/paper/2025/hash/63943ee9fe347f3d95892cf87d9a42e6-Abstract-Conference.html",
         "resourceIds": [
           "kb-w03"
         ],
-        "status": "ok",
-        "httpStatus": 200
+        "status": "unreachable",
+        "reason": "connection failed"
       },
       {
         "url": "https://rail-berkeley.github.io/bridgedata/",
