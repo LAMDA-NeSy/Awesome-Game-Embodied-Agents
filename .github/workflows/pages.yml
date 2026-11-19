@@ -38,7 +38,7 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ github.token }}
           OPENALEX_API_KEY: ${{ secrets.OPENALEX_API_KEY }}
-      - name: Discover new paper candidates
+      - name: Select and publish qualifying papers
         run: npm run discover-papers
         env:
           OPENALEX_API_KEY: ${{ secrets.OPENALEX_API_KEY }}
@@ -52,7 +52,7 @@ jobs:
           if ! git diff --cached --quiet; then
             git config user.name 'github-actions[bot]'
             git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
-            git commit -m 'Refresh maintenance data and paper candidates'
+            git commit -m 'Refresh maintenance data and new papers'
             git push origin HEAD:main
           fi
           echo "commit=$(git rev-parse HEAD)" >> "$GITHUB_OUTPUT"

@@ -1,0 +1,175 @@
+{
+  "checkedAt": "2026-11-19",
+  "included": 11,
+  "notIncluded": 13,
+  "decisions": [
+    {
+      "id": "candidate-s08",
+      "title": "X-Ego: Acquiring Team-Level Tactical Situational Awareness via Cross-Egocentric Contrastive Video Representation Learning",
+      "sourceUrl": "https://arxiv.org/abs/2510.19150",
+      "decision": "not-included",
+      "reason": "First submission is outside the rolling one-year preprint window; qualifying formal publication was not verified."
+    },
+    {
+      "id": "candidate-p01",
+      "title": "Game-TARS: Pretrained Foundation Models for Scalable Generalist Multimodal Game Agents",
+      "sourceUrl": "https://arxiv.org/abs/2510.23691",
+      "decision": "not-included",
+      "reason": "First submission is outside the rolling one-year preprint window; qualifying formal publication was not verified."
+    },
+    {
+      "id": "candidate-p02",
+      "title": "GameWAM: A World Action Model for Video Games",
+      "sourceUrl": "https://arxiv.org/abs/2608.26200",
+      "decision": "included",
+      "reason": "Substantial official research report with task evaluations; included as a preprint, without a formal-publication claim."
+    },
+    {
+      "id": "candidate-t03",
+      "title": "See, Symbolize, Act: Grounding VLMs with Spatial Representations for Better Gameplay",
+      "sourceUrl": "https://arxiv.org/abs/2603.11601",
+      "decision": "not-included",
+      "reason": "Workshop paper; main-conference publication and sufficient independent significance evidence were not established."
+    },
+    {
+      "id": "candidate-t04",
+      "title": "Playing DOOM with 1.3M Parameters: Specialized Small Models vs Large Language Models for Real-Time Game Control",
+      "sourceUrl": "https://arxiv.org/abs/2604.07385",
+      "decision": "not-included",
+      "reason": "Insufficient evidence of broad research significance for direct inclusion."
+    },
+    {
+      "id": "candidate-t05",
+      "title": "Augmenting Human Performance with an XR Agent Learning from Online Behavior and BCI Evidence",
+      "sourceUrl": "https://arxiv.org/abs/2608.30369",
+      "decision": "not-included",
+      "reason": "Insufficient evidence of broad research significance for direct inclusion."
+    },
+    {
+      "id": "candidate-t06",
+      "title": "Procedural Generation of First Person Shooter Maps using Map-Elites",
+      "sourceUrl": "https://arxiv.org/abs/2605.30570",
+      "decision": "not-included",
+      "reason": "Insufficient evidence of broad research significance for direct inclusion."
+    },
+    {
+      "id": "candidate-t07",
+      "title": "Account Consistency from Gameplay Traces: Same-Player Verification in Counter-Strike 2",
+      "sourceUrl": "https://arxiv.org/abs/2608.24893",
+      "decision": "not-included",
+      "reason": "Insufficient evidence of broad research significance for direct inclusion."
+    },
+    {
+      "id": "auto-arxiv-2611-18397",
+      "title": "Gamer: A Generalist Vision-Language-Action Foundation Model for Long-Horizon Real-Time Game Agent",
+      "sourceUrl": "https://arxiv.org/abs/2611.18397",
+      "decision": "included",
+      "reason": "Substantial official research report with task evaluations; included as a preprint, without a formal-publication claim."
+    },
+    {
+      "id": "auto-arxiv-2611-24940",
+      "title": "$Z$-sight: Unifying Vision-Language-Action and Latent World Modeling",
+      "sourceUrl": "https://arxiv.org/abs/2611.24940",
+      "decision": "not-included",
+      "reason": "Insufficient evidence of broad research significance for direct inclusion."
+    },
+    {
+      "id": "auto-arxiv-2611-21607",
+      "title": "ScaleVLA: Scaling Vision-Language-Action Models to 552 Billion Parameters",
+      "sourceUrl": "https://arxiv.org/abs/2611.21607",
+      "decision": "included",
+      "reason": "Substantial official research report with task evaluations; included as a preprint, without a formal-publication claim."
+    },
+    {
+      "id": "auto-arxiv-2611-12286",
+      "title": "VLA-MOPD: On-Policy Distillation for Multi-Task VLA Policy Consolidation",
+      "sourceUrl": "https://arxiv.org/abs/2611.12286",
+      "decision": "included",
+      "reason": "Substantial official research report with task evaluations; included as a preprint, without a formal-publication claim."
+    },
+    {
+      "id": "auto-arxiv-2611-08577",
+      "title": "Meituan-Robotics-0: A Vision-Language-Action Foundation Model for Desktop Manipulation",
+      "sourceUrl": "https://arxiv.org/abs/2611.08577",
+      "decision": "included",
+      "reason": "Substantial official research report with task evaluations; included as a preprint, without a formal-publication claim."
+    },
+    {
+      "id": "auto-arxiv-2611-08698",
+      "title": "VICTR: Value-Informed In-Context Learning for Vision-Language-Action Models",
+      "sourceUrl": "https://arxiv.org/abs/2611.08698",
+      "decision": "included",
+      "reason": "Substantial official research report with task evaluations; included as a preprint, without a formal-publication claim."
+    },
+    {
+      "id": "auto-arxiv-2611-06905",
+      "title": "Reinforcement Learning Enables Scaling Generalist Robot Policy Improvement",
+      "sourceUrl": "https://arxiv.org/abs/2611.06905",
+      "decision": "included",
+      "reason": "Substantial official research report with task evaluations; included as a preprint, without a formal-publication claim."
+    },
+    {
+      "id": "auto-arxiv-2610-42053",
+      "title": "REA: A Routed Embodied Agent Runtime for Asynchronous Brain-Cerebellum Control",
+      "sourceUrl": "https://arxiv.org/abs/2610.42053",
+      "decision": "included",
+      "reason": "Substantial official research report with task evaluations; included as a preprint, without a formal-publication claim."
+    },
+    {
+      "id": "auto-arxiv-2610-31162",
+      "title": "HiSTEVE 1.0: Harnessing Human-Interface VLA Agents for Open-World Games",
+      "sourceUrl": "https://arxiv.org/abs/2610.31162",
+      "decision": "included",
+      "reason": "Substantial official research report with task evaluations; included as a preprint, without a formal-publication claim."
+    },
+    {
+      "id": "auto-arxiv-2610-30478",
+      "title": "Externalise the Memory: A Pre-Registered Study of Where an Embodied Agent's Experience Should Live",
+      "sourceUrl": "https://arxiv.org/abs/2610.30478",
+      "decision": "not-included",
+      "reason": "Workshop paper; main-conference publication and sufficient independent significance evidence were not established."
+    },
+    {
+      "id": "auto-arxiv-2610-26297",
+      "title": "Mobile Embodied Agent Network (MEAN): Integrated Framework, Enabling Technologies, and Task-Driven Deployment",
+      "sourceUrl": "https://arxiv.org/abs/2610.26297",
+      "decision": "not-included",
+      "reason": "Networking survey or interaction-design focus; insufficient direct agent-control evidence for this collection."
+    },
+    {
+      "id": "auto-arxiv-2610-21484",
+      "title": "Context Matters! Social, Spatial, and Semantic Coordination with an Embodied Agent in Immersive Analytics",
+      "sourceUrl": "https://arxiv.org/abs/2610.21484",
+      "decision": "not-included",
+      "reason": "Networking survey or interaction-design focus; insufficient direct agent-control evidence for this collection."
+    },
+    {
+      "id": "auto-arxiv-2610-14601",
+      "title": "StateSkill-Agent: An Effective and Efficient Embodied Agent via State-conditioned Skill",
+      "sourceUrl": "https://arxiv.org/abs/2610.14601",
+      "decision": "not-included",
+      "reason": "Insufficient evidence of broad research significance for direct inclusion."
+    },
+    {
+      "id": "auto-arxiv-2610-01856",
+      "title": "ChunkVLA-AM: Parallel Action Chunking for Vision-Language-Action Robot Control in Additive Manufacturing",
+      "sourceUrl": "https://arxiv.org/abs/2610.01856",
+      "decision": "not-included",
+      "reason": "Insufficient evidence of broad research significance for direct inclusion."
+    },
+    {
+      "id": "auto-arxiv-2610-00981",
+      "title": "NarrativeFlow: Flow-Based Vision-Language-Action Model Using Robot Velocity Fields",
+      "sourceUrl": "https://arxiv.org/abs/2610.00981",
+      "decision": "included",
+      "reason": "Substantial official research report with task evaluations; included as a preprint, without a formal-publication claim."
+    },
+    {
+      "id": "auto-arxiv-2609-28314",
+      "title": "TANDEM: Task and Motion Planning with As-Needed Demonstrations for Efficient Vision-Language-Action Model Fine-tuning",
+      "sourceUrl": "https://arxiv.org/abs/2609.28314",
+      "decision": "included",
+      "reason": "Substantial official research report with task evaluations; included as a preprint, without a formal-publication claim."
+    }
+  ]
+}

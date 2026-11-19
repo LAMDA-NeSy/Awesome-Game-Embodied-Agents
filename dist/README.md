@@ -4,7 +4,7 @@
 
 # Awesome Game & Embodied Agents
 
-[![Awesome](https://img.shields.io/badge/Awesome-List-173c31.svg?style=for-the-badge&labelColor=102c25&logo=awesomelists&logoColor=white)](https://awesome.re) [![Website](https://img.shields.io/badge/Website-Explore-173c31.svg?style=for-the-badge&labelColor=102c25&logo=githubpages&logoColor=white)](https://lamda-nesy.github.io/Awesome-Game-Embodied-Agents/) [![Resources](https://img.shields.io/badge/Resources-115-173c31.svg?style=for-the-badge&labelColor=102c25&logo=readthedocs&logoColor=white)](https://lamda-nesy.github.io/Awesome-Game-Embodied-Agents/#all) [![Papers](https://img.shields.io/badge/Papers-83-173c31.svg?style=for-the-badge&labelColor=102c25&logo=arxiv&logoColor=white)](https://lamda-nesy.github.io/Awesome-Game-Embodied-Agents/#papers) [![Demos](https://img.shields.io/badge/Demos-17-173c31.svg?style=for-the-badge&labelColor=102c25&logo=youtube&logoColor=white)](https://lamda-nesy.github.io/Awesome-Game-Embodied-Agents/#demos)
+[![Awesome](https://img.shields.io/badge/Awesome-List-173c31.svg?style=for-the-badge&labelColor=102c25&logo=awesomelists&logoColor=white)](https://awesome.re) [![Website](https://img.shields.io/badge/Website-Explore-173c31.svg?style=for-the-badge&labelColor=102c25&logo=githubpages&logoColor=white)](https://lamda-nesy.github.io/Awesome-Game-Embodied-Agents/) [![Resources](https://img.shields.io/badge/Resources-126-173c31.svg?style=for-the-badge&labelColor=102c25&logo=readthedocs&logoColor=white)](https://lamda-nesy.github.io/Awesome-Game-Embodied-Agents/#all) [![Papers](https://img.shields.io/badge/Papers-94-173c31.svg?style=for-the-badge&labelColor=102c25&logo=arxiv&logoColor=white)](https://lamda-nesy.github.io/Awesome-Game-Embodied-Agents/#papers) [![Demos](https://img.shields.io/badge/Demos-17-173c31.svg?style=for-the-badge&labelColor=102c25&logo=youtube&logoColor=white)](https://lamda-nesy.github.io/Awesome-Game-Embodied-Agents/#demos)
 <br>
 [![PRs welcome](https://img.shields.io/badge/PRs-Welcome-c8a85b.svg?style=for-the-badge&labelColor=8b6c2e&logo=git&logoColor=white)](CONTRIBUTING.md) [![License: MIT](https://img.shields.io/badge/License-MIT-c8a85b.svg?style=for-the-badge&labelColor=8b6c2e)](LICENSE) [![GitHub Stars](https://img.shields.io/github/stars/LAMDA-NeSy/Awesome-Game-Embodied-Agents?style=for-the-badge&label=Stars&labelColor=8b6c2e&color=c8a85b&logo=github&logoColor=white)](https://github.com/LAMDA-NeSy/Awesome-Game-Embodied-Agents)
 
@@ -34,14 +34,14 @@ Researchers, engineers, students, and curious builders are all welcome. If the c
 
 | Research path | Curated resources |
 | --- | ---: |
-| Papers | **83** |
+| Papers | **94** |
 | Research articles | **6** |
 | Open-source projects | **5** |
 | Datasets | **4** |
 | Benchmarks & environments | **8** |
 | Video demos | **17** |
 
-The snapshot contains **115 unique curated resources** and **24 candidates** awaiting review. Category counts overlap when one resource is both a paper and a dataset or benchmark.
+The snapshot contains **126 unique curated resources**. Category counts overlap when one resource is both a paper and a dataset or benchmark.
 
 ## Our vision
 
@@ -55,13 +55,13 @@ We want this collection to become a shared research map: traceable enough for ca
 
 | Track | Window | Standard |
 | --- | --- | --- |
-| Leading conferences & journals | 2021-09-14 – 2026-09-14 | Relevant publication with an official record |
-| Important recent arXiv research | 2025-09-14 – 2026-09-14 | Clear influence or significance with supporting evidence |
+| Leading conferences & journals | 2021-11-19 – 2026-11-19 | Relevant publication with an official record |
+| Important recent arXiv research | 2025-11-19 – 2026-11-19 | Clear influence or significance with supporting evidence |
 | Tools & environments | Current research use | Official purpose, interfaces, and setup information |
 
 Priority venues include NeurIPS, ICLR, ICML, CVPR, ICCV, ECCV, AAAI, IJCAI, CoRL, RSS, ICRA, IROS, Nature, Science, T-RO, IJRR, TPAMI, JMLR, and TMLR. Read the [full collection policy](docs/collection-policy.md) and [metadata notes](docs/metadata.md).
 
-Every Monday, the maintenance workflow searches the free arXiv feed and optionally enriches results with OpenAlex. New matches appear only as **pending-review candidates**; a curator must verify the official source, scope, and significance before promotion.
+Every Monday, the maintenance workflow searches the free arXiv feed and optionally enriches results with OpenAlex. Qualifying papers are published directly after automated source, date, relevance, and evaluation checks. Records without sufficient evidence are skipped.
 
 ## 🤝 Contributing
 

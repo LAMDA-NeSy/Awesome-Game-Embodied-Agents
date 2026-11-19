@@ -1,7 +1,7 @@
-import { renderCatalogue, filterResources, escapeHtml } from './catalog.mjs?v=dd986cab806e';
+import { renderCatalogue, filterResources, escapeHtml } from './catalog.mjs?v=9ade224d986a';
 const $ = s => document.querySelector(s);
 const labels = {all:'All resources',articles:'Research articles',papers:'Papers',projects:'Open-source projects',datasets:'Datasets',benchmarks:'Benchmarks & environments',demos:'Video demos',about:'Collection policy',updates:'What’s new'};
-const defaults = {view:'all',domain:'all',topic:'all',year:'all',sort:'featured',query:'',candidates:false,code:false,paperType:'all',demoType:'all'};
+const defaults = {view:'all',domain:'all',topic:'all',year:'all',sort:'featured',query:'',code:false,paperType:'all',demoType:'all'};
 const state = {...defaults};
 let data;
 let videoObserver;
@@ -17,7 +17,7 @@ function readHash() {
     domain: ['game','embodied'].includes(p.get('domain')) ? p.get('domain') : 'all',
     query: p.get('q') || '', topic:p.get('topic') || 'all',year:p.get('year') || 'all',
     sort:p.get('sort')==='newest'?'venue':['venue','date','added','updated','name'].includes(p.get('sort')) ? p.get('sort') : 'featured',
-    candidates:p.get('candidates')==='1' && ['all','papers'].includes(view || 'all'), code:p.get('code')==='1',
+    code:p.get('code')==='1',
     paperType:['survey','method','dataset','benchmark'].includes(p.get('paperType')) ? p.get('paperType') : 'all',
     demoType:['game-control','generated-world','real-robot','simulation'].includes(p.get('demoType')) ? p.get('demoType') : 'all'
   });
@@ -25,7 +25,6 @@ function readHash() {
 function syncUrl() {
   const p = new URLSearchParams();
   for (const [key,value] of Object.entries({domain:state.domain,q:state.query,topic:state.topic,year:state.year,sort:state.sort,paperType:state.paperType,demoType:state.demoType})) if(value && !['all','featured'].includes(value))p.set(key,value);
-  if(state.candidates)p.set('candidates','1');
   if(state.code)p.set('code','1');
   history.replaceState(null,'',`#${state.view}${p.size?'?'+p:''}`);
 }
@@ -40,17 +39,17 @@ function render() {
   });
   document.title=`${labels[state.view]} · Awesome Game & Embodied Agents`;
   if(about||updates)return;
-  $('#breadcrumb').textContent=state.candidates?'PENDING REVIEW':'THE COLLECTION';
-  $('#section-title').textContent=state.candidates?'Candidate papers':labels[state.view];
+  $('#breadcrumb').textContent='THE COLLECTION';
+  $('#section-title').textContent=labels[state.view];
   for(const key of ['domain','paperType','demoType'])document.querySelectorAll(`[data-${key.replace(/[A-Z]/g,c=>'-'+c.toLowerCase())}]`).forEach(b=>{const active=b.dataset[key]===state[key];b.classList.toggle('selected',active);b.setAttribute('aria-pressed',String(active));});
   $('#paper-types').hidden=state.view!=='papers';$('#demo-types').hidden=state.view!=='demos';
   $('#demo-note').hidden=state.view!=='demos';
   for(const key of ['topic','year','sort'])$('#'+key).value=state[key];
   $('#search').value=state.query;$('#code-only').checked=state.code;
   const results=filterResources(data.resources,state);
-  const total=data.resources.filter(r=>r.status===(state.candidates?'candidate':'selected')&&(state.view==='all'||r.kinds.includes(state.view))).length;
-  $('#result-count').textContent=`${results.length} of ${total} ${state.candidates?'candidates · excluded from curated counts':state.view==='all'?'unique resources':state.view==='papers'?'papers':'resources'}`;
-  $('#count-note').hidden=state.candidates;
+  const total=data.resources.filter(r=>r.status==='selected'&&(state.view==='all'||r.kinds.includes(state.view))).length;
+  $('#result-count').textContent=`${results.length} of ${total} ${state.view==='all'?'unique resources':state.view==='papers'?'papers':'resources'}`;
+  $('#count-note').hidden=false;
   $('#year-label').textContent=state.view==='papers'?'Venue year':'Year';
   const sortNotes = {
     featured:'Curated order. Paper years refer to the venue; source dates retain their original meaning.',
@@ -64,9 +63,6 @@ function render() {
   if(state.topic!=='all'||state.year!=='all'||state.code||state.sort!=='featured')$('#collection-tools').classList.add('filters-open');
   $('#filter-toggle').setAttribute('aria-expanded', String($('#collection-tools').classList.contains('filters-open')));
   $('#reset').hidden=!Object.keys(defaults).some(key=>key!=='view'&&state[key]!==defaults[key]);
-  $('#candidates').hidden=!['all','papers'].includes(state.view);
-  $('#candidates').textContent=state.candidates?'Back to curated':`Candidates (${data.resources.filter(r=>r.status==='candidate').length})`;
-  $('#candidates').setAttribute('aria-pressed',String(state.candidates));
   $('#resources').innerHTML=results.length?renderCatalogue(results,state.view,data.resources,state.sort):'<div class="empty-state"><h3>No matching resources</h3><p>Try a shorter query or clear your filters.</p><button type="button" id="empty-reset">Clear filters</button></div>';
   $('#empty-reset')?.addEventListener('click',reset);
   bindVideos();
@@ -191,7 +187,6 @@ async function init(){
     $('#search').addEventListener('input',e=>{state.query=e.target.value;syncUrl();render();});
     for(const key of ['topic','year','sort'])$('#'+key).addEventListener('change',e=>{state[key]=e.target.value;syncUrl();render();});
     $('#code-only').addEventListener('change',e=>{state.code=e.target.checked;syncUrl();render();});
-    $('#candidates').addEventListener('click',()=>{state.candidates=!state.candidates;state.topic='all';state.year='all';state.paperType='all';syncUrl();render();});
     $('#reset').addEventListener('click',reset);
     $('#filter-toggle').hidden=false;
     $('#filter-toggle').addEventListener('click',()=>{
@@ -214,7 +209,7 @@ async function init(){
     }
   }catch(error){
     $('#result-count').textContent='Search is temporarily unavailable. The full curated list remains below; reload to try again.';
-    $('.controls').hidden=true;$('.filter-line').hidden=true;$('#candidates').hidden=true;
+    $('.controls').hidden=true;$('.filter-line').hidden=true;
     console.error('Catalogue could not be loaded:',error);
   }
 }

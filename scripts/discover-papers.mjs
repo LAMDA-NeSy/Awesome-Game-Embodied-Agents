@@ -127,6 +127,7 @@ export function selectDiscoveries(works, catalogue, config, today) {
   const knownOpenAlex = new Set(catalogue.resources.map(resource => resource.metrics?.citations?.sourceUrl).filter(Boolean));
   const knownDoi = new Set(catalogue.resources.flatMap(resource => [resource.links?.paper, resource.bibliography?.doi ? `https://doi.org/${resource.bibliography.doi}` : '']).filter(Boolean).map(normalize));
   const peerFrom = yearsAgo(today, config.peerReviewedWindowYears);
+  const knownArxiv = new Set(catalogue.resources.map(r => r.bibliography?.arxivId).filter(Boolean));
   const preprintFrom = yearsAgo(today, config.recentPreprintWindowYears);
   const seen = new Set();
   const matches = [];
@@ -140,22 +141,30 @@ export function selectDiscoveries(works, catalogue, config, today) {
       continue;
     }
     seen.add(openAlexId);
-    const publicationDate = work.publication_date || `${work.publication_year || ''}-01-01`;
+    const publicationDate = work.publication_date;
     if (!/^\d{4}-\d{2}-\d{2}$/.test(publicationDate) || publicationDate > today || work.language && work.language !== 'en') continue;
     const venue = venueFor(work);
     const arxivId = arxivIdFor(work);
     const related = relevance(work);
-    if (!related.domains.length) continue;
-    const isPeerReviewed = Boolean(venue) && publicationDate >= peerFrom;
-    const isRecentPreprint = Boolean(arxivId) && publicationDate >= preprintFrom && (Number(work.cited_by_count || 0) >= config.minimumRecentPreprintCitations || highSignalPattern.test(clean(work.title || work.display_name)) || related.score >= 7);
+    if (!related.domains.length || !authorsFor(work).length || related.abstract.length < 200 || (arxivId && knownArxiv.has(arxivId))) continue;
+    const officialHost = /^(?:proceedings\.neurips\.cc|proceedings\.mlr\.press|openaccess\.thecvf\.com|ojs\.aaai\.org|ijcai\.org|www\.ijcai\.org|roboticsproceedings\.org|www\.roboticsproceedings\.org|ieeexplore\.ieee\.org|nature\.com|www\.nature\.com|science\.org|www\.science\.org|jmlr\.org|www\.jmlr\.org|journals\.sagepub\.com)$/;
+    const official = (work.locations || []).some(l => { try { return officialHost.test(new URL(l.landing_page_url).hostname); } catch { return false; } });
+    const workshop = /workshop|adjunct|non-archival/i.test(work._comment || '') || sourceNames(work).some(n => /workshop|adjunct/i.test(n));
+    const isPeerReviewed = Boolean(venue) && official && !workshop && work.type !== 'preprint' && publicationDate >= peerFrom;
+    const evaluated = /evaluat|experiment|benchmark/i.test(related.abstract) && /multi.task|multiple.*tasks|across.*tasks|task suites|benchmarks|generalization|real.world/i.test(related.abstract);
+    const projectSources = (work._projectSources || []).filter(url => /^https:\/\//.test(url));
+    const isRecentPreprint = Boolean(arxivId) && work._provider === 'arXiv' && !workshop && publicationDate >= preprintFrom && evaluated && projectSources.length > 0 && related.score >= 7;
     if (!isPeerReviewed && !isRecentPreprint) continue;
-    matches.push({ work, ...related, venue, arxivId, isPeerReviewed, publicationDate });
+    matches.push({ work, ...related, venue, arxivId, isPeerReviewed, publicationDate, influenceSources: projectSources });
+    knownTitles.add(titleKey);
+    if (arxivId) knownArxiv.add(arxivId);
+    if (doiKey) knownDoi.add(doiKey);
   }
   matches.sort((a, b) => Number(b.isPeerReviewed) - Number(a.isPeerReviewed) || b.score - a.score || Number(b.work.cited_by_count || 0) - Number(a.work.cited_by_count || 0) || b.publicationDate.localeCompare(a.publicationDate));
-  return { matches: matches.slice(0, config.maxCandidatesPerRun), duplicates, peerFrom, preprintFrom };
+  return { matches: matches.slice(0, config.maxPapersPerRun), duplicates, peerFrom, preprintFrom };
 }
 
-export function createCandidate(match, rank, today) {
+export function createEntry(match, rank, today) {
   const { work, title, abstract, domains, venue, arxivId, isPeerReviewed, publicationDate } = match;
   const sourceKey = arxivId || String(work.id).split('/').pop();
   const id = `auto-${work._provider === 'arXiv' ? 'arxiv-' : ''}${sourceKey.toLowerCase().replace(/[^a-z0-9]+/g, '-')}`;
@@ -171,23 +180,25 @@ export function createCandidate(match, rank, today) {
     domains,
     kinds: ['papers'],
     year,
-    venue: isPeerReviewed ? `Candidate · ${venue} ${year}` : 'Candidate · arXiv',
+    venue: isPeerReviewed ? `${venue} ${year}` : `arXiv · ${publicationDate.slice(0, 7)}`,
     summary,
-    tags: ['Automated discovery', 'Pending review'],
-    environment: 'Automated discovery lead; environments and task definitions require curator verification.',
-    interface: 'Automated discovery lead; observation access, action space, and execution interface require curator verification.',
-    limits: 'This candidate was found from bibliographic metadata and has not received a full editorial review. Do not treat its inclusion as verification of claims, venue status, impact, or reproducibility.',
-    status: 'candidate',
-    evidence: `Automatically discovered through ${work._provider || 'OpenAlex'}; bibliographic sources and technical claims require curator review.`,
+    tags: [domains.includes('game') ? 'Game agents' : 'Robot learning'],
+    environment: 'Task settings are described in the linked official abstract and research report.',
+    interface: 'See the original report for observation access, action representation, and execution protocol.',
+    limits: 'Automatically selected from source metadata, task-evaluation evidence, and author-linked resources. Results are author-reported and have not been independently reproduced.',
+    status: 'selected',
+    evidence: `Automatically discovered through ${work._provider || 'OpenAlex'}; source metadata and evaluation evidence checked automatically; experiments not independently reproduced.`,
     sourceType: 'automated-discovery',
     checkedAt: today,
-    links: { paper: url, ...(pdf ? { pdf } : {}) },
+    links: { paper: url, ...(pdf ? { pdf } : {}), ...(match.influenceSources?.[0] ? { project: match.influenceSources[0] } : {}) },
     rank,
     sourceId: sourceKey,
-    selectionTrack: 'candidate',
+    selectionTrack: isPeerReviewed ? 'peer-reviewed' : 'recent-arxiv',
+    influenceSources: match.influenceSources || [],
+    eligibilityWindow: { asOf: today, from: yearsAgo(today, isPeerReviewed ? 5 : 1), to: today },
     selectionReason: isPeerReviewed
-      ? `Potential ${venue} paper within the rolling five-year discovery window; official venue record and subject relevance require review.`
-      : 'Recent arXiv lead within the rolling one-year discovery window; significance, source links, and technical scope require review.',
+      ? `${venue} record within the rolling five-year window, with an official proceedings/publisher location and relevant agent evaluations.`
+      : 'Recent official arXiv report with systematic task evaluations and author-linked project or code resources; automated significance proxy, not a citation ranking.',
     paperType: 'method',
     publicationDate,
     bibliography: {
@@ -248,7 +259,7 @@ function atomValue(entry, tag) {
   return decodeXml(entry.match(new RegExp(`<${tag}>([\\s\\S]*?)<\\/${tag}>`))?.[1] || '');
 }
 
-function arxivWork(entry) {
+export function arxivWork(entry) {
   const rawId = atomValue(entry, 'id');
   const arxivId = rawId.match(/abs\/(\d{4}\.\d{4,5})/i)?.[1];
   if (!arxivId) return null;
@@ -277,7 +288,9 @@ function arxivWork(entry) {
     best_oa_location: location,
     abstract_inverted_index,
     language: 'en',
-    _provider: 'arXiv'
+    _provider: 'arXiv',
+    _comment: atomValue(entry, 'arxiv:comment'),
+    _projectSources: [...(summary + ' ' + atomValue(entry, 'arxiv:comment')).matchAll(/https:\/\/[^\s<>]+/g)].map(m => m[0].replace(/[.,;)]+$/, '')).filter(u => !/arxiv\.org/.test(u))
   };
 }
 
@@ -327,10 +340,22 @@ export async function main() {
     : await fetchWorks(config, today);
   const works = fetched.works;
   const selected = selectDiscoveries(works, catalogue, config, today);
+  catalogue.meta.discoveryWindows = { asOf: today, paper: { from: selected.peerFrom, to: today }, arxiv: { from: selected.preprintFrom, to: today } };
   const nextRank = Math.max(0, ...catalogue.resources.map(resource => Number(resource.rank || 0))) + 1;
-  const candidates = selected.matches.map((match, index) => createCandidate(match, nextRank + index, today));
-  if (!dryRun && candidates.length) {
-    catalogue.resources.push(...candidates);
+  const additions = [];
+  for (const match of selected.matches) {
+    const source = match.influenceSources?.[0] || paperUrl(match.work);
+    if (!fixtureArg) {
+      try {
+        const response = await fetch(source, { signal: AbortSignal.timeout(15000), redirect: 'follow' });
+        await response.body?.cancel();
+        if (!response.ok) { fetched.failures.push(`Source unavailable for ${match.title}: HTTP ${response.status}`); continue; }
+      } catch { fetched.failures.push(`Source unavailable for ${match.title}`); continue; }
+    }
+    additions.push(createEntry(match, nextRank + additions.length, today));
+  }
+  if (!dryRun) {
+    catalogue.resources.push(...additions);
     await fs.writeFile(catalogueFile, `${JSON.stringify(catalogue, null, 2)}\n`);
   }
   let maintenance = {};
@@ -341,20 +366,21 @@ export async function main() {
     rollingPeerReviewedWindow: { from: selected.peerFrom, to: today },
     rollingRecentPreprintWindow: { from: selected.preprintFrom, to: today },
     queries: config.queries.length,
+    selectionMode: 'direct',
     scanned: works.length,
     duplicates: selected.duplicates,
-    added: candidates.length,
-    candidateIds: candidates.map(candidate => candidate.id),
+    added: additions.length,
+    addedIds: additions.map(candidate => candidate.id),
     failures: fetched.failures,
     dryRun
   };
   if (!dryRun) await fs.writeFile(maintenanceFile, `${JSON.stringify(maintenance, null, 2)}\n`);
   if (process.env.GITHUB_STEP_SUMMARY) {
-    const rows = candidates.length ? candidates.map(candidate => `- **${candidate.title}** (${candidate.domains.join(' / ')})`).join('\n') : '- No new candidates found.';
-    await fs.appendFile(process.env.GITHUB_STEP_SUMMARY, `### New-paper discovery\n\nScanned ${works.length} bibliographic records and added ${candidates.length} pending-review candidates. ${fetched.failures.length} provider request(s) were skipped or failed.\n\n${rows}\n`);
+    const rows = additions.length ? additions.map(candidate => `- **${candidate.title}** (${candidate.domains.join(' / ')})`).join('\n') : '- No new papers found.';
+    await fs.appendFile(process.env.GITHUB_STEP_SUMMARY, `### New-paper discovery\n\nScanned ${works.length} bibliographic records and added ${additions.length} papers. ${fetched.failures.length} provider request(s) were skipped or failed.\n\n${rows}\n`);
   }
-  console.log(`Scanned ${works.length} records; ${candidates.length} new pending-review candidate${candidates.length === 1 ? '' : 's'}.`);
-  return candidates;
+  console.log(`Scanned ${works.length} records; ${additions.length} new paper${additions.length === 1 ? '' : 's'}.`);
+  return additions;
 }
 
 if (process.argv[1] && path.resolve(process.argv[1]) === fileURLToPath(import.meta.url)) await main();

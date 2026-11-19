@@ -10,7 +10,6 @@ try { previous = JSON.parse(await fs.readFile('dist/resources.json', 'utf8')); }
 try { maintenance = JSON.parse(await fs.readFile('data/maintenance.json', 'utf8')); } catch (error) { if (error.code !== 'ENOENT') throw error; }
 syncCollectionDates(data.resources, previous.resources, history.baselineDate, new Date().toISOString().slice(0, 10));
 const selected = data.resources.filter(r => r.status === 'selected').sort((a, b) => a.rank - b.rank);
-const candidates = data.resources.filter(r => r.status === 'candidate');
 const count = kind => selected.filter(r => r.kinds.includes(kind)).length;
 data.meta.counts = Object.fromEntries(['articles', 'papers', 'projects', 'datasets', 'benchmarks', 'demos'].map(k => [k, count(k)]));
 await fs.writeFile('data/resources.json', JSON.stringify(data, null, 2) + '\n');
@@ -40,14 +39,16 @@ const siteUpdatedLabel = new Intl.DateTimeFormat('en-GB', { day: 'numeric', mont
 html = html.replace(/(<span id="site-updated">)[^<]*/, `$1Updated · ${siteUpdatedLabel}`);
 html = html.replace(/(<span id="collection-updated">)[^<]*/, `$1Collection revised · ${latestContentDate}`);
 html = html.replace(/(<span id="metrics-checked">)[^<]*/, `$1${maintenance.metricsRefresh ? `Metrics checked · ${maintenance.metricsRefresh.checkedAt.slice(0, 10)}` : 'Source-dated metrics'}`);
+const currentPaperWindow = data.meta.discoveryWindows?.paper || data.meta.paperWindow;
+const currentArxivWindow = data.meta.discoveryWindows?.arxiv || data.meta.arxivWindow;
 const about = `<h2>About the collection</h2>
 <p>A research index connecting game agents and embodied intelligence. Game research starts from the supplied <a href="${data.meta.knowledgeUrl}" target="_blank" rel="noopener noreferrer">Game Agent knowledge base</a>; robotics and additional game resources come from official proceedings, research reports, and project repositories.</p>
 <p>The organization and website layout are inspired by <a href="${data.meta.referenceUrl}" target="_blank" rel="noopener noreferrer">Awesome Robot Use Agent</a>. This collection has its own scope, categories, and resource summaries.</p>
-<div class="notice"><b>Snapshot · ${data.meta.snapshotDate}</b><p>${selected.length} unique curated resources: ${count('articles')} articles, ${count('papers')} papers, ${count('projects')} standalone projects, ${count('datasets')} datasets, ${count('benchmarks')} benchmarks or environments, and ${count('demos')} video demonstrations. Dataset and benchmark papers appear in multiple views, so these counts overlap. ${candidates.length} candidates are listed separately.</p></div>
+<div class="notice"><b>Snapshot · ${data.meta.snapshotDate}</b><p>${selected.length} unique curated resources: ${count('articles')} articles, ${count('papers')} papers, ${count('projects')} standalone projects, ${count('datasets')} datasets, ${count('benchmarks')} benchmarks or environments, and ${count('demos')} video demonstrations. Dataset and benchmark papers appear in multiple views, so these counts overlap. </p></div>
 <h3>Selection criteria</h3>
 <div class="table-wrap"><table><thead><tr><th>Track</th><th>Publication window</th><th>Selection basis</th></tr></thead><tbody>
-<tr><td>Leading conferences & journals</td><td>14 Sep 2021 – 14 Sep 2026</td><td>Relevant main-conference papers and journal articles with official publication records. Priority venues include NeurIPS, ICLR, ICML, CVPR, ICCV, ECCV, AAAI, IJCAI, RSS, CoRL, ICRA, IROS, Nature, Science, T-RO, IJRR, TPAMI, JMLR, and TMLR.</td></tr>
-<tr><td>Selected arXiv research</td><td>14 Sep 2025 – 14 Sep 2026</td><td>First submission date, with a specific editorial rationale and supporting sources. Evidence can include systematic evaluations, released models or environments, and substantial research reports. No citation ranking is claimed.</td></tr>
+<tr><td>Leading conferences & journals</td><td>${currentPaperWindow.from} – ${currentPaperWindow.to}</td><td>Relevant main-conference papers and journal articles with official publication records. Priority venues include NeurIPS, ICLR, ICML, CVPR, ICCV, ECCV, AAAI, IJCAI, RSS, CoRL, ICRA, IROS, Nature, Science, T-RO, IJRR, TPAMI, JMLR, and TMLR.</td></tr>
+<tr><td>Selected arXiv research</td><td>${currentArxivWindow.from} – ${currentArxivWindow.to}</td><td>First submission date, with a specific editorial rationale and supporting sources. Evidence can include systematic evaluations, released models or environments, and substantial research reports. No citation ranking is claimed.</td></tr>
 <tr><td>Tools & environments</td><td>Reviewed for current research use</td><td>Standalone infrastructure is assessed by purpose, interface, and setup requirements. The paper publication window does not apply.</td></tr></tbody></table></div>
 <p>This venue list reflects the collection's subject-specific editorial policy, rather than a single official ranking. Workshops and unconfirmed submissions are distinguished from main-conference publications. See the <a href="docs/collection-policy.md">full collection policy</a>.</p>
 <h3>Sources and verification</h3>
@@ -64,7 +65,7 @@ const about = `<h2>About the collection</h2>
 <tr><td>Evaluation</td><td>Map splits, task metrics, samples, and seeds</td><td>Task success, generalization, and human intervention</td></tr></tbody></table></div>
 <p>Shared methods do not by themselves establish transfer between domains. Frame generation, game navigation, robot planning, and physical execution retain their respective evidence boundaries.</p>
 <h3>Video demonstrations</h3><p>The video gallery embeds original research-team videos, with source links, credits, and related work. Game control, generated frames, real robots, and simulation are labeled separately. Selected clips illustrate behavior; they do not replace benchmark evaluations. Videos load as you approach them and play only when requested. If an external host is unavailable, use the source link on the card.</p><h3>Maintenance and contributions</h3>
-<p>The README and website share the same catalogue. Weekly maintenance discovers new bibliographic leads as pending-review candidates, checks existing source links, and refreshes verified statistics. A curator verifies official sources, technical scope, and selection evidence before promoting any candidate into the curated collection. See <a href="#updates">What’s new</a> for recent additions, the update log, and maintenance reports. Read the <a href="CONTRIBUTING.md">contribution guide</a> or visit the <a href="${data.meta.repositoryUrl}" target="_blank" rel="noopener noreferrer">GitHub repository</a>.</p>`;
+<p>The README and website share the same catalogue. Weekly maintenance checks source metadata, publication windows, subject relevance, and evaluation evidence, then publishes qualifying papers directly. It also checks existing source links and refreshes verified statistics. See <a href="#updates">What’s new</a> for recent additions, the update log, and maintenance reports. Read the <a href="CONTRIBUTING.md">contribution guide</a> or visit the <a href="${data.meta.repositoryUrl}" target="_blank" rel="noopener noreferrer">GitHub repository</a>.</p>`;
 html = html.replace(/(<section id="about" class="about-panel" hidden>)[\s\S]*?<\/section>/, `$1${about}</section>`);
 await fs.writeFile('dist/index.html', html);
 const md = s => String(s || '—').replace(/\|/g, '\\|').replace(/\n/g, ' ');
@@ -116,7 +117,7 @@ Our long-term direction is to:
 
 Game agents operate in virtual environments through pixels, language, game APIs, or keyboard and mouse actions. Embodied agents connect perception and planning to simulated or physical robot actions. Similar methods can inspire each other, while every comparison must still respect the environment, interface, and evidence behind the result.
 
-Snapshot: **${data.meta.snapshotDate}**. The collection contains **${selected.length} unique curated resources**. Dataset and benchmark papers appear in multiple views, so category counts overlap. ${candidates.length} candidate papers remain separate until their evidence is reviewed.
+Snapshot: **${data.meta.snapshotDate}**. The collection contains **${selected.length} unique curated resources**. Dataset and benchmark papers appear in multiple views, so category counts overlap.
 
 ## Contents
 
@@ -133,7 +134,6 @@ Snapshot: **${data.meta.snapshotDate}**. The collection contains **${selected.le
 - [Datasets](#datasets)
 - [Benchmarks](#benchmarks)
 - [Video demos](#video-demos)
-- [Candidates](#candidates)
 - [Sources and verification](#sources-and-verification)
 - [Website and maintenance](#website-and-maintenance)
 - [Acknowledgements](#acknowledgements)
@@ -151,13 +151,13 @@ Snapshot: **${data.meta.snapshotDate}**. The collection contains **${selected.le
 
 | Track | Window | Required evidence |
 | --- | --- | --- |
-| Leading conferences and journals | ${data.meta.paperWindow.from} – ${data.meta.paperWindow.to} | Relevant main-conference or journal publication, checked against an official record |
-| Important recent arXiv research | ${data.meta.arxivWindow.from} – ${data.meta.arxivWindow.to} | First submission date, explicit editorial rationale, and supporting research evidence |
+| Leading conferences and journals | ${currentPaperWindow.from} – ${currentPaperWindow.to} | Relevant main-conference or journal publication, checked against an official record |
+| Important recent arXiv research | ${currentArxivWindow.from} – ${currentArxivWindow.to} | First submission date, explicit editorial rationale, and supporting research evidence |
 | Tools and environments | Reviewed for current research use | Official purpose, interfaces, and setup requirements; no paper-age cutoff |
 
 Priority venues include NeurIPS, ICLR, ICML, CVPR, ICCV, ECCV, AAAI, IJCAI, RSS, CoRL, ICRA, IROS, Nature, Science, T-RO, IJRR, TPAMI, JMLR, and TMLR. This is a subject-specific editorial policy, not a claim that every venue belongs to the same official tier.
 
-Unconfirmed work is listed as a candidate. Preprints are labeled separately from peer-reviewed papers. The collection does not claim exhaustive coverage, a citation ranking, or independent reproduction of the listed experiments. See the [full policy](docs/collection-policy.md).
+Incomplete records are omitted. Preprints are labeled separately from peer-reviewed papers. The collection does not claim exhaustive coverage, a citation ranking, or independent reproduction of the listed experiments. See the [full policy](docs/collection-policy.md).
 
 ## Papers
 
@@ -209,14 +209,6 @@ Benchmark papers share a record with their environment listing. Report the envir
 | --- | --- | --- | --- | --- |
 ${projectRows(selected.filter(r => r.kinds.includes('benchmarks')))}
 
-## Candidates
-
-These recent leads from the knowledge base need further verification of publication or significance. They are excluded from curated counts.
-
-| Paper | Recorded year | Pending review | Source |
-| --- | --- | --- | --- |
-${candidates.map(r => `| ${md(r.title)} | ${r.year} | ${md(r.selectionReason)} | ${links(r)} |`).join('\n')}
-
 ## Sources and verification
 
 The source table contained ${data.meta.sourceSnapshot.rows} rows: ${data.meta.sourceSnapshot.emptyRows} had no title and ${data.meta.sourceSnapshot.duplicateRows} were duplicates, leaving ${data.meta.sourceSnapshot.uniqueTitledRows} distinct titled leads. See the [selection audit](data/selection-audit.json) for their disposition. Exclusion from this snapshot is not a judgment of research quality.
@@ -251,7 +243,7 @@ Open the local URL printed by the server.
 - **Publishing:** In repository Settings → Pages, select GitHub Actions. Pushes to ${tick}main${tick} check, build, and publish automatically. The **Publish GitHub Pages** workflow also supports manual runs.
 - **Forks:** Update ${tick}repositoryUrl${tick} and ${tick}siteUrl${tick} in the catalogue and the repository links in the page before publishing your own copy.
 
-Weekly maintenance runs every Monday at approximately 09:17 Asia/Shanghai (01:17 UTC). It searches OpenAlex for new paper leads, adds relevant results as pending-review candidates, refreshes previously verified citation and star records, checks source links, validates the catalogue, and publishes the report. GitHub schedules may run later than the scheduled time. Candidate promotion and source corrections remain editorial decisions; there is no automatic promotion or write-back to Feishu.
+Weekly maintenance runs every Monday at approximately 09:17 Asia/Shanghai (01:17 UTC). It searches OpenAlex for new paper leads, publishes qualifying papers directly, refreshes previously verified citation and star records, checks source links, validates the catalogue, and publishes the report. GitHub schedules may run later than the scheduled time. Source corrections remain documented; there is no write-back or write-back to Feishu.
 
 See [what’s new](${data.meta.siteUrl}#updates), the [update log](CHANGELOG.md), and [maintenance instructions](docs/metadata.md). The workflow can also be started manually with its refresh option enabled.
 
@@ -290,7 +282,7 @@ const demoSection = `## Video demos
 ${selected.filter(r => r.kinds.includes('demos')).map(r => `| **${md(r.name)}** | ${md(r.demoType)} | ${md(r.credit)} | ${links(r)} | ${(r.relatedIds || []).map(id => {const item=data.resources.find(x=>x.id===id);return link(item.links.paper || item.links.project || item.links.code, item.name);}).join(' · ')} |`).join('\n')}
 
 `;
-readme = readme.replace('## Papers\n', articleSection + '## Papers\n').replace('## Benchmarks\n', datasetSection + '## Benchmarks\n').replace('## Candidates\n', demoSection + '## Candidates\n');
+readme = readme.replace('## Papers\n', articleSection + '## Papers\n').replace('## Benchmarks\n', datasetSection + '## Benchmarks\n').replace('## Sources\n', demoSection + '## Sources\n');
 readme = readme.replace('## License\n', '## Citation\n\nIf this collection helps your work, cite the repository and the individual resources you use. A machine-readable [citation file](CITATION.cff) is included.\n\n## License\n');
 await fs.writeFile('README.md', readme);
 const conciseReadme = `<div align="center">
@@ -336,7 +328,7 @@ Researchers, engineers, students, and curious builders are all welcome. If the c
 | Benchmarks & environments | **${count('benchmarks')}** |
 | Video demos | **${count('demos')}** |
 
-The snapshot contains **${selected.length} unique curated resources** and **${candidates.length} candidates** awaiting review. Category counts overlap when one resource is both a paper and a dataset or benchmark.
+The snapshot contains **${selected.length} unique curated resources**. Category counts overlap when one resource is both a paper and a dataset or benchmark.
 
 ## Our vision
 
@@ -350,13 +342,13 @@ We want this collection to become a shared research map: traceable enough for ca
 
 | Track | Window | Standard |
 | --- | --- | --- |
-| Leading conferences & journals | ${data.meta.paperWindow.from} – ${data.meta.paperWindow.to} | Relevant publication with an official record |
-| Important recent arXiv research | ${data.meta.arxivWindow.from} – ${data.meta.arxivWindow.to} | Clear influence or significance with supporting evidence |
+| Leading conferences & journals | ${currentPaperWindow.from} – ${currentPaperWindow.to} | Relevant publication with an official record |
+| Important recent arXiv research | ${currentArxivWindow.from} – ${currentArxivWindow.to} | Clear influence or significance with supporting evidence |
 | Tools & environments | Current research use | Official purpose, interfaces, and setup information |
 
 Priority venues include NeurIPS, ICLR, ICML, CVPR, ICCV, ECCV, AAAI, IJCAI, CoRL, RSS, ICRA, IROS, Nature, Science, T-RO, IJRR, TPAMI, JMLR, and TMLR. Read the [full collection policy](docs/collection-policy.md) and [metadata notes](docs/metadata.md).
 
-Every Monday, the maintenance workflow searches the free arXiv feed and optionally enriches results with OpenAlex. New matches appear only as **pending-review candidates**; a curator must verify the official source, scope, and significance before promotion.
+Every Monday, the maintenance workflow searches the free arXiv feed and optionally enriches results with OpenAlex. Qualifying papers are published directly after automated source, date, relevance, and evaluation checks. Records without sufficient evidence are skipped.
 
 ## 🤝 Contributing
 
@@ -402,4 +394,4 @@ await fs.writeFile('dist/maintenance.json', JSON.stringify(maintenance, null, 2)
 await fs.copyFile('docs/collection-policy.md', 'dist/docs/collection-policy.md');
 await fs.copyFile('docs/metadata.md', 'dist/docs/metadata.md');
 await fs.copyFile('data/selection-audit.json', 'dist/selection-audit.json');
-console.log(`Built ${selected.length} selected resources and ${candidates.length} candidates.`);
+console.log(`Built ${selected.length} selected resources.`);

@@ -2,6 +2,10 @@
 
 Collection-history baseline: **2026-09-14**. Added and revised dates describe this index, independently of publication dates and metric retrieval dates.
 
+## 2026-11-19 · Direct paper updates with source and evidence checks
+
+Collection update. Reassessed 24 prior leads using official arXiv records: included 11 recent research reports and omitted 13 out-of-window or insufficiently supported records. Removed the pending-review queue; qualifying future discoveries publish directly. Preprints retain their source label.
+
 ## 2026-11-19 · Weekly discovery for new game and embodied-agent papers
 
 Maintenance update. Added a Monday discovery pipeline using the free arXiv feed with optional OpenAlex enrichment. New matches are deduplicated, relevance-filtered, published as pending-review candidates, and kept outside curated counts until a human verifies their sources and scope.

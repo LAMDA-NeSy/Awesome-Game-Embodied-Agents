@@ -2,6 +2,13 @@
   "baselineDate": "2026-09-14",
   "entries": [
     {
+      "id": "2026-11-19-direct-paper-updates",
+      "date": "2026-11-19",
+      "title": "Direct paper updates with source and evidence checks",
+      "summary": "Reassessed 24 prior leads using official arXiv records: included 11 recent research reports and omitted 13 out-of-window or insufficiently supported records. Removed the pending-review queue; qualifying future discoveries publish directly. Preprints retain their source label.",
+      "type": "Collection update"
+    },
+    {
       "id": "2026-11-19-scheduled-paper-discovery",
       "date": "2026-11-19",
       "title": "Weekly discovery for new game and embodied-agent papers",

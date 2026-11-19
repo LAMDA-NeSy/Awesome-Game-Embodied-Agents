@@ -21,11 +21,11 @@ for(const r of data.resources){
  if(r.status==='selected'&&r.kinds.includes('papers')){
   assert(r.links.paper,`Missing paper source: ${r.id}`);
   if(r.selectionTrack==='recent-arxiv'){
-   assert(r.publicationDate>=data.meta.arxivWindow.from&&r.publicationDate<=data.meta.arxivWindow.to,`Outside arXiv window: ${r.id}`);
+   assert(r.publicationDate>=(r.eligibilityWindow?.from || data.meta.arxivWindow.from)&&r.publicationDate<=(r.eligibilityWindow?.to || data.meta.discoveryWindows?.arxiv.to || data.meta.arxivWindow.to),`Outside arXiv window: ${r.id}`);
    assert(r.influenceSources?.length,`Missing influence evidence: ${r.id}`);
   }else{
    assert(r.selectionTrack==='peer-reviewed'&&allowed.test(r.venue),`Unapproved venue: ${r.id}`);
-   assert(r.year>=2021&&r.year<=2026,`Outside paper window: ${r.id}`);
+   assert(r.eligibilityWindow ? r.publicationDate>=r.eligibilityWindow.from&&r.publicationDate<=r.eligibilityWindow.to : r.year>=2021&&r.year<=2026,`Outside paper window: ${r.id}`);
    if(r.year===2021)assert(r.publicationDate>='2021-09-14',`Missing precise boundary date: ${r.id}`);
   }
  }
@@ -86,15 +86,13 @@ const reviewedPaper=selected.find(r=>r.kinds.includes('papers')&&r.selectionTrac
 assert(reviewedPaper&&!renderCard(reviewedPaper).includes('Peer-reviewed'),'Peer-reviewed papers should rely on the venue without a redundant status label');
 const selectedPreprint=selected.find(r=>r.kinds.includes('papers')&&r.selectionTrack==='recent-arxiv');
 assert(selectedPreprint&&renderCard(selectedPreprint).includes('Selected preprint'),'Selected preprints must keep their review-status label');
-const candidatePaper=data.resources.find(r=>r.status==='candidate'&&r.kinds.includes('papers'));
-assert(candidatePaper&&renderCard(candidatePaper).includes('Candidate · pending review'),'Candidate papers must keep their pending-review label');
+assert(!data.resources.some(r=>r.status==='candidate'),'No pending-review queue should be published');
 const affiliatedPaper=selected.find(r=>r.kinds.includes('papers')&&r.institutions?.some(item=>item.logo));
 const affiliatedCard=affiliatedPaper&&renderCard(affiliatedPaper);
 assert(affiliatedCard&&/<h3>[\s\S]*paper-title-institutions[\s\S]*<\/h3>/.test(affiliatedCard),'Verified paper affiliations must render beside the title');
 assert(!/<nav class="paper-actions"[\s\S]*paper-title-institutions[\s\S]*<\/nav>/.test(affiliatedCard),'Affiliations must not remain in the source-action row');
 assert.equal((affiliatedCard.match(/class="rating-star"/g)||[]).length,5,'Selected paper cards must include a five-star rating control');
 assert(affiliatedCard.includes('Community')&&affiliatedCard.includes('Your rating'),'Paper ratings must distinguish the site-wide average from the visitor rating');
-assert(!renderCard(candidatePaper).includes('paper-rating'),'Candidate papers must not collect ratings before curation');
 assert(filterResources(data.resources,{query:'Hafner',candidates:false,view:'papers',domain:'all',topic:'all',year:'all',sort:'featured'}).some(r=>r.id==='kb-g05'),'Author search failed');
 // Venue year, source date, and collection history describe different timelines.
 const dates=[

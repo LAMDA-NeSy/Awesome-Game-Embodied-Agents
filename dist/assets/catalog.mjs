@@ -38,8 +38,7 @@ export function renderCard(r, lookup = new Map()) {
   const cross = r.domains.length > 1;
   const domain = cross ? 'cross-domain' : r.domains[0];
   const label = cross ? 'GAME + EMBODIED' : domain === 'game' ? 'GAME' : 'EMBODIED';
-  const candidate = r.status === 'candidate';
-  const evidence = candidate ? 'Candidate · pending review' : r.selectionTrack === 'recent-arxiv' ? 'Selected preprint' : r.selectionTrack === 'peer-reviewed' ? 'Peer-reviewed' : r.kinds.includes('articles') ? 'Research article' : 'Research infrastructure';
+  const evidence = r.selectionTrack === 'recent-arxiv' ? 'Selected preprint' : r.selectionTrack === 'peer-reviewed' ? 'Peer-reviewed' : r.kinds.includes('articles') ? 'Research article' : 'Research infrastructure';
   const field = (name, value) => value ? `<p><b>${name}:</b> ${escapeHtml(value)}</p>` : '';
   const primary = safeUrl(r.links.paper || r.links.article || r.links.code || r.links.data || r.links.project);
   const title = primary ? `<a href="${escapeHtml(primary)}" target="_blank" rel="noopener noreferrer">${escapeHtml(r.name)}</a>` : escapeHtml(r.name);
@@ -49,13 +48,13 @@ export function renderCard(r, lookup = new Map()) {
     <p class="summary">${escapeHtml(r.summary)}</p>
     <div class="tags">${r.tags.map(t=>`<span>${escapeHtml(t)}</span>`).join('')}</div>
     <details><summary>Details &amp; evidence</summary>${field('Credit',r.credit)}${field('Environment & tasks',r.environment)}${field('Observations & actions',r.interface)}${field('Scope & limitations',r.limits)}${field('Why included',r.selectionReason)}${field('Evidence status',r.evidence)}${field('Original knowledge-base review label',r.sourceEvidence)}${field('Publication note',r.publicationNote)}${field(r.selectionTrack==='recent-arxiv'?'First submitted':'Publication date',r.publicationDate)}${r.influenceSources?.length?`<p>Evidence for editorial selection: ${r.influenceSources.map(s=>externalLink(s,'Official research report')).join(' · ')}</p>`:''}<p class="checked-date">Checked ${escapeHtml(r.checkedAt)}${r.sourceId?` · Knowledge-base ID ${escapeHtml(r.sourceId)}`:''}</p>${collectionDates(r)}${relatedLinks(r,lookup)}</details></div>
-    <nav class="resource-links" aria-label="Sources for ${escapeHtml(r.name)}">${Object.entries(r.links).map(([k,v])=>externalLink(v, {paper:'Paper',code:'Code',project:'Project',data:'Data',article:'Read article',video:'Video'}[k] || k)).join('')}${renderStarBadge(r)}<span class="evidence-badge ${candidate?'candidate-badge':''}">${evidence}</span></nav>
+    <nav class="resource-links" aria-label="Sources for ${escapeHtml(r.name)}">${Object.entries(r.links).map(([k,v])=>externalLink(v, {paper:'Paper',code:'Code',project:'Project',data:'Data',article:'Read article',video:'Video'}[k] || k)).join('')}${renderStarBadge(r)}<span class="evidence-badge ">${evidence}</span></nav>
   </article>`;
 }
 export function filterResources(resources, state) {
   const query = state.query.trim().normalize('NFKC').toLocaleLowerCase();
   const terms = query.split(/\s+/).filter(Boolean);
-  return sortResources(resources.filter(r => (state.candidates ? r.status === 'candidate' : r.status === 'selected')
+  return sortResources(resources.filter(r => r.status === 'selected'
     && (state.view === 'all' || r.kinds.includes(state.view))
     && (state.domain === 'all' || r.domains.includes(state.domain))
     && (state.topic === 'all' || r.tags.includes(state.topic))
@@ -146,8 +145,7 @@ function renderPaper(r,lookup) {
   const shortName=r.name.length<=20 && !r.title.toLowerCase().includes(r.name.toLowerCase())?` (${r.name})`:'';
   const domain=r.domains.length>1?'cross-domain':r.domains[0];
   const domainLabel=r.domains.length>1?'GAME + EMBODIED':r.domains[0]==='game'?'GAME':'EMBODIED';
-  const candidate=r.status==='candidate';
-  const evidence=candidate?'Candidate · pending review':r.selectionTrack==='recent-arxiv'?'Selected preprint':'';
+  const evidence=r.selectionTrack==='recent-arxiv'?'Selected preprint':'';
   const citations=r.metrics?.citations;
   const stars=r.metrics?.github;
   const stats=[metricLink(r.links.data,'Data','data'),metricLink(r.links.model,'Models','model'),metricLink(r.links.code,'Code','code'),metricLink(citations?.sourceUrl,'Citations','citations',citations),metricLink(stars?.sourceUrl,'GitHub stars','stars',stars)].join('');
@@ -156,7 +154,7 @@ function renderPaper(r,lookup) {
   const field=(label,value)=>value?`<p><b>${label}:</b> ${escapeHtml(value)}</p>`:'';
   const preview=b.preview && /^assets\/papers\/[a-z0-9-]+\.png$/.test(b.preview)?`<a class="paper-preview" href="${escapeHtml(safeUrl(r.links.pdf||r.links.paper))}" target="_blank" rel="noopener noreferrer" title="${escapeHtml(b.previewVersion||'Paper first page')}" aria-label="Open ${escapeHtml(r.name)} PDF"><img src="${escapeHtml(b.preview)}" alt="First page of ${escapeHtml(r.title)}" width="320" height="420" loading="lazy" decoding="async"></a>`:'';
   return `<article class="resource-card paper-card ${stats?'has-stats':''}" id="resource-${escapeHtml(r.id)}">
-    <div class="paper-visual">${preview}<div class="paper-classification"><span class="domain-tag ${domain}">${domainLabel}</span><span class="resource-venue">${escapeHtml(r.venue)}</span>${evidence?`<span class="evidence-badge ${candidate?'candidate-badge':''}">${evidence}</span>`:''}</div></div>
+    <div class="paper-visual">${preview}<div class="paper-classification"><span class="domain-tag ${domain}">${domainLabel}</span><span class="resource-venue">${escapeHtml(r.venue)}</span>${evidence?`<span class="evidence-badge ">${evidence}</span>`:''}</div></div>
     <div class="resource-body paper-body"><h3><a href="${escapeHtml(safeUrl(r.links.paper))}" target="_blank" rel="noopener noreferrer">${escapeHtml(r.title+shortName)}</a>${renderInstitutions(r)}</h3>
     <p class="paper-byline">${date.value?`<span class="paper-date" title="${escapeHtml(date.meaning)}"><span class="date-label">${escapeHtml(date.label)}</span> <time datetime="${escapeHtml(date.value)}">${escapeHtml(date.value)}</time></span>`:''}${shownAuthors?`<span class="paper-authors" title="${escapeHtml(authors.join(', '))}">${escapeHtml(shownAuthors)}</span>`:''}</p>
     <p class="summary">${escapeHtml(r.summary)}</p>

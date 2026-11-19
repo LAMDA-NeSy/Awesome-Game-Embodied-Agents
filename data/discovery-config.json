@@ -1,7 +1,6 @@
 {
   "provider": "arXiv with optional OpenAlex enrichment",
   "schedule": "Every Monday at approximately 09:17 Asia/Shanghai",
-  "maxCandidatesPerRun": 16,
   "resultsPerQuery": 50,
   "arxivResultsPerBatch": 100,
   "peerReviewedWindowYears": 5,
@@ -18,5 +17,6 @@
     "robot learning manipulation",
     "robot navigation agent",
     "world model control agent"
-  ]
+  ],
+  "maxPapersPerRun": 16
 }

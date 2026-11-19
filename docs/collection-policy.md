@@ -17,7 +17,7 @@ Snapshot: **2026-09-14**. Publication windows are fixed for this edition and sho
 - Provide traceable reasons for significance: released and adopted models or environments, substantial multi-task evaluations, independent follow-up work, or a complete official research report establishing a significant research direction.
 - Importance is an editorial judgment that needs a rationale and evidence links. Institutional reputation, social engagement, and unverified citation counts are insufficient on their own. This edition does not claim a quantitative citation-impact assessment.
 - SIMA 2 and π*0.6 / RECAP are selected as significant research directions, with first submission dates, official reports, and explicit rationales retained. They remain labeled arXiv unless formal acceptance is verified.
-- Work lacking sufficient bibliographic or significance evidence stays in the candidate view and is excluded from curated counts.
+- Work lacking sufficient bibliographic or significance evidence is not included. There is no public candidate queue.
 
 ## Articles, tools, datasets, and benchmarks
 
@@ -39,6 +39,6 @@ Align environments and tasks, observation access, action granularity, training d
 
 ## Updates
 
-Maintain `data/resources.json`, add official sources and resource limitations, then run `npm run build` and `npm run check`. When promoting a candidate, update `status`, `selectionTrack`, `selectionReason`, `evidence`, and `checkedAt`.
+Maintain `data/resources.json`, retain official sources and resource limitations, then run `npm run build` and `npm run check`.
 
-New paper selection is manually curated. Weekly automation searches OpenAlex within rolling five-year peer-reviewed and rolling one-year preprint discovery windows, deduplicates results, and adds relevant leads only as pending-review candidates. It also refreshes existing verified statistics and reports source-link availability. Routine runs never promote candidates, remove older curated work, alter this edition's documented publication windows, certify paper claims, or write back to the original Feishu knowledge base. Raw source exports are excluded from the repository and published website.
+Weekly automation uses rolling five-year formal-publication and one-year preprint discovery windows. It checks source identity, authors, dates, topic relevance and evaluation evidence, deduplicates results, and publishes qualifying papers directly. Preprints retain their preprint label. Unsupported, workshop-only, irrelevant or incomplete records are skipped without entering a pending-review queue. See [metadata maintenance](metadata.md) for the exact automatic evidence requirements. Existing editions remain historical; advancing the discovery window does not remove previously selected work. There is no write-back to Feishu.

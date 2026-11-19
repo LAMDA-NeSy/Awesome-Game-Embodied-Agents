@@ -20,7 +20,7 @@
     "referenceUrl": "https://github.com/kairunwen/Awesome-Robot-Use-Agent#projects",
     "counts": {
       "articles": 6,
-      "papers": 83,
+      "papers": 94,
       "projects": 5,
       "datasets": 4,
       "benchmarks": 8,
@@ -29,7 +29,18 @@
     "repositoryUrl": "https://github.com/LAMDA-NeSy/Awesome-Game-Embodied-Agents",
     "siteUrl": "https://lamda-nesy.github.io/Awesome-Game-Embodied-Agents/",
     "ratingsApiUrl": "https://awesome-gea-ratings.ratings-worker.workers.dev/ratings",
-    "language": "en"
+    "language": "en",
+    "discoveryWindows": {
+      "asOf": "2026-11-19",
+      "paper": {
+        "from": "2021-11-19",
+        "to": "2026-11-19"
+      },
+      "arxiv": {
+        "from": "2025-11-19",
+        "to": "2026-11-19"
+      }
+    }
   },
   "resources": [
     {
@@ -4374,150 +4385,6 @@
       "updatedAt": "2026-09-14"
     },
     {
-      "id": "candidate-s08",
-      "name": "X-Ego",
-      "title": "X-Ego: Acquiring Team-Level Tactical Situational Awareness via Cross-Egocentric Contrastive Video Representation Learning",
-      "domains": [
-        "game"
-      ],
-      "kinds": [
-        "papers"
-      ],
-      "year": 2025,
-      "venue": "Candidate · arXiv",
-      "summary": "Studies whether synchronized teammate first-person views during training help a single-view model infer otherwise hidden team situations.",
-      "tags": [
-        "Pending review"
-      ],
-      "environment": "Counter-Strike 2, de_mirage.",
-      "interface": "Training uses synchronized first-person video from multiple players. Inference can use one view to classify current player regions; it does not output combat actions.",
-      "limits": "Separate training and test observation access. Location classification is not win rate; some encoders degrade, and round-level splits do not establish cross-player or cross-map generalization.",
-      "status": "candidate",
-      "evidence": "Knowledge-base lead; verification for curated inclusion is incomplete.",
-      "sourceType": "knowledge",
-      "checkedAt": "2026-09-14",
-      "links": {
-        "paper": "https://arxiv.org/abs/2510.19150",
-        "pdf": "https://arxiv.org/pdf/2510.19150"
-      },
-      "rank": 72,
-      "sourceId": "S08",
-      "selectionTrack": "candidate",
-      "selectionReason": "Recent preprint lead; official acceptance or evidence of significance needs further verification.",
-      "paperType": "method",
-      "bibliography": {
-        "source": "arXiv",
-        "sourceUrl": "https://arxiv.org/abs/2510.19150",
-        "checkedAt": "2026-09-14",
-        "authors": [
-          "Yunzhe Wang",
-          "Soham Hans",
-          "Volkan Ustun"
-        ],
-        "date": "2025-10-22",
-        "dateLabel": "First arXiv submission",
-        "arxivId": "2510.19150",
-        "bibtex": "@misc{candidate-s08,\n  title = {X-Ego: Acquiring Team-Level Tactical Situational Awareness via Cross-Egocentric Contrastive Video Representation Learning},\n  author = {Yunzhe Wang and Soham Hans and Volkan Ustun},\n  year = {2025},\n  url = {https://arxiv.org/abs/2510.19150}\n}",
-        "preview": "assets/papers/candidate-s08.png",
-        "previewSourceUrl": "https://arxiv.org/pdf/2510.19150"
-      },
-      "metrics": {
-        "citations": {
-          "value": 5,
-          "source": "OpenAlex",
-          "sourceUrl": "https://openalex.org/W4416246481",
-          "updatedAt": "2026-11-16",
-          "recordTitle": "X-Ego: Acquiring Team-Level Tactical Situational Awareness via Cross-Egocentric Contrastive Video Representation Learning"
-        }
-      },
-      "addedAt": "2026-09-14",
-      "updatedAt": "2026-09-14"
-    },
-    {
-      "id": "candidate-p01",
-      "name": "Game-TARS",
-      "title": "Game-TARS: Pretrained Foundation Models for Scalable Generalist Multimodal Game Agents",
-      "domains": [
-        "game"
-      ],
-      "kinds": [
-        "papers"
-      ],
-      "year": 2025,
-      "venue": "Candidate · arXiv",
-      "summary": "Studies generalist cross-game control with a shared keyboard/mouse representation, addressing latency and repetitive actions in stepwise multimodal reasoning.",
-      "tags": [
-        "Pending review"
-      ],
-      "environment": "ViZDoom, Minecraft, Web 3D, and MiniWorld.",
-      "interface": "Multimodal images and trajectories map to native keyboard/mouse action sequences. Exact FPS observation access and execution timing need verification.",
-      "limits": "Paused browser execution and best-of-five results do not establish real-time FPS performance. Keep Doom returns, Minecraft success rates, and online combat ablations separate, with data and scale differences noted.",
-      "status": "candidate",
-      "evidence": "Knowledge-base lead; verification for curated inclusion is incomplete.",
-      "sourceType": "knowledge",
-      "checkedAt": "2026-09-14",
-      "links": {
-        "paper": "https://arxiv.org/abs/2510.23691",
-        "pdf": "https://arxiv.org/pdf/2510.23691"
-      },
-      "rank": 73,
-      "sourceId": "P01",
-      "selectionTrack": "candidate",
-      "selectionReason": "Recent preprint lead; official acceptance or evidence of significance needs further verification.",
-      "paperType": "method",
-      "bibliography": {
-        "source": "arXiv",
-        "sourceUrl": "https://arxiv.org/abs/2510.23691",
-        "checkedAt": "2026-09-14",
-        "authors": [
-          "Zihao Wang",
-          "Xujing Li",
-          "Yining Ye",
-          "Junjie Fang",
-          "Haoming Wang",
-          "Longxiang Liu",
-          "Shihao Liang",
-          "Junting Lu",
-          "Zhiyong Wu",
-          "Jiazhan Feng",
-          "Wanjun Zhong",
-          "Zili Li",
-          "Yu Wang",
-          "Yu Miao",
-          "Bo Zhou",
-          "Yuanfan Li",
-          "Hao Wang",
-          "Zhongkai Zhao",
-          "Faming Wu",
-          "Zhengxuan Jiang",
-          "Weihao Tan",
-          "Heyuan Yao",
-          "Shi Yan",
-          "Xiangyang Li",
-          "Yitao Liang",
-          "Yujia Qin",
-          "Guang Shi"
-        ],
-        "date": "2025-10-27",
-        "dateLabel": "First arXiv submission",
-        "arxivId": "2510.23691",
-        "bibtex": "@misc{candidate-p01,\n  title = {Game-TARS: Pretrained Foundation Models for Scalable Generalist Multimodal Game Agents},\n  author = {Zihao Wang and Xujing Li and Yining Ye and Junjie Fang and Haoming Wang and Longxiang Liu and Shihao Liang and Junting Lu and Zhiyong Wu and Jiazhan Feng and Wanjun Zhong and Zili Li and Yu Wang and Yu Miao and Bo Zhou and Yuanfan Li and Hao Wang and Zhongkai Zhao and Faming Wu and Zhengxuan Jiang and Weihao Tan and Heyuan Yao and Shi Yan and Xiangyang Li and Yitao Liang and Yujia Qin and Guang Shi},\n  year = {2025},\n  url = {https://arxiv.org/abs/2510.23691}\n}",
-        "preview": "assets/papers/candidate-p01.png",
-        "previewSourceUrl": "https://arxiv.org/pdf/2510.23691"
-      },
-      "metrics": {
-        "citations": {
-          "value": 24,
-          "source": "OpenAlex",
-          "sourceUrl": "https://openalex.org/W7102387721",
-          "updatedAt": "2026-11-16",
-          "recordTitle": "Game-TARS: Pretrained Foundation Models for Scalable Generalist Multimodal Game Agents"
-        }
-      },
-      "addedAt": "2026-09-14",
-      "updatedAt": "2026-09-14"
-    },
-    {
       "id": "candidate-p02",
       "name": "GameWAM",
       "title": "GameWAM: A World Action Model for Video Games",
@@ -4528,31 +4395,32 @@
         "papers"
       ],
       "year": 2026,
-      "venue": "Candidate · arXiv",
-      "summary": "Combines future-frame supervision with action learning to study whether modeling world changes improves game control, and why generation noise causes camera drift.",
+      "venue": "arXiv · 2026-08",
+      "summary": "Jointly models future game observations and native keyboard/mouse actions, with block-cycle replanning for closed-loop gameplay.",
       "tags": [
-        "Pending review"
+        "Game agents"
       ],
-      "environment": "ViZDoom and Minecraft MCU.",
-      "interface": "ViZDoom inputs include images and position, orientation, and health state. In-map APPO expert trajectories train keyboard/mouse action chunks with receding-horizon execution.",
-      "limits": "This is neither vision-only nor zero-shot FPS control. Data, inputs, and architectures differ from baselines, allowing only system-level comparisons. Minecraft ablations are not Doom results; execution steps are not elapsed time.",
-      "status": "candidate",
-      "evidence": "Knowledge-base lead; verification for curated inclusion is incomplete.",
+      "environment": "Game and GUI trajectories.",
+      "interface": "Visual history and task context generate future frames and executable native actions.",
+      "limits": "Author-reported evaluations use specific task suites, robot or game configurations, and training data. Results have not been independently reproduced; released assets and task coverage should be checked at the original source.",
+      "status": "selected",
+      "evidence": "Official arXiv abstract and available author-linked report/project sources checked; experiments not independently reproduced.",
       "sourceType": "knowledge",
-      "checkedAt": "2026-09-14",
+      "checkedAt": "2026-11-19",
       "links": {
         "paper": "https://arxiv.org/abs/2608.26200",
-        "pdf": "https://arxiv.org/pdf/2608.26200"
+        "pdf": "https://arxiv.org/pdf/2608.26200",
+        "project": "https://yunncheng.github.io/GameWAM/"
       },
       "rank": 74,
       "sourceId": "P02",
-      "selectionTrack": "candidate",
-      "selectionReason": "Recent preprint lead; official acceptance or evidence of significance needs further verification.",
+      "selectionTrack": "recent-arxiv",
+      "selectionReason": "Selected recent research report for its systematic task evaluations and direct contribution to game or robot policy learning; significance is an editorial assessment, not a citation ranking.",
       "paperType": "method",
       "bibliography": {
         "source": "arXiv",
         "sourceUrl": "https://arxiv.org/abs/2608.26200",
-        "checkedAt": "2026-09-14",
+        "checkedAt": "2026-11-19",
         "authors": [
           "Yuncheng Guo",
           "Zhanqiu Zhang",
@@ -4575,315 +4443,12 @@
           "recordTitle": "GameWAM: A World Action Model for Video Games"
         }
       },
-      "addedAt": "2026-09-14",
-      "updatedAt": "2026-09-14"
-    },
-    {
-      "id": "candidate-t03",
-      "name": "See, Symbolize, Act",
-      "title": "See, Symbolize, Act: Grounding VLMs with Spatial Representations for Better Gameplay",
-      "domains": [
-        "game"
+      "addedAt": "2026-11-19",
+      "updatedAt": "2026-11-19",
+      "influenceSources": [
+        "https://yunncheng.github.io/GameWAM/"
       ],
-      "kinds": [
-        "papers"
-      ],
-      "year": 2026,
-      "venue": "Candidate · arXiv",
-      "summary": "Studies whether visual-language game-agent failures arise from perception or decision-making, and when symbolic spatial information helps.",
-      "tags": [
-        "Pending review"
-      ],
-      "environment": "ViZDoom defend_the_center; also Atari and AI2-THOR.",
-      "interface": "Compares images, self-extracted object symbols, and engine labels-buffer ground truth; outputs rotation and ATTACK in defend_the_center.",
-      "limits": "Engine ground truth provides extra information, so gains cannot be attributed entirely to reasoning. The fixed-position single-scenario setting has limited variance evidence. An AAAI Bridge is not the main conference.",
-      "status": "candidate",
-      "evidence": "Knowledge-base lead; verification for curated inclusion is incomplete.",
-      "sourceType": "knowledge",
-      "checkedAt": "2026-09-14",
-      "links": {
-        "paper": "https://arxiv.org/abs/2603.11601",
-        "pdf": "https://arxiv.org/pdf/2603.11601"
-      },
-      "rank": 75,
-      "sourceId": "T03",
-      "selectionTrack": "candidate",
-      "selectionReason": "Recent preprint lead; official acceptance or evidence of significance needs further verification.",
-      "paperType": "method",
-      "bibliography": {
-        "source": "arXiv",
-        "sourceUrl": "https://arxiv.org/abs/2603.11601",
-        "checkedAt": "2026-09-14",
-        "authors": [
-          "Ashish Baghel",
-          "Paras Chopra"
-        ],
-        "date": "2026-03-12",
-        "dateLabel": "First arXiv submission",
-        "arxivId": "2603.11601",
-        "bibtex": "@misc{candidate-t03,\n  title = {See, Symbolize, Act: Grounding VLMs with Spatial Representations for Better Gameplay},\n  author = {Ashish Baghel and Paras Chopra},\n  year = {2026},\n  url = {https://arxiv.org/abs/2603.11601}\n}",
-        "preview": "assets/papers/candidate-t03.png",
-        "previewSourceUrl": "https://arxiv.org/pdf/2603.11601"
-      },
-      "metrics": {
-        "citations": {
-          "value": 0,
-          "source": "OpenAlex",
-          "sourceUrl": "https://openalex.org/W7135428496",
-          "updatedAt": "2026-11-16",
-          "recordTitle": "See, Symbolize, Act: Grounding VLMs with Spatial Representations for Better Gameplay"
-        }
-      },
-      "addedAt": "2026-09-14",
-      "updatedAt": "2026-09-14"
-    },
-    {
-      "id": "candidate-t04",
-      "name": "Playing DOOM with 1.3M Parameters",
-      "title": "Playing DOOM with 1.3M Parameters: Specialized Small Models vs Large Language Models for Real-Time Game Control",
-      "domains": [
-        "game"
-      ],
-      "kinds": [
-        "papers"
-      ],
-      "year": 2026,
-      "venue": "Candidate · arXiv",
-      "summary": "Tests task-specific small models for low-latency control in real-time shooting, comparing them with general language models.",
-      "tags": [
-        "Pending review"
-      ],
-      "environment": "ViZDoom defend_the_center.",
-      "interface": "ASCII images and quantized engine depth feed supervised learning from human demonstrations for compound turning/firing actions in a fixed defense scenario.",
-      "limits": "Task-specific supervised learning differs from zero-shot LLM use. Align episode budgets, frame skipping, hardware, and observation access. Random neighboring-frame splits do not demonstrate cross-scene generalization.",
-      "status": "candidate",
-      "evidence": "Knowledge-base lead; verification for curated inclusion is incomplete.",
-      "sourceType": "knowledge",
-      "checkedAt": "2026-09-14",
-      "links": {
-        "paper": "https://arxiv.org/abs/2604.07385",
-        "pdf": "https://arxiv.org/pdf/2604.07385"
-      },
-      "rank": 76,
-      "sourceId": "T04",
-      "selectionTrack": "candidate",
-      "selectionReason": "Recent preprint lead; official acceptance or evidence of significance needs further verification.",
-      "paperType": "method",
-      "bibliography": {
-        "source": "arXiv",
-        "sourceUrl": "https://arxiv.org/abs/2604.07385",
-        "checkedAt": "2026-09-14",
-        "authors": [
-          "David Golchinfar",
-          "Daryoush Vaziri",
-          "Alexander Marquardt"
-        ],
-        "date": "2026-04-08",
-        "dateLabel": "First arXiv submission",
-        "arxivId": "2604.07385",
-        "bibtex": "@misc{candidate-t04,\n  title = {Playing DOOM with 1.3M Parameters: Specialized Small Models vs Large Language Models for Real-Time Game Control},\n  author = {David Golchinfar and Daryoush Vaziri and Alexander Marquardt},\n  year = {2026},\n  url = {https://arxiv.org/abs/2604.07385}\n}",
-        "preview": "assets/papers/candidate-t04.png",
-        "previewSourceUrl": "https://arxiv.org/pdf/2604.07385"
-      },
-      "metrics": {
-        "citations": {
-          "value": 2,
-          "source": "OpenAlex",
-          "sourceUrl": "https://openalex.org/W7153669982",
-          "updatedAt": "2026-11-16",
-          "recordTitle": "Playing DOOM with 1.3M Parameters: Specialized Small Models vs Large Language Models for Real-Time Game Control"
-        }
-      },
-      "addedAt": "2026-09-14",
-      "updatedAt": "2026-09-14"
-    },
-    {
-      "id": "candidate-t05",
-      "name": "Augmenting Human Performance with an XR Agent Learning from Online Behavior and BCI Evidence",
-      "title": "Augmenting Human Performance with an XR Agent Learning from Online Behavior and BCI Evidence",
-      "domains": [
-        "game"
-      ],
-      "kinds": [
-        "papers"
-      ],
-      "year": 2026,
-      "venue": "Candidate · arXiv",
-      "summary": "Studies how an XR assistant can identify targets a player intends to engage but cannot shoot in time, beyond learning only from completed shots.",
-      "tags": [
-        "Pending review"
-      ],
-      "environment": "Unity XR SpaceShooter: distinguish friendly/enemy ships and protect a mothership.",
-      "interface": "Real-user shooting behavior, fixation-locked EEG, and visual information produce target-direction cues. The human performs the actual shooting.",
-      "limits": "Cue convergence and belief convergence are different. Small exploratory samples do not establish all between-group differences; results are not autonomous-control win rates. The author's claimed acceptance still requires verification.",
-      "status": "candidate",
-      "evidence": "Knowledge-base lead; verification for curated inclusion is incomplete.",
-      "sourceType": "knowledge",
-      "checkedAt": "2026-09-14",
-      "links": {
-        "paper": "https://arxiv.org/abs/2608.30369",
-        "pdf": "https://arxiv.org/pdf/2608.30369"
-      },
-      "rank": 77,
-      "sourceId": "T05",
-      "selectionTrack": "candidate",
-      "selectionReason": "Recent preprint lead; official acceptance or evidence of significance needs further verification.",
-      "paperType": "method",
-      "bibliography": {
-        "source": "arXiv",
-        "sourceUrl": "https://arxiv.org/abs/2608.30369",
-        "checkedAt": "2026-09-14",
-        "authors": [
-          "Ziheng Li",
-          "Xichen He",
-          "Haoyan Chen",
-          "Charlie Zou",
-          "Sheng Bai",
-          "Benjamin Yang",
-          "Mengyuan Wu",
-          "Jake Ledner",
-          "Yi-Jie Cheng",
-          "Akito Yamauchi",
-          "Dishita G Turakhia",
-          "Steven Feiner",
-          "Paul Sajda"
-        ],
-        "date": "2026-08-31",
-        "dateLabel": "First arXiv submission",
-        "arxivId": "2608.30369",
-        "bibtex": "@misc{candidate-t05,\n  title = {Augmenting Human Performance with an XR Agent Learning from Online Behavior and BCI Evidence},\n  author = {Ziheng Li and Xichen He and Haoyan Chen and Charlie Zou and Sheng Bai and Benjamin Yang and Mengyuan Wu and Jake Ledner and Yi-Jie Cheng and Akito Yamauchi and Dishita G Turakhia and Steven Feiner and Paul Sajda},\n  year = {2026},\n  url = {https://arxiv.org/abs/2608.30369}\n}",
-        "preview": "assets/papers/candidate-t05.png",
-        "previewSourceUrl": "https://arxiv.org/pdf/2608.30369"
-      },
-      "metrics": {
-        "citations": {
-          "value": 0,
-          "source": "OpenAlex",
-          "sourceUrl": "https://openalex.org/W7204885827",
-          "updatedAt": "2026-11-16",
-          "recordTitle": "Augmenting Human Performance with an XR Agent Learning from Online Behavior and BCI Evidence"
-        }
-      },
-      "addedAt": "2026-09-14",
-      "updatedAt": "2026-09-14"
-    },
-    {
-      "id": "candidate-t06",
-      "name": "Procedural Generation of First Person Shooter Maps using Map-Elites",
-      "title": "Procedural Generation of First Person Shooter Maps using Map-Elites",
-      "domains": [
-        "game"
-      ],
-      "kinds": [
-        "papers"
-      ],
-      "year": 2026,
-      "venue": "Candidate · arXiv",
-      "summary": "Uses quality-diversity search to generate FPS maps with different layouts and combat rhythms, rather than a single balanced map.",
-      "tags": [
-        "Pending review"
-      ],
-      "environment": "Unity Project Arena, Duel 1v1 deathmatch.",
-      "interface": "Map representations and search parameters produce layouts, evaluated by predefined bots in 1v1 deathmatch.",
-      "limits": "Procedural generation here is not a neural world model. Kill entropy measures balance, not enjoyment; bot skill, weapons, and search budgets constrain conclusions about human experience.",
-      "status": "candidate",
-      "evidence": "Knowledge-base lead; verification for curated inclusion is incomplete.",
-      "sourceType": "knowledge",
-      "checkedAt": "2026-09-14",
-      "links": {
-        "paper": "https://arxiv.org/abs/2605.30570",
-        "pdf": "https://arxiv.org/pdf/2605.30570"
-      },
-      "rank": 78,
-      "sourceId": "T06",
-      "selectionTrack": "candidate",
-      "selectionReason": "Recent preprint lead; official acceptance or evidence of significance needs further verification.",
-      "paperType": "method",
-      "bibliography": {
-        "source": "arXiv",
-        "sourceUrl": "https://arxiv.org/abs/2605.30570",
-        "checkedAt": "2026-09-14",
-        "authors": [
-          "Simone de Donato",
-          "Pier Luca Lanzi",
-          "Daniele Loiacono"
-        ],
-        "date": "2026-05-28",
-        "dateLabel": "First arXiv submission",
-        "arxivId": "2605.30570",
-        "bibtex": "@misc{candidate-t06,\n  title = {Procedural Generation of First Person Shooter Maps using Map-Elites},\n  author = {Simone de Donato and Pier Luca Lanzi and Daniele Loiacono},\n  year = {2026},\n  url = {https://arxiv.org/abs/2605.30570}\n}",
-        "preview": "assets/papers/candidate-t06.png",
-        "previewSourceUrl": "https://arxiv.org/pdf/2605.30570"
-      },
-      "metrics": {
-        "citations": {
-          "value": 0,
-          "source": "OpenAlex",
-          "sourceUrl": "https://openalex.org/W7163287888",
-          "updatedAt": "2026-11-16",
-          "recordTitle": "Procedural Generation of First Person Shooter Maps using Map-Elites"
-        }
-      },
-      "addedAt": "2026-09-14",
-      "updatedAt": "2026-09-14"
-    },
-    {
-      "id": "candidate-t07",
-      "name": "Account Consistency from Gameplay Traces",
-      "title": "Account Consistency from Gameplay Traces: Same-Player Verification in Counter-Strike 2",
-      "domains": [
-        "game"
-      ],
-      "kinds": [
-        "papers"
-      ],
-      "year": 2026,
-      "venue": "Candidate · arXiv",
-      "summary": "Uses gameplay behavior fingerprints to assess whether a CS2 account's current match was played by its historical operator.",
-      "tags": [
-        "Pending review"
-      ],
-      "environment": "Real Counter-Strike 2 match demos.",
-      "interface": "Crosshair, movement, firing, economy, and timing traces produce a cross-match same-operator score. The system does not control the game.",
-      "limits": "AUC is not deployment accuracy. Fix query sets and history size before comparing; same-person verification is not cheating detection. Contaminated history and noisy identity records affect conclusions.",
-      "status": "candidate",
-      "evidence": "Knowledge-base lead; verification for curated inclusion is incomplete.",
-      "sourceType": "knowledge",
-      "checkedAt": "2026-09-14",
-      "links": {
-        "paper": "https://arxiv.org/abs/2608.24893",
-        "pdf": "https://arxiv.org/pdf/2608.24893"
-      },
-      "rank": 79,
-      "sourceId": "T07",
-      "selectionTrack": "candidate",
-      "selectionReason": "Recent preprint lead; official acceptance or evidence of significance needs further verification.",
-      "paperType": "method",
-      "bibliography": {
-        "source": "arXiv",
-        "sourceUrl": "https://arxiv.org/abs/2608.24893",
-        "checkedAt": "2026-09-14",
-        "authors": [
-          "Xuchen Zhang"
-        ],
-        "date": "2026-06-20",
-        "dateLabel": "First arXiv submission",
-        "arxivId": "2608.24893",
-        "bibtex": "@misc{candidate-t07,\n  title = {Account Consistency from Gameplay Traces: Same-Player Verification in Counter-Strike 2},\n  author = {Xuchen Zhang},\n  year = {2026},\n  url = {https://arxiv.org/abs/2608.24893}\n}",
-        "preview": "assets/papers/candidate-t07.png",
-        "previewSourceUrl": "https://arxiv.org/pdf/2608.24893"
-      },
-      "metrics": {
-        "citations": {
-          "value": 0,
-          "source": "OpenAlex",
-          "sourceUrl": "https://openalex.org/W7204671282",
-          "updatedAt": "2026-11-09",
-          "recordTitle": "Account Consistency from Gameplay Traces: Same-Player Verification in Counter-Strike 2"
-        }
-      },
-      "addedAt": "2026-09-14",
-      "updatedAt": "2026-09-14"
+      "publicationDate": "2026-08-25"
     },
     {
       "id": "survey-foundation-robotics",
@@ -9290,34 +8855,33 @@
       "name": "Gamer",
       "title": "Gamer: A Generalist Vision-Language-Action Foundation Model for Long-Horizon Real-Time Game Agent",
       "domains": [
-        "game",
-        "embodied"
+        "game"
       ],
       "kinds": [
         "papers"
       ],
       "year": 2026,
-      "venue": "Candidate · arXiv",
-      "summary": "We introduce Gamer, a generalist agent framework built for long-horizon tasks in complex interactive environments. Its end-to-end architecture combines perception, memory management, and multi-step reasoning. A shared training and deployment pipeline supports interaction with both conventional 2D graphical interfaces and complex 3D simulated worlds. We…",
+      "venue": "arXiv · 2026-11",
+      "summary": "Combines gameplay pretraining, sparse reasoning, memory, and multi-turn reinforcement learning for long-horizon native-interface game control.",
       "tags": [
-        "Automated discovery",
-        "Pending review"
+        "Game agents"
       ],
-      "environment": "Automated discovery lead; environments and task definitions require curator verification.",
-      "interface": "Automated discovery lead; observation access, action space, and execution interface require curator verification.",
-      "limits": "This candidate was found from bibliographic metadata and has not received a full editorial review. Do not treat its inclusion as verification of claims, venue status, impact, or reproducibility.",
-      "status": "candidate",
-      "evidence": "Automatically discovered through arXiv; bibliographic sources and technical claims require curator review.",
+      "environment": "2D benchmarks and 3D open-world games including Honkai: Star Rail.",
+      "interface": "Screenshots and task history map to keyboard and mouse actions.",
+      "limits": "Author-reported evaluations use specific task suites, robot or game configurations, and training data. Results have not been independently reproduced; released assets and task coverage should be checked at the original source.",
+      "status": "selected",
+      "evidence": "Official arXiv abstract and available author-linked report/project sources checked; experiments not independently reproduced.",
       "sourceType": "automated-discovery",
       "checkedAt": "2026-11-19",
       "links": {
         "paper": "https://arxiv.org/abs/2611.18397",
-        "pdf": "https://arxiv.org/pdf/2611.18397v3"
+        "pdf": "https://arxiv.org/pdf/2611.18397v3",
+        "project": "https://mihoyo-gamer.github.io/"
       },
       "rank": 190,
       "sourceId": "2611.18397",
-      "selectionTrack": "candidate",
-      "selectionReason": "Recent arXiv lead within the rolling one-year discovery window; significance, source links, and technical scope require review.",
+      "selectionTrack": "recent-arxiv",
+      "selectionReason": "Selected recent research report for its systematic task evaluations and direct contribution to game or robot policy learning; significance is an editorial assessment, not a citation ranking.",
       "paperType": "method",
       "publicationDate": "2026-11-13",
       "bibliography": {
@@ -9359,70 +8923,10 @@
         "bibtex": "@misc{auto-arxiv-2611-18397,\n  title = {Gamer: A Generalist Vision-Language-Action Foundation Model for Long-Horizon Real-Time Game Agent},\n  author = {Run Luo and Kuan Zhang and Qi Deng and Yukun Chen and Zhihao Yang and Yufei Zhang and Renrong Hu and Yi Zhang and Guiyu Ma and Tianyu Fan and Longze Chen and Hao Sun and Jiaming Li and Jiaming Yang and Xiaohao Liu and Tao Tan and Minzheng Wang and Hangtian Jia and Shuai Yuan and Lvdi Wang and Xiao Liu and Chao Ma and Yuting Zou and Yinhe Zheng and Xiaobo Xia and Dawei Jiang and Shaoqing Ren},\n  year = {2026},\n  url = {https://arxiv.org/abs/2611.18397}\n}"
       },
       "addedAt": "2026-11-19",
-      "updatedAt": "2026-11-19"
-    },
-    {
-      "id": "auto-arxiv-2611-24940",
-      "name": "$Z$-sight",
-      "title": "$Z$-sight: Unifying Vision-Language-Action and Latent World Modeling",
-      "domains": [
-        "embodied"
-      ],
-      "kinds": [
-        "papers"
-      ],
-      "year": 2026,
-      "venue": "Candidate · arXiv",
-      "summary": "We introduce $Z$-sight, a unified robot foundation model that couples vision-language-action (VLA) and generative latent world modeling. Video-based world action models (WAMs) show the value of joint future-and-action generation for control, yet inherit the heavy cost of video generators. Recent latent-space policies avoid pixel generation, yet typically…",
-      "tags": [
-        "Automated discovery",
-        "Pending review"
-      ],
-      "environment": "Automated discovery lead; environments and task definitions require curator verification.",
-      "interface": "Automated discovery lead; observation access, action space, and execution interface require curator verification.",
-      "limits": "This candidate was found from bibliographic metadata and has not received a full editorial review. Do not treat its inclusion as verification of claims, venue status, impact, or reproducibility.",
-      "status": "candidate",
-      "evidence": "Automatically discovered through arXiv; bibliographic sources and technical claims require curator review.",
-      "sourceType": "automated-discovery",
-      "checkedAt": "2026-11-19",
-      "links": {
-        "paper": "https://arxiv.org/abs/2611.24940",
-        "pdf": "https://arxiv.org/pdf/2611.24940v1"
-      },
-      "rank": 191,
-      "sourceId": "2611.24940",
-      "selectionTrack": "candidate",
-      "selectionReason": "Recent arXiv lead within the rolling one-year discovery window; significance, source links, and technical scope require review.",
-      "paperType": "method",
-      "publicationDate": "2026-11-18",
-      "bibliography": {
-        "source": "arXiv",
-        "sourceUrl": "https://arxiv.org/abs/2611.24940",
-        "checkedAt": "2026-11-19",
-        "authors": [
-          "Junjie Ye",
-          "Yiqi Zhao",
-          "Muchen Xu",
-          "Celina Shiyu Wang",
-          "Hao Dong",
-          "Ruohai Ge",
-          "Rong Xue",
-          "Benjamin J Kolligs",
-          "Aditya Dutt",
-          "Sasanka Nagavalli",
-          "Nassim A. Samad",
-          "Gaurav S. Sukhatme",
-          "Jyotirmoy V. Deshmukh",
-          "Yue Wang",
-          "Yuliang Guo"
-        ],
-        "date": "2026-11-18",
-        "dateLabel": "First arXiv submission",
-        "arxivId": "2611.24940",
-        "bibtex": "@misc{auto-arxiv-2611-24940,\n  title = {$Z$-sight: Unifying Vision-Language-Action and Latent World Modeling},\n  author = {Junjie Ye and Yiqi Zhao and Muchen Xu and Celina Shiyu Wang and Hao Dong and Ruohai Ge and Rong Xue and Benjamin J Kolligs and Aditya Dutt and Sasanka Nagavalli and Nassim A. Samad and Gaurav S. Sukhatme and Jyotirmoy V. Deshmukh and Yue Wang and Yuliang Guo},\n  year = {2026},\n  url = {https://arxiv.org/abs/2611.24940}\n}"
-      },
-      "addedAt": "2026-11-19",
-      "updatedAt": "2026-11-19"
+      "updatedAt": "2026-11-19",
+      "influenceSources": [
+        "https://mihoyo-gamer.github.io/"
+      ]
     },
     {
       "id": "auto-arxiv-2611-21607",
@@ -9435,27 +8939,27 @@
         "papers"
       ],
       "year": 2026,
-      "venue": "Candidate · arXiv",
-      "summary": "Frontier Vision-Language Models (VLMs) such as GPT-6 Astra have demonstrated remarkable capabilities in robot control, suggesting that broad pretraining provides knowledge valuable for physical action. Yet most Vision-Language-Action (VLA) policies still rely on much smaller VLM backbones, leaving this potential largely untapped. We ask whether…",
+      "venue": "arXiv · 2026-11",
+      "summary": "Studies scaling a VLA backbone from 2B to 552B parameters under a shared action-learning setup, with sample-efficiency, generalization, and physical manipulation evaluations.",
       "tags": [
-        "Automated discovery",
-        "Pending review"
+        "Robot learning"
       ],
-      "environment": "Automated discovery lead; environments and task definitions require curator verification.",
-      "interface": "Automated discovery lead; observation access, action space, and execution interface require curator verification.",
-      "limits": "This candidate was found from bibliographic metadata and has not received a full editorial review. Do not treat its inclusion as verification of claims, venue status, impact, or reproducibility.",
-      "status": "candidate",
-      "evidence": "Automatically discovered through arXiv; bibliographic sources and technical claims require curator review.",
+      "environment": "LIBERO-PRO and real-robot manipulation.",
+      "interface": "A vision-language backbone conditions a trainable action diffusion Transformer.",
+      "limits": "Author-reported evaluations use specific task suites, robot or game configurations, and training data. Results have not been independently reproduced; released assets and task coverage should be checked at the original source.",
+      "status": "selected",
+      "evidence": "Official arXiv abstract and available author-linked report/project sources checked; experiments not independently reproduced.",
       "sourceType": "automated-discovery",
       "checkedAt": "2026-11-19",
       "links": {
         "paper": "https://arxiv.org/abs/2611.21607",
-        "pdf": "https://arxiv.org/pdf/2611.21607v1"
+        "pdf": "https://arxiv.org/pdf/2611.21607v1",
+        "project": "https://galaxygeneralrobotics.github.io/scalevla/"
       },
       "rank": 192,
       "sourceId": "2611.21607",
-      "selectionTrack": "candidate",
-      "selectionReason": "Recent arXiv lead within the rolling one-year discovery window; significance, source links, and technical scope require review.",
+      "selectionTrack": "recent-arxiv",
+      "selectionReason": "Selected recent research report for its systematic task evaluations and direct contribution to game or robot policy learning; significance is an editorial assessment, not a citation ranking.",
       "paperType": "method",
       "publicationDate": "2026-11-16",
       "bibliography": {
@@ -9482,7 +8986,10 @@
         "bibtex": "@misc{auto-arxiv-2611-21607,\n  title = {ScaleVLA: Scaling Vision-Language-Action Models to 552 Billion Parameters},\n  author = {Ruixi Yu and Dairu Liu and Xuchuan Chen and Zekun Qi and Zekai Li and Zhuo Cao and Luyang Niu and Yingsheng Zhang and Sikai Liang and Ke Fan and He Wang and Li Yi},\n  year = {2026},\n  url = {https://arxiv.org/abs/2611.21607}\n}"
       },
       "addedAt": "2026-11-19",
-      "updatedAt": "2026-11-19"
+      "updatedAt": "2026-11-19",
+      "influenceSources": [
+        "https://galaxygeneralrobotics.github.io/scalevla/"
+      ]
     },
     {
       "id": "auto-arxiv-2611-12286",
@@ -9495,27 +9002,28 @@
         "papers"
       ],
       "year": 2026,
-      "venue": "Candidate · arXiv",
-      "summary": "Physical intelligence requires embodied agents to ground language in observations and execute actions while retaining useful skills. Vision-language-action (VLA) policies offer a shared interface, but task-specific post-training often produces separate specialists. Consolidation is difficult: mixed-task reinforcement learning provides sparse…",
+      "venue": "arXiv · 2026-11",
+      "summary": "Consolidates task-specialist flow-matching VLA policies through on-policy distillation at student-visited observations and intermediate flow states.",
       "tags": [
-        "Automated discovery",
-        "Pending review"
+        "Robot learning"
       ],
-      "environment": "Automated discovery lead; environments and task definitions require curator verification.",
-      "interface": "Automated discovery lead; observation access, action space, and execution interface require curator verification.",
-      "limits": "This candidate was found from bibliographic metadata and has not received a full editorial review. Do not treat its inclusion as verification of claims, venue status, impact, or reproducibility.",
-      "status": "candidate",
-      "evidence": "Automatically discovered through arXiv; bibliographic sources and technical claims require curator review.",
+      "environment": "LIBERO, RoboTwin 2.0, and a physical Piper robot.",
+      "interface": "Language-routed teachers supervise action chunks at student rollout states.",
+      "limits": "Author-reported evaluations use specific task suites, robot or game configurations, and training data. Results have not been independently reproduced; released assets and task coverage should be checked at the original source.",
+      "status": "selected",
+      "evidence": "Official arXiv abstract and available author-linked report/project sources checked; experiments not independently reproduced.",
       "sourceType": "automated-discovery",
       "checkedAt": "2026-11-19",
       "links": {
         "paper": "https://arxiv.org/abs/2611.12286",
-        "pdf": "https://arxiv.org/pdf/2611.12286v1"
+        "pdf": "https://arxiv.org/pdf/2611.12286v1",
+        "project": "https://github.com/yxuan1234/VLA-MOPD",
+        "code": "https://github.com/yxuan1234/VLA-MOPD"
       },
       "rank": 193,
       "sourceId": "2611.12286",
-      "selectionTrack": "candidate",
-      "selectionReason": "Recent arXiv lead within the rolling one-year discovery window; significance, source links, and technical scope require review.",
+      "selectionTrack": "recent-arxiv",
+      "selectionReason": "Selected recent research report for its systematic task evaluations and direct contribution to game or robot policy learning; significance is an editorial assessment, not a citation ranking.",
       "paperType": "method",
       "publicationDate": "2026-11-09",
       "bibliography": {
@@ -9543,7 +9051,10 @@
         "bibtex": "@misc{auto-arxiv-2611-12286,\n  title = {VLA-MOPD: On-Policy Distillation for Multi-Task VLA Policy Consolidation},\n  author = {Yongxuan Lv and Zhen Fang and Lichen Man and Hao Li and Pu Li and Hengyi Wang and Langfeng Cao and Lin Chen and Jie Huang and Xiu Su and Shan You and Fei Wang and Feng Zhao},\n  year = {2026},\n  url = {https://arxiv.org/abs/2611.12286}\n}"
       },
       "addedAt": "2026-11-19",
-      "updatedAt": "2026-11-19"
+      "updatedAt": "2026-11-19",
+      "influenceSources": [
+        "https://github.com/yxuan1234/VLA-MOPD"
+      ]
     },
     {
       "id": "auto-arxiv-2611-08577",
@@ -9556,27 +9067,28 @@
         "papers"
       ],
       "year": 2026,
-      "venue": "Candidate · arXiv",
-      "summary": "We present Meituan-Robotics-0 (MR0), a vision-language-action foundation model and embodied-agent system for stationary-base desktop manipulation. MR0 combines 147 million vision-language samples with 15,060 hours of curated robot trajectories spanning 12 embodiments. A three-stage training recipe aligns multimodal representations with robot behavior…",
+      "venue": "arXiv · 2026-11",
+      "summary": "Trains a cross-embodiment manipulation VLA with discrete pretraining, continuous flow matching, and corrected real-world trajectories, paired with persistent event memory.",
       "tags": [
-        "Automated discovery",
-        "Pending review"
+        "Robot learning"
       ],
-      "environment": "Automated discovery lead; environments and task definitions require curator verification.",
-      "interface": "Automated discovery lead; observation access, action space, and execution interface require curator verification.",
-      "limits": "This candidate was found from bibliographic metadata and has not received a full editorial review. Do not treat its inclusion as verification of claims, venue status, impact, or reproducibility.",
-      "status": "candidate",
-      "evidence": "Automatically discovered through arXiv; bibliographic sources and technical claims require curator review.",
+      "environment": "Desktop manipulation across robot embodiments, RoboTwin 2.0, and physical robot tasks.",
+      "interface": "Visual and language inputs produce end-effector action chunks with asynchronous execution.",
+      "limits": "Author-reported evaluations use specific task suites, robot or game configurations, and training data. Results have not been independently reproduced; released assets and task coverage should be checked at the original source.",
+      "status": "selected",
+      "evidence": "Official arXiv abstract and available author-linked report/project sources checked; experiments not independently reproduced.",
       "sourceType": "automated-discovery",
       "checkedAt": "2026-11-19",
       "links": {
         "paper": "https://arxiv.org/abs/2611.08577",
-        "pdf": "https://arxiv.org/pdf/2611.08577v3"
+        "pdf": "https://arxiv.org/pdf/2611.08577v3",
+        "project": "https://meituan-robotics.github.io/Meituan-Robotics-0/",
+        "code": "https://github.com/Meituan-Robotics/Meituan-Robotics-0"
       },
       "rank": 194,
       "sourceId": "2611.08577",
-      "selectionTrack": "candidate",
-      "selectionReason": "Recent arXiv lead within the rolling one-year discovery window; significance, source links, and technical scope require review.",
+      "selectionTrack": "recent-arxiv",
+      "selectionReason": "Selected recent research report for its systematic task evaluations and direct contribution to game or robot policy learning; significance is an editorial assessment, not a citation ranking.",
       "paperType": "method",
       "publicationDate": "2026-11-05",
       "bibliography": {
@@ -9584,7 +9096,7 @@
         "sourceUrl": "https://arxiv.org/abs/2611.08577",
         "checkedAt": "2026-11-19",
         "authors": [
-          "Meituan Robotics Team",
+          " Meituan Robotics Team",
           "Caicheng Wang",
           "Chen Zhao",
           "Chengpeng Jin",
@@ -9629,7 +9141,10 @@
         "bibtex": "@misc{auto-arxiv-2611-08577,\n  title = {Meituan-Robotics-0: A Vision-Language-Action Foundation Model for Desktop Manipulation},\n  author = {Meituan Robotics Team and Caicheng Wang and Chen Zhao and Chengpeng Jin and Duo Xu and Fengjiao Chen and Guanglu Wan and Heqing Yang and Jia Wang and Jiacong Zhou and Jie Hu and Jiyuan Ru and Lingfeng Zhang and Linjiang Huang and Manyuan Zhang and Ningchu Liu and Shijie Zhou and Si Liu and Shuo Li and Tianyi Zhang and Xi Zhang and Xin Chen and Xuezhi Cao and Xunliang Cai and Yanbin Zeng and Yang Yang and Yang Yi and Yanli Tan and Yifu Xu and Yimeng Jia and Yuchen Tang and Yuchen Xie and Yuxiang Zheng and Zerwei Chng and Zilong Huang and Zipeng Ye and Ziyuan Qin and Ziqin Wang},\n  year = {2026},\n  url = {https://arxiv.org/abs/2611.08577}\n}"
       },
       "addedAt": "2026-11-19",
-      "updatedAt": "2026-11-19"
+      "updatedAt": "2026-11-19",
+      "influenceSources": [
+        "https://meituan-robotics.github.io/Meituan-Robotics-0/"
+      ]
     },
     {
       "id": "auto-arxiv-2611-08698",
@@ -9642,27 +9157,27 @@
         "papers"
       ],
       "year": 2026,
-      "venue": "Candidate · arXiv",
-      "summary": "Recent advances in robot foundation models have highlighted the potential of in-context learning (ICL) for adapting robot behavior from demonstrations without further fine-tuning. Previous work has used retrieval-based post-training to equip pretrained vision-language-action (VLA) models with the capability for ICL by teaching them to condition action…",
+      "venue": "arXiv · 2026-11",
+      "summary": "Uses a demonstration-conditioned value estimator to retrieve context at the correct stage of a task for in-context adaptation of a VLA policy.",
       "tags": [
-        "Automated discovery",
-        "Pending review"
+        "Robot learning"
       ],
-      "environment": "Automated discovery lead; environments and task definitions require curator verification.",
-      "interface": "Automated discovery lead; observation access, action space, and execution interface require curator verification.",
-      "limits": "This candidate was found from bibliographic metadata and has not received a full editorial review. Do not treat its inclusion as verification of claims, venue status, impact, or reproducibility.",
-      "status": "candidate",
-      "evidence": "Automatically discovered through arXiv; bibliographic sources and technical claims require curator review.",
+      "environment": "Language-conditioned manipulation tasks and demonstration retrieval.",
+      "interface": "Reference video, instruction, and current observation estimate task progress and select action context.",
+      "limits": "Author-reported evaluations use specific task suites, robot or game configurations, and training data. Results have not been independently reproduced; released assets and task coverage should be checked at the original source.",
+      "status": "selected",
+      "evidence": "Official arXiv abstract and available author-linked report/project sources checked; experiments not independently reproduced.",
       "sourceType": "automated-discovery",
       "checkedAt": "2026-11-19",
       "links": {
         "paper": "https://arxiv.org/abs/2611.08698",
-        "pdf": "https://arxiv.org/pdf/2611.08698v2"
+        "pdf": "https://arxiv.org/pdf/2611.08698v2",
+        "project": "https://ai4ce.github.io/VICTR/"
       },
       "rank": 195,
       "sourceId": "2611.08698",
-      "selectionTrack": "candidate",
-      "selectionReason": "Recent arXiv lead within the rolling one-year discovery window; significance, source links, and technical scope require review.",
+      "selectionTrack": "recent-arxiv",
+      "selectionReason": "Selected recent research report for its systematic task evaluations and direct contribution to game or robot policy learning; significance is an editorial assessment, not a citation ranking.",
       "paperType": "method",
       "publicationDate": "2026-11-05",
       "bibliography": {
@@ -9685,7 +9200,10 @@
         "bibtex": "@misc{auto-arxiv-2611-08698,\n  title = {VICTR: Value-Informed In-Context Learning for Vision-Language-Action Models},\n  author = {Luca Macesanu and Tianluo Zhang and Aditya Patil and Archit Sharma and Kevin Angers and Christopher M. Clark and Chen Feng and Juexiao Zhang},\n  year = {2026},\n  url = {https://arxiv.org/abs/2611.08698}\n}"
       },
       "addedAt": "2026-11-19",
-      "updatedAt": "2026-11-19"
+      "updatedAt": "2026-11-19",
+      "influenceSources": [
+        "https://ai4ce.github.io/VICTR/"
+      ]
     },
     {
       "id": "auto-arxiv-2611-06905",
@@ -9698,27 +9216,27 @@
         "papers"
       ],
       "year": 2026,
-      "venue": "Candidate · arXiv",
-      "summary": "The introduction of generalist robot policies has enabled a single, large model to learn to perform a variety of tasks from a vast pre-training corpus. While these models often exhibit powerful zero-shot generalization capabilities, they typically require an adaptation phase to achieve sufficient performance in deployment. Iterated self-improvement via…",
+      "venue": "arXiv · 2026-11",
+      "summary": "Systematically examines multi-task online reinforcement learning for improving generalist robot policies and when adaptation transfers to untrained tasks.",
       "tags": [
-        "Automated discovery",
-        "Pending review"
+        "Robot learning"
       ],
-      "environment": "Automated discovery lead; environments and task definitions require curator verification.",
-      "interface": "Automated discovery lead; observation access, action space, and execution interface require curator verification.",
-      "limits": "This candidate was found from bibliographic metadata and has not received a full editorial review. Do not treat its inclusion as verification of claims, venue status, impact, or reproducibility.",
-      "status": "candidate",
-      "evidence": "Automatically discovered through arXiv; bibliographic sources and technical claims require curator review.",
+      "environment": "Multi-task robot policy adaptation and held-out task generalization.",
+      "interface": "Robot interaction and value-based policy improvement across a shared task distribution.",
+      "limits": "Author-reported evaluations use specific task suites, robot or game configurations, and training data. Results have not been independently reproduced; released assets and task coverage should be checked at the original source.",
+      "status": "selected",
+      "evidence": "Official arXiv abstract and available author-linked report/project sources checked; experiments not independently reproduced.",
       "sourceType": "automated-discovery",
       "checkedAt": "2026-11-19",
       "links": {
         "paper": "https://arxiv.org/abs/2611.06905",
-        "pdf": "https://arxiv.org/pdf/2611.06905v1"
+        "pdf": "https://arxiv.org/pdf/2611.06905v1",
+        "project": "https://lasgroup.github.io/generalist-improvement"
       },
       "rank": 196,
       "sourceId": "2611.06905",
-      "selectionTrack": "candidate",
-      "selectionReason": "Recent arXiv lead within the rolling one-year discovery window; significance, source links, and technical scope require review.",
+      "selectionTrack": "recent-arxiv",
+      "selectionReason": "Selected recent research report for its systematic task evaluations and direct contribution to game or robot policy learning; significance is an editorial assessment, not a citation ranking.",
       "paperType": "method",
       "publicationDate": "2026-11-04",
       "bibliography": {
@@ -9757,7 +9275,10 @@
         "bibtex": "@misc{auto-arxiv-2611-06905,\n  title = {Reinforcement Learning Enables Scaling Generalist Robot Policy Improvement},\n  author = {Michal Korniak and Marco Bagatella and Ralf Römer and Michal Nauman and Yarden As and Pranav Vignesh and Manan Agarwal and Leander Diaz-Bone and Piotr Zalewski and Mikołaj Czarnecki and Lenart Treven and Shashwat Saxena and Sreyas Venkataraman and Sarvesh Patil and Zhiyuan Zhou and Daniel Marta and Oier Mees and Nur Muhammad Mahi Shafiullah and Carmelo Sferrazza and Bhavya Sukhija and Angela P. Schoellig and Andreas Krause and Max Simchowitz and Andrew Wagenmaker},\n  year = {2026},\n  url = {https://arxiv.org/abs/2611.06905}\n}"
       },
       "addedAt": "2026-11-19",
-      "updatedAt": "2026-11-19"
+      "updatedAt": "2026-11-19",
+      "influenceSources": [
+        "https://lasgroup.github.io/generalist-improvement"
+      ]
     },
     {
       "id": "auto-arxiv-2610-42053",
@@ -9770,27 +9291,27 @@
         "papers"
       ],
       "year": 2026,
-      "venue": "Candidate · arXiv",
-      "summary": "Foundation models are becoming remarkably reliable at high-level reasoning, yet they remain too slow and costly to serve as fine-grained controllers. Conversely, fast policies like VLAs and whole-body controllers offer more efficient reflexes, but struggle to generalize. While pairing a deliberative brain (foundation models) with a reactive cerebellum…",
+      "venue": "arXiv · 2026-10",
+      "summary": "Coordinates high-level reasoning and fast learned or programmatic controllers through asynchronous routing, route memory, and bounded recovery.",
       "tags": [
-        "Automated discovery",
-        "Pending review"
+        "Robot learning"
       ],
-      "environment": "Automated discovery lead; environments and task definitions require curator verification.",
-      "interface": "Automated discovery lead; observation access, action space, and execution interface require curator verification.",
-      "limits": "This candidate was found from bibliographic metadata and has not received a full editorial review. Do not treat its inclusion as verification of claims, venue status, impact, or reproducibility.",
-      "status": "candidate",
-      "evidence": "Automatically discovered through arXiv; bibliographic sources and technical claims require curator review.",
+      "environment": "LIBERO-Pro, RoboTwin 2.0, BEHAVIOR-1K, and a Unitree G1 deployment.",
+      "interface": "A router selects reactive controllers while a separate reasoning process handles escalation.",
+      "limits": "Author-reported evaluations use specific task suites, robot or game configurations, and training data. Results have not been independently reproduced; released assets and task coverage should be checked at the original source.",
+      "status": "selected",
+      "evidence": "Official arXiv abstract and available author-linked report/project sources checked; experiments not independently reproduced.",
       "sourceType": "automated-discovery",
       "checkedAt": "2026-11-19",
       "links": {
         "paper": "https://arxiv.org/abs/2610.42053",
-        "pdf": "https://arxiv.org/pdf/2610.42053v1"
+        "pdf": "https://arxiv.org/pdf/2610.42053v1",
+        "project": "https://mikeeeeeeeeeeeeee.github.io/REA/"
       },
       "rank": 197,
       "sourceId": "2610.42053",
-      "selectionTrack": "candidate",
-      "selectionReason": "Recent arXiv lead within the rolling one-year discovery window; significance, source links, and technical scope require review.",
+      "selectionTrack": "recent-arxiv",
+      "selectionReason": "Selected recent research report for its systematic task evaluations and direct contribution to game or robot policy learning; significance is an editorial assessment, not a citation ranking.",
       "paperType": "method",
       "publicationDate": "2026-10-30",
       "bibliography": {
@@ -9813,31 +9334,32 @@
         "bibtex": "@misc{auto-arxiv-2610-42053,\n  title = {REA: A Routed Embodied Agent Runtime for Asynchronous Brain-Cerebellum Control},\n  author = {Pengfei Zhou and Yixing Ma and Zhengfeiyang Zhang and Haoyuan Chen and Zhenglin Wan and Hexin Wang and Wangbo Zhao and Yang You},\n  year = {2026},\n  url = {https://arxiv.org/abs/2610.42053}\n}"
       },
       "addedAt": "2026-11-19",
-      "updatedAt": "2026-11-19"
+      "updatedAt": "2026-11-19",
+      "influenceSources": [
+        "https://mikeeeeeeeeeeeeee.github.io/REA/"
+      ]
     },
     {
       "id": "auto-arxiv-2610-31162",
       "name": "HiSTEVE 1.0",
       "title": "HiSTEVE 1.0: Harnessing Human-Interface VLA Agents for Open-World Games",
       "domains": [
-        "game",
-        "embodied"
+        "game"
       ],
       "kinds": [
         "papers"
       ],
       "year": 2026,
-      "venue": "Candidate · arXiv",
-      "summary": "Building virtual embodied agents that operate in open-ended games like human players is a long-standing goal requiring both long-horizon autonomy and reliable native-interface control. As a procedurally generated open world, Minecraft provides a natural testbed for studying the integration of these capabilities. Existing agents typically provide either…",
+      "venue": "arXiv · 2026-10",
+      "summary": "Combines a capability-aware planner, progress memory, and a native-interface VLA controller for atomic and long-horizon Minecraft tasks.",
       "tags": [
-        "Automated discovery",
-        "Pending review"
+        "Game agents"
       ],
-      "environment": "Automated discovery lead; environments and task definitions require curator verification.",
-      "interface": "Automated discovery lead; observation access, action space, and execution interface require curator verification.",
-      "limits": "This candidate was found from bibliographic metadata and has not received a full editorial review. Do not treat its inclusion as verification of claims, venue status, impact, or reproducibility.",
-      "status": "candidate",
-      "evidence": "Automatically discovered through arXiv; bibliographic sources and technical claims require curator review.",
+      "environment": "Minecraft, MineStudio Bench, and OpenHA.",
+      "interface": "Vision-only observations drive keyboard and mouse actions through a hierarchical planner and VLA.",
+      "limits": "Author-reported evaluations use specific task suites, robot or game configurations, and training data. Results have not been independently reproduced; released assets and task coverage should be checked at the original source.",
+      "status": "selected",
+      "evidence": "Official arXiv abstract and available author-linked report/project sources checked; experiments not independently reproduced.",
       "sourceType": "automated-discovery",
       "checkedAt": "2026-11-19",
       "links": {
@@ -9846,8 +9368,8 @@
       },
       "rank": 198,
       "sourceId": "2610.31162",
-      "selectionTrack": "candidate",
-      "selectionReason": "Recent arXiv lead within the rolling one-year discovery window; significance, source links, and technical scope require review.",
+      "selectionTrack": "recent-arxiv",
+      "selectionReason": "Selected recent research report for its systematic task evaluations and direct contribution to game or robot policy learning; significance is an editorial assessment, not a citation ranking.",
       "paperType": "method",
       "publicationDate": "2026-10-22",
       "bibliography": {
@@ -9868,282 +9390,10 @@
         "bibtex": "@misc{auto-arxiv-2610-31162,\n  title = {HiSTEVE 1.0: Harnessing Human-Interface VLA Agents for Open-World Games},\n  author = {Zecong Tang and Zian Guan and Yuncheng Guo and Zhanqiu Zhang and Yiwen Guo and Bo Dai},\n  year = {2026},\n  url = {https://arxiv.org/abs/2610.31162}\n}"
       },
       "addedAt": "2026-11-19",
-      "updatedAt": "2026-11-19"
-    },
-    {
-      "id": "auto-arxiv-2610-30478",
-      "name": "Externalise the Memory",
-      "title": "Externalise the Memory: A Pre-Registered Study of Where an Embodied Agent's Experience Should Live",
-      "domains": [
-        "embodied"
-      ],
-      "kinds": [
-        "papers"
-      ],
-      "year": 2026,
-      "venue": "Candidate · arXiv",
-      "summary": "Should an embodied agent's experience be baked into its policy weights, or kept external and retrieved at inference? A memory-augmented teacher (a VLM that retrieves lessons, with their episode images, from its own past attempts) produces trajectories on a vision-conditioned reach task; from the same trajectories we distil LoRA student policies and…",
-      "tags": [
-        "Automated discovery",
-        "Pending review"
-      ],
-      "environment": "Automated discovery lead; environments and task definitions require curator verification.",
-      "interface": "Automated discovery lead; observation access, action space, and execution interface require curator verification.",
-      "limits": "This candidate was found from bibliographic metadata and has not received a full editorial review. Do not treat its inclusion as verification of claims, venue status, impact, or reproducibility.",
-      "status": "candidate",
-      "evidence": "Automatically discovered through arXiv; bibliographic sources and technical claims require curator review.",
-      "sourceType": "automated-discovery",
-      "checkedAt": "2026-11-19",
-      "links": {
-        "paper": "https://arxiv.org/abs/2610.30478",
-        "pdf": "https://arxiv.org/pdf/2610.30478v1"
-      },
-      "rank": 199,
-      "sourceId": "2610.30478",
-      "selectionTrack": "candidate",
-      "selectionReason": "Recent arXiv lead within the rolling one-year discovery window; significance, source links, and technical scope require review.",
-      "paperType": "method",
-      "publicationDate": "2026-10-21",
-      "bibliography": {
-        "source": "arXiv",
-        "sourceUrl": "https://arxiv.org/abs/2610.30478",
-        "checkedAt": "2026-11-19",
-        "authors": [
-          "Cheng-Yin Tu"
-        ],
-        "date": "2026-10-21",
-        "dateLabel": "First arXiv submission",
-        "arxivId": "2610.30478",
-        "bibtex": "@misc{auto-arxiv-2610-30478,\n  title = {Externalise the Memory: A Pre-Registered Study of Where an Embodied Agent's Experience Should Live},\n  author = {Cheng-Yin Tu},\n  year = {2026},\n  url = {https://arxiv.org/abs/2610.30478}\n}"
-      },
-      "addedAt": "2026-11-19",
-      "updatedAt": "2026-11-19"
-    },
-    {
-      "id": "auto-arxiv-2610-26297",
-      "name": "Mobile Embodied Agent Network (MEAN)",
-      "title": "Mobile Embodied Agent Network (MEAN): Integrated Framework, Enabling Technologies, and Task-Driven Deployment",
-      "domains": [
-        "embodied"
-      ],
-      "kinds": [
-        "papers"
-      ],
-      "year": 2026,
-      "venue": "Candidate · arXiv",
-      "summary": "Mobile networks are evolving from human-centered, data-oriented communication infrastructures toward machine- and/or agent-dominant, task-oriented platforms that are to serve the rapidly increasing networked machines and embodied agents. In order to fulfill the newly arose complex task objectives, the framework of future mobile network is to be innovated…",
-      "tags": [
-        "Automated discovery",
-        "Pending review"
-      ],
-      "environment": "Automated discovery lead; environments and task definitions require curator verification.",
-      "interface": "Automated discovery lead; observation access, action space, and execution interface require curator verification.",
-      "limits": "This candidate was found from bibliographic metadata and has not received a full editorial review. Do not treat its inclusion as verification of claims, venue status, impact, or reproducibility.",
-      "status": "candidate",
-      "evidence": "Automatically discovered through arXiv; bibliographic sources and technical claims require curator review.",
-      "sourceType": "automated-discovery",
-      "checkedAt": "2026-11-19",
-      "links": {
-        "paper": "https://arxiv.org/abs/2610.26297",
-        "pdf": "https://arxiv.org/pdf/2610.26297v1"
-      },
-      "rank": 200,
-      "sourceId": "2610.26297",
-      "selectionTrack": "candidate",
-      "selectionReason": "Recent arXiv lead within the rolling one-year discovery window; significance, source links, and technical scope require review.",
-      "paperType": "method",
-      "publicationDate": "2026-10-19",
-      "bibliography": {
-        "source": "arXiv",
-        "sourceUrl": "https://arxiv.org/abs/2610.26297",
-        "checkedAt": "2026-11-19",
-        "authors": [
-          "Zhaoyang Zhang",
-          "Lingxiao Sun",
-          "Weijie Zhou",
-          "Chunhui Feng",
-          "Zhaohui Yang",
-          "Xuan Cheng",
-          "Tianyi Qin",
-          "Zhixian Kong",
-          "Baoping Cheng",
-          "Zijian Wu",
-          "Jingze Che"
-        ],
-        "date": "2026-10-19",
-        "dateLabel": "First arXiv submission",
-        "arxivId": "2610.26297",
-        "bibtex": "@misc{auto-arxiv-2610-26297,\n  title = {Mobile Embodied Agent Network (MEAN): Integrated Framework, Enabling Technologies, and Task-Driven Deployment},\n  author = {Zhaoyang Zhang and Lingxiao Sun and Weijie Zhou and Chunhui Feng and Zhaohui Yang and Xuan Cheng and Tianyi Qin and Zhixian Kong and Baoping Cheng and Zijian Wu and Jingze Che},\n  year = {2026},\n  url = {https://arxiv.org/abs/2610.26297}\n}"
-      },
-      "addedAt": "2026-11-19",
-      "updatedAt": "2026-11-19"
-    },
-    {
-      "id": "auto-arxiv-2610-21484",
-      "name": "Context Matters! Social, Spatial, and Semantic Coordination with an Embodied Age",
-      "title": "Context Matters! Social, Spatial, and Semantic Coordination with an Embodied Agent in Immersive Analytics",
-      "domains": [
-        "embodied"
-      ],
-      "kinds": [
-        "papers"
-      ],
-      "year": 2026,
-      "venue": "Candidate · arXiv",
-      "summary": "Embodied AI agents in Augmented Reality (AR) could enable more natural collaboration in immersive analytics by engaging users through spatial, conversational, and visual interaction. However, designing such agents requires careful attention to context. We propose a preliminary conceptual framework for context-aware design of embodied agents structured…",
-      "tags": [
-        "Automated discovery",
-        "Pending review"
-      ],
-      "environment": "Automated discovery lead; environments and task definitions require curator verification.",
-      "interface": "Automated discovery lead; observation access, action space, and execution interface require curator verification.",
-      "limits": "This candidate was found from bibliographic metadata and has not received a full editorial review. Do not treat its inclusion as verification of claims, venue status, impact, or reproducibility.",
-      "status": "candidate",
-      "evidence": "Automatically discovered through arXiv; bibliographic sources and technical claims require curator review.",
-      "sourceType": "automated-discovery",
-      "checkedAt": "2026-11-19",
-      "links": {
-        "paper": "https://arxiv.org/abs/2610.21484",
-        "pdf": "https://arxiv.org/pdf/2610.21484v1"
-      },
-      "rank": 201,
-      "sourceId": "2610.21484",
-      "selectionTrack": "candidate",
-      "selectionReason": "Recent arXiv lead within the rolling one-year discovery window; significance, source links, and technical scope require review.",
-      "paperType": "method",
-      "publicationDate": "2026-10-15",
-      "bibliography": {
-        "source": "arXiv",
-        "sourceUrl": "https://arxiv.org/abs/2610.21484",
-        "checkedAt": "2026-11-19",
-        "authors": [
-          "Andrew Cunningham",
-          "Nicolas Barbotin",
-          "Adam Drogemuller",
-          "Jack Faser"
-        ],
-        "date": "2026-10-15",
-        "dateLabel": "First arXiv submission",
-        "arxivId": "2610.21484",
-        "bibtex": "@misc{auto-arxiv-2610-21484,\n  title = {Context Matters! Social, Spatial, and Semantic Coordination with an Embodied Agent in Immersive Analytics},\n  author = {Andrew Cunningham and Nicolas Barbotin and Adam Drogemuller and Jack Faser},\n  year = {2026},\n  url = {https://arxiv.org/abs/2610.21484}\n}"
-      },
-      "addedAt": "2026-11-19",
-      "updatedAt": "2026-11-19"
-    },
-    {
-      "id": "auto-arxiv-2610-14601",
-      "name": "StateSkill-Agent",
-      "title": "StateSkill-Agent: An Effective and Efficient Embodied Agent via State-conditioned Skill",
-      "domains": [
-        "embodied"
-      ],
-      "kinds": [
-        "papers"
-      ],
-      "year": 2026,
-      "venue": "Candidate · arXiv",
-      "summary": "In this work, we aim to develop an embodied MLLM agent that understands and solves embodied tasks by learning, abstracting, and reusing transferrable and generalizable behavioral patterns. To this end, we propose StateSkill, a new skill representation for embodied agents, which introduces the concept of \"finite-state machines\" into skill modeling for…",
-      "tags": [
-        "Automated discovery",
-        "Pending review"
-      ],
-      "environment": "Automated discovery lead; environments and task definitions require curator verification.",
-      "interface": "Automated discovery lead; observation access, action space, and execution interface require curator verification.",
-      "limits": "This candidate was found from bibliographic metadata and has not received a full editorial review. Do not treat its inclusion as verification of claims, venue status, impact, or reproducibility.",
-      "status": "candidate",
-      "evidence": "Automatically discovered through arXiv; bibliographic sources and technical claims require curator review.",
-      "sourceType": "automated-discovery",
-      "checkedAt": "2026-11-19",
-      "links": {
-        "paper": "https://arxiv.org/abs/2610.14601",
-        "pdf": "https://arxiv.org/pdf/2610.14601v1"
-      },
-      "rank": 202,
-      "sourceId": "2610.14601",
-      "selectionTrack": "candidate",
-      "selectionReason": "Recent arXiv lead within the rolling one-year discovery window; significance, source links, and technical scope require review.",
-      "paperType": "method",
-      "publicationDate": "2026-10-10",
-      "bibliography": {
-        "source": "arXiv",
-        "sourceUrl": "https://arxiv.org/abs/2610.14601",
-        "checkedAt": "2026-11-19",
-        "authors": [
-          "Changxu Wei",
-          "Jingyi Zhang",
-          "Zhiyu Zheng",
-          "Tianyi Lin",
-          "Yixian Zhang",
-          "Yunpeng Qing",
-          "Jingyuan Liu",
-          "Zhi Hou",
-          "Jiaxing Huang"
-        ],
-        "date": "2026-10-10",
-        "dateLabel": "First arXiv submission",
-        "arxivId": "2610.14601",
-        "bibtex": "@misc{auto-arxiv-2610-14601,\n  title = {StateSkill-Agent: An Effective and Efficient Embodied Agent via State-conditioned Skill},\n  author = {Changxu Wei and Jingyi Zhang and Zhiyu Zheng and Tianyi Lin and Yixian Zhang and Yunpeng Qing and Jingyuan Liu and Zhi Hou and Jiaxing Huang},\n  year = {2026},\n  url = {https://arxiv.org/abs/2610.14601}\n}"
-      },
-      "addedAt": "2026-11-19",
-      "updatedAt": "2026-11-19"
-    },
-    {
-      "id": "auto-arxiv-2610-01856",
-      "name": "ChunkVLA-AM",
-      "title": "ChunkVLA-AM: Parallel Action Chunking for Vision-Language-Action Robot Control in Additive Manufacturing",
-      "domains": [
-        "embodied"
-      ],
-      "kinds": [
-        "papers"
-      ],
-      "year": 2026,
-      "venue": "Candidate · arXiv",
-      "summary": "Vision-language-action (VLA) models unify visual perception, language understanding, and action generation, offering new opportunities for automation in additive manufacturing (AM). However, deployment in AM remains challenging because adapting these models to unseen robot embodiments is costly, and performance can degrade under environment changes. In…",
-      "tags": [
-        "Automated discovery",
-        "Pending review"
-      ],
-      "environment": "Automated discovery lead; environments and task definitions require curator verification.",
-      "interface": "Automated discovery lead; observation access, action space, and execution interface require curator verification.",
-      "limits": "This candidate was found from bibliographic metadata and has not received a full editorial review. Do not treat its inclusion as verification of claims, venue status, impact, or reproducibility.",
-      "status": "candidate",
-      "evidence": "Automatically discovered through arXiv; bibliographic sources and technical claims require curator review.",
-      "sourceType": "automated-discovery",
-      "checkedAt": "2026-11-19",
-      "links": {
-        "paper": "https://arxiv.org/abs/2610.01856",
-        "pdf": "https://arxiv.org/pdf/2610.01856v1"
-      },
-      "rank": 203,
-      "sourceId": "2610.01856",
-      "selectionTrack": "candidate",
-      "selectionReason": "Recent arXiv lead within the rolling one-year discovery window; significance, source links, and technical scope require review.",
-      "paperType": "method",
-      "publicationDate": "2026-10-01",
-      "bibliography": {
-        "source": "arXiv",
-        "sourceUrl": "https://arxiv.org/abs/2610.01856",
-        "checkedAt": "2026-11-19",
-        "authors": [
-          "Zhugang Liu",
-          "Kaichuang Zhang",
-          "Jinman Zhang",
-          "Pu Sun",
-          "Martha Asare",
-          "Jose Hernandez",
-          "Maxim Ermolinsky",
-          "Efren Saenz",
-          "Qi Lu",
-          "Jinghao Yang"
-        ],
-        "date": "2026-10-01",
-        "dateLabel": "First arXiv submission",
-        "arxivId": "2610.01856",
-        "bibtex": "@misc{auto-arxiv-2610-01856,\n  title = {ChunkVLA-AM: Parallel Action Chunking for Vision-Language-Action Robot Control in Additive Manufacturing},\n  author = {Zhugang Liu and Kaichuang Zhang and Jinman Zhang and Pu Sun and Martha Asare and Jose Hernandez and Maxim Ermolinsky and Efren Saenz and Qi Lu and Jinghao Yang},\n  year = {2026},\n  url = {https://arxiv.org/abs/2610.01856}\n}"
-      },
-      "addedAt": "2026-11-19",
-      "updatedAt": "2026-11-19"
+      "updatedAt": "2026-11-19",
+      "influenceSources": [
+        "https://arxiv.org/abs/2610.31162"
+      ]
     },
     {
       "id": "auto-arxiv-2610-00981",
@@ -10156,27 +9406,27 @@
         "papers"
       ],
       "year": 2026,
-      "venue": "Candidate · arXiv",
-      "summary": "We focus on language-conditioned flow-based manipulation, where robot flows (robot velocity fields) serve as embodiment-agnostic, motion-centric representations for leveraging data collected from multiple robot platforms. This task is crucial because language-conditioned manipulation is essential for practical robotic systems, yet scaling robot foundation…",
+      "venue": "arXiv · 2026-10",
+      "summary": "Represents language-conditioned robot manipulation as continuous velocity fields, using flow matching to learn motion representations across embodiments.",
       "tags": [
-        "Automated discovery",
-        "Pending review"
+        "Robot learning"
       ],
-      "environment": "Automated discovery lead; environments and task definitions require curator verification.",
-      "interface": "Automated discovery lead; observation access, action space, and execution interface require curator verification.",
-      "limits": "This candidate was found from bibliographic metadata and has not received a full editorial review. Do not treat its inclusion as verification of claims, venue status, impact, or reproducibility.",
-      "status": "candidate",
-      "evidence": "Automatically discovered through arXiv; bibliographic sources and technical claims require curator review.",
+      "environment": "Language-conditioned manipulation datasets and real-robot tasks.",
+      "interface": "Language and visual context condition continuous robot velocity fields.",
+      "limits": "Author-reported evaluations use specific task suites, robot or game configurations, and training data. Results have not been independently reproduced; released assets and task coverage should be checked at the original source.",
+      "status": "selected",
+      "evidence": "Official arXiv abstract and available author-linked report/project sources checked; experiments not independently reproduced.",
       "sourceType": "automated-discovery",
       "checkedAt": "2026-11-19",
       "links": {
         "paper": "https://arxiv.org/abs/2610.00981",
-        "pdf": "https://arxiv.org/pdf/2610.00981v1"
+        "pdf": "https://arxiv.org/pdf/2610.00981v1",
+        "project": "https://shota0520.github.io/NarrativeFlow-project-page/"
       },
       "rank": 204,
       "sourceId": "2610.00981",
-      "selectionTrack": "candidate",
-      "selectionReason": "Recent arXiv lead within the rolling one-year discovery window; significance, source links, and technical scope require review.",
+      "selectionTrack": "recent-arxiv",
+      "selectionReason": "Selected recent research report for its systematic task evaluations and direct contribution to game or robot policy learning; significance is an editorial assessment, not a citation ranking.",
       "paperType": "method",
       "publicationDate": "2026-10-01",
       "bibliography": {
@@ -10195,7 +9445,10 @@
         "bibtex": "@misc{auto-arxiv-2610-00981,\n  title = {NarrativeFlow: Flow-Based Vision-Language-Action Model Using Robot Velocity Fields},\n  author = {Shota Kobayashi and Koki Seno and Daichi Yashima and Komei Sugiura},\n  year = {2026},\n  url = {https://arxiv.org/abs/2610.00981}\n}"
       },
       "addedAt": "2026-11-19",
-      "updatedAt": "2026-11-19"
+      "updatedAt": "2026-11-19",
+      "influenceSources": [
+        "https://shota0520.github.io/NarrativeFlow-project-page/"
+      ]
     },
     {
       "id": "auto-arxiv-2609-28314",
@@ -10208,27 +9461,27 @@
         "papers"
       ],
       "year": 2026,
-      "venue": "Candidate · arXiv",
-      "summary": "Human teleoperators spend substantial time demonstrating behaviors that robots can already perform autonomously, limiting the scalability of data collection for robot foundation models. Task and motion planning (TAMP) can automate many of these behaviors, but a fixed planning domain may not support every stage of a long-horizon manipulation task. We…",
+      "venue": "arXiv · 2026-09",
+      "summary": "Combines task-and-motion planning with selective human demonstrations to collect efficient fine-tuning data for long-horizon VLA manipulation.",
       "tags": [
-        "Automated discovery",
-        "Pending review"
+        "Robot learning"
       ],
-      "environment": "Automated discovery lead; environments and task definitions require curator verification.",
-      "interface": "Automated discovery lead; observation access, action space, and execution interface require curator verification.",
-      "limits": "This candidate was found from bibliographic metadata and has not received a full editorial review. Do not treat its inclusion as verification of claims, venue status, impact, or reproducibility.",
-      "status": "candidate",
-      "evidence": "Automatically discovered through arXiv; bibliographic sources and technical claims require curator review.",
+      "environment": "Five long-horizon manipulation tasks beyond the planning domain.",
+      "interface": "Vision and language extend a symbolic planner with on-demand human actions.",
+      "limits": "Author-reported evaluations use specific task suites, robot or game configurations, and training data. Results have not been independently reproduced; released assets and task coverage should be checked at the original source.",
+      "status": "selected",
+      "evidence": "Official arXiv abstract and available author-linked report/project sources checked; experiments not independently reproduced.",
       "sourceType": "automated-discovery",
       "checkedAt": "2026-11-19",
       "links": {
         "paper": "https://arxiv.org/abs/2609.28314",
-        "pdf": "https://arxiv.org/pdf/2609.28314v1"
+        "pdf": "https://arxiv.org/pdf/2609.28314v1",
+        "project": "https://prpl-group.com/tandem/"
       },
       "rank": 205,
       "sourceId": "2609.28314",
-      "selectionTrack": "candidate",
-      "selectionReason": "Recent arXiv lead within the rolling one-year discovery window; significance, source links, and technical scope require review.",
+      "selectionTrack": "recent-arxiv",
+      "selectionReason": "Selected recent research report for its systematic task evaluations and direct contribution to game or robot policy learning; significance is an editorial assessment, not a citation ranking.",
       "paperType": "method",
       "publicationDate": "2026-09-23",
       "bibliography": {
@@ -10247,7 +9500,10 @@
         "bibtex": "@misc{auto-arxiv-2609-28314,\n  title = {TANDEM: Task and Motion Planning with As-Needed Demonstrations for Efficient Vision-Language-Action Model Fine-tuning},\n  author = {Samrat Sahoo and Liang Ji and Tom Silver and Yixuan Huang},\n  year = {2026},\n  url = {https://arxiv.org/abs/2609.28314}\n}"
       },
       "addedAt": "2026-11-19",
-      "updatedAt": "2026-11-19"
+      "updatedAt": "2026-11-19",
+      "influenceSources": [
+        "https://prpl-group.com/tandem/"
+      ]
     }
   ]
 }

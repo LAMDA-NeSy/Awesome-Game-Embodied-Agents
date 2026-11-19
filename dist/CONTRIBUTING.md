@@ -5,7 +5,7 @@ Contributions on game and embodied agents are welcome: papers, research articles
 1. Read the [collection policy](docs/collection-policy.md) and check the publication window and venue for papers.
 2. Add or update a record in `data/resources.json`. Check titles, DOIs, and arXiv IDs for duplicates.
 3. Write the summary, environment, observation/action interface, limitations, and inclusion rationale in English. Include official paper, code, data, or project links where available.
-4. For a recent preprint, provide its first submission date and specific evidence of significance. Use `status: "candidate"` when verification is incomplete.
+4. For a recent preprint, provide its first submission date and specific evidence of significance. Publish only records that meet the source and selection criteria; omit incomplete submissions.
 5. Keep peer review, source verification, and independent reproduction distinct. Identify workshops separately from main conferences. Do not submit credentials, private reading records, or materials you lack permission to share.
 6. For a demo, use a playable video hosted by its original author or project. Include the source page, credit, demonstration setting, and associated resource IDs. Separate real robots, simulation, gameplay, teleoperation, and generated frames. Report speed changes where documented; selected clips are not benchmark success rates.
 7. Add a dated note to `data/updates.json` for meaningful additions or corrections. Run `npm run build` and `npm run check`. Submit the catalogue and generated README/website files together.
@@ -25,4 +25,4 @@ The site and README are generated from the same catalogue. Edit resource data fi
 
 For paper rows, include verified authors, the source date and its meaning, and a PDF URL when available. Link any citation count and repository star count to its exact source and record the retrieval date. Leave unverified optional fields absent. See [metadata maintenance](docs/metadata.md).
 
-The build tracks collection additions and substantive content revisions separately from publication dates and statistics refreshes. Do not reuse a publication date as an inclusion date. Weekly automation maintains existing verified metrics, checks source links, and adds bibliographic leads as pending-review candidates. Candidate promotion into the curated collection remains a human editorial decision.
+The build tracks collection additions and substantive content revisions separately from publication dates and statistics refreshes. Do not reuse a publication date as an inclusion date. Weekly automation maintains existing verified metrics, checks source links, and publishes qualifying papers directly after automated source, date, topic, and evaluation-evidence checks. There is no pending-review queue.

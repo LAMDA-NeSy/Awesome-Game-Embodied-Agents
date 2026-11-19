@@ -144,9 +144,9 @@
   },
   "linkCheck": {
     "checkedAt": "2026-11-16T07:57:42.082Z",
-    "total": 321,
+    "total": 307,
     "summary": {
-      "ok": 306,
+      "ok": 292,
       "broken": 0,
       "restricted": 15,
       "unreachable": 0
@@ -259,22 +259,6 @@
         "httpStatus": 200
       },
       {
-        "url": "https://arxiv.org/abs/2510.19150",
-        "resourceIds": [
-          "candidate-s08"
-        ],
-        "status": "ok",
-        "httpStatus": 200
-      },
-      {
-        "url": "https://arxiv.org/abs/2510.23691",
-        "resourceIds": [
-          "candidate-p01"
-        ],
-        "status": "ok",
-        "httpStatus": 200
-      },
-      {
         "url": "https://arxiv.org/abs/2511.14759",
         "resourceIds": [
           "pi-star06"
@@ -299,22 +283,6 @@
         "httpStatus": 200
       },
       {
-        "url": "https://arxiv.org/abs/2603.11601",
-        "resourceIds": [
-          "candidate-t03"
-        ],
-        "status": "ok",
-        "httpStatus": 200
-      },
-      {
-        "url": "https://arxiv.org/abs/2604.07385",
-        "resourceIds": [
-          "candidate-t04"
-        ],
-        "status": "ok",
-        "httpStatus": 200
-      },
-      {
         "url": "https://arxiv.org/abs/2604.15483",
         "resourceIds": [
           "pi07"
@@ -323,33 +291,9 @@
         "httpStatus": 200
       },
       {
-        "url": "https://arxiv.org/abs/2605.30570",
-        "resourceIds": [
-          "candidate-t06"
-        ],
-        "status": "ok",
-        "httpStatus": 200
-      },
-      {
-        "url": "https://arxiv.org/abs/2608.24893",
-        "resourceIds": [
-          "candidate-t07"
-        ],
-        "status": "ok",
-        "httpStatus": 200
-      },
-      {
         "url": "https://arxiv.org/abs/2608.26200",
         "resourceIds": [
           "candidate-p02"
-        ],
-        "status": "ok",
-        "httpStatus": 200
-      },
-      {
-        "url": "https://arxiv.org/abs/2608.30369",
-        "resourceIds": [
-          "candidate-t05"
         ],
         "status": "ok",
         "httpStatus": 200
@@ -467,22 +411,6 @@
         "httpStatus": 200
       },
       {
-        "url": "https://arxiv.org/pdf/2510.19150",
-        "resourceIds": [
-          "candidate-s08"
-        ],
-        "status": "ok",
-        "httpStatus": 200
-      },
-      {
-        "url": "https://arxiv.org/pdf/2510.23691",
-        "resourceIds": [
-          "candidate-p01"
-        ],
-        "status": "ok",
-        "httpStatus": 200
-      },
-      {
         "url": "https://arxiv.org/pdf/2511.14759",
         "resourceIds": [
           "pi-star06"
@@ -507,22 +435,6 @@
         "httpStatus": 200
       },
       {
-        "url": "https://arxiv.org/pdf/2603.11601",
-        "resourceIds": [
-          "candidate-t03"
-        ],
-        "status": "ok",
-        "httpStatus": 200
-      },
-      {
-        "url": "https://arxiv.org/pdf/2604.07385",
-        "resourceIds": [
-          "candidate-t04"
-        ],
-        "status": "ok",
-        "httpStatus": 200
-      },
-      {
         "url": "https://arxiv.org/pdf/2604.15483",
         "resourceIds": [
           "pi07"
@@ -531,33 +443,9 @@
         "httpStatus": 200
       },
       {
-        "url": "https://arxiv.org/pdf/2605.30570",
-        "resourceIds": [
-          "candidate-t06"
-        ],
-        "status": "ok",
-        "httpStatus": 200
-      },
-      {
-        "url": "https://arxiv.org/pdf/2608.24893",
-        "resourceIds": [
-          "candidate-t07"
-        ],
-        "status": "ok",
-        "httpStatus": 200
-      },
-      {
         "url": "https://arxiv.org/pdf/2608.26200",
         "resourceIds": [
           "candidate-p02"
-        ],
-        "status": "ok",
-        "httpStatus": 200
-      },
-      {
-        "url": "https://arxiv.org/pdf/2608.30369",
-        "resourceIds": [
-          "candidate-t05"
         ],
         "status": "ok",
         "httpStatus": 200
@@ -2765,10 +2653,14 @@
     "queries": 10,
     "scanned": 200,
     "duplicates": 1,
-    "added": 16,
-    "candidateIds": [
+    "added": 11,
+    "failures": [
+      "OpenAlex enrichment skipped: OPENALEX_API_KEY is not configured."
+    ],
+    "dryRun": false,
+    "addedIds": [
+      "candidate-p02",
       "auto-arxiv-2611-18397",
-      "auto-arxiv-2611-24940",
       "auto-arxiv-2611-21607",
       "auto-arxiv-2611-12286",
       "auto-arxiv-2611-08577",
@@ -2776,17 +2668,9 @@
       "auto-arxiv-2611-06905",
       "auto-arxiv-2610-42053",
       "auto-arxiv-2610-31162",
-      "auto-arxiv-2610-30478",
-      "auto-arxiv-2610-26297",
-      "auto-arxiv-2610-21484",
-      "auto-arxiv-2610-14601",
-      "auto-arxiv-2610-01856",
       "auto-arxiv-2610-00981",
       "auto-arxiv-2609-28314"
     ],
-    "failures": [
-      "OpenAlex enrichment skipped: OPENALEX_API_KEY is not configured."
-    ],
-    "dryRun": false
+    "selectionMode": "direct"
   }
 }
