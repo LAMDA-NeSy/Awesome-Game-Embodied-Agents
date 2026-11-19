@@ -30,6 +30,14 @@ for (const [id, value] of [['nav-total', selected.length], ['stat-total', select
 html = html.replace(/(<p id="result-count"[^>]*>)[\s\S]*?<\/p>/, `$1${selected.length} unique resources</p>`);
 html = html.replace(/(<!-- UPDATES:START -->)[\s\S]*?(<!-- UPDATES:END -->)/, () => `<!-- UPDATES:START -->${renderUpdates(data, history, maintenance)}<!-- UPDATES:END -->`);
 const latestContentDate = sortResources(data.resources, 'updated')[0]?.updatedAt || history.baselineDate;
+const siteUpdatedDate = [
+  latestContentDate,
+  maintenance.paperDiscovery?.checkedAt?.slice(0, 10),
+  maintenance.metricsRefresh?.checkedAt?.slice(0, 10),
+  maintenance.linkCheck?.checkedAt?.slice(0, 10)
+].filter(Boolean).sort().at(-1) || latestContentDate;
+const siteUpdatedLabel = new Intl.DateTimeFormat('en-GB', { day: 'numeric', month: 'short', year: 'numeric', timeZone: 'UTC' }).format(new Date(`${siteUpdatedDate}T00:00:00Z`));
+html = html.replace(/(<span id="site-updated">)[^<]*/, `$1Updated · ${siteUpdatedLabel}`);
 html = html.replace(/(<span id="collection-updated">)[^<]*/, `$1Collection revised · ${latestContentDate}`);
 html = html.replace(/(<span id="metrics-checked">)[^<]*/, `$1${maintenance.metricsRefresh ? `Metrics checked · ${maintenance.metricsRefresh.checkedAt.slice(0, 10)}` : 'Source-dated metrics'}`);
 const about = `<h2>About the collection</h2>

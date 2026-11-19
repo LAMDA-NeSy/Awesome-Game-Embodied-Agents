@@ -147,6 +147,7 @@ assert(generatedReadme.length<12000,'README should remain a concise guide to the
 assert(generatedReadme.includes('img.shields.io')&&generatedReadme.includes('docs/assets/readme-emblem.png'),'README missing visual navigation');
 assert(generatedReadme.includes('docs/assets/future-vision.png'),'README missing future vision artwork');
 assert(html.includes('id="updates"')&&html.includes('Recently added')&&html.includes('Update log'),'Missing collection history');
+assert(/id="site-updated">Updated · \d{1,2} [A-Z][a-z]{2} \d{4}</.test(html),'Missing visible site update date');
 assert(!html.includes('>Newest first<'),'Ambiguous sort label');
 const updates=JSON.parse(await fs.readFile('data/updates.json','utf8'));
 assert.equal(new Set(updates.entries.map(entry=>entry.id)).size,updates.entries.length,'Duplicate update IDs');
