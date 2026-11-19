@@ -25,4 +25,4 @@ The site and README are generated from the same catalogue. Edit resource data fi
 
 For paper rows, include verified authors, the source date and its meaning, and a PDF URL when available. Link any citation count and repository star count to its exact source and record the retrieval date. Leave unverified optional fields absent. See [metadata maintenance](docs/metadata.md).
 
-The build tracks collection additions and substantive content revisions separately from publication dates and statistics refreshes. Do not reuse a publication date as an inclusion date. Weekly automation maintains existing verified metrics and source-link reports; new paper selection remains reviewed.
+The build tracks collection additions and substantive content revisions separately from publication dates and statistics refreshes. Do not reuse a publication date as an inclusion date. Weekly automation maintains existing verified metrics, checks source links, and adds bibliographic leads as pending-review candidates. Candidate promotion into the curated collection remains a human editorial decision.

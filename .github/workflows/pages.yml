@@ -5,7 +5,7 @@ on:
   workflow_dispatch:
     inputs:
       refresh:
-        description: Refresh verified statistics and check source links before publishing
+        description: Discover papers, refresh verified statistics, and check source links before publishing
         type: boolean
         default: false
   schedule:
@@ -38,9 +38,13 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ github.token }}
           OPENALEX_API_KEY: ${{ secrets.OPENALEX_API_KEY }}
+      - name: Discover new paper candidates
+        run: npm run discover-papers
+        env:
+          OPENALEX_API_KEY: ${{ secrets.OPENALEX_API_KEY }}
       - name: Check original source links
         run: npm run check-links
-      - run: npm run build && npm run check
+      - run: npm run check-discovery && npm run build && npm run check
       - name: Save validated maintenance snapshots
         id: save
         run: |
@@ -48,7 +52,7 @@ jobs:
           if ! git diff --cached --quiet; then
             git config user.name 'github-actions[bot]'
             git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
-            git commit -m 'Refresh verified metrics and source-link report'
+            git commit -m 'Refresh maintenance data and paper candidates'
             git push origin HEAD:main
           fi
           echo "commit=$(git rev-parse HEAD)" >> "$GITHUB_OUTPUT"

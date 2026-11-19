@@ -158,5 +158,5 @@ assert(html.includes('<html lang="en">'), 'Page language must be English');
 for(const p of ['README.md','CONTRIBUTING.md','docs/collection-policy.md','data/selection-audit.json','dist/index.html','dist/assets/app.js','dist/assets/catalog.mjs'])assert(!/[\u3400-\u9fff]/u.test(await fs.readFile(p,'utf8')),`Untranslated text: ${p}`);
 assert.equal((html.match(/<video /g)||[]).length,data.meta.counts.demos,'Missing static demo players');
 const {execFileSync}=await import('node:child_process');
-for(const f of ['dist/assets/app.js','dist/assets/catalog.mjs','dist/assets/updates.mjs','scripts/build.mjs','scripts/serve.mjs','scripts/refresh-metrics.mjs','scripts/check-links.mjs','scripts/collection-history.mjs'])execFileSync(process.execPath,['--check',f]);
+for(const f of ['dist/assets/app.js','dist/assets/catalog.mjs','dist/assets/updates.mjs','scripts/build.mjs','scripts/serve.mjs','scripts/refresh-metrics.mjs','scripts/discover-papers.mjs','scripts/check-discovery.mjs','scripts/check-links.mjs','scripts/collection-history.mjs'])execFileSync(process.execPath,['--check',f]);
 console.log(`Validated ${data.resources.length} unique resources, date rules, sources, counts, static fallbacks, and JavaScript syntax.`);

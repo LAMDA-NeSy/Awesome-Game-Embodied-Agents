@@ -1,0 +1,22 @@
+{
+  "provider": "arXiv with optional OpenAlex enrichment",
+  "schedule": "Every Monday at approximately 09:17 Asia/Shanghai",
+  "maxCandidatesPerRun": 16,
+  "resultsPerQuery": 50,
+  "arxivResultsPerBatch": 100,
+  "peerReviewedWindowYears": 5,
+  "recentPreprintWindowYears": 1,
+  "minimumRecentPreprintCitations": 2,
+  "queries": [
+    "game agent",
+    "video game agent",
+    "Minecraft agent",
+    "generalist game agent",
+    "embodied agent",
+    "vision language action robot",
+    "robot foundation model",
+    "robot learning manipulation",
+    "robot navigation agent",
+    "world model control agent"
+  ]
+}

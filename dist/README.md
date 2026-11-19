@@ -41,7 +41,7 @@ Researchers, engineers, students, and curious builders are all welcome. If the c
 | Benchmarks & environments | **8** |
 | Video demos | **17** |
 
-The snapshot contains **115 unique curated resources** and **8 candidates** awaiting review. Category counts overlap when one resource is both a paper and a dataset or benchmark.
+The snapshot contains **115 unique curated resources** and **24 candidates** awaiting review. Category counts overlap when one resource is both a paper and a dataset or benchmark.
 
 ## Our vision
 
@@ -60,6 +60,8 @@ We want this collection to become a shared research map: traceable enough for ca
 | Tools & environments | Current research use | Official purpose, interfaces, and setup information |
 
 Priority venues include NeurIPS, ICLR, ICML, CVPR, ICCV, ECCV, AAAI, IJCAI, CoRL, RSS, ICRA, IROS, Nature, Science, T-RO, IJRR, TPAMI, JMLR, and TMLR. Read the [full collection policy](docs/collection-policy.md) and [metadata notes](docs/metadata.md).
+
+Every Monday, the maintenance workflow searches the free arXiv feed and optionally enriches results with OpenAlex. New matches appear only as **pending-review candidates**; a curator must verify the official source, scope, and significance before promotion.
 
 ## 🤝 Contributing
 

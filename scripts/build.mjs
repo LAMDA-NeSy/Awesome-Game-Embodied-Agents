@@ -56,7 +56,7 @@ const about = `<h2>About the collection</h2>
 <tr><td>Evaluation</td><td>Map splits, task metrics, samples, and seeds</td><td>Task success, generalization, and human intervention</td></tr></tbody></table></div>
 <p>Shared methods do not by themselves establish transfer between domains. Frame generation, game navigation, robot planning, and physical execution retain their respective evidence boundaries.</p>
 <h3>Video demonstrations</h3><p>The video gallery embeds original research-team videos, with source links, credits, and related work. Game control, generated frames, real robots, and simulation are labeled separately. Selected clips illustrate behavior; they do not replace benchmark evaluations. Videos load as you approach them and play only when requested. If an external host is unavailable, use the source link on the card.</p><h3>Maintenance and contributions</h3>
-<p>The README and website share the same catalogue. New additions are manually curated. Weekly maintenance checks existing source links and refreshes verified statistics. See <a href="#updates">What’s new</a> for recent additions, the update log, and maintenance reports. Additions should include official sources and satisfy the selection criteria. Read the <a href="CONTRIBUTING.md">contribution guide</a> or visit the <a href="${data.meta.repositoryUrl}" target="_blank" rel="noopener noreferrer">GitHub repository</a>.</p>`;
+<p>The README and website share the same catalogue. Weekly maintenance discovers new bibliographic leads as pending-review candidates, checks existing source links, and refreshes verified statistics. A curator verifies official sources, technical scope, and selection evidence before promoting any candidate into the curated collection. See <a href="#updates">What’s new</a> for recent additions, the update log, and maintenance reports. Read the <a href="CONTRIBUTING.md">contribution guide</a> or visit the <a href="${data.meta.repositoryUrl}" target="_blank" rel="noopener noreferrer">GitHub repository</a>.</p>`;
 html = html.replace(/(<section id="about" class="about-panel" hidden>)[\s\S]*?<\/section>/, `$1${about}</section>`);
 await fs.writeFile('dist/index.html', html);
 const md = s => String(s || '—').replace(/\|/g, '\\|').replace(/\n/g, ' ');
@@ -243,7 +243,7 @@ Open the local URL printed by the server.
 - **Publishing:** In repository Settings → Pages, select GitHub Actions. Pushes to ${tick}main${tick} check, build, and publish automatically. The **Publish GitHub Pages** workflow also supports manual runs.
 - **Forks:** Update ${tick}repositoryUrl${tick} and ${tick}siteUrl${tick} in the catalogue and the repository links in the page before publishing your own copy.
 
-Weekly maintenance runs every Monday at approximately 09:17 Asia/Shanghai (01:17 UTC). It refreshes previously verified citation and star records, checks source links, preserves failed snapshots with their original dates, validates the catalogue, and publishes the report. GitHub schedules may run later than the scheduled time. New papers and link corrections remain editorial decisions; there is no automatic paper selection or write-back to Feishu.
+Weekly maintenance runs every Monday at approximately 09:17 Asia/Shanghai (01:17 UTC). It searches OpenAlex for new paper leads, adds relevant results as pending-review candidates, refreshes previously verified citation and star records, checks source links, validates the catalogue, and publishes the report. GitHub schedules may run later than the scheduled time. Candidate promotion and source corrections remain editorial decisions; there is no automatic promotion or write-back to Feishu.
 
 See [what’s new](${data.meta.siteUrl}#updates), the [update log](CHANGELOG.md), and [maintenance instructions](docs/metadata.md). The workflow can also be started manually with its refresh option enabled.
 
@@ -347,6 +347,8 @@ We want this collection to become a shared research map: traceable enough for ca
 | Tools & environments | Current research use | Official purpose, interfaces, and setup information |
 
 Priority venues include NeurIPS, ICLR, ICML, CVPR, ICCV, ECCV, AAAI, IJCAI, CoRL, RSS, ICRA, IROS, Nature, Science, T-RO, IJRR, TPAMI, JMLR, and TMLR. Read the [full collection policy](docs/collection-policy.md) and [metadata notes](docs/metadata.md).
+
+Every Monday, the maintenance workflow searches the free arXiv feed and optionally enriches results with OpenAlex. New matches appear only as **pending-review candidates**; a curator must verify the official source, scope, and significance before promotion.
 
 ## 🤝 Contributing
 

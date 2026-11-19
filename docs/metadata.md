@@ -42,9 +42,19 @@ Authors, dates, links, and previews are reviewed separately against their source
 
 `data/updates.json` contains human-written release notes, rendered into the website and `CHANGELOG.md`. Add a dated note for meaningful editorial or website changes. Routine metric refreshes appear in the maintenance report rather than filling the editorial update log.
 
+## Scheduled new-paper discovery
+
+The Monday maintenance run searches arXiv and, when a free `OPENALEX_API_KEY` repository secret is available, OpenAlex for game-agent and embodied-agent research. arXiv keeps recent-preprint discovery working without a credential; OpenAlex adds formal-venue discovery and citation metadata. Discovery uses a rolling five-year window for priority conferences and journals and a rolling one-year window for recent arXiv leads. Search terms, run limits, and thresholds are versioned in `data/discovery-config.json`.
+
+New results are deduplicated by normalized title, DOI, and OpenAlex work ID. Relevance filtering requires both a game/robotics context and agent, policy, planning, action, or control content. Each run adds at most 16 records, tagged **Automated discovery** and **Candidate · pending review**. These candidates appear separately from curated counts and receive no community rating until reviewed.
+
+Automated discovery is a lead-generation step. It does not certify acceptance, significance, technical claims, affiliations, source links, paper type, reproducibility, or the quality of an arXiv/OpenAlex match. A curator must inspect the official paper and project sources, replace placeholder scope fields, and update `status`, `selectionTrack`, `selectionReason`, `evidence`, and `checkedAt` before promotion. Existing curated records are never removed automatically when a rolling discovery window advances. A provider timeout or rate limit is recorded in the public maintenance report and does not block the rest of the weekly site update.
+
+Run discovery manually with `npm run discover-papers`. `OPENALEX_API_KEY` is optional but recommended for scheduled reliability. Use `node scripts/discover-papers.mjs --fixture=scripts/fixtures/openalex-discovery.json --today=2026-11-19 --dry-run` for a network-free behavior check.
+
 ## Weekly maintenance and source checks
 
-The **Publish GitHub Pages** workflow schedules maintenance each Monday at **01:17 UTC / 09:17 Asia/Shanghai**. GitHub may delay scheduled runs. The workflow refreshes verified statistics, checks source links, builds and validates the collection, commits only the maintenance snapshots and their generated pages, then deploys that exact commit. A manual workflow run with **refresh** enabled uses the same path. New records, acceptance changes, source corrections, and selection-window changes still require editorial review.
+The **Publish GitHub Pages** workflow schedules maintenance each Monday at **01:17 UTC / 09:17 Asia/Shanghai**. GitHub may delay scheduled runs. The workflow refreshes verified statistics, discovers new pending-review paper leads, checks source links, builds and validates the collection, commits the resulting data and generated pages, then deploys that exact commit. A manual workflow run with **refresh** enabled uses the same path. Acceptance changes, candidate promotion, source corrections, and selection-policy changes still require editorial review.
 
 Run `npm run check-links` locally to produce `data/maintenance.json`. The report includes a timestamp, unique URLs, affected record IDs, and each result. Checks use HEAD requests, with GET confirmation for 404/410 and a GET fallback for servers that do not implement HEAD. GET response bodies are canceled; PDFs and videos are not downloaded. One request per host is made at a time, across up to four hosts.
 

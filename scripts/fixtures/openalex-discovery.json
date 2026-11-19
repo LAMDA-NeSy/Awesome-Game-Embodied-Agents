@@ -1,0 +1,49 @@
+{
+  "results": [
+    {
+      "id": "https://openalex.org/W999000001",
+      "doi": "https://doi.org/10.0000/example.robot",
+      "title": "AtlasVLA: A Generalist Vision-Language-Action Policy for Robot Manipulation",
+      "publication_year": 2026,
+      "publication_date": "2026-10-20",
+      "type": "article",
+      "language": "en",
+      "cited_by_count": 3,
+      "abstract_inverted_index": { "A": [0], "generalist": [1], "robot": [2], "policy": [3], "for": [4], "manipulation": [5] },
+      "authorships": [{ "author": { "display_name": "A. Researcher" } }],
+      "primary_location": { "landing_page_url": "https://doi.org/10.0000/example.robot", "pdf_url": null, "source": { "display_name": "Conference on Robot Learning" } },
+      "locations": [],
+      "best_oa_location": null
+    },
+    {
+      "id": "https://openalex.org/W999000002",
+      "doi": null,
+      "title": "ArenaAgent: A Generalist Game Agent for Open-World Play",
+      "publication_year": 2026,
+      "publication_date": "2026-11-01",
+      "type": "preprint",
+      "language": "en",
+      "cited_by_count": 0,
+      "abstract_inverted_index": { "An": [0], "autonomous": [1], "game": [2], "agent": [3], "learns": [4], "actions": [5] },
+      "authorships": [{ "author": { "display_name": "G. Player" } }],
+      "primary_location": { "landing_page_url": "https://arxiv.org/abs/2611.00001", "pdf_url": "https://arxiv.org/pdf/2611.00001", "source": { "display_name": "arXiv" } },
+      "locations": [],
+      "best_oa_location": { "landing_page_url": "https://arxiv.org/abs/2611.00001", "pdf_url": "https://arxiv.org/pdf/2611.00001", "source": { "display_name": "arXiv" } }
+    },
+    {
+      "id": "https://openalex.org/W999000003",
+      "doi": "https://doi.org/10.0000/example.unrelated",
+      "title": "A Clinical Study of Navigation During Surgery",
+      "publication_year": 2026,
+      "publication_date": "2026-10-15",
+      "type": "article",
+      "language": "en",
+      "cited_by_count": 10,
+      "abstract_inverted_index": { "Patients": [0], "navigate": [1], "clinical": [2], "care": [3] },
+      "authorships": [{ "author": { "display_name": "M. Doctor" } }],
+      "primary_location": { "landing_page_url": "https://doi.org/10.0000/example.unrelated", "pdf_url": null, "source": { "display_name": "Nature" } },
+      "locations": [],
+      "best_oa_location": null
+    }
+  ]
+}

@@ -2,6 +2,10 @@
 
 Collection-history baseline: **2026-09-14**. Added and revised dates describe this index, independently of publication dates and metric retrieval dates.
 
+## 2026-11-19 · Weekly discovery for new game and embodied-agent papers
+
+Maintenance update. Added a Monday discovery pipeline using the free arXiv feed with optional OpenAlex enrichment. New matches are deduplicated, relevance-filtered, published as pending-review candidates, and kept outside curated counts until a human verifies their sources and scope.
+
 ## 2026-09-15 · A new home in the LAMDA-NeSy organization
 
 Community update. Moved the repository and website to LAMDA-NeSy while preserving the project history, contributors, issues, and community stars. Future releases and contributions now live under the organization.

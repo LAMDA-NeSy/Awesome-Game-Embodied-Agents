@@ -2750,5 +2750,43 @@
         "httpStatus": 200
       }
     ]
+  },
+  "paperDiscovery": {
+    "checkedAt": "2026-11-19T10:27:03.002Z",
+    "provider": "arXiv with optional OpenAlex enrichment",
+    "rollingPeerReviewedWindow": {
+      "from": "2021-11-19",
+      "to": "2026-11-19"
+    },
+    "rollingRecentPreprintWindow": {
+      "from": "2025-11-19",
+      "to": "2026-11-19"
+    },
+    "queries": 10,
+    "scanned": 200,
+    "duplicates": 1,
+    "added": 16,
+    "candidateIds": [
+      "auto-arxiv-2611-18397",
+      "auto-arxiv-2611-24940",
+      "auto-arxiv-2611-21607",
+      "auto-arxiv-2611-12286",
+      "auto-arxiv-2611-08577",
+      "auto-arxiv-2611-08698",
+      "auto-arxiv-2611-06905",
+      "auto-arxiv-2610-42053",
+      "auto-arxiv-2610-31162",
+      "auto-arxiv-2610-30478",
+      "auto-arxiv-2610-26297",
+      "auto-arxiv-2610-21484",
+      "auto-arxiv-2610-14601",
+      "auto-arxiv-2610-01856",
+      "auto-arxiv-2610-00981",
+      "auto-arxiv-2609-28314"
+    ],
+    "failures": [
+      "OpenAlex enrichment skipped: OPENALEX_API_KEY is not configured."
+    ],
+    "dryRun": false
   }
 }

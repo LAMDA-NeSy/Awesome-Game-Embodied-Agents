@@ -10,6 +10,8 @@
     "dev": "node scripts/serve.mjs",
     "start": "node scripts/serve.mjs",
     "refresh-metrics": "node scripts/refresh-metrics.mjs",
+    "discover-papers": "node scripts/discover-papers.mjs",
+    "check-discovery": "node scripts/check-discovery.mjs",
     "check-links": "node scripts/check-links.mjs"
   },
   "engines": {
