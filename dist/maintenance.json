@@ -1,9 +1,9 @@
 {
   "metricsRefresh": {
-    "checkedAt": "2026-11-16T07:57:02.248Z",
-    "total": 139,
-    "refreshed": 112,
-    "preserved": 27,
+    "checkedAt": "2026-11-23T08:58:22.799Z",
+    "total": 134,
+    "refreshed": 127,
+    "preserved": 7,
     "failures": [
       {
         "source": "OpenAlex",
@@ -12,43 +12,8 @@
       },
       {
         "source": "OpenAlex",
-        "sourceUrl": "https://openalex.org/W4402354007",
-        "reason": "HTTP 429"
-      },
-      {
-        "source": "OpenAlex",
-        "sourceUrl": "https://openalex.org/W4399598096",
-        "reason": "HTTP 429"
-      },
-      {
-        "source": "OpenAlex",
-        "sourceUrl": "https://openalex.org/W4407185791",
-        "reason": "HTTP 429"
-      },
-      {
-        "source": "OpenAlex",
-        "sourceUrl": "https://openalex.org/W4417071139",
-        "reason": "HTTP 429"
-      },
-      {
-        "source": "OpenAlex",
         "sourceUrl": "https://openalex.org/W4414079054",
-        "reason": "HTTP 429"
-      },
-      {
-        "source": "OpenAlex",
-        "sourceUrl": "https://openalex.org/W4414051084",
-        "reason": "HTTP 429"
-      },
-      {
-        "source": "OpenAlex",
-        "sourceUrl": "https://openalex.org/W4414674749",
-        "reason": "HTTP 429"
-      },
-      {
-        "source": "OpenAlex",
-        "sourceUrl": "https://openalex.org/W4416613198",
-        "reason": "HTTP 429"
+        "reason": "Indexed title changed; review required"
       },
       {
         "source": "OpenAlex",
@@ -58,77 +23,12 @@
       {
         "source": "OpenAlex",
         "sourceUrl": "https://openalex.org/W4417215404",
-        "reason": "HTTP 429"
-      },
-      {
-        "source": "OpenAlex",
-        "sourceUrl": "https://openalex.org/W7204671282",
-        "reason": "HTTP 429"
-      },
-      {
-        "source": "OpenAlex",
-        "sourceUrl": "https://openalex.org/W4402890475",
-        "reason": "HTTP 429"
-      },
-      {
-        "source": "OpenAlex",
-        "sourceUrl": "https://openalex.org/W4283218993",
-        "reason": "HTTP 429"
-      },
-      {
-        "source": "OpenAlex",
-        "sourceUrl": "https://openalex.org/W4307868887",
-        "reason": "HTTP 429"
-      },
-      {
-        "source": "OpenAlex",
-        "sourceUrl": "https://openalex.org/W4310705874",
-        "reason": "HTTP 429"
-      },
-      {
-        "source": "OpenAlex",
-        "sourceUrl": "https://openalex.org/W4294435908",
-        "reason": "HTTP 429"
-      },
-      {
-        "source": "OpenAlex",
-        "sourceUrl": "https://openalex.org/W4389469779",
-        "reason": "HTTP 429"
-      },
-      {
-        "source": "OpenAlex",
-        "sourceUrl": "https://openalex.org/W4305033123",
-        "reason": "HTTP 429"
-      },
-      {
-        "source": "OpenAlex",
-        "sourceUrl": "https://openalex.org/W3169291081",
-        "reason": "HTTP 429"
-      },
-      {
-        "source": "OpenAlex",
-        "sourceUrl": "https://openalex.org/W4323572061",
-        "reason": "HTTP 429"
-      },
-      {
-        "source": "OpenAlex",
-        "sourceUrl": "https://openalex.org/W4303648971",
-        "reason": "HTTP 429"
-      },
-      {
-        "source": "OpenAlex",
-        "sourceUrl": "https://openalex.org/W4381586832",
-        "reason": "HTTP 429"
+        "reason": "Indexed title changed; review required"
       },
       {
         "source": "OpenAlex",
         "sourceUrl": "https://openalex.org/W4390635563",
         "reason": "Indexed title changed; review required"
-      },
-      {
-        "source": "OpenAlex",
-        "sourceUrl": "https://openalex.org/W4391949089",
-        "reason": "HTTP 429"
       },
       {
         "source": "OpenAlex",
@@ -143,12 +43,12 @@
     ]
   },
   "linkCheck": {
-    "checkedAt": "2026-11-16T07:57:42.082Z",
-    "total": 307,
+    "checkedAt": "2026-11-23T08:59:14.008Z",
+    "total": 350,
     "summary": {
-      "ok": 292,
+      "ok": 336,
       "broken": 0,
-      "restricted": 15,
+      "restricted": 14,
       "unreachable": 0
     },
     "results": [
@@ -190,6 +90,22 @@
         "url": "https://ai.meta.com/research/cicero/",
         "resourceIds": [
           "cicero"
+        ],
+        "status": "ok",
+        "httpStatus": 200
+      },
+      {
+        "url": "https://ai4ce.github.io/VICTR/",
+        "resourceIds": [
+          "auto-arxiv-2611-08698"
+        ],
+        "status": "ok",
+        "httpStatus": 200
+      },
+      {
+        "url": "https://arnavkj1995.github.io/WEAVER/",
+        "resourceIds": [
+          "auto-arxiv-2606-13672"
         ],
         "status": "ok",
         "httpStatus": 200
@@ -291,9 +207,121 @@
         "httpStatus": 200
       },
       {
+        "url": "https://arxiv.org/abs/2606.13672",
+        "resourceIds": [
+          "auto-arxiv-2606-13672"
+        ],
+        "status": "ok",
+        "httpStatus": 200
+      },
+      {
+        "url": "https://arxiv.org/abs/2607.02642",
+        "resourceIds": [
+          "auto-arxiv-2607-02642"
+        ],
+        "status": "ok",
+        "httpStatus": 200
+      },
+      {
+        "url": "https://arxiv.org/abs/2608.00337",
+        "resourceIds": [
+          "auto-arxiv-2608-00337"
+        ],
+        "status": "ok",
+        "httpStatus": 200
+      },
+      {
         "url": "https://arxiv.org/abs/2608.26200",
         "resourceIds": [
           "candidate-p02"
+        ],
+        "status": "ok",
+        "httpStatus": 200
+      },
+      {
+        "url": "https://arxiv.org/abs/2609.28314",
+        "resourceIds": [
+          "auto-arxiv-2609-28314"
+        ],
+        "status": "ok",
+        "httpStatus": 200
+      },
+      {
+        "url": "https://arxiv.org/abs/2610.00981",
+        "resourceIds": [
+          "auto-arxiv-2610-00981"
+        ],
+        "status": "ok",
+        "httpStatus": 200
+      },
+      {
+        "url": "https://arxiv.org/abs/2610.31162",
+        "resourceIds": [
+          "auto-arxiv-2610-31162"
+        ],
+        "status": "ok",
+        "httpStatus": 200
+      },
+      {
+        "url": "https://arxiv.org/abs/2610.42053",
+        "resourceIds": [
+          "auto-arxiv-2610-42053"
+        ],
+        "status": "ok",
+        "httpStatus": 200
+      },
+      {
+        "url": "https://arxiv.org/abs/2611.06905",
+        "resourceIds": [
+          "auto-arxiv-2611-06905"
+        ],
+        "status": "ok",
+        "httpStatus": 200
+      },
+      {
+        "url": "https://arxiv.org/abs/2611.08577",
+        "resourceIds": [
+          "auto-arxiv-2611-08577"
+        ],
+        "status": "ok",
+        "httpStatus": 200
+      },
+      {
+        "url": "https://arxiv.org/abs/2611.08698",
+        "resourceIds": [
+          "auto-arxiv-2611-08698"
+        ],
+        "status": "ok",
+        "httpStatus": 200
+      },
+      {
+        "url": "https://arxiv.org/abs/2611.12286",
+        "resourceIds": [
+          "auto-arxiv-2611-12286"
+        ],
+        "status": "ok",
+        "httpStatus": 200
+      },
+      {
+        "url": "https://arxiv.org/abs/2611.18397",
+        "resourceIds": [
+          "auto-arxiv-2611-18397"
+        ],
+        "status": "ok",
+        "httpStatus": 200
+      },
+      {
+        "url": "https://arxiv.org/abs/2611.21607",
+        "resourceIds": [
+          "auto-arxiv-2611-21607"
+        ],
+        "status": "ok",
+        "httpStatus": 200
+      },
+      {
+        "url": "https://arxiv.org/abs/2611.24940",
+        "resourceIds": [
+          "auto-arxiv-2611-24940"
         ],
         "status": "ok",
         "httpStatus": 200
@@ -443,9 +471,121 @@
         "httpStatus": 200
       },
       {
+        "url": "https://arxiv.org/pdf/2606.13672v2",
+        "resourceIds": [
+          "auto-arxiv-2606-13672"
+        ],
+        "status": "ok",
+        "httpStatus": 200
+      },
+      {
+        "url": "https://arxiv.org/pdf/2607.02642v1",
+        "resourceIds": [
+          "auto-arxiv-2607-02642"
+        ],
+        "status": "ok",
+        "httpStatus": 200
+      },
+      {
+        "url": "https://arxiv.org/pdf/2608.00337v1",
+        "resourceIds": [
+          "auto-arxiv-2608-00337"
+        ],
+        "status": "ok",
+        "httpStatus": 200
+      },
+      {
         "url": "https://arxiv.org/pdf/2608.26200",
         "resourceIds": [
           "candidate-p02"
+        ],
+        "status": "ok",
+        "httpStatus": 200
+      },
+      {
+        "url": "https://arxiv.org/pdf/2609.28314v1",
+        "resourceIds": [
+          "auto-arxiv-2609-28314"
+        ],
+        "status": "ok",
+        "httpStatus": 200
+      },
+      {
+        "url": "https://arxiv.org/pdf/2610.00981v1",
+        "resourceIds": [
+          "auto-arxiv-2610-00981"
+        ],
+        "status": "ok",
+        "httpStatus": 200
+      },
+      {
+        "url": "https://arxiv.org/pdf/2610.31162v1",
+        "resourceIds": [
+          "auto-arxiv-2610-31162"
+        ],
+        "status": "ok",
+        "httpStatus": 200
+      },
+      {
+        "url": "https://arxiv.org/pdf/2610.42053v1",
+        "resourceIds": [
+          "auto-arxiv-2610-42053"
+        ],
+        "status": "ok",
+        "httpStatus": 200
+      },
+      {
+        "url": "https://arxiv.org/pdf/2611.06905v1",
+        "resourceIds": [
+          "auto-arxiv-2611-06905"
+        ],
+        "status": "ok",
+        "httpStatus": 200
+      },
+      {
+        "url": "https://arxiv.org/pdf/2611.08577v3",
+        "resourceIds": [
+          "auto-arxiv-2611-08577"
+        ],
+        "status": "ok",
+        "httpStatus": 200
+      },
+      {
+        "url": "https://arxiv.org/pdf/2611.08698v2",
+        "resourceIds": [
+          "auto-arxiv-2611-08698"
+        ],
+        "status": "ok",
+        "httpStatus": 200
+      },
+      {
+        "url": "https://arxiv.org/pdf/2611.12286v1",
+        "resourceIds": [
+          "auto-arxiv-2611-12286"
+        ],
+        "status": "ok",
+        "httpStatus": 200
+      },
+      {
+        "url": "https://arxiv.org/pdf/2611.18397v3",
+        "resourceIds": [
+          "auto-arxiv-2611-18397"
+        ],
+        "status": "ok",
+        "httpStatus": 200
+      },
+      {
+        "url": "https://arxiv.org/pdf/2611.21607v1",
+        "resourceIds": [
+          "auto-arxiv-2611-21607"
+        ],
+        "status": "ok",
+        "httpStatus": 200
+      },
+      {
+        "url": "https://arxiv.org/pdf/2611.24940v1",
+        "resourceIds": [
+          "auto-arxiv-2611-24940"
         ],
         "status": "ok",
         "httpStatus": 200
@@ -720,6 +860,14 @@
         "httpStatus": 200
       },
       {
+        "url": "https://galaxygeneralrobotics.github.io/scalevla/",
+        "resourceIds": [
+          "auto-arxiv-2611-21607"
+        ],
+        "status": "ok",
+        "httpStatus": 200
+      },
+      {
         "url": "https://gamengen.github.io/",
         "resourceIds": [
           "demo-gamengen",
@@ -732,6 +880,14 @@
         "url": "https://gamengen.github.io/static/videos/e1m1_t.mp4",
         "resourceIds": [
           "demo-gamengen"
+        ],
+        "status": "ok",
+        "httpStatus": 200
+      },
+      {
+        "url": "https://gatech-rl2.github.io/actionchunkscheduling",
+        "resourceIds": [
+          "auto-arxiv-2608-00337"
         ],
         "status": "ok",
         "httpStatus": 200
@@ -1003,6 +1159,14 @@
         "httpStatus": 200
       },
       {
+        "url": "https://github.com/Meituan-Robotics/Meituan-Robotics-0",
+        "resourceIds": [
+          "auto-arxiv-2611-08577"
+        ],
+        "status": "ok",
+        "httpStatus": 200
+      },
+      {
         "url": "https://github.com/microsoft/Imitating-Human-Behaviour-w-Diffusion",
         "resourceIds": [
           "kb-f02"
@@ -1164,6 +1328,14 @@
         "httpStatus": 200
       },
       {
+        "url": "https://github.com/yxuan1234/VLA-MOPD",
+        "resourceIds": [
+          "auto-arxiv-2611-12286"
+        ],
+        "status": "ok",
+        "httpStatus": 200
+      },
+      {
         "url": "https://gr1-manipulation.github.io/",
         "resourceIds": [
           "demo-gr1-drawer",
@@ -1278,6 +1450,46 @@
         "httpStatus": 403
       },
       {
+        "url": "https://junjieye.com/Z-sight/",
+        "resourceIds": [
+          "auto-arxiv-2611-24940"
+        ],
+        "status": "ok",
+        "httpStatus": 200
+      },
+      {
+        "url": "https://lasgroup.github.io/generalist-improvement",
+        "resourceIds": [
+          "auto-arxiv-2611-06905"
+        ],
+        "status": "ok",
+        "httpStatus": 200
+      },
+      {
+        "url": "https://meituan-robotics.github.io/Meituan-Robotics-0/",
+        "resourceIds": [
+          "auto-arxiv-2611-08577"
+        ],
+        "status": "ok",
+        "httpStatus": 200
+      },
+      {
+        "url": "https://mihoyo-gamer.github.io/",
+        "resourceIds": [
+          "auto-arxiv-2611-18397"
+        ],
+        "status": "ok",
+        "httpStatus": 200
+      },
+      {
+        "url": "https://mikeeeeeeeeeeeeee.github.io/REA/",
+        "resourceIds": [
+          "auto-arxiv-2610-42053"
+        ],
+        "status": "ok",
+        "httpStatus": 200
+      },
+      {
         "url": "https://minedojo.org/",
         "resourceIds": [
           "minedojo"
@@ -1343,6 +1555,14 @@
         "httpStatus": 200
       },
       {
+        "url": "https://open-gigaai.github.io/giga-world-1/",
+        "resourceIds": [
+          "auto-arxiv-2607-02642"
+        ],
+        "status": "ok",
+        "httpStatus": 200
+      },
+      {
         "url": "https://openaccess.thecvf.com/content/CVPR2024/html/Qin_MP5_A_Multi-modal_Open-ended_Embodied_System_in_Minecraft_via_Active_CVPR_2024_paper.html",
         "resourceIds": [
           "mp5"
@@ -1363,8 +1583,8 @@
         "resourceIds": [
           "article-vpt"
         ],
-        "status": "restricted",
-        "httpStatus": 403
+        "status": "ok",
+        "httpStatus": 200
       },
       {
         "url": "https://openalex.org/W4381245688",
@@ -2184,6 +2404,14 @@
         "httpStatus": 200
       },
       {
+        "url": "https://prpl-group.com/tandem/",
+        "resourceIds": [
+          "auto-arxiv-2609-28314"
+        ],
+        "status": "ok",
+        "httpStatus": 200
+      },
+      {
         "url": "https://rail-berkeley.github.io/bridgedata/",
         "resourceIds": [
           "bridgedata-v2"
@@ -2308,6 +2536,14 @@
         "url": "https://say-can.github.io/img/demo_sequence_compressed.mp4",
         "resourceIds": [
           "demo-saycan-long-horizon"
+        ],
+        "status": "ok",
+        "httpStatus": 200
+      },
+      {
+        "url": "https://shota0520.github.io/NarrativeFlow-project-page/",
+        "resourceIds": [
+          "auto-arxiv-2610-00981"
         ],
         "status": "ok",
         "httpStatus": 200
@@ -2636,41 +2872,42 @@
         ],
         "status": "ok",
         "httpStatus": 200
+      },
+      {
+        "url": "https://yunncheng.github.io/GameWAM/",
+        "resourceIds": [
+          "candidate-p02"
+        ],
+        "status": "ok",
+        "httpStatus": 200
       }
     ]
   },
   "paperDiscovery": {
-    "checkedAt": "2026-11-19T10:27:03.002Z",
+    "checkedAt": "2026-11-23T08:58:31.430Z",
     "provider": "arXiv with optional OpenAlex enrichment",
     "rollingPeerReviewedWindow": {
-      "from": "2021-11-19",
-      "to": "2026-11-19"
+      "from": "2021-11-23",
+      "to": "2026-11-23"
     },
     "rollingRecentPreprintWindow": {
-      "from": "2025-11-19",
-      "to": "2026-11-19"
+      "from": "2025-11-23",
+      "to": "2026-11-23"
     },
     "queries": 10,
+    "selectionMode": "direct",
     "scanned": 200,
-    "duplicates": 1,
-    "added": 11,
+    "duplicates": 11,
+    "added": 4,
+    "addedIds": [
+      "auto-arxiv-2611-24940",
+      "auto-arxiv-2608-00337",
+      "auto-arxiv-2607-02642",
+      "auto-arxiv-2606-13672"
+    ],
     "failures": [
       "OpenAlex enrichment skipped: OPENALEX_API_KEY is not configured."
     ],
-    "dryRun": false,
-    "addedIds": [
-      "candidate-p02",
-      "auto-arxiv-2611-18397",
-      "auto-arxiv-2611-21607",
-      "auto-arxiv-2611-12286",
-      "auto-arxiv-2611-08577",
-      "auto-arxiv-2611-08698",
-      "auto-arxiv-2611-06905",
-      "auto-arxiv-2610-42053",
-      "auto-arxiv-2610-31162",
-      "auto-arxiv-2610-00981",
-      "auto-arxiv-2609-28314"
-    ],
-    "selectionMode": "direct"
+    "dryRun": false
   }
 }
